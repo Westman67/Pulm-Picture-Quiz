@@ -4,7 +4,7 @@ An offline-capable, local browser application for pulmonary image-identification
 upstream Picture Quiz library is read-only; this project contains separate, metadata-stripped display
 derivatives and a schema-version-2 question bank.
 
-The completed bank contains **239 scored questions**. Twenty are supplemental pulmonary-picture
+The completed bank contains **252 scored questions**. Thirty-three are supplemental pulmonary-picture
 questions added from a separate, versioned source library; the original RLS and Pulm Pictures
 collections were not modified.
 
@@ -43,8 +43,8 @@ python3 -m http.server 4173
 
 ## Regenerate, test, and build
 
-Regeneration reads from `~/Desktop/Picture Quiz` and
-`~/Desktop/Pulmonary Picture Quiz Additions` but never writes to either source library:
+Regeneration reads the canonical RLS library from `~/Desktop/Picture Quiz` and the self-contained
+supplemental library from `source-additions/`. It never writes into the canonical RLS library:
 
 ```bash
 python3 scripts/generate_bank.py
@@ -71,7 +71,7 @@ dependencies.
 ## Project outputs
 
 - `reports/preflight-audit.md` and `reports/source-audit.json`
-- `reports/supplemental-additions.md` and `reports/pulm-pictures-audit-*.json`
+- `reports/supplemental-additions.md`, `reports/pulm-pictures-audit/`, and `reports/review-queue/`
 - `data/source-manifest.json`
 - `data/question-bank.json`
 - `data/review-queue.json`

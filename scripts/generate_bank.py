@@ -7,6 +7,7 @@ import copy
 import hashlib
 import json
 import re
+import shutil
 from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
@@ -18,8 +19,11 @@ from PIL import Image, ImageOps
 PROJECT = Path(__file__).resolve().parents[1]
 LIBRARY = Path.home() / "Desktop" / "Picture Quiz"
 UPSTREAM = LIBRARY / "picture_quiz_manifest.json"
-SUPPLEMENT_ROOT = Path.home() / "Desktop" / "Pulmonary Picture Quiz Additions"
+# Keep the validated supplemental library inside the quiz project so the build is
+# self-contained even if the former Desktop staging folder is edited or removed.
+SUPPLEMENT_ROOT = PROJECT / "source-additions"
 SUPPLEMENT_MANIFEST = SUPPLEMENT_ROOT / "picture_quiz_supplemental_manifest.json"
+SUPPLEMENT_STAGE = PROJECT / ".supplement-stage"
 ASSET_DIR = PROJECT / "public" / "assets" / "images"
 
 # These sources were retained upstream but visibly failed the stricter scored-ID gate during
@@ -175,11 +179,38 @@ def supplemental_asset(record: dict, prefix: str, original: bool = False) -> tup
     rel = clean(record.get("original_relative_path") if original else record.get("quiz_safe_variant_path"))
     if not rel:
         rel = clean(record.get("original_relative_path"))
-    source = SUPPLEMENT_ROOT / rel
+    source = SUPPLEMENT_STAGE / rel
     digest = hashlib.sha256((prefix + ":" + record["source_id"] + ":" + rel).encode()).hexdigest()[:16]
     destination = ASSET_DIR / f"{prefix}_{digest}.png"
     meta = save_safe_png(source, destination)
     return meta["path"], meta
+
+
+def stage_supplement_assets(records: list[dict]) -> None:
+    """Copy and hash-check supplemental inputs into the build directory before long processing."""
+    SUPPLEMENT_STAGE.mkdir(parents=True, exist_ok=True)
+    staged: dict[str, str] = {}
+    for record in records:
+        original_rel = clean(record.get("original_relative_path"))
+        if not original_rel:
+            raise RuntimeError(f"Supplemental source path missing for {record.get('source_id')}")
+        staged[original_rel] = clean(record.get("source_sha256"))
+        quiz_rel = clean(record.get("quiz_safe_variant_path")) or original_rel
+        if quiz_rel != original_rel:
+            variants = {clean(v.get("relative_path")): clean(v.get("sha256")) for v in record.get("variants", [])}
+            staged[quiz_rel] = variants.get(quiz_rel, "")
+
+    for rel, expected in staged.items():
+        source = SUPPLEMENT_ROOT / rel
+        if not source.is_file():
+            raise FileNotFoundError(source)
+        if not expected or sha256_file(source) != expected:
+            raise RuntimeError(f"Supplemental source hash mismatch: {rel}")
+        destination = SUPPLEMENT_STAGE / rel
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, destination)
+        if sha256_file(destination) != expected:
+            raise RuntimeError(f"Staged supplemental hash mismatch: {rel}")
 
 
 def choose_distractors(target: dict, candidates: list[dict]) -> list[dict]:
@@ -243,6 +274,7 @@ def main() -> None:
     supplement_records = supplement_payload.get("records", [])
     if supplement_payload.get("schema_version", 0) < 2 or supplement_payload.get("validation", {}).get("result") != "PASS":
         raise RuntimeError("Supplemental manifest did not pass its schema/version gate")
+    stage_supplement_assets(supplement_records)
     records = payload.get("records", [])
     active_usable = [
         r for r in records

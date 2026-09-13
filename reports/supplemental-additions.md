@@ -1,28 +1,28 @@
 # Supplemental Pulmonary-Picture Additions
 
-Generated from `/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions`. The supplement is separate from the RLS source library and from the quiz
-build directory.
+Validated September 13, 2026 (America/New_York). Generated from `/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions`. The supplement is separate from the canonical RLS source library and the quiz build directory.
 
 ## Counts
 
-- Added scored sources: **20**
-- Distinct source groups: **20**
+- Scored supplemental sources: **33**
+- Distinct supplemental source groups: **33**
 - Exact SHA-256 duplicates against the RLS extractor manifest: **0**
-- Modalities: {'Ultrasound': 2, 'Clinical Image': 5, 'X-ray': 5, 'Flow-Volume Loop': 4, 'Echocardiography': 1, 'EKG': 1, 'X-ray and CT': 1, 'Diagram': 1}
-- Web/open-source originals: **8**
-- Local lecture-picture originals: **12**
-- Reproducibly cropped or masked quiz variants: **4**
+- Modalities: **{'Ultrasound': 5, 'Clinical Image': 7, 'X-ray': 8, 'Flow-Volume Loop': 4, 'Echocardiography': 1, 'EKG': 1, 'X-ray and CT': 1, 'Diagram': 1, 'Histology': 1, 'Cytology': 2, 'Microscopy': 2}**
+- Openly licensed/public-domain web sources: **15**
+- Local lecture-picture sources: **18**
+- Reproducibly cropped or masked quiz variants: **6**
+- Reproducible fixed frames extracted from licensed videos: **2**
 
 ## Safety and review
 
-- Every displayed asset was visually inspected on the supplemental contact sheet.
-- Flow-volume loops use only deterministic crops or opaque masks; axes, volume direction, curve
-  relationships, and medically meaningful plotted pixels were preserved.
+- Every displayed supplemental asset was visually inspected, including the six final Pulm Pictures gap additions.
+- The 41 lecture picture manifests contributed 660 assignments representing 413 exact-hash-unique curated images; all 413 were reviewed on 12 contact sheets.
+- Fixed lung-ultrasound frames preserve the original pixels, orientation, depth scale, and machine overlays; the source-video hash and exact frame time are retained.
+- Flow-volume loops preserve axes, volume direction, curve relationships, and plotted pixels.
 - The 12-lead ECG retains lead order, paper calibration, and the complete tracing.
-- Ultrasound metadata contains no visible patient name or record number.
+- Answer-bearing title areas on two fungal teaching panels are removed by deterministic crops without altering the microscopic field.
 - No source uses generative reconstruction, upscaling, mirroring, or diagnostic-pixel alteration.
-- Web records include an individual landing page, creator, license, direct original URL, and verified
-  original hash. Local lecture images remain for local study use only and must not be redistributed.
+- Web records retain landing page, creator, license, original URL, and verified hash. Local lecture images remain for local study use only and must not be redistributed.
 
 ## Added records
 
@@ -48,8 +48,22 @@ build directory.
 | src_06a2f9a827b4 | X-ray | Situs inversus totalis with dextrocardia | Local study use only; do not redistribute |
 | src_f29bddb40fba | X-ray | Pulmonary arterial hypertension on chest radiograph | Local study use only; do not redistribute |
 | src_abf82f7a5a47 | Diagram | Thoracentesis | Local study use only; do not redistribute |
+| src_3e7254282ea9 | Ultrasound | Pleural effusion on lung ultrasound | CC BY 2.0 |
+| src_34d6dde9a052 | Ultrasound | Lung consolidation with air bronchograms | CC BY 2.0 |
+| src_22bd41dc4316 | X-ray | Right mainstem endotracheal-tube malposition | CC BY-SA 4.0 |
+| src_bfbcd3fcfbcf | X-ray | Endotracheal and nasogastric tubes, both appropriately positioned | CC BY-SA 4.0 |
+| src_ebcb300aedd3 | X-ray | Kerley B lines from interlobular septal thickening | CC0 1.0 |
+| src_b7c3b9111e17 | Ultrasound | Barcode/stratosphere sign indicating absent lung sliding | CC BY 2.0 |
+| src_04cb2634990f | Clinical Image | Obstructing endobronchial mass | CC BY 2.5 |
+| src_ea8f6b047af1 | Histology | Pulmonary squamous cell carcinoma with keratin pearls | Local study use only; do not redistribute |
+| src_e160390fdc2c | Cytology | Curschmann spiral from asthma | Local study use only; do not redistribute |
+| src_3921a2dbb1b4 | Cytology | Charcot-Leyden crystal | Local study use only; do not redistribute |
+| src_d4b43b5727a3 | Microscopy | Blastomyces with broad-based budding | Local study use only; do not redistribute |
+| src_eaa014fe965d | Microscopy | Paracoccidioides with pilot-wheel budding | Local study use only; do not redistribute |
+| src_73c4f1d588cf | Clinical Image | Oral candidiasis associated with inhaled corticosteroid use | Local study use only; do not redistribute |
 
 ## Source integrity
 
-The Pulm Pictures source root was audited immediately before and after the supplement was created:
-**2,195 files and 843,072,468 bytes both times; 0 changed, added, or removed files.**
+- Pulm Pictures audits remain identical: **2,195 files, 843,072,468 bytes, 0 changed/added/removed files**.
+- The canonical RLS Pulmonary image/document set has **0 changed, added, or removed non-Finder files** versus the immediately prior audit.
+- All added local images were copied into the separate supplemental library; the source root remains read-only.

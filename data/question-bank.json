@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "bank_id": "pulmonary-picture-id-v1",
-  "generated_at": "2026-09-13T15:34:16-04:00",
+  "generated_at": "2026-09-13T18:38:07-04:00",
   "mode": "image-identification",
-  "question_count": 239,
+  "question_count": 252,
   "questions": [
     {
       "question_id": "q_a27403e05b80",
@@ -10632,6 +10632,604 @@
         "original_filename": "thoracentesis-procedure.png",
         "source_document": "P15 - Approach to the Patient with Respiratory Disease and Pulmonary Preventative Care",
         "source_id": "src_abf82f7a5a47",
+        "landing_page_url": "",
+        "creator": "Course/local collection",
+        "displayed_license": "Local study use only; do not redistribute"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_085482fa7ccb",
+      "source_group_id": "sg_96a8b2595c8d",
+      "source_id": "src_3e7254282ea9",
+      "variant_id": "var_identity_f569d930a7af",
+      "question_type": "Identification",
+      "tested_concept": "Pleural effusion on lung ultrasound",
+      "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+      "options": [
+        "Pleural effusion on lung ultrasound",
+        "Lung consolidation with air bronchograms",
+        "B-lines indicating interstitial syndrome",
+        "Normal A-line pattern"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [],
+      "explanation": "The anechoic/hypoechoic dependent collection above the diaphragm is pleural fluid.",
+      "visual_clues": [
+        "A dark fluid collection is present above the diaphragm",
+        "The collection separates the chest wall from adjacent lung",
+        "Dependent compressed lung is visible next to the fluid"
+      ],
+      "choice_rationales": [
+        "Correct: Pleural effusion appears as an anechoic or hypoechoic collection above the diaphragm, often with adjacent compressed lung, matching this image.",
+        "Consolidated lung is tissue-like and may contain bright branching air bronchograms; it is not a simple dark fluid pocket.",
+        "B-lines are bright vertical artifacts arising from the pleural line and extending to the far field, not a focal fluid collection.",
+        "Normally aerated lung shows pleural sliding and repetitive horizontal A-lines rather than visible dependent fluid."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "The Commons asset page and linked open-access article identify this real-time lung-ultrasound sequence as a hypoechoic pleural effusion above the diaphragm; the displayed image is a reproducible frame at 3.0 seconds.",
+      "category": "Point-of-care ultrasound",
+      "modality": "Ultrasound",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "physiology",
+      "quiz_asset": "public/assets/images/quiz_13ef637037595742.png",
+      "original_asset": "public/assets/images/quiz_13ef637037595742.png",
+      "post_answer_source": {
+        "original_filename": "pleural-effusion-lung-ultrasound.png",
+        "source_document": "P15 - Approach to the Patient with Respiratory Disease and Pulmonary Preventative Care",
+        "source_id": "src_3e7254282ea9",
+        "landing_page_url": "https://commons.wikimedia.org/wiki/File:Portable-bedside-ultrasound-the-visual-stethoscope-of-the-21st-century-1757-7241-20-18-S7.ogv",
+        "creator": "Gillman L and Kirkpatrick A",
+        "displayed_license": "CC BY 2.0"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_00897e9ceefe",
+      "source_group_id": "sg_c1965873bfa7",
+      "source_id": "src_34d6dde9a052",
+      "variant_id": "var_identity_d72e1c439054",
+      "question_type": "Identification",
+      "tested_concept": "Lung consolidation with air bronchograms",
+      "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+      "options": [
+        "Lung consolidation with air bronchograms",
+        "Pleural effusion",
+        "B-lines indicating interstitial syndrome",
+        "Normal A-line pattern"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [],
+      "explanation": "The tissue-like subpleural region containing bright air bronchograms is sonographic lung consolidation.",
+      "visual_clues": [
+        "The subpleural lung has a tissue-like appearance",
+        "Bright internal echoes represent air bronchograms",
+        "The normal reverberation pattern of aerated lung is replaced"
+      ],
+      "choice_rationales": [
+        "Correct: Consolidated lung becomes tissue-like on ultrasound and commonly contains punctate or branching hyperechoic air bronchograms, as shown.",
+        "Pleural effusion would be a dark fluid collection above the diaphragm rather than solid-appearing lung with internal bright echoes.",
+        "B-lines are discrete vertical artifacts that arise from the pleural line and extend through the far field; they do not create hepatized lung tissue.",
+        "Normally aerated lung is dominated by pleural sliding and horizontal A-lines, not a visible tissue-like subpleural region."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "The Commons asset page and linked open-access article identify this sequence as right anterior lung consolidation with air bronchograms; the displayed image is a reproducible frame at 4.0 seconds.",
+      "category": "Point-of-care ultrasound",
+      "modality": "Ultrasound",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "imaging",
+      "quiz_asset": "public/assets/images/quiz_1bfbe2a3d76fad94.png",
+      "original_asset": "public/assets/images/quiz_1bfbe2a3d76fad94.png",
+      "post_answer_source": {
+        "original_filename": "consolidation-air-bronchograms-lung-ultrasound.png",
+        "source_document": "P15 - Approach to the Patient with Respiratory Disease and Pulmonary Preventative Care",
+        "source_id": "src_34d6dde9a052",
+        "landing_page_url": "https://commons.wikimedia.org/wiki/File:Prospective-application-of-clinician-performed-lung-ultrasonography-during-the-2009-H1N1-influenza-2036-7902-4-16-S3.ogv",
+        "creator": "Tsung J, Kessler D, and Shah V",
+        "displayed_license": "CC BY 2.0"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_dd2f313e995a",
+      "source_group_id": "sg_0be59c6d0b33",
+      "source_id": "src_22bd41dc4316",
+      "variant_id": "var_identity_dab6959f8e42",
+      "question_type": "Identification",
+      "tested_concept": "Right mainstem endotracheal-tube malposition",
+      "stem": "Assess the endotracheal-tube position on this chest radiograph.",
+      "options": [
+        "Right mainstem endotracheal-tube malposition",
+        "Correct endotracheal-tube position above the carina",
+        "Esophageal intubation",
+        "Left mainstem endotracheal-tube malposition"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [],
+      "explanation": "The endotracheal tube is advanced too far, with its tip in the right main bronchus.",
+      "visual_clues": [
+        "The tube follows the tracheal air column",
+        "Its tip projects distal to the carina",
+        "The tip enters the right main bronchus"
+      ],
+      "choice_rationales": [
+        "Correct: A tube tip beyond the carina in the right main bronchus is a right mainstem intubation and risks under-ventilating the left lung.",
+        "A correctly positioned adult endotracheal tube should terminate in the trachea above the carina, not within a main bronchus.",
+        "An esophageal tube would not remain centered in the tracheal air column and would typically continue below the diaphragm toward the stomach.",
+        "The tube tip is directed into the right, not the left, main bronchus."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "The creator's Commons page explicitly identifies the endotracheal-tube tip within the right main bronchus.",
+      "category": "Lines and tubes",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "imaging",
+      "quiz_asset": "public/assets/images/quiz_5347293fc192aa7d.png",
+      "original_asset": "public/assets/images/quiz_5347293fc192aa7d.png",
+      "post_answer_source": {
+        "original_filename": "right-mainstem-endotracheal-tube.jpg",
+        "source_document": "P18 - Basic Interpretation of Chest X-Ray",
+        "source_id": "src_22bd41dc4316",
+        "landing_page_url": "https://commons.wikimedia.org/wiki/File:Trachealtubus_mit_der_Spitze_im_rechten_Hauptbronchus_79W_-_CR_ap_-_001.jpg",
+        "creator": "Hellerhoff",
+        "displayed_license": "CC BY-SA 4.0"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_98f58e6fd28b",
+      "source_group_id": "sg_84f749ef97e0",
+      "source_id": "src_bfbcd3fcfbcf",
+      "variant_id": "var_identity_92c57598733c",
+      "question_type": "Identification",
+      "tested_concept": "Endotracheal and nasogastric tubes, both appropriately positioned",
+      "stem": "Identify the two tubes and assess their overall position on this chest radiograph.",
+      "options": [
+        "Endotracheal and nasogastric tubes, both appropriately positioned",
+        "Endotracheal tube and central venous catheter",
+        "Tracheostomy tube and pleural drain",
+        "Pulmonary-artery catheter and feeding tube"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [],
+      "explanation": "The radiograph shows an appropriately positioned endotracheal tube plus a nasogastric tube coursing below the diaphragm.",
+      "visual_clues": [
+        "A larger airway tube terminates above the carina",
+        "A thinner tube follows the esophagus",
+        "The enteric tube continues below the diaphragm"
+      ],
+      "choice_rationales": [
+        "Correct: The central airway tube terminates above the carina and the second thin tube follows the esophagus below the diaphragm, identifying an endotracheal tube and nasogastric tube.",
+        "A central venous catheter would enter from the neck or subclavian region and end in the SVC rather than continue below the diaphragm.",
+        "A tracheostomy tube enters directly through the anterior neck, and a pleural drain enters through the lateral chest wall; neither course is shown.",
+        "A pulmonary-artery catheter traverses the right heart toward a pulmonary artery and has a different intrathoracic course from the central airway tube shown."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "The creator's Commons page explicitly identifies an endotracheal tube and nasogastric tube, both in good position.",
+      "category": "Lines and tubes",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "imaging",
+      "quiz_asset": "public/assets/images/quiz_14fdeadd032f119f.png",
+      "original_asset": "public/assets/images/quiz_14fdeadd032f119f.png",
+      "post_answer_source": {
+        "original_filename": "endotracheal-and-nasogastric-tubes-cxr.png",
+        "source_document": "P18 - Basic Interpretation of Chest X-Ray",
+        "source_id": "src_bfbcd3fcfbcf",
+        "landing_page_url": "https://commons.wikimedia.org/wiki/File:ETTubeandNGtube.png",
+        "creator": "James Heilman, MD",
+        "displayed_license": "CC BY-SA 4.0"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_6e9eff129cc9",
+      "source_group_id": "sg_06afc4be116c",
+      "source_id": "src_ebcb300aedd3",
+      "variant_id": "var_identity_0ad260f0645d",
+      "question_type": "Identification",
+      "tested_concept": "Kerley B lines from interlobular septal thickening",
+      "stem": "Identify the specific interstitial sign on this chest radiograph.",
+      "options": [
+        "Kerley B lines from interlobular septal thickening",
+        "Honeycombing from advanced pulmonary fibrosis",
+        "Visceral pleural line of pneumothorax",
+        "Air bronchograms within lobar consolidation"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [],
+      "explanation": "The short peripheral basal septal lines are Kerley B lines, a radiographic sign of interlobular septal thickening often caused by hydrostatic edema.",
+      "visual_clues": [
+        "Short horizontal lines reach the lateral pleural surface",
+        "The lines are most conspicuous at the lung bases",
+        "Cardiomegaly and vascular congestion support interstitial edema"
+      ],
+      "choice_rationales": [
+        "Correct: Kerley B lines are short, horizontal peripheral lines at the lung bases that reflect thickened interlobular septa, matching this image.",
+        "Honeycombing produces clustered subpleural cystic lucencies and volume loss rather than a few thin horizontal septal lines.",
+        "A pneumothorax pleural line is a longer visceral pleural edge with absent lung markings peripheral to it, which is not present here.",
+        "Air bronchograms are branching lucencies within an air-space opacity, not short peripheral septal lines."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "The creator's Commons page identifies distinct Kerley B lines with cardiomegaly and vascular congestion in congestive heart failure.",
+      "category": "Pulmonary edema and heart failure",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "alveolar-injury",
+      "quiz_asset": "public/assets/images/quiz_f93a0e90f8e05efc.png",
+      "original_asset": "public/assets/images/quiz_f93a0e90f8e05efc.png",
+      "post_answer_source": {
+        "original_filename": "kerley-b-lines-cxr.jpg",
+        "source_document": "P18 - Basic Interpretation of Chest X-Ray",
+        "source_id": "src_ebcb300aedd3",
+        "landing_page_url": "https://commons.wikimedia.org/wiki/File:Chest_radiograph_of_a_lung_with_Kerley_B_lines.jpg",
+        "creator": "Mikael Haggstrom",
+        "displayed_license": "CC0 1.0"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_86ee11f88114",
+      "source_group_id": "sg_5b5b3cc0bfc0",
+      "source_id": "src_b7c3b9111e17",
+      "variant_id": "var_identity_9f3a02ec2eb9",
+      "question_type": "Identification",
+      "tested_concept": "Barcode/stratosphere sign indicating absent lung sliding",
+      "stem": "Identify the M-mode lung-ultrasound sign shown.",
+      "options": [
+        "Barcode/stratosphere sign indicating absent lung sliding",
+        "Seashore sign indicating normal lung sliding",
+        "B-lines indicating interstitial syndrome",
+        "Dynamic air bronchograms within consolidation"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [],
+      "explanation": "The uniform horizontal M-mode lines above and below the pleura form the barcode or stratosphere sign, indicating absent lung sliding and raising concern for pneumothorax in the appropriate context.",
+      "visual_clues": [
+        "Parallel horizontal lines extend above and below the pleural line",
+        "The granular lower seashore pattern is absent",
+        "The M-mode pattern records absent pleural motion at this interspace"
+      ],
+      "choice_rationales": [
+        "Correct: The barcode/stratosphere pattern consists of uninterrupted horizontal lines above and below the pleura because sliding is absent; it supports pneumothorax when integrated with other sonographic signs.",
+        "The seashore sign requires a granular sandy pattern below the pleural line from normal sliding, which is absent here.",
+        "B-lines are vertical B-mode reverberation artifacts extending from the pleura to the far field, not a uniform M-mode stripe pattern.",
+        "Dynamic air bronchograms are moving bright branching echoes within tissue-like consolidated lung, not parallel M-mode lines."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "Figure 2 of the CC BY open-access article explicitly identifies this M-mode image as the stratosphere/barcode sign caused by absent lung sliding in traumatic pneumothorax.",
+      "category": "Point-of-care ultrasound",
+      "modality": "Ultrasound",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "imaging",
+      "quiz_asset": "public/assets/images/quiz_1e1ab824f19b2e72.png",
+      "original_asset": "public/assets/images/quiz_1e1ab824f19b2e72.png",
+      "post_answer_source": {
+        "original_filename": "barcode-sign-lung-ultrasound.jpg",
+        "source_document": "P15 - Approach to the Patient with Respiratory Disease and Pulmonary Preventative Care",
+        "source_id": "src_b7c3b9111e17",
+        "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2700565/",
+        "creator": "Michael B. Stone",
+        "displayed_license": "CC BY 2.0"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_11a80fbf67a4",
+      "source_group_id": "sg_9eecc0ecca22",
+      "source_id": "src_04cb2634990f",
+      "variant_id": "var_identity_a07e1fe9a95f",
+      "question_type": "Identification",
+      "tested_concept": "Obstructing endobronchial mass",
+      "stem": "Identify the principal bronchoscopic finding.",
+      "options": [
+        "Obstructing endobronchial mass",
+        "Normal bronchial bifurcation",
+        "Diffuse purulent bronchitis",
+        "Aspirated radiopaque foreign body"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [],
+      "explanation": "The bronchoscopic image shows an irregular endobronchial mass obstructing the bronchial lumen. Histologic tumor type cannot be determined from this view alone.",
+      "visual_clues": [
+        "A focal irregular lesion protrudes into the airway lumen",
+        "The bronchial opening is visibly narrowed",
+        "The abnormality is localized rather than diffuse"
+      ],
+      "choice_rationales": [
+        "Correct: A focal irregular tissue mass projects into and narrows the bronchial lumen, which is the visible endobronchial finding.",
+        "A normal bifurcation has smooth mucosa and patent daughter bronchi without a focal obstructing lesion.",
+        "Diffuse purulent bronchitis would show widespread erythema, edema, and secretions rather than one discrete obstructing mass.",
+        "An aspirated foreign body would appear as a discrete nonmucosal object; the lesion shown is contiguous with abnormal airway tissue and is not visibly radiopaque material."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "The Commons source description identifies a lung tumor invading the left bronchus on bronchoscopic view; the quiz key is deliberately limited to the visible finding rather than a histologic tumor type.",
+      "category": "Bronchoscopy and airway lesions",
+      "modality": "Clinical Image",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "airway-obstructive",
+      "quiz_asset": "public/assets/images/quiz_cab26e031d8e7869.png",
+      "original_asset": "public/assets/images/quiz_cab26e031d8e7869.png",
+      "post_answer_source": {
+        "original_filename": "endobronchial-mass-bronchoscopy.png",
+        "source_document": "P21 - Lung Cancer",
+        "source_id": "src_04cb2634990f",
+        "landing_page_url": "https://commons.wikimedia.org/wiki/File:Lung_cancer_in_L._Bronchus_-_bronchoscopic_view.png",
+        "creator": "JHeuser",
+        "displayed_license": "CC BY 2.5"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_2ca243c5098c",
+      "source_group_id": "sg_1afec6e60d85",
+      "source_id": "src_ea8f6b047af1",
+      "variant_id": "var_identity_64d99ec51daf",
+      "question_type": "Identification",
+      "tested_concept": "Pulmonary squamous cell carcinoma with keratin pearls",
+      "stem": "Identify the pulmonary neoplasm shown on histology.",
+      "options": [
+        "Pulmonary squamous cell carcinoma with keratin pearls",
+        "Pulmonary adenocarcinoma",
+        "Small cell lung carcinoma",
+        "Pulmonary carcinoid tumor"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [],
+      "explanation": "The concentric keratin pearls establish squamous differentiation and support pulmonary squamous cell carcinoma.",
+      "visual_clues": [
+        "Concentric eosinophilic keratin pearls are present",
+        "The tumor cells show squamous differentiation",
+        "There is no gland formation or small-cell molding"
+      ],
+      "choice_rationales": [
+        "Correct: Squamous cell carcinoma is supported by concentric keratin pearls and atypical squamous cells, the decisive features shown.",
+        "Adenocarcinoma would form malignant glands or produce mucin rather than concentric keratin pearls.",
+        "Small cell carcinoma would show sheets of small hyperchromatic cells with nuclear molding and scant cytoplasm, not keratinization.",
+        "A carcinoid tumor typically has organoid nests or trabeculae of uniform neuroendocrine cells without keratin pearls."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "The verified P26/P39 Pulm Pictures manifests identify this lecture-aligned histology as squamous cell lung carcinoma with keratin pearls.",
+      "category": "Lung cancer",
+      "modality": "Histology",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "neoplasm",
+      "quiz_asset": "public/assets/images/quiz_6ed362dfcc7b15b6.png",
+      "original_asset": "public/assets/images/quiz_6ed362dfcc7b15b6.png",
+      "post_answer_source": {
+        "original_filename": "squamous-cell-carcinoma-keratin-pearls.png",
+        "source_document": "P26 - Diseases of the Respiratory Tract - Part 3 - Vascular, Cancer, Other Disease (Pathology)",
+        "source_id": "src_ea8f6b047af1",
+        "landing_page_url": "",
+        "creator": "Course/local collection",
+        "displayed_license": "Local study use only; do not redistribute"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_df549ea10e1f",
+      "source_group_id": "sg_ad1deb726471",
+      "source_id": "src_e160390fdc2c",
+      "variant_id": "var_identity_887cb6bd3ccd",
+      "question_type": "Identification",
+      "tested_concept": "Curschmann spiral from asthma",
+      "stem": "Identify the sputum finding shown.",
+      "options": [
+        "Curschmann spiral from asthma",
+        "Ferruginous asbestos body",
+        "Charcot-Leyden crystal",
+        "Branching fungal hypha"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [],
+      "explanation": "The coiled mucus cast is a Curschmann spiral, a classic sputum finding in asthma.",
+      "visual_clues": [
+        "The structure is a long coiled mucus cast",
+        "Its edges undulate rather than forming a rigid crystal",
+        "No beaded iron coating or septate branching is present"
+      ],
+      "choice_rationales": [
+        "Correct: Curschmann spirals are twisted mucus casts of small airways and have the long coiled contour shown here.",
+        "Ferruginous bodies are golden-brown beaded rods with an iron-protein coat, not flexible basophilic coils.",
+        "Charcot-Leyden crystals are sharply pointed bipyramidal structures derived from eosinophils, not mucus spirals.",
+        "Fungal hyphae form tubular septate or pauciseptate branches rather than a single thick coiled mucus cast."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "The verified P19 Pulm Pictures manifest identifies the coiled mucus cast as a Curschmann spiral from asthmatic sputum.",
+      "category": "Asthma pathology",
+      "modality": "Cytology",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "airway-obstructive",
+      "quiz_asset": "public/assets/images/quiz_d29683c105c8bd3a.png",
+      "original_asset": "public/assets/images/quiz_d29683c105c8bd3a.png",
+      "post_answer_source": {
+        "original_filename": "curschmann-spiral-asthma.png",
+        "source_document": "P19 - Obstructive Diseases and Airway Diseases",
+        "source_id": "src_e160390fdc2c",
+        "landing_page_url": "",
+        "creator": "Course/local collection",
+        "displayed_license": "Local study use only; do not redistribute"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_79ee4b07248b",
+      "source_group_id": "sg_b8b1f6da564a",
+      "source_id": "src_3921a2dbb1b4",
+      "variant_id": "var_identity_032a879b33d1",
+      "question_type": "Identification",
+      "tested_concept": "Charcot-Leyden crystal",
+      "stem": "Identify the microscopic finding shown.",
+      "options": [
+        "Charcot-Leyden crystal",
+        "Curschmann spiral",
+        "Ferruginous asbestos body",
+        "Calcium oxalate crystal"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [],
+      "explanation": "The bipyramidal crystal is a Charcot-Leyden crystal formed from eosinophil products and associated with asthma and other eosinophilic disorders.",
+      "visual_clues": [
+        "The structure is elongated and sharply pointed at both ends",
+        "It is a rigid crystal rather than a coiled mucus strand",
+        "There is no golden-brown beaded coating"
+      ],
+      "choice_rationales": [
+        "Correct: Charcot-Leyden crystals are slender bipyramidal eosinophil-derived crystals with pointed ends, matching this structure.",
+        "A Curschmann spiral is a long twisted mucus cast with an undulating coiled outline, not a rigid pointed crystal.",
+        "A ferruginous body is a golden-brown segmented rod coated with iron and protein, which is not seen here.",
+        "Calcium oxalate crystals are typically envelope- or dumbbell-shaped and are not the classic sputum finding shown."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "The verified P19 Pulm Pictures manifest identifies the pointed crystal as a Charcot-Leyden crystal associated with eosinophil-rich asthma.",
+      "category": "Asthma pathology",
+      "modality": "Cytology",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "airway-obstructive",
+      "quiz_asset": "public/assets/images/quiz_9d1013ef77fe3b31.png",
+      "original_asset": "public/assets/images/quiz_9d1013ef77fe3b31.png",
+      "post_answer_source": {
+        "original_filename": "charcot-leyden-crystal-asthma.png",
+        "source_document": "P19 - Obstructive Diseases and Airway Diseases",
+        "source_id": "src_3921a2dbb1b4",
+        "landing_page_url": "",
+        "creator": "Course/local collection",
+        "displayed_license": "Local study use only; do not redistribute"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_bd7a6392746d",
+      "source_group_id": "sg_90f58a2ff2ab",
+      "source_id": "src_d4b43b5727a3",
+      "variant_id": "var_6e600ecfbb20",
+      "question_type": "Identification",
+      "tested_concept": "Blastomyces with broad-based budding",
+      "stem": "Identify the fungal morphology shown.",
+      "options": [
+        "Blastomyces with broad-based budding",
+        "Cryptococcus with a thick capsule",
+        "Coccidioides spherule",
+        "Histoplasma within macrophages"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [],
+      "explanation": "A large thick-walled yeast with a broad-based bud is the classic tissue morphology of Blastomyces.",
+      "visual_clues": [
+        "The yeast is large and thick walled",
+        "The daughter cell attaches through a broad neck",
+        "No capsule halo, endospores, or intracellular clusters dominate"
+      ],
+      "choice_rationales": [
+        "Correct: Blastomyces is identified by large thick-walled yeast with broad-based budding, exactly the relationship shown.",
+        "Cryptococcus usually has narrow-based budding and a prominent polysaccharide capsule producing a clear halo.",
+        "Coccidioides appears in tissue as a large spherule containing endospores rather than a budding yeast.",
+        "Histoplasma consists of numerous tiny narrow-budding intracellular yeasts clustered in macrophages, not one large broad-based pair."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "The verified P30 Pulm Pictures manifest identifies this fungal morphology as Blastomyces; the quiz crop removes the answer title and panel labels.",
+      "category": "Endemic mycosis",
+      "modality": "Microscopy",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "infection",
+      "quiz_asset": "public/assets/images/quiz_8f455326f6eb5296.png",
+      "original_asset": "public/assets/images/original_35fed595174cf0ea.png",
+      "post_answer_source": {
+        "original_filename": "blastomycosis-broad-based-budding.png",
+        "source_document": "P30 - Microbiology of Pneumonia - Fungal Infections",
+        "source_id": "src_d4b43b5727a3",
+        "landing_page_url": "",
+        "creator": "Course/local collection",
+        "displayed_license": "Local study use only; do not redistribute"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_3e7f40f7a8cb",
+      "source_group_id": "sg_f1ee974c908f",
+      "source_id": "src_eaa014fe965d",
+      "variant_id": "var_029a3ee7ab1d",
+      "question_type": "Identification",
+      "tested_concept": "Paracoccidioides with pilot-wheel budding",
+      "stem": "Identify the fungal morphology shown.",
+      "options": [
+        "Paracoccidioides with pilot-wheel budding",
+        "Blastomyces with broad-based budding",
+        "Cryptococcus with a thick capsule",
+        "Coccidioides spherule"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [],
+      "explanation": "Multiple buds radiating from a central yeast create the characteristic pilot-wheel morphology of Paracoccidioides.",
+      "visual_clues": [
+        "Many daughter buds surround one mother cell",
+        "The buds radiate in a pilot-wheel pattern",
+        "The structure is neither a single broad-based pair nor an endospore-filled spherule"
+      ],
+      "choice_rationales": [
+        "Correct: Paracoccidioides classically forms multiple narrow-necked daughter buds around a mother yeast, producing the pilot-wheel pattern shown.",
+        "Blastomyces usually forms a single broad-based daughter bud rather than numerous radiating buds.",
+        "Cryptococcus shows a thick capsule and usually narrow-based single budding, not a pilot-wheel arrangement.",
+        "Coccidioides forms nonbudding tissue spherules filled with endospores, which are absent here."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "The verified P30 Pulm Pictures manifest identifies this fungal morphology as Paracoccidioides; the quiz crop removes the answer title and panel labels.",
+      "category": "Endemic mycosis",
+      "modality": "Microscopy",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "infection",
+      "quiz_asset": "public/assets/images/quiz_664cc6130855c70f.png",
+      "original_asset": "public/assets/images/original_8bc8fe2085fe9976.png",
+      "post_answer_source": {
+        "original_filename": "paracoccidioides-pilot-wheel.png",
+        "source_document": "P30 - Microbiology of Pneumonia - Fungal Infections",
+        "source_id": "src_eaa014fe965d",
+        "landing_page_url": "",
+        "creator": "Course/local collection",
+        "displayed_license": "Local study use only; do not redistribute"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_6d5bde360891",
+      "source_group_id": "sg_0345c9716e8b",
+      "source_id": "src_73c4f1d588cf",
+      "variant_id": "var_identity_535316fd21ba",
+      "question_type": "Identification",
+      "tested_concept": "Oral candidiasis associated with inhaled corticosteroid use",
+      "stem": "Identify the complication shown in a patient using inhaled corticosteroids.",
+      "options": [
+        "Oral candidiasis associated with inhaled corticosteroid use",
+        "Aphthous ulcers",
+        "Herpetic gingivostomatitis",
+        "Oral hairy leukoplakia"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [],
+      "explanation": "White pseudomembranous plaques on erythematous oral mucosa are typical of oral candidiasis, an important local complication of inhaled corticosteroids.",
+      "visual_clues": [
+        "White plaque-like material coats the tongue",
+        "The background mucosa is erythematous",
+        "There are no discrete ulcers, vesicles, or lateral corrugated patches"
+      ],
+      "choice_rationales": [
+        "Correct: Oral candidiasis produces removable white plaques on an erythematous base and is promoted by oropharyngeal steroid deposition.",
+        "Aphthous disease causes discrete shallow painful ulcers with erythematous halos rather than diffuse white plaques.",
+        "Herpetic gingivostomatitis produces clusters of vesicles and erosive ulcers with gingival inflammation, not a confluent pseudomembrane.",
+        "Oral hairy leukoplakia causes adherent corrugated white plaques along the lateral tongue, not this diffuse erythematous pseudomembranous coating."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "The verified P22-23 Pulm Pictures manifest identifies the removable white oral plaques as candidiasis, a major local adverse effect of inhaled corticosteroids.",
+      "category": "Asthma pharmacology",
+      "modality": "Clinical Image",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "airway-obstructive",
+      "quiz_asset": "public/assets/images/quiz_b14bbfdca5b1d6a5.png",
+      "original_asset": "public/assets/images/quiz_b14bbfdca5b1d6a5.png",
+      "post_answer_source": {
+        "original_filename": "oral-candidiasis-inhaled-corticosteroid.png",
+        "source_document": "P22-23 - Drugs Used for Treatment of Asthma and COPD",
+        "source_id": "src_73c4f1d588cf",
         "landing_page_url": "",
         "creator": "Course/local collection",
         "displayed_license": "Local study use only; do not redistribute"

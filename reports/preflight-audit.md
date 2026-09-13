@@ -1,11 +1,11 @@
 # Pulmonary Picture Quiz Preflight Audit
 
-Generated: 2026-09-13T15:34:16-04:00
+Generated: 2026-09-13T18:38:07-04:00
 
 ## Scope
 
 - Canonical upstream library: `/Users/chriselwell/Desktop/Picture Quiz` (read-only)
-- Supplemental pulmonary-picture library: `/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions` (read-only during quiz build)
+- Supplemental pulmonary-picture library: `/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions` (read-only during quiz build)
 - Audited collection: `/Users/chriselwell/Desktop/Picture Quiz/Pulmonary`
 - Output project: `/Users/chriselwell/Desktop/Pulmonary Picture Quiz App`
 - Quiz format: image-identification, one scored task per selected source/concept
@@ -23,9 +23,9 @@ Generated: 2026-09-13T15:34:16-04:00
 
 ## Downstream ID gate
 
-- Activated questions: 239
-- New pulmonary-picture additions: 20
-- Distinct activated source groups: 239
+- Activated questions: 252
+- New pulmonary-picture additions: 33
+- Distinct activated source groups: 252
 - Manual-review exclusions: 19
 - Repeated modality/answer concepts not duplicated in the bank: 14
 - Question bank schema: 2
@@ -33,22 +33,24 @@ Generated: 2026-09-13T15:34:16-04:00
 
 ## Activated questions by modality
 
-- X-ray: 67
+- X-ray: 70
 - CT: 27
 - Histopathology: 27
-- Clinical Image: 22
+- Clinical Image: 24
 - Gross Pathology: 19
-- Histology: 15
+- Histology: 16
 - Graph: 15
 - Flow-Volume Loop: 8
 - Other: 6
+- Ultrasound: 5
 - Diagram: 4
 - Angiography: 4
 - Gross pathology: 3
 - X-ray and CT: 3
 - Micrograph: 3
+- Microscopy: 3
 - Nuclear Imaging: 2
-- Ultrasound: 2
+- Cytology: 2
 - Gross Anatomy: 1
 - Gross pathology and histology: 1
 - CT and diagram: 1
@@ -57,7 +59,6 @@ Generated: 2026-09-13T15:34:16-04:00
 - Culture and clinical specimen: 1
 - Electron Microscopy: 1
 - Map: 1
-- Microscopy: 1
 - MRI: 1
 - Echocardiography: 1
 - EKG: 1
