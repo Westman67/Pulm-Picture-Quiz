@@ -48509,10 +48509,1948 @@
         }
       },
       "builder_scored_question": false
+    },
+    {
+      "asset_id": "asset_ee6974cc71e0",
+      "source_group_id": "sg_22775e19b69b",
+      "source_id": "src_a7e4cc2e05f4",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "b-lines-lung-ultrasound.jpg",
+      "original_relative_path": "originals/b-lines-lung-ultrasound.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/b-lines-lung-ultrasound.jpg",
+      "source_sha256": "ee6974cc71e05bb309fe81f668a13397d49f3c1989afe5329f1141fb626af91e",
+      "pixel_width": 1536,
+      "pixel_height": 846,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "Ultrasound",
+      "organ_system": "Pulmonary",
+      "category": "Point-of-care ultrasound",
+      "tested_condition_structure_finding": "B-lines indicating an interstitial lung syndrome",
+      "canonical_correct_answer": "B-lines indicating an interstitial lung syndrome",
+      "accepted_answers": [],
+      "ground_truth_basis": "The Commons asset page identifies vertical B-lines on lung ultrasound in pulmonary fibrosis.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Multiple bright vertical artifacts arise from the pleural line and extend to the far field, erasing the horizontal A-line pattern.",
+      "what_student_should_recognize": "B-lines indicating an interstitial lung syndrome",
+      "lecture_context": "P15 - Approach to the Patient with Respiratory Disease and Pulmonary Preventative Care",
+      "source_document": "P15 - Approach to the Patient with Respiratory Disease and Pulmonary Preventative Care",
+      "source_type": "web original",
+      "source_aliases": [
+        ""
+      ],
+      "landing_page_url": "https://commons.wikimedia.org/wiki/File:B_lines_on_a_lung_ultrasound_of_a_patient_with_fibrosis.jpg",
+      "source_organization": "Wikimedia Commons",
+      "creator": "Tinss",
+      "displayed_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "rights_status": "cc_by_sa",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_ee6974cc71e0",
+      "quiz_safe_variant_path": "originals/b-lines-lung-ultrasound.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_ee6974cc71e0",
+          "relative_path": "originals/b-lines-lung-ultrasound.jpg",
+          "sha256": "ee6974cc71e05bb309fe81f668a13397d49f3c1989afe5329f1141fb626af91e",
+          "pixel_width": 1536,
+          "pixel_height": 846,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "options": [
+          "B-lines indicating an interstitial lung syndrome",
+          "A-lines of normally aerated lung",
+          "Pleural effusion",
+          "Lung point of pneumothorax"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Vertical hyperechoic artifacts begin at the pleural line",
+          "Artifacts extend to the bottom of the image",
+          "Horizontal A-lines are not the dominant pattern"
+        ],
+        "explanation": "The image shows multiple B-lines, a lung-ultrasound pattern of increased extravascular lung density/interstitial syndrome.",
+        "choice_rationales": [
+          "B-lines are bright vertical artifacts that arise from the pleura, reach the far field, and move with pleural motion; that is the dominant pattern here.",
+          "A-lines are repetitive horizontal reverberation artifacts beneath the pleura, not the numerous vertical rays shown here.",
+          "Pleural effusion would appear as an anechoic or hypoechoic fluid collection above the diaphragm, which is absent here.",
+          "A lung point requires an interface between sliding and non-sliding pleura; a static field of vertical B-lines does not show that transition."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "B-lines indicating an interstitial lung syndrome",
+          "required_variant": "var_identity_ee6974cc71e0",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_8fce4207e08f",
+      "source_group_id": "sg_515f4e5e89e1",
+      "source_id": "src_8bea84cf02b6",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "seashore-sign-lung-ultrasound.jpg",
+      "original_relative_path": "originals/seashore-sign-lung-ultrasound.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/seashore-sign-lung-ultrasound.jpg",
+      "source_sha256": "8fce4207e08fe4065c27b58a7f917ff04d560837620a1de2b8dee1d09d8cd8a3",
+      "pixel_width": 1536,
+      "pixel_height": 846,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "Ultrasound",
+      "organ_system": "Pulmonary",
+      "category": "Point-of-care ultrasound",
+      "tested_condition_structure_finding": "Seashore sign indicating normal lung sliding",
+      "canonical_correct_answer": "Seashore sign indicating normal lung sliding",
+      "accepted_answers": [],
+      "ground_truth_basis": "The Commons asset page identifies the M-mode seashore sign of lung sliding.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "M-mode shows parallel horizontal lines above the pleura and a granular sandy pattern below it, consistent with pleural movement.",
+      "what_student_should_recognize": "Seashore sign indicating normal lung sliding",
+      "lecture_context": "P15 - Approach to the Patient with Respiratory Disease and Pulmonary Preventative Care",
+      "source_document": "P15 - Approach to the Patient with Respiratory Disease and Pulmonary Preventative Care",
+      "source_type": "web original",
+      "source_aliases": [
+        ""
+      ],
+      "landing_page_url": "https://commons.wikimedia.org/wiki/File:Sea_shore_sign_on_a_lung_ultrasound.jpg",
+      "source_organization": "Wikimedia Commons",
+      "creator": "Tinss",
+      "displayed_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "rights_status": "cc_by_sa",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_8fce4207e08f",
+      "quiz_safe_variant_path": "originals/seashore-sign-lung-ultrasound.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_8fce4207e08f",
+          "relative_path": "originals/seashore-sign-lung-ultrasound.jpg",
+          "sha256": "8fce4207e08fe4065c27b58a7f917ff04d560837620a1de2b8dee1d09d8cd8a3",
+          "pixel_width": 1536,
+          "pixel_height": 846,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "options": [
+          "Seashore sign indicating normal lung sliding",
+          "Barcode/stratosphere sign suggesting pneumothorax",
+          "B-lines indicating interstitial syndrome",
+          "Anechoic pleural effusion"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Horizontal lines occupy the superficial static tissues",
+          "A granular pattern appears below the pleural line",
+          "The two-zone M-mode appearance implies pleural motion"
+        ],
+        "explanation": "The superficial linear pattern with granular echoes below the pleural line is the seashore sign and supports preserved lung sliding.",
+        "choice_rationales": [
+          "The normal seashore pattern combines static horizontal lines above the pleura with a granular appearance below it from lung sliding.",
+          "The barcode or stratosphere sign would show parallel horizontal lines both above and below the pleural line, without the granular lower zone.",
+          "B-lines are vertical artifacts on B-mode imaging; they are not the defining two-zone M-mode pattern tested here.",
+          "Pleural fluid would be an anechoic collection, usually above the diaphragm, rather than this M-mode sliding pattern."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Seashore sign indicating normal lung sliding",
+          "required_variant": "var_identity_8fce4207e08f",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_ecd3383d892c",
+      "source_group_id": "sg_9b6a71f51601",
+      "source_id": "src_d0cb814f9b7c",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "bronchoscopy-procedure.jpg",
+      "original_relative_path": "originals/bronchoscopy-procedure.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/bronchoscopy-procedure.jpg",
+      "source_sha256": "ecd3383d892c76391a829bcab592246f9a92aa9b266dd8b14bdc826ddd7a0c6d",
+      "pixel_width": 2700,
+      "pixel_height": 1800,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "Clinical Image",
+      "organ_system": "Pulmonary",
+      "category": "Pulmonary procedures",
+      "tested_condition_structure_finding": "Flexible bronchoscopy",
+      "canonical_correct_answer": "Flexible bronchoscopy",
+      "accepted_answers": [],
+      "ground_truth_basis": "The NIH/Commons asset description explicitly identifies physicians performing flexible bronchoscopy.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A flexible endoscope is advanced through the patient's upper airway while the operator views the airway on a monitor.",
+      "what_student_should_recognize": "Flexible bronchoscopy",
+      "lecture_context": "P33 - Otolaryngology - Upper Airway Pathology",
+      "source_document": "P33 - Otolaryngology - Upper Airway Pathology",
+      "source_type": "web original",
+      "source_aliases": [
+        ""
+      ],
+      "landing_page_url": "https://commons.wikimedia.org/wiki/File:Bronchoscopy.jpg",
+      "source_organization": "National Institutes of Health / Wikimedia Commons",
+      "creator": "U.S. National Institutes of Health",
+      "displayed_license": "Public Domain Mark 1.0 (U.S. federal work)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "rights_status": "public_domain",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_ecd3383d892c",
+      "quiz_safe_variant_path": "originals/bronchoscopy-procedure.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_ecd3383d892c",
+          "relative_path": "originals/bronchoscopy-procedure.jpg",
+          "sha256": "ecd3383d892c76391a829bcab592246f9a92aa9b266dd8b14bdc826ddd7a0c6d",
+          "pixel_width": 2700,
+          "pixel_height": 1800,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pulmonary procedure shown in this clinical photograph.",
+        "options": [
+          "Flexible bronchoscopy",
+          "Diagnostic spirometry",
+          "Thoracentesis",
+          "Chest-tube insertion"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "A flexible scope is passed through the airway",
+          "The operator controls the scope at the patient's head",
+          "Airway visualization equipment is present"
+        ],
+        "explanation": "The procedure shown is flexible bronchoscopy, which permits direct inspection and sampling of the tracheobronchial tree.",
+        "choice_rationales": [
+          "Flexible bronchoscopy uses a steerable illuminated scope introduced through the upper airway, matching the equipment and patient positioning shown.",
+          "Spirometry requires a mouthpiece connected to a flow-measuring device and a coached forced maneuver, not endoscope insertion.",
+          "Thoracentesis uses a needle or catheter through the posterolateral chest wall to sample pleural fluid, which is not shown.",
+          "Chest-tube insertion is performed through the lateral chest wall into the pleural space, not through the upper airway."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Flexible bronchoscopy",
+          "required_variant": "var_identity_ecd3383d892c",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_0c31b6a9b5d7",
+      "source_group_id": "sg_b06e60739031",
+      "source_id": "src_5db8f6903dd8",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "right-chest-tube-cxr.png",
+      "original_relative_path": "originals/right-chest-tube-cxr.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/right-chest-tube-cxr.png",
+      "source_sha256": "0c31b6a9b5d7affd2650dfd684654fcc843f8a8d78538320f1f3894bdcce9376",
+      "pixel_width": 910,
+      "pixel_height": 756,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "category": "Lines and tubes",
+      "tested_condition_structure_finding": "Right thoracostomy tube for pneumothorax",
+      "canonical_correct_answer": "Right thoracostomy tube for pneumothorax",
+      "accepted_answers": [],
+      "ground_truth_basis": "The creator's Commons asset page identifies a right chest tube placed for pneumothorax.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A large-bore radiopaque tube enters the right lateral chest and courses within the pleural space; a right pneumothorax is also visible.",
+      "what_student_should_recognize": "Right thoracostomy tube for pneumothorax",
+      "lecture_context": "P18 - Basic Interpretation of Chest X-Ray",
+      "source_document": "P18 - Basic Interpretation of Chest X-Ray",
+      "source_type": "web original",
+      "source_aliases": [
+        ""
+      ],
+      "landing_page_url": "https://commons.wikimedia.org/wiki/File:ChesttubeforRtPneumo.png",
+      "source_organization": "Wikimedia Commons",
+      "creator": "James Heilman, MD",
+      "displayed_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "rights_status": "cc_by_sa",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_0c31b6a9b5d7",
+      "quiz_safe_variant_path": "originals/right-chest-tube-cxr.png",
+      "variants": [
+        {
+          "variant_id": "var_identity_0c31b6a9b5d7",
+          "relative_path": "originals/right-chest-tube-cxr.png",
+          "sha256": "0c31b6a9b5d7affd2650dfd684654fcc843f8a8d78538320f1f3894bdcce9376",
+          "pixel_width": 910,
+          "pixel_height": 756,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "options": [
+          "Right thoracostomy tube for pneumothorax",
+          "Right internal-jugular central venous catheter",
+          "Endotracheal tube",
+          "Nasogastric tube"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The tube enters through the lateral chest wall",
+          "It follows the pleural space rather than the mediastinum",
+          "A right pneumothorax is present"
+        ],
+        "explanation": "The radiopaque device is a right thoracostomy tube positioned in the pleural space to treat pneumothorax.",
+        "choice_rationales": [
+          "A thoracostomy tube enters laterally and courses in the pleural space, matching the visible tube and associated pneumothorax.",
+          "A central venous catheter enters from the neck or subclavian region and terminates near the lower SVC, not along the pleural cavity.",
+          "An endotracheal tube descends centrally within the tracheal air column and should terminate above the carina.",
+          "A nasogastric tube follows the esophagus, crosses the diaphragm, and terminates below it in the stomach."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Right thoracostomy tube for pneumothorax",
+          "required_variant": "var_identity_0c31b6a9b5d7",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_75e53a6f03c6",
+      "source_group_id": "sg_6971cacfbd25",
+      "source_id": "src_d32c93e07609",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "central-venous-catheter-cxr.jpg",
+      "original_relative_path": "originals/central-venous-catheter-cxr.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/central-venous-catheter-cxr.jpg",
+      "source_sha256": "75e53a6f03c6e9a85f175af336f11fc516ac282708a9c46b216e8542fdcfe4d0",
+      "pixel_width": 2837,
+      "pixel_height": 2864,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "category": "Lines and tubes",
+      "tested_condition_structure_finding": "Central venous catheter",
+      "canonical_correct_answer": "Central venous catheter",
+      "accepted_answers": [],
+      "ground_truth_basis": "The Commons asset page explicitly identifies the visible line as a central venous catheter.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A radiopaque catheter travels from the upper chest/neck toward the central venous circulation without entering the airway or pleural space.",
+      "what_student_should_recognize": "Central venous catheter",
+      "lecture_context": "P18 - Basic Interpretation of Chest X-Ray",
+      "source_document": "P18 - Basic Interpretation of Chest X-Ray",
+      "source_type": "web original",
+      "source_aliases": [
+        ""
+      ],
+      "landing_page_url": "https://commons.wikimedia.org/wiki/File:Human_chest_x-ray,_adult_male,_with_central_venous_catheter.jpg",
+      "source_organization": "Wikimedia Commons",
+      "creator": "Wikimpan",
+      "displayed_license": "Public domain medical image (Poland)",
+      "license_url": "https://commons.wikimedia.org/wiki/Template:PD-medical",
+      "rights_status": "public_domain",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_75e53a6f03c6",
+      "quiz_safe_variant_path": "originals/central-venous-catheter-cxr.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_75e53a6f03c6",
+          "relative_path": "originals/central-venous-catheter-cxr.jpg",
+          "sha256": "75e53a6f03c6e9a85f175af336f11fc516ac282708a9c46b216e8542fdcfe4d0",
+          "pixel_width": 2837,
+          "pixel_height": 2864,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "options": [
+          "Central venous catheter",
+          "Chest tube",
+          "Endotracheal tube",
+          "Nasogastric tube"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The catheter enters from the upper chest/neck",
+          "Its course is central and vascular",
+          "It does not track through the trachea, esophagus, or pleural space"
+        ],
+        "explanation": "The chest radiograph demonstrates a central venous catheter coursing toward the central veins.",
+        "choice_rationales": [
+          "A central venous catheter enters from the neck or upper chest and courses toward the SVC, matching the visible line.",
+          "A chest tube enters through the lateral thorax and follows the pleural space, unlike this central vascular course.",
+          "An endotracheal tube is centered in the tracheal air column with its tip above the carina, which is not the course shown.",
+          "A nasogastric tube descends in the esophagus and crosses below the diaphragm, which this catheter does not do."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Central venous catheter",
+          "required_variant": "var_identity_75e53a6f03c6",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_578e599af223",
+      "source_group_id": "sg_7d286cd41722",
+      "source_id": "src_5cd2489a4747",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "chest-drain-apparatus.jpg",
+      "original_relative_path": "originals/chest-drain-apparatus.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/chest-drain-apparatus.jpg",
+      "source_sha256": "578e599af22323bc8e8fffeaf87ba2ea4bb8cd8efbe17d92c6e8f0dfe7605293",
+      "pixel_width": 768,
+      "pixel_height": 1024,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "Clinical Image",
+      "organ_system": "Pulmonary",
+      "category": "Pulmonary equipment",
+      "tested_condition_structure_finding": "Water-seal chest drainage system",
+      "canonical_correct_answer": "Water-seal chest drainage system",
+      "accepted_answers": [],
+      "ground_truth_basis": "The creator's Commons asset page identifies the two-bottle thoracic drainage apparatus.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Large collection bottles are connected by tubing in a dependent drainage and water-seal arrangement.",
+      "what_student_should_recognize": "Water-seal chest drainage system",
+      "lecture_context": "P18 - Basic Interpretation of Chest X-Ray",
+      "source_document": "P18 - Basic Interpretation of Chest X-Ray",
+      "source_type": "web original",
+      "source_aliases": [
+        ""
+      ],
+      "landing_page_url": "https://commons.wikimedia.org/wiki/File:Chest_drain_2_fluids.jpg",
+      "source_organization": "Wikimedia Commons",
+      "creator": "Pgm78at",
+      "displayed_license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "rights_status": "public_domain",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_578e599af223",
+      "quiz_safe_variant_path": "originals/chest-drain-apparatus.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_578e599af223",
+          "relative_path": "originals/chest-drain-apparatus.jpg",
+          "sha256": "578e599af22323bc8e8fffeaf87ba2ea4bb8cd8efbe17d92c6e8f0dfe7605293",
+          "pixel_width": 768,
+          "pixel_height": 1024,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pulmonary device shown in this photograph.",
+        "options": [
+          "Water-seal chest drainage system",
+          "Incentive spirometer",
+          "Peak-flow meter",
+          "Jet nebulizer"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Dependent collection bottles contain pleural fluid",
+          "Tubing links the patient side to a water-seal chamber",
+          "The apparatus is designed for continuous thoracic drainage"
+        ],
+        "explanation": "The photograph shows a water-seal chest drainage system used with a thoracostomy tube.",
+        "choice_rationales": [
+          "A chest-drain system uses dependent collection and water-seal chambers connected by tubing, matching the photographed apparatus.",
+          "An incentive spirometer is a handheld inspiratory-training device with a mouthpiece and rising marker, not fluid collection bottles.",
+          "A peak-flow meter is a small handheld expiratory-flow gauge and does not contain drainage chambers.",
+          "A jet nebulizer has a medication cup, air tubing, and mask or mouthpiece rather than large fluid-collection bottles."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Water-seal chest drainage system",
+          "required_variant": "var_identity_578e599af223",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_eb46780f1fc2",
+      "source_group_id": "sg_3d39ea41db96",
+      "source_id": "src_410b1151df9a",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "omega-epiglottis.jpg",
+      "original_relative_path": "originals/omega-epiglottis.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/omega-epiglottis.jpg",
+      "source_sha256": "eb46780f1fc273a0d94f666c4499ca45ac0b938da6c772b9ff351fa12c5f2aae",
+      "pixel_width": 1373,
+      "pixel_height": 1000,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "Clinical Image",
+      "organ_system": "Pulmonary",
+      "category": "Upper-airway endoscopy",
+      "tested_condition_structure_finding": "Omega-shaped epiglottis in laryngomalacia",
+      "canonical_correct_answer": "Omega-shaped epiglottis in laryngomalacia",
+      "accepted_answers": [],
+      "ground_truth_basis": "The verified P33 picture manifest identifies an omega-shaped epiglottis with supraglottic collapse.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "The epiglottis is tightly curled into an omega configuration above a narrowed laryngeal inlet.",
+      "what_student_should_recognize": "Omega-shaped epiglottis in laryngomalacia",
+      "lecture_context": "P33 - Otolaryngology - Upper Airway Pathology",
+      "source_document": "P33 - Otolaryngology - Upper Airway Pathology",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Omega-Shaped Epiglottis.jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_eb46780f1fc2",
+      "quiz_safe_variant_path": "originals/omega-epiglottis.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_eb46780f1fc2",
+          "relative_path": "originals/omega-epiglottis.jpg",
+          "sha256": "eb46780f1fc273a0d94f666c4499ca45ac0b938da6c772b9ff351fa12c5f2aae",
+          "pixel_width": 1373,
+          "pixel_height": 1000,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "options": [
+          "Omega-shaped epiglottis in laryngomalacia",
+          "Acute epiglottitis",
+          "Bilateral vocal-fold nodules",
+          "Peritonsillar abscess"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The epiglottic margins curl inward",
+          "The laryngeal inlet is narrowed by supraglottic tissue",
+          "There is no diffuse cherry-red epiglottic swelling"
+        ],
+        "explanation": "The endoscopic image shows an omega-shaped epiglottis, a classic laryngomalacia morphology.",
+        "choice_rationales": [
+          "Laryngomalacia commonly produces a tightly curled omega-shaped epiglottis and dynamic supraglottic collapse, matching this view.",
+          "Acute epiglottitis causes a diffusely enlarged, edematous, erythematous epiglottis rather than a thin curled omega shape.",
+          "Vocal-fold nodules are paired lesions on the true vocal folds, which are not the dominant supraglottic finding here.",
+          "A peritonsillar abscess produces unilateral tonsillar bulging and uvular deviation in the oropharynx, not this laryngeal view."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Omega-shaped epiglottis in laryngomalacia",
+          "required_variant": "var_identity_eb46780f1fc2",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_a64b9e4c63db",
+      "source_group_id": "sg_831ecab63081",
+      "source_id": "src_9ae2a8f227cf",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "vocal-cord-nodules.png",
+      "original_relative_path": "originals/vocal-cord-nodules.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/vocal-cord-nodules.png",
+      "source_sha256": "a64b9e4c63db32bfdda401d2450b88be87a8762e3e8e6b6044315607279b0332",
+      "pixel_width": 399,
+      "pixel_height": 316,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "Clinical Image",
+      "organ_system": "Pulmonary",
+      "category": "Upper-airway endoscopy",
+      "tested_condition_structure_finding": "Bilateral vocal-fold nodules",
+      "canonical_correct_answer": "Bilateral vocal-fold nodules",
+      "accepted_answers": [],
+      "ground_truth_basis": "The verified P33 picture manifest identifies paired vocal-fold nodules from phonotrauma.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Small symmetric pale lesions are present at the opposing mid-membranous edges of both true vocal folds.",
+      "what_student_should_recognize": "Bilateral vocal-fold nodules",
+      "lecture_context": "P33 - Otolaryngology - Upper Airway Pathology",
+      "source_document": "P33 - Otolaryngology - Upper Airway Pathology",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/P002 Vocal Cord Nodules Gross.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_a64b9e4c63db",
+      "quiz_safe_variant_path": "originals/vocal-cord-nodules.png",
+      "variants": [
+        {
+          "variant_id": "var_identity_a64b9e4c63db",
+          "relative_path": "originals/vocal-cord-nodules.png",
+          "sha256": "a64b9e4c63db32bfdda401d2450b88be87a8762e3e8e6b6044315607279b0332",
+          "pixel_width": 399,
+          "pixel_height": 316,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "options": [
+          "Bilateral vocal-fold nodules",
+          "Unilateral vocal-fold polyp",
+          "Reinke edema",
+          "Laryngeal papillomatosis"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Lesions are bilateral and symmetric",
+          "They oppose one another at the mid-membranous folds",
+          "The background mucosa lacks diffuse polypoid edema or multiple papillae"
+        ],
+        "explanation": "The laryngoscopic image demonstrates paired bilateral vocal-fold nodules at the typical contact points.",
+        "choice_rationales": [
+          "Vocal-fold nodules are classically small, bilateral, and symmetric at the junction of the anterior and middle thirds, as shown.",
+          "A vocal-fold polyp is usually unilateral and more exophytic, not a matched pair of opposing lesions.",
+          "Reinke edema produces diffuse boggy swelling along the membranous folds rather than discrete symmetric nodules.",
+          "Papillomatosis produces multiple irregular frond-like lesions, not two smooth opposing nodules."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Bilateral vocal-fold nodules",
+          "required_variant": "var_identity_a64b9e4c63db",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_f6f8f8447b68",
+      "source_group_id": "sg_7728157daec1",
+      "source_id": "src_d3693d701478",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "obstructive-flow-volume-loop.jpg",
+      "original_relative_path": "originals/obstructive-flow-volume-loop.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/obstructive-flow-volume-loop.jpg",
+      "source_sha256": "f6f8f8447b68ce0238c997696c817c42e00909f31d1ab5607b14e31744dc2cc7",
+      "pixel_width": 700,
+      "pixel_height": 496,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "Flow-Volume Loop",
+      "organ_system": "Pulmonary",
+      "category": "Pulmonary function testing",
+      "tested_condition_structure_finding": "Small-airway obstructive flow-volume loop",
+      "canonical_correct_answer": "Small-airway obstructive flow-volume loop",
+      "accepted_answers": [],
+      "ground_truth_basis": "The verified P19/P37 picture manifests identify the scooped expiratory limb and air trapping of small-airway obstruction.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "The expiratory limb is concave with reduced flow, and the loop is shifted toward larger residual volume/air trapping.",
+      "what_student_should_recognize": "Small-airway obstructive flow-volume loop",
+      "lecture_context": "P37 - Advanced Spirometry Review - Interactive Workshop",
+      "source_document": "P37 - Advanced Spirometry Review - Interactive Workshop",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Flow-Volume-Loop-for-Small-Airway-Obstructive-Lung-Disease.jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_a1c0aa273f76",
+      "quiz_safe_variant_path": "variants/var_a1c0aa273f76.png",
+      "variants": [
+        {
+          "variant_id": "var_a1c0aa273f76",
+          "relative_path": "variants/var_a1c0aa273f76.png",
+          "sha256": "d0f59a5bb4820156444210d45de3162c3e979cad64c6d132bb776d0d594b9ca0",
+          "pixel_width": 485,
+          "pixel_height": 395,
+          "transformation_recipe": {
+            "crop": [
+              0,
+              45,
+              485,
+              440
+            ]
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Interpret the flow-volume loop shown.",
+        "options": [
+          "Small-airway obstructive flow-volume loop",
+          "Restrictive flow-volume loop",
+          "Fixed upper-airway obstruction",
+          "Variable extrathoracic obstruction"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Expiratory limb is scooped and concave",
+          "Residual volume is increased",
+          "Inspiratory flow is relatively preserved"
+        ],
+        "explanation": "The loop has the characteristic concave expiratory limb and air-trapping shift of obstructive disease.",
+        "choice_rationales": [
+          "Obstructive disease produces reduced expiratory flow with a scooped concave expiratory limb and often increased residual volume, all shown here.",
+          "Restriction produces a small narrow loop with preserved contour and reduced total volume, not prominent expiratory scooping with air trapping.",
+          "Fixed upper-airway obstruction plateaus both inspiratory and expiratory limbs, unlike this selectively concave expiration.",
+          "Variable extrathoracic obstruction predominantly flattens the inspiratory limb, which remains relatively preserved here."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Small-airway obstructive flow-volume loop",
+          "required_variant": "var_a1c0aa273f76",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_e588e4ed049d",
+      "source_group_id": "sg_b1ca4a3f7fa4",
+      "source_id": "src_786485b1c49d",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "fixed-upper-airway-loop.jpg",
+      "original_relative_path": "originals/fixed-upper-airway-loop.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/fixed-upper-airway-loop.jpg",
+      "source_sha256": "e588e4ed049d7e9fabe9740283bac60767d1fabf697c1d625dc025e8cc927ecc",
+      "pixel_width": 700,
+      "pixel_height": 496,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "Flow-Volume Loop",
+      "organ_system": "Pulmonary",
+      "category": "Pulmonary function testing",
+      "tested_condition_structure_finding": "Fixed upper-airway obstruction",
+      "canonical_correct_answer": "Fixed upper-airway obstruction",
+      "accepted_answers": [],
+      "ground_truth_basis": "The verified P37 picture manifest identifies flattening of both limbs in fixed upper-airway obstruction.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Both the expiratory and inspiratory limbs form plateaus, with relatively preserved lung volume.",
+      "what_student_should_recognize": "Fixed upper-airway obstruction",
+      "lecture_context": "P37 - Advanced Spirometry Review - Interactive Workshop",
+      "source_document": "P37 - Advanced Spirometry Review - Interactive Workshop",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Flow-Volume-Loop-for-Fixed-Immobile-Upper-Airway-Obstruction.jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_b6f1979a696f",
+      "quiz_safe_variant_path": "variants/var_b6f1979a696f.png",
+      "variants": [
+        {
+          "variant_id": "var_b6f1979a696f",
+          "relative_path": "variants/var_b6f1979a696f.png",
+          "sha256": "1a0a95999d627699d12052d2d6c429ee82c4fc659ee0fccab7dc96d0293b739c",
+          "pixel_width": 485,
+          "pixel_height": 395,
+          "transformation_recipe": {
+            "crop": [
+              0,
+              45,
+              485,
+              440
+            ]
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Interpret the flow-volume loop shown.",
+        "options": [
+          "Fixed upper-airway obstruction",
+          "Variable extrathoracic obstruction",
+          "Variable intrathoracic obstruction",
+          "Small-airway obstruction"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Expiratory flow plateaus",
+          "Inspiratory flow also plateaus",
+          "The loop has a box-like contour"
+        ],
+        "explanation": "Flattening of both inspiratory and expiratory limbs is the classic flow-volume-loop pattern of a fixed large-airway obstruction.",
+        "choice_rationales": [
+          "A fixed lesion limits flow in both phases, producing the box-like bilateral plateaus visible here.",
+          "Variable extrathoracic obstruction primarily flattens inspiration while expiration is relatively preserved.",
+          "Variable intrathoracic obstruction primarily flattens expiration while inspiration is relatively preserved.",
+          "Small-airway obstruction causes a scooped concave expiratory limb rather than flat plateaus of both limbs."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Fixed upper-airway obstruction",
+          "required_variant": "var_b6f1979a696f",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_27154896066b",
+      "source_group_id": "sg_40cc024d5e2a",
+      "source_id": "src_ffd879524723",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "variable-intrathoracic-loop.jpg",
+      "original_relative_path": "originals/variable-intrathoracic-loop.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/variable-intrathoracic-loop.jpg",
+      "source_sha256": "27154896066bf2b0f92e12fa8f1b501a5c37be6821d8c9debce10279cabb97f4",
+      "pixel_width": 700,
+      "pixel_height": 496,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "Flow-Volume Loop",
+      "organ_system": "Pulmonary",
+      "category": "Pulmonary function testing",
+      "tested_condition_structure_finding": "Variable intrathoracic obstruction",
+      "canonical_correct_answer": "Variable intrathoracic obstruction",
+      "accepted_answers": [],
+      "ground_truth_basis": "The verified P37 picture manifest identifies expiratory-limb limitation from variable intrathoracic obstruction.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Expiration develops a broad flow plateau while the inspiratory limb remains comparatively rounded and unrestricted.",
+      "what_student_should_recognize": "Variable intrathoracic obstruction",
+      "lecture_context": "P37 - Advanced Spirometry Review - Interactive Workshop",
+      "source_document": "P37 - Advanced Spirometry Review - Interactive Workshop",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Flow-Volume-Loop-for-Mobile-Variable-Intrathoracic-Obstruction.jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_5648d001ad39",
+      "quiz_safe_variant_path": "variants/var_5648d001ad39.png",
+      "variants": [
+        {
+          "variant_id": "var_5648d001ad39",
+          "relative_path": "variants/var_5648d001ad39.png",
+          "sha256": "ca55b29afb00d3ab4af1ee97e1d07e0c5ec9afb1e4d99f8b224a270d61fa53f6",
+          "pixel_width": 485,
+          "pixel_height": 395,
+          "transformation_recipe": {
+            "crop": [
+              0,
+              45,
+              485,
+              440
+            ]
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Interpret the flow-volume loop shown.",
+        "options": [
+          "Variable intrathoracic obstruction",
+          "Variable extrathoracic obstruction",
+          "Fixed upper-airway obstruction",
+          "Restrictive lung disease"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Expiratory limb is flattened",
+          "Inspiratory limb is relatively preserved",
+          "Lung volumes are not markedly reduced"
+        ],
+        "explanation": "Selective expiratory flattening supports a variable intrathoracic large-airway obstruction.",
+        "choice_rationales": [
+          "Intrathoracic dynamic collapse worsens during expiration, producing the selective expiratory plateau shown.",
+          "Variable extrathoracic obstruction instead limits inspiration and flattens the inspiratory limb.",
+          "A fixed lesion flattens both inspiratory and expiratory limbs, not expiration alone.",
+          "Restriction produces a reduced-volume narrow loop without a selective expiratory plateau."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Variable intrathoracic obstruction",
+          "required_variant": "var_5648d001ad39",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_a00e8e3cee8e",
+      "source_group_id": "sg_ce449b113573",
+      "source_id": "src_990d2f41f813",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "bronchodilator-reversibility-loop.png",
+      "original_relative_path": "originals/bronchodilator-reversibility-loop.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/bronchodilator-reversibility-loop.png",
+      "source_sha256": "a00e8e3cee8eb462ec74a6b56d2d75905c232f7383fb4617ca2f3cd9128b7229",
+      "pixel_width": 619,
+      "pixel_height": 435,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "Flow-Volume Loop",
+      "organ_system": "Pulmonary",
+      "category": "Pulmonary function testing",
+      "tested_condition_structure_finding": "Reversible airflow obstruction after bronchodilator",
+      "canonical_correct_answer": "Reversible airflow obstruction after bronchodilator",
+      "accepted_answers": [],
+      "ground_truth_basis": "The verified P34/P37 picture manifests identify improved post-bronchodilator flow in reversible asthma obstruction.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "After a beta-2 agonist, peak expiratory flow rises and the expiratory contour approaches the normal reference loop.",
+      "what_student_should_recognize": "Reversible airflow obstruction after bronchodilator",
+      "lecture_context": "P37 - Advanced Spirometry Review - Interactive Workshop",
+      "source_document": "P37 - Advanced Spirometry Review - Interactive Workshop",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Reversible-Obstruction-on-Spirometry-in-Patients-with-Asthma.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_92d365288db5",
+      "quiz_safe_variant_path": "variants/var_92d365288db5.png",
+      "variants": [
+        {
+          "variant_id": "var_92d365288db5",
+          "relative_path": "variants/var_92d365288db5.png",
+          "sha256": "90cbd18e2a0d5b066cf0cd8d18b11356b149bf975a7489119929bdfe021e65fe",
+          "pixel_width": 619,
+          "pixel_height": 435,
+          "transformation_recipe": {
+            "masks": [
+              [
+                0,
+                0,
+                619,
+                50
+              ],
+              [
+                42,
+                375,
+                270,
+                435
+              ],
+              [
+                385,
+                375,
+                619,
+                435
+              ],
+              [
+                0,
+                417,
+                100,
+                435
+              ]
+            ]
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "What physiologic response is demonstrated by these paired flow-volume loops?",
+        "options": [
+          "Reversible airflow obstruction after bronchodilator",
+          "Fixed airflow obstruction without response",
+          "Restrictive ventilatory defect",
+          "Poor effort with early termination"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The post-treatment expiratory loop is taller",
+          "Expiratory concavity is reduced after beta-2 agonist",
+          "The post-treatment curve approaches the normal reference"
+        ],
+        "explanation": "The paired loops show substantial improvement after beta-2 agonist, supporting reversible airflow obstruction as in asthma.",
+        "choice_rationales": [
+          "A clear post-bronchodilator increase in peak flow and restoration of expiratory contour demonstrates reversibility.",
+          "Fixed obstruction would show little meaningful change in expiratory flow or contour after bronchodilator.",
+          "Restriction would chiefly reduce loop volume while preserving shape rather than normalize a scooped curve after bronchodilator.",
+          "Early termination truncates the expiratory maneuver and does not produce a reproducible post-treatment normalization of the loop."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Reversible airflow obstruction after bronchodilator",
+          "required_variant": "var_92d365288db5",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_7e1b7eb08773",
+      "source_group_id": "sg_9cf895e6f74e",
+      "source_id": "src_aea7f471ff40",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "rv-pressure-overload-echo.jpg",
+      "original_relative_path": "originals/rv-pressure-overload-echo.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/rv-pressure-overload-echo.jpg",
+      "source_sha256": "7e1b7eb0877376a82c296256bd579cfb7a3f17cc043b087b66bf5b0b1a7d1bdd",
+      "pixel_width": 1486,
+      "pixel_height": 1000,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "Echocardiography",
+      "organ_system": "Pulmonary",
+      "category": "Pulmonary hypertension",
+      "tested_condition_structure_finding": "Right-ventricular pressure overload with septal flattening",
+      "canonical_correct_answer": "Right-ventricular pressure overload with septal flattening",
+      "accepted_answers": [],
+      "ground_truth_basis": "The verified P32 picture manifest identifies an enlarged RV and flattened/compressed LV on short-axis echocardiography.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "The right ventricle is enlarged and the interventricular septum is flattened, creating a D-shaped left ventricle in short axis.",
+      "what_student_should_recognize": "Right-ventricular pressure overload with septal flattening",
+      "lecture_context": "P32 - Pulmonary Hypertension - A Clinical Reasoning Approach",
+      "source_document": "P32 - Pulmonary Hypertension - A Clinical Reasoning Approach",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Echocardiogram in Pulmonary Artery Hypertension (2:3).jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_7e1b7eb08773",
+      "quiz_safe_variant_path": "originals/rv-pressure-overload-echo.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_7e1b7eb08773",
+          "relative_path": "originals/rv-pressure-overload-echo.jpg",
+          "sha256": "7e1b7eb0877376a82c296256bd579cfb7a3f17cc043b087b66bf5b0b1a7d1bdd",
+          "pixel_width": 1486,
+          "pixel_height": 1000,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the principal echocardiographic finding shown.",
+        "options": [
+          "Right-ventricular pressure overload with septal flattening",
+          "Isolated left-ventricular hypertrophy",
+          "Large pericardial effusion",
+          "Normal parasternal short-axis view"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The right ventricle is enlarged",
+          "The interventricular septum is flattened",
+          "The left ventricle has a D-shaped short-axis contour"
+        ],
+        "explanation": "The D-shaped left ventricle and enlarged right ventricle indicate right-sided pressure overload, a key echocardiographic clue to pulmonary hypertension.",
+        "choice_rationales": [
+          "Right-sided pressure overload flattens the septum and deforms the LV into a D shape while enlarging the RV, matching the image.",
+          "Isolated LV hypertrophy would thicken the LV walls without producing an enlarged RV and septal flattening toward the LV.",
+          "A pericardial effusion would appear as an anechoic fluid rim around the heart, which is not present.",
+          "A normal short-axis LV is round and the RV is smaller; the marked septal flattening here is abnormal."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Right-ventricular pressure overload with septal flattening",
+          "required_variant": "var_identity_7e1b7eb08773",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_ab06707700a7",
+      "source_group_id": "sg_ed5923fe4164",
+      "source_id": "src_20ec92527bcf",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "right-heart-strain-ecg.jpg",
+      "original_relative_path": "originals/right-heart-strain-ecg.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/right-heart-strain-ecg.jpg",
+      "source_sha256": "ab06707700a76beaaa916b2eb101f312f2c07d3d10551158ec43de4e6715ba35",
+      "pixel_width": 1600,
+      "pixel_height": 978,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "EKG",
+      "organ_system": "Pulmonary",
+      "category": "Pulmonary hypertension",
+      "tested_condition_structure_finding": "Right-ventricular hypertrophy/strain pattern",
+      "canonical_correct_answer": "Right-ventricular hypertrophy/strain pattern",
+      "accepted_answers": [],
+      "ground_truth_basis": "The verified P32 picture manifest identifies a right-axis/right-heart-strain ECG in pulmonary hypertension.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "The tracing preserves standard 12-lead order and calibration and shows right-axis deviation with anterior right-precordial repolarization abnormalities.",
+      "what_student_should_recognize": "Right-ventricular hypertrophy/strain pattern",
+      "lecture_context": "P32 - Pulmonary Hypertension - A Clinical Reasoning Approach",
+      "source_document": "P32 - Pulmonary Hypertension - A Clinical Reasoning Approach",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/ECG in Pulmonary Hypertension Secondary to an Atrial Septal Defect.jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_ab06707700a7",
+      "quiz_safe_variant_path": "originals/right-heart-strain-ecg.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_ab06707700a7",
+          "relative_path": "originals/right-heart-strain-ecg.jpg",
+          "sha256": "ab06707700a76beaaa916b2eb101f312f2c07d3d10551158ec43de4e6715ba35",
+          "pixel_width": 1600,
+          "pixel_height": 978,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the cardiopulmonary ECG pattern shown.",
+        "options": [
+          "Right-ventricular hypertrophy/strain pattern",
+          "Diffuse acute pericarditis",
+          "Left bundle-branch block",
+          "Hyperkalemia with peaked T waves"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "QRS axis is rightward",
+          "Right-precordial leads show a right-heart strain morphology",
+          "Repolarization abnormalities are regional rather than diffuse"
+        ],
+        "explanation": "The preserved 12-lead tracing shows a rightward axis and right-precordial strain pattern compatible with pulmonary hypertension.",
+        "choice_rationales": [
+          "Right-axis deviation with right-precordial dominant forces and strain-type repolarization changes supports RV hypertrophy/strain.",
+          "Acute pericarditis causes widespread concave ST elevation and PR depression, not this right-sided pressure pattern.",
+          "Left bundle-branch block requires a broad QRS with characteristic lateral notching and discordance; the QRS duration here is not frankly prolonged.",
+          "Hyperkalemia produces diffuse narrow peaked T waves and progressive conduction slowing, features not dominant in this tracing."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Right-ventricular hypertrophy/strain pattern",
+          "required_variant": "var_identity_ab06707700a7",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_026b57af8d1c",
+      "source_group_id": "sg_b59536f50858",
+      "source_id": "src_0187921345ca",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "spirometry-procedure.png",
+      "original_relative_path": "originals/spirometry-procedure.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/spirometry-procedure.png",
+      "source_sha256": "026b57af8d1ca794920f3dd3c172ca75b3153e8a6296fdeb3f55e57092506ca3",
+      "pixel_width": 1209,
+      "pixel_height": 801,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "Clinical Image",
+      "organ_system": "Pulmonary",
+      "category": "Pulmonary function testing",
+      "tested_condition_structure_finding": "Diagnostic spirometry",
+      "canonical_correct_answer": "Diagnostic spirometry",
+      "accepted_answers": [],
+      "ground_truth_basis": "The verified P37 picture manifest identifies the patient position and equipment for a coached forced spirometry maneuver.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A seated patient seals the lips around a filtered mouthpiece connected to a desktop spirometer while wearing a nose clip.",
+      "what_student_should_recognize": "Diagnostic spirometry",
+      "lecture_context": "P37 - Advanced Spirometry Review - Interactive Workshop",
+      "source_document": "P37 - Advanced Spirometry Review - Interactive Workshop",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/P297 Spirometry.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_026b57af8d1c",
+      "quiz_safe_variant_path": "originals/spirometry-procedure.png",
+      "variants": [
+        {
+          "variant_id": "var_identity_026b57af8d1c",
+          "relative_path": "originals/spirometry-procedure.png",
+          "sha256": "026b57af8d1ca794920f3dd3c172ca75b3153e8a6296fdeb3f55e57092506ca3",
+          "pixel_width": 1209,
+          "pixel_height": 801,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pulmonary function procedure shown.",
+        "options": [
+          "Diagnostic spirometry",
+          "Peak expiratory flow monitoring",
+          "Incentive spirometry",
+          "Bronchoprovocation by exercise"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The mouthpiece connects to a computerized flow-measuring system",
+          "A nose clip prevents nasal airflow",
+          "The setup supports a coached forced expiratory maneuver"
+        ],
+        "explanation": "The image shows the standard setup for diagnostic spirometry and a coached forced respiratory maneuver.",
+        "choice_rationales": [
+          "Diagnostic spirometry uses a sealed mouthpiece, nose clip, and calibrated flow-recording system, exactly as shown.",
+          "Peak-flow monitoring typically uses a small handheld mechanical meter without this computerized testing setup.",
+          "Incentive spirometry is a bedside inspiratory-training device with a visual volume/flow target, not a diagnostic recording system.",
+          "Exercise bronchoprovocation requires an exercise protocol and serial spirometry; no exercise equipment is shown here."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Diagnostic spirometry",
+          "required_variant": "var_identity_026b57af8d1c",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_df477fdfa11d",
+      "source_group_id": "sg_b84b5123e278",
+      "source_id": "src_ccbde384bd8d",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "golden-s-sign.jpg",
+      "original_relative_path": "originals/golden-s-sign.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/golden-s-sign.jpg",
+      "source_sha256": "df477fdfa11dd56b853e417a33fd822f821f320889d1c55ab0ad0c8b12e6d42a",
+      "pixel_width": 787,
+      "pixel_height": 323,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "X-ray and CT",
+      "organ_system": "Pulmonary",
+      "category": "Thoracic imaging signs",
+      "tested_condition_structure_finding": "Golden S sign from right-upper-lobe collapse around a hilar mass",
+      "canonical_correct_answer": "Golden S sign from right-upper-lobe collapse around a hilar mass",
+      "accepted_answers": [],
+      "ground_truth_basis": "The existing verified P27.2 web manifest identifies Figure 17 as the Golden S sign from RUL atelectasis around a hilar mass.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "The elevated minor fissure has a concave central contour around a right hilar mass, producing the characteristic reverse-S configuration.",
+      "what_student_should_recognize": "Golden S sign from right-upper-lobe collapse around a hilar mass",
+      "lecture_context": "P27.2 - Chest X-Ray Final Review",
+      "source_document": "P27.2 - Chest X-Ray Final Review",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/P27.2 - Chest X-Ray Final Review/Golden S Sign - Right Upper Lobe Atelectasis with Hilar Mass.jpg"
+      ],
+      "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6893008/",
+      "source_organization": "Insights into Imaging",
+      "creator": "Alessandra Chiarenza et al.",
+      "displayed_license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "rights_status": "cc_by",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_df477fdfa11d",
+      "quiz_safe_variant_path": "originals/golden-s-sign.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_df477fdfa11d",
+          "relative_path": "originals/golden-s-sign.jpg",
+          "sha256": "df477fdfa11dd56b853e417a33fd822f821f320889d1c55ab0ad0c8b12e6d42a",
+          "pixel_width": 787,
+          "pixel_height": 323,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "options": [
+          "Golden S sign from right-upper-lobe collapse around a hilar mass",
+          "Hampton hump from pulmonary infarction",
+          "Westermark sign from pulmonary embolism",
+          "Air-crescent sign in aspergillosis"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The right upper lobe is volume depleted",
+          "The minor fissure is displaced upward",
+          "A central hilar mass deforms the fissure into an S contour"
+        ],
+        "explanation": "The combination of right-upper-lobe atelectasis and a central hilar mass produces the Golden S sign.",
+        "choice_rationales": [
+          "The Golden S sign is formed when an elevated fissure from RUL collapse curves around a central obstructing mass, as shown.",
+          "A Hampton hump is a peripheral pleural-based wedge-shaped opacity, not a deformed fissure surrounding a hilar mass.",
+          "Westermark sign is regional oligemia with reduced vascular markings distal to embolic obstruction, not lobar collapse.",
+          "An air-crescent sign is a crescent of air around an intracavitary or necrotic focus, which is absent here."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Golden S sign from right-upper-lobe collapse around a hilar mass",
+          "required_variant": "var_identity_df477fdfa11d",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_6d1cd0584951",
+      "source_group_id": "sg_aadd7222e26c",
+      "source_id": "src_032b4d73373b",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "calcified-pleural-plaque.jpg",
+      "original_relative_path": "originals/calcified-pleural-plaque.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/calcified-pleural-plaque.jpg",
+      "source_sha256": "6d1cd0584951ce5c6b055d28049f28914b4173316a99b52b6038aa5a75f3fa3e",
+      "pixel_width": 1982,
+      "pixel_height": 1833,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "category": "Occupational lung disease",
+      "tested_condition_structure_finding": "Calcified pleural plaque from asbestos exposure",
+      "canonical_correct_answer": "Calcified pleural plaque from asbestos exposure",
+      "accepted_answers": [],
+      "ground_truth_basis": "The existing verified P27.2 web manifest identifies the calcified diaphragmatic pleural plaque.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Dense plaque-like calcification follows the diaphragmatic pleural surface rather than lying within lung parenchyma.",
+      "what_student_should_recognize": "Calcified pleural plaque from asbestos exposure",
+      "lecture_context": "P27.2 - Chest X-Ray Final Review",
+      "source_document": "P27.2 - Chest X-Ray Final Review",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/P27.2 - Chest X-Ray Final Review/Calcified Pleural Plaque - Chest Radiograph.jpg"
+      ],
+      "landing_page_url": "https://commons.wikimedia.org/wiki/File:Asbestosis_and_cryptococcosis_-_Pleural_plaque_-_X-ray_Case_194_(5998756067).jpg",
+      "source_organization": "Wikimedia Commons / Pulmonary Pathology Flickr collection",
+      "creator": "Yale Rosen",
+      "displayed_license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "rights_status": "cc_by_sa",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_6d1cd0584951",
+      "quiz_safe_variant_path": "originals/calcified-pleural-plaque.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_6d1cd0584951",
+          "relative_path": "originals/calcified-pleural-plaque.jpg",
+          "sha256": "6d1cd0584951ce5c6b055d28049f28914b4173316a99b52b6038aa5a75f3fa3e",
+          "pixel_width": 1982,
+          "pixel_height": 1833,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "options": [
+          "Calcified pleural plaque from asbestos exposure",
+          "Lobar pneumonia",
+          "Miliary tuberculosis",
+          "Pneumothorax"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The opacity is pleural based",
+          "Calcification follows the diaphragmatic contour",
+          "There is no lobar air-space consolidation or diffuse micronodularity"
+        ],
+        "explanation": "A calcified diaphragmatic pleural plaque is a classic marker of prior asbestos exposure.",
+        "choice_rationales": [
+          "Pleural plaques are focal pleural thickenings that commonly calcify along the diaphragm and chest wall, matching this contour.",
+          "Lobar pneumonia produces air-space opacity with possible air bronchograms rather than a sharply calcified pleural plaque.",
+          "Miliary tuberculosis produces innumerable tiny bilateral parenchymal nodules, which are absent.",
+          "Pneumothorax produces a visceral pleural line with absent peripheral lung markings, not dense pleural calcification."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Calcified pleural plaque from asbestos exposure",
+          "required_variant": "var_identity_6d1cd0584951",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_bc2c0c1d2690",
+      "source_group_id": "sg_ab0f331d8082",
+      "source_id": "src_06a2f9a827b4",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "situs-inversus-cxr.jpg",
+      "original_relative_path": "originals/situs-inversus-cxr.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/situs-inversus-cxr.jpg",
+      "source_sha256": "bc2c0c1d2690cda35995bf39070c21f2421603f8b03a4a606e469f528c9bed67",
+      "pixel_width": 817,
+      "pixel_height": 1000,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "category": "Thoracic orientation",
+      "tested_condition_structure_finding": "Situs inversus totalis with dextrocardia",
+      "canonical_correct_answer": "Situs inversus totalis with dextrocardia",
+      "accepted_answers": [],
+      "ground_truth_basis": "The verified P18/P27.2 picture manifests identify dextrocardia with reversed thoracoabdominal situs.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "The cardiac apex points rightward and the gastric bubble/upper abdominal viscera are mirrored relative to normal anatomy.",
+      "what_student_should_recognize": "Situs inversus totalis with dextrocardia",
+      "lecture_context": "P18 - Basic Interpretation of Chest X-Ray",
+      "source_document": "P18 - Basic Interpretation of Chest X-Ray",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Situs inversus with dextrocardia (situs inversus totalis).jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_bc2c0c1d2690",
+      "quiz_safe_variant_path": "originals/situs-inversus-cxr.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_bc2c0c1d2690",
+          "relative_path": "originals/situs-inversus-cxr.jpg",
+          "sha256": "bc2c0c1d2690cda35995bf39070c21f2421603f8b03a4a606e469f528c9bed67",
+          "pixel_width": 817,
+          "pixel_height": 1000,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "options": [
+          "Situs inversus totalis with dextrocardia",
+          "Isolated right-lower-lobe atelectasis",
+          "Left tension pneumothorax",
+          "Severe patient rotation"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Cardiac apex is right sided",
+          "Thoracoabdominal organ orientation is reversed",
+          "The mirrored anatomy is internally consistent rather than rotational distortion"
+        ],
+        "explanation": "The radiograph shows dextrocardia with mirrored visceral orientation, establishing situs inversus totalis.",
+        "choice_rationales": [
+          "True rightward cardiac apex plus reversed abdominal organ/gastric-bubble orientation supports situs inversus totalis.",
+          "Right-lower-lobe atelectasis causes localized opacity and volume loss but does not mirror the heart and abdominal viscera.",
+          "A left tension pneumothorax shifts the mediastinum but leaves the intrinsic cardiac apex and abdominal situs unchanged.",
+          "Rotation changes apparent mediastinal projection but cannot reverse the consistent thoracoabdominal organ arrangement."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Situs inversus totalis with dextrocardia",
+          "required_variant": "var_identity_bc2c0c1d2690",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_cb2951109e63",
+      "source_group_id": "sg_349ef4529411",
+      "source_id": "src_f29bddb40fba",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "pulmonary-hypertension-cxr.jpg",
+      "original_relative_path": "originals/pulmonary-hypertension-cxr.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/pulmonary-hypertension-cxr.jpg",
+      "source_sha256": "cb2951109e6374a72f06067d99ff93510e6951060dd20690e852a1a8209fcc3e",
+      "pixel_width": 989,
+      "pixel_height": 1000,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "category": "Pulmonary hypertension",
+      "tested_condition_structure_finding": "Pulmonary arterial hypertension on chest radiograph",
+      "canonical_correct_answer": "Pulmonary arterial hypertension on chest radiograph",
+      "accepted_answers": [],
+      "ground_truth_basis": "The verified P32 picture manifest identifies enlarged central pulmonary arteries and peripheral pruning on PA radiography.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "The central pulmonary arteries are enlarged, while distal peripheral vessels are relatively attenuated; the right-heart contour is prominent.",
+      "what_student_should_recognize": "Pulmonary arterial hypertension on chest radiograph",
+      "lecture_context": "P32 - Pulmonary Hypertension - A Clinical Reasoning Approach",
+      "source_document": "P32 - Pulmonary Hypertension - A Clinical Reasoning Approach",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulmonary Hypertension (1:2).jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_cb2951109e63",
+      "quiz_safe_variant_path": "originals/pulmonary-hypertension-cxr.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_cb2951109e63",
+          "relative_path": "originals/pulmonary-hypertension-cxr.jpg",
+          "sha256": "cb2951109e6374a72f06067d99ff93510e6951060dd20690e852a1a8209fcc3e",
+          "pixel_width": 989,
+          "pixel_height": 1000,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "options": [
+          "Pulmonary arterial hypertension on chest radiograph",
+          "Cardiogenic pulmonary edema",
+          "Right-upper-lobe atelectasis",
+          "Massive pleural effusion"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Central pulmonary arteries are prominent",
+          "Peripheral vascular markings are relatively pruned",
+          "There is no diffuse edema or hemithorax whiteout"
+        ],
+        "explanation": "Enlarged central pulmonary arteries with peripheral pruning and right-heart prominence support pulmonary arterial hypertension.",
+        "choice_rationales": [
+          "Pulmonary hypertension classically enlarges the central pulmonary arteries while attenuating peripheral vessels, as shown.",
+          "Cardiogenic edema produces vascular indistinctness, interstitial/alveolar opacity, and often pleural effusions rather than peripheral pruning.",
+          "Right-upper-lobe atelectasis produces fissural displacement and upper-lobe volume loss, not symmetric central artery enlargement.",
+          "A massive pleural effusion creates hemithorax opacity with a meniscus and possible contralateral shift, which is absent."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Pulmonary arterial hypertension on chest radiograph",
+          "required_variant": "var_identity_cb2951109e63",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_67cfd6f95d63",
+      "source_group_id": "sg_78591dc3df98",
+      "source_id": "src_abf82f7a5a47",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "thoracentesis-procedure.png",
+      "original_relative_path": "originals/thoracentesis-procedure.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/originals/thoracentesis-procedure.png",
+      "source_sha256": "67cfd6f95d63fd19331650d515621f7add2d18860154cd6d2ab81619c1ca228e",
+      "pixel_width": 655,
+      "pixel_height": 936,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "Diagram",
+      "organ_system": "Pulmonary",
+      "category": "Pulmonary procedures",
+      "tested_condition_structure_finding": "Thoracentesis",
+      "canonical_correct_answer": "Thoracentesis",
+      "accepted_answers": [],
+      "ground_truth_basis": "The verified P15 picture manifest identifies patient positioning and the safe needle approach for thoracentesis.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A needle/catheter is introduced through the posterolateral intercostal space toward a dependent pleural-fluid collection while the patient sits leaning forward.",
+      "what_student_should_recognize": "Thoracentesis",
+      "lecture_context": "P15 - Approach to the Patient with Respiratory Disease and Pulmonary Preventative Care",
+      "source_document": "P15 - Approach to the Patient with Respiratory Disease and Pulmonary Preventative Care",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/P473 Thoracentesis.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_67cfd6f95d63",
+      "quiz_safe_variant_path": "originals/thoracentesis-procedure.png",
+      "variants": [
+        {
+          "variant_id": "var_identity_67cfd6f95d63",
+          "relative_path": "originals/thoracentesis-procedure.png",
+          "sha256": "67cfd6f95d63fd19331650d515621f7add2d18860154cd6d2ab81619c1ca228e",
+          "pixel_width": 655,
+          "pixel_height": 936,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pulmonary procedure illustrated.",
+        "options": [
+          "Thoracentesis",
+          "Needle cricothyrotomy",
+          "Subclavian central-line placement",
+          "Tube thoracostomy"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The patient is seated and leaning forward",
+          "The needle enters a posterolateral interspace",
+          "The target is a dependent pleural collection"
+        ],
+        "explanation": "The diagram demonstrates thoracentesis for aspiration of pleural fluid.",
+        "choice_rationales": [
+          "Thoracentesis uses a needle or small catheter through the posterolateral chest into dependent pleural fluid, matching the diagram.",
+          "Cricothyrotomy enters the anterior neck through the cricothyroid membrane, not the posterolateral thorax.",
+          "A subclavian central line is inserted beneath the clavicle toward the central veins rather than into the pleural collection.",
+          "Tube thoracostomy uses a larger incision and tube in the lateral safe triangle, not the fine aspiration needle shown."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Thoracentesis",
+          "required_variant": "var_identity_67cfd6f95d63",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
     }
   ],
   "upstream_schema_version": 1,
   "builder": "build-medical-picture-quiz",
-  "builder_generated_at": "2026-09-13T13:12:07-04:00",
-  "source_library_read_only": true
+  "builder_generated_at": "2026-09-13T15:34:16-04:00",
+  "source_library_read_only": true,
+  "supplemental_source_library": {
+    "path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions",
+    "manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions/picture_quiz_supplemental_manifest.json",
+    "schema_version": 2,
+    "record_count": 20,
+    "validation": {
+      "result": "PASS",
+      "all_files_exist": true,
+      "all_hashes_verified": true,
+      "all_images_visually_reviewed": true,
+      "all_questions_have_four_unique_options": true,
+      "all_questions_have_four_aligned_rationales": true,
+      "scored_records": 20,
+      "excluded_records": 0,
+      "validated_at": "2026-09-13T15:30:33-04:00"
+    },
+    "read_only_during_quiz_build": true
+  }
 }

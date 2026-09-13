@@ -18,6 +18,8 @@ from PIL import Image, ImageOps
 PROJECT = Path(__file__).resolve().parents[1]
 LIBRARY = Path.home() / "Desktop" / "Picture Quiz"
 UPSTREAM = LIBRARY / "picture_quiz_manifest.json"
+SUPPLEMENT_ROOT = Path.home() / "Desktop" / "Pulmonary Picture Quiz Additions"
+SUPPLEMENT_MANIFEST = SUPPLEMENT_ROOT / "picture_quiz_supplemental_manifest.json"
 ASSET_DIR = PROJECT / "public" / "assets" / "images"
 
 # These sources were retained upstream but visibly failed the stricter scored-ID gate during
@@ -169,6 +171,17 @@ def question_asset(record: dict, prefix: str) -> tuple[str, dict]:
     return meta["path"], meta
 
 
+def supplemental_asset(record: dict, prefix: str, original: bool = False) -> tuple[str, dict]:
+    rel = clean(record.get("original_relative_path") if original else record.get("quiz_safe_variant_path"))
+    if not rel:
+        rel = clean(record.get("original_relative_path"))
+    source = SUPPLEMENT_ROOT / rel
+    digest = hashlib.sha256((prefix + ":" + record["source_id"] + ":" + rel).encode()).hexdigest()[:16]
+    destination = ASSET_DIR / f"{prefix}_{digest}.png"
+    meta = save_safe_png(source, destination)
+    return meta["path"], meta
+
+
 def choose_distractors(target: dict, candidates: list[dict]) -> list[dict]:
     answer = clean(target.get("canonical_correct_answer")).casefold()
     modality = clean(target.get("modality")).casefold()
@@ -226,6 +239,10 @@ def choose_distractors(target: dict, candidates: list[dict]) -> list[dict]:
 
 def main() -> None:
     payload = json.loads(UPSTREAM.read_text(encoding="utf-8"))
+    supplement_payload = json.loads(SUPPLEMENT_MANIFEST.read_text(encoding="utf-8"))
+    supplement_records = supplement_payload.get("records", [])
+    if supplement_payload.get("schema_version", 0) < 2 or supplement_payload.get("validation", {}).get("result") != "PASS":
+        raise RuntimeError("Supplemental manifest did not pass its schema/version gate")
     records = payload.get("records", [])
     active_usable = [
         r for r in records
@@ -327,6 +344,76 @@ def main() -> None:
         })
         asset_map[variant_id] = {"quiz": quiz_meta, "original": original_meta, "source_id": record["source_id"]}
 
+    # Add the separate, versioned pulmonary-picture supplement. Its explicit question specs were
+    # visually reviewed and preserve four index-aligned rationales; the source collection remains
+    # separate from both the RLS library and the application build.
+    for record in supplement_records:
+        if not (
+            record.get("active", True)
+            and record.get("status") == "USABLE"
+            and record.get("inclusion_status") == "included"
+            and record.get("ground_truth_confidence") == "high"
+        ):
+            continue
+        spec = record.get("question_spec") or {}
+        options = spec.get("options") or []
+        rationales = list(spec.get("choice_rationales") or [])
+        correct_index = spec.get("correct_index")
+        if len(options) != 4 or len(set(options)) != 4 or len(rationales) != 4 or correct_index not in range(4):
+            raise RuntimeError(f"Invalid supplemental question contract for {record.get('source_id')}")
+        if any(not clean(value) for value in [*options, *rationales]):
+            raise RuntimeError(f"Blank supplemental option or rationale for {record.get('source_id')}")
+        if not rationales[correct_index].startswith("Correct:"):
+            rationales[correct_index] = "Correct: " + rationales[correct_index]
+        quiz_path, quiz_meta = supplemental_asset(record, "quiz")
+        if clean(record.get("quiz_safe_variant_path")) == clean(record.get("original_relative_path")):
+            original_path, original_meta = quiz_path, quiz_meta
+        else:
+            original_path, original_meta = supplemental_asset(record, "original", original=True)
+        variant_id = clean(record.get("primary_variant_id"))
+        answer = clean(record.get("canonical_correct_answer"))
+        if clean(options[correct_index]) != answer:
+            raise RuntimeError(f"Supplemental key does not match canonical answer for {record.get('source_id')}")
+        qhash = hashlib.sha256((record["source_id"] + ":identification:v2").encode()).hexdigest()[:12]
+        questions.append({
+            "question_id": f"q_{qhash}",
+            "source_group_id": record["source_group_id"],
+            "source_id": record["source_id"],
+            "variant_id": variant_id,
+            "question_type": "Identification",
+            "tested_concept": answer,
+            "stem": clean(spec.get("stem")),
+            "options": options,
+            "correct_index": correct_index,
+            "accepted_terminology": record.get("accepted_answers") or [],
+            "explanation": clean(spec.get("explanation")),
+            "visual_clues": spec.get("visual_clues") or [],
+            "choice_rationales": rationales,
+            "ground_truth_confidence": record.get("ground_truth_confidence"),
+            "ground_truth_evidence": record.get("ground_truth_basis"),
+            "category": clean(record.get("category")) or clean(record.get("modality")),
+            "modality": clean(record.get("modality")),
+            "organ_system": "Pulmonary",
+            "topic_cluster": topic_cluster(record),
+            "quiz_asset": quiz_path,
+            "original_asset": original_path,
+            "post_answer_source": {
+                "original_filename": record.get("original_filename"),
+                "source_document": record.get("source_document"),
+                "source_id": record["source_id"],
+                "landing_page_url": record.get("landing_page_url"),
+                "creator": record.get("creator"),
+                "displayed_license": record.get("displayed_license"),
+            },
+            "review_status": "VERIFIED",
+        })
+        asset_map[variant_id] = {
+            "quiz": quiz_meta,
+            "original": original_meta,
+            "source_id": record["source_id"],
+            "supplemental_source_manifest": SUPPLEMENT_MANIFEST.as_posix(),
+        }
+
     # Review items receive opaque, metadata-stripped previews but never enter scored sessions.
     review_items = []
     by_id = {r.get("source_id"): r for r in records}
@@ -374,6 +461,15 @@ def main() -> None:
     projected["builder"] = "build-medical-picture-quiz"
     projected["builder_generated_at"] = now
     projected["source_library_read_only"] = True
+    projected["supplemental_source_library"] = {
+        "path": SUPPLEMENT_ROOT.as_posix(),
+        "manifest": SUPPLEMENT_MANIFEST.as_posix(),
+        "schema_version": supplement_payload.get("schema_version"),
+        "record_count": len(supplement_records),
+        "validation": supplement_payload.get("validation"),
+        "read_only_during_quiz_build": True,
+    }
+    projected["records"].extend(copy.deepcopy(supplement_records))
     selected_ids = {q["source_id"] for q in questions}
     duplicate_ids = {r["source_id"] for r in concept_duplicates}
     for record in projected["records"]:
@@ -410,6 +506,7 @@ Generated: {now}
 ## Scope
 
 - Canonical upstream library: `{LIBRARY}` (read-only)
+- Supplemental pulmonary-picture library: `{SUPPLEMENT_ROOT}` (read-only during quiz build)
 - Audited collection: `{LIBRARY / 'Pulmonary'}`
 - Output project: `{PROJECT}`
 - Quiz format: image-identification, one scored task per selected source/concept
@@ -428,6 +525,7 @@ Generated: {now}
 ## Downstream ID gate
 
 - Activated questions: {len(questions)}
+- New pulmonary-picture additions: {len(supplement_records)}
 - Distinct activated source groups: {len({q['source_group_id'] for q in questions})}
 - Manual-review exclusions: {len(review_items)}
 - Repeated modality/answer concepts not duplicated in the bank: {len(concept_duplicates)}

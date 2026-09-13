@@ -175,6 +175,17 @@ function choiceTemplate(question, option, index, answer, reveal) {
   return `<button class="${classes}" data-action="choose" data-index="${index}" role="radio" aria-checked="${selected}" ${answer?.locked ? "disabled" : ""}><span class="choice-number">${index + 1}</span><span>${escapeHtml(option)}</span>${correct ? '<span class="choice-status">Correct</span>' : incorrect ? '<span class="choice-status">Your answer</span>' : ""}</button>`;
 }
 
+function sourceDetailsTemplate(question) {
+  const source = question.post_answer_source || {};
+  const landing = /^https:\/\//.test(source.landing_page_url || "")
+    ? `<dt>Landing page</dt><dd><a href="${escapeHtml(source.landing_page_url)}" target="_blank" rel="noopener noreferrer">Open verified source</a></dd>`
+    : "";
+  const creator = source.creator ? `<dt>Creator</dt><dd>${escapeHtml(source.creator)}</dd>` : "";
+  const license = source.displayed_license ? `<dt>License</dt><dd>${escapeHtml(source.displayed_license)}</dd>` : "";
+  const page = source.source_page_or_slide ? `<dt>Page/slide</dt><dd>${escapeHtml(source.source_page_or_slide)}</dd>` : "";
+  return `<details class="source-details"><summary>Lecture provenance and attribution</summary><dl><dt>Source</dt><dd>${escapeHtml(source.source_document)}</dd>${page}<dt>Original file</dt><dd>${escapeHtml(source.original_filename)}</dd>${creator}${license}${landing}<dt>Source ID</dt><dd>${escapeHtml(question.source_id)}</dd></dl></details>`;
+}
+
 function feedbackTemplate(question, answer, reveal) {
   if (!reveal) {
     if (state.session.mode === "exam" && answer?.locked) return `<div class="exam-lock-note">Answer locked. Feedback will be available when the exam is complete.</div>`;
@@ -185,7 +196,7 @@ function feedbackTemplate(question, answer, reveal) {
     <p>${escapeHtml(question.explanation)}</p>
     <div class="clue-box"><strong>What to notice</strong><ul>${question.visual_clues.map((clue) => `<li>${escapeHtml(clue)}</li>`).join("")}</ul></div>
     <div class="rationale-list"><h3>Choice rationales</h3>${question.options.map((option, index) => `<article class="rationale ${index === question.correct_index ? "keyed" : ""} ${index === answer.selected_index ? "selected-rationale" : ""}"><div><span>${index + 1}</span><strong>${escapeHtml(option)}</strong>${index === question.correct_index ? "<em>Keyed</em>" : ""}${index === answer.selected_index ? "<em>Your choice</em>" : ""}</div><p>${escapeHtml(question.choice_rationales[index])}</p></article>`).join("")}</div>
-    <details class="source-details"><summary>Lecture provenance</summary><dl><dt>Source</dt><dd>${escapeHtml(question.post_answer_source.source_document)}</dd><dt>Page/slide</dt><dd>${escapeHtml(question.post_answer_source.source_page_or_slide)}</dd><dt>Original file</dt><dd>${escapeHtml(question.post_answer_source.original_filename)}</dd><dt>Source ID</dt><dd>${escapeHtml(question.source_id)}</dd></dl></details>
+    ${sourceDetailsTemplate(question)}
   </section>`;
 }
 
@@ -203,7 +214,7 @@ function resultsView() {
 }
 
 function resultReviewCard({ question, answer }) {
-  return `<details class="result-card"><summary><img src="${escapeHtml(question.quiz_asset)}" alt="quiz source image"><span><small>${escapeHtml(question.category)}</small><strong>${escapeHtml(question.tested_concept)}</strong><em class="${answer.correct ? "good" : "bad"}">${answer.correct ? "Correct" : "Incorrect"}</em></span></summary><div><p>${escapeHtml(question.explanation)}</p><div class="rationale-list">${question.options.map((option, i) => `<article class="rationale ${i === question.correct_index ? "keyed" : ""} ${i === answer.selected_index ? "selected-rationale" : ""}"><div><span>${i + 1}</span><strong>${escapeHtml(option)}</strong>${i === question.correct_index ? "<em>Keyed</em>" : ""}${i === answer.selected_index ? "<em>Your choice</em>" : ""}</div><p>${escapeHtml(question.choice_rationales[i])}</p></article>`).join("")}</div></div></details>`;
+  return `<details class="result-card"><summary><img src="${escapeHtml(question.quiz_asset)}" alt="quiz source image"><span><small>${escapeHtml(question.category)}</small><strong>${escapeHtml(question.tested_concept)}</strong><em class="${answer.correct ? "good" : "bad"}">${answer.correct ? "Correct" : "Incorrect"}</em></span></summary><div><p>${escapeHtml(question.explanation)}</p><div class="rationale-list">${question.options.map((option, i) => `<article class="rationale ${i === question.correct_index ? "keyed" : ""} ${i === answer.selected_index ? "selected-rationale" : ""}"><div><span>${i + 1}</span><strong>${escapeHtml(option)}</strong>${i === question.correct_index ? "<em>Keyed</em>" : ""}${i === answer.selected_index ? "<em>Your choice</em>" : ""}</div><p>${escapeHtml(question.choice_rationales[i])}</p></article>`).join("")}</div>${sourceDetailsTemplate(question)}</div></details>`;
 }
 
 function reviewView() {

@@ -4,6 +4,10 @@ An offline-capable, local browser application for pulmonary image-identification
 upstream Picture Quiz library is read-only; this project contains separate, metadata-stripped display
 derivatives and a schema-version-2 question bank.
 
+The completed bank contains **239 scored questions**. Twenty are supplemental pulmonary-picture
+questions added from a separate, versioned source library; the original RLS and Pulm Pictures
+collections were not modified.
+
 ## Included
 
 - Learn Mode with immediate feedback, visual clues, and four option-specific rationales
@@ -39,7 +43,8 @@ python3 -m http.server 4173
 
 ## Regenerate, test, and build
 
-Regeneration reads from `~/Desktop/Picture Quiz` but never writes there:
+Regeneration reads from `~/Desktop/Picture Quiz` and
+`~/Desktop/Pulmonary Picture Quiz Additions` but never writes to either source library:
 
 ```bash
 python3 scripts/generate_bank.py
@@ -57,6 +62,8 @@ dependencies.
 - Quiz assets have opaque hashed filenames and stripped metadata.
 - Source filenames and lecture provenance appear only after Learn submission, Exam completion, or in
   reviewer mode.
+- Openly licensed supplemental images show creator, license, and verified landing-page attribution
+  only after feedback becomes available.
 - Learner progress remains in browser `localStorage` unless explicitly exported.
 - Client-side answer hiding is an interface safeguard, not cryptographic secrecy.
 - Third-party educational images must remain local and must not be redistributed.
@@ -64,6 +71,7 @@ dependencies.
 ## Project outputs
 
 - `reports/preflight-audit.md` and `reports/source-audit.json`
+- `reports/supplemental-additions.md` and `reports/pulm-pictures-audit-*.json`
 - `data/source-manifest.json`
 - `data/question-bank.json`
 - `data/review-queue.json`

@@ -41,6 +41,7 @@ await desktop.locator('[data-action="choose"]').first().click();
 await desktop.locator('[data-action="submit"]').click();
 if (!(await desktop.locator(".feedback").count())) findings.push("Learn feedback missing after submission");
 if ((await desktop.locator(".rationale").count()) !== 4) findings.push("Learn feedback does not show four rationales");
+if (!(await desktop.locator(".source-details").count())) findings.push("Post-answer provenance is missing");
 if (!(await desktop.locator(".choice:disabled").count())) findings.push("Choices were not locked after submission");
 await desktop.screenshot({ path: shot("desktop-learn-feedback.png"), fullPage: true });
 
@@ -70,6 +71,19 @@ await mobile.getByRole("button", { name: /Start ID quiz/ }).click();
 await mobile.waitForSelector("#quiz-image");
 await mobile.screenshot({ path: shot("mobile-quiz.png"), fullPage: true });
 await mobile.close();
+
+const supplement = await newPage({ width: 1440, height: 1000 });
+await supplement.locator('select[name="category"]').selectOption({ label: "Point-of-care ultrasound" });
+await supplement.locator('input[name="length"][value="all"]').check({ force: true });
+await supplement.getByRole("button", { name: /Start ID quiz/ }).click();
+await supplement.waitForSelector("#quiz-image");
+if (await supplement.locator(".source-details").count()) findings.push("Supplement attribution leaked before submission");
+await supplement.screenshot({ path: shot("supplement-ultrasound-preanswer.png"), fullPage: true });
+await supplement.locator('[data-action="choose"]').first().click();
+await supplement.locator('[data-action="submit"]').click();
+if ((await supplement.locator('.source-details a[href^="https://"]').count()) !== 1) findings.push("Supplement verified-source attribution link missing after submission");
+await supplement.screenshot({ path: shot("supplement-ultrasound-feedback.png"), fullPage: true });
+await supplement.close();
 
 await browser.close();
 await writeFile(new URL("visual-check.json", out), JSON.stringify({ result: findings.length ? "FAIL" : "PASS", findings }, null, 2));
