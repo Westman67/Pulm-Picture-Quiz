@@ -131,7 +131,7 @@ test("rationales reveal only after Learn submission or Exam completion", () => {
 
 test("review queue is excluded from the scored bank", () => {
   const scoredIds = new Set(questions.map((question) => question.source_id));
-  assert.ok(review.items.length > 0);
+  assert.equal(review.count, review.items.length);
   for (const item of review.items) {
     assert.equal(item.project_status, "NEEDS_REVIEW");
     assert.equal(scoredIds.has(item.source_id), false);

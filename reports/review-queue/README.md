@@ -1,9 +1,7 @@
 # Manual review queue
 
 - Live app review data: `../../data/review-queue.json`
-- Remaining review-only item count: **13**
+- Remaining review-only item count: **0**
 - Promoted to scored quiz with safe project-local variants: **6**
-- Contact sheet: `review-contact-sheet.jpg`
-- Individual opaque previews: `items/`
 
-The remaining items are excluded from scored Learn and Exam sessions. The six promoted items are documented in `../review-promotions.md`. Source originals remain read-only.
+The 13 remaining review-only previews were removed from the quiz project at the user's request on September 13, 2026. The six previously promoted items and their safe scored variants remain documented in `../review-promotions.md`. Canonical source originals remain untouched in the read-only upstream library.

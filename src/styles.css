@@ -198,6 +198,10 @@ dd { margin: 0; overflow-wrap: anywhere; }
 .review-card p { color: #596576; font-size: 12px; line-height: 1.45; }
 .review-status { color: var(--amber); background: #fff3d8; padding: 4px 7px; border-radius: 5px; text-transform: uppercase; letter-spacing: .7px; font-size: 8px; font-weight: 850; }
 .review-card dl { font-size: 10px; }
+.review-empty { padding: 56px 24px; text-align: center; }
+.review-empty span { display: block; color: var(--teal); font-size: 42px; }
+.review-empty h2 { margin: 8px 0; font: 28px Georgia, serif; }
+.review-empty p { margin: 0; color: var(--muted); }
 .empty-state, .load-error { min-height: calc(100vh - 76px); display: grid; place-items: center; text-align: center; }
 .empty-state > div { padding: 50px; }.empty-state span { font-size: 50px; color: var(--teal); }.empty-state h1 { font-family: Georgia, serif; }.empty-state p { color: var(--muted); }
 .load-error { padding: 30px; }

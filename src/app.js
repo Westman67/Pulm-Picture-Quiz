@@ -218,7 +218,10 @@ function resultReviewCard({ question, answer }) {
 }
 
 function reviewView() {
-  return `<main class="review shell"><section class="page-heading"><div><p class="eyebrow">Reviewer mode</p><h1>Manual review queue</h1><p>These sources remain local and are excluded from every scored session.</p></div><button class="secondary" data-action="export-review">Export queue</button></section><div class="review-grid">${state.reviewQueue.items.map((item) => `<article class="review-card panel"><img src="${escapeHtml(item.preview_asset)}" alt="review-only source preview"><div><span class="review-status">Needs review</span><h2>${escapeHtml(item.proposed_answer)}</h2><p>${escapeHtml(item.uncertainty_reason)}</p><dl><dt>Modality</dt><dd>${escapeHtml(item.modality)}</dd><dt>Evidence</dt><dd>${escapeHtml(item.evidence)}</dd><dt>Leak risk</dt><dd>${escapeHtml(item.answer_leakage_risk)}</dd><dt>Source ID</dt><dd>${escapeHtml(item.source_id)}</dd></dl></div></article>`).join("")}</div></main>`;
+  const queue = state.reviewQueue.items.length
+    ? `<div class="review-grid">${state.reviewQueue.items.map((item) => `<article class="review-card panel"><img src="${escapeHtml(item.preview_asset)}" alt="review-only source preview"><div><span class="review-status">Needs review</span><h2>${escapeHtml(item.proposed_answer)}</h2><p>${escapeHtml(item.uncertainty_reason)}</p><dl><dt>Modality</dt><dd>${escapeHtml(item.modality)}</dd><dt>Evidence</dt><dd>${escapeHtml(item.evidence)}</dd><dt>Leak risk</dt><dd>${escapeHtml(item.answer_leakage_risk)}</dd><dt>Source ID</dt><dd>${escapeHtml(item.source_id)}</dd></dl></div></article>`).join("")}</div>`
+    : '<section class="panel review-empty"><span>✓</span><h2>Review queue is empty</h2><p>There are no review-only photos in this quiz project.</p></section>';
+  return `<main class="review shell"><section class="page-heading"><div><p class="eyebrow">Reviewer mode</p><h1>Manual review queue</h1><p>Review-only sources are excluded from every scored session.</p></div><button class="secondary" data-action="export-review">Export queue</button></section>${queue}</main>`;
 }
 
 function emptyState(title, copy) {

@@ -26,7 +26,7 @@ Generated: 2026-09-13T23:08:04-04:00
 - Activated questions: 258
 - New pulmonary-picture additions: 39
 - Distinct activated source groups: 258
-- Manual-review exclusions: 13
+- Manual-review exclusions retained in the app: 0
 - Repeated modality/answer concepts not duplicated in the bank: 14
 - Question bank schema: 2
 - Every item has four unique options and four index-aligned rationales.
@@ -77,5 +77,5 @@ Generated: 2026-09-13T23:08:04-04:00
 ## Limitations
 
 - Distractors were selected deterministically from modality- and category-aligned, lecture-verified source records.
-- 13 visually labeled or text-dependent candidates remain in the local review queue; six user-approved sources were promoted through reproducible local crops or opaque masks.
+- The 13 remaining review-only candidates and their local previews were removed from the app at the user’s request; six user-approved sources remain promoted through reproducible local crops or opaque masks.
 - The build preserves the upstream medical ground truth; it does not reinterpret RLS content from filenames.

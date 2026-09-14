@@ -22,7 +22,7 @@ Validated September 13, 2026 (America/New_York).
 - Schema version: **2**
 - Scored image-identification questions: **258**
 - Distinct scored source groups: **258**
-- Manual-review exclusions: **13**
+- Manual-review exclusions retained in the app: **0**
 - Repeated modality/answer concepts withheld: **14**
 - Supplemental scored sources: **39**
 - Builder manifest/bank validator: **PASS**
@@ -37,10 +37,10 @@ Validated September 13, 2026 (America/New_York).
 - Pre-answer filename/source/attribution leakage checks: **PASS**
 - New quiz variants visually inspected: **PASS**
 
-Visual and machine-readable review exports are stored in `reports/review-queue/`; Pulm Pictures audit artifacts are in `reports/pulm-pictures-audit/`.
+The emptied review-queue record is stored in `reports/review-queue/`; Pulm Pictures audit artifacts are in `reports/pulm-pictures-audit/`.
 
 ## Review promotions
 
 - Six requested review items were promoted through project-local reproducible crops or opaque masks.
-- Remaining manual-review queue: **13**.
+- Remaining manual-review queue: **0**; the 13 review-only previews were removed at the user’s request.
 - Promotion variants visually inspected: **PASS**.
