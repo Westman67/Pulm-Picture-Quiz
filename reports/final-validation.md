@@ -1,6 +1,6 @@
 # Final Validation
 
-Validated September 13, 2026 (America/New_York).
+Validated September 14, 2026 (America/New_York).
 
 ## Source integrity
 
@@ -8,7 +8,7 @@ Validated September 13, 2026 (America/New_York).
 - Pulm Pictures audits: **2,195 files and 843,072,468 bytes** before and after; **0 changes**.
 - Referenced RLS documents: **37/37 hashes unchanged**.
 - Upstream extractor manifest: **PASS** — 555 records and 111 variants.
-- Base supplemental manifest: **PASS** — 33 records. Review-promotion manifest: **PASS** — 6 records. All referenced images, variants, and source videos are present and hash-verified.
+- Base supplemental manifest: **PASS** — 37 records. Review-promotion manifest: **PASS** — 6 records. All referenced images, variants, and source videos are present and hash-verified.
 
 ## Coverage
 
@@ -20,11 +20,11 @@ Validated September 13, 2026 (America/New_York).
 ## Bank
 
 - Schema version: **2**
-- Scored image-identification questions: **258**
-- Distinct scored source groups: **258**
+- Scored image-identification questions: **262**
+- Distinct scored source groups: **262**
 - Manual-review exclusions retained in the app: **0**
 - Repeated modality/answer concepts withheld: **14**
-- Supplemental scored sources: **39**
+- Supplemental scored sources: **43**
 - Builder manifest/bank validator: **PASS**
 - Four unique options and four non-empty, index-aligned rationales: **PASS**
 

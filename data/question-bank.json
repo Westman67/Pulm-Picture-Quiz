@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "bank_id": "pulmonary-picture-id-v1",
-  "generated_at": "2026-09-13T23:08:04-04:00",
+  "generated_at": "2026-09-14T10:09:04-04:00",
   "mode": "image-identification",
-  "question_count": 258,
+  "question_count": 261,
   "questions": [
     {
       "question_id": "q_a27403e05b80",
@@ -11232,6 +11232,155 @@
         "source_id": "src_73c4f1d588cf",
         "landing_page_url": "",
         "creator": "Course/local collection",
+        "displayed_license": "Local study use only; do not redistribute"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_5e5413171368",
+      "source_group_id": "sg_c700d4ece9d2",
+      "source_id": "src_502d39947bf6",
+      "variant_id": "var_identity_b11f7468e746",
+      "question_type": "Identification",
+      "tested_concept": "Asbestos-related fibrous pleural plaques",
+      "stem": "Identify the pleural lesion shown in this gross specimen.",
+      "options": [
+        "Asbestos-related fibrous pleural plaques",
+        "Malignant pleural mesothelioma",
+        "Empyema with a fibrinopurulent pleural peel",
+        "Pleural metastatic tumor deposits"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [
+        "Asbestosis",
+        "Pleuropulmonary asbestosis",
+        "Fibrous pleural plaques"
+      ],
+      "explanation": "The gross specimen shows asbestos-related fibrous pleural plaques. The supplied pathology description reports pleuropulmonary asbestosis; pleural plaques are a marker of asbestos exposure but do not by themselves prove parenchymal asbestosis.",
+      "visual_clues": [
+        "Multiple pale raised plaques involve the diaphragmatic pleura",
+        "Many plaques are partially confluent",
+        "The surface is fibrous and verrucous rather than shaggy or overtly destructive"
+      ],
+      "choice_rationales": [
+        "Correct: The diaphragmatic pleura is covered by multiple pale, firm-appearing, partially confluent plaques, the classic gross distribution and morphology of asbestos-related pleural plaques.",
+        "Malignant pleural mesothelioma more often produces diffuse irregular pleural thickening or a bulky tumor rind encasing the lung, rather than these discrete-to-confluent fibrous plaques.",
+        "Empyema produces purulent material and a shaggy fibrinous pleural peel, not the smooth pale verrucous plaques visible here.",
+        "Pleural metastases usually form variably sized discrete tumor nodules or masses rather than broad fibrous plaques concentrated on diaphragmatic pleura."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "The user supplied the image with the caption: gross specimen of diaphragmatic pleura showing partially confluent fibrous plaques with a verrucous appearance; histology revealed pleuropulmonary asbestosis.",
+      "category": "Pneumoconiosis and pleural disease",
+      "modality": "Gross pathology",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "interstitial",
+      "quiz_asset": "public/assets/images/quiz_6f10e506c30e1b17.png",
+      "original_asset": "public/assets/images/quiz_6f10e506c30e1b17.png",
+      "post_answer_source": {
+        "original_filename": "asbestos-related-fibrous-pleural-plaques.png",
+        "source_document": "User-supplied pulmonary pathology image (September 14, 2026)",
+        "source_id": "src_502d39947bf6",
+        "landing_page_url": "",
+        "creator": "User supplied",
+        "displayed_license": "Local study use only; do not redistribute"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_59834bb04784",
+      "source_group_id": "sg_df7e8bff0c46",
+      "source_id": "src_fdfb0e719846",
+      "variant_id": "var_identity_398b2d73bc14",
+      "question_type": "Identification",
+      "tested_concept": "Coccidioides spherule containing endospores",
+      "stem": "Identify the fungal form highlighted in this lung-tissue photomicrograph.",
+      "options": [
+        "Coccidioides spherule containing endospores",
+        "Blastomyces with broad-based budding",
+        "Histoplasma capsulatum within macrophages",
+        "Cryptococcus with a thick capsule"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [
+        "Pulmonary coccidioidomycosis",
+        "Coccidioidomycosis",
+        "Coccidioides spherule"
+      ],
+      "explanation": "A thick-walled tissue spherule containing endospores is the characteristic histopathologic form of Coccidioides and supports pulmonary coccidioidomycosis. Culture and serology can provide complementary confirmation in the appropriate clinical setting.",
+      "visual_clues": [
+        "A large round thick-walled structure is present within the granuloma",
+        "Multiple small endospores are contained inside the spherule",
+        "No budding yeast form is visible"
+      ],
+      "choice_rationales": [
+        "Correct: Coccidioides forms large, nonbudding, thick-walled spherules filled with endospores in tissue, matching the highlighted structure within the granuloma.",
+        "Blastomyces appears as a large thick-walled yeast with a single broad-based daughter bud, not an endospore-filled spherule.",
+        "Histoplasma usually appears as numerous tiny narrow-budding intracellular yeasts clustered in macrophages, which are not seen here.",
+        "Cryptococcus is an encapsulated narrow-budding yeast with a prominent clear halo, rather than a thick-walled spherule containing endospores."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "The user supplied the H&E lung-tissue image with a caption identifying a thick-walled spherule containing endospores within an inflammatory granuloma. CDC clinical guidance independently confirms that microscopy can detect Coccidioides spherules in tissue.",
+      "category": "Endemic mycosis",
+      "modality": "Histopathology",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "infection",
+      "quiz_asset": "public/assets/images/quiz_f64a2a6033118042.png",
+      "original_asset": "public/assets/images/quiz_f64a2a6033118042.png",
+      "post_answer_source": {
+        "original_filename": "coccidioides-spherule-pulmonary-histology.jpg",
+        "source_document": "User-supplied pulmonary pathology image (September 14, 2026)",
+        "source_id": "src_fdfb0e719846",
+        "landing_page_url": "",
+        "creator": "User supplied",
+        "displayed_license": "Local study use only; do not redistribute"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_66868a8772b7",
+      "source_group_id": "sg_bf48bb575aa6",
+      "source_id": "src_52ea07463a3a",
+      "variant_id": "var_identity_b3b01d4f5702",
+      "question_type": "Identification",
+      "tested_concept": "Bronchopulmonary dysplasia",
+      "stem": "Identify the neonatal pulmonary disorder shown on this AP chest radiograph.",
+      "options": [
+        "Bronchopulmonary dysplasia",
+        "Neonatal respiratory distress syndrome",
+        "Pulmonary interstitial emphysema",
+        "Meconium aspiration syndrome"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [
+        "BPD",
+        "Chronic lung disease of prematurity"
+      ],
+      "explanation": "The diffuse mixture of coarse reticular opacities and small rounded lucencies produces the classic heterogeneous, sponge-like radiographic pattern of bronchopulmonary dysplasia. The endotracheal tube, enteric tube, and central venous catheter are appropriately positioned. Patient rotation to the left elongates the projected left ribs and shifts the cardiomediastinal silhouette leftward on the image.",
+      "visual_clues": [
+        "Coarse ill-defined reticular markings are diffuse in both lungs",
+        "Small rounded lucent areas are interspersed throughout the abnormal lung",
+        "The heterogeneous reticulocystic pattern is present in an intubated newborn"
+      ],
+      "choice_rationales": [
+        "Correct: Bronchopulmonary dysplasia produces chronic coarse bilateral reticular opacity with scattered small lucent or cystic areas, matching the diffuse heterogeneous pattern in this intubated newborn.",
+        "Neonatal respiratory distress syndrome more typically shows low-volume lungs with fine, uniform granular or ground-glass opacity and air bronchograms, not this coarse mixed reticular-and-lucent pattern.",
+        "Pulmonary interstitial emphysema produces branching or tubular interstitial air lucencies that often radiate from the hilum and may be asymmetric, rather than the diffuse chronic coarse reticulocystic pattern shown here.",
+        "Meconium aspiration usually causes patchy, asymmetric air-space opacities with marked hyperinflation and possible air leaks, not the evenly diffuse coarse reticular markings with many small rounded lucencies seen here."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "The user supplied this AP chest radiograph with a description identifying bronchopulmonary dysplasia in an intubated newborn. Its SHA-256 is byte-identical to the independently curated local Pulm Pictures image named Bronchopulmonary Dysplasia.jpg, assigned to the P27.2 and P37 pulmonary teaching collections.",
+      "category": "Bronchopulmonary Dysplasia",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "imaging",
+      "quiz_asset": "public/assets/images/quiz_a0b8ddb65fcea478.png",
+      "original_asset": "public/assets/images/quiz_a0b8ddb65fcea478.png",
+      "post_answer_source": {
+        "original_filename": "bronchopulmonary-dysplasia-intubated-newborn-ap.jpg",
+        "source_document": "User-supplied neonatal chest radiograph (September 14, 2026)",
+        "source_id": "src_52ea07463a3a",
+        "landing_page_url": "",
+        "creator": "User supplied",
         "displayed_license": "Local study use only; do not redistribute"
       },
       "review_status": "VERIFIED"

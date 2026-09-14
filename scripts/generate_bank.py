@@ -30,7 +30,34 @@ ASSET_DIR = PROJECT / "public" / "assets" / "images"
 # These sources were retained upstream but visibly failed the stricter scored-ID gate during
 # downstream contact-sheet review. They remain untouched in the source library.
 MANUAL_REVIEW = {
+    "src_90a7391b3c05": "The displayed crop visibly contains the normal-spirometry answer label.",
+    "src_6448b676a84c": "The teaching label names the decisive intercellular-bridge clue.",
+    "src_acdb640076ef": "Visible teaching prose names consolidation before submission.",
+    "src_b413e152c175": "Visible prose names air bronchograms and their associated conditions.",
+    "src_f61b09398e77": "The ultrasound panels visibly label the effusion.",
+    "src_f2a9e757c991": "The graph labels directly state the tested survival comparison.",
+    "src_871bc1e4e6e4": "The physical-exam diagram labels the diagnostic displacement measurements.",
+    "src_11d38df219ae": "The diagram text directly states the pressure- and volume-control answer.",
+    "src_7013e3362c68": "Visible management/prognostic teaching text makes this text-dependent.",
+    "src_ea504b038377": "The diagram visibly names the CPAM morphologic classes being tested.",
+    "src_85db33131d60": "The radiograph visibly states the key hyperinflation and mediastinal-shift findings.",
+    "src_c0ab8fd58980": "The measurement overlay effectively states the Haller-index task.",
+    "src_d92bf1430d1b": "The equipment collage is recognition-trivial and not a defensible medical ID item.",
+    "src_328fa020c224": "This is primarily a numeric spirometry table rather than an image-identification task.",
+    "src_221b5febf5ec": "This is primarily a numeric bronchodilator-response table.",
+    "src_742331504fc4": "Visible interpretive prose makes the ventilatory-defect answer text-dependent.",
+    "src_4d69b62d43cf": "Visible interpretive prose states the restrictive pattern.",
+    "src_16585366665e": "This is a numeric spirometry table rather than a visual-identification image.",
+    "src_bf8e9dd14184": "This is a numeric spirometry table rather than a visual-identification image.",
+}
 
+# These are the 13 review-only records the user explicitly removed from the app. Preserve their
+# upstream lineage in the downstream manifest, but do not recreate previews or score them.
+REMOVED_FROM_APP = {
+    "src_90a7391b3c05", "src_b413e152c175", "src_f2a9e757c991", "src_11d38df219ae",
+    "src_7013e3362c68", "src_ea504b038377", "src_d92bf1430d1b", "src_328fa020c224",
+    "src_221b5febf5ec", "src_742331504fc4", "src_4d69b62d43cf", "src_16585366665e",
+    "src_bf8e9dd14184",
 }
 
 BLOCKED = {"NEEDS_REVIEW", "REFERENCE_ONLY", "DUPLICATE", "AGGREGATE_DUPLICATE", "BROKEN", "EXCLUDED"}
@@ -439,7 +466,7 @@ def main() -> None:
     review_items = []
     by_id = {r.get("source_id"): r for r in records}
     for source_id, reason in MANUAL_REVIEW.items():
-        if source_id in promoted_upstream_ids:
+        if source_id in promoted_upstream_ids or source_id in REMOVED_FROM_APP:
             continue
         record = by_id[source_id]
         preview, preview_meta = question_asset(record, "review")
@@ -502,7 +529,8 @@ def main() -> None:
         sid = record.get("source_id")
         active = record.get("active", True) and record.get("status") == "USABLE"
         promoted_original = sid in promoted_upstream_ids
-        review_only = sid in MANUAL_REVIEW and not promoted_original
+        removed_from_app = sid in REMOVED_FROM_APP
+        review_only = sid in MANUAL_REVIEW and not promoted_original and not removed_from_app
         record["question_type_matrix"] = {
             "Identification": {
                 "supported": "YES" if sid in selected_ids else ("REVIEW" if review_only else "NO"),
@@ -513,13 +541,18 @@ def main() -> None:
                 "confidence": record.get("ground_truth_confidence"),
                 "reason_unsupported": (
                     f"Promoted through a project-local quiz-safe derivative in {PROMOTION_MANIFEST.name}."
-                    if promoted_original else (MANUAL_REVIEW.get(sid, "") if sid not in selected_ids else "")
+                    if promoted_original else (
+                        "Removed from the local quiz app at the user's request."
+                        if removed_from_app else (MANUAL_REVIEW.get(sid, "") if sid not in selected_ids else "")
+                    )
                 ),
             }
         }
         record["builder_scored_question"] = sid in selected_ids
         if promoted_original:
             record["builder_exclusion_reason"] = f"Replaced for scoring by a project-local quiz-safe derivative from source {sid}."
+        elif removed_from_app:
+            record["builder_exclusion_reason"] = "Removed from the local quiz app at the user's request."
         elif review_only:
             record["builder_review_reason"] = MANUAL_REVIEW[sid]
         elif sid in duplicate_ids:

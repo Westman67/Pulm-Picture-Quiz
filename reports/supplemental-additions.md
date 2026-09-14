@@ -1,15 +1,15 @@
 # Supplemental Pulmonary-Picture Additions
 
-Validated September 13, 2026 (America/New_York). Generated from `/Users/chriselwell/Desktop/Pulmonary Picture Quiz Additions`. The supplement is separate from the canonical RLS source library and the quiz build directory.
+Validated September 14, 2026 (America/New_York). The self-contained supplement is stored in `/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions`. It remains separate from the canonical RLS source library.
 
 ## Counts
 
-- Scored supplemental sources: **33**
-- Distinct supplemental source groups: **33**
+- Scored supplemental sources: **37**
+- Distinct supplemental source groups: **37**
 - Exact SHA-256 duplicates against the RLS extractor manifest: **0**
-- Modalities: **{'Ultrasound': 5, 'Clinical Image': 7, 'X-ray': 8, 'Flow-Volume Loop': 4, 'Echocardiography': 1, 'EKG': 1, 'X-ray and CT': 1, 'Diagram': 1, 'Histology': 1, 'Cytology': 2, 'Microscopy': 2}**
+- Modalities: **{'Ultrasound': 5, 'Clinical Image': 7, 'X-ray': 9, 'Flow-Volume Loop': 4, 'Echocardiography': 1, 'EKG': 1, 'X-ray and CT': 1, 'Diagram': 1, 'Histology': 1, 'Histopathology': 2, 'Cytology': 2, 'Microscopy': 2, 'Gross pathology': 1}**
 - Openly licensed/public-domain web sources: **15**
-- Local lecture-picture sources: **18**
+- Local/user-supplied sources: **22**
 - Reproducibly cropped or masked quiz variants: **6**
 - Reproducible fixed frames extracted from licensed videos: **2**
 
@@ -21,6 +21,7 @@ Validated September 13, 2026 (America/New_York). Generated from `/Users/chriselw
 - Flow-volume loops preserve axes, volume direction, curve relationships, and plotted pixels.
 - The 12-lead ECG retains lead order, paper calibration, and the complete tracing.
 - Answer-bearing title areas on two fungal teaching panels are removed by deterministic crops without altering the microscopic field.
+- The user-supplied BPD radiograph is used without cropping or annotation; it contains no answer-bearing text, and its hash matches the independently curated local pulmonary image.
 - No source uses generative reconstruction, upscaling, mirroring, or diagnostic-pixel alteration.
 - Web records retain landing page, creator, license, original URL, and verified hash. Local lecture images remain for local study use only and must not be redistributed.
 
@@ -61,6 +62,10 @@ Validated September 13, 2026 (America/New_York). Generated from `/Users/chriselw
 | src_d4b43b5727a3 | Microscopy | Blastomyces with broad-based budding | Local study use only; do not redistribute |
 | src_eaa014fe965d | Microscopy | Paracoccidioides with pilot-wheel budding | Local study use only; do not redistribute |
 | src_73c4f1d588cf | Clinical Image | Oral candidiasis associated with inhaled corticosteroid use | Local study use only; do not redistribute |
+| src_502d39947bf6 | Gross pathology | Asbestos-related fibrous pleural plaques | Local study use only; do not redistribute |
+| src_fdfb0e719846 | Histopathology | Coccidioides spherule containing endospores | Local study use only; do not redistribute |
+| src_52ea07463a3a | X-ray | Bronchopulmonary dysplasia | Local study use only; do not redistribute |
+| src_f402e786835c | Histopathology | Acute exudative phase of diffuse alveolar damage (ARDS) | Local study use only; do not redistribute |
 
 ## Source integrity
 
@@ -70,4 +75,4 @@ Validated September 13, 2026 (America/New_York). Generated from `/Users/chriselw
 
 ## Review-item promotions
 
-Six additional user-approved RLS review sources were copied into the app-local supplemental library and converted to reproducible quiz-safe variants. Effective scored supplemental records are now **39** (33 base additions + 6 promotions). See `review-promotions.md`.
+Six additional user-approved RLS review sources were copied into the app-local supplemental library and converted to reproducible quiz-safe variants. Effective scored supplemental records are now **43** (37 base additions + 6 promotions). See `review-promotions.md`.

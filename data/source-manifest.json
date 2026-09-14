@@ -3182,17 +3182,17 @@
       ],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Normal spirometry",
           "required_variant": "var_df7616d6a885",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": "The displayed crop visibly contains the normal-spirometry answer label."
+          "reason_unsupported": "Removed from the local quiz app at the user's request."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "The displayed crop visibly contains the normal-spirometry answer label."
+      "builder_exclusion_reason": "Removed from the local quiz app at the user's request."
     },
     {
       "asset_id": "asset_5206bc01a890",
@@ -18655,7 +18655,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Air-filled bronchi within opacified lung",
           "required_variant": "identity",
           "full_image_required": false,
@@ -18663,11 +18663,11 @@
             "Anatomic orientation and necessary arrows when present"
           ],
           "confidence": "high",
-          "reason_unsupported": "Visible prose names air bronchograms and their associated conditions."
+          "reason_unsupported": "Removed from the local quiz app at the user's request."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "Visible prose names air bronchograms and their associated conditions."
+      "builder_exclusion_reason": "Removed from the local quiz app at the user's request."
     },
     {
       "asset_id": "asset_bd1e8618499c",
@@ -24532,7 +24532,7 @@
       ],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Survival advantage in long-term CCB responders",
           "required_variant": "var_d3bfdf92b4f2",
           "full_image_required": false,
@@ -24540,11 +24540,11 @@
             "Imaging orientation, scale, axes, and medically necessary annotations"
           ],
           "confidence": "high",
-          "reason_unsupported": "The graph labels directly state the tested survival comparison."
+          "reason_unsupported": "Removed from the local quiz app at the user's request."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "The graph labels directly state the tested survival comparison."
+      "builder_exclusion_reason": "Removed from the local quiz app at the user's request."
     },
     {
       "asset_id": "asset_77614923e665",
@@ -29623,7 +29623,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Fixed and dependent variables in pressure- versus volume-control ventilation",
           "required_variant": "identity",
           "full_image_required": true,
@@ -29632,11 +29632,11 @@
             "Necessary non-answer markers"
           ],
           "confidence": "high",
-          "reason_unsupported": "The diagram text directly states the pressure- and volume-control answer."
+          "reason_unsupported": "Removed from the local quiz app at the user's request."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "The diagram text directly states the pressure- and volume-control answer."
+      "builder_exclusion_reason": "Removed from the local quiz app at the user's request."
     },
     {
       "asset_id": "asset_2c835a4be6e8",
@@ -30081,7 +30081,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Right pulmonary agenesis with compensatory left-lung hyperinflation",
           "required_variant": "identity",
           "full_image_required": true,
@@ -30091,11 +30091,11 @@
             "Imaging laterality and view context when present"
           ],
           "confidence": "high",
-          "reason_unsupported": "Visible management/prognostic teaching text makes this text-dependent."
+          "reason_unsupported": "Removed from the local quiz app at the user's request."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "Visible management/prognostic teaching text makes this text-dependent."
+      "builder_exclusion_reason": "Removed from the local quiz app at the user's request."
     },
     {
       "asset_id": "asset_956060d49de5",
@@ -30755,7 +30755,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Stocker CPAM morphologic types I, II, and III",
           "required_variant": "identity",
           "full_image_required": true,
@@ -30765,11 +30765,11 @@
             "Imaging laterality and view context when present"
           ],
           "confidence": "high",
-          "reason_unsupported": "The diagram visibly names the CPAM morphologic classes being tested."
+          "reason_unsupported": "Removed from the local quiz app at the user's request."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "The diagram visibly names the CPAM morphologic classes being tested."
+      "builder_exclusion_reason": "Removed from the local quiz app at the user's request."
     },
     {
       "asset_id": "asset_4b1086a464ff",
@@ -33783,7 +33783,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Spirometry equipment",
           "required_variant": "identity",
           "full_image_required": true,
@@ -33793,11 +33793,11 @@
             "Anatomic or imaging orientation when present"
           ],
           "confidence": "high",
-          "reason_unsupported": "The equipment collage is recognition-trivial and not a defensible medical ID item."
+          "reason_unsupported": "Removed from the local quiz app at the user's request."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "The equipment collage is recognition-trivial and not a defensible medical ID item."
+      "builder_exclusion_reason": "Removed from the local quiz app at the user's request."
     },
     {
       "asset_id": "asset_02be3c35c6c5",
@@ -34456,7 +34456,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Asthma with bronchodilator responsiveness",
           "required_variant": "identity",
           "full_image_required": true,
@@ -34466,11 +34466,11 @@
             "Anatomic or imaging orientation when present"
           ],
           "confidence": "high",
-          "reason_unsupported": "This is primarily a numeric spirometry table rather than an image-identification task."
+          "reason_unsupported": "Removed from the local quiz app at the user's request."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "This is primarily a numeric spirometry table rather than an image-identification task."
+      "builder_exclusion_reason": "Removed from the local quiz app at the user's request."
     },
     {
       "asset_id": "asset_90bfe4480135",
@@ -34541,7 +34541,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Reversible obstructive physiology after albuterol",
           "required_variant": "identity",
           "full_image_required": true,
@@ -34551,11 +34551,11 @@
             "Anatomic or imaging orientation when present"
           ],
           "confidence": "high",
-          "reason_unsupported": "This is primarily a numeric bronchodilator-response table."
+          "reason_unsupported": "Removed from the local quiz app at the user's request."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "This is primarily a numeric bronchodilator-response table."
+      "builder_exclusion_reason": "Removed from the local quiz app at the user's request."
     },
     {
       "asset_id": "asset_6b0c1c643a18",
@@ -35970,7 +35970,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Severe obstructive ventilatory defect",
           "required_variant": "identity",
           "full_image_required": true,
@@ -35980,11 +35980,11 @@
             "Anatomic or imaging orientation when present"
           ],
           "confidence": "high",
-          "reason_unsupported": "Visible interpretive prose makes the ventilatory-defect answer text-dependent."
+          "reason_unsupported": "Removed from the local quiz app at the user's request."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "Visible interpretive prose makes the ventilatory-defect answer text-dependent."
+      "builder_exclusion_reason": "Removed from the local quiz app at the user's request."
     },
     {
       "asset_id": "asset_b74e7729e42a",
@@ -36139,7 +36139,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Rapidly progressive restrictive ventilatory defect",
           "required_variant": "identity",
           "full_image_required": true,
@@ -36149,11 +36149,11 @@
             "Anatomic or imaging orientation when present"
           ],
           "confidence": "high",
-          "reason_unsupported": "Visible interpretive prose states the restrictive pattern."
+          "reason_unsupported": "Removed from the local quiz app at the user's request."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "Visible interpretive prose states the restrictive pattern."
+      "builder_exclusion_reason": "Removed from the local quiz app at the user's request."
     },
     {
       "asset_id": "asset_e312fc555e67",
@@ -46084,7 +46084,7 @@
       ],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Emphysema spirometry values",
           "required_variant": "var_a564dfb68cc3",
           "full_image_required": true,
@@ -46093,11 +46093,11 @@
             "Orientation markers when present"
           ],
           "confidence": "high",
-          "reason_unsupported": "This is a numeric spirometry table rather than a visual-identification image."
+          "reason_unsupported": "Removed from the local quiz app at the user's request."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "This is a numeric spirometry table rather than a visual-identification image."
+      "builder_exclusion_reason": "Removed from the local quiz app at the user's request."
     },
     {
       "asset_id": "asset_771aa1a767d2",
@@ -46273,7 +46273,7 @@
       ],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Asbestosis spirometry values",
           "required_variant": "var_e41c0873a08a",
           "full_image_required": true,
@@ -46282,11 +46282,11 @@
             "Orientation markers when present"
           ],
           "confidence": "high",
-          "reason_unsupported": "This is a numeric spirometry table rather than a visual-identification image."
+          "reason_unsupported": "Removed from the local quiz app at the user's request."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "This is a numeric spirometry table rather than a visual-identification image."
+      "builder_exclusion_reason": "Removed from the local quiz app at the user's request."
     },
     {
       "asset_id": "asset_bf3b0385ef47",
@@ -48552,6 +48552,7 @@
       "displayed_license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "rights_status": "cc_by_sa",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_ee6974cc71e0",
       "quiz_safe_variant_path": "originals/b-lines-lung-ultrasound.jpg",
@@ -48646,6 +48647,7 @@
       "displayed_license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "rights_status": "cc_by_sa",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_8fce4207e08f",
       "quiz_safe_variant_path": "originals/seashore-sign-lung-ultrasound.jpg",
@@ -48740,6 +48742,7 @@
       "displayed_license": "Public Domain Mark 1.0 (U.S. federal work)",
       "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
       "rights_status": "public_domain",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_ecd3383d892c",
       "quiz_safe_variant_path": "originals/bronchoscopy-procedure.jpg",
@@ -48834,6 +48837,7 @@
       "displayed_license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "rights_status": "cc_by_sa",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_0c31b6a9b5d7",
       "quiz_safe_variant_path": "originals/right-chest-tube-cxr.png",
@@ -48928,6 +48932,7 @@
       "displayed_license": "Public domain medical image (Poland)",
       "license_url": "https://commons.wikimedia.org/wiki/Template:PD-medical",
       "rights_status": "public_domain",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_75e53a6f03c6",
       "quiz_safe_variant_path": "originals/central-venous-catheter-cxr.jpg",
@@ -49022,6 +49027,7 @@
       "displayed_license": "Public domain",
       "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
       "rights_status": "public_domain",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_578e599af223",
       "quiz_safe_variant_path": "originals/chest-drain-apparatus.jpg",
@@ -49116,6 +49122,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_eb46780f1fc2",
       "quiz_safe_variant_path": "originals/omega-epiglottis.jpg",
@@ -49210,6 +49217,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_a64b9e4c63db",
       "quiz_safe_variant_path": "originals/vocal-cord-nodules.png",
@@ -49304,6 +49312,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_a1c0aa273f76",
       "quiz_safe_variant_path": "variants/var_a1c0aa273f76.png",
@@ -49403,6 +49412,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_b6f1979a696f",
       "quiz_safe_variant_path": "variants/var_b6f1979a696f.png",
@@ -49502,6 +49512,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_5648d001ad39",
       "quiz_safe_variant_path": "variants/var_5648d001ad39.png",
@@ -49601,6 +49612,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_92d365288db5",
       "quiz_safe_variant_path": "variants/var_92d365288db5.png",
@@ -49720,6 +49732,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_7e1b7eb08773",
       "quiz_safe_variant_path": "originals/rv-pressure-overload-echo.jpg",
@@ -49814,6 +49827,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_ab06707700a7",
       "quiz_safe_variant_path": "originals/right-heart-strain-ecg.jpg",
@@ -49908,6 +49922,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_026b57af8d1c",
       "quiz_safe_variant_path": "originals/spirometry-procedure.png",
@@ -50002,6 +50017,7 @@
       "displayed_license": "CC BY 4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "rights_status": "cc_by",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_df477fdfa11d",
       "quiz_safe_variant_path": "originals/golden-s-sign.jpg",
@@ -50096,6 +50112,7 @@
       "displayed_license": "CC BY-SA 2.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
       "rights_status": "cc_by_sa",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_6d1cd0584951",
       "quiz_safe_variant_path": "originals/calcified-pleural-plaque.jpg",
@@ -50190,6 +50207,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_bc2c0c1d2690",
       "quiz_safe_variant_path": "originals/situs-inversus-cxr.jpg",
@@ -50284,6 +50302,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_cb2951109e63",
       "quiz_safe_variant_path": "originals/pulmonary-hypertension-cxr.jpg",
@@ -50378,6 +50397,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_67cfd6f95d63",
       "quiz_safe_variant_path": "originals/thoracentesis-procedure.png",
@@ -50472,6 +50492,7 @@
       "displayed_license": "CC BY 2.0",
       "license_url": "https://creativecommons.org/licenses/by/2.0/",
       "rights_status": "cc_by",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_f569d930a7af",
       "quiz_safe_variant_path": "originals/pleural-effusion-lung-ultrasound.png",
@@ -50576,6 +50597,7 @@
       "displayed_license": "CC BY 2.0",
       "license_url": "https://creativecommons.org/licenses/by/2.0/",
       "rights_status": "cc_by",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_d72e1c439054",
       "quiz_safe_variant_path": "originals/consolidation-air-bronchograms-lung-ultrasound.png",
@@ -50680,6 +50702,7 @@
       "displayed_license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "rights_status": "cc_by_sa",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_dab6959f8e42",
       "quiz_safe_variant_path": "originals/right-mainstem-endotracheal-tube.jpg",
@@ -50774,6 +50797,7 @@
       "displayed_license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "rights_status": "cc_by_sa",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_92c57598733c",
       "quiz_safe_variant_path": "originals/endotracheal-and-nasogastric-tubes-cxr.png",
@@ -50868,6 +50892,7 @@
       "displayed_license": "CC0 1.0",
       "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
       "rights_status": "cc0",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_0ad260f0645d",
       "quiz_safe_variant_path": "originals/kerley-b-lines-cxr.jpg",
@@ -50962,6 +50987,7 @@
       "displayed_license": "CC BY 2.0",
       "license_url": "https://creativecommons.org/licenses/by/2.0/",
       "rights_status": "cc_by",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_9f3a02ec2eb9",
       "quiz_safe_variant_path": "originals/barcode-sign-lung-ultrasound.jpg",
@@ -51056,6 +51082,7 @@
       "displayed_license": "CC BY 2.5",
       "license_url": "https://creativecommons.org/licenses/by/2.5/",
       "rights_status": "cc_by",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_a07e1fe9a95f",
       "quiz_safe_variant_path": "originals/endobronchial-mass-bronchoscopy.png",
@@ -51150,6 +51177,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_64d99ec51daf",
       "quiz_safe_variant_path": "originals/squamous-cell-carcinoma-keratin-pearls.png",
@@ -51244,6 +51272,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_887cb6bd3ccd",
       "quiz_safe_variant_path": "originals/curschmann-spiral-asthma.png",
@@ -51338,6 +51367,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_032a879b33d1",
       "quiz_safe_variant_path": "originals/charcot-leyden-crystal-asthma.png",
@@ -51432,6 +51462,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_6e600ecfbb20",
       "quiz_safe_variant_path": "variants/var_6e600ecfbb20.png",
@@ -51531,6 +51562,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_029a3ee7ab1d",
       "quiz_safe_variant_path": "variants/var_029a3ee7ab1d.png",
@@ -51630,6 +51662,7 @@
       "displayed_license": "Local study use only; do not redistribute",
       "license_url": "",
       "rights_status": "local_only",
+      "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
       "primary_variant_id": "var_identity_535316fd21ba",
       "quiz_safe_variant_path": "originals/oral-candidiasis-inhaled-corticosteroid.png",
@@ -51674,6 +51707,302 @@
           "supported": "YES",
           "visual_target": "Oral candidiasis associated with inhaled corticosteroid use",
           "required_variant": "var_identity_535316fd21ba",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_b11f7468e746",
+      "source_group_id": "sg_c700d4ece9d2",
+      "source_id": "src_502d39947bf6",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "asbestos-related-fibrous-pleural-plaques.png",
+      "original_relative_path": "originals/asbestos-related-fibrous-pleural-plaques.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/asbestos-related-fibrous-pleural-plaques.png",
+      "source_sha256": "b11f7468e7467372a6bfe73c120ad9961a4e699a98bdc604411b60630202382a",
+      "pixel_width": 1294,
+      "pixel_height": 1598,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "Gross pathology",
+      "organ_system": "Pulmonary",
+      "category": "Pneumoconiosis and pleural disease",
+      "tested_condition_structure_finding": "Asbestos-related fibrous pleural plaques",
+      "canonical_correct_answer": "Asbestos-related fibrous pleural plaques",
+      "accepted_answers": [
+        "Asbestosis",
+        "Pleuropulmonary asbestosis",
+        "Fibrous pleural plaques"
+      ],
+      "ground_truth_basis": "The user supplied the image with the caption: gross specimen of diaphragmatic pleura showing partially confluent fibrous plaques with a verrucous appearance; histology revealed pleuropulmonary asbestosis.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Numerous pale, raised, partially confluent fibrous plaques create a nodular-verrucous surface over the diaphragmatic pleura.",
+      "what_student_should_recognize": "Asbestos-related fibrous pleural plaques",
+      "lecture_context": "User-supplied pulmonary pathology image (September 14, 2026)",
+      "source_document": "User-supplied pulmonary pathology image (September 14, 2026)",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/asbestos-related-fibrous-pleural-plaques.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Local pulmonary study collection",
+      "creator": "User supplied",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_b11f7468e746",
+      "quiz_safe_variant_path": "originals/asbestos-related-fibrous-pleural-plaques.png",
+      "variants": [
+        {
+          "variant_id": "var_identity_b11f7468e746",
+          "relative_path": "originals/asbestos-related-fibrous-pleural-plaques.png",
+          "sha256": "b11f7468e7467372a6bfe73c120ad9961a4e699a98bdc604411b60630202382a",
+          "pixel_width": 1294,
+          "pixel_height": 1598,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pleural lesion shown in this gross specimen.",
+        "options": [
+          "Asbestos-related fibrous pleural plaques",
+          "Malignant pleural mesothelioma",
+          "Empyema with a fibrinopurulent pleural peel",
+          "Pleural metastatic tumor deposits"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Multiple pale raised plaques involve the diaphragmatic pleura",
+          "Many plaques are partially confluent",
+          "The surface is fibrous and verrucous rather than shaggy or overtly destructive"
+        ],
+        "explanation": "The gross specimen shows asbestos-related fibrous pleural plaques. The supplied pathology description reports pleuropulmonary asbestosis; pleural plaques are a marker of asbestos exposure but do not by themselves prove parenchymal asbestosis.",
+        "choice_rationales": [
+          "The diaphragmatic pleura is covered by multiple pale, firm-appearing, partially confluent plaques, the classic gross distribution and morphology of asbestos-related pleural plaques.",
+          "Malignant pleural mesothelioma more often produces diffuse irregular pleural thickening or a bulky tumor rind encasing the lung, rather than these discrete-to-confluent fibrous plaques.",
+          "Empyema produces purulent material and a shaggy fibrinous pleural peel, not the smooth pale verrucous plaques visible here.",
+          "Pleural metastases usually form variably sized discrete tumor nodules or masses rather than broad fibrous plaques concentrated on diaphragmatic pleura."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Asbestos-related fibrous pleural plaques",
+          "required_variant": "var_identity_b11f7468e746",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_398b2d73bc14",
+      "source_group_id": "sg_df7e8bff0c46",
+      "source_id": "src_fdfb0e719846",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "coccidioides-spherule-pulmonary-histology.jpg",
+      "original_relative_path": "originals/coccidioides-spherule-pulmonary-histology.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/coccidioides-spherule-pulmonary-histology.jpg",
+      "source_sha256": "398b2d73bc14e663d15784d7f1b6e8eaaf41a7773a84255c715a834c61653b41",
+      "pixel_width": 1333,
+      "pixel_height": 1000,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "Histopathology",
+      "organ_system": "Pulmonary",
+      "category": "Endemic mycosis",
+      "tested_condition_structure_finding": "Coccidioides spherule containing endospores",
+      "canonical_correct_answer": "Coccidioides spherule containing endospores",
+      "accepted_answers": [
+        "Pulmonary coccidioidomycosis",
+        "Coccidioidomycosis",
+        "Coccidioides spherule"
+      ],
+      "ground_truth_basis": "The user supplied the H&E lung-tissue image with a caption identifying a thick-walled spherule containing endospores within an inflammatory granuloma. CDC clinical guidance independently confirms that microscopy can detect Coccidioides spherules in tissue.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "low",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A large round thick-walled spherule containing multiple internal endospores lies within granulomatous inflammation; a thin outline highlights the target without naming it.",
+      "what_student_should_recognize": "Coccidioides spherule containing endospores",
+      "lecture_context": "User-supplied pulmonary pathology image (September 14, 2026)",
+      "source_document": "User-supplied pulmonary pathology image (September 14, 2026)",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/coccidioides-spherule-pulmonary-histology.jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Local pulmonary study collection",
+      "creator": "User supplied",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "https://www.cdc.gov/valley-fever/hcp/clinical-overview/index.html",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_398b2d73bc14",
+      "quiz_safe_variant_path": "originals/coccidioides-spherule-pulmonary-histology.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_398b2d73bc14",
+          "relative_path": "originals/coccidioides-spherule-pulmonary-histology.jpg",
+          "sha256": "398b2d73bc14e663d15784d7f1b6e8eaaf41a7773a84255c715a834c61653b41",
+          "pixel_width": 1333,
+          "pixel_height": 1000,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the fungal form highlighted in this lung-tissue photomicrograph.",
+        "options": [
+          "Coccidioides spherule containing endospores",
+          "Blastomyces with broad-based budding",
+          "Histoplasma capsulatum within macrophages",
+          "Cryptococcus with a thick capsule"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "A large round thick-walled structure is present within the granuloma",
+          "Multiple small endospores are contained inside the spherule",
+          "No budding yeast form is visible"
+        ],
+        "explanation": "A thick-walled tissue spherule containing endospores is the characteristic histopathologic form of Coccidioides and supports pulmonary coccidioidomycosis. Culture and serology can provide complementary confirmation in the appropriate clinical setting.",
+        "choice_rationales": [
+          "Coccidioides forms large, nonbudding, thick-walled spherules filled with endospores in tissue, matching the highlighted structure within the granuloma.",
+          "Blastomyces appears as a large thick-walled yeast with a single broad-based daughter bud, not an endospore-filled spherule.",
+          "Histoplasma usually appears as numerous tiny narrow-budding intracellular yeasts clustered in macrophages, which are not seen here.",
+          "Cryptococcus is an encapsulated narrow-budding yeast with a prominent clear halo, rather than a thick-walled spherule containing endospores."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Coccidioides spherule containing endospores",
+          "required_variant": "var_identity_398b2d73bc14",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_b3b01d4f5702",
+      "source_group_id": "sg_bf48bb575aa6",
+      "source_id": "src_52ea07463a3a",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "bronchopulmonary-dysplasia-intubated-newborn-ap.jpg",
+      "original_relative_path": "originals/bronchopulmonary-dysplasia-intubated-newborn-ap.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/bronchopulmonary-dysplasia-intubated-newborn-ap.jpg",
+      "source_sha256": "b3b01d4f57023dbdfbd3caf461ffe8523c12594ecee61618d59754fecda42caa",
+      "pixel_width": 1091,
+      "pixel_height": 999,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "category": "Bronchopulmonary Dysplasia",
+      "tested_condition_structure_finding": "Bronchopulmonary dysplasia",
+      "canonical_correct_answer": "Bronchopulmonary dysplasia",
+      "accepted_answers": [
+        "BPD",
+        "Chronic lung disease of prematurity"
+      ],
+      "ground_truth_basis": "The user supplied this AP chest radiograph with a description identifying bronchopulmonary dysplasia in an intubated newborn. Its SHA-256 is byte-identical to the independently curated local Pulm Pictures image named Bronchopulmonary Dysplasia.jpg, assigned to the P27.2 and P37 pulmonary teaching collections.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Diffuse bilateral coarse, ill-defined reticular opacities are interspersed with small rounded lucent areas, creating the heterogeneous reticulocystic appearance of bronchopulmonary dysplasia. Endotracheal, enteric, and central venous lines are present; leftward patient rotation explains the asymmetric rib projection and apparent leftward cardiomediastinal position.",
+      "what_student_should_recognize": "Bronchopulmonary dysplasia",
+      "lecture_context": "User-supplied neonatal chest radiograph (September 14, 2026)",
+      "source_document": "User-supplied neonatal chest radiograph (September 14, 2026)",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/big_65bbafea75f8d5.25482255.jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Local pulmonary study collection",
+      "creator": "User supplied",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_identity_b3b01d4f5702",
+      "quiz_safe_variant_path": "originals/bronchopulmonary-dysplasia-intubated-newborn-ap.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_b3b01d4f5702",
+          "relative_path": "originals/bronchopulmonary-dysplasia-intubated-newborn-ap.jpg",
+          "sha256": "b3b01d4f57023dbdfbd3caf461ffe8523c12594ecee61618d59754fecda42caa",
+          "pixel_width": 1091,
+          "pixel_height": 999,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the neonatal pulmonary disorder shown on this AP chest radiograph.",
+        "options": [
+          "Bronchopulmonary dysplasia",
+          "Neonatal respiratory distress syndrome",
+          "Pulmonary interstitial emphysema",
+          "Meconium aspiration syndrome"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Coarse ill-defined reticular markings are diffuse in both lungs",
+          "Small rounded lucent areas are interspersed throughout the abnormal lung",
+          "The heterogeneous reticulocystic pattern is present in an intubated newborn"
+        ],
+        "explanation": "The diffuse mixture of coarse reticular opacities and small rounded lucencies produces the classic heterogeneous, sponge-like radiographic pattern of bronchopulmonary dysplasia. The endotracheal tube, enteric tube, and central venous catheter are appropriately positioned. Patient rotation to the left elongates the projected left ribs and shifts the cardiomediastinal silhouette leftward on the image.",
+        "choice_rationales": [
+          "Bronchopulmonary dysplasia produces chronic coarse bilateral reticular opacity with scattered small lucent or cystic areas, matching the diffuse heterogeneous pattern in this intubated newborn.",
+          "Neonatal respiratory distress syndrome more typically shows low-volume lungs with fine, uniform granular or ground-glass opacity and air bronchograms, not this coarse mixed reticular-and-lucent pattern.",
+          "Pulmonary interstitial emphysema produces branching or tubular interstitial air lucencies that often radiate from the hilum and may be asymmetric, rather than the diffuse chronic coarse reticulocystic pattern shown here.",
+          "Meconium aspiration usually causes patchy, asymmetric air-space opacities with marked hyperinflation and possible air leaks, not the evenly diffuse coarse reticular markings with many small rounded lucencies seen here."
+        ]
+      },
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Bronchopulmonary dysplasia",
+          "required_variant": "var_identity_b3b01d4f5702",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
@@ -52304,13 +52633,13 @@
   ],
   "upstream_schema_version": 1,
   "builder": "build-medical-picture-quiz",
-  "builder_generated_at": "2026-09-13T23:08:04-04:00",
+  "builder_generated_at": "2026-09-14T10:09:04-04:00",
   "source_library_read_only": true,
   "supplemental_source_library": {
     "path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions",
     "manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json",
     "schema_version": 2,
-    "record_count": 39,
+    "record_count": 42,
     "validation": {
       "result": "PASS",
       "all_files_exist": true,
@@ -52318,9 +52647,9 @@
       "all_images_visually_reviewed": true,
       "all_questions_have_four_unique_options": true,
       "all_questions_have_four_aligned_rationales": true,
-      "scored_records": 33,
+      "scored_records": 36,
       "excluded_records": 0,
-      "validated_at": "2026-09-13T18:17:43-04:00"
+      "validated_at": "2026-09-14T10:07:41-04:00"
     },
     "review_promotion_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_review_promotions.json",
     "review_promotion_record_count": 6,

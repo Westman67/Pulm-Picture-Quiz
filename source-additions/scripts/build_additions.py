@@ -890,6 +890,89 @@ SOURCES = [
             "Identify the complication shown in a patient using inhaled corticosteroids.",
         ),
     },
+    {
+        "slug": "asbestos-related-fibrous-pleural-plaques",
+        "answer": "Asbestos-related fibrous pleural plaques",
+        "accepted_answers": ["Asbestosis", "Pleuropulmonary asbestosis", "Fibrous pleural plaques"],
+        "modality": "Gross pathology",
+        "category": "Pneumoconiosis and pleural disease",
+        "lecture": "User-supplied pulmonary pathology image (September 14, 2026)",
+        "local_path": str(ORIGINALS / "asbestos-related-fibrous-pleural-plaques.png"),
+        "creator": "User supplied",
+        "organization": "Local pulmonary study collection",
+        "license": "Local study use only; do not redistribute",
+        "rights_status": "local_only",
+        "ground_truth": "The user supplied the image with the caption: gross specimen of diaphragmatic pleura showing partially confluent fibrous plaques with a verrucous appearance; histology revealed pleuropulmonary asbestosis.",
+        "findings": "Numerous pale, raised, partially confluent fibrous plaques create a nodular-verrucous surface over the diaphragmatic pleura.",
+        "question": q(
+            ["Asbestos-related fibrous pleural plaques", "Malignant pleural mesothelioma", "Empyema with a fibrinopurulent pleural peel", "Pleural metastatic tumor deposits"],
+            ["Multiple pale raised plaques involve the diaphragmatic pleura", "Many plaques are partially confluent", "The surface is fibrous and verrucous rather than shaggy or overtly destructive"],
+            "The gross specimen shows asbestos-related fibrous pleural plaques. The supplied pathology description reports pleuropulmonary asbestosis; pleural plaques are a marker of asbestos exposure but do not by themselves prove parenchymal asbestosis.",
+            [
+                "The diaphragmatic pleura is covered by multiple pale, firm-appearing, partially confluent plaques, the classic gross distribution and morphology of asbestos-related pleural plaques.",
+                "Malignant pleural mesothelioma more often produces diffuse irregular pleural thickening or a bulky tumor rind encasing the lung, rather than these discrete-to-confluent fibrous plaques.",
+                "Empyema produces purulent material and a shaggy fibrinous pleural peel, not the smooth pale verrucous plaques visible here.",
+                "Pleural metastases usually form variably sized discrete tumor nodules or masses rather than broad fibrous plaques concentrated on diaphragmatic pleura.",
+            ],
+            "Identify the pleural lesion shown in this gross specimen.",
+        ),
+    },
+    {
+        "slug": "coccidioides-spherule-pulmonary-histology",
+        "answer": "Coccidioides spherule containing endospores",
+        "accepted_answers": ["Pulmonary coccidioidomycosis", "Coccidioidomycosis", "Coccidioides spherule"],
+        "modality": "Histopathology",
+        "category": "Endemic mycosis",
+        "lecture": "User-supplied pulmonary pathology image (September 14, 2026)",
+        "local_path": str(ORIGINALS / "coccidioides-spherule-pulmonary-histology.jpg"),
+        "creator": "User supplied",
+        "organization": "Local pulmonary study collection",
+        "license": "Local study use only; do not redistribute",
+        "rights_status": "local_only",
+        "answer_leakage_risk": "low",
+        "trusted_reference_url": "https://www.cdc.gov/valley-fever/hcp/clinical-overview/index.html",
+        "ground_truth": "The user supplied the H&E lung-tissue image with a caption identifying a thick-walled spherule containing endospores within an inflammatory granuloma. CDC clinical guidance independently confirms that microscopy can detect Coccidioides spherules in tissue.",
+        "findings": "A large round thick-walled spherule containing multiple internal endospores lies within granulomatous inflammation; a thin outline highlights the target without naming it.",
+        "question": q(
+            ["Coccidioides spherule containing endospores", "Blastomyces with broad-based budding", "Histoplasma capsulatum within macrophages", "Cryptococcus with a thick capsule"],
+            ["A large round thick-walled structure is present within the granuloma", "Multiple small endospores are contained inside the spherule", "No budding yeast form is visible"],
+            "A thick-walled tissue spherule containing endospores is the characteristic histopathologic form of Coccidioides and supports pulmonary coccidioidomycosis. Culture and serology can provide complementary confirmation in the appropriate clinical setting.",
+            [
+                "Coccidioides forms large, nonbudding, thick-walled spherules filled with endospores in tissue, matching the highlighted structure within the granuloma.",
+                "Blastomyces appears as a large thick-walled yeast with a single broad-based daughter bud, not an endospore-filled spherule.",
+                "Histoplasma usually appears as numerous tiny narrow-budding intracellular yeasts clustered in macrophages, which are not seen here.",
+                "Cryptococcus is an encapsulated narrow-budding yeast with a prominent clear halo, rather than a thick-walled spherule containing endospores.",
+            ],
+            "Identify the fungal form highlighted in this lung-tissue photomicrograph.",
+        ),
+    },
+    {
+        "slug": "bronchopulmonary-dysplasia-intubated-newborn-ap",
+        "answer": "Bronchopulmonary dysplasia",
+        "accepted_answers": ["BPD", "Chronic lung disease of prematurity"],
+        "modality": "X-ray",
+        "category": "Bronchopulmonary Dysplasia",
+        "lecture": "User-supplied neonatal chest radiograph (September 14, 2026)",
+        "local_path": "/Users/chriselwell/Desktop/big_65bbafea75f8d5.25482255.jpg",
+        "creator": "User supplied",
+        "organization": "Local pulmonary study collection",
+        "license": "Local study use only; do not redistribute",
+        "rights_status": "local_only",
+        "ground_truth": "The user supplied this AP chest radiograph with a description identifying bronchopulmonary dysplasia in an intubated newborn. Its SHA-256 is byte-identical to the independently curated local Pulm Pictures image named Bronchopulmonary Dysplasia.jpg, assigned to the P27.2 and P37 pulmonary teaching collections.",
+        "findings": "Diffuse bilateral coarse, ill-defined reticular opacities are interspersed with small rounded lucent areas, creating the heterogeneous reticulocystic appearance of bronchopulmonary dysplasia. Endotracheal, enteric, and central venous lines are present; leftward patient rotation explains the asymmetric rib projection and apparent leftward cardiomediastinal position.",
+        "question": q(
+            ["Bronchopulmonary dysplasia", "Neonatal respiratory distress syndrome", "Pulmonary interstitial emphysema", "Meconium aspiration syndrome"],
+            ["Coarse ill-defined reticular markings are diffuse in both lungs", "Small rounded lucent areas are interspersed throughout the abnormal lung", "The heterogeneous reticulocystic pattern is present in an intubated newborn"],
+            "The diffuse mixture of coarse reticular opacities and small rounded lucencies produces the classic heterogeneous, sponge-like radiographic pattern of bronchopulmonary dysplasia. The endotracheal tube, enteric tube, and central venous catheter are appropriately positioned. Patient rotation to the left elongates the projected left ribs and shifts the cardiomediastinal silhouette leftward on the image.",
+            [
+                "Bronchopulmonary dysplasia produces chronic coarse bilateral reticular opacity with scattered small lucent or cystic areas, matching the diffuse heterogeneous pattern in this intubated newborn.",
+                "Neonatal respiratory distress syndrome more typically shows low-volume lungs with fine, uniform granular or ground-glass opacity and air bronchograms, not this coarse mixed reticular-and-lucent pattern.",
+                "Pulmonary interstitial emphysema produces branching or tubular interstitial air lucencies that often radiate from the hilum and may be asymmetric, rather than the diffuse chronic coarse reticulocystic pattern shown here.",
+                "Meconium aspiration usually causes patchy, asymmetric air-space opacities with marked hyperinflation and possible air leaks, not the evenly diffuse coarse reticular markings with many small rounded lucencies seen here.",
+            ],
+            "Identify the neonatal pulmonary disorder shown on this AP chest radiograph.",
+        ),
+    },
 ]
 
 
@@ -972,10 +1055,11 @@ def main() -> None:
             provenance = item["web"]
         else:
             local_source = Path(item.get("local_path") or (PULM / item["local"]))
-            if not local_source.exists():
-                raise FileNotFoundError(local_source)
             source = ORIGINALS / f"{item['slug']}{local_source.suffix.lower()}"
-            shutil.copy2(local_source, source)
+            if local_source.exists() and local_source.resolve() != source.resolve():
+                shutil.copy2(local_source, source)
+            elif not local_source.exists() and not source.exists():
+                raise FileNotFoundError(local_source)
             provenance = {
                 "landing": item.get("landing", ""),
                 "creator": item.get("creator", "Course/local collection"),
@@ -1049,10 +1133,10 @@ def main() -> None:
             "category": item["category"],
             "tested_condition_structure_finding": item["answer"],
             "canonical_correct_answer": item["answer"],
-            "accepted_answers": [],
+            "accepted_answers": item.get("accepted_answers", []),
             "ground_truth_basis": item["ground_truth"],
             "ground_truth_confidence": "high",
-            "answer_leakage_risk": "none" if not transform else "mitigated",
+            "answer_leakage_risk": item.get("answer_leakage_risk", "none" if not transform else "mitigated"),
             "answer_revealing_text_removed": bool(transform),
             "answer_revealing_text_remaining": "",
             "key_visual_findings": item["findings"],
@@ -1067,6 +1151,7 @@ def main() -> None:
             "displayed_license": provenance.get("license", ""),
             "license_url": provenance.get("license_url", ""),
             "rights_status": provenance.get("rights_status", ""),
+            "trusted_reference_url": item.get("trusted_reference_url", ""),
             "patient_identifiability": "none_visible",
             "primary_variant_id": variant_id,
             "quiz_safe_variant_path": quiz_path,
