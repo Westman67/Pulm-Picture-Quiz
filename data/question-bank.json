@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "bank_id": "pulmonary-picture-id-v1",
-  "generated_at": "2026-09-13T18:38:07-04:00",
+  "generated_at": "2026-09-13T23:08:04-04:00",
   "mode": "image-identification",
-  "question_count": 252,
+  "question_count": 258,
   "questions": [
     {
       "question_id": "q_a27403e05b80",
@@ -11233,6 +11233,294 @@
         "landing_page_url": "",
         "creator": "Course/local collection",
         "displayed_license": "Local study use only; do not redistribute"
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_6b46f89308d2",
+      "source_group_id": "sg_b0a9cb9f8bcae9d0",
+      "source_id": "src_e50708ea3f7f",
+      "variant_id": "var_f47fae5ce062",
+      "question_type": "Identification",
+      "tested_concept": "Squamous cell carcinoma with intercellular bridges",
+      "stem": "Identify the pulmonary neoplasm shown on histology.",
+      "options": [
+        "Squamous cell carcinoma with intercellular bridges",
+        "Pulmonary adenocarcinoma with gland formation",
+        "Small cell lung carcinoma",
+        "Pulmonary carcinoid tumor"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [
+        "Squamous cell carcinoma"
+      ],
+      "explanation": "Visible intercellular bridges indicate squamous differentiation and support squamous cell carcinoma.",
+      "visual_clues": [
+        "Adjacent polygonal cells remain connected by fine intercellular bridges",
+        "The cells have more cytoplasm than small-cell carcinoma",
+        "No malignant glands or organoid neuroendocrine nests dominate"
+      ],
+      "choice_rationales": [
+        "Correct: fine bridges between adjacent atypical polygonal cells are a classic feature of squamous differentiation.",
+        "Adenocarcinoma would show malignant gland formation or mucin rather than conspicuous intercellular bridges.",
+        "Small cell carcinoma has small hyperchromatic cells with scant cytoplasm and nuclear molding, not polygonal cells joined by bridges.",
+        "A carcinoid tumor usually forms uniform organoid nests or trabeculae with salt-and-pepper chromatin, which are absent here."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "Explicit RLS slide 23 content reconciled with lecture context",
+      "category": "Lung cancer",
+      "modality": "Histology",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "neoplasm",
+      "quiz_asset": "public/assets/images/quiz_35774c61b26eaa7f.png",
+      "original_asset": "public/assets/images/original_5cf365f8469c0835.png",
+      "post_answer_source": {
+        "original_filename": "src_6448b676a84c.png",
+        "source_document": "P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS.pdf",
+        "source_id": "src_e50708ea3f7f",
+        "landing_page_url": null,
+        "creator": null,
+        "displayed_license": null
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_664b5bd40ad8",
+      "source_group_id": "sg_828f8c2c0ec78737",
+      "source_id": "src_8ee818daa264",
+      "variant_id": "var_a4c920952623",
+      "question_type": "Identification",
+      "tested_concept": "Lobar consolidation",
+      "stem": "Identify the pulmonary radiographic pattern shown.",
+      "options": [
+        "Lobar consolidation",
+        "Pleural effusion",
+        "Pneumothorax",
+        "Diffuse interstitial pulmonary edema"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [
+        "Lobar consolidation"
+      ],
+      "explanation": "The sharply regional air-space opacity is a lobar consolidation pattern.",
+      "visual_clues": [
+        "A dense homogeneous air-space opacity conforms to a lobe",
+        "The opacity is intrapulmonary rather than a dependent pleural meniscus",
+        "Peripheral lung markings remain visible without a pleural line"
+      ],
+      "choice_rationales": [
+        "Correct: a dense homogeneous air-space opacity confined to a lobar distribution is lobar consolidation.",
+        "Pleural effusion would layer dependently and form a meniscus or costophrenic-angle blunting rather than this upper-lobar opacity.",
+        "Pneumothorax would produce a visceral pleural line with absent peripheral lung markings, not dense air-space opacity.",
+        "Interstitial edema is usually bilateral and diffuse with septal lines or perihilar haze rather than a single lobar opacity."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "Explicit RLS slide 10 content reconciled with lecture context",
+      "category": "Pulmonary infection",
+      "modality": "X-ray and pathology",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "neoplasm",
+      "quiz_asset": "public/assets/images/quiz_c5899b49d9143126.png",
+      "original_asset": "public/assets/images/original_ccbbc44636465fa1.png",
+      "post_answer_source": {
+        "original_filename": "src_acdb640076ef.png",
+        "source_document": "P27.1 Radiology Pulm Infections & Cancer of Lung RLS.pdf",
+        "source_id": "src_8ee818daa264",
+        "landing_page_url": null,
+        "creator": null,
+        "displayed_license": null
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_a32435060d31",
+      "source_group_id": "sg_c880a4c4c282c000",
+      "source_id": "src_693a1df27aab",
+      "variant_id": "var_cde8ded8baca",
+      "question_type": "Identification",
+      "tested_concept": "Peritonsillar abscess on physical examination",
+      "stem": "Identify the upper-airway diagnosis illustrated.",
+      "options": [
+        "Peritonsillar abscess on physical examination",
+        "Retropharyngeal abscess",
+        "Acute epiglottitis",
+        "Symmetric acute tonsillitis"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [
+        "Peritonsillar abscess on physical examination"
+      ],
+      "explanation": "Unilateral peritonsillar bulging with contralateral uvular deviation is the classic oropharyngeal appearance of a peritonsillar abscess.",
+      "visual_clues": [
+        "The soft palate and peritonsillar region bulge unilaterally",
+        "The uvula is displaced away from the bulge",
+        "The process is asymmetric rather than bilateral"
+      ],
+      "choice_rationales": [
+        "Correct: unilateral soft-palate bulging and contralateral uvular deviation are characteristic of a peritonsillar abscess.",
+        "A retropharyngeal abscess produces posterior pharyngeal-wall swelling and is usually evaluated on lateral neck imaging rather than this unilateral peritonsillar pattern.",
+        "Epiglottitis affects the supraglottic epiglottis and does not create this focal peritonsillar bulge with uvular deviation.",
+        "Acute tonsillitis is usually bilateral with enlarged erythematous tonsils and lacks the marked asymmetric palatal bulge shown."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "Explicit P33 RLS slide 20 title, labels, and aligned transcript context",
+      "category": "Upper airway pathology",
+      "modality": "Clinical Image",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "infection",
+      "quiz_asset": "public/assets/images/quiz_72a5612f3bdde914.png",
+      "original_asset": "public/assets/images/original_fe5798f859bbb7fc.png",
+      "post_answer_source": {
+        "original_filename": "src_871bc1e4e6e4.png",
+        "source_document": "P33 ENT:Airway Diseases RLS.pdf",
+        "source_id": "src_693a1df27aab",
+        "landing_page_url": null,
+        "creator": null,
+        "displayed_license": null
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_817676e3ee09",
+      "source_group_id": "sg_f7c7cfeef92e",
+      "source_id": "src_ce9f372dc298",
+      "variant_id": "var_ed13ad41f1e9",
+      "question_type": "Identification",
+      "tested_concept": "Haller index measurement for pectus excavatum",
+      "stem": "Identify the thoracic measurement demonstrated on this CT image.",
+      "options": [
+        "Haller index measurement for pectus excavatum",
+        "Cardiothoracic ratio",
+        "Cobb angle",
+        "Main pulmonary artery-to-aorta ratio"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [
+        "Haller index for pectus excavatum"
+      ],
+      "explanation": "The ratio of internal transverse diameter to minimum anteroposterior diameter on axial CT is the Haller index used to quantify pectus excavatum.",
+      "visual_clues": [
+        "The image is an axial chest CT through a depressed sternum",
+        "One line measures the internal transverse chest diameter",
+        "A perpendicular line measures the shortest sternum-to-spine distance"
+      ],
+      "choice_rationales": [
+        "Correct: the Haller index divides the internal transverse chest diameter by the shortest sternum-to-spine distance on axial CT.",
+        "The cardiothoracic ratio compares cardiac width with thoracic width on a frontal chest radiograph, not two perpendicular CT chest dimensions.",
+        "The Cobb angle measures spinal curvature on a coronal radiograph and does not use transverse and AP chest diameters.",
+        "The pulmonary artery-to-aorta ratio compares vascular diameters near the pulmonary-artery bifurcation, not the thoracic cage measurements shown."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "explicit RLS title, labels, captions, and surrounding lecture context",
+      "category": "Chest Wall and Diaphragm",
+      "modality": "CT",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "chest-wall-congenital",
+      "quiz_asset": "public/assets/images/quiz_6ba19eb3e7e5d9b4.png",
+      "original_asset": "public/assets/images/original_9525833faf3220f5.png",
+      "post_answer_source": {
+        "original_filename": "src_c0ab8fd58980.png",
+        "source_document": "P36 Pulmonary Developmental Anomalies RLS.pdf",
+        "source_id": "src_ce9f372dc298",
+        "landing_page_url": null,
+        "creator": null,
+        "displayed_license": null
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_d699ad565951",
+      "source_group_id": "sg_272723e9d93b3f1b",
+      "source_id": "src_f1f5a109f939",
+      "variant_id": "var_9c2123715540",
+      "question_type": "Identification",
+      "tested_concept": "Empyema on ultrasound",
+      "stem": "Identify the pleural process shown on ultrasound.",
+      "options": [
+        "Empyema on ultrasound",
+        "Simple transudative pleural effusion",
+        "Normally aerated lung with A-lines",
+        "Pneumothorax with absent lung sliding"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [
+        "Empyema on ultrasound"
+      ],
+      "explanation": "Complex septated pleural fluid with internal gas is strongly supportive of empyema in the appropriate clinical setting.",
+      "visual_clues": [
+        "Pleural fluid is internally complex rather than uniformly anechoic",
+        "Multiple septations create loculations",
+        "Echogenic gas is present within the collection"
+      ],
+      "choice_rationales": [
+        "Correct: loculated complex pleural fluid containing septations and gas is a characteristic sonographic pattern of empyema.",
+        "A simple transudative effusion is usually uniformly anechoic and lacks internal septations or gas.",
+        "Normally aerated lung shows a pleural line with sliding and horizontal A-lines rather than a complex fluid collection.",
+        "Pneumothorax is assessed by absent sliding or a barcode sign and does not create this septated pleural collection."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "Explicit RLS slide 26 content reconciled with lecture context",
+      "category": "Pulmonary infection",
+      "modality": "Ultrasound",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "neoplasm",
+      "quiz_asset": "public/assets/images/quiz_3d02186750c17d85.png",
+      "original_asset": "public/assets/images/original_2a2449443aed4c7d.png",
+      "post_answer_source": {
+        "original_filename": "src_f61b09398e77.png",
+        "source_document": "P27.1 Radiology Pulm Infections & Cancer of Lung RLS.pdf",
+        "source_id": "src_f1f5a109f939",
+        "landing_page_url": null,
+        "creator": null,
+        "displayed_license": null
+      },
+      "review_status": "VERIFIED"
+    },
+    {
+      "question_id": "q_0aa35c8d2ed2",
+      "source_group_id": "sg_cdc18e70102a",
+      "source_id": "src_774eb13f7cb6",
+      "variant_id": "var_30dd2590604e",
+      "question_type": "Identification",
+      "tested_concept": "Hyperinflated multicystic CPAM with contralateral mediastinal shift",
+      "stem": "Identify the congenital pulmonary lesion shown.",
+      "options": [
+        "Hyperinflated multicystic CPAM with contralateral mediastinal shift",
+        "Congenital lobar emphysema",
+        "Tension pneumothorax",
+        "Congenital diaphragmatic hernia"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [
+        "Hyperinflated multicystic CPAM with contralateral mediastinal shift"
+      ],
+      "explanation": "The neonatal radiograph shows an expanded multicystic pulmonary lesion with contralateral shift, supporting CPAM.",
+      "visual_clues": [
+        "Multiple internal cystic lucencies occupy the right lung",
+        "The involved hemithorax is expanded",
+        "The mediastinum is displaced to the opposite side"
+      ],
+      "choice_rationales": [
+        "Correct: a multicystic intrapulmonary lesion that expands one hemithorax and shifts the mediastinum is characteristic of CPAM.",
+        "Congenital lobar emphysema produces overinflation of a lobe with attenuated but continuous vascular markings rather than multiple discrete cystic spaces.",
+        "Tension pneumothorax creates a pleural line with absent peripheral vascular markings and a collapsed central lung, not a multicystic parenchymal lesion.",
+        "Congenital diaphragmatic hernia shows intrathoracic bowel loops or stomach and an abnormal diaphragmatic contour rather than this pulmonary multicystic pattern."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "explicit RLS title, labels, captions, and surrounding lecture context",
+      "category": "Congenital Lung Lesions",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "chest-wall-congenital",
+      "quiz_asset": "public/assets/images/quiz_03a01594c8ffe69e.png",
+      "original_asset": "public/assets/images/original_29045a6195b757df.png",
+      "post_answer_source": {
+        "original_filename": "src_85db33131d60.png",
+        "source_document": "P36 Pulmonary Developmental Anomalies RLS.pdf",
+        "source_id": "src_774eb13f7cb6",
+        "landing_page_url": null,
+        "creator": null,
+        "displayed_license": null
       },
       "review_status": "VERIFIED"
     }

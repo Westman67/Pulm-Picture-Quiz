@@ -8,7 +8,7 @@ Validated September 13, 2026 (America/New_York).
 - Pulm Pictures audits: **2,195 files and 843,072,468 bytes** before and after; **0 changes**.
 - Referenced RLS documents: **37/37 hashes unchanged**.
 - Upstream extractor manifest: **PASS** — 555 records and 111 variants.
-- Supplemental manifest: **PASS** — 33 records, all referenced images, variants, and source videos present and hash-verified.
+- Base supplemental manifest: **PASS** — 33 records. Review-promotion manifest: **PASS** — 6 records. All referenced images, variants, and source videos are present and hash-verified.
 
 ## Coverage
 
@@ -20,11 +20,11 @@ Validated September 13, 2026 (America/New_York).
 ## Bank
 
 - Schema version: **2**
-- Scored image-identification questions: **252**
-- Distinct scored source groups: **252**
-- Manual-review exclusions: **19**
+- Scored image-identification questions: **258**
+- Distinct scored source groups: **258**
+- Manual-review exclusions: **13**
 - Repeated modality/answer concepts withheld: **14**
-- Supplemental scored sources: **33**
+- Supplemental scored sources: **39**
 - Builder manifest/bank validator: **PASS**
 - Four unique options and four non-empty, index-aligned rationales: **PASS**
 
@@ -38,3 +38,9 @@ Validated September 13, 2026 (America/New_York).
 - New quiz variants visually inspected: **PASS**
 
 Visual and machine-readable review exports are stored in `reports/review-queue/`; Pulm Pictures audit artifacts are in `reports/pulm-pictures-audit/`.
+
+## Review promotions
+
+- Six requested review items were promoted through project-local reproducible crops or opaque masks.
+- Remaining manual-review queue: **13**.
+- Promotion variants visually inspected: **PASS**.

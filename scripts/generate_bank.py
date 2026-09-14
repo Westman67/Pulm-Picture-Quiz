@@ -23,6 +23,7 @@ UPSTREAM = LIBRARY / "picture_quiz_manifest.json"
 # self-contained even if the former Desktop staging folder is edited or removed.
 SUPPLEMENT_ROOT = PROJECT / "source-additions"
 SUPPLEMENT_MANIFEST = SUPPLEMENT_ROOT / "picture_quiz_supplemental_manifest.json"
+PROMOTION_MANIFEST = SUPPLEMENT_ROOT / "picture_quiz_review_promotions.json"
 SUPPLEMENT_STAGE = PROJECT / ".supplement-stage"
 ASSET_DIR = PROJECT / "public" / "assets" / "images"
 
@@ -271,9 +272,13 @@ def choose_distractors(target: dict, candidates: list[dict]) -> list[dict]:
 def main() -> None:
     payload = json.loads(UPSTREAM.read_text(encoding="utf-8"))
     supplement_payload = json.loads(SUPPLEMENT_MANIFEST.read_text(encoding="utf-8"))
-    supplement_records = supplement_payload.get("records", [])
+    promotion_payload = json.loads(PROMOTION_MANIFEST.read_text(encoding="utf-8"))
+    supplement_records = supplement_payload.get("records", []) + promotion_payload.get("records", [])
+    promoted_upstream_ids = {clean(r.get("upstream_source_id")) for r in promotion_payload.get("records", [])}
     if supplement_payload.get("schema_version", 0) < 2 or supplement_payload.get("validation", {}).get("result") != "PASS":
         raise RuntimeError("Supplemental manifest did not pass its schema/version gate")
+    if promotion_payload.get("schema_version", 0) < 2 or promotion_payload.get("validation", {}).get("result") != "PASS":
+        raise RuntimeError("Review-promotion manifest did not pass its schema/version gate")
     stage_supplement_assets(supplement_records)
     records = payload.get("records", [])
     active_usable = [
@@ -443,13 +448,17 @@ def main() -> None:
             "quiz": quiz_meta,
             "original": original_meta,
             "source_id": record["source_id"],
-            "supplemental_source_manifest": SUPPLEMENT_MANIFEST.as_posix(),
+            "supplemental_source_manifest": (
+                PROMOTION_MANIFEST.as_posix() if record.get("upstream_source_id") else SUPPLEMENT_MANIFEST.as_posix()
+            ),
         }
 
     # Review items receive opaque, metadata-stripped previews but never enter scored sessions.
     review_items = []
     by_id = {r.get("source_id"): r for r in records}
     for source_id, reason in MANUAL_REVIEW.items():
+        if source_id in promoted_upstream_ids:
+            continue
         record = by_id[source_id]
         preview, preview_meta = question_asset(record, "review")
         review_items.append({
@@ -499,6 +508,9 @@ def main() -> None:
         "schema_version": supplement_payload.get("schema_version"),
         "record_count": len(supplement_records),
         "validation": supplement_payload.get("validation"),
+        "review_promotion_manifest": PROMOTION_MANIFEST.as_posix(),
+        "review_promotion_record_count": len(promotion_payload.get("records", [])),
+        "review_promotion_validation": promotion_payload.get("validation"),
         "read_only_during_quiz_build": True,
     }
     projected["records"].extend(copy.deepcopy(supplement_records))
@@ -507,19 +519,26 @@ def main() -> None:
     for record in projected["records"]:
         sid = record.get("source_id")
         active = record.get("active", True) and record.get("status") == "USABLE"
+        promoted_original = sid in promoted_upstream_ids
+        review_only = sid in MANUAL_REVIEW and not promoted_original
         record["question_type_matrix"] = {
             "Identification": {
-                "supported": "YES" if active and sid not in MANUAL_REVIEW else ("REVIEW" if sid in MANUAL_REVIEW else "NO"),
+                "supported": "YES" if sid in selected_ids else ("REVIEW" if review_only else "NO"),
                 "visual_target": record.get("tested_condition_structure_finding"),
                 "required_variant": record.get("primary_variant_id") or "identity",
                 "full_image_required": record.get("panel_handling") == "retained_composite",
                 "preserve": record.get("labels_preserved") or [],
                 "confidence": record.get("ground_truth_confidence"),
-                "reason_unsupported": MANUAL_REVIEW.get(sid, "") if sid not in selected_ids else "",
+                "reason_unsupported": (
+                    f"Promoted through a project-local quiz-safe derivative in {PROMOTION_MANIFEST.name}."
+                    if promoted_original else (MANUAL_REVIEW.get(sid, "") if sid not in selected_ids else "")
+                ),
             }
         }
         record["builder_scored_question"] = sid in selected_ids
-        if sid in MANUAL_REVIEW:
+        if promoted_original:
+            record["builder_exclusion_reason"] = f"Replaced for scoring by a project-local quiz-safe derivative from source {sid}."
+        elif review_only:
             record["builder_review_reason"] = MANUAL_REVIEW[sid]
         elif sid in duplicate_ids:
             record["builder_exclusion_reason"] = "Duplicate modality/answer concept retained upstream but not repeated in the initial scored bank."
@@ -581,7 +600,7 @@ Generated: {now}
 ## Limitations
 
 - Distractors were selected deterministically from modality- and category-aligned, lecture-verified source records.
-- Nineteen visually labeled or text-dependent candidates were placed in the local review queue rather than scored.
+- {len(review_items)} visually labeled or text-dependent candidates remain in the local review queue; six user-approved sources were promoted through reproducible local crops or opaque masks.
 - The build preserves the upstream medical ground truth; it does not reinterpret RLS content from filenames.
 """
     (PROJECT / "reports" / "preflight-audit.md").write_text(report, encoding="utf-8")

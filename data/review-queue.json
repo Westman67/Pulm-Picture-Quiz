@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-13T18:38:07-04:00",
-  "count": 19,
+  "generated_at": "2026-09-13T23:08:04-04:00",
+  "count": 13,
   "items": [
     {
       "source_id": "src_90a7391b3c05",
@@ -21,40 +21,6 @@
       "preview_sha256": "b9f0202909c1263626e0fbea2b1e30f693eaa5755691c8161a1ed369061ff6d4"
     },
     {
-      "source_id": "src_6448b676a84c",
-      "source_group_id": "sg_b0a9cb9f8bcae9d0",
-      "preview_asset": "public/assets/images/review_655ecd710b07f3d4.png",
-      "modality": "Histology",
-      "category": "Lung cancer",
-      "proposed_answer": "Squamous cell carcinoma",
-      "confidence": "high",
-      "evidence": "Explicit RLS slide 23 content reconciled with lecture context",
-      "uncertainty_reason": "The teaching label names the decisive intercellular-bridge clue.",
-      "answer_leakage_risk": "none",
-      "duplicate_group": "",
-      "project_status": "NEEDS_REVIEW",
-      "source_document": "P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS.pdf",
-      "source_page_or_slide": 23,
-      "preview_sha256": "ab4f360fde690641559ca65ea0c1050c564704261d0d54b349282ba69d565859"
-    },
-    {
-      "source_id": "src_acdb640076ef",
-      "source_group_id": "sg_828f8c2c0ec78737",
-      "preview_asset": "public/assets/images/review_4ba098994e571ff7.png",
-      "modality": "X-ray and pathology",
-      "category": "Pulmonary infection",
-      "proposed_answer": "Lobar consolidation",
-      "confidence": "high",
-      "evidence": "Explicit RLS slide 10 content reconciled with lecture context",
-      "uncertainty_reason": "Visible teaching prose names consolidation before submission.",
-      "answer_leakage_risk": "none",
-      "duplicate_group": "",
-      "project_status": "NEEDS_REVIEW",
-      "source_document": "P27.1 Radiology Pulm Infections & Cancer of Lung RLS.pdf",
-      "source_page_or_slide": 10,
-      "preview_sha256": "b25e83d02e7898da1b3cd4c393d39a62e6b530894b91a11a53d04d5d52f74b6c"
-    },
-    {
       "source_id": "src_b413e152c175",
       "source_group_id": "sg_1e1e0ee3e36a664e",
       "preview_asset": "public/assets/images/review_6211522be7c0f8a6.png",
@@ -72,23 +38,6 @@
       "preview_sha256": "9232bfe3abf88ff3f0f4b5d138fd83b0accc3927fd24e14d3e23aa6c98051c7d"
     },
     {
-      "source_id": "src_f61b09398e77",
-      "source_group_id": "sg_272723e9d93b3f1b",
-      "preview_asset": "public/assets/images/review_6de0f8f350152f1f.png",
-      "modality": "Ultrasound",
-      "category": "Pulmonary infection",
-      "proposed_answer": "Empyema on ultrasound",
-      "confidence": "high",
-      "evidence": "Explicit RLS slide 26 content reconciled with lecture context",
-      "uncertainty_reason": "The ultrasound panels visibly label the effusion.",
-      "answer_leakage_risk": "none",
-      "duplicate_group": "",
-      "project_status": "NEEDS_REVIEW",
-      "source_document": "P27.1 Radiology Pulm Infections & Cancer of Lung RLS.pdf",
-      "source_page_or_slide": 26,
-      "preview_sha256": "a1d6a827281e1baee8bc4533f343a62120c8dd301bc5cd1c6e8628e2c562c5dd"
-    },
-    {
       "source_id": "src_f2a9e757c991",
       "source_group_id": "sg_f3c0fefee272fc84",
       "preview_asset": "public/assets/images/review_84015ab5ffdc0b72.png",
@@ -104,23 +53,6 @@
       "source_document": "P32 Pulmonary Hypertension RLS.pdf",
       "source_page_or_slide": 49,
       "preview_sha256": "d9f3af50e1d1fee05970e186f2293a21c58e5bd902396a5b7485a19ce2772250"
-    },
-    {
-      "source_id": "src_871bc1e4e6e4",
-      "source_group_id": "sg_c880a4c4c282c000",
-      "preview_asset": "public/assets/images/review_3cb7061f65e0dc38.png",
-      "modality": "Clinical Image",
-      "category": "Upper airway pathology",
-      "proposed_answer": "Peritonsillar abscess on physical examination",
-      "confidence": "high",
-      "evidence": "Explicit P33 RLS slide 20 title, labels, and aligned transcript context",
-      "uncertainty_reason": "The physical-exam diagram labels the diagnostic displacement measurements.",
-      "answer_leakage_risk": "high",
-      "duplicate_group": "",
-      "project_status": "NEEDS_REVIEW",
-      "source_document": "P33 ENT:Airway Diseases RLS.pdf",
-      "source_page_or_slide": 20,
-      "preview_sha256": "3cc9b9a0ec14eae04d7c2bf01e3873a2d8ba8be6ba56129d9f3dc4308f1a5ede"
     },
     {
       "source_id": "src_11d38df219ae",
@@ -172,40 +104,6 @@
       "source_document": "P36 Pulmonary Developmental Anomalies RLS.pdf",
       "source_page_or_slide": 26,
       "preview_sha256": "c551e7fa93a86334e52e2ac2dc2456449dc116f783f50c0fac568481e5b9c85a"
-    },
-    {
-      "source_id": "src_85db33131d60",
-      "source_group_id": "sg_cdc18e70102a",
-      "preview_asset": "public/assets/images/review_95b3229fb11b17c5.png",
-      "modality": "X-ray",
-      "category": "Congenital Lung Lesions",
-      "proposed_answer": "Hyperinflated multicystic CPAM with contralateral mediastinal shift",
-      "confidence": "high",
-      "evidence": "explicit RLS title, labels, captions, and surrounding lecture context",
-      "uncertainty_reason": "The radiograph visibly states the key hyperinflation and mediastinal-shift findings.",
-      "answer_leakage_risk": "low",
-      "duplicate_group": "",
-      "project_status": "NEEDS_REVIEW",
-      "source_document": "P36 Pulmonary Developmental Anomalies RLS.pdf",
-      "source_page_or_slide": 29,
-      "preview_sha256": "a54391e0a3682c224b6a1466c8fabb49a18e626c475876c86939bf3e8c0b976f"
-    },
-    {
-      "source_id": "src_c0ab8fd58980",
-      "source_group_id": "sg_f7c7cfeef92e",
-      "preview_asset": "public/assets/images/review_882e5f7253d98c1a.png",
-      "modality": "CT",
-      "category": "Chest Wall and Diaphragm",
-      "proposed_answer": "Haller index for pectus excavatum",
-      "confidence": "high",
-      "evidence": "explicit RLS title, labels, captions, and surrounding lecture context",
-      "uncertainty_reason": "The measurement overlay effectively states the Haller-index task.",
-      "answer_leakage_risk": "low",
-      "duplicate_group": "",
-      "project_status": "NEEDS_REVIEW",
-      "source_document": "P36 Pulmonary Developmental Anomalies RLS.pdf",
-      "source_page_or_slide": 71,
-      "preview_sha256": "a32266fbebb277872b180f8fe9b5c9548d147b1ec3b9c86e607e06c044c78097"
     },
     {
       "source_id": "src_d92bf1430d1b",

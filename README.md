@@ -4,7 +4,7 @@ An offline-capable, local browser application for pulmonary image-identification
 upstream Picture Quiz library is read-only; this project contains separate, metadata-stripped display
 derivatives and a schema-version-2 question bank.
 
-The completed bank contains **252 scored questions**. Thirty-three are supplemental pulmonary-picture
+The completed bank contains **258 scored questions**. Thirty-nine are supplemental pulmonary-picture
 questions added from a separate, versioned source library; the original RLS and Pulm Pictures
 collections were not modified.
 
@@ -17,7 +17,7 @@ collections were not modified.
 - keyboard controls: `1`–`4`, `Enter`, and `Z`
 - zoom, pan, reset, and teaching-original toggle
 - source-group/concept-aware local progress with export/import/reset
-- manual review queue excluded from scoring
+- manual review queue excluded from scoring (13 items remain; 6 were promoted with safe variants)
 
 ## Start the completed build
 

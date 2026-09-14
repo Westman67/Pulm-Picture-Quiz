@@ -1,8 +1,9 @@
 # Manual review queue
 
 - Live app review data: `../../data/review-queue.json`
-- Review-only item count: **19**
+- Remaining review-only item count: **13**
+- Promoted to scored quiz with safe project-local variants: **6**
 - Contact sheet: `review-contact-sheet.jpg`
 - Individual opaque previews: `items/`
 
-These items are excluded from scored Learn and Exam sessions. Review the uncertainty reason in `review-queue.json`; promote an item only after the answer-leakage and ground-truth gates are resolved. Source originals remain read-only.
+The remaining items are excluded from scored Learn and Exam sessions. The six promoted items are documented in `../review-promotions.md`. Source originals remain read-only.

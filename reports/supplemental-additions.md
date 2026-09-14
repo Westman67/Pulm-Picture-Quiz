@@ -67,3 +67,7 @@ Validated September 13, 2026 (America/New_York). Generated from `/Users/chriselw
 - Pulm Pictures audits remain identical: **2,195 files, 843,072,468 bytes, 0 changed/added/removed files**.
 - The canonical RLS Pulmonary image/document set has **0 changed, added, or removed non-Finder files** versus the immediately prior audit.
 - All added local images were copied into the separate supplemental library; the source root remains read-only.
+
+## Review-item promotions
+
+Six additional user-approved RLS review sources were copied into the app-local supplemental library and converted to reproducible quiz-safe variants. Effective scored supplemental records are now **39** (33 base additions + 6 promotions). See `review-promotions.md`.

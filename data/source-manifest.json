@@ -2434,7 +2434,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Digital clubbing",
           "required_variant": "identity",
           "full_image_required": false,
@@ -2579,7 +2579,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Normal chest radiograph",
           "required_variant": "identity",
           "full_image_required": false,
@@ -6603,7 +6603,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Respiratory bronchiolitis",
           "required_variant": "identity",
           "full_image_required": false,
@@ -7180,7 +7180,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Bronchiectasis",
           "required_variant": "identity",
           "full_image_required": false,
@@ -9838,7 +9838,7 @@
       ],
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Bronchiectasis",
           "required_variant": "var_8903bd229ad6",
           "full_image_required": false,
@@ -15698,7 +15698,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Keratinization and intercellular bridges",
           "required_variant": "identity",
           "full_image_required": false,
@@ -15706,11 +15706,11 @@
             "Anatomic orientation and necessary arrows when present"
           ],
           "confidence": "high",
-          "reason_unsupported": "The teaching label names the decisive intercellular-bridge clue."
+          "reason_unsupported": "Promoted through a project-local quiz-safe derivative in picture_quiz_review_promotions.json."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "The teaching label names the decisive intercellular-bridge clue."
+      "builder_exclusion_reason": "Replaced for scoring by a project-local quiz-safe derivative from source src_6448b676a84c."
     },
     {
       "asset_id": "asset_4441f0f1ecc7",
@@ -17293,7 +17293,7 @@
       ],
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Lobar pneumonia with gray hepatization",
           "required_variant": "var_142467ccd51a",
           "full_image_required": false,
@@ -18565,7 +18565,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Lobar opacity and matching pathologic consolidation",
           "required_variant": "identity",
           "full_image_required": false,
@@ -18573,11 +18573,11 @@
             "Anatomic orientation and necessary arrows when present"
           ],
           "confidence": "high",
-          "reason_unsupported": "Visible teaching prose names consolidation before submission."
+          "reason_unsupported": "Promoted through a project-local quiz-safe derivative in picture_quiz_review_promotions.json."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "Visible teaching prose names consolidation before submission."
+      "builder_exclusion_reason": "Replaced for scoring by a project-local quiz-safe derivative from source src_acdb640076ef."
     },
     {
       "asset_id": "asset_4f0248b91be3",
@@ -19215,7 +19215,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Complex septated pleural fluid",
           "required_variant": "identity",
           "full_image_required": false,
@@ -19223,11 +19223,11 @@
             "Anatomic orientation and necessary arrows when present"
           ],
           "confidence": "high",
-          "reason_unsupported": "The ultrasound panels visibly label the effusion."
+          "reason_unsupported": "Promoted through a project-local quiz-safe derivative in picture_quiz_review_promotions.json."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "The ultrasound panels visibly label the effusion."
+      "builder_exclusion_reason": "Replaced for scoring by a project-local quiz-safe derivative from source src_f61b09398e77."
     },
     {
       "asset_id": "asset_d70265fdcadf",
@@ -25646,7 +25646,7 @@
       ],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Peritonsillar abscess on physical examination",
           "required_variant": "var_0681cc4ae7ef",
           "full_image_required": false,
@@ -25654,11 +25654,11 @@
             "Anatomic orientation and diagnostic structures"
           ],
           "confidence": "high",
-          "reason_unsupported": "The physical-exam diagram labels the diagnostic displacement measurements."
+          "reason_unsupported": "Promoted through a project-local quiz-safe derivative in picture_quiz_review_promotions.json."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "The physical-exam diagram labels the diagnostic displacement measurements."
+      "builder_exclusion_reason": "Replaced for scoring by a project-local quiz-safe derivative from source src_871bc1e4e6e4."
     },
     {
       "asset_id": "asset_52743763933c",
@@ -26767,7 +26767,7 @@
       ],
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Tracheoesophageal fistula on barium esophagram",
           "required_variant": "var_21bee9cda9f6",
           "full_image_required": true,
@@ -30502,7 +30502,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Bronchogenic cyst",
           "required_variant": "identity",
           "full_image_required": true,
@@ -30840,7 +30840,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Hyperinflated multicystic CPAM with contralateral mediastinal shift",
           "required_variant": "identity",
           "full_image_required": false,
@@ -30850,11 +30850,11 @@
             "Imaging laterality and view context when present"
           ],
           "confidence": "high",
-          "reason_unsupported": "The radiograph visibly states the key hyperinflation and mediastinal-shift findings."
+          "reason_unsupported": "Promoted through a project-local quiz-safe derivative in picture_quiz_review_promotions.json."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "The radiograph visibly states the key hyperinflation and mediastinal-shift findings."
+      "builder_exclusion_reason": "Replaced for scoring by a project-local quiz-safe derivative from source src_85db33131d60."
     },
     {
       "asset_id": "asset_44f149c32311",
@@ -32689,7 +32689,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Diaphragmatic eventration",
           "required_variant": "identity",
           "full_image_required": true,
@@ -33026,7 +33026,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "NO",
           "visual_target": "Haller index for pectus excavatum",
           "required_variant": "identity",
           "full_image_required": false,
@@ -33036,11 +33036,11 @@
             "Imaging laterality and view context when present"
           ],
           "confidence": "high",
-          "reason_unsupported": "The measurement overlay effectively states the Haller-index task."
+          "reason_unsupported": "Promoted through a project-local quiz-safe derivative in picture_quiz_review_promotions.json."
         }
       },
       "builder_scored_question": false,
-      "builder_review_reason": "The measurement overlay effectively states the Haller-index task."
+      "builder_exclusion_reason": "Replaced for scoring by a project-local quiz-safe derivative from source src_c0ab8fd58980."
     },
     {
       "asset_id": "asset_b7364edbeda1",
@@ -37063,7 +37063,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Digital clubbing",
           "required_variant": "identity",
           "full_image_required": false,
@@ -37980,7 +37980,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Pneumothorax",
           "required_variant": "identity",
           "full_image_required": false,
@@ -39492,7 +39492,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Diffuse alveolar damage",
           "required_variant": "identity",
           "full_image_required": true,
@@ -39745,7 +39745,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "ARDS diffuse bilateral opacities",
           "required_variant": "identity",
           "full_image_required": false,
@@ -42098,7 +42098,7 @@
       "variants": [],
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Squamous cell carcinoma",
           "required_variant": "identity",
           "full_image_required": true,
@@ -51681,17 +51681,636 @@
         }
       },
       "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_b65243b20121",
+      "source_group_id": "sg_b0a9cb9f8bcae9d0",
+      "source_id": "src_e50708ea3f7f",
+      "upstream_source_id": "src_6448b676a84c",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "src_6448b676a84c.png",
+      "original_relative_path": "promotions/originals/src_6448b676a84c.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/promotions/originals/src_6448b676a84c.png",
+      "source_sha256": "ab4f360fde690641559ca65ea0c1050c564704261d0d54b349282ba69d565859",
+      "source_document": "P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS.pdf",
+      "source_document_path": "/Users/chriselwell/Desktop/Pulm/Lectures/P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS.pdf",
+      "source_document_sha256": "b53f835584496dc954c50d966d0e2c305e32e2dd360235e55afd719c1d6b4a7a",
+      "source_page_or_slide": 23,
+      "source_type": "project-local copy of canonical RLS extraction",
+      "extraction_method": "300-dpi PDF page-render crop",
+      "modality": "Histology",
+      "organ_system": "Pulmonary",
+      "category": "Lung cancer",
+      "canonical_correct_answer": "Squamous cell carcinoma with intercellular bridges",
+      "tested_condition_structure_finding": "Squamous cell carcinoma with intercellular bridges",
+      "accepted_answers": [
+        "Squamous cell carcinoma"
+      ],
+      "ground_truth_basis": "Explicit RLS slide 23 content reconciled with lecture context",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Atypical polygonal tumor cells have visible intercellular bridges; the answer-bearing teaching title and prose are outside the crop.",
+      "what_student_should_recognize": "Squamous cell carcinoma with intercellular bridges",
+      "lecture_context": "P26 Diseases of the Respiratory Tract - Part 3 - Vascular, Cancer, Other Disease (Pathology)",
+      "quality": "good",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_f47fae5ce062",
+      "quiz_safe_variant_path": "promotions/variants/var_f47fae5ce062.png",
+      "variants": [
+        {
+          "variant_id": "var_f47fae5ce062",
+          "relative_path": "promotions/variants/var_f47fae5ce062.png",
+          "sha256": "3cae3c00a1a40dfa8fb0192d0d3f5798aacff18b6067dca8f96d10e6ed489aa0",
+          "pixel_width": 1485,
+          "pixel_height": 1185,
+          "transformation_recipe": {
+            "crop_pixels": [
+              105,
+              285,
+              1590,
+              1470
+            ],
+            "opaque_masks_pixels": [],
+            "mask_fill_rgb": [
+              214,
+              218,
+              222
+            ],
+            "rotation_degrees": 0
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pulmonary neoplasm shown on histology.",
+        "options": [
+          "Squamous cell carcinoma with intercellular bridges",
+          "Pulmonary adenocarcinoma with gland formation",
+          "Small cell lung carcinoma",
+          "Pulmonary carcinoid tumor"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Adjacent polygonal cells remain connected by fine intercellular bridges",
+          "The cells have more cytoplasm than small-cell carcinoma",
+          "No malignant glands or organoid neuroendocrine nests dominate"
+        ],
+        "explanation": "Visible intercellular bridges indicate squamous differentiation and support squamous cell carcinoma.",
+        "choice_rationales": [
+          "Correct: fine bridges between adjacent atypical polygonal cells are a classic feature of squamous differentiation.",
+          "Adenocarcinoma would show malignant gland formation or mucin rather than conspicuous intercellular bridges.",
+          "Small cell carcinoma has small hyperchromatic cells with scant cytoplasm and nuclear molding, not polygonal cells joined by bridges.",
+          "A carcinoid tumor usually forms uniform organoid nests or trabeculae with salt-and-pepper chromatin, which are absent here."
+        ]
+      },
+      "promotion_review_status": "user_approved_and_visually_verified",
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Squamous cell carcinoma with intercellular bridges",
+          "required_variant": "var_f47fae5ce062",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_eeb1c08f285d",
+      "source_group_id": "sg_828f8c2c0ec78737",
+      "source_id": "src_8ee818daa264",
+      "upstream_source_id": "src_acdb640076ef",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "src_acdb640076ef.png",
+      "original_relative_path": "promotions/originals/src_acdb640076ef.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/promotions/originals/src_acdb640076ef.png",
+      "source_sha256": "b25e83d02e7898da1b3cd4c393d39a62e6b530894b91a11a53d04d5d52f74b6c",
+      "source_document": "P27.1 Radiology Pulm Infections & Cancer of Lung RLS.pdf",
+      "source_document_path": "/Users/chriselwell/Desktop/Pulm/Lectures/P27.1 Radiology Pulm Infections & Cancer of Lung RLS.pdf",
+      "source_document_sha256": "39874b2c717438ab8cfc21a93bd904478bd32d4944ff37ee8726460ea7021ba6",
+      "source_page_or_slide": 10,
+      "source_type": "project-local copy of canonical RLS extraction",
+      "extraction_method": "300-dpi PDF page-render crop",
+      "modality": "X-ray and pathology",
+      "organ_system": "Pulmonary",
+      "category": "Pulmonary infection",
+      "canonical_correct_answer": "Lobar consolidation",
+      "tested_condition_structure_finding": "Lobar consolidation",
+      "accepted_answers": [
+        "Lobar consolidation"
+      ],
+      "ground_truth_basis": "Explicit RLS slide 10 content reconciled with lecture context",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A homogeneous lobar air-space opacity occupies the right upper lung; the explanatory definition above the radiograph is excluded.",
+      "what_student_should_recognize": "Lobar consolidation",
+      "lecture_context": "P27 Radiology of Pulmonary Infections and Lung Cancer",
+      "quality": "good",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_a4c920952623",
+      "quiz_safe_variant_path": "promotions/variants/var_a4c920952623.png",
+      "variants": [
+        {
+          "variant_id": "var_a4c920952623",
+          "relative_path": "promotions/variants/var_a4c920952623.png",
+          "sha256": "f89779a0b50c2d6d3a0c4c5cc874fb8b337989953cdf83ef3d93808c82f10c45",
+          "pixel_width": 1549,
+          "pixel_height": 1384,
+          "transformation_recipe": {
+            "crop_pixels": [
+              58,
+              192,
+              1607,
+              1576
+            ],
+            "opaque_masks_pixels": [],
+            "mask_fill_rgb": [
+              214,
+              218,
+              222
+            ],
+            "rotation_degrees": 0
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pulmonary radiographic pattern shown.",
+        "options": [
+          "Lobar consolidation",
+          "Pleural effusion",
+          "Pneumothorax",
+          "Diffuse interstitial pulmonary edema"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "A dense homogeneous air-space opacity conforms to a lobe",
+          "The opacity is intrapulmonary rather than a dependent pleural meniscus",
+          "Peripheral lung markings remain visible without a pleural line"
+        ],
+        "explanation": "The sharply regional air-space opacity is a lobar consolidation pattern.",
+        "choice_rationales": [
+          "Correct: a dense homogeneous air-space opacity confined to a lobar distribution is lobar consolidation.",
+          "Pleural effusion would layer dependently and form a meniscus or costophrenic-angle blunting rather than this upper-lobar opacity.",
+          "Pneumothorax would produce a visceral pleural line with absent peripheral lung markings, not dense air-space opacity.",
+          "Interstitial edema is usually bilateral and diffuse with septal lines or perihilar haze rather than a single lobar opacity."
+        ]
+      },
+      "promotion_review_status": "user_approved_and_visually_verified",
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Lobar consolidation",
+          "required_variant": "var_a4c920952623",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_14747964d585",
+      "source_group_id": "sg_c880a4c4c282c000",
+      "source_id": "src_693a1df27aab",
+      "upstream_source_id": "src_871bc1e4e6e4",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "src_871bc1e4e6e4.png",
+      "original_relative_path": "promotions/originals/src_871bc1e4e6e4.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/promotions/originals/src_871bc1e4e6e4.png",
+      "source_sha256": "6406a907e8fca0c2b1c8cac972de77dc8f0455e5a1e310bf89cd1e4e839baf8e",
+      "source_document": "P33 ENT:Airway Diseases RLS.pdf",
+      "source_document_path": "/Users/chriselwell/Desktop/Pulm/Lectures/P33 ENT:Airway Diseases RLS.pdf",
+      "source_document_sha256": "662956bd4b5a1dbae8557b5d7b5b296f46f7b9fcb97c1624bc8a72a41d4a605a",
+      "source_page_or_slide": 20,
+      "source_type": "project-local copy of canonical RLS extraction",
+      "extraction_method": "300-dpi PDF page-render crop",
+      "modality": "Clinical Image",
+      "organ_system": "Pulmonary",
+      "category": "Upper airway pathology",
+      "canonical_correct_answer": "Peritonsillar abscess on physical examination",
+      "tested_condition_structure_finding": "Peritonsillar abscess on physical examination",
+      "accepted_answers": [
+        "Peritonsillar abscess on physical examination"
+      ],
+      "ground_truth_basis": "Explicit P33 RLS slide 20 title, labels, and aligned transcript context",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "The remaining visible anatomy shows unilateral peritonsillar and soft-palate bulging with deviation of the uvula away from the affected side.",
+      "what_student_should_recognize": "Peritonsillar abscess on physical examination",
+      "lecture_context": "P33 Otolaryngology - Upper Airway Pathology",
+      "quality": "good",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_cde8ded8baca",
+      "quiz_safe_variant_path": "promotions/variants/var_cde8ded8baca.png",
+      "variants": [
+        {
+          "variant_id": "var_cde8ded8baca",
+          "relative_path": "promotions/variants/var_cde8ded8baca.png",
+          "sha256": "cea8cb75882cab5d48357825f26a7ed76ee312f200c2a71a826c98d4a3ec8c12",
+          "pixel_width": 592,
+          "pixel_height": 300,
+          "transformation_recipe": {
+            "crop_pixels": [
+              23,
+              1000,
+              615,
+              1300
+            ],
+            "opaque_masks_pixels": [
+              [
+                300,
+                0,
+                440,
+                40
+              ],
+              [
+                440,
+                0,
+                525,
+                75
+              ]
+            ],
+            "mask_fill_rgb": [
+              190,
+              70,
+              75
+            ],
+            "rotation_degrees": 0
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the upper-airway diagnosis illustrated.",
+        "options": [
+          "Peritonsillar abscess on physical examination",
+          "Retropharyngeal abscess",
+          "Acute epiglottitis",
+          "Symmetric acute tonsillitis"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The soft palate and peritonsillar region bulge unilaterally",
+          "The uvula is displaced away from the bulge",
+          "The process is asymmetric rather than bilateral"
+        ],
+        "explanation": "Unilateral peritonsillar bulging with contralateral uvular deviation is the classic oropharyngeal appearance of a peritonsillar abscess.",
+        "choice_rationales": [
+          "Correct: unilateral soft-palate bulging and contralateral uvular deviation are characteristic of a peritonsillar abscess.",
+          "A retropharyngeal abscess produces posterior pharyngeal-wall swelling and is usually evaluated on lateral neck imaging rather than this unilateral peritonsillar pattern.",
+          "Epiglottitis affects the supraglottic epiglottis and does not create this focal peritonsillar bulge with uvular deviation.",
+          "Acute tonsillitis is usually bilateral with enlarged erythematous tonsils and lacks the marked asymmetric palatal bulge shown."
+        ]
+      },
+      "promotion_review_status": "user_approved_and_visually_verified",
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Peritonsillar abscess on physical examination",
+          "required_variant": "var_cde8ded8baca",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_f15ab5f3f9a0",
+      "source_group_id": "sg_f7c7cfeef92e",
+      "source_id": "src_ce9f372dc298",
+      "upstream_source_id": "src_c0ab8fd58980",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "src_c0ab8fd58980.png",
+      "original_relative_path": "promotions/originals/src_c0ab8fd58980.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/promotions/originals/src_c0ab8fd58980.png",
+      "source_sha256": "a32266fbebb277872b180f8fe9b5c9548d147b1ec3b9c86e607e06c044c78097",
+      "source_document": "P36 Pulmonary Developmental Anomalies RLS.pdf",
+      "source_document_path": "/Users/chriselwell/Desktop/Pulm/Lectures/P36 Pulmonary Developmental Anomalies RLS.pdf",
+      "source_document_sha256": "e04e7f9cd750103fa563ac09642427beaa40e932e692845f948ee7ecf90eed6c",
+      "source_page_or_slide": 71,
+      "source_type": "project-local copy of canonical RLS extraction",
+      "extraction_method": "300-DPI PDF page-render",
+      "modality": "CT",
+      "organ_system": "Pulmonary",
+      "category": "Chest Wall and Diaphragm",
+      "canonical_correct_answer": "Haller index measurement for pectus excavatum",
+      "tested_condition_structure_finding": "Haller index measurement for pectus excavatum",
+      "accepted_answers": [
+        "Haller index for pectus excavatum"
+      ],
+      "ground_truth_basis": "explicit RLS title, labels, captions, and surrounding lecture context",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Axial chest CT contains perpendicular transverse and minimum anteroposterior measurements across a depressed sternum while the answer name and computed ratio are hidden.",
+      "what_student_should_recognize": "Haller index measurement for pectus excavatum",
+      "lecture_context": "Pulmonary Developmental Anomalies",
+      "quality": "excellent",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_ed13ad41f1e9",
+      "quiz_safe_variant_path": "promotions/variants/var_ed13ad41f1e9.png",
+      "variants": [
+        {
+          "variant_id": "var_ed13ad41f1e9",
+          "relative_path": "promotions/variants/var_ed13ad41f1e9.png",
+          "sha256": "3d1cd4ae271dd3d64fe3d45dd4364fc40b5f2594df24b7a5c5b8b1ba2a47100b",
+          "pixel_width": 1669,
+          "pixel_height": 670,
+          "transformation_recipe": {
+            "crop_pixels": [
+              80,
+              110,
+              1749,
+              780
+            ],
+            "opaque_masks_pixels": [],
+            "mask_fill_rgb": [
+              214,
+              218,
+              222
+            ],
+            "rotation_degrees": 0
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the thoracic measurement demonstrated on this CT image.",
+        "options": [
+          "Haller index measurement for pectus excavatum",
+          "Cardiothoracic ratio",
+          "Cobb angle",
+          "Main pulmonary artery-to-aorta ratio"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The image is an axial chest CT through a depressed sternum",
+          "One line measures the internal transverse chest diameter",
+          "A perpendicular line measures the shortest sternum-to-spine distance"
+        ],
+        "explanation": "The ratio of internal transverse diameter to minimum anteroposterior diameter on axial CT is the Haller index used to quantify pectus excavatum.",
+        "choice_rationales": [
+          "Correct: the Haller index divides the internal transverse chest diameter by the shortest sternum-to-spine distance on axial CT.",
+          "The cardiothoracic ratio compares cardiac width with thoracic width on a frontal chest radiograph, not two perpendicular CT chest dimensions.",
+          "The Cobb angle measures spinal curvature on a coronal radiograph and does not use transverse and AP chest diameters.",
+          "The pulmonary artery-to-aorta ratio compares vascular diameters near the pulmonary-artery bifurcation, not the thoracic cage measurements shown."
+        ]
+      },
+      "promotion_review_status": "user_approved_and_visually_verified",
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Haller index measurement for pectus excavatum",
+          "required_variant": "var_ed13ad41f1e9",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_cabc4cd0bd3f",
+      "source_group_id": "sg_272723e9d93b3f1b",
+      "source_id": "src_f1f5a109f939",
+      "upstream_source_id": "src_f61b09398e77",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "src_f61b09398e77.png",
+      "original_relative_path": "promotions/originals/src_f61b09398e77.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/promotions/originals/src_f61b09398e77.png",
+      "source_sha256": "a1d6a827281e1baee8bc4533f343a62120c8dd301bc5cd1c6e8628e2c562c5dd",
+      "source_document": "P27.1 Radiology Pulm Infections & Cancer of Lung RLS.pdf",
+      "source_document_path": "/Users/chriselwell/Desktop/Pulm/Lectures/P27.1 Radiology Pulm Infections & Cancer of Lung RLS.pdf",
+      "source_document_sha256": "39874b2c717438ab8cfc21a93bd904478bd32d4944ff37ee8726460ea7021ba6",
+      "source_page_or_slide": 26,
+      "source_type": "project-local copy of canonical RLS extraction",
+      "extraction_method": "300-dpi PDF page-render crop",
+      "modality": "Ultrasound",
+      "organ_system": "Pulmonary",
+      "category": "Pulmonary infection",
+      "canonical_correct_answer": "Empyema on ultrasound",
+      "tested_condition_structure_finding": "Empyema on ultrasound",
+      "accepted_answers": [
+        "Empyema on ultrasound"
+      ],
+      "ground_truth_basis": "Explicit RLS slide 26 content reconciled with lecture context",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "The pleural collection is complex and loculated with internal septations and echogenic gas, rather than simple anechoic fluid.",
+      "what_student_should_recognize": "Empyema on ultrasound",
+      "lecture_context": "P27 Radiology of Pulmonary Infections and Lung Cancer",
+      "quality": "good",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_9c2123715540",
+      "quiz_safe_variant_path": "promotions/variants/var_9c2123715540.png",
+      "variants": [
+        {
+          "variant_id": "var_9c2123715540",
+          "relative_path": "promotions/variants/var_9c2123715540.png",
+          "sha256": "ace7242f4dca74514ad0eafc4a3b1329b1d81e08b4ca51e37bafda5a255d429e",
+          "pixel_width": 1290,
+          "pixel_height": 1020,
+          "transformation_recipe": {
+            "crop_pixels": [
+              1510,
+              460,
+              2800,
+              1480
+            ],
+            "opaque_masks_pixels": [],
+            "mask_fill_rgb": [
+              214,
+              218,
+              222
+            ],
+            "rotation_degrees": 0
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the pleural process shown on ultrasound.",
+        "options": [
+          "Empyema on ultrasound",
+          "Simple transudative pleural effusion",
+          "Normally aerated lung with A-lines",
+          "Pneumothorax with absent lung sliding"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Pleural fluid is internally complex rather than uniformly anechoic",
+          "Multiple septations create loculations",
+          "Echogenic gas is present within the collection"
+        ],
+        "explanation": "Complex septated pleural fluid with internal gas is strongly supportive of empyema in the appropriate clinical setting.",
+        "choice_rationales": [
+          "Correct: loculated complex pleural fluid containing septations and gas is a characteristic sonographic pattern of empyema.",
+          "A simple transudative effusion is usually uniformly anechoic and lacks internal septations or gas.",
+          "Normally aerated lung shows a pleural line with sliding and horizontal A-lines rather than a complex fluid collection.",
+          "Pneumothorax is assessed by absent sliding or a barcode sign and does not create this septated pleural collection."
+        ]
+      },
+      "promotion_review_status": "user_approved_and_visually_verified",
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Empyema on ultrasound",
+          "required_variant": "var_9c2123715540",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
+    },
+    {
+      "asset_id": "asset_4b1086a464ff",
+      "source_group_id": "sg_cdc18e70102a",
+      "source_id": "src_774eb13f7cb6",
+      "upstream_source_id": "src_85db33131d60",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "src_85db33131d60.png",
+      "original_relative_path": "promotions/originals/src_85db33131d60.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/promotions/originals/src_85db33131d60.png",
+      "source_sha256": "a54391e0a3682c224b6a1466c8fabb49a18e626c475876c86939bf3e8c0b976f",
+      "source_document": "P36 Pulmonary Developmental Anomalies RLS.pdf",
+      "source_document_path": "/Users/chriselwell/Desktop/Pulm/Lectures/P36 Pulmonary Developmental Anomalies RLS.pdf",
+      "source_document_sha256": "e04e7f9cd750103fa563ac09642427beaa40e932e692845f948ee7ecf90eed6c",
+      "source_page_or_slide": 29,
+      "source_type": "project-local copy of canonical RLS extraction",
+      "extraction_method": "300-DPI PDF page-render",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "category": "Congenital Lung Lesions",
+      "canonical_correct_answer": "Hyperinflated multicystic CPAM with contralateral mediastinal shift",
+      "tested_condition_structure_finding": "Hyperinflated multicystic CPAM with contralateral mediastinal shift",
+      "accepted_answers": [
+        "Hyperinflated multicystic CPAM with contralateral mediastinal shift"
+      ],
+      "ground_truth_basis": "explicit RLS title, labels, captions, and surrounding lecture context",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A large right-sided multicystic hyperlucent lesion expands the hemithorax and displaces the mediastinum leftward; answer-bearing text boxes are outside the crop.",
+      "what_student_should_recognize": "Hyperinflated multicystic CPAM with contralateral mediastinal shift",
+      "lecture_context": "Pulmonary Developmental Anomalies",
+      "quality": "excellent",
+      "patient_identifiability": "none_visible",
+      "primary_variant_id": "var_30dd2590604e",
+      "quiz_safe_variant_path": "promotions/variants/var_30dd2590604e.png",
+      "variants": [
+        {
+          "variant_id": "var_30dd2590604e",
+          "relative_path": "promotions/variants/var_30dd2590604e.png",
+          "sha256": "b6fec414e2ef5ffe5bfaa653f58b3348e8d399ab0c4e71aff9e2480ce96f2830",
+          "pixel_width": 1560,
+          "pixel_height": 1550,
+          "transformation_recipe": {
+            "crop_pixels": [
+              760,
+              50,
+              2320,
+              1600
+            ],
+            "opaque_masks_pixels": [],
+            "mask_fill_rgb": [
+              214,
+              218,
+              222
+            ],
+            "rotation_degrees": 0
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the congenital pulmonary lesion shown.",
+        "options": [
+          "Hyperinflated multicystic CPAM with contralateral mediastinal shift",
+          "Congenital lobar emphysema",
+          "Tension pneumothorax",
+          "Congenital diaphragmatic hernia"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Multiple internal cystic lucencies occupy the right lung",
+          "The involved hemithorax is expanded",
+          "The mediastinum is displaced to the opposite side"
+        ],
+        "explanation": "The neonatal radiograph shows an expanded multicystic pulmonary lesion with contralateral shift, supporting CPAM.",
+        "choice_rationales": [
+          "Correct: a multicystic intrapulmonary lesion that expands one hemithorax and shifts the mediastinum is characteristic of CPAM.",
+          "Congenital lobar emphysema produces overinflation of a lobe with attenuated but continuous vascular markings rather than multiple discrete cystic spaces.",
+          "Tension pneumothorax creates a pleural line with absent peripheral vascular markings and a collapsed central lung, not a multicystic parenchymal lesion.",
+          "Congenital diaphragmatic hernia shows intrathoracic bowel loops or stomach and an abnormal diaphragmatic contour rather than this pulmonary multicystic pattern."
+        ]
+      },
+      "promotion_review_status": "user_approved_and_visually_verified",
+      "question_type_matrix": {
+        "Identification": {
+          "supported": "YES",
+          "visual_target": "Hyperinflated multicystic CPAM with contralateral mediastinal shift",
+          "required_variant": "var_30dd2590604e",
+          "full_image_required": false,
+          "preserve": [],
+          "confidence": "high",
+          "reason_unsupported": ""
+        }
+      },
+      "builder_scored_question": true
     }
   ],
   "upstream_schema_version": 1,
   "builder": "build-medical-picture-quiz",
-  "builder_generated_at": "2026-09-13T18:38:07-04:00",
+  "builder_generated_at": "2026-09-13T23:08:04-04:00",
   "source_library_read_only": true,
   "supplemental_source_library": {
     "path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions",
     "manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json",
     "schema_version": 2,
-    "record_count": 33,
+    "record_count": 39,
     "validation": {
       "result": "PASS",
       "all_files_exist": true,
@@ -51702,6 +52321,19 @@
       "scored_records": 33,
       "excluded_records": 0,
       "validated_at": "2026-09-13T18:17:43-04:00"
+    },
+    "review_promotion_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_review_promotions.json",
+    "review_promotion_record_count": 6,
+    "review_promotion_validation": {
+      "result": "PASS",
+      "all_files_exist": true,
+      "all_hashes_verified": true,
+      "all_images_visually_reviewed": true,
+      "all_questions_have_four_unique_options": true,
+      "all_questions_have_four_aligned_rationales": true,
+      "scored_records": 6,
+      "excluded_records": 0,
+      "validated_at": "2026-09-13T23:06:48-04:00"
     },
     "read_only_during_quiz_build": true
   }

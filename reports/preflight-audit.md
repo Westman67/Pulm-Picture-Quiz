@@ -1,6 +1,6 @@
 # Pulmonary Picture Quiz Preflight Audit
 
-Generated: 2026-09-13T18:38:07-04:00
+Generated: 2026-09-13T23:08:04-04:00
 
 ## Scope
 
@@ -23,26 +23,26 @@ Generated: 2026-09-13T18:38:07-04:00
 
 ## Downstream ID gate
 
-- Activated questions: 252
-- New pulmonary-picture additions: 33
-- Distinct activated source groups: 252
-- Manual-review exclusions: 19
+- Activated questions: 258
+- New pulmonary-picture additions: 39
+- Distinct activated source groups: 258
+- Manual-review exclusions: 13
 - Repeated modality/answer concepts not duplicated in the bank: 14
 - Question bank schema: 2
 - Every item has four unique options and four index-aligned rationales.
 
 ## Activated questions by modality
 
-- X-ray: 70
-- CT: 27
+- X-ray: 71
+- CT: 28
 - Histopathology: 27
-- Clinical Image: 24
+- Clinical Image: 25
 - Gross Pathology: 19
-- Histology: 16
+- Histology: 17
 - Graph: 15
 - Flow-Volume Loop: 8
 - Other: 6
-- Ultrasound: 5
+- Ultrasound: 6
 - Diagram: 4
 - Angiography: 4
 - Gross pathology: 3
@@ -62,6 +62,7 @@ Generated: 2026-09-13T18:38:07-04:00
 - MRI: 1
 - Echocardiography: 1
 - EKG: 1
+- X-ray and pathology: 1
 
 ## Safety decisions
 
@@ -76,5 +77,5 @@ Generated: 2026-09-13T18:38:07-04:00
 ## Limitations
 
 - Distractors were selected deterministically from modality- and category-aligned, lecture-verified source records.
-- Nineteen visually labeled or text-dependent candidates were placed in the local review queue rather than scored.
+- 13 visually labeled or text-dependent candidates remain in the local review queue; six user-approved sources were promoted through reproducible local crops or opaque masks.
 - The build preserves the upstream medical ground truth; it does not reinterpret RLS content from filenames.
