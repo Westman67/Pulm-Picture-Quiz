@@ -30,25 +30,7 @@ ASSET_DIR = PROJECT / "public" / "assets" / "images"
 # These sources were retained upstream but visibly failed the stricter scored-ID gate during
 # downstream contact-sheet review. They remain untouched in the source library.
 MANUAL_REVIEW = {
-    "src_90a7391b3c05": "The displayed crop visibly contains the normal-spirometry answer label.",
-    "src_6448b676a84c": "The teaching label names the decisive intercellular-bridge clue.",
-    "src_acdb640076ef": "Visible teaching prose names consolidation before submission.",
-    "src_b413e152c175": "Visible prose names air bronchograms and their associated conditions.",
-    "src_f61b09398e77": "The ultrasound panels visibly label the effusion.",
-    "src_f2a9e757c991": "The graph labels directly state the tested survival comparison.",
-    "src_871bc1e4e6e4": "The physical-exam diagram labels the diagnostic displacement measurements.",
-    "src_11d38df219ae": "The diagram text directly states the pressure- and volume-control answer.",
-    "src_7013e3362c68": "Visible management/prognostic teaching text makes this text-dependent.",
-    "src_ea504b038377": "The diagram visibly names the CPAM morphologic classes being tested.",
-    "src_85db33131d60": "The radiograph visibly states the key hyperinflation and mediastinal-shift findings.",
-    "src_c0ab8fd58980": "The measurement overlay effectively states the Haller-index task.",
-    "src_d92bf1430d1b": "The equipment collage is recognition-trivial and not a defensible medical ID item.",
-    "src_328fa020c224": "This is primarily a numeric spirometry table rather than an image-identification task.",
-    "src_221b5febf5ec": "This is primarily a numeric bronchodilator-response table.",
-    "src_742331504fc4": "Visible interpretive prose makes the ventilatory-defect answer text-dependent.",
-    "src_4d69b62d43cf": "Visible interpretive prose states the restrictive pattern.",
-    "src_16585366665e": "This is a numeric spirometry table rather than a visual-identification image.",
-    "src_bf8e9dd14184": "This is a numeric spirometry table rather than a visual-identification image.",
+
 }
 
 BLOCKED = {"NEEDS_REVIEW", "REFERENCE_ONLY", "DUPLICATE", "AGGREGATE_DUPLICATE", "BROKEN", "EXCLUDED"}
