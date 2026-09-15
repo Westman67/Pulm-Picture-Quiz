@@ -4,16 +4,17 @@ An offline-capable, local browser application for pulmonary image-identification
 upstream Picture Quiz library is read-only; this project contains separate, metadata-stripped display
 derivatives and a schema-version-2 question bank.
 
-The completed bank contains **276 scored questions**. Fifty-seven are supplemental pulmonary-picture
-questions added from a separate, versioned source library; the original RLS and Pulm Pictures
-collections were not modified.
+The completed bank contains **220 scored questions**: 181 lecture questions and 39 third-party Pulm
+Pictures questions. A completed 153-flag quality-review batch removed 56 irreparable items and retained
+97 with project-local crops or neutral-border trims; the original RLS and Pulm Pictures collections
+were not modified.
 
 ## Included
 
 - Learn Mode with immediate feedback, visual clues, and four option-specific rationales
 - Exam Mode with deferred scoring and rationales
 - category, unseen, incorrect, marked, and mixed filters
-- picture-source filtering for the 225 lecture questions or 51 third-party Pulm Pictures additions
+- picture-source filtering for the 181 lecture questions or 39 third-party Pulm Pictures additions
 - lengths 10, 20, 40, all available, and endless practice
 - persistent Back/Next navigation with unanswered skipping and restored draft/locked state
 - an in-quiz **Flag bad photo** form with quick issue categories and an optional note
@@ -73,12 +74,15 @@ mobile, Learn/Exam, skip/Back restoration, and the newly added questions in head
 - Learner progress remains in browser `localStorage` unless explicitly exported.
 - Photo-quality flags are stored separately from study marks and quiz progress; resetting progress does
   not erase them. Use **Review & flags** to mark fixes complete, reopen them, or export the queue.
+- Flags covered by a completed review batch resolve automatically once after the updated bank loads;
+  a flag that the learner deliberately reopens remains open.
 - Client-side answer hiding is an interface safeguard, not cryptographic secrecy.
 - Third-party educational images must remain local and must not be redistributed.
 
 ## Project outputs
 
 - `reports/preflight-audit.md` and `reports/source-audit.json`
+- `reports/quality-flag-remediation-2026-09-15.md` and `source-additions/quality-review-2026-09-15.json`
 - `reports/supplemental-additions.md`, `reports/pulm-pictures-audit/`, `reports/pulm-pictures-full-comparison-2026-09-14/`, and `reports/review-queue/`
 - `data/source-manifest.json`
 - `data/question-bank.json`

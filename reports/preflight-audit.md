@@ -1,6 +1,6 @@
 # Pulmonary Picture Quiz Preflight Audit
 
-Generated: 2026-09-14T20:40:55-04:00
+Generated: 2026-09-14T22:25:43-04:00
 
 ## Scope
 
@@ -23,40 +23,40 @@ Generated: 2026-09-14T20:40:55-04:00
 
 ## Downstream ID gate
 
-- Activated questions: 276
-- New pulmonary-picture additions: 57
-- Distinct activated source groups: 276
+- Activated questions: 220
+- Active third-party Pulm Pictures questions: 39
+- Source additions represented before quality review: 57
+- Distinct activated source groups: 220
 - Manual-review exclusions: 0
+- Learner-flagged items audited: 153
+- Learner-flagged items removed from scoring: 56
+- Learner-flagged images retained with local crop/trim: 97
 - Repeated modality/answer concepts not duplicated in the bank: 14
 - Question bank schema: 2
 - Every item has four unique options and four index-aligned rationales.
 
 ## Activated questions by modality
 
-- X-ray: 77
-- CT: 33
-- Histopathology: 29
-- Clinical Image: 25
-- Gross Pathology: 19
-- Histology: 17
-- Graph: 15
-- Flow-Volume Loop: 8
-- Ultrasound: 7
+- X-ray: 61
+- CT: 30
+- Histopathology: 25
+- Histology: 15
+- Gross Pathology: 15
+- Clinical Image: 14
+- Graph: 12
+- Flow-Volume Loop: 7
 - Other: 6
-- Diagram: 6
-- Angiography: 4
-- Gross pathology: 4
+- Diagram: 5
 - X-ray and CT: 4
-- Micrograph: 3
+- Angiography: 3
+- Gross pathology: 3
 - Microscopy: 3
+- Ultrasound: 3
 - Nuclear Imaging: 2
+- Micrograph: 2
 - Cytology: 2
 - Gross Anatomy: 1
 - Gross pathology and histology: 1
-- CT and diagram: 1
-- CT and PET-CT: 1
-- Micrograph and CT: 1
-- Culture and clinical specimen: 1
 - Electron Microscopy: 1
 - Map: 1
 - MRI: 1
@@ -77,5 +77,6 @@ Generated: 2026-09-14T20:40:55-04:00
 ## Limitations
 
 - Distractors were selected deterministically from modality- and category-aligned, lecture-verified source records.
-- 0 visually labeled or text-dependent candidates remain in the local review queue; six user-approved sources were promoted through reproducible local crops or opaque masks.
+- 0 visually labeled or text-dependent candidates remain in the local builder review queue.
+- The completed learner-flag batch is recorded in `quality-review-2026-09-15.json`; excluded records retain lineage but are not scored.
 - The build preserves the upstream medical ground truth; it does not reinterpret RLS content from filenames.

@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import re
+from collections import Counter
 from pathlib import Path
 
 from PIL import Image
@@ -14,6 +15,7 @@ PROJECT = Path(__file__).resolve().parents[1]
 BANK_PATH = PROJECT / "data" / "question-bank.json"
 MANIFEST_PATH = PROJECT / "data" / "source-manifest.json"
 ASSET_MAP_PATH = PROJECT / "data" / "asset-map.json"
+QUALITY_REVIEW_PATH = PROJECT / "source-additions" / "quality-review-2026-09-15.json"
 ROOT_DATA_MIRRORS = ("question-bank.json", "source-manifest.json", "asset-map.json", "review-queue.json")
 OPAQUE_ASSET = re.compile(r"^public/assets/images/(?:quiz|original)_[a-f0-9]{16}\.png$")
 RETIRED_GENERIC_STEMS = {
@@ -34,13 +36,67 @@ def main() -> None:
     bank = json.loads(BANK_PATH.read_text(encoding="utf-8"))
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
     asset_map = json.loads(ASSET_MAP_PATH.read_text(encoding="utf-8"))
+    quality_review_plan = json.loads(QUALITY_REVIEW_PATH.read_text(encoding="utf-8"))
     questions = bank.get("questions", [])
     sources = {record.get("source_id"): record for record in manifest.get("records", [])}
+    questions_by_source = {question.get("source_id"): question for question in questions}
     errors: list[str] = []
     decoded: dict[str, tuple[int, int]] = {}
 
     require(bank.get("question_count") == len(questions), "question_count does not match the bank", errors)
     require(len({q.get("question_id") for q in questions}) == len(questions), "duplicate question_id detected", errors)
+
+    review_items = quality_review_plan.get("items", [])
+    embedded_review = bank.get("quality_review", {})
+    review_batch = quality_review_plan.get("batch_id")
+    require(quality_review_plan.get("schema_version") == 1, "quality-review plan has the wrong schema version", errors)
+    require(quality_review_plan.get("count") == len(review_items), "quality-review plan count mismatch", errors)
+    require(embedded_review.get("batch_id") == review_batch, "bank quality-review batch mismatch", errors)
+    require(embedded_review.get("count") == len(review_items), "bank quality-review count mismatch", errors)
+    require(len({item.get("source_id") for item in review_items}) == len(review_items), "duplicate quality-review source_id", errors)
+    require(len({item.get("question_id") for item in review_items}) == len(review_items), "duplicate quality-review question_id", errors)
+    review_actions = Counter(item.get("action") for item in review_items)
+    isolated_count = sum(
+        item.get("action") == "crop" and item.get("panel_handling") == "isolated_panel"
+        for item in review_items
+    )
+    calculated_summary = {
+        "excluded": review_actions["exclude"],
+        "isolated_panel_crop": isolated_count,
+        "retained_crop": review_actions["crop"] - isolated_count,
+        "retained_trim": review_actions["trim"],
+    }
+    require(set(review_actions).issubset({"exclude", "crop", "trim"}), "quality-review plan has an invalid action", errors)
+    require(quality_review_plan.get("summary") == calculated_summary, "quality-review plan summary mismatch", errors)
+    require(embedded_review.get("summary") == calculated_summary, "bank quality-review summary mismatch", errors)
+    resolved_flags = embedded_review.get("resolved_flags", [])
+    require(len(resolved_flags) == len(review_items), "bank resolved-flag count mismatch", errors)
+    require(
+        len({item.get("question_id") for item in resolved_flags}) == len(resolved_flags),
+        "duplicate resolved quality flag in bank",
+        errors,
+    )
+
+    for item in review_items:
+        source_id = item.get("source_id")
+        action = item.get("action")
+        retained_question = questions_by_source.get(source_id)
+        if action == "exclude":
+            require(retained_question is None, f"{source_id}: excluded quality-review source is still scored", errors)
+            continue
+        require(retained_question is not None, f"{source_id}: retained quality-review source is missing from the bank", errors)
+        if retained_question is None:
+            continue
+        qid = retained_question.get("question_id", "<missing-question-id>")
+        require(retained_question.get("question_id") == item.get("question_id"), f"{source_id}: quality-review question lineage mismatch", errors)
+        require(retained_question.get("quality_review_batch") == review_batch, f"{qid}: missing quality-review batch marker", errors)
+        variant_id = retained_question.get("variant_id")
+        mapped = asset_map.get(variant_id, {})
+        require(mapped.get("quality_review", {}).get("action") == action, f"{qid}: asset-map quality-review decision mismatch", errors)
+        require(mapped.get("quiz", {}).get("quality_review", {}).get("action") == action, f"{qid}: quiz-asset quality-review metadata mismatch", errors)
+        require(retained_question.get("quiz_asset") != retained_question.get("original_asset"), f"{qid}: reviewed quiz and teaching-original paths must differ", errors)
+        if action == "crop":
+            require("quality_review_crop" in mapped.get("quiz", {}).get("transformations", []), f"{qid}: reviewed crop transformation is missing", errors)
     for filename in ROOT_DATA_MIRRORS:
         root_copy = PROJECT / filename
         data_copy = PROJECT / "data" / filename

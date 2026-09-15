@@ -8,6 +8,7 @@ import {
   lockAnswer,
   normalizeQualityFlags,
   normalizeProgress,
+  reconcileQualityFlags,
   rationaleVisible,
   scoreAnswers,
   setQualityFlagStatus,
@@ -585,6 +586,11 @@ async function init() {
     ]);
     state.bank = bank;
     state.reviewQueue = reviewQueue;
+    const reconciledFlags = reconcileQualityFlags(state.qualityFlags, bank.quality_review);
+    if (JSON.stringify(reconciledFlags) !== JSON.stringify(state.qualityFlags)) {
+      state.qualityFlags = reconciledFlags;
+      saveQualityFlags();
+    }
     render();
   } catch (error) {
     app.innerHTML = `<main class="load-error"><h1>Unable to load the local bank</h1><p>${escapeHtml(error.message)}</p><p>Start the app through the documented local server; do not open index.html with file://.</p></main>`;

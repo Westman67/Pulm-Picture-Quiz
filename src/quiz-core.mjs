@@ -118,6 +118,31 @@ export function setQualityFlagStatus(value, questionId, status) {
   return next;
 }
 
+export function reconcileQualityFlags(value, qualityReview) {
+  const next = structuredClone(normalizeQualityFlags(value));
+  const batchId = qualityReview?.batch_id;
+  const resolved = Array.isArray(qualityReview?.resolved_flags) ? qualityReview.resolved_flags : [];
+  if (!batchId || !resolved.length) return next;
+  let changed = false;
+  const reviewedAt = qualityReview.reviewed_at || new Date().toISOString();
+  for (const resolution of resolved) {
+    const existing = next.flags[resolution.question_id];
+    if (!existing || existing.resolution_batch === batchId) continue;
+    next.flags[resolution.question_id] = {
+      ...existing,
+      status: "resolved",
+      resolution_action: resolution.action,
+      resolution_reason: resolution.reason,
+      resolution_batch: batchId,
+      resolved_at: reviewedAt,
+      updated_at: reviewedAt,
+    };
+    changed = true;
+  }
+  if (changed) next.updated_at = reviewedAt;
+  return next;
+}
+
 function progressMatches(question, progress, stateFilter) {
   const item = progress.questions?.[question.question_id] || {};
   if (stateFilter === "unseen") return !item.times_answered;

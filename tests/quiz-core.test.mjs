@@ -12,6 +12,7 @@ import {
   normalizeQualityFlags,
   normalizeProgress,
   prepareQuestion,
+  reconcileQualityFlags,
   rationaleVisible,
   scoreAnswers,
   setQualityFlagStatus,
@@ -191,6 +192,26 @@ test("photo-quality flags are versioned, updateable, and resolve without changin
   const resolved = setQualityFlagStatus(updated, question.question_id, "resolved");
   assert.equal(resolved.flags[question.question_id].status, "resolved");
   assert.equal("questions" in resolved, false);
+});
+
+test("a completed quality-review batch resolves matching local flags once and preserves a later reopen", () => {
+  const question = questions[0];
+  const flagged = upsertQualityFlag(emptyQualityFlags(), {
+    question_id: question.question_id,
+    issue_type: "cropped-incomplete",
+    note: "Needs a tighter crop",
+  });
+  const review = {
+    batch_id: "batch-1",
+    reviewed_at: "2026-09-14T12:00:00-04:00",
+    resolved_flags: [{ question_id: question.question_id, action: "crop", reason: "Cropped and verified." }],
+  };
+  const resolved = reconcileQualityFlags(flagged, review);
+  assert.equal(resolved.flags[question.question_id].status, "resolved");
+  assert.equal(resolved.flags[question.question_id].resolution_action, "crop");
+  assert.equal(resolved.flags[question.question_id].resolution_batch, "batch-1");
+  const reopened = setQualityFlagStatus(resolved, question.question_id, "open");
+  assert.equal(reconcileQualityFlags(reopened, review).flags[question.question_id].status, "open");
 });
 
 test("rationales reveal only after Learn submission or Exam completion", () => {

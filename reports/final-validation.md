@@ -22,12 +22,12 @@ Validated September 14, 2026 (America/New_York).
 ## Bank
 
 - Schema version: **2**
-- Scored image-identification questions: **276**
-- Distinct scored source groups: **276**
+- Scored image-identification questions: **220**
+- Distinct scored source groups: **220**
 - Manual-review items retained in the app: **0**
-- Supplemental scored sources: **57**
+- Supplemental scored sources: **45** (39 base Pulm Pictures additions plus 6 earlier review promotions)
 - Source-manifest records: **612**
-- Picture-source provenance: **225 Lecture**, **51 Third party**
+- Picture-source provenance: **181 Lecture**, **39 Third party**
 - Four unique options and four non-empty, index-aligned rationales: **PASS**
 - Modality-specific stems, explicit visual targets, and joint-panel scope checks: **PASS**
 - Root/data mirror consistency, opaque paths, asset-map alignment, and image decoding: **PASS**
@@ -51,5 +51,12 @@ Validated September 14, 2026 (America/New_York).
 - Flags persist locally across quiz navigation and remain when quiz progress is reset.
 - **Review & flags** separates learner-reported photo fixes from the bank-curation source queue.
 - Flag records can be exported as versioned JSON and kept as open, marked fixed, or reopened.
+- The completed `quality-review-2026-09-15` batch audited **153** flags: **56** sources were excluded,
+  **13** complete panels were isolated, **36** other crops were applied, and **48** images were retained
+  with neutral-border/dead-space trimming.
+- Matching local flags resolve automatically once when the reviewed bank loads. A later manual reopen is
+  preserved rather than being overwritten by the same review batch.
 
-Detailed audit artifacts are stored in `reports/pulm-pictures-full-comparison-2026-09-14/`; current browser screenshots are stored in `reports/visual-review/`.
+Detailed audit artifacts are stored in `reports/pulm-pictures-full-comparison-2026-09-14/` and
+`reports/quality-flag-remediation-2026-09-15.md`; current browser screenshots are stored in
+`reports/visual-review/`.

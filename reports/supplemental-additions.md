@@ -4,7 +4,8 @@ Validated September 14, 2026 (America/New_York). The self-contained supplement i
 
 ## Counts
 
-- Scored supplemental sources: **51**
+- Validated base supplemental sources: **51**
+- Currently scored after learner-flag remediation: **39**
 - Distinct supplemental source groups: **51**
 - Exact SHA-256 duplicates against the RLS extractor manifest: **0**
 - Modalities: **{'X-ray': 14, 'Ultrasound': 6, 'Clinical Image': 7, 'CT': 5, 'Flow-Volume Loop': 4, 'Diagram': 3, 'Histopathology': 2, 'Cytology': 2, 'Microscopy': 2, 'X-ray and CT': 2, 'Echocardiography': 1, 'EKG': 1, 'Gross pathology': 1, 'Histology': 1}**
@@ -89,4 +90,4 @@ Validated September 14, 2026 (America/New_York). The self-contained supplement i
 
 ## Review-item promotions
 
-Six additional user-approved RLS review sources were copied into the app-local supplemental library and converted to reproducible quiz-safe variants. Effective scored supplemental records are now **57** (51 base additions + 6 promotions). See `review-promotions.md`.
+Six additional user-approved RLS review sources were copied into the app-local supplemental library and converted to reproducible quiz-safe variants. After learner-flag remediation, effective scored supplemental records are **45** (39 base additions + 6 promotions). See `review-promotions.md` and `quality-flag-remediation-2026-09-15.md`.

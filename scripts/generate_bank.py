@@ -13,7 +13,7 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from PIL import Image, ImageOps
+from PIL import Image, ImageChops, ImageOps
 
 
 PROJECT = Path(__file__).resolve().parents[1]
@@ -24,6 +24,7 @@ UPSTREAM = LIBRARY / "picture_quiz_manifest.json"
 SUPPLEMENT_ROOT = PROJECT / "source-additions"
 SUPPLEMENT_MANIFEST = SUPPLEMENT_ROOT / "picture_quiz_supplemental_manifest.json"
 PROMOTION_MANIFEST = SUPPLEMENT_ROOT / "picture_quiz_review_promotions.json"
+QUALITY_REVIEW_PLAN = SUPPLEMENT_ROOT / "quality-review-2026-09-15.json"
 SUPPLEMENT_STAGE = PROJECT / ".supplement-stage"
 ASSET_DIR = PROJECT / "public" / "assets" / "images"
 
@@ -184,7 +185,62 @@ def visual_clues(record: dict) -> list[str]:
     return [x.rstrip(";") for x in parts if x][:4]
 
 
-def save_safe_png(source: Path, destination: Path) -> dict:
+def trim_neutral_border(image: Image.Image) -> tuple[Image.Image, list[int] | None]:
+    """Trim only a near-uniform outer field; never enlarge or alter diagnostic pixels."""
+    probe = image.copy()
+    probe.thumbnail((512, 512), Image.Resampling.LANCZOS)
+    rgb = probe.convert("RGB")
+    width, height = rgb.size
+    border = []
+    for x in range(width):
+        border.extend((rgb.getpixel((x, 0)), rgb.getpixel((x, height - 1))))
+    for y in range(height):
+        border.extend((rgb.getpixel((0, y)), rgb.getpixel((width - 1, y))))
+    buckets = Counter((r // 16, g // 16, b // 16) for r, g, b in border)
+    bucket = buckets.most_common(1)[0][0]
+    matching = [pixel for pixel in border if tuple(channel // 16 for channel in pixel) == bucket]
+    background = tuple(sum(pixel[channel] for pixel in matching) // len(matching) for channel in range(3))
+    difference = ImageChops.difference(rgb, Image.new("RGB", rgb.size, background))
+    mask = difference.convert("L").point(lambda value: 255 if value > 14 else 0)
+    bbox = mask.getbbox()
+    if not bbox:
+        return image, None
+    sx, sy = image.width / width, image.height / height
+    padding = max(4, round(min(image.size) * 0.008))
+    left = max(0, round(bbox[0] * sx) - padding)
+    top = max(0, round(bbox[1] * sy) - padding)
+    right = min(image.width, round(bbox[2] * sx) + padding)
+    bottom = min(image.height, round(bbox[3] * sy) + padding)
+    if right - left < image.width * 0.25 or bottom - top < image.height * 0.25:
+        return image, None
+    if left < image.width * 0.01 and top < image.height * 0.01 and right > image.width * 0.99 and bottom > image.height * 0.99:
+        return image, None
+    return image.crop((left, top, right, bottom)), [left, top, right, bottom]
+
+
+def apply_quality_review(image: Image.Image, decision: dict | None) -> tuple[Image.Image, list[str], dict]:
+    if not decision or decision.get("action") == "exclude":
+        return image, [], {}
+    transformations: list[str] = []
+    details: dict = {"batch_id": "quality-review-2026-09-15", "action": decision.get("action")}
+    crop = decision.get("crop_box_fraction")
+    if crop:
+        left = max(0, min(image.width - 1, round(image.width * float(crop[0]))))
+        top = max(0, min(image.height - 1, round(image.height * float(crop[1]))))
+        right = max(left + 1, min(image.width, round(image.width * float(crop[2]))))
+        bottom = max(top + 1, min(image.height, round(image.height * float(crop[3]))))
+        image = image.crop((left, top, right, bottom))
+        transformations.append("quality_review_crop")
+        details["crop_box_fraction"] = crop
+        details["crop_box_pixels"] = [left, top, right, bottom]
+    image, trim_box = trim_neutral_border(image)
+    if trim_box:
+        transformations.append("neutral_border_trim")
+        details["post_crop_trim_box_pixels"] = trim_box
+    return image, transformations, details
+
+
+def save_safe_png(source: Path, destination: Path, decision: dict | None = None) -> dict:
     """Re-encode decoded pixels losslessly as PNG, stripping metadata and compositing alpha."""
     destination.parent.mkdir(parents=True, exist_ok=True)
     with Image.open(source) as opened:
@@ -197,6 +253,7 @@ def save_safe_png(source: Path, destination: Path) -> dict:
             image = background.convert("RGB")
         else:
             image = image.convert("RGB")
+        image, review_transformations, review_details = apply_quality_review(image, decision)
         image.save(destination, format="PNG", compress_level=6)
         width, height = image.size
     return {
@@ -204,27 +261,30 @@ def save_safe_png(source: Path, destination: Path) -> dict:
         "sha256": sha256_file(destination),
         "pixel_width": width,
         "pixel_height": height,
-        "transformations": ["metadata_stripped"] + (["neutral_background_composite"] if had_alpha else []),
+        "transformations": ["metadata_stripped"] + (["neutral_background_composite"] if had_alpha else []) + review_transformations,
+        "quality_review": review_details,
     }
 
 
-def question_asset(record: dict, prefix: str) -> tuple[str, dict]:
+def question_asset(record: dict, prefix: str, decision: dict | None = None) -> tuple[str, dict]:
     rel = clean(record.get("quiz_safe_variant_path")) or clean(record.get("original_relative_path"))
     source = LIBRARY / rel
-    digest = hashlib.sha256((prefix + ":" + record["source_id"] + ":" + rel).encode()).hexdigest()[:16]
+    decision_key = json.dumps(decision or {}, sort_keys=True, separators=(",", ":"))
+    digest = hashlib.sha256((prefix + ":" + record["source_id"] + ":" + rel + ":" + decision_key).encode()).hexdigest()[:16]
     destination = ASSET_DIR / f"{prefix}_{digest}.png"
-    meta = save_safe_png(source, destination)
+    meta = save_safe_png(source, destination, decision)
     return meta["path"], meta
 
 
-def supplemental_asset(record: dict, prefix: str, original: bool = False) -> tuple[str, dict]:
+def supplemental_asset(record: dict, prefix: str, original: bool = False, decision: dict | None = None) -> tuple[str, dict]:
     rel = clean(record.get("original_relative_path") if original else record.get("quiz_safe_variant_path"))
     if not rel:
         rel = clean(record.get("original_relative_path"))
     source = SUPPLEMENT_STAGE / rel
-    digest = hashlib.sha256((prefix + ":" + record["source_id"] + ":" + rel).encode()).hexdigest()[:16]
+    decision_key = json.dumps(decision or {}, sort_keys=True, separators=(",", ":"))
+    digest = hashlib.sha256((prefix + ":" + record["source_id"] + ":" + rel + ":" + decision_key).encode()).hexdigest()[:16]
     destination = ASSET_DIR / f"{prefix}_{digest}.png"
-    meta = save_safe_png(source, destination)
+    meta = save_safe_png(source, destination, decision)
     return meta["path"], meta
 
 
@@ -314,6 +374,16 @@ def main() -> None:
     payload = json.loads(UPSTREAM.read_text(encoding="utf-8"))
     supplement_payload = json.loads(SUPPLEMENT_MANIFEST.read_text(encoding="utf-8"))
     promotion_payload = json.loads(PROMOTION_MANIFEST.read_text(encoding="utf-8"))
+    quality_review_payload = json.loads(QUALITY_REVIEW_PLAN.read_text(encoding="utf-8"))
+    quality_review_items = quality_review_payload.get("items", [])
+    if quality_review_payload.get("schema_version") != 1 or len(quality_review_items) != quality_review_payload.get("count"):
+        raise RuntimeError("Quality-review plan failed its schema/count gate")
+    quality_review_by_source = {clean(item.get("source_id")): item for item in quality_review_items}
+    if len(quality_review_by_source) != len(quality_review_items):
+        raise RuntimeError("Quality-review plan contains duplicate source IDs")
+    excluded_after_flag_review = {
+        source_id for source_id, item in quality_review_by_source.items() if item.get("action") == "exclude"
+    }
     supplement_records = supplement_payload.get("records", []) + promotion_payload.get("records", [])
     promoted_upstream_ids = {clean(r.get("upstream_source_id")) for r in promotion_payload.get("records", [])}
     if supplement_payload.get("schema_version", 0) < 2 or supplement_payload.get("validation", {}).get("result") != "PASS":
@@ -347,17 +417,26 @@ def main() -> None:
         ))
         selected.append(group[0])
         concept_duplicates.extend(group[1:])
-    selected = [r for r in selected if r["source_id"] not in MANUAL_REVIEW]
+    selected = [
+        r for r in selected
+        if r["source_id"] not in MANUAL_REVIEW and r["source_id"] not in excluded_after_flag_review
+    ]
     selected.sort(key=lambda r: (clean(r.get("source_document")), int(r.get("source_page_or_slide") or 0), r["source_id"]))
 
     ASSET_DIR.mkdir(parents=True, exist_ok=True)
     questions: list[dict] = []
     asset_map: dict[str, dict] = {}
     for record in selected:
-        quiz_path, quiz_meta = question_asset(record, "quiz")
+        review_decision = quality_review_by_source.get(record["source_id"])
+        display_record = {
+            **record,
+            **({"panel_handling": review_decision["panel_handling"]} if review_decision and review_decision.get("panel_handling") else {}),
+            **({"joint_images": review_decision["joint_images"]} if review_decision and "joint_images" in review_decision else {}),
+        }
+        quiz_path, quiz_meta = question_asset(record, "quiz", review_decision)
         original_rel = clean(record.get("original_relative_path"))
         quiz_rel = clean(record.get("quiz_safe_variant_path")) or original_rel
-        if original_rel == quiz_rel:
+        if original_rel == quiz_rel and not review_decision:
             original_path, original_meta = quiz_path, quiz_meta
         else:
             original_path, original_meta = question_asset({**record, "quiz_safe_variant_path": original_rel}, "original")
@@ -394,11 +473,11 @@ def main() -> None:
             "variant_id": variant_id,
             "question_type": "Identification",
             "tested_concept": correct_answer,
-            "stem": stem_for(record),
+            "stem": stem_for(display_record),
             "case_context": clean(record.get("case_context")),
-            "visual_target": panel_scope(record),
-            "panel_handling": clean(record.get("panel_handling")) or "single",
-            "joint_images": bool(record.get("joint_images")) or clean(record.get("panel_handling")).casefold() in {"retained_composite", "split"},
+            "visual_target": clean(review_decision.get("visual_target")) if review_decision and review_decision.get("visual_target") else panel_scope(display_record),
+            "panel_handling": clean(display_record.get("panel_handling")) or "single",
+            "joint_images": bool(display_record.get("joint_images")) or clean(display_record.get("panel_handling")).casefold() in {"retained_composite", "split"},
             "options": options,
             "correct_index": correct_index,
             "accepted_terminology": record.get("accepted_answers") or [],
@@ -421,8 +500,14 @@ def main() -> None:
                 "source_id": record["source_id"],
             },
             "review_status": "VERIFIED",
+            "quality_review_batch": quality_review_payload.get("batch_id") if review_decision else None,
         })
-        asset_map[variant_id] = {"quiz": quiz_meta, "original": original_meta, "source_id": record["source_id"]}
+        asset_map[variant_id] = {
+            "quiz": quiz_meta,
+            "original": original_meta,
+            "source_id": record["source_id"],
+            "quality_review": review_decision,
+        }
 
     # Add the separate, versioned pulmonary-picture supplement. Its explicit question specs were
     # visually reviewed and preserve four index-aligned rationales; the source collection remains
@@ -435,6 +520,9 @@ def main() -> None:
             and record.get("ground_truth_confidence") == "high"
         ):
             continue
+        review_decision = quality_review_by_source.get(record["source_id"])
+        if review_decision and review_decision.get("action") == "exclude":
+            continue
         spec = record.get("question_spec") or {}
         options = spec.get("options") or []
         rationales = list(spec.get("choice_rationales") or [])
@@ -445,8 +533,8 @@ def main() -> None:
             raise RuntimeError(f"Blank supplemental option or rationale for {record.get('source_id')}")
         if not rationales[correct_index].startswith("Correct:"):
             rationales[correct_index] = "Correct: " + rationales[correct_index]
-        quiz_path, quiz_meta = supplemental_asset(record, "quiz")
-        if clean(record.get("quiz_safe_variant_path")) == clean(record.get("original_relative_path")):
+        quiz_path, quiz_meta = supplemental_asset(record, "quiz", decision=review_decision)
+        if clean(record.get("quiz_safe_variant_path")) == clean(record.get("original_relative_path")) and not review_decision:
             original_path, original_meta = quiz_path, quiz_meta
         else:
             original_path, original_meta = supplemental_asset(record, "original", original=True)
@@ -491,6 +579,7 @@ def main() -> None:
                 "displayed_license": record.get("displayed_license"),
             },
             "review_status": "VERIFIED",
+            "quality_review_batch": quality_review_payload.get("batch_id") if review_decision else None,
         })
         asset_map[variant_id] = {
             "quiz": quiz_meta,
@@ -499,6 +588,7 @@ def main() -> None:
             "supplemental_source_manifest": (
                 PROMOTION_MANIFEST.as_posix() if record.get("upstream_source_id") else SUPPLEMENT_MANIFEST.as_posix()
             ),
+            "quality_review": review_decision,
         }
 
     # Review items receive opaque, metadata-stripped previews but never enter scored sessions.
@@ -534,6 +624,21 @@ def main() -> None:
         "generated_at": now,
         "mode": "image-identification",
         "question_count": len(questions),
+        "quality_review": {
+            "batch_id": quality_review_payload.get("batch_id"),
+            "reviewed_at": quality_review_payload.get("reviewed_at"),
+            "count": quality_review_payload.get("count"),
+            "summary": quality_review_payload.get("summary"),
+            "resolved_flags": [
+                {
+                    "question_id": item.get("question_id"),
+                    "source_id": item.get("source_id"),
+                    "action": item.get("action"),
+                    "reason": item.get("reason"),
+                }
+                for item in quality_review_items
+            ],
+        },
         "questions": questions,
     }
     review_queue = {
@@ -571,6 +676,7 @@ def main() -> None:
         active = record.get("active", True) and record.get("status") == "USABLE"
         promoted_original = sid in promoted_upstream_ids
         removed_from_app = sid in REMOVED_FROM_APP
+        flag_review = quality_review_by_source.get(sid)
         review_only = sid in MANUAL_REVIEW and not promoted_original and not removed_from_app
         record["question_type_matrix"] = {
             "Identification": {
@@ -581,16 +687,26 @@ def main() -> None:
                 "preserve": record.get("labels_preserved") or [],
                 "confidence": record.get("ground_truth_confidence"),
                 "reason_unsupported": (
+                    flag_review.get("reason")
+                    if flag_review and flag_review.get("action") == "exclude" else (
                     f"Promoted through a project-local quiz-safe derivative in {PROMOTION_MANIFEST.name}."
                     if promoted_original else (
                         "Removed from the local quiz app at the user's request."
                         if removed_from_app else (MANUAL_REVIEW.get(sid, "") if sid not in selected_ids else "")
-                    )
+                    ))
                 ),
             }
         }
         record["builder_scored_question"] = sid in selected_ids
-        if promoted_original:
+        if flag_review:
+            record["builder_quality_review"] = {
+                "batch_id": quality_review_payload.get("batch_id"),
+                "action": flag_review.get("action"),
+                "reason": flag_review.get("reason"),
+            }
+        if flag_review and flag_review.get("action") == "exclude":
+            record["builder_exclusion_reason"] = flag_review.get("reason")
+        elif promoted_original:
             record["builder_exclusion_reason"] = f"Replaced for scoring by a project-local quiz-safe derivative from source {sid}."
         elif removed_from_app:
             record["builder_exclusion_reason"] = "Removed from the local quiz app at the user's request."
@@ -637,9 +753,13 @@ Generated: {now}
 ## Downstream ID gate
 
 - Activated questions: {len(questions)}
-- New pulmonary-picture additions: {len(supplement_records)}
+- Active third-party Pulm Pictures questions: {sum(q['source_origin'] == 'third_party' for q in questions)}
+- Source additions represented before quality review: {len(supplement_records)}
 - Distinct activated source groups: {len({q['source_group_id'] for q in questions})}
 - Manual-review exclusions: {len(review_items)}
+- Learner-flagged items audited: {quality_review_payload.get('count')}
+- Learner-flagged items removed from scoring: {quality_review_payload.get('summary', {}).get('excluded')}
+- Learner-flagged images retained with local crop/trim: {quality_review_payload.get('count') - quality_review_payload.get('summary', {}).get('excluded')}
 - Repeated modality/answer concepts not duplicated in the bank: {len(concept_duplicates)}
 - Question bank schema: 2
 - Every item has four unique options and four index-aligned rationales.
@@ -661,10 +781,43 @@ Generated: {now}
 ## Limitations
 
 - Distractors were selected deterministically from modality- and category-aligned, lecture-verified source records.
-- {len(review_items)} visually labeled or text-dependent candidates remain in the local review queue; six user-approved sources were promoted through reproducible local crops or opaque masks.
+- {len(review_items)} visually labeled or text-dependent candidates remain in the local builder review queue.
+- The completed learner-flag batch is recorded in `{QUALITY_REVIEW_PLAN.name}`; excluded records retain lineage but are not scored.
 - The build preserves the upstream medical ground truth; it does not reinterpret RLS content from filenames.
 """
     (PROJECT / "reports" / "preflight-audit.md").write_text(report, encoding="utf-8")
+    review_rows = []
+    for item in quality_review_items:
+        note = clean(item.get("note")).replace("|", "\\|") or "—"
+        concept = clean(item.get("tested_concept")).replace("|", "\\|")
+        reason = clean(item.get("reason")).replace("|", "\\|")
+        review_rows.append(
+            f"| {item.get('review_index')} | {item.get('issue_type')} | {item.get('action')} | {concept} | {note} | {reason} |"
+        )
+    quality_report = f"""# Pulmonary Picture Quality-Flag Remediation
+
+Batch: `{quality_review_payload.get('batch_id')}`  
+Reviewed: {quality_review_payload.get('reviewed_at')}
+
+## Outcome
+
+- Flags audited: {quality_review_payload.get('count')}
+- Excluded from scoring: {quality_review_payload.get('summary', {}).get('excluded')}
+- Isolated-panel crops: {quality_review_payload.get('summary', {}).get('isolated_panel_crop')}
+- Other retained crops: {quality_review_payload.get('summary', {}).get('retained_crop')}
+- Retained images with neutral-border/dead-space trim: {quality_review_payload.get('summary', {}).get('retained_trim')}
+- Upstream lecture and Pulm Pictures libraries modified: no
+- Upscaling, recoloring, mirroring, or generative reconstruction: none
+
+Excluded items retain their source lineage in `source-manifest.json` and are not present in the scored bank. Retained items use a project-local derivative; the post-answer teaching original remains available separately.
+
+## Item-level dispositions
+
+| # | Flag | Action | Tested concept | Learner note | Resolution |
+|---:|---|---|---|---|---|
+{chr(10).join(review_rows)}
+"""
+    (PROJECT / "reports" / "quality-flag-remediation-2026-09-15.md").write_text(quality_report, encoding="utf-8")
     print(json.dumps({
         "questions": len(questions),
         "review_items": len(review_items),

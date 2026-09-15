@@ -943,7 +943,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_198c4a713276",
@@ -1125,16 +1130,22 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Distal airway transition in lung histology",
           "required_variant": "var_86487c8635a9",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The quiz-safe source contains a large opaque label mask over the tissue, so the complete histology field cannot be recovered locally."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The quiz-safe source contains a large opaque label mask over the tissue, so the complete histology field cannot be recovered locally."
+      },
+      "builder_exclusion_reason": "The quiz-safe source contains a large opaque label mask over the tissue, so the complete histology field cannot be recovered locally."
     },
     {
       "asset_id": "asset_2e1a41fb4412",
@@ -2226,7 +2237,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_0a621472338f",
@@ -3430,7 +3446,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_c71542f64632",
@@ -4406,7 +4427,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_afc890201592",
@@ -4479,7 +4505,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_3721c6fbafa5",
@@ -4552,7 +4583,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_9793988587ec",
@@ -5939,7 +5975,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete radiograph while removing the slide prompt, navigation arrows, and colored frame."
+      }
     },
     {
       "asset_id": "asset_582689a7fec2",
@@ -6012,7 +6053,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_a9e52e4f5005",
@@ -6158,7 +6204,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_e5d4b43bded7",
@@ -6404,7 +6455,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_f80ea9940b88",
@@ -6468,16 +6524,22 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Fatal acute asthma",
           "required_variant": "identity",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The source is too soft or degraded for a reliable identification question."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The source is too soft or degraded for a reliable identification question."
+      },
+      "builder_exclusion_reason": "The source is too soft or degraded for a reliable identification question."
     },
     {
       "asset_id": "asset_512e6dbb1022",
@@ -6550,7 +6612,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_b9c2384486b9",
@@ -6623,7 +6690,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_ebe1f46519df",
@@ -6843,7 +6915,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_a896a35f538c",
@@ -7428,7 +7505,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_aead28519cd8",
@@ -7501,7 +7583,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_9ad862bbc8b4",
@@ -7761,7 +7848,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Bucket-handle rib motion during breathing",
           "required_variant": "var_dc86e6cd3ba4",
           "full_image_required": true,
@@ -7770,10 +7857,16 @@
             "Orientation markers when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
+      },
+      "builder_exclusion_reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
     },
     {
       "asset_id": "asset_2bd42cd9ce7e",
@@ -7881,7 +7974,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_a9e4c5661144",
@@ -9066,16 +9164,22 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "PA versus AP chest radiograph",
           "required_variant": "var_e22538438a1e",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_7ff22eef211e",
@@ -9168,16 +9272,22 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Pulmonary hyperinflation",
           "required_variant": "var_5daab78ee07f",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_acaeb893c927",
@@ -9382,7 +9492,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_a835f4dbc8a3",
@@ -9484,7 +9599,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_1a5d0c6d0a10",
@@ -9654,16 +9774,22 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Emphysema with enlarged distal airspaces",
           "required_variant": "var_a5e6eae39c70",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The source is too soft or degraded for a reliable identification question."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The source is too soft or degraded for a reliable identification question."
+      },
+      "builder_exclusion_reason": "The source is too soft or degraded for a reliable identification question."
     },
     {
       "asset_id": "asset_677aad6c9216",
@@ -9756,16 +9882,22 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Bullous emphysema",
           "required_variant": "var_8cf9f6416548",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_e59cd2f0ef00",
@@ -9867,7 +9999,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_47501d5beb17",
@@ -10174,7 +10311,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_5138e47e53eb",
@@ -11053,7 +11195,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_fb44c44514e4",
@@ -11487,16 +11634,22 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Airway hyperresponsiveness to methacholine",
           "required_variant": "var_96f6abb43f9a",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The graph is clipped at the right source boundary, so its full scale and comparison cannot be restored without inventing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The graph is clipped at the right source boundary, so its full scale and comparison cannot be restored without inventing content."
+      },
+      "builder_exclusion_reason": "The graph is clipped at the right source boundary, so its full scale and comparison cannot be restored without inventing content."
     },
     {
       "asset_id": "asset_91e056501ddd",
@@ -12310,7 +12463,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop isolates the complete chest radiograph and removes the clipped adjacent teaching panel."
+      }
     },
     {
       "asset_id": "asset_97bd45c4636c",
@@ -12397,7 +12555,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves both complete histology panels while removing partial slide boxes and unrelated teaching prose."
+      }
     },
     {
       "asset_id": "asset_846a0feeb703",
@@ -12592,7 +12755,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_d977a83ca62b",
@@ -12795,7 +12963,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_07093f00bb9a",
@@ -12880,7 +13053,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_a0f1fbcf99bb",
@@ -13074,16 +13252,22 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Asteroid body in giant cell",
           "required_variant": "identity",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The source is too soft or degraded for a reliable identification question."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The source is too soft or degraded for a reliable identification question."
+      },
+      "builder_exclusion_reason": "The source is too soft or degraded for a reliable identification question."
     },
     {
       "asset_id": "asset_db999b385bd3",
@@ -13801,16 +13985,22 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Low-volume thoracic imaging and altered mechanics in muscular dystrophy",
           "required_variant": "var_a8e4bf7eda0d",
           "full_image_required": true,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_6971a2668849",
@@ -13920,7 +14110,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_f9db00cacacf",
@@ -14106,16 +14301,22 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Bamboo spine",
           "required_variant": "identity",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_73530f35f121",
@@ -14200,7 +14401,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop isolates one complete diagnostic panel and removes unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_594ec233c0db",
@@ -14286,7 +14492,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_95a856436f9b",
@@ -14396,7 +14607,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_dfd1c5f8e176",
@@ -14813,7 +15029,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_09beda4a9d64",
@@ -15007,7 +15228,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_7fb65f94e52c",
@@ -15111,16 +15337,22 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "DVT on ultrasound and pulmonary arterial filling defect on CTPA",
           "required_variant": "var_03135b77d77f",
           "full_image_required": true,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_8bee7dd9c78c",
@@ -15231,7 +15463,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_16b984b25f6c",
@@ -15427,7 +15664,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_a56163c77ec4",
@@ -15504,16 +15746,22 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Prominent pulmonary artery (Fleischner sign)",
           "required_variant": "identity",
           "full_image_required": true,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_d3501923dd42",
@@ -15624,7 +15872,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop isolates the complete upper four-view perfusion set and removes the clipped partial set below it."
+      }
     },
     {
       "asset_id": "asset_79e75aeca654",
@@ -15703,7 +15956,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Pulmonary hamartoma gross and histology",
           "required_variant": "identity",
           "full_image_required": false,
@@ -15711,10 +15964,16 @@
             "Anatomic orientation and necessary arrows when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_a351fb625b09",
@@ -15804,7 +16063,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_b65243b20121",
@@ -15985,7 +16249,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop isolates the complete unlabeled H&E field and removes clipped teaching text and the labeled immunostain."
+      }
     },
     {
       "asset_id": "asset_979b224984ac",
@@ -16075,7 +16344,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop isolates the complete diagnostic histology field and removes the answer-revealing teaching box."
+      }
     },
     {
       "asset_id": "asset_84023f87c599",
@@ -16165,7 +16439,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_d8c9adaa6fa6",
@@ -16244,7 +16523,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Saddle embolus and laminated thrombus",
           "required_variant": "identity",
           "full_image_required": false,
@@ -16252,10 +16531,16 @@
             "Anatomic orientation and necessary arrows when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The displayed teaching labels reveal or materially cue the keyed answer."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The displayed teaching labels reveal or materially cue the keyed answer."
+      },
+      "builder_exclusion_reason": "The displayed teaching labels reveal or materially cue the keyed answer."
     },
     {
       "asset_id": "asset_012cc7f3c61e",
@@ -16345,7 +16630,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop isolates the complete gross-lung specimen and removes the clipped adjacent specimen."
+      }
     },
     {
       "asset_id": "asset_51d2c59d52f2",
@@ -16795,7 +17085,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_543bccb465be",
@@ -16896,7 +17191,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_543bccb465be",
@@ -17200,7 +17500,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_1a0143ac2e78",
@@ -17403,7 +17708,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_f62e5921b644",
@@ -17598,16 +17908,22 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Lobar pneumonia with gray hepatization",
           "required_variant": "var_d4726088ca9a",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_305b71592bf7",
@@ -17709,7 +18025,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_4f3c886e932d",
@@ -17811,7 +18132,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_f76ad92878b1",
@@ -17913,16 +18239,22 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Primary tuberculosis with a Ghon focus",
           "required_variant": "var_d5b06eab47a0",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The displayed teaching labels reveal or materially cue the keyed answer."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The displayed teaching labels reveal or materially cue the keyed answer."
+      },
+      "builder_exclusion_reason": "The displayed teaching labels reveal or materially cue the keyed answer."
     },
     {
       "asset_id": "asset_7fe0985126a3",
@@ -18126,7 +18458,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_97dd2fdd36e6",
@@ -18611,7 +18948,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_427859fca946",
@@ -19347,7 +19689,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Loculated pleural collection on CT",
           "required_variant": "var_66c30a232c70",
           "full_image_required": false,
@@ -19355,10 +19697,16 @@
             "Anatomic orientation and necessary arrows when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_cabc4cd0bd3f",
@@ -19539,7 +19887,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop isolates one complete diagnostic panel and removes unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_4defc2849e63",
@@ -19719,7 +20072,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop isolates one complete diagnostic panel and removes unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_365dcb866b4b",
@@ -19913,7 +20271,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Central obstruction with lobar collapse",
           "required_variant": "var_ca146421fd91",
           "full_image_required": false,
@@ -19921,10 +20279,16 @@
             "Anatomic orientation and necessary arrows when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_06fd19f9c7a1",
@@ -20183,7 +20547,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Concordant CT and PET-CT avid lung lesion",
           "required_variant": "identity",
           "full_image_required": false,
@@ -20191,10 +20555,16 @@
             "Anatomic orientation and necessary arrows when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The displayed teaching labels reveal or materially cue the keyed answer."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The displayed teaching labels reveal or materially cue the keyed answer."
+      },
+      "builder_exclusion_reason": "The displayed teaching labels reveal or materially cue the keyed answer."
     },
     {
       "asset_id": "asset_1efa707661a2",
@@ -20284,7 +20654,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop isolates one complete diagnostic panel and removes unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_c0b6d9042059",
@@ -20453,7 +20828,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Gram-positive cocci in clusters",
           "required_variant": "identity",
           "full_image_required": false,
@@ -20461,10 +20836,16 @@
             "Anatomic orientation and necessary arrows when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_f9cf26afb63d",
@@ -20543,7 +20924,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Legionella organism and pneumonia imaging",
           "required_variant": "identity",
           "full_image_required": false,
@@ -20551,10 +20932,16 @@
             "Anatomic orientation and necessary arrows when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_7bd7c3639e9d",
@@ -20633,7 +21020,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Mucoid lactose-fermenting colonies and sputum",
           "required_variant": "identity",
           "full_image_required": false,
@@ -20641,10 +21028,16 @@
             "Anatomic orientation and necessary arrows when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_9b5214177533",
@@ -21652,7 +22045,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_7ce084b0faba",
@@ -23655,7 +24053,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_b4c1ba3322ff",
@@ -23770,7 +24173,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_1541c4000b79",
@@ -23874,7 +24282,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Atypical or viral interstitial pneumonia",
           "required_variant": "var_1889b9a9f61e",
           "full_image_required": true,
@@ -23882,10 +24290,16 @@
             "Imaging orientation, scale, axes, and medically necessary annotations"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_c187eef5f7f3",
@@ -24320,7 +24734,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_4d2278d6b35b",
@@ -24515,7 +24934,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Central pulmonary-artery enlargement with peripheral pruning",
           "required_variant": "var_2fce1a3d0f46",
           "full_image_required": false,
@@ -24523,10 +24942,16 @@
             "Imaging orientation, scale, axes, and medically necessary annotations"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_366d624323d4",
@@ -25092,7 +25517,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Choanal atresia",
           "required_variant": "identity",
           "full_image_required": false,
@@ -25100,10 +25525,16 @@
             "Anatomic orientation and diagnostic structures"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_041b581a4531",
@@ -25204,7 +25635,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_43b9681d5309",
@@ -25305,7 +25741,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_2e0e6daab5db",
@@ -25395,7 +25836,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Tracheoesophageal fistula on barium esophagram",
           "required_variant": "identity",
           "full_image_required": false,
@@ -25403,10 +25844,16 @@
             "Anatomic orientation and diagnostic structures"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_5617125fe4f4",
@@ -25512,7 +25959,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Nasal polyps",
           "required_variant": "var_5518b6df2ca4",
           "full_image_required": false,
@@ -25520,10 +25967,16 @@
             "Anatomic orientation and diagnostic structures"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_4ee5e529ea4c",
@@ -25818,7 +26271,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Invasive fungal sinusitis",
           "required_variant": "var_2a5cb3598ce4",
           "full_image_required": true,
@@ -25826,10 +26279,16 @@
             "Anatomic orientation and diagnostic structures"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_14747964d585",
@@ -26155,7 +26614,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_3c9d9efa6f32",
@@ -26454,7 +26918,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_319b9b58811b",
@@ -26571,7 +27040,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_0eb58ebf4ab2",
@@ -27933,7 +28407,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_0ea374343591",
@@ -28409,7 +28888,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Enlarged distal airspaces with alveolar wall destruction",
           "required_variant": "var_5c268ebc30c1",
           "full_image_required": false,
@@ -28417,10 +28896,16 @@
             "anatomic/pathologic orientation, axes, units, and neutral markers required for interpretation"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_c7f974824a0e",
@@ -28545,7 +29030,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_14adda13fd80",
@@ -29203,7 +29693,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_5780c6b75565",
@@ -29379,7 +29874,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Bilateral diffuse opacities in ARDS",
           "required_variant": "identity",
           "full_image_required": false,
@@ -29388,10 +29883,16 @@
             "Necessary non-answer markers"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_5575bc4e00a1",
@@ -29589,7 +30090,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_64319083874a",
@@ -29683,7 +30189,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_acad1fde9d38",
@@ -30162,7 +30673,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Extrapulmonary restrictive mechanics caused by obesity",
           "required_variant": "identity",
           "full_image_required": false,
@@ -30171,10 +30682,16 @@
             "Necessary non-answer markers"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_19a9daaf5e33",
@@ -30672,7 +31189,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Mediastinal bronchogenic cyst causing airway compression",
           "required_variant": "identity",
           "full_image_required": true,
@@ -30682,10 +31199,16 @@
             "Imaging laterality and view context when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_4b9060fbf2f8",
@@ -31283,7 +31806,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_c2e73e06222c",
@@ -31368,7 +31896,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_d4b8b23812b2",
@@ -31538,7 +32071,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_4d3f0b234a80",
@@ -31793,7 +32331,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop isolates the complete annotated chest radiograph and removes the clipped adjacent radiograph and blank slide space."
+      }
     },
     {
       "asset_id": "asset_f950832a618d",
@@ -31878,7 +32421,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_f0547d3daa35",
@@ -31950,7 +32498,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Pulmonary sequestration",
           "required_variant": "identity",
           "full_image_required": true,
@@ -31960,10 +32508,16 @@
             "Imaging laterality and view context when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_081b7a0bfb3e",
@@ -32303,7 +32857,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_805d51c5c073",
@@ -32558,7 +33117,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_ddb5206e90cc",
@@ -32728,7 +33292,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_80e9c254f218",
@@ -32800,7 +33369,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Scaphoid abdomen in congenital diaphragmatic hernia",
           "required_variant": "identity",
           "full_image_required": true,
@@ -32810,10 +33379,16 @@
             "Imaging laterality and view context when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_24967f72db64",
@@ -32983,7 +33558,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_2996627e2435",
@@ -33482,7 +34062,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Nuss repair of pectus excavatum",
           "required_variant": "identity",
           "full_image_required": true,
@@ -33492,10 +34072,16 @@
             "Imaging laterality and view context when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_70ab24ff58d7",
@@ -33737,7 +34323,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "External bracing for pectus carinatum",
           "required_variant": "identity",
           "full_image_required": true,
@@ -33747,10 +34333,16 @@
             "Imaging laterality and view context when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
+      },
+      "builder_exclusion_reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
     },
     {
       "asset_id": "asset_43d3eee4f988",
@@ -33992,7 +34584,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Peak-flow meter",
           "required_variant": "identity",
           "full_image_required": false,
@@ -34002,10 +34594,16 @@
             "Anatomic or imaging orientation when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
+      },
+      "builder_exclusion_reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
     },
     {
       "asset_id": "asset_43d3eee4f988",
@@ -35028,7 +35626,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_4363bccedab5",
@@ -35538,7 +36141,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop isolates the complete cough-artifact flow-volume loop and removes the clipped adjacent graph."
+      }
     },
     {
       "asset_id": "asset_0f373b2e88aa",
@@ -36474,7 +37082,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop isolates one complete diagnostic panel and removes unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_bf5ff05a06b0",
@@ -36985,7 +37598,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_69daf65bce3b",
@@ -37070,7 +37688,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_9cc5ebffa91b",
@@ -39514,7 +40137,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Neonatal respiratory distress syndrome",
           "required_variant": "identity",
           "full_image_required": false,
@@ -39524,10 +40147,16 @@
             "Scale, stain, and axes when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_60cce420cffc",
@@ -39612,7 +40241,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_64262036c715",
@@ -39697,7 +40331,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_d4ac46445541",
@@ -40889,7 +41528,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_27c887bf1698",
@@ -40974,7 +41618,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop preserves the complete tested view or comparison while removing dead space and unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_277733452529",
@@ -41144,7 +41793,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "crop",
+        "reason": "A project-local crop isolates one complete diagnostic panel and removes unrelated slide material."
+      }
     },
     {
       "asset_id": "asset_fd9a7fda4800",
@@ -41739,7 +42393,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_0d10341b526d",
@@ -42079,7 +42738,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_7d0c28347987",
@@ -42151,7 +42815,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Centriacinar emphysema",
           "required_variant": "identity",
           "full_image_required": false,
@@ -42161,10 +42825,16 @@
             "Scale, stain, and axes when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_63d16293f7d4",
@@ -42419,7 +43089,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_9a8027e776ec",
@@ -42491,7 +43166,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Necrotic invasive lung carcinoma",
           "required_variant": "identity",
           "full_image_required": false,
@@ -42501,10 +43176,16 @@
             "Scale, stain, and axes when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_45a5fb1637df",
@@ -43697,7 +44378,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_95c8ebdc628a",
@@ -45653,7 +46339,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Normal, restrictive, and obstructive flow volume loops",
           "required_variant": "var_4491e557b42a",
           "full_image_required": true,
@@ -45662,10 +46348,16 @@
             "Orientation markers when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_3869fc814bb3",
@@ -46417,7 +47109,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Pressure waveforms for CPAP, ACMV, and PEEP",
           "required_variant": "var_b35f4ee02037",
           "full_image_required": true,
@@ -46426,10 +47118,16 @@
             "Orientation markers when present"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_f2ddbc4b8676",
@@ -46919,7 +47617,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_943bc10284d0",
@@ -48795,7 +49498,7 @@
       "source_origin": "lecture",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Breathing patterns after brainstem transection",
           "required_variant": "var_5d2b9f3abc3e",
           "full_image_required": true,
@@ -48805,10 +49508,16 @@
             "Neutral arrows and necessary markers"
           ],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
+      },
+      "builder_exclusion_reason": "The image is incomplete, non-diagnostic, redundant with a stronger retained item, or cannot be repaired without inventing missing content."
     },
     {
       "asset_id": "asset_cb3b267952ea",
@@ -49158,16 +49867,22 @@
       "source_origin": "third_party",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "B-lines indicating an interstitial lung syndrome",
           "required_variant": "var_identity_ee6974cc71e0",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
+      },
+      "builder_exclusion_reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
     },
     {
       "asset_id": "asset_8fce4207e08f",
@@ -49262,16 +49977,22 @@
       "source_origin": "third_party",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Seashore sign indicating normal lung sliding",
           "required_variant": "var_identity_8fce4207e08f",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
+      },
+      "builder_exclusion_reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
     },
     {
       "asset_id": "asset_ecd3383d892c",
@@ -49366,16 +50087,22 @@
       "source_origin": "third_party",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Flexible bronchoscopy",
           "required_variant": "var_identity_ecd3383d892c",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
+      },
+      "builder_exclusion_reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
     },
     {
       "asset_id": "asset_0c31b6a9b5d7",
@@ -49470,16 +50197,22 @@
       "source_origin": "third_party",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Right thoracostomy tube for pneumothorax",
           "required_variant": "var_identity_0c31b6a9b5d7",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
+      },
+      "builder_exclusion_reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
     },
     {
       "asset_id": "asset_75e53a6f03c6",
@@ -49583,7 +50316,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_578e599af223",
@@ -49678,16 +50416,22 @@
       "source_origin": "third_party",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Water-seal chest drainage system",
           "required_variant": "var_identity_578e599af223",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
+      },
+      "builder_exclusion_reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
     },
     {
       "asset_id": "asset_eb46780f1fc2",
@@ -50004,7 +50748,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_e588e4ed049d",
@@ -50654,16 +51403,22 @@
       "source_origin": "third_party",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Diagnostic spirometry",
           "required_variant": "var_identity_026b57af8d1c",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
+      },
+      "builder_exclusion_reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
     },
     {
       "asset_id": "asset_df477fdfa11d",
@@ -50975,7 +51730,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_cb2951109e63",
@@ -51174,16 +51934,22 @@
       "source_origin": "third_party",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Thoracentesis",
           "required_variant": "var_identity_67cfd6f95d63",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
+      },
+      "builder_exclusion_reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
     },
     {
       "asset_id": "asset_f569d930a7af",
@@ -51402,16 +52168,22 @@
       "source_origin": "third_party",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Lung consolidation with air bronchograms",
           "required_variant": "var_identity_d72e1c439054",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
+      },
+      "builder_exclusion_reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
     },
     {
       "asset_id": "asset_dab6959f8e42",
@@ -51506,16 +52278,22 @@
       "source_origin": "third_party",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Right mainstem endotracheal-tube malposition",
           "required_variant": "var_identity_dab6959f8e42",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
+      },
+      "builder_exclusion_reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
     },
     {
       "asset_id": "asset_92c57598733c",
@@ -51610,16 +52388,22 @@
       "source_origin": "third_party",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Endotracheal and nasogastric tubes, both appropriately positioned",
           "required_variant": "var_identity_92c57598733c",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
+      },
+      "builder_exclusion_reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
     },
     {
       "asset_id": "asset_0ad260f0645d",
@@ -51818,16 +52602,22 @@
       "source_origin": "third_party",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Barcode/stratosphere sign indicating absent lung sliding",
           "required_variant": "var_identity_9f3a02ec2eb9",
           "full_image_required": false,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
+      },
+      "builder_exclusion_reason": "The image tests equipment, technique, or a non-diagnostic teaching aside rather than pulmonary visual identification."
     },
     {
       "asset_id": "asset_a07e1fe9a95f",
@@ -51931,7 +52721,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_64d99ec51daf",
@@ -52673,7 +53468,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_398b2d73bc14",
@@ -53759,16 +54559,22 @@
       "source_origin": "third_party",
       "question_type_matrix": {
         "Identification": {
-          "supported": "YES",
+          "supported": "NO",
           "visual_target": "Westermark sign",
           "required_variant": "var_38600cc8ba3a",
           "full_image_required": true,
           "preserve": [],
           "confidence": "high",
-          "reason_unsupported": ""
+          "reason_unsupported": "The displayed teaching labels reveal or materially cue the keyed answer."
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": false,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "exclude",
+        "reason": "The displayed teaching labels reveal or materially cue the keyed answer."
+      },
+      "builder_exclusion_reason": "The displayed teaching labels reveal or materially cue the keyed answer."
     },
     {
       "asset_id": "asset_6f1d2ffa880a",
@@ -54765,7 +55571,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_14747964d585",
@@ -54880,7 +55691,12 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     },
     {
       "asset_id": "asset_f15ab5f3f9a0",
@@ -55186,12 +56002,17 @@
           "reason_unsupported": ""
         }
       },
-      "builder_scored_question": true
+      "builder_scored_question": true,
+      "builder_quality_review": {
+        "batch_id": "quality-review-2026-09-15",
+        "action": "trim",
+        "reason": "The diagnostic content is complete; neutral border and dead space are trimmed without changing or upscaling the source pixels."
+      }
     }
   ],
   "upstream_schema_version": 1,
   "builder": "build-medical-picture-quiz",
-  "builder_generated_at": "2026-09-14T20:40:55-04:00",
+  "builder_generated_at": "2026-09-14T22:25:43-04:00",
   "source_library_read_only": true,
   "supplemental_source_library": {
     "path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions",
