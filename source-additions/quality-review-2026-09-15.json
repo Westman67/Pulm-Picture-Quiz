@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "batch_id": "quality-review-2026-09-15",
-  "reviewed_at": "2026-09-14T00:00:00-04:00",
+  "reviewed_at": "2026-09-14T23:20:00-04:00",
   "source_export": "pulmonary-picture-quality-flags-2026-09-15.json",
   "source_library_read_only": true,
   "policy": {

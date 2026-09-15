@@ -19,13 +19,20 @@ const cases = [
   { slug: "pulmonary-contusion", category: "Thoracic trauma", stem: "irregular peripheral nonlobar opacity", answer: "Pulmonary contusion" },
   { slug: "ttn", category: "Neonatal lung disease", stem: "perihilar streaking, and fissural fluid", answer: "Transient tachypnea of the newborn" },
   { slug: "split-pleura", category: "Pleural infection", stem: "enhancing pleural layers surrounding", answer: "Split pleura sign of empyema" },
-  { slug: "westermark", category: "Pulmonary vascular imaging signs", stem: "abnormal panel and its magnified comparison", answer: "Westermark sign" },
   { slug: "nsip", category: "Interstitial lung disease", stem: "interstitial-lung-disease pattern", answer: "Nonspecific interstitial pneumonia pattern" },
   { slug: "tree-in-bud", category: "Small-airway infection", stem: "branching peripheral opacities and their nodular tips", answer: "Tree-in-bud pattern" },
   { slug: "pneumocystis", category: "Opportunistic infection", stem: "paired H&E and silver-stained sections", answer: "Pneumocystis jirovecii pneumonia" },
   { slug: "retropharyngeal-abscess", category: "Upper-airway infection", stem: "deep neck-space infection", answer: "Retropharyngeal abscess" },
   { slug: "svc-syndrome", category: "Lung cancer complications", stem: "intrathoracic obstruction and upper-body venous findings", answer: "Superior vena cava syndrome" },
   { slug: "traumatic-hemothorax", category: "Thoracic trauma", stem: "traumatic pleural diagnosis", answer: "Traumatic hemothorax" },
+  { slug: "pathoma-ghon-focus", category: "Tuberculosis", stem: "gross pulmonary lesion", answer: "Ghon focus of primary tuberculosis" },
+  { slug: "pathoma-caseating-granuloma", category: "Tuberculosis", stem: "pathologic process", answer: "Caseating granuloma of tuberculosis" },
+  { slug: "pathoma-lateral-emphysema", category: "COPD imaging", stem: "lateral chest-radiograph appearance", answer: "Emphysema with increased anteroposterior diameter" },
+  { slug: "pathoma-plexiform-lesion", category: "Pulmonary vascular disease", stem: "pulmonary vascular lesion", answer: "Plexiform lesion of pulmonary arterial hypertension" },
+  { slug: "pathoma-adenocarcinoma-mucin", category: "Lung cancer", stem: "lung-cancer subtype", answer: "Pulmonary adenocarcinoma with gland formation and mucin" },
+  { slug: "pathoma-lepidic-growth", category: "Lung cancer", stem: "neoplastic growth pattern", answer: "Lepidic growth pattern of pulmonary adenocarcinoma" },
+  { slug: "pathoma-carcinoid-ihc", category: "Lung cancer", stem: "immunohistochemical pattern", answer: "Chromogranin-positive pulmonary carcinoid tumor" },
+  { slug: "pathoma-carcinoid-gross", category: "Lung cancer", stem: "gross airway lesion", answer: "Endobronchial pulmonary carcinoid tumor" },
 ];
 
 const browser = await chromium.launch({
@@ -103,5 +110,5 @@ if (findings.length) {
   console.error(findings.join("\n"));
   process.exitCode = 1;
 } else {
-  console.log("PASS: all fifteen full-comparison additions render naturally with specific targets, clinical context, persistent navigation, and four-rationale feedback.");
+  console.log("PASS: all fourteen retained full-comparison additions and all eight Pathoma additions render naturally with specific targets, clinical context, persistent navigation, and four-rationale feedback.");
 }

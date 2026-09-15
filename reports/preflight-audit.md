@@ -1,6 +1,6 @@
 # Pulmonary Picture Quiz Preflight Audit
 
-Generated: 2026-09-14T22:25:43-04:00
+Generated: 2026-09-14T23:22:30-04:00
 
 ## Scope
 
@@ -23,10 +23,10 @@ Generated: 2026-09-14T22:25:43-04:00
 
 ## Downstream ID gate
 
-- Activated questions: 220
-- Active third-party Pulm Pictures questions: 39
-- Source additions represented before quality review: 57
-- Distinct activated source groups: 220
+- Activated questions: 228
+- Active third-party Pulm Pictures questions: 47
+- Source additions represented before quality review: 65
+- Distinct activated source groups: 228
 - Manual-review exclusions: 0
 - Learner-flagged items audited: 153
 - Learner-flagged items removed from scoring: 56
@@ -37,11 +37,11 @@ Generated: 2026-09-14T22:25:43-04:00
 
 ## Activated questions by modality
 
-- X-ray: 61
+- X-ray: 62
 - CT: 30
-- Histopathology: 25
+- Histopathology: 29
+- Gross Pathology: 17
 - Histology: 15
-- Gross Pathology: 15
 - Clinical Image: 14
 - Graph: 12
 - Flow-Volume Loop: 7
@@ -62,6 +62,7 @@ Generated: 2026-09-14T22:25:43-04:00
 - MRI: 1
 - Echocardiography: 1
 - EKG: 1
+- Immunohistochemistry: 1
 - X-ray and pathology: 1
 
 ## Safety decisions

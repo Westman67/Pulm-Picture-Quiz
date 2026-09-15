@@ -1,13 +1,14 @@
 {
   "schema_version": 2,
   "manifest_id": "pulmonary-picture-quiz-supplement-v1",
-  "generated_at": "2026-09-14T20:39:36-04:00",
+  "generated_at": "2026-09-14T23:13:03-04:00",
   "source_collection_read_only_after_generation": true,
   "source_roots": [
     "/Users/chriselwell/Desktop/Pulm/Pulm Pictures",
+    "/Users/chriselwell/Desktop/Desktop Download/Respiratory_Pathoma_Images",
     "Wikimedia Commons / PubMed Central landing pages recorded per asset"
   ],
-  "record_count": 51,
+  "record_count": 59,
   "records": [
     {
       "asset_id": "asset_ee6974cc71e0",
@@ -4751,6 +4752,762 @@
       }
     },
     {
+      "asset_id": "asset_0dceeea4e1ed",
+      "source_group_id": "sg_91f7e409dc33",
+      "source_id": "src_7b23d2807de7",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "pathoma-primary-tuberculosis-ghon-focus.png",
+      "original_relative_path": "originals/pathoma-primary-tuberculosis-ghon-focus.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/pathoma-primary-tuberculosis-ghon-focus.png",
+      "source_sha256": "0dceeea4e1ede0d0b2aad4aedf3c15b7a1c94d5717537b2ce20f32f7c91a7640",
+      "pixel_width": 301,
+      "pixel_height": 229,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "Gross Pathology",
+      "organ_system": "Pulmonary",
+      "category": "Tuberculosis",
+      "tested_condition_structure_finding": "Ghon focus of primary tuberculosis",
+      "canonical_correct_answer": "Ghon focus of primary tuberculosis",
+      "accepted_answers": [
+        "Ghon focus",
+        "Primary tuberculosis focus"
+      ],
+      "ground_truth_basis": "The user-provided Pathoma manifest identifies Figure 9.6A as the gross primary-tuberculosis image. The isolated lung specimen shows the pulmonary parenchymal component, so the tested answer is the Ghon focus rather than the full Ghon complex, which also includes regional lymph-node involvement.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A small, sharply demarcated pale subpleural parenchymal focus is present near the lung periphery without an apical cavitary pattern.",
+      "what_student_should_recognize": "Ghon focus of primary tuberculosis",
+      "lecture_context": "Respiratory Pathoma image collection, Figure 9.6A (third party)",
+      "source_document": "Respiratory Pathoma image collection, Figure 9.6A (third party)",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Desktop Download/Respiratory_Pathoma_Images/11_Fig_9.6A_Tuberculosis_Ghon_Complex.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Respiratory Pathoma image collection",
+      "creator": "Pathoma",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A previously uninfected patient develops primary pulmonary tuberculosis after recent exposure.",
+      "panel_handling": "single",
+      "target_region": "the small pale subpleural focus in the complete gross lung specimen",
+      "joint_images": false,
+      "primary_variant_id": "var_identity_0dceeea4e1ed",
+      "quiz_safe_variant_path": "originals/pathoma-primary-tuberculosis-ghon-focus.png",
+      "variants": [
+        {
+          "variant_id": "var_identity_0dceeea4e1ed",
+          "relative_path": "originals/pathoma-primary-tuberculosis-ghon-focus.png",
+          "sha256": "0dceeea4e1ede0d0b2aad4aedf3c15b7a1c94d5717537b2ce20f32f7c91a7640",
+          "pixel_width": 301,
+          "pixel_height": 229,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Identify the gross pulmonary lesion shown in this specimen.",
+        "case_context": "A previously uninfected patient develops primary pulmonary tuberculosis after recent exposure.",
+        "visual_target": "the small pale subpleural focus in the complete gross lung specimen",
+        "panel_handling": "single",
+        "joint_images": false,
+        "options": [
+          "Ghon focus of primary tuberculosis",
+          "Apical cavity of reactivation tuberculosis",
+          "Pulmonary abscess",
+          "Peripheral pulmonary infarct"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "A discrete pale focus lies near the pleural surface",
+          "The lesion is small and circumscribed",
+          "There is no apical cavitation or large suppurative cavity"
+        ],
+        "explanation": "The peripheral subpleural primary focus of tuberculosis is a Ghon focus; association with ipsilateral hilar lymph-node disease forms the Ghon complex.",
+        "choice_rationales": [
+          "A Ghon focus is a small peripheral pulmonary focus of primary tuberculosis, matching the circumscribed subpleural lesion shown.",
+          "Reactivation tuberculosis more often produces upper-lobe caseation and cavitation rather than one small peripheral primary focus.",
+          "A pulmonary abscess is a larger suppurative cavity with necrotic contents rather than this compact subpleural focus.",
+          "A pulmonary infarct is typically a hemorrhagic, wedge-shaped pleural-based lesion rather than a round pale granulomatous focus."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_36eef6316c4a",
+      "source_group_id": "sg_9c1f0dc3cc7c",
+      "source_id": "src_4109cb88192d",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "pathoma-tuberculosis-caseating-granuloma.png",
+      "original_relative_path": "originals/pathoma-tuberculosis-caseating-granuloma.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/pathoma-tuberculosis-caseating-granuloma.png",
+      "source_sha256": "36eef6316c4ade4787c06996fa953fe79ed20b78c6c50ff7565ca7092319f52a",
+      "pixel_width": 301,
+      "pixel_height": 229,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "Histopathology",
+      "organ_system": "Pulmonary",
+      "category": "Tuberculosis",
+      "tested_condition_structure_finding": "Caseating granuloma of tuberculosis",
+      "canonical_correct_answer": "Caseating granuloma of tuberculosis",
+      "accepted_answers": [
+        "Caseating granuloma",
+        "Tuberculous granuloma"
+      ],
+      "ground_truth_basis": "The user-provided Pathoma manifest identifies Figure 9.6B as a tuberculosis caseating granuloma. The image is answer-unlabeled and preserves the complete histologic field.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A central zone of amorphous necrotic material is surrounded by granulomatous inflammation with epithelioid histiocytes and a lymphocytic rim.",
+      "what_student_should_recognize": "Caseating granuloma of tuberculosis",
+      "lecture_context": "Respiratory Pathoma image collection, Figure 9.6B (third party)",
+      "source_document": "Respiratory Pathoma image collection, Figure 9.6B (third party)",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Desktop Download/Respiratory_Pathoma_Images/12_Fig_9.6B_Tuberculosis_Caseating_Granuloma.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Respiratory Pathoma image collection",
+      "creator": "Pathoma",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A patient with chronic cough, fever, night sweats, and weight loss has a positive tuberculosis test.",
+      "panel_handling": "single",
+      "target_region": "the complete histologic field, especially the centrally necrotic granuloma",
+      "joint_images": false,
+      "primary_variant_id": "var_identity_36eef6316c4a",
+      "quiz_safe_variant_path": "originals/pathoma-tuberculosis-caseating-granuloma.png",
+      "variants": [
+        {
+          "variant_id": "var_identity_36eef6316c4a",
+          "relative_path": "originals/pathoma-tuberculosis-caseating-granuloma.png",
+          "sha256": "36eef6316c4ade4787c06996fa953fe79ed20b78c6c50ff7565ca7092319f52a",
+          "pixel_width": 301,
+          "pixel_height": 229,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which pathologic process is demonstrated in this lung histology image?",
+        "case_context": "A patient with chronic cough, fever, night sweats, and weight loss has a positive tuberculosis test.",
+        "visual_target": "the complete histologic field, especially the centrally necrotic granuloma",
+        "panel_handling": "single",
+        "joint_images": false,
+        "options": [
+          "Caseating granuloma of tuberculosis",
+          "Noncaseating granuloma of sarcoidosis",
+          "Organizing pneumonia",
+          "Pulmonary adenocarcinoma"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The center is amorphous and necrotic",
+          "Granulomatous inflammation surrounds the necrosis",
+          "A lymphocytic rim is present"
+        ],
+        "explanation": "Central caseous necrosis within granulomatous inflammation is the classic tissue pattern of tuberculosis in the appropriate clinical setting.",
+        "choice_rationales": [
+          "Tuberculous granulomas characteristically contain central caseous necrosis surrounded by epithelioid histiocytes and lymphocytes, matching this field.",
+          "Sarcoid granulomas are usually compact and noncaseating, without the broad central necrosis shown here.",
+          "Organizing pneumonia contains fibroblastic plugs within alveolar ducts and spaces rather than a necrotizing granuloma.",
+          "Pulmonary adenocarcinoma forms malignant glands or a lepidic epithelial proliferation rather than organized caseating inflammation."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_22c600252200",
+      "source_group_id": "sg_c2d90ca3c4a2",
+      "source_id": "src_b61d99dbd2a9",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "pathoma-emphysema-lateral-hyperinflation.png",
+      "original_relative_path": "originals/pathoma-emphysema-lateral-hyperinflation.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/pathoma-emphysema-lateral-hyperinflation.png",
+      "source_sha256": "22c60025220065e0459d2b978fb00712d3f34cdf8b8d09f7e942d4de73299014",
+      "pixel_width": 301,
+      "pixel_height": 231,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "category": "COPD imaging",
+      "tested_condition_structure_finding": "Emphysema with increased anteroposterior diameter",
+      "canonical_correct_answer": "Emphysema with increased anteroposterior diameter",
+      "accepted_answers": [
+        "Emphysema",
+        "COPD hyperinflation",
+        "Increased AP diameter from emphysema"
+      ],
+      "ground_truth_basis": "The user-provided Pathoma manifest identifies Figure 9.10 as a lateral radiograph showing increased anteroposterior diameter in emphysema. The complete radiograph contains no answer text.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "The lateral chest radiograph shows an enlarged retrosternal clear space, increased anteroposterior thoracic diameter, and diaphragmatic flattening from hyperinflation.",
+      "what_student_should_recognize": "Emphysema with increased anteroposterior diameter",
+      "lecture_context": "Respiratory Pathoma image collection, Figure 9.10 (third party)",
+      "source_document": "Respiratory Pathoma image collection, Figure 9.10 (third party)",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Desktop Download/Respiratory_Pathoma_Images/18_Fig_9.10_Emphysema_Increased_AP_Diameter_Xray.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Respiratory Pathoma image collection",
+      "creator": "Pathoma",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "An older patient with a long smoking history has progressive exertional dyspnea and diminished breath sounds.",
+      "panel_handling": "single",
+      "target_region": "the complete lateral chest radiograph, especially the retrosternal clear space and diaphragm",
+      "joint_images": false,
+      "primary_variant_id": "var_identity_22c600252200",
+      "quiz_safe_variant_path": "originals/pathoma-emphysema-lateral-hyperinflation.png",
+      "variants": [
+        {
+          "variant_id": "var_identity_22c600252200",
+          "relative_path": "originals/pathoma-emphysema-lateral-hyperinflation.png",
+          "sha256": "22c60025220065e0459d2b978fb00712d3f34cdf8b8d09f7e942d4de73299014",
+          "pixel_width": 301,
+          "pixel_height": 231,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which pulmonary disorder best explains the lateral chest-radiograph appearance?",
+        "case_context": "An older patient with a long smoking history has progressive exertional dyspnea and diminished breath sounds.",
+        "visual_target": "the complete lateral chest radiograph, especially the retrosternal clear space and diaphragm",
+        "panel_handling": "single",
+        "joint_images": false,
+        "options": [
+          "Emphysema with increased anteroposterior diameter",
+          "Restrictive pulmonary fibrosis",
+          "Cardiogenic pulmonary edema",
+          "Lobar atelectasis"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The retrosternal clear space is enlarged",
+          "The thoracic anteroposterior diameter is increased",
+          "The diaphragm is low and flattened"
+        ],
+        "explanation": "Hyperinflation from emphysema increases the anteroposterior diameter and retrosternal clear space on a lateral chest radiograph.",
+        "choice_rationales": [
+          "Emphysema causes hyperinflation with an enlarged retrosternal clear space, low flattened diaphragm, and increased anteroposterior diameter, as shown.",
+          "Restrictive fibrosis reduces lung volumes and often produces reticular opacity rather than this hyperinflated lateral profile.",
+          "Cardiogenic edema produces vascular congestion and bilateral air-space or interstitial opacity rather than isolated hyperinflation.",
+          "Lobar atelectasis causes volume loss and fissural displacement rather than generalized enlargement of the retrosternal air space."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_f4ae7ab5ceb7",
+      "source_group_id": "sg_531d72ce47a4",
+      "source_id": "src_1ce31887c6bc",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "pathoma-pulmonary-hypertension-plexiform-lesion.png",
+      "original_relative_path": "originals/pathoma-pulmonary-hypertension-plexiform-lesion.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/pathoma-pulmonary-hypertension-plexiform-lesion.png",
+      "source_sha256": "f4ae7ab5ceb737bffd9928c45c7001d652e1fe3c03a22cb871bd5549bd547fff",
+      "pixel_width": 300,
+      "pixel_height": 228,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "Histopathology",
+      "organ_system": "Pulmonary",
+      "category": "Pulmonary vascular disease",
+      "tested_condition_structure_finding": "Plexiform lesion of pulmonary arterial hypertension",
+      "canonical_correct_answer": "Plexiform lesion of pulmonary arterial hypertension",
+      "accepted_answers": [
+        "Plexiform lesion",
+        "Pulmonary arterial hypertension"
+      ],
+      "ground_truth_basis": "The user-provided Pathoma manifest identifies Figure 9.16 as the plexiform lesion of primary pulmonary hypertension. The answer-unlabeled image preserves the complete field.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A small pulmonary artery is replaced by a tuft-like proliferation of endothelial-lined vascular channels with marked luminal narrowing.",
+      "what_student_should_recognize": "Plexiform lesion of pulmonary arterial hypertension",
+      "lecture_context": "Respiratory Pathoma image collection, Figure 9.16 (third party)",
+      "source_document": "Respiratory Pathoma image collection, Figure 9.16 (third party)",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Desktop Download/Respiratory_Pathoma_Images/25_Fig_9.16_Primary_Pulmonary_Hypertension_Plexiform_Lesion.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Respiratory Pathoma image collection",
+      "creator": "Pathoma",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A patient with severe precapillary pulmonary hypertension has progressive dyspnea and right-heart failure.",
+      "panel_handling": "single",
+      "target_region": "the complete histologic field centered on the abnormal small pulmonary artery",
+      "joint_images": false,
+      "primary_variant_id": "var_identity_f4ae7ab5ceb7",
+      "quiz_safe_variant_path": "originals/pathoma-pulmonary-hypertension-plexiform-lesion.png",
+      "variants": [
+        {
+          "variant_id": "var_identity_f4ae7ab5ceb7",
+          "relative_path": "originals/pathoma-pulmonary-hypertension-plexiform-lesion.png",
+          "sha256": "f4ae7ab5ceb737bffd9928c45c7001d652e1fe3c03a22cb871bd5549bd547fff",
+          "pixel_width": 300,
+          "pixel_height": 228,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which pulmonary vascular lesion is present in this histologic field?",
+        "case_context": "A patient with severe precapillary pulmonary hypertension has progressive dyspnea and right-heart failure.",
+        "visual_target": "the complete histologic field centered on the abnormal small pulmonary artery",
+        "panel_handling": "single",
+        "joint_images": false,
+        "options": [
+          "Plexiform lesion of pulmonary arterial hypertension",
+          "Organized pulmonary thromboembolus",
+          "Pulmonary veno-occlusive disease",
+          "Systemic hypertensive arteriolosclerosis"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Multiple endothelial-lined channels form a tuft",
+          "The lesion is centered on a small pulmonary artery",
+          "The normal vascular lumen is markedly narrowed"
+        ],
+        "explanation": "A plexiform lesion is a complex proliferation of endothelial-lined channels in small pulmonary arteries and is associated with severe pulmonary arterial hypertension.",
+        "choice_rationales": [
+          "Severe pulmonary arterial hypertension can produce tuft-like plexiform endothelial proliferation that subdivides and narrows a small pulmonary artery, matching this image.",
+          "An organized thromboembolus produces intraluminal fibrous tissue with recanalization rather than an eccentric plexiform tuft at an arterial branch point.",
+          "Pulmonary veno-occlusive disease predominantly causes fibrous narrowing of small pulmonary veins and septal congestion rather than this arterial plexiform lesion.",
+          "Systemic hypertensive arteriolosclerosis affects systemic arterioles and produces hyaline or concentric wall thickening, not a pulmonary plexiform proliferation."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_3bbe5cbcf291",
+      "source_group_id": "sg_c8b5417fccf4",
+      "source_id": "src_3bacfda577da",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "pathoma-pulmonary-adenocarcinoma-glands-mucin.png",
+      "original_relative_path": "originals/pathoma-pulmonary-adenocarcinoma-glands-mucin.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/pathoma-pulmonary-adenocarcinoma-glands-mucin.png",
+      "source_sha256": "3bbe5cbcf2915eb0b2a71fc606b4c86221c760a893b778434353b474d4bb3c06",
+      "pixel_width": 298,
+      "pixel_height": 229,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "Histopathology",
+      "organ_system": "Pulmonary",
+      "category": "Lung cancer",
+      "tested_condition_structure_finding": "Pulmonary adenocarcinoma with gland formation and mucin",
+      "canonical_correct_answer": "Pulmonary adenocarcinoma with gland formation and mucin",
+      "accepted_answers": [
+        "Pulmonary adenocarcinoma",
+        "Lung adenocarcinoma"
+      ],
+      "ground_truth_basis": "The user-provided Pathoma manifest identifies Figure 9.21A as pulmonary adenocarcinoma demonstrating gland formation and mucin. The full field is preserved without answer text.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Atypical epithelial cells form irregular glands containing pale mucin, with pleomorphic nuclei and loss of normal alveolar architecture.",
+      "what_student_should_recognize": "Pulmonary adenocarcinoma with gland formation and mucin",
+      "lecture_context": "Respiratory Pathoma image collection, Figure 9.21A (third party)",
+      "source_document": "Respiratory Pathoma image collection, Figure 9.21A (third party)",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Desktop Download/Respiratory_Pathoma_Images/33_Fig_9.21A_Adenocarcinoma_Gland_Formation_and_Mucin.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Respiratory Pathoma image collection",
+      "creator": "Pathoma",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A peripheral lung mass is biopsied in a patient with no central endobronchial lesion.",
+      "panel_handling": "single",
+      "target_region": "the complete histologic field, especially the malignant glands and intraluminal mucin",
+      "joint_images": false,
+      "primary_variant_id": "var_identity_3bbe5cbcf291",
+      "quiz_safe_variant_path": "originals/pathoma-pulmonary-adenocarcinoma-glands-mucin.png",
+      "variants": [
+        {
+          "variant_id": "var_identity_3bbe5cbcf291",
+          "relative_path": "originals/pathoma-pulmonary-adenocarcinoma-glands-mucin.png",
+          "sha256": "3bbe5cbcf2915eb0b2a71fc606b4c86221c760a893b778434353b474d4bb3c06",
+          "pixel_width": 298,
+          "pixel_height": 229,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which lung-cancer subtype is demonstrated by this histologic field?",
+        "case_context": "A peripheral lung mass is biopsied in a patient with no central endobronchial lesion.",
+        "visual_target": "the complete histologic field, especially the malignant glands and intraluminal mucin",
+        "panel_handling": "single",
+        "joint_images": false,
+        "options": [
+          "Pulmonary adenocarcinoma with gland formation and mucin",
+          "Squamous cell carcinoma with keratinization",
+          "Small cell lung carcinoma",
+          "Pulmonary carcinoid tumor"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Malignant epithelial cells form glands",
+          "Pale mucin is present within glandular spaces",
+          "The cells are pleomorphic rather than uniformly neuroendocrine"
+        ],
+        "explanation": "Malignant gland formation and mucin production support pulmonary adenocarcinoma.",
+        "choice_rationales": [
+          "Pulmonary adenocarcinoma is defined morphologically by malignant gland formation, mucin production, or both, matching this field.",
+          "Squamous carcinoma shows keratinization or intercellular bridges rather than mucin-filled malignant glands.",
+          "Small cell carcinoma forms sheets of small hyperchromatic cells with scant cytoplasm and nuclear molding, not glands.",
+          "Carcinoid tumor typically shows uniform neuroendocrine cells in nests or trabeculae rather than pleomorphic mucin-producing glands."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_6480493b076e",
+      "source_group_id": "sg_2855d8545d43",
+      "source_id": "src_d02e52660777",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "pathoma-pulmonary-adenocarcinoma-lepidic-growth.png",
+      "original_relative_path": "originals/pathoma-pulmonary-adenocarcinoma-lepidic-growth.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/pathoma-pulmonary-adenocarcinoma-lepidic-growth.png",
+      "source_sha256": "6480493b076ee10e9f8ebe45c5ba4036d91a2bf41a1ad36c1cd449297aa71639",
+      "pixel_width": 297,
+      "pixel_height": 229,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "Histopathology",
+      "organ_system": "Pulmonary",
+      "category": "Lung cancer",
+      "tested_condition_structure_finding": "Lepidic growth pattern of pulmonary adenocarcinoma",
+      "canonical_correct_answer": "Lepidic growth pattern of pulmonary adenocarcinoma",
+      "accepted_answers": [
+        "Lepidic adenocarcinoma",
+        "Bronchioloalveolar carcinoma",
+        "Adenocarcinoma in situ"
+      ],
+      "ground_truth_basis": "The user-provided Pathoma manifest uses the older term bronchioloalveolar carcinoma for Figure 9.22. The quiz uses the current morphologic term lepidic growth pattern and retains the older term as accepted terminology.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Neoplastic epithelial cells spread along preexisting alveolar septa while much of the underlying alveolar architecture remains preserved.",
+      "what_student_should_recognize": "Lepidic growth pattern of pulmonary adenocarcinoma",
+      "lecture_context": "Respiratory Pathoma image collection, Figure 9.22 (third party)",
+      "source_document": "Respiratory Pathoma image collection, Figure 9.22 (third party)",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Desktop Download/Respiratory_Pathoma_Images/35_Fig_9.22_Bronchioloalveolar_Carcinoma_Histology.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Respiratory Pathoma image collection",
+      "creator": "Pathoma",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A lung biopsy is being evaluated for the pattern of epithelial tumor growth.",
+      "panel_handling": "single",
+      "target_region": "the complete histologic field, especially the tumor cells lining preserved alveolar septa",
+      "joint_images": false,
+      "primary_variant_id": "var_identity_6480493b076e",
+      "quiz_safe_variant_path": "originals/pathoma-pulmonary-adenocarcinoma-lepidic-growth.png",
+      "variants": [
+        {
+          "variant_id": "var_identity_6480493b076e",
+          "relative_path": "originals/pathoma-pulmonary-adenocarcinoma-lepidic-growth.png",
+          "sha256": "6480493b076ee10e9f8ebe45c5ba4036d91a2bf41a1ad36c1cd449297aa71639",
+          "pixel_width": 297,
+          "pixel_height": 229,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which neoplastic growth pattern is demonstrated in this lung histology image?",
+        "case_context": "A lung biopsy is being evaluated for the pattern of epithelial tumor growth.",
+        "visual_target": "the complete histologic field, especially the tumor cells lining preserved alveolar septa",
+        "panel_handling": "single",
+        "joint_images": false,
+        "options": [
+          "Lepidic growth pattern of pulmonary adenocarcinoma",
+          "Invasive squamous cell carcinoma",
+          "Small cell lung carcinoma",
+          "Organizing pneumonia"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Tumor cells line preexisting alveolar septa",
+          "Alveolar architecture remains recognizable",
+          "There are no keratin pearls or sheets of small blue cells"
+        ],
+        "explanation": "Lepidic growth describes neoplastic cells spreading along intact alveolar septa, the pattern historically called bronchioloalveolar carcinoma.",
+        "choice_rationales": [
+          "A lepidic adenocarcinoma pattern preserves the alveolar framework while neoplastic epithelial cells line the septal surfaces, as shown.",
+          "Invasive squamous carcinoma forms destructive nests with keratinization or intercellular bridges rather than lining intact alveoli.",
+          "Small cell carcinoma forms densely packed hyperchromatic cells with nuclear molding and crush artifact rather than a lepidic pattern.",
+          "Organizing pneumonia fills air spaces with fibroblastic plugs and does not produce a continuous neoplastic epithelial lining along alveolar septa."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_62ded892941c",
+      "source_group_id": "sg_3a1b55edef41",
+      "source_id": "src_219dbc60a6b2",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "pathoma-pulmonary-carcinoid-chromogranin.png",
+      "original_relative_path": "originals/pathoma-pulmonary-carcinoid-chromogranin.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/pathoma-pulmonary-carcinoid-chromogranin.png",
+      "source_sha256": "62ded892941cd03f2f19bc7a2fccee0bb511d00026bf9d7043cd0254a3c76bf8",
+      "pixel_width": 298,
+      "pixel_height": 227,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "Immunohistochemistry",
+      "organ_system": "Pulmonary",
+      "category": "Lung cancer",
+      "tested_condition_structure_finding": "Chromogranin-positive pulmonary carcinoid tumor",
+      "canonical_correct_answer": "Chromogranin-positive pulmonary carcinoid tumor",
+      "accepted_answers": [
+        "Pulmonary carcinoid tumor",
+        "Carcinoid tumor",
+        "Neuroendocrine tumor"
+      ],
+      "ground_truth_basis": "The user-provided Pathoma manifest identifies Figure 9.23B as chromogranin immunohistochemistry in a carcinoid tumor. The diffuse brown tumor-cell staining is preserved without answer text.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Uniform tumor cells in nests and trabeculae show diffuse granular brown cytoplasmic immunoreactivity for the neuroendocrine marker chromogranin.",
+      "what_student_should_recognize": "Chromogranin-positive pulmonary carcinoid tumor",
+      "lecture_context": "Respiratory Pathoma image collection, Figure 9.23B (third party)",
+      "source_document": "Respiratory Pathoma image collection, Figure 9.23B (third party)",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Desktop Download/Respiratory_Pathoma_Images/37_Fig_9.23B_Carcinoid_Tumor_Chromogranin_IHC.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Respiratory Pathoma image collection",
+      "creator": "Pathoma",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A well-circumscribed central endobronchial tumor is composed of uniform cells in nests and trabeculae.",
+      "panel_handling": "single",
+      "target_region": "the complete immunohistochemical field showing diffuse brown tumor-cell staining",
+      "joint_images": false,
+      "primary_variant_id": "var_identity_62ded892941c",
+      "quiz_safe_variant_path": "originals/pathoma-pulmonary-carcinoid-chromogranin.png",
+      "variants": [
+        {
+          "variant_id": "var_identity_62ded892941c",
+          "relative_path": "originals/pathoma-pulmonary-carcinoid-chromogranin.png",
+          "sha256": "62ded892941cd03f2f19bc7a2fccee0bb511d00026bf9d7043cd0254a3c76bf8",
+          "pixel_width": 298,
+          "pixel_height": 227,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which pulmonary neoplasm is supported by this immunohistochemical pattern?",
+        "case_context": "A well-circumscribed central endobronchial tumor is composed of uniform cells in nests and trabeculae.",
+        "visual_target": "the complete immunohistochemical field showing diffuse brown tumor-cell staining",
+        "panel_handling": "single",
+        "joint_images": false,
+        "options": [
+          "Chromogranin-positive pulmonary carcinoid tumor",
+          "Pulmonary squamous cell carcinoma",
+          "Pulmonary adenocarcinoma",
+          "Malignant pleural mesothelioma"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The tumor cells show diffuse granular brown immunoreactivity",
+          "Cells are arranged in neuroendocrine nests and trabeculae",
+          "The cells are relatively uniform"
+        ],
+        "explanation": "Diffuse chromogranin immunoreactivity supports neuroendocrine differentiation and, with this morphology and setting, a pulmonary carcinoid tumor.",
+        "choice_rationales": [
+          "Pulmonary carcinoid tumors show neuroendocrine architecture and typically express chromogranin, producing the diffuse granular brown staining shown.",
+          "Squamous carcinoma is supported by keratinization and squamous markers rather than diffuse neuroendocrine-marker staining in uniform nests.",
+          "Adenocarcinoma forms glands or produces mucin and is not defined by this diffuse chromogranin-positive neuroendocrine pattern.",
+          "Mesothelioma grows along pleural surfaces and is evaluated with mesothelial markers rather than this bronchopulmonary neuroendocrine pattern."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_515b1875ff5d",
+      "source_group_id": "sg_9d74a3fc4646",
+      "source_id": "src_8517c2fbf109",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "pathoma-endobronchial-carcinoid-gross.png",
+      "original_relative_path": "originals/pathoma-endobronchial-carcinoid-gross.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/pathoma-endobronchial-carcinoid-gross.png",
+      "source_sha256": "515b1875ff5ddb289d6c74b9a5114dddc2d210f9155d64cd85080a0827af230b",
+      "pixel_width": 298,
+      "pixel_height": 227,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "Gross Pathology",
+      "organ_system": "Pulmonary",
+      "category": "Lung cancer",
+      "tested_condition_structure_finding": "Endobronchial pulmonary carcinoid tumor",
+      "canonical_correct_answer": "Endobronchial pulmonary carcinoid tumor",
+      "accepted_answers": [
+        "Pulmonary carcinoid tumor",
+        "Bronchial carcinoid",
+        "Carcinoid tumor"
+      ],
+      "ground_truth_basis": "The user-provided Pathoma manifest identifies Figure 9.23C as the polyp-like gross growth of a pulmonary carcinoid tumor. The complete specimen is answer-unlabeled.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A smooth, rounded, well-circumscribed polypoid mass projects into and obstructs the lumen of a central bronchus.",
+      "what_student_should_recognize": "Endobronchial pulmonary carcinoid tumor",
+      "lecture_context": "Respiratory Pathoma image collection, Figure 9.23C (third party)",
+      "source_document": "Respiratory Pathoma image collection, Figure 9.23C (third party)",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Desktop Download/Respiratory_Pathoma_Images/38_Fig_9.23C_Carcinoid_Tumor_Polyp_Like_Growth_Gross.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Respiratory Pathoma image collection",
+      "creator": "Pathoma",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A patient with recurrent postobstructive pneumonia has a centrally located endobronchial mass.",
+      "panel_handling": "single",
+      "target_region": "the complete gross specimen, especially the smooth polypoid mass within the bronchus",
+      "joint_images": false,
+      "primary_variant_id": "var_identity_515b1875ff5d",
+      "quiz_safe_variant_path": "originals/pathoma-endobronchial-carcinoid-gross.png",
+      "variants": [
+        {
+          "variant_id": "var_identity_515b1875ff5d",
+          "relative_path": "originals/pathoma-endobronchial-carcinoid-gross.png",
+          "sha256": "515b1875ff5ddb289d6c74b9a5114dddc2d210f9155d64cd85080a0827af230b",
+          "pixel_width": 298,
+          "pixel_height": 227,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which pulmonary neoplasm best matches the gross airway lesion shown?",
+        "case_context": "A patient with recurrent postobstructive pneumonia has a centrally located endobronchial mass.",
+        "visual_target": "the complete gross specimen, especially the smooth polypoid mass within the bronchus",
+        "panel_handling": "single",
+        "joint_images": false,
+        "options": [
+          "Endobronchial pulmonary carcinoid tumor",
+          "Peripheral pulmonary adenocarcinoma",
+          "Diffuse malignant pleural mesothelioma",
+          "Apical Pancoast tumor"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The mass is smooth and polypoid",
+          "It arises within a central bronchial lumen",
+          "The lesion is well circumscribed rather than pleural or peripheral"
+        ],
+        "explanation": "Pulmonary carcinoid tumors commonly form smooth, vascular, polypoid endobronchial masses that can obstruct a central airway.",
+        "choice_rationales": [
+          "A pulmonary carcinoid commonly presents as a smooth, well-circumscribed polypoid mass within a central bronchus, matching this specimen.",
+          "Pulmonary adenocarcinoma is usually peripheral and infiltrative rather than a smooth central endobronchial polyp.",
+          "Mesothelioma spreads diffusely along and encases pleural surfaces rather than arising as a bronchial-lumen mass.",
+          "A Pancoast tumor arises at the lung apex and invades the superior chest wall rather than projecting into a central bronchus."
+        ]
+      }
+    },
+    {
       "asset_id": "asset_b3b01d4f5702",
       "source_group_id": "sg_bf48bb575aa6",
       "source_id": "src_52ea07463a3a",
@@ -4852,8 +5609,8 @@
     "all_images_visually_reviewed": true,
     "all_questions_have_four_unique_options": true,
     "all_questions_have_four_aligned_rationales": true,
-    "scored_records": 51,
+    "scored_records": 59,
     "excluded_records": 0,
-    "validated_at": "2026-09-14T20:39:36-04:00"
+    "validated_at": "2026-09-14T23:13:03-04:00"
   }
 }

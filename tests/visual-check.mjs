@@ -7,6 +7,11 @@ const { chromium } = require("/Users/chriselwell/.cache/codex-runtimes/codex-pri
 const base = "http://127.0.0.1:4173";
 const out = new URL("../reports/visual-review/", import.meta.url);
 const shot = (name) => fileURLToPath(new URL(name, out));
+const bank = JSON.parse(await readFile(new URL("../data/question-bank.json", import.meta.url), "utf8"));
+const sourceTotals = bank.questions.reduce((totals, question) => {
+  totals[question.source_origin] = (totals[question.source_origin] || 0) + 1;
+  return totals;
+}, {});
 await mkdir(out, { recursive: true });
 const browser = await chromium.launch({
   headless: true,
@@ -110,7 +115,7 @@ await sourceFilter.locator('input[name="length"][value="all"]').check({ force: t
 await sourceFilter.screenshot({ path: shot("desktop-third-party-filter.png"), fullPage: true });
 await sourceFilter.getByRole("button", { name: /Start ID quiz/ }).click();
 await sourceFilter.waitForSelector("#quiz-image");
-if (!(await sourceFilter.getByText("1 / 51", { exact: true }).count())) findings.push("Third-party source filter did not produce the expected 51-question session");
+if (!(await sourceFilter.getByText(`1 / ${sourceTotals.third_party}`, { exact: true }).count())) findings.push(`Third-party source filter did not produce the expected ${sourceTotals.third_party}-question session`);
 if (!/Third party/.test(await sourceFilter.locator(".category-label").textContent())) findings.push("Third-party provenance is not shown on the quiz question");
 await sourceFilter.locator('[data-action="home"]').first().click();
 await sourceFilter.locator('select[name="sourceOrigin"]').selectOption("lecture");
@@ -118,7 +123,7 @@ await sourceFilter.locator('input[name="length"][value="all"]').check({ force: t
 await sourceFilter.screenshot({ path: shot("desktop-lecture-filter.png"), fullPage: true });
 await sourceFilter.getByRole("button", { name: /Start ID quiz/ }).click();
 await sourceFilter.waitForSelector("#quiz-image");
-if (!(await sourceFilter.getByText("1 / 225", { exact: true }).count())) findings.push("Lecture source filter did not produce the expected 225-question session");
+if (!(await sourceFilter.getByText(`1 / ${sourceTotals.lecture}`, { exact: true }).count())) findings.push(`Lecture source filter did not produce the expected ${sourceTotals.lecture}-question session`);
 if (!/Lecture/.test(await sourceFilter.locator(".category-label").textContent())) findings.push("Lecture provenance is not shown on the quiz question");
 await sourceFilter.close();
 

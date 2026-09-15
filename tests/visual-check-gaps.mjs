@@ -65,28 +65,6 @@ if (effusion) {
 }
 await pocus.close();
 
-const ptx = await startCategory({ width: 1440, height: 1000 }, "Point-of-care ultrasound");
-const barcode = await seek(ptx, "Barcode/stratosphere sign indicating absent lung sliding");
-if (barcode) {
-  if (await ptx.locator(".source-details").count()) findings.push("Barcode-sign attribution leaked pre-answer");
-  await ptx.screenshot({ path: shot("gap-barcode-sign-preanswer.png"), fullPage: true });
-  await barcode.click();
-  await ptx.locator('[data-action="submit"]').click();
-  await ptx.screenshot({ path: shot("gap-barcode-sign-feedback.png"), fullPage: true });
-}
-await ptx.close();
-
-const tubes = await startCategory({ width: 390, height: 844 }, "Lines and tubes");
-const mainstem = await seek(tubes, "Right mainstem endotracheal-tube malposition");
-if (mainstem) {
-  if (await tubes.locator(".source-details").count()) findings.push("New line/tube attribution leaked pre-answer");
-  await tubes.screenshot({ path: shot("gap-mainstem-mobile-preanswer.png"), fullPage: true });
-  await mainstem.click();
-  await tubes.locator('[data-action="submit"]').click();
-  await tubes.screenshot({ path: shot("gap-mainstem-mobile-feedback.png"), fullPage: true });
-}
-await tubes.close();
-
 const edema = await startCategory({ width: 1440, height: 1000 }, "Pulmonary edema and heart failure");
 const kerley = await seek(edema, "Kerley B lines from interlobular septal thickening");
 if (kerley) {
@@ -108,4 +86,4 @@ await bronch.close();
 await browser.close();
 await writeFile(new URL("visual-check-gaps.json", out), JSON.stringify({ result: findings.length ? "FAIL" : "PASS", findings }, null, 2));
 if (findings.length) { console.error(findings.join("\n")); process.exitCode = 1; }
-else console.log("PASS: new ultrasound, line/tube, and Kerley B additions render without pre-answer source leakage.");
+else console.log("PASS: retained ultrasound, Kerley B, and endobronchial-mass additions render without pre-answer source leakage.");

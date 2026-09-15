@@ -4,19 +4,19 @@ Validated September 14, 2026 (America/New_York). The self-contained supplement i
 
 ## Counts
 
-- Validated base supplemental sources: **51**
-- Currently scored after learner-flag remediation: **39**
-- Distinct supplemental source groups: **51**
+- Validated base supplemental sources: **59**
+- Currently scored after learner-flag remediation: **47**
+- Distinct supplemental source groups: **59**
 - Exact SHA-256 duplicates against the RLS extractor manifest: **0**
-- Modalities: **{'X-ray': 14, 'Ultrasound': 6, 'Clinical Image': 7, 'CT': 5, 'Flow-Volume Loop': 4, 'Diagram': 3, 'Histopathology': 2, 'Cytology': 2, 'Microscopy': 2, 'X-ray and CT': 2, 'Echocardiography': 1, 'EKG': 1, 'Gross pathology': 1, 'Histology': 1}**
+- Modalities: **{'X-ray': 15, 'Ultrasound': 6, 'Clinical Image': 7, 'Histopathology': 6, 'CT': 5, 'Flow-Volume Loop': 4, 'Diagram': 3, 'Gross Pathology': 2, 'Cytology': 2, 'Microscopy': 2, 'X-ray and CT': 2, 'Echocardiography': 1, 'EKG': 1, 'Gross pathology': 1, 'Histology': 1, 'Immunohistochemistry': 1}**
 - Openly licensed/public-domain web sources: **15**
-- Local/user-supplied sources: **36**
+- Local/user-supplied sources: **44**
 - Reproducibly cropped or masked quiz variants: **15**
 - Reproducible fixed frames extracted from licensed videos: **2**
 
 ## Safety and review
 
-- Every displayed supplemental asset was visually inspected, including all fifteen additions from the full Pulm Pictures comparison.
+- Every displayed supplemental asset was visually inspected, including all fifteen additions from the full Pulm Pictures comparison and all eight selected Pathoma images.
 - The 41 lecture picture manifests contributed 660 assignments representing 413 exact-hash-unique curated images; all 413 were reviewed on 12 contact sheets.
 - Fixed lung-ultrasound frames preserve the original pixels, orientation, depth scale, and machine overlays; the source-video hash and exact frame time are retained.
 - Flow-volume loops preserve axes, volume direction, curve relationships, and plotted pixels.
@@ -81,13 +81,21 @@ Validated September 14, 2026 (America/New_York). The self-contained supplement i
 | src_80b6767d705f | Diagram | Superior vena cava syndrome | Local study use only; do not redistribute |
 | src_1203aba9ac08 | X-ray and CT | Traumatic hemothorax | Local study use only; do not redistribute |
 | src_52ea07463a3a | X-ray | Bronchopulmonary dysplasia | Local study use only; do not redistribute |
+| src_7b23d2807de7 | Gross Pathology | Ghon focus of primary tuberculosis | Local study use only; do not redistribute |
+| src_4109cb88192d | Histopathology | Caseating granuloma of tuberculosis | Local study use only; do not redistribute |
+| src_b61d99dbd2a9 | X-ray | Emphysema with increased anteroposterior diameter | Local study use only; do not redistribute |
+| src_1ce31887c6bc | Histopathology | Plexiform lesion of pulmonary arterial hypertension | Local study use only; do not redistribute |
+| src_3bacfda577da | Histopathology | Pulmonary adenocarcinoma with gland formation and mucin | Local study use only; do not redistribute |
+| src_d02e52660777 | Histopathology | Lepidic growth pattern of pulmonary adenocarcinoma | Local study use only; do not redistribute |
+| src_219dbc60a6b2 | Immunohistochemistry | Chromogranin-positive pulmonary carcinoid tumor | Local study use only; do not redistribute |
+| src_8517c2fbf109 | Gross Pathology | Endobronchial pulmonary carcinoid tumor | Local study use only; do not redistribute |
 
 ## Source integrity
 
 - Pulm Pictures audits remain identical: **2,195 files, 843,072,468 bytes, 0 changed/added/removed files**.
 - The canonical RLS Pulmonary image/document set has **0 changed, added, or removed non-Finder files** versus the immediately prior audit.
-- All added local images were copied into the separate supplemental library; the source root remains read-only.
+- All added local images were copied into the separate supplemental library; the Pulm Pictures and Respiratory Pathoma source roots remain read-only.
 
 ## Review-item promotions
 
-Six additional user-approved RLS review sources were copied into the app-local supplemental library and converted to reproducible quiz-safe variants. After learner-flag remediation, effective scored supplemental records are **45** (39 base additions + 6 promotions). See `review-promotions.md` and `quality-flag-remediation-2026-09-15.md`.
+Six additional user-approved RLS review sources were copied into the app-local supplemental library and converted to reproducible quiz-safe variants. After learner-flag remediation and the Pathoma additions, effective scored supplemental records are **53** (47 base additions + 6 promotions). See `review-promotions.md`, `pathoma-image-review-2026-09-14.md`, and `quality-flag-remediation-2026-09-15.md`.

@@ -9,13 +9,20 @@
     "pulmonary-contusion",
     "ttn",
     "split-pleura",
-    "westermark",
     "nsip",
     "tree-in-bud",
     "pneumocystis",
     "retropharyngeal-abscess",
     "svc-syndrome",
-    "traumatic-hemothorax"
+    "traumatic-hemothorax",
+    "pathoma-ghon-focus",
+    "pathoma-caseating-granuloma",
+    "pathoma-lateral-emphysema",
+    "pathoma-plexiform-lesion",
+    "pathoma-adenocarcinoma-mucin",
+    "pathoma-lepidic-growth",
+    "pathoma-carcinoid-ihc",
+    "pathoma-carcinoid-gross"
   ],
   "findings": []
 }
