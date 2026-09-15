@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-14T20:41:12-04:00",
+  "source_root": "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture",
+  "source_root_read_only": true,
+  "baseline": {
+    "generated_at": "2026-09-14T15:06:31-04:00",
+    "source_library": "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture",
+    "source_library_read_only": true,
+    "app": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App",
+    "question_count": 261,
+    "app_image_count": 371,
+    "tagged_asset_count": 183,
+    "tagged_question_count": 146,
+    "source_inventory_valid_count": 2109,
+    "source_top_level_exact_unique_count": 1423,
+    "previous_curated_hash_count": 413,
+    "new_top_level_candidate_count": 1012,
+    "red_tag_pair_sheets": [
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/red-tag-pairs/red-tag-pairs-01.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/red-tag-pairs/red-tag-pairs-02.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/red-tag-pairs/red-tag-pairs-03.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/red-tag-pairs/red-tag-pairs-04.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/red-tag-pairs/red-tag-pairs-05.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/red-tag-pairs/red-tag-pairs-06.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/red-tag-pairs/red-tag-pairs-07.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/red-tag-pairs/red-tag-pairs-08.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/red-tag-pairs/red-tag-pairs-09.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/red-tag-pairs/red-tag-pairs-10.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/red-tag-pairs/red-tag-pairs-11.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/red-tag-pairs/red-tag-pairs-12.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/red-tag-pairs/red-tag-pairs-13.jpg"
+    ],
+    "new_source_candidate_sheets": [
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-01.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-02.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-03.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-04.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-05.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-06.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-07.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-08.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-09.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-10.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-11.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-12.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-13.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-14.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-15.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-16.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-17.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-18.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-19.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-20.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-21.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-22.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-23.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-24.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-25.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-26.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-27.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-28.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-29.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-30.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-31.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-32.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-33.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-34.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-35.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-36.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-37.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-38.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-39.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-40.jpg",
+      "/Users/chriselwell/Documents/Codex/2026-09-14/ca-2/work/full-audit/review-sets/new-source-candidates/new-source-candidates-41.jpg"
+    ]
+  },
+  "final_question_count": 276,
+  "candidate_disposition_counts": {
+    "REFERENCE_ONLY": 997,
+    "ADDED_SCORED": 15
+  },
+  "added_questions": [
+    {
+      "filename": "Epiglottis Thumb Sign.jpeg",
+      "tested_concept": "Acute epiglottitis with a thumb sign",
+      "reason": "Clean, complete lateral neck radiograph with a directly testable visual sign and matching P33 lecture context.",
+      "question_id": "q_5bfda1e68918",
+      "quiz_asset": "public/assets/images/quiz_f257ba30a0b87fdf.png",
+      "original_asset": "public/assets/images/quiz_f257ba30a0b87fdf.png"
+    },
+    {
+      "filename": "Acute-Deep-Vein-Thrombosis-Compression-Ultrasound.png",
+      "tested_concept": "Acute deep venous thrombosis",
+      "reason": "Paired compression-ultrasound panels make noncompressibility visually decisive; only the answer title was cropped.",
+      "question_id": "q_4c4d3558ad74",
+      "quiz_asset": "public/assets/images/quiz_e729a68b534ed812.png",
+      "original_asset": "public/assets/images/original_9aed1dc9fdf247bd.png"
+    },
+    {
+      "filename": "Saddle Pulmonary Embolism.jpg",
+      "tested_concept": "Saddle pulmonary embolism",
+      "reason": "Complete axial CTPA image clearly localizes thrombus across the pulmonary-artery bifurcation and aligns with P26.",
+      "question_id": "q_c5909e0f0017",
+      "quiz_asset": "public/assets/images/quiz_13665993c4fb4492.png",
+      "original_asset": "public/assets/images/quiz_13665993c4fb4492.png"
+    },
+    {
+      "filename": "Pancoast Tumor with Chest Wall Extension.jpg",
+      "tested_concept": "Pancoast tumor with chest-wall extension",
+      "reason": "Complete chest radiograph and overlay distinguish a superior-sulcus mass with local invasion from a generic apical opacity.",
+      "question_id": "q_96f7b3d4be63",
+      "quiz_asset": "public/assets/images/quiz_5344ffe85068a2d4.png",
+      "original_asset": "public/assets/images/quiz_5344ffe85068a2d4.png"
+    },
+    {
+      "filename": "Diaphragmatic-Rupture-Bowel-in-Thorax.jpg",
+      "tested_concept": "Left diaphragmatic rupture with bowel herniation",
+      "reason": "Intrathoracic bowel loops and mediastinal shift provide a discriminating radiographic task; only the answer title was removed.",
+      "question_id": "q_4059823e919e",
+      "quiz_asset": "public/assets/images/quiz_f1fbdb9c0ac6f02e.png",
+      "original_asset": "public/assets/images/original_0be8743deb5c7e04.png"
+    },
+    {
+      "filename": "Pulmonary-Contusion-Ct.jpg",
+      "tested_concept": "Pulmonary contusion",
+      "reason": "The complete unannotated sagittal CT panel shows a peripheral nonlobar traumatic opacity without redundant answer-labeled material.",
+      "question_id": "q_69b0a713ddbd",
+      "quiz_asset": "public/assets/images/quiz_907a7765faa232cc.png",
+      "original_asset": "public/assets/images/original_fd0bd8570b5ab8e7.png"
+    },
+    {
+      "filename": "Transient-Tachypnea-of-the-Newborn.jpg",
+      "tested_concept": "Transient tachypnea of the newborn",
+      "reason": "The complete unannotated neonatal radiograph shows hyperinflation, perihilar streaking, and fissural fluid in a useful neonatal differential.",
+      "question_id": "q_258da53caab0",
+      "quiz_asset": "public/assets/images/quiz_f6ce130b783eaf35.png",
+      "original_asset": "public/assets/images/original_7533311773848baf.png"
+    },
+    {
+      "filename": "Split-Pleura Sign.jpg",
+      "tested_concept": "Split pleura sign of empyema",
+      "reason": "Complete contrast-enhanced CT makes separation of the enhancing pleural layers by a lentiform collection visually decisive.",
+      "question_id": "q_f2d764e078f0",
+      "quiz_asset": "public/assets/images/quiz_5ebbdc32af5c9d46.png",
+      "original_asset": "public/assets/images/quiz_5ebbdc32af5c9d46.png"
+    },
+    {
+      "filename": "Westermark-Sign.png",
+      "tested_concept": "Westermark sign",
+      "reason": "The retained comparison radiographs and magnified regions directly demonstrate abrupt pulmonary-artery cutoff with distal oligemia.",
+      "question_id": "q_ea64902d3274",
+      "quiz_asset": "public/assets/images/quiz_e484c307702abf9b.png",
+      "original_asset": "public/assets/images/original_d1aa31de0cc7d117.png"
+    },
+    {
+      "filename": "Nonspecific Interstitial Pneumonia (NSIP).jpg",
+      "tested_concept": "Nonspecific interstitial pneumonia pattern",
+      "reason": "Complete HRCT adds a distinct fibrotic pattern through symmetric ground glass, fine reticulation, traction change, and relative subpleural sparing.",
+      "question_id": "q_acf504733555",
+      "quiz_asset": "public/assets/images/quiz_1512a32d601614bd.png",
+      "original_asset": "public/assets/images/quiz_1512a32d601614bd.png"
+    },
+    {
+      "filename": "Pulmonary-Ntm-Infection-Nodulobronchiectatic.jpg",
+      "tested_concept": "Tree-in-bud pattern",
+      "reason": "A reproducible title-and-label crop preserves the complete CT and magnified inset needed to recognize branching centrilobular nodules.",
+      "question_id": "q_9aebde0f198d",
+      "quiz_asset": "public/assets/images/quiz_b84cd04c5b5e45e0.png",
+      "original_asset": "public/assets/images/original_c86110c174c46193.png"
+    },
+    {
+      "filename": "Pneumocystis-Jirovecii-Histology.png",
+      "tested_concept": "Pneumocystis jirovecii pneumonia",
+      "reason": "Paired H&E and silver-stained sections jointly show foamy intra-alveolar exudate and crescentic cyst forms after the answer title is removed.",
+      "question_id": "q_0f55c8f39a6f",
+      "quiz_asset": "public/assets/images/quiz_104366a09ef68557.png",
+      "original_asset": "public/assets/images/original_88496abdf4dfbb01.png"
+    },
+    {
+      "filename": "Retropharyngeal-Abscess.jpg",
+      "tested_concept": "Retropharyngeal abscess",
+      "reason": "The diagnosis label is masked while the complete sagittal anatomy and highlighted posterior pharyngeal-space collection remain visible.",
+      "question_id": "q_3de250d13643",
+      "quiz_asset": "public/assets/images/quiz_0b1d2983e43b4571.png",
+      "original_asset": "public/assets/images/original_bd9369c1e6c64ecc.png"
+    },
+    {
+      "filename": "P500 Superior Vena Cava Syndrome.png",
+      "tested_concept": "Superior vena cava syndrome",
+      "reason": "The two-part diagram jointly depicts central thoracic venous obstruction and the characteristic upper-body venous-congestion findings.",
+      "question_id": "q_623e3a884053",
+      "quiz_asset": "public/assets/images/quiz_42499363df3363b6.png",
+      "original_asset": "public/assets/images/quiz_42499363df3363b6.png"
+    },
+    {
+      "filename": "Traumatic-Hemothorax.png",
+      "tested_concept": "Traumatic hemothorax",
+      "reason": "The answer-title crop retains paired supine radiograph and CT panels that jointly localize hyperattenuating blood to the pleural space.",
+      "question_id": "q_1c5effc65e64",
+      "quiz_asset": "public/assets/images/quiz_ac04e7521ce785fa.png",
+      "original_asset": "public/assets/images/original_ec135e0531eecfb4.png"
+    }
+  ],
+  "source_integrity": {
+    "before_count": 2109,
+    "after_count": 2109,
+    "added": [],
+    "removed": [],
+    "hash_changed": []
+  },
+  "finder_tag_counts_after_rebuild": {
+    "Red": 183,
+    "Orange": 1
+  },
+  "visual_validation": {
+    "baseline": {
+      "result": "PASS",
+      "findings": []
+    },
+    "existing_gap_items": {
+      "result": "PASS",
+      "findings": []
+    },
+    "new_additions": {
+      "result": "PASS",
+      "checked": [
+        "epiglottitis",
+        "dvt-ultrasound",
+        "saddle-pe",
+        "pancoast",
+        "diaphragmatic-rupture",
+        "pulmonary-contusion",
+        "ttn",
+        "split-pleura",
+        "westermark",
+        "nsip",
+        "tree-in-bud",
+        "pneumocystis",
+        "retropharyngeal-abscess",
+        "svc-syndrome",
+        "traumatic-hemothorax"
+      ],
+      "findings": []
+    }
+  },
+  "disposition_file": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/reports/pulm-pictures-full-comparison-2026-09-14/new-source-candidate-disposition.csv"
+}

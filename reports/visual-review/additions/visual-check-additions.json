@@ -1,0 +1,21 @@
+{
+  "result": "PASS",
+  "checked": [
+    "epiglottitis",
+    "dvt-ultrasound",
+    "saddle-pe",
+    "pancoast",
+    "diaphragmatic-rupture",
+    "pulmonary-contusion",
+    "ttn",
+    "split-pleura",
+    "westermark",
+    "nsip",
+    "tree-in-bud",
+    "pneumocystis",
+    "retropharyngeal-abscess",
+    "svc-syndrome",
+    "traumatic-hemothorax"
+  ],
+  "findings": []
+}

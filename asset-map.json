@@ -5468,6 +5468,337 @@
     "source_id": "src_fdfb0e719846",
     "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
   },
+  "var_identity_f98433571979": {
+    "quiz": {
+      "path": "public/assets/images/quiz_f257ba30a0b87fdf.png",
+      "sha256": "d3e631c658219faabbf75a5c44b48478f8407eb3d1c8d2b3f419a3cf8924dcd8",
+      "pixel_width": 630,
+      "pixel_height": 624,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/quiz_f257ba30a0b87fdf.png",
+      "sha256": "d3e631c658219faabbf75a5c44b48478f8407eb3d1c8d2b3f419a3cf8924dcd8",
+      "pixel_width": 630,
+      "pixel_height": 624,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "source_id": "src_f54f9aaba8d3",
+    "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
+  },
+  "var_ab1fbe57b478": {
+    "quiz": {
+      "path": "public/assets/images/quiz_e729a68b534ed812.png",
+      "sha256": "07f87b7788726a228e318836f3b2885a0b9c9fc2599de9767bf46f5793ae2c85",
+      "pixel_width": 700,
+      "pixel_height": 503,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_9aed1dc9fdf247bd.png",
+      "sha256": "ecce0475be6131872abe91223ab1ba172b1e7ec5ea0a5589e821479cfab490a8",
+      "pixel_width": 700,
+      "pixel_height": 551,
+      "transformations": [
+        "metadata_stripped",
+        "neutral_background_composite"
+      ]
+    },
+    "source_id": "src_cc3113ff03a1",
+    "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
+  },
+  "var_identity_dbc57bad07fb": {
+    "quiz": {
+      "path": "public/assets/images/quiz_13665993c4fb4492.png",
+      "sha256": "d96447987759bdf4fb97da68fca26e924de973fa97280e5786997bfb223ca1ba",
+      "pixel_width": 1270,
+      "pixel_height": 1000,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/quiz_13665993c4fb4492.png",
+      "sha256": "d96447987759bdf4fb97da68fca26e924de973fa97280e5786997bfb223ca1ba",
+      "pixel_width": 1270,
+      "pixel_height": 1000,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "source_id": "src_e3e49c513b78",
+    "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
+  },
+  "var_identity_e5f0ef0ee044": {
+    "quiz": {
+      "path": "public/assets/images/quiz_5344ffe85068a2d4.png",
+      "sha256": "3921553d98280613f3f453e84d961b058c0ab334d7432a42269ae98dc9a80334",
+      "pixel_width": 1220,
+      "pixel_height": 1000,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/quiz_5344ffe85068a2d4.png",
+      "sha256": "3921553d98280613f3f453e84d961b058c0ab334d7432a42269ae98dc9a80334",
+      "pixel_width": 1220,
+      "pixel_height": 1000,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "source_id": "src_f10dc0ed3c54",
+    "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
+  },
+  "var_38cf9861be45": {
+    "quiz": {
+      "path": "public/assets/images/quiz_f1fbdb9c0ac6f02e.png",
+      "sha256": "4e3d5d01f62b5970af97b05f71fa7b7d5ac6b0ee045036e30b91d13d7c676245",
+      "pixel_width": 520,
+      "pixel_height": 512,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_0be8743deb5c7e04.png",
+      "sha256": "939c56bc92579aadfc452108169870301bd1456aa760ec005c61d973cbe736eb",
+      "pixel_width": 540,
+      "pixel_height": 591,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "source_id": "src_af562cd4c3c0",
+    "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
+  },
+  "var_dc9063a74d70": {
+    "quiz": {
+      "path": "public/assets/images/quiz_907a7765faa232cc.png",
+      "sha256": "c4305974319457bbd7cd27fa4c67806e2a0e4a3813f9a9c6a767274714195612",
+      "pixel_width": 335,
+      "pixel_height": 454,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_fd0bd8570b5ab8e7.png",
+      "sha256": "d303adc1471fb32e62b5f4dadddfd4733912246ea6723f4a223224c53e997e1d",
+      "pixel_width": 700,
+      "pixel_height": 528,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "source_id": "src_05dd5b5c1bb8",
+    "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
+  },
+  "var_9a33d1dc0217": {
+    "quiz": {
+      "path": "public/assets/images/quiz_f6ce130b783eaf35.png",
+      "sha256": "bf61c8a1a6383abbf33b041063ab55cab663aac4d72a96e5695b6330be384836",
+      "pixel_width": 338,
+      "pixel_height": 306,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_7533311773848baf.png",
+      "sha256": "4094ac21108a1deda12f2990056d5eac9502b1cc35240a284ab4e4a83f6fe923",
+      "pixel_width": 700,
+      "pixel_height": 378,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "source_id": "src_b18ecdbebbf7",
+    "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
+  },
+  "var_identity_2ba76faeb866": {
+    "quiz": {
+      "path": "public/assets/images/quiz_5ebbdc32af5c9d46.png",
+      "sha256": "4c142fa4e7c3e45a828db6212f5c894313f670ddbd9be4bde5a9e14f7f7189be",
+      "pixel_width": 1289,
+      "pixel_height": 1000,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/quiz_5ebbdc32af5c9d46.png",
+      "sha256": "4c142fa4e7c3e45a828db6212f5c894313f670ddbd9be4bde5a9e14f7f7189be",
+      "pixel_width": 1289,
+      "pixel_height": 1000,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "source_id": "src_36c0d08aff1a",
+    "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
+  },
+  "var_38600cc8ba3a": {
+    "quiz": {
+      "path": "public/assets/images/quiz_e484c307702abf9b.png",
+      "sha256": "f8cee8c2e0d845ee7ad61adc1c01f755fd11c5d20b6ad02790953474a953345b",
+      "pixel_width": 642,
+      "pixel_height": 565,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_d1aa31de0cc7d117.png",
+      "sha256": "b5969e09a35e0d1f7650ca7283be970d3024f4d40119efe6565c983f07181c53",
+      "pixel_width": 662,
+      "pixel_height": 625,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "source_id": "src_9ae5caa403ec",
+    "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
+  },
+  "var_identity_6f1d2ffa880a": {
+    "quiz": {
+      "path": "public/assets/images/quiz_1512a32d601614bd.png",
+      "sha256": "a82aa74c3cbab8a0e261233658926388ae85dd098fda49262a4f0283266aae3d",
+      "pixel_width": 1420,
+      "pixel_height": 1000,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/quiz_1512a32d601614bd.png",
+      "sha256": "a82aa74c3cbab8a0e261233658926388ae85dd098fda49262a4f0283266aae3d",
+      "pixel_width": 1420,
+      "pixel_height": 1000,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "source_id": "src_1a9b3bbc92d7",
+    "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
+  },
+  "var_d950fbbf6cb6": {
+    "quiz": {
+      "path": "public/assets/images/quiz_b84cd04c5b5e45e0.png",
+      "sha256": "42806c9fc8ce9e9b86f44fdb6d39eb2e96a97f7d799b171fa4f25d0b2b7dbbc6",
+      "pixel_width": 684,
+      "pixel_height": 375,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_c86110c174c46193.png",
+      "sha256": "22fd588552bba270145f2ff309b0126a301f4d1a898adda070361205bbcdbd89",
+      "pixel_width": 700,
+      "pixel_height": 461,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "source_id": "src_ae47a756de82",
+    "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
+  },
+  "var_b3cbed8044d3": {
+    "quiz": {
+      "path": "public/assets/images/quiz_104366a09ef68557.png",
+      "sha256": "62ef560580e8e1e1ba4b4a3b8a16cd95f51231f25ac0464176f39d4df25d4270",
+      "pixel_width": 680,
+      "pixel_height": 525,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_88496abdf4dfbb01.png",
+      "sha256": "b46cb1c80edceba9ae593d452c4a511fdc908483628094336a5ef0fccf89035a",
+      "pixel_width": 700,
+      "pixel_height": 587,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "source_id": "src_532a1d1b0074",
+    "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
+  },
+  "var_24a84994d0de": {
+    "quiz": {
+      "path": "public/assets/images/quiz_0b1d2983e43b4571.png",
+      "sha256": "691b2f636b46ed902db918ec9ff758e07047c665477b2a2d995c0610df965558",
+      "pixel_width": 690,
+      "pixel_height": 572,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_bd9369c1e6c64ecc.png",
+      "sha256": "dd98b5b620dfc0ec00e1ac067011d82fcd44260a47e52228cbd743caf4230d1e",
+      "pixel_width": 700,
+      "pixel_height": 626,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "source_id": "src_e05b438bc25b",
+    "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
+  },
+  "var_identity_60c29f1353b4": {
+    "quiz": {
+      "path": "public/assets/images/quiz_42499363df3363b6.png",
+      "sha256": "0f1bd4acb7a2b7ddb73256c16ca8534f5649da4f1a91f35638f4635636c76a64",
+      "pixel_width": 520,
+      "pixel_height": 382,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/quiz_42499363df3363b6.png",
+      "sha256": "0f1bd4acb7a2b7ddb73256c16ca8534f5649da4f1a91f35638f4635636c76a64",
+      "pixel_width": 520,
+      "pixel_height": 382,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "source_id": "src_80b6767d705f",
+    "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
+  },
+  "var_e6dc8eb83012": {
+    "quiz": {
+      "path": "public/assets/images/quiz_ac04e7521ce785fa.png",
+      "sha256": "ae74ba9adf60f84f74815829773ae6e55df5356bc30f321280dab0827f529f43",
+      "pixel_width": 651,
+      "pixel_height": 246,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_ec135e0531eecfb4.png",
+      "sha256": "3a64fe908352abc1e157436ba306037dfd2f3c1a9baf3b7b93b6808d2e2951fa",
+      "pixel_width": 661,
+      "pixel_height": 311,
+      "transformations": [
+        "metadata_stripped"
+      ]
+    },
+    "source_id": "src_1203aba9ac08",
+    "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
+  },
   "var_identity_b3b01d4f5702": {
     "quiz": {
       "path": "public/assets/images/quiz_a0b8ddb65fcea478.png",
@@ -5488,28 +5819,6 @@
       ]
     },
     "source_id": "src_52ea07463a3a",
-    "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
-  },
-  "var_identity_696e22a112fa": {
-    "quiz": {
-      "path": "public/assets/images/quiz_1a60f8ffb741f7b3.png",
-      "sha256": "da03dc799910258a75842a6474509b375260b590d58bf11218bef28a8eeda6ba",
-      "pixel_width": 1500,
-      "pixel_height": 1000,
-      "transformations": [
-        "metadata_stripped"
-      ]
-    },
-    "original": {
-      "path": "public/assets/images/quiz_1a60f8ffb741f7b3.png",
-      "sha256": "da03dc799910258a75842a6474509b375260b590d58bf11218bef28a8eeda6ba",
-      "pixel_width": 1500,
-      "pixel_height": 1000,
-      "transformations": [
-        "metadata_stripped"
-      ]
-    },
-    "source_id": "src_f402e786835c",
     "supplemental_source_manifest": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/picture_quiz_supplemental_manifest.json"
   },
   "var_f47fae5ce062": {

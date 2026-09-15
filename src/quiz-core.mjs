@@ -1,5 +1,7 @@
 export const PROGRESS_SCHEMA_VERSION = 2;
 export const STORAGE_KEY = "pulmonary-picture-id-progress-v2";
+export const QUALITY_FLAGS_SCHEMA_VERSION = 1;
+export const QUALITY_FLAGS_STORAGE_KEY = "pulmonary-picture-quality-flags-v1";
 
 export function hashSeed(text) {
   let h = 2166136261;
@@ -71,6 +73,51 @@ export function normalizeProgress(value) {
   };
 }
 
+export function emptyQualityFlags() {
+  return {
+    schema_version: QUALITY_FLAGS_SCHEMA_VERSION,
+    updated_at: null,
+    flags: {},
+  };
+}
+
+export function normalizeQualityFlags(value) {
+  const base = emptyQualityFlags();
+  if (!value || Number(value.schema_version) !== QUALITY_FLAGS_SCHEMA_VERSION) return base;
+  return {
+    ...base,
+    ...value,
+    flags: value.flags && typeof value.flags === "object" && !Array.isArray(value.flags) ? value.flags : {},
+  };
+}
+
+export function upsertQualityFlag(value, flag) {
+  if (!flag?.question_id || !flag?.issue_type) throw new Error("Choose a photo issue before saving the flag.");
+  const next = structuredClone(normalizeQualityFlags(value));
+  const existing = next.flags[flag.question_id];
+  const now = flag.updated_at || new Date().toISOString();
+  next.flags[flag.question_id] = {
+    ...existing,
+    ...flag,
+    flag_id: existing?.flag_id || `photo_flag_${hashSeed(flag.question_id)}`,
+    status: flag.status === "resolved" ? "resolved" : "open",
+    created_at: existing?.created_at || flag.created_at || now,
+    updated_at: now,
+  };
+  next.updated_at = now;
+  return next;
+}
+
+export function setQualityFlagStatus(value, questionId, status) {
+  const next = structuredClone(normalizeQualityFlags(value));
+  const existing = next.flags[questionId];
+  if (!existing) return next;
+  const now = new Date().toISOString();
+  next.flags[questionId] = { ...existing, status: status === "resolved" ? "resolved" : "open", updated_at: now };
+  next.updated_at = now;
+  return next;
+}
+
 function progressMatches(question, progress, stateFilter) {
   const item = progress.questions?.[question.question_id] || {};
   if (stateFilter === "unseen") return !item.times_answered;
@@ -93,9 +140,11 @@ function spreadSourceGroups(questions) {
 
 export function createSession(questions, config, progress, seed = Date.now()) {
   const category = config.category || "all";
+  const sourceOrigin = config.sourceOrigin || "all";
   const stateFilter = config.stateFilter || "all";
   let candidates = questions.filter((question) =>
     (category === "all" || question.category === category || question.modality === category) &&
+    (sourceOrigin === "all" || question.source_origin === sourceOrigin) &&
     progressMatches(question, progress, stateFilter),
   );
   candidates = spreadSourceGroups(seededShuffle(candidates, seed));
@@ -108,6 +157,7 @@ export function createSession(questions, config, progress, seed = Date.now()) {
     seed,
     mode: config.mode || "learn",
     category,
+    sourceOrigin,
     stateFilter,
     endless: config.length === "endless",
     requested_length: config.length,
@@ -167,21 +217,26 @@ export function toggleMarked(progressValue, questionId) {
 }
 
 export function scoreAnswers(questions, answers) {
-  const graded = questions.map((question) => ({ question, answer: answers[question.question_id] }))
-    .filter((item) => item.answer?.locked);
-  const correct = graded.filter((item) => item.answer.correct).length;
+  const graded = questions.map((question) => ({ question, answer: answers[question.question_id] || null }));
+  const correct = graded.filter((item) => item.answer?.locked && item.answer.correct).length;
+  const incorrect = graded.filter((item) => item.answer?.locked && !item.answer.correct).length;
+  const unanswered = graded.filter((item) => !item.answer?.locked).length;
   const byCategory = {};
   for (const item of graded) {
     const key = item.question.category || item.question.modality;
-    byCategory[key] ||= { correct: 0, total: 0 };
+    byCategory[key] ||= { correct: 0, incorrect: 0, unanswered: 0, total: 0 };
     byCategory[key].total += 1;
-    if (item.answer.correct) byCategory[key].correct += 1;
+    if (item.answer?.correct) byCategory[key].correct += 1;
+    else if (item.answer?.locked) byCategory[key].incorrect += 1;
+    else byCategory[key].unanswered += 1;
   }
   return {
     correct,
-    incorrect: graded.length - correct,
-    total: graded.length,
-    percentage: graded.length ? Math.round((correct / graded.length) * 100) : 0,
+    incorrect,
+    unanswered,
+    answered: correct + incorrect,
+    total: questions.length,
+    percentage: questions.length ? Math.round((correct / questions.length) * 100) : 0,
     byCategory,
     graded,
   };

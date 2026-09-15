@@ -2,7 +2,7 @@
 
 This is the quiz project's self-contained supplemental source library.
 
-- `originals/`: 37 supplemental source images, including the user-supplied asbestos-related pleural-plaque, Coccidioides, neonatal BPD, and acute ARDS specimens
+- `originals/`: 51 supplemental source images, including the user-supplied asbestos-related pleural-plaque, Coccidioides, neonatal BPD, and fifteen additions selected across the full Pulm Pictures comparison passes
 - `variants/`: deterministic quiz-safe crops or masks for the base supplement
 - `promotions/originals/`: six preserved copies of user-approved RLS review sources
 - `promotions/variants/`: six project-local quiz-safe scored derivatives

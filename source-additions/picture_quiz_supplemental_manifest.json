@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
   "manifest_id": "pulmonary-picture-quiz-supplement-v1",
-  "generated_at": "2026-09-14T10:07:41-04:00",
+  "generated_at": "2026-09-14T20:39:36-04:00",
   "source_collection_read_only_after_generation": true,
   "source_roots": [
     "/Users/chriselwell/Desktop/Pulm/Pulm Pictures",
     "Wikimedia Commons / PubMed Central landing pages recorded per asset"
   ],
-  "record_count": 36,
+  "record_count": 51,
   "records": [
     {
       "asset_id": "asset_ee6974cc71e0",
@@ -53,6 +53,10 @@
       "rights_status": "cc_by_sa",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_ee6974cc71e0",
       "quiz_safe_variant_path": "originals/b-lines-lung-ultrasound.jpg",
       "variants": [
@@ -70,7 +74,11 @@
         }
       ],
       "question_spec": {
-        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "stem": "",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "B-lines indicating an interstitial lung syndrome",
           "A-lines of normally aerated lung",
@@ -136,6 +144,10 @@
       "rights_status": "cc_by_sa",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_8fce4207e08f",
       "quiz_safe_variant_path": "originals/seashore-sign-lung-ultrasound.jpg",
       "variants": [
@@ -153,7 +165,11 @@
         }
       ],
       "question_spec": {
-        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "stem": "",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Seashore sign indicating normal lung sliding",
           "Barcode/stratosphere sign suggesting pneumothorax",
@@ -219,6 +235,10 @@
       "rights_status": "public_domain",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_ecd3383d892c",
       "quiz_safe_variant_path": "originals/bronchoscopy-procedure.jpg",
       "variants": [
@@ -237,6 +257,10 @@
       ],
       "question_spec": {
         "stem": "Identify the pulmonary procedure shown in this clinical photograph.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Flexible bronchoscopy",
           "Diagnostic spirometry",
@@ -302,6 +326,10 @@
       "rights_status": "cc_by_sa",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_0c31b6a9b5d7",
       "quiz_safe_variant_path": "originals/right-chest-tube-cxr.png",
       "variants": [
@@ -319,7 +347,11 @@
         }
       ],
       "question_spec": {
-        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "stem": "",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Right thoracostomy tube for pneumothorax",
           "Right internal-jugular central venous catheter",
@@ -385,6 +417,10 @@
       "rights_status": "public_domain",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_75e53a6f03c6",
       "quiz_safe_variant_path": "originals/central-venous-catheter-cxr.jpg",
       "variants": [
@@ -402,7 +438,11 @@
         }
       ],
       "question_spec": {
-        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "stem": "",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Central venous catheter",
           "Chest tube",
@@ -468,6 +508,10 @@
       "rights_status": "public_domain",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_578e599af223",
       "quiz_safe_variant_path": "originals/chest-drain-apparatus.jpg",
       "variants": [
@@ -486,6 +530,10 @@
       ],
       "question_spec": {
         "stem": "Identify the pulmonary device shown in this photograph.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Water-seal chest drainage system",
           "Incentive spirometer",
@@ -551,6 +599,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_eb46780f1fc2",
       "quiz_safe_variant_path": "originals/omega-epiglottis.jpg",
       "variants": [
@@ -568,7 +620,11 @@
         }
       ],
       "question_spec": {
-        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "stem": "",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Omega-shaped epiglottis in laryngomalacia",
           "Acute epiglottitis",
@@ -634,6 +690,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_a64b9e4c63db",
       "quiz_safe_variant_path": "originals/vocal-cord-nodules.png",
       "variants": [
@@ -651,7 +711,11 @@
         }
       ],
       "question_spec": {
-        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "stem": "",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Bilateral vocal-fold nodules",
           "Unilateral vocal-fold polyp",
@@ -717,6 +781,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_a1c0aa273f76",
       "quiz_safe_variant_path": "variants/var_a1c0aa273f76.png",
       "variants": [
@@ -740,6 +808,10 @@
       ],
       "question_spec": {
         "stem": "Interpret the flow-volume loop shown.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Small-airway obstructive flow-volume loop",
           "Restrictive flow-volume loop",
@@ -805,6 +877,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_b6f1979a696f",
       "quiz_safe_variant_path": "variants/var_b6f1979a696f.png",
       "variants": [
@@ -828,6 +904,10 @@
       ],
       "question_spec": {
         "stem": "Interpret the flow-volume loop shown.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Fixed upper-airway obstruction",
           "Variable extrathoracic obstruction",
@@ -893,6 +973,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_5648d001ad39",
       "quiz_safe_variant_path": "variants/var_5648d001ad39.png",
       "variants": [
@@ -916,6 +1000,10 @@
       ],
       "question_spec": {
         "stem": "Interpret the flow-volume loop shown.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Variable intrathoracic obstruction",
           "Variable extrathoracic obstruction",
@@ -981,6 +1069,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_92d365288db5",
       "quiz_safe_variant_path": "variants/var_92d365288db5.png",
       "variants": [
@@ -1024,6 +1116,10 @@
       ],
       "question_spec": {
         "stem": "What physiologic response is demonstrated by these paired flow-volume loops?",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Reversible airflow obstruction after bronchodilator",
           "Fixed airflow obstruction without response",
@@ -1089,6 +1185,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_7e1b7eb08773",
       "quiz_safe_variant_path": "originals/rv-pressure-overload-echo.jpg",
       "variants": [
@@ -1107,6 +1207,10 @@
       ],
       "question_spec": {
         "stem": "Identify the principal echocardiographic finding shown.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Right-ventricular pressure overload with septal flattening",
           "Isolated left-ventricular hypertrophy",
@@ -1172,6 +1276,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_ab06707700a7",
       "quiz_safe_variant_path": "originals/right-heart-strain-ecg.jpg",
       "variants": [
@@ -1190,6 +1298,10 @@
       ],
       "question_spec": {
         "stem": "Identify the cardiopulmonary ECG pattern shown.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Right-ventricular hypertrophy/strain pattern",
           "Diffuse acute pericarditis",
@@ -1255,6 +1367,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_026b57af8d1c",
       "quiz_safe_variant_path": "originals/spirometry-procedure.png",
       "variants": [
@@ -1273,6 +1389,10 @@
       ],
       "question_spec": {
         "stem": "Identify the pulmonary function procedure shown.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Diagnostic spirometry",
           "Peak expiratory flow monitoring",
@@ -1338,6 +1458,10 @@
       "rights_status": "cc_by",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_df477fdfa11d",
       "quiz_safe_variant_path": "originals/golden-s-sign.jpg",
       "variants": [
@@ -1355,7 +1479,11 @@
         }
       ],
       "question_spec": {
-        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "stem": "",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Golden S sign from right-upper-lobe collapse around a hilar mass",
           "Hampton hump from pulmonary infarction",
@@ -1421,6 +1549,10 @@
       "rights_status": "cc_by_sa",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_6d1cd0584951",
       "quiz_safe_variant_path": "originals/calcified-pleural-plaque.jpg",
       "variants": [
@@ -1438,7 +1570,11 @@
         }
       ],
       "question_spec": {
-        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "stem": "",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Calcified pleural plaque from asbestos exposure",
           "Lobar pneumonia",
@@ -1504,6 +1640,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_bc2c0c1d2690",
       "quiz_safe_variant_path": "originals/situs-inversus-cxr.jpg",
       "variants": [
@@ -1521,7 +1661,11 @@
         }
       ],
       "question_spec": {
-        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "stem": "",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Situs inversus totalis with dextrocardia",
           "Isolated right-lower-lobe atelectasis",
@@ -1587,6 +1731,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_cb2951109e63",
       "quiz_safe_variant_path": "originals/pulmonary-hypertension-cxr.jpg",
       "variants": [
@@ -1604,7 +1752,11 @@
         }
       ],
       "question_spec": {
-        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "stem": "",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Pulmonary arterial hypertension on chest radiograph",
           "Cardiogenic pulmonary edema",
@@ -1670,6 +1822,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_67cfd6f95d63",
       "quiz_safe_variant_path": "originals/thoracentesis-procedure.png",
       "variants": [
@@ -1688,6 +1844,10 @@
       ],
       "question_spec": {
         "stem": "Identify the pulmonary procedure illustrated.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Thoracentesis",
           "Needle cricothyrotomy",
@@ -1753,6 +1913,10 @@
       "rights_status": "cc_by",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_f569d930a7af",
       "quiz_safe_variant_path": "originals/pleural-effusion-lung-ultrasound.png",
       "variants": [
@@ -1770,7 +1934,11 @@
         }
       ],
       "question_spec": {
-        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "stem": "",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Pleural effusion on lung ultrasound",
           "Lung consolidation with air bronchograms",
@@ -1846,6 +2014,10 @@
       "rights_status": "cc_by",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_d72e1c439054",
       "quiz_safe_variant_path": "originals/consolidation-air-bronchograms-lung-ultrasound.png",
       "variants": [
@@ -1863,7 +2035,11 @@
         }
       ],
       "question_spec": {
-        "stem": "Identify the pulmonary finding, pattern, or procedure shown.",
+        "stem": "",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Lung consolidation with air bronchograms",
           "Pleural effusion",
@@ -1939,6 +2115,10 @@
       "rights_status": "cc_by_sa",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_dab6959f8e42",
       "quiz_safe_variant_path": "originals/right-mainstem-endotracheal-tube.jpg",
       "variants": [
@@ -1957,6 +2137,10 @@
       ],
       "question_spec": {
         "stem": "Assess the endotracheal-tube position on this chest radiograph.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Right mainstem endotracheal-tube malposition",
           "Correct endotracheal-tube position above the carina",
@@ -2022,6 +2206,10 @@
       "rights_status": "cc_by_sa",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_92c57598733c",
       "quiz_safe_variant_path": "originals/endotracheal-and-nasogastric-tubes-cxr.png",
       "variants": [
@@ -2040,6 +2228,10 @@
       ],
       "question_spec": {
         "stem": "Identify the two tubes and assess their overall position on this chest radiograph.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Endotracheal and nasogastric tubes, both appropriately positioned",
           "Endotracheal tube and central venous catheter",
@@ -2105,6 +2297,10 @@
       "rights_status": "cc0",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_0ad260f0645d",
       "quiz_safe_variant_path": "originals/kerley-b-lines-cxr.jpg",
       "variants": [
@@ -2123,6 +2319,10 @@
       ],
       "question_spec": {
         "stem": "Identify the specific interstitial sign on this chest radiograph.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Kerley B lines from interlobular septal thickening",
           "Honeycombing from advanced pulmonary fibrosis",
@@ -2188,6 +2388,10 @@
       "rights_status": "cc_by",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_9f3a02ec2eb9",
       "quiz_safe_variant_path": "originals/barcode-sign-lung-ultrasound.jpg",
       "variants": [
@@ -2206,6 +2410,10 @@
       ],
       "question_spec": {
         "stem": "Identify the M-mode lung-ultrasound sign shown.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Barcode/stratosphere sign indicating absent lung sliding",
           "Seashore sign indicating normal lung sliding",
@@ -2271,6 +2479,10 @@
       "rights_status": "cc_by",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_a07e1fe9a95f",
       "quiz_safe_variant_path": "originals/endobronchial-mass-bronchoscopy.png",
       "variants": [
@@ -2289,6 +2501,10 @@
       ],
       "question_spec": {
         "stem": "Identify the principal bronchoscopic finding.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Obstructing endobronchial mass",
           "Normal bronchial bifurcation",
@@ -2354,6 +2570,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_64d99ec51daf",
       "quiz_safe_variant_path": "originals/squamous-cell-carcinoma-keratin-pearls.png",
       "variants": [
@@ -2372,6 +2592,10 @@
       ],
       "question_spec": {
         "stem": "Identify the pulmonary neoplasm shown on histology.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Pulmonary squamous cell carcinoma with keratin pearls",
           "Pulmonary adenocarcinoma",
@@ -2437,6 +2661,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_887cb6bd3ccd",
       "quiz_safe_variant_path": "originals/curschmann-spiral-asthma.png",
       "variants": [
@@ -2455,6 +2683,10 @@
       ],
       "question_spec": {
         "stem": "Identify the sputum finding shown.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Curschmann spiral from asthma",
           "Ferruginous asbestos body",
@@ -2520,6 +2752,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_032a879b33d1",
       "quiz_safe_variant_path": "originals/charcot-leyden-crystal-asthma.png",
       "variants": [
@@ -2538,6 +2774,10 @@
       ],
       "question_spec": {
         "stem": "Identify the microscopic finding shown.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Charcot-Leyden crystal",
           "Curschmann spiral",
@@ -2603,6 +2843,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_6e600ecfbb20",
       "quiz_safe_variant_path": "variants/var_6e600ecfbb20.png",
       "variants": [
@@ -2626,6 +2870,10 @@
       ],
       "question_spec": {
         "stem": "Identify the fungal morphology shown.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Blastomyces with broad-based budding",
           "Cryptococcus with a thick capsule",
@@ -2691,6 +2939,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_029a3ee7ab1d",
       "quiz_safe_variant_path": "variants/var_029a3ee7ab1d.png",
       "variants": [
@@ -2714,6 +2966,10 @@
       ],
       "question_spec": {
         "stem": "Identify the fungal morphology shown.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Paracoccidioides with pilot-wheel budding",
           "Blastomyces with broad-based budding",
@@ -2779,6 +3035,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_535316fd21ba",
       "quiz_safe_variant_path": "originals/oral-candidiasis-inhaled-corticosteroid.png",
       "variants": [
@@ -2797,6 +3057,10 @@
       ],
       "question_spec": {
         "stem": "Identify the complication shown in a patient using inhaled corticosteroids.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Oral candidiasis associated with inhaled corticosteroid use",
           "Aphthous ulcers",
@@ -2866,6 +3130,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_b11f7468e746",
       "quiz_safe_variant_path": "originals/asbestos-related-fibrous-pleural-plaques.png",
       "variants": [
@@ -2884,6 +3152,10 @@
       ],
       "question_spec": {
         "stem": "Identify the pleural lesion shown in this gross specimen.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Asbestos-related fibrous pleural plaques",
           "Malignant pleural mesothelioma",
@@ -2953,6 +3225,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "https://www.cdc.gov/valley-fever/hcp/clinical-overview/index.html",
       "patient_identifiability": "none_visible",
+      "case_context": "",
+      "panel_handling": "single",
+      "target_region": "the complete displayed image",
+      "joint_images": false,
       "primary_variant_id": "var_identity_398b2d73bc14",
       "quiz_safe_variant_path": "originals/coccidioides-spherule-pulmonary-histology.jpg",
       "variants": [
@@ -2971,6 +3247,10 @@
       ],
       "question_spec": {
         "stem": "Identify the fungal form highlighted in this lung-tissue photomicrograph.",
+        "case_context": "",
+        "visual_target": "the complete displayed image",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Coccidioides spherule containing endospores",
           "Blastomyces with broad-based budding",
@@ -2989,6 +3269,1484 @@
           "Blastomyces appears as a large thick-walled yeast with a single broad-based daughter bud, not an endospore-filled spherule.",
           "Histoplasma usually appears as numerous tiny narrow-budding intracellular yeasts clustered in macrophages, which are not seen here.",
           "Cryptococcus is an encapsulated narrow-budding yeast with a prominent clear halo, rather than a thick-walled spherule containing endospores."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_f98433571979",
+      "source_group_id": "sg_c6a5e876ab36",
+      "source_id": "src_f54f9aaba8d3",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "epiglottitis-thumb-sign.jpeg",
+      "original_relative_path": "originals/epiglottitis-thumb-sign.jpeg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/epiglottitis-thumb-sign.jpeg",
+      "source_sha256": "f984335719797bcd7373a7d29ce7aea17770e5f251776a1348b91f13c3637f3a",
+      "pixel_width": 630,
+      "pixel_height": 624,
+      "file_format": "jpeg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "category": "Upper-airway imaging",
+      "tested_condition_structure_finding": "Acute epiglottitis with a thumb sign",
+      "canonical_correct_answer": "Acute epiglottitis with a thumb sign",
+      "accepted_answers": [
+        "Epiglottitis",
+        "Thumbprint sign"
+      ],
+      "ground_truth_basis": "The P33 upper-airway lecture identifies lateral neck radiography and the thumbprint sign as diagnostic imaging for acute epiglottitis. The local source is a complete, answer-unlabeled lateral neck radiograph.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "The lateral neck radiograph shows a markedly enlarged, rounded epiglottic shadow projecting into the hypopharyngeal airway, producing the classic thumb sign.",
+      "what_student_should_recognize": "Acute epiglottitis with a thumb sign",
+      "lecture_context": "P33 - Otolaryngology - Upper Airway Pathology",
+      "source_document": "P33 - Otolaryngology - Upper Airway Pathology",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture/Epiglottis Thumb Sign.jpeg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A child has abrupt fever, severe sore throat, drooling, muffled voice, and respiratory distress.",
+      "panel_handling": "single",
+      "target_region": "the entire lateral neck radiograph, especially the epiglottic shadow",
+      "joint_images": false,
+      "primary_variant_id": "var_identity_f98433571979",
+      "quiz_safe_variant_path": "originals/epiglottitis-thumb-sign.jpeg",
+      "variants": [
+        {
+          "variant_id": "var_identity_f98433571979",
+          "relative_path": "originals/epiglottitis-thumb-sign.jpeg",
+          "sha256": "f984335719797bcd7373a7d29ce7aea17770e5f251776a1348b91f13c3637f3a",
+          "pixel_width": 630,
+          "pixel_height": 624,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which upper-airway diagnosis is indicated by the enlarged thumb-shaped epiglottic shadow on this lateral neck radiograph?",
+        "case_context": "A child has abrupt fever, severe sore throat, drooling, muffled voice, and respiratory distress.",
+        "visual_target": "the entire lateral neck radiograph, especially the epiglottic shadow",
+        "panel_handling": "single",
+        "joint_images": false,
+        "options": [
+          "Acute epiglottitis with a thumb sign",
+          "Croup with a steeple sign",
+          "Retropharyngeal abscess",
+          "Bacterial tracheitis"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The epiglottic shadow is enlarged and rounded",
+          "The swollen epiglottis projects into the hypopharyngeal airway",
+          "The lateral profile resembles a thumb"
+        ],
+        "explanation": "The enlarged, rounded epiglottic shadow on the lateral neck radiograph is the thumb sign of acute epiglottitis.",
+        "choice_rationales": [
+          "The thumb sign is an enlarged, rounded epiglottic shadow on a lateral neck radiograph and supports acute epiglottitis.",
+          "Croup classically narrows the subglottic airway on a frontal view, producing a steeple sign rather than an enlarged epiglottis.",
+          "A retropharyngeal abscess widens the prevertebral soft tissues and may displace the airway anteriorly rather than creating this thumb-shaped epiglottis.",
+          "Bacterial tracheitis produces irregular tracheal mucosa or intraluminal membranes, not isolated rounded epiglottic enlargement."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_a2894030e9d8",
+      "source_group_id": "sg_abdef79c110d",
+      "source_id": "src_cc3113ff03a1",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "acute-dvt-compression-ultrasound.png",
+      "original_relative_path": "originals/acute-dvt-compression-ultrasound.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/acute-dvt-compression-ultrasound.png",
+      "source_sha256": "a2894030e9d84fdee7d3b0dd3ba741e627873a4f374945da6b44cc9ecb725ad8",
+      "pixel_width": 700,
+      "pixel_height": 551,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "Ultrasound",
+      "organ_system": "Pulmonary",
+      "category": "Venous thromboembolism",
+      "tested_condition_structure_finding": "Acute deep venous thrombosis",
+      "canonical_correct_answer": "Acute deep venous thrombosis",
+      "accepted_answers": [
+        "Acute DVT",
+        "Noncompressible common femoral vein"
+      ],
+      "ground_truth_basis": "The P26 vascular-disease lecture teaches deep venous thrombosis as the usual source of pulmonary emboli. The source image labels the same common femoral vein before and during compression and demonstrates failure of venous collapse; the quiz crop removes only the answer title.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Across the paired transverse ultrasound panels, the common femoral vein remains rounded and fails to collapse when transducer pressure is applied, demonstrating acute deep venous thrombosis.",
+      "what_student_should_recognize": "Acute deep venous thrombosis",
+      "lecture_context": "P26 - Diseases of the Respiratory Tract - Part 3 - Vascular, Cancer, Other Disease (Pathology)",
+      "source_document": "P26 - Diseases of the Respiratory Tract - Part 3 - Vascular, Cancer, Other Disease (Pathology)",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture/Acute-Deep-Vein-Thrombosis-Compression-Ultrasound.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A patient with unilateral leg swelling is being evaluated for the source of a suspected pulmonary embolus.",
+      "panel_handling": "retained_composite",
+      "target_region": "both ultrasound panels jointly: no compression on the left and compression on the right",
+      "joint_images": true,
+      "primary_variant_id": "var_ab1fbe57b478",
+      "quiz_safe_variant_path": "variants/var_ab1fbe57b478.png",
+      "variants": [
+        {
+          "variant_id": "var_ab1fbe57b478",
+          "relative_path": "variants/var_ab1fbe57b478.png",
+          "sha256": "07f87b7788726a228e318836f3b2885a0b9c9fc2599de9767bf46f5793ae2c85",
+          "pixel_width": 700,
+          "pixel_height": 503,
+          "transformation_recipe": {
+            "crop": [
+              0,
+              48,
+              700,
+              551
+            ]
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "The two panels show the same common femoral vein before and during compression. What does its failure to collapse indicate?",
+        "case_context": "A patient with unilateral leg swelling is being evaluated for the source of a suspected pulmonary embolus.",
+        "visual_target": "both ultrasound panels jointly: no compression on the left and compression on the right",
+        "panel_handling": "retained_composite",
+        "joint_images": true,
+        "options": [
+          "Acute deep venous thrombosis",
+          "Normal compressible femoral vein",
+          "Femoral artery pseudoaneurysm",
+          "Baker cyst"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Both panels show the same common femoral vein",
+          "The vessel remains rounded during compression",
+          "Failure of venous collapse is the decisive abnormality"
+        ],
+        "explanation": "The paired panels demonstrate a noncompressible common femoral vein, the defining compression-ultrasound finding of acute DVT.",
+        "choice_rationales": [
+          "Acute DVT prevents the vein from collapsing under probe pressure, matching the persistently rounded common femoral vein.",
+          "A normal vein should flatten completely with compression, which the labeled vessel does not do.",
+          "A femoral artery pseudoaneurysm is diagnosed with a communicating sac and characteristic Doppler flow rather than isolated venous noncompressibility.",
+          "A Baker cyst is an extravascular fluid collection in the popliteal fossa and would not remain centered on the labeled common femoral vein."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_dbc57bad07fb",
+      "source_group_id": "sg_61680b857671",
+      "source_id": "src_e3e49c513b78",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "saddle-pulmonary-embolism-ctpa.jpg",
+      "original_relative_path": "originals/saddle-pulmonary-embolism-ctpa.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/saddle-pulmonary-embolism-ctpa.jpg",
+      "source_sha256": "dbc57bad07fb74ea15f47fdc5b8235e727cde6aa62c3f5034309639421bbb91a",
+      "pixel_width": 1270,
+      "pixel_height": 1000,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "CT",
+      "organ_system": "Pulmonary",
+      "category": "Venous thromboembolism",
+      "tested_condition_structure_finding": "Saddle pulmonary embolism",
+      "canonical_correct_answer": "Saddle pulmonary embolism",
+      "accepted_answers": [
+        "Saddle embolus",
+        "Central pulmonary embolism"
+      ],
+      "ground_truth_basis": "The P26 vascular-disease lecture explicitly identifies pulmonary saddle embolism. This complete axial contrast-enhanced CT image retains the pulmonary-artery labels and colored filling-defect overlay without displaying the diagnosis.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A low-attenuation intraluminal filling defect spans the bifurcation of the main pulmonary artery and extends into both the right and left pulmonary arteries.",
+      "what_student_should_recognize": "Saddle pulmonary embolism",
+      "lecture_context": "P26 - Diseases of the Respiratory Tract - Part 3 - Vascular, Cancer, Other Disease (Pathology)",
+      "source_document": "P26 - Diseases of the Respiratory Tract - Part 3 - Vascular, Cancer, Other Disease (Pathology)",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture/Saddle Pulmonary Embolism.jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A recently immobilized patient develops sudden dyspnea, pleuritic chest pain, tachycardia, and hypoxemia.",
+      "panel_handling": "single",
+      "target_region": "the main pulmonary-artery bifurcation on the complete axial CTPA image",
+      "joint_images": false,
+      "primary_variant_id": "var_identity_dbc57bad07fb",
+      "quiz_safe_variant_path": "originals/saddle-pulmonary-embolism-ctpa.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_dbc57bad07fb",
+          "relative_path": "originals/saddle-pulmonary-embolism-ctpa.jpg",
+          "sha256": "dbc57bad07fb74ea15f47fdc5b8235e727cde6aa62c3f5034309639421bbb91a",
+          "pixel_width": 1270,
+          "pixel_height": 1000,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which vascular diagnosis is demonstrated by the central filling defect spanning the pulmonary-artery bifurcation?",
+        "case_context": "A recently immobilized patient develops sudden dyspnea, pleuritic chest pain, tachycardia, and hypoxemia.",
+        "visual_target": "the main pulmonary-artery bifurcation on the complete axial CTPA image",
+        "panel_handling": "single",
+        "joint_images": false,
+        "options": [
+          "Saddle pulmonary embolism",
+          "Aortic dissection",
+          "Superior vena cava thrombosis",
+          "Mediastinal lymphadenopathy"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The filling defect straddles the main pulmonary-artery bifurcation",
+          "Thrombus extends into both main pulmonary arteries",
+          "The contrast-opacified aorta is not the involved vessel"
+        ],
+        "explanation": "A central filling defect that straddles the right and left pulmonary arteries is a saddle pulmonary embolus.",
+        "choice_rationales": [
+          "A saddle pulmonary embolus spans the pulmonary-artery bifurcation and extends into both main branches, as highlighted here.",
+          "Aortic dissection produces an intimal flap within the aorta rather than a defect centered at the pulmonary-artery bifurcation.",
+          "Superior vena cava thrombosis would create a filling defect in the labeled SVC, not across the right and left pulmonary arteries.",
+          "Mediastinal lymphadenopathy forms extravascular soft-tissue nodules or masses rather than an intraluminal contrast defect."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_e5f0ef0ee044",
+      "source_group_id": "sg_3ab6111400b1",
+      "source_id": "src_f10dc0ed3c54",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "pancoast-tumor-chest-wall-extension.jpg",
+      "original_relative_path": "originals/pancoast-tumor-chest-wall-extension.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/pancoast-tumor-chest-wall-extension.jpg",
+      "source_sha256": "e5f0ef0ee044217cb7c927bf2d762d2b498a1d491aa0fb922e361c742c37e245",
+      "pixel_width": 1220,
+      "pixel_height": 1000,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "category": "Lung cancer",
+      "tested_condition_structure_finding": "Pancoast tumor with chest-wall extension",
+      "canonical_correct_answer": "Pancoast tumor with chest-wall extension",
+      "accepted_answers": [
+        "Superior sulcus tumor",
+        "Pancoast tumor"
+      ],
+      "ground_truth_basis": "The local teaching image preserves a complete chest radiograph and overlays the right apical mass and adjacent chest-wall involvement. The P27 lung-cancer lecture provides the aligned imaging context.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A mass occupies the right lung apex and extends through the superior chest wall, producing a superior sulcus distribution rather than an isolated intrapulmonary nodule.",
+      "what_student_should_recognize": "Pancoast tumor with chest-wall extension",
+      "lecture_context": "P27 - Radiology of Pulmonary Infections and Lung Cancer",
+      "source_document": "P27 - Radiology of Pulmonary Infections and Lung Cancer",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture/Pancoast Tumor with Chest Wall Extension.jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "An older smoker has progressive shoulder and arm pain with ipsilateral ptosis and miosis.",
+      "panel_handling": "single",
+      "target_region": "the right lung apex and adjacent chest wall on the complete chest radiograph",
+      "joint_images": false,
+      "primary_variant_id": "var_identity_e5f0ef0ee044",
+      "quiz_safe_variant_path": "originals/pancoast-tumor-chest-wall-extension.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_e5f0ef0ee044",
+          "relative_path": "originals/pancoast-tumor-chest-wall-extension.jpg",
+          "sha256": "e5f0ef0ee044217cb7c927bf2d762d2b498a1d491aa0fb922e361c742c37e245",
+          "pixel_width": 1220,
+          "pixel_height": 1000,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which diagnosis best explains the right apical mass extending into the adjacent chest wall?",
+        "case_context": "An older smoker has progressive shoulder and arm pain with ipsilateral ptosis and miosis.",
+        "visual_target": "the right lung apex and adjacent chest wall on the complete chest radiograph",
+        "panel_handling": "single",
+        "joint_images": false,
+        "options": [
+          "Pancoast tumor with chest-wall extension",
+          "Apical pleural cap",
+          "Right upper-lobe pneumonia",
+          "Loculated apical pneumothorax"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "A focal mass occupies the right superior sulcus",
+          "The opacity extends beyond the expected apical lung margin into the chest wall",
+          "The finding is mass-like rather than air-space or pleural lucency"
+        ],
+        "explanation": "The right apical mass with superior chest-wall extension is a Pancoast, or superior sulcus, tumor.",
+        "choice_rationales": [
+          "A Pancoast tumor arises in the superior pulmonary sulcus and can directly invade the adjacent chest wall, matching the overlaid mass.",
+          "An apical pleural cap is a thin, smoothly marginated pleural opacity without a bulky invasive apical mass.",
+          "Right upper-lobe pneumonia produces segmental or lobar air-space opacity with air bronchograms rather than chest-wall invasion.",
+          "A loculated apical pneumothorax is a pleural air collection with a visible pleural line and peripheral lucency, not a solid mass."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_719c5b58d5b6",
+      "source_group_id": "sg_69f00f97d03f",
+      "source_id": "src_af562cd4c3c0",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "diaphragmatic-rupture-bowel-thorax.jpg",
+      "original_relative_path": "originals/diaphragmatic-rupture-bowel-thorax.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/diaphragmatic-rupture-bowel-thorax.jpg",
+      "source_sha256": "719c5b58d5b6f3586bb488fb4bc7cad34bb772929f21626db16775981a9ca529",
+      "pixel_width": 540,
+      "pixel_height": 591,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "category": "Thoracic trauma",
+      "tested_condition_structure_finding": "Left diaphragmatic rupture with bowel herniation",
+      "canonical_correct_answer": "Left diaphragmatic rupture with bowel herniation",
+      "accepted_answers": [
+        "Diaphragmatic rupture",
+        "Bowel herniation into the thorax"
+      ],
+      "ground_truth_basis": "The local teaching image explicitly identifies traumatic diaphragmatic rupture and labels bowel loops in the left chest with contralateral mediastinal shift. The quiz crop removes the answer title while preserving the complete radiograph and diagnostic annotations; P36 supplies the diaphragmatic-hernia differential.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Gas-filled bowel loops project above the expected left hemidiaphragm and occupy the left hemithorax, with rightward mediastinal shift.",
+      "what_student_should_recognize": "Left diaphragmatic rupture with bowel herniation",
+      "lecture_context": "P36 - Pulmonary Developmental Anomalies (diaphragm differential)",
+      "source_document": "P36 - Pulmonary Developmental Anomalies (diaphragm differential)",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture/Diaphragmatic-Rupture-Bowel-in-Thorax.jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A patient develops severe respiratory distress after major blunt thoracoabdominal trauma.",
+      "panel_handling": "single",
+      "target_region": "the complete chest radiograph, including both hemidiaphragms and the mediastinum",
+      "joint_images": false,
+      "primary_variant_id": "var_38cf9861be45",
+      "quiz_safe_variant_path": "variants/var_38cf9861be45.png",
+      "variants": [
+        {
+          "variant_id": "var_38cf9861be45",
+          "relative_path": "variants/var_38cf9861be45.png",
+          "sha256": "4e3d5d01f62b5970af97b05f71fa7b7d5ac6b0ee045036e30b91d13d7c676245",
+          "pixel_width": 520,
+          "pixel_height": 512,
+          "transformation_recipe": {
+            "crop": [
+              10,
+              56,
+              530,
+              568
+            ]
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which diagnosis explains the bowel loops in the left hemithorax and rightward mediastinal shift?",
+        "case_context": "A patient develops severe respiratory distress after major blunt thoracoabdominal trauma.",
+        "visual_target": "the complete chest radiograph, including both hemidiaphragms and the mediastinum",
+        "panel_handling": "single",
+        "joint_images": false,
+        "options": [
+          "Left diaphragmatic rupture with bowel herniation",
+          "Tension pneumothorax",
+          "Large left pleural effusion",
+          "Congenital pulmonary airway malformation"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Gas-filled bowel loops lie within the left hemithorax",
+          "The normal left diaphragmatic contour is interrupted",
+          "The mediastinum shifts away from the herniated viscera"
+        ],
+        "explanation": "Intrathoracic bowel loops with loss of the left diaphragmatic contour and rightward mediastinal shift indicate left diaphragmatic rupture.",
+        "choice_rationales": [
+          "Diaphragmatic rupture allows abdominal bowel to herniate into the thorax, producing the visible bowel loops and contralateral mediastinal shift.",
+          "Tension pneumothorax produces a hyperlucent hemithorax without vascular markings, not multiple gas-filled bowel loops.",
+          "A large pleural effusion creates homogeneous opacity and a meniscus rather than air-containing bowel above the diaphragm.",
+          "Congenital pulmonary airway malformation produces intrapulmonary cystic spaces and does not directly place bowel loops in the chest."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_bfab70353b54",
+      "source_group_id": "sg_12f1517140a0",
+      "source_id": "src_05dd5b5c1bb8",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "pulmonary-contusion-ct.jpg",
+      "original_relative_path": "originals/pulmonary-contusion-ct.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/pulmonary-contusion-ct.jpg",
+      "source_sha256": "bfab70353b54e511e70b672c352484131396b9726b1817d625836ed1141ee8b1",
+      "pixel_width": 700,
+      "pixel_height": 528,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "CT",
+      "organ_system": "Pulmonary",
+      "category": "Thoracic trauma",
+      "tested_condition_structure_finding": "Pulmonary contusion",
+      "canonical_correct_answer": "Pulmonary contusion",
+      "accepted_answers": [
+        "Traumatic pulmonary contusion"
+      ],
+      "ground_truth_basis": "The local teaching composite identifies pulmonary contusion and provides duplicate sagittal CT panels. The quiz variant preserves the complete unannotated left panel while excluding the answer title and redundant annotated duplicate.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "The sagittal lung-window CT shows a peripheral, irregular, nonlobar air-space opacity immediately deep to the injured chest wall.",
+      "what_student_should_recognize": "Pulmonary contusion",
+      "lecture_context": "Pulm Pictures thoracic-trauma teaching collection",
+      "source_document": "Pulm Pictures thoracic-trauma teaching collection",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture/Pulmonary-Contusion-Ct.jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A patient has hypoxemia and chest pain shortly after high-energy blunt thoracic trauma.",
+      "panel_handling": "isolated_panel",
+      "target_region": "the complete isolated sagittal CT panel",
+      "joint_images": false,
+      "primary_variant_id": "var_dc9063a74d70",
+      "quiz_safe_variant_path": "variants/var_dc9063a74d70.png",
+      "variants": [
+        {
+          "variant_id": "var_dc9063a74d70",
+          "relative_path": "variants/var_dc9063a74d70.png",
+          "sha256": "c4305974319457bbd7cd27fa4c67806e2a0e4a3813f9a9c6a767274714195612",
+          "pixel_width": 335,
+          "pixel_height": 454,
+          "transformation_recipe": {
+            "crop": [
+              5,
+              54,
+              340,
+              508
+            ]
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "After blunt chest trauma, which diagnosis best explains this irregular peripheral nonlobar opacity on sagittal CT?",
+        "case_context": "A patient has hypoxemia and chest pain shortly after high-energy blunt thoracic trauma.",
+        "visual_target": "the complete isolated sagittal CT panel",
+        "panel_handling": "isolated_panel",
+        "joint_images": false,
+        "options": [
+          "Pulmonary contusion",
+          "Lobar bacterial pneumonia",
+          "Cardiogenic pulmonary edema",
+          "Pulmonary laceration with pneumatocele"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The opacity is peripheral and immediately subjacent to the chest wall",
+          "Its margin is irregular and does not respect a lobar boundary",
+          "No discrete air-filled laceration cavity is present"
+        ],
+        "explanation": "A peripheral, nonlobar air-space opacity at the site of chest trauma is the characteristic CT appearance of pulmonary contusion.",
+        "choice_rationales": [
+          "Pulmonary contusion causes patchy peripheral ground-glass or consolidative opacity that does not respect lobar boundaries after trauma.",
+          "Lobar bacterial pneumonia generally follows a segmental or lobar distribution and is not specifically centered beneath an injured chest wall.",
+          "Cardiogenic edema is usually bilateral and central or dependent with septal thickening and pleural effusions rather than one focal traumatic opacity.",
+          "A pulmonary laceration commonly forms an air- or blood-filled cavity within injured lung, which is not visible in this panel."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_01131ff87378",
+      "source_group_id": "sg_3d400938f92b",
+      "source_id": "src_b18ecdbebbf7",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "transient-tachypnea-newborn.jpg",
+      "original_relative_path": "originals/transient-tachypnea-newborn.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/transient-tachypnea-newborn.jpg",
+      "source_sha256": "01131ff87378bc7bc23e2fe23aa33c429cd0ce108caff29f5b045b13e6e4d80d",
+      "pixel_width": 700,
+      "pixel_height": 378,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "category": "Neonatal lung disease",
+      "tested_condition_structure_finding": "Transient tachypnea of the newborn",
+      "canonical_correct_answer": "Transient tachypnea of the newborn",
+      "accepted_answers": [
+        "TTN",
+        "Retained fetal lung fluid"
+      ],
+      "ground_truth_basis": "The local teaching composite identifies transient tachypnea of the newborn and duplicates the same neonatal radiograph with an annotation over the right minor fissure. The quiz variant preserves the complete unannotated left radiograph while excluding the answer title and redundant annotated duplicate.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "The neonatal chest radiograph shows mildly hyperinflated lungs with prominent perihilar interstitial markings and fluid tracking along a fissure, compatible with retained fetal lung fluid.",
+      "what_student_should_recognize": "Transient tachypnea of the newborn",
+      "lecture_context": "Pulm Pictures neonatal chest-imaging teaching collection",
+      "source_document": "Pulm Pictures neonatal chest-imaging teaching collection",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture/Transient-Tachypnea-of-the-Newborn.jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A term newborn delivered by cesarean develops tachypnea within minutes of birth and has no fever or meconium exposure.",
+      "panel_handling": "isolated_panel",
+      "target_region": "the complete isolated neonatal chest radiograph",
+      "joint_images": false,
+      "primary_variant_id": "var_9a33d1dc0217",
+      "quiz_safe_variant_path": "variants/var_9a33d1dc0217.png",
+      "variants": [
+        {
+          "variant_id": "var_9a33d1dc0217",
+          "relative_path": "variants/var_9a33d1dc0217.png",
+          "sha256": "bf61c8a1a6383abbf33b041063ab55cab663aac4d72a96e5695b6330be384836",
+          "pixel_width": 338,
+          "pixel_height": 306,
+          "transformation_recipe": {
+            "crop": [
+              9,
+              54,
+              347,
+              360
+            ]
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which diagnosis best explains the mildly hyperinflated lungs, perihilar streaking, and fissural fluid?",
+        "case_context": "A term newborn delivered by cesarean develops tachypnea within minutes of birth and has no fever or meconium exposure.",
+        "visual_target": "the complete isolated neonatal chest radiograph",
+        "panel_handling": "isolated_panel",
+        "joint_images": false,
+        "options": [
+          "Transient tachypnea of the newborn",
+          "Neonatal respiratory distress syndrome",
+          "Meconium aspiration syndrome",
+          "Neonatal pneumonia"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The lungs are mildly hyperinflated rather than low volume",
+          "Perihilar interstitial markings are prominent",
+          "Fluid is visible along a fissure"
+        ],
+        "explanation": "Mild hyperinflation, perihilar interstitial prominence, and fissural fluid in an otherwise term newborn support transient tachypnea from delayed fetal-lung-fluid clearance.",
+        "choice_rationales": [
+          "Transient tachypnea typically produces mild hyperinflation, perihilar streaking, and fissural fluid from delayed clearance of fetal lung fluid.",
+          "Neonatal respiratory distress syndrome produces low lung volumes with diffuse fine granular opacity and air bronchograms, unlike this hyperinflated interstitial pattern.",
+          "Meconium aspiration usually produces coarse, patchy, asymmetric air-space opacities with marked hyperinflation and possible air leak.",
+          "Neonatal pneumonia may cause focal or diffuse air-space opacity but is less specifically associated with the combination of fissural fluid and rapid postnatal improvement."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_2ba76faeb866",
+      "source_group_id": "sg_c021417b2613",
+      "source_id": "src_36c0d08aff1a",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "split-pleura-sign-empyema.jpg",
+      "original_relative_path": "originals/split-pleura-sign-empyema.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/split-pleura-sign-empyema.jpg",
+      "source_sha256": "2ba76faeb866943c10e2ac5edfd14a4938edcdf53ac4b5b36c45954e3a96c9cb",
+      "pixel_width": 1289,
+      "pixel_height": 1000,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "CT",
+      "organ_system": "Pulmonary",
+      "category": "Pleural infection",
+      "tested_condition_structure_finding": "Split pleura sign of empyema",
+      "canonical_correct_answer": "Split pleura sign of empyema",
+      "accepted_answers": [
+        "Split pleura sign",
+        "Empyema with split pleura sign"
+      ],
+      "ground_truth_basis": "The local teaching image identifies the split pleura sign. The complete contrast-enhanced axial CT demonstrates a lentiform pleural collection bounded by enhancing visceral and parietal pleural layers, the characteristic CT sign of empyema.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A lentiform pleural collection separates two thickened, enhancing pleural layers; the adjacent lung is compressed rather than replaced by the collection.",
+      "what_student_should_recognize": "Split pleura sign of empyema",
+      "lecture_context": "P31 - Review of Pneumonia - Pathology and Pharmacology",
+      "source_document": "P31 - Review of Pneumonia - Pathology and Pharmacology",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture/Split-Pleura Sign.jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A patient with persistent fever after bacterial pneumonia has pleuritic pain and a loculated pleural collection.",
+      "panel_handling": "single",
+      "target_region": "the complete axial contrast-enhanced CT image, especially the outlined pleural collection",
+      "joint_images": false,
+      "primary_variant_id": "var_identity_2ba76faeb866",
+      "quiz_safe_variant_path": "originals/split-pleura-sign-empyema.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_2ba76faeb866",
+          "relative_path": "originals/split-pleura-sign-empyema.jpg",
+          "sha256": "2ba76faeb866943c10e2ac5edfd14a4938edcdf53ac4b5b36c45954e3a96c9cb",
+          "pixel_width": 1289,
+          "pixel_height": 1000,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which named CT sign is demonstrated by the enhancing pleural layers surrounding this lentiform collection?",
+        "case_context": "A patient with persistent fever after bacterial pneumonia has pleuritic pain and a loculated pleural collection.",
+        "visual_target": "the complete axial contrast-enhanced CT image, especially the outlined pleural collection",
+        "panel_handling": "single",
+        "joint_images": false,
+        "options": [
+          "Split pleura sign of empyema",
+          "Comet-tail sign of rounded atelectasis",
+          "Deep sulcus sign of pneumothorax",
+          "Extrapleural sign of a chest-wall mass"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "A lentiform collection is centered in the pleural space",
+          "Enhancing visceral and parietal pleural layers are separated by fluid",
+          "Adjacent lung is compressed medially"
+        ],
+        "explanation": "Enhancement and separation of the visceral and parietal pleura around infected pleural fluid is the split pleura sign, a characteristic CT feature of empyema.",
+        "choice_rationales": [
+          "The split pleura sign consists of enhancing visceral and parietal pleural layers separated by a pleural collection, exactly as shown here.",
+          "The comet-tail sign is a curving bundle of bronchovascular structures entering a pleural-based rounded opacity, not two enhancing pleural layers around fluid.",
+          "The deep sulcus sign is an abnormally lucent and deep costophrenic angle on a supine chest radiograph, not this contrast-enhanced CT appearance.",
+          "The extrapleural sign is a smoothly tapered intrathoracic opacity with displaced extrapleural fat, not a fluid collection splitting the pleural layers."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_8dcca69bb178",
+      "source_group_id": "sg_ddac89dc5ef7",
+      "source_id": "src_9ae5caa403ec",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "westermark-sign-pulmonary-embolism.png",
+      "original_relative_path": "originals/westermark-sign-pulmonary-embolism.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/westermark-sign-pulmonary-embolism.png",
+      "source_sha256": "8dcca69bb178313e46daacd95bc8dfe4b7c78ffc69f8dc8606a3c79c859dbf6b",
+      "pixel_width": 662,
+      "pixel_height": 625,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "category": "Pulmonary vascular imaging signs",
+      "tested_condition_structure_finding": "Westermark sign",
+      "canonical_correct_answer": "Westermark sign",
+      "accepted_answers": [
+        "Westermark sign of pulmonary embolism",
+        "Regional pulmonary oligemia"
+      ],
+      "ground_truth_basis": "The local teaching composite identifies the Westermark sign and demonstrates it by comparing a normal chest radiograph with pulmonary-embolism-associated abrupt pulmonary-artery cutoff and decreased distal vascular markings. The quiz variant removes the answer title while preserving both complete comparison panels, their contextual labels, and their magnified regions.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "The abnormal radiograph shows abrupt central pulmonary-artery cutoff with regional paucity of distal vascular markings compared with the normal side-by-side reference.",
+      "what_student_should_recognize": "Westermark sign",
+      "lecture_context": "P26 - Diseases of the Respiratory Tract - Part 3 - Vascular, Cancer, Other Disease (Pathology)",
+      "source_document": "P26 - Diseases of the Respiratory Tract - Part 3 - Vascular, Cancer, Other Disease (Pathology)",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture/Westermark-Sign.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A patient develops acute pleuritic chest pain and unexplained hypoxemia after prolonged immobilization.",
+      "panel_handling": "retained_composite",
+      "target_region": "both comparison radiographs and their magnified vascular regions, interpreted together",
+      "joint_images": true,
+      "primary_variant_id": "var_38600cc8ba3a",
+      "quiz_safe_variant_path": "variants/var_38600cc8ba3a.png",
+      "variants": [
+        {
+          "variant_id": "var_38600cc8ba3a",
+          "relative_path": "variants/var_38600cc8ba3a.png",
+          "sha256": "f8cee8c2e0d845ee7ad61adc1c01f755fd11c5d20b6ad02790953474a953345b",
+          "pixel_width": 642,
+          "pixel_height": 565,
+          "transformation_recipe": {
+            "crop": [
+              10,
+              50,
+              652,
+              615
+            ]
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which named chest-radiograph sign is illustrated by the abnormal panel and its magnified comparison?",
+        "case_context": "A patient develops acute pleuritic chest pain and unexplained hypoxemia after prolonged immobilization.",
+        "visual_target": "both comparison radiographs and their magnified vascular regions, interpreted together",
+        "panel_handling": "retained_composite",
+        "joint_images": true,
+        "options": [
+          "Westermark sign",
+          "Hampton hump",
+          "Fleischner sign",
+          "Golden S sign"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "There is abrupt pulmonary-artery cutoff",
+          "Vascular markings are decreased distal to the cutoff",
+          "The paired normal panel emphasizes focal regional oligemia"
+        ],
+        "explanation": "Abrupt pulmonary-artery cutoff with decreased distal vascular markings produces the Westermark sign of pulmonary embolism.",
+        "choice_rationales": [
+          "Westermark sign is focal pulmonary oligemia distal to embolic obstruction, represented here by abrupt arterial cutoff and decreased peripheral vascular markings.",
+          "Hampton hump is a peripheral pleural-based wedge-shaped opacity from pulmonary infarction rather than regional vascular pruning.",
+          "Fleischner sign is enlargement of a central pulmonary artery, not the distal oligemia emphasized in this comparison.",
+          "Golden S sign is deformation of the minor fissure by right-upper-lobe collapse around a central mass, not pulmonary vascular cutoff."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_6f1d2ffa880a",
+      "source_group_id": "sg_1409e4488ab8",
+      "source_id": "src_1a9b3bbc92d7",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "nonspecific-interstitial-pneumonia-hrct.jpg",
+      "original_relative_path": "originals/nonspecific-interstitial-pneumonia-hrct.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/nonspecific-interstitial-pneumonia-hrct.jpg",
+      "source_sha256": "6f1d2ffa880a0be0503a9beed80f0425c27efd0ab08d2be3cb2488d0d28f69d3",
+      "pixel_width": 1420,
+      "pixel_height": 1000,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "CT",
+      "organ_system": "Pulmonary",
+      "category": "Interstitial lung disease",
+      "tested_condition_structure_finding": "Nonspecific interstitial pneumonia pattern",
+      "canonical_correct_answer": "Nonspecific interstitial pneumonia pattern",
+      "accepted_answers": [
+        "Nonspecific interstitial pneumonia",
+        "NSIP",
+        "NSIP pattern"
+      ],
+      "ground_truth_basis": "The local teaching image identifies nonspecific interstitial pneumonia. The complete axial HRCT displays the characteristic combination of bilateral ground-glass opacity, fine reticulation, traction bronchiectatic change, and relative immediate subpleural sparing.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Bilateral symmetric basal ground-glass opacity and fine reticulation are accompanied by traction bronchiectatic change and a thin rim of relative subpleural sparing, without dominant stacked honeycombing.",
+      "what_student_should_recognize": "Nonspecific interstitial pneumonia pattern",
+      "lecture_context": "P25 - Radiology of Restrictive Lung Disease and Extras",
+      "source_document": "P25 - Radiology of Restrictive Lung Disease and Extras",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture/Nonspecific Interstitial Pneumonia (NSIP).jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A patient with a connective-tissue disease has progressive exertional dyspnea and a restrictive pulmonary-function pattern.",
+      "panel_handling": "single",
+      "target_region": "the complete axial HRCT image, especially the peripheral lower-lung pattern",
+      "joint_images": false,
+      "primary_variant_id": "var_identity_6f1d2ffa880a",
+      "quiz_safe_variant_path": "originals/nonspecific-interstitial-pneumonia-hrct.jpg",
+      "variants": [
+        {
+          "variant_id": "var_identity_6f1d2ffa880a",
+          "relative_path": "originals/nonspecific-interstitial-pneumonia-hrct.jpg",
+          "sha256": "6f1d2ffa880a0be0503a9beed80f0425c27efd0ab08d2be3cb2488d0d28f69d3",
+          "pixel_width": 1420,
+          "pixel_height": 1000,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which interstitial-lung-disease pattern is best demonstrated on this axial HRCT image?",
+        "case_context": "A patient with a connective-tissue disease has progressive exertional dyspnea and a restrictive pulmonary-function pattern.",
+        "visual_target": "the complete axial HRCT image, especially the peripheral lower-lung pattern",
+        "panel_handling": "single",
+        "joint_images": false,
+        "options": [
+          "Nonspecific interstitial pneumonia pattern",
+          "Usual interstitial pneumonia pattern",
+          "Fibrotic hypersensitivity pneumonitis",
+          "Cryptogenic organizing pneumonia"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Ground-glass opacity and fine reticulation are bilateral and symmetric",
+          "A thin immediate subpleural rim is relatively spared",
+          "Traction bronchiectatic change is present without dominant stacked honeycombing"
+        ],
+        "explanation": "Symmetric basal ground-glass opacity and fine reticulation with traction bronchiectasis and relative subpleural sparing favor an NSIP pattern.",
+        "choice_rationales": [
+          "NSIP commonly produces symmetric lower-lung ground-glass opacity and fine reticulation with traction bronchiectasis and relative subpleural sparing.",
+          "UIP is more heterogeneous and subpleural, with basal stacked honeycombing and little relative subpleural sparing.",
+          "Fibrotic hypersensitivity pneumonitis more often combines fibrosis with mosaic attenuation, air trapping, centrilobular nodules, or a three-density pattern.",
+          "Organizing pneumonia usually produces patchy peripheral or peribronchovascular consolidation rather than this symmetric fine fibrotic interstitial pattern."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_90414fddf38a",
+      "source_group_id": "sg_839a9d0da83f",
+      "source_id": "src_ae47a756de82",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "tree-in-bud-small-airway-pattern.jpg",
+      "original_relative_path": "originals/tree-in-bud-small-airway-pattern.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/tree-in-bud-small-airway-pattern.jpg",
+      "source_sha256": "90414fddf38a761a1691e754cddcb4282c3ceac63ef5c007aae47cacf8baf5d6",
+      "pixel_width": 700,
+      "pixel_height": 461,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "CT",
+      "organ_system": "Pulmonary",
+      "category": "Small-airway infection",
+      "tested_condition_structure_finding": "Tree-in-bud pattern",
+      "canonical_correct_answer": "Tree-in-bud pattern",
+      "accepted_answers": [
+        "Tree in bud",
+        "Tree-in-bud opacities"
+      ],
+      "ground_truth_basis": "The local teaching composite identifies nodulobronchiectatic pulmonary infection and labels branching linear opacities with small nodules as tree-in-bud. The quiz variant removes the title, explanatory text boxes, and acronym footnote while retaining the complete CT panel, arrows, and its magnified diagnostic inset.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "Centrilobular nodules connect to fine branching linear opacities in the peripheral lung, creating a budding-tree appearance adjacent to bronchiectatic airways.",
+      "what_student_should_recognize": "Tree-in-bud pattern",
+      "lecture_context": "P27 - Radiology of Pulmonary Infections and Lung Cancer",
+      "source_document": "P27 - Radiology of Pulmonary Infections and Lung Cancer",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture/Pulmonary-Ntm-Infection-Nodulobronchiectatic.jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A patient with chronic cough has bronchiectasis and a chronic small-airway infection.",
+      "panel_handling": "retained_composite",
+      "target_region": "the axial CT and its magnified small-airway inset, interpreted together",
+      "joint_images": true,
+      "primary_variant_id": "var_d950fbbf6cb6",
+      "quiz_safe_variant_path": "variants/var_d950fbbf6cb6.png",
+      "variants": [
+        {
+          "variant_id": "var_d950fbbf6cb6",
+          "relative_path": "variants/var_d950fbbf6cb6.png",
+          "sha256": "42806c9fc8ce9e9b86f44fdb6d39eb2e96a97f7d799b171fa4f25d0b2b7dbbc6",
+          "pixel_width": 684,
+          "pixel_height": 375,
+          "transformation_recipe": {
+            "crop": [
+              8,
+              52,
+              692,
+              427
+            ],
+            "masks": [
+              [
+                45,
+                25,
+                265,
+                90
+              ],
+              [
+                475,
+                300,
+                684,
+                375
+              ]
+            ]
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which named CT pattern is demonstrated by the branching peripheral opacities and their nodular tips?",
+        "case_context": "A patient with chronic cough has bronchiectasis and a chronic small-airway infection.",
+        "visual_target": "the axial CT and its magnified small-airway inset, interpreted together",
+        "panel_handling": "retained_composite",
+        "joint_images": true,
+        "options": [
+          "Tree-in-bud pattern",
+          "Crazy-paving pattern",
+          "Honeycombing",
+          "Miliary nodules"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Small nodules are centered at the ends of branching linear opacities",
+          "The branching structures occupy the peripheral small-airway distribution",
+          "The magnified inset shows a budding-tree configuration"
+        ],
+        "explanation": "Branching centrilobular opacities ending in small nodules form the tree-in-bud pattern, which reflects material within and around terminal bronchioles.",
+        "choice_rationales": [
+          "Tree-in-bud describes centrilobular branching opacities with nodular tips caused by impacted or inflamed small airways, matching the magnified pattern.",
+          "Crazy paving combines ground-glass opacity with superimposed interlobular and intralobular septal lines rather than nodular branching bronchioles.",
+          "Honeycombing consists of stacked subpleural cystic air spaces and architectural distortion, not fine branching nodules.",
+          "Miliary disease produces innumerable randomly distributed tiny nodules without the branching airway-centered configuration shown here."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_4d17ca4625b3",
+      "source_group_id": "sg_89e453410a31",
+      "source_id": "src_532a1d1b0074",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "pneumocystis-jirovecii-pneumonia-histology.png",
+      "original_relative_path": "originals/pneumocystis-jirovecii-pneumonia-histology.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/pneumocystis-jirovecii-pneumonia-histology.png",
+      "source_sha256": "4d17ca4625b3d83ea024dc3d3cb03ca35e3fdc2fdeeaa92b9cc4a20c067c2b04",
+      "pixel_width": 700,
+      "pixel_height": 587,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "Histopathology",
+      "organ_system": "Pulmonary",
+      "category": "Opportunistic infection",
+      "tested_condition_structure_finding": "Pneumocystis jirovecii pneumonia",
+      "canonical_correct_answer": "Pneumocystis jirovecii pneumonia",
+      "accepted_answers": [
+        "Pneumocystis pneumonia",
+        "PJP",
+        "PCP"
+      ],
+      "ground_truth_basis": "The local teaching composite identifies Pneumocystis jirovecii and shows its paired histologic appearances: foamy eosinophilic intra-alveolar material on H&E and dark crescentic cyst forms on Grocott methenamine silver stain. The quiz crop removes only the answer title while retaining both complete panels and their stain labels.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "H&E shows pale eosinophilic foamy intra-alveolar exudate, while the paired silver stain highlights numerous dark crescentic or cup-shaped cyst forms.",
+      "what_student_should_recognize": "Pneumocystis jirovecii pneumonia",
+      "lecture_context": "P31 - Review of Pneumonia - Pathology and Pharmacology",
+      "source_document": "P31 - Review of Pneumonia - Pathology and Pharmacology",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture/Pneumocystis-Jirovecii-Histology.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "An immunocompromised patient has fever, progressive dyspnea, nonproductive cough, and diffuse bilateral ground-glass opacity.",
+      "panel_handling": "retained_composite",
+      "target_region": "both histology panels jointly: H&E on the left and silver stain on the right",
+      "joint_images": true,
+      "primary_variant_id": "var_b3cbed8044d3",
+      "quiz_safe_variant_path": "variants/var_b3cbed8044d3.png",
+      "variants": [
+        {
+          "variant_id": "var_b3cbed8044d3",
+          "relative_path": "variants/var_b3cbed8044d3.png",
+          "sha256": "62ef560580e8e1e1ba4b4a3b8a16cd95f51231f25ac0464176f39d4df25d4270",
+          "pixel_width": 680,
+          "pixel_height": 525,
+          "transformation_recipe": {
+            "crop": [
+              10,
+              53,
+              690,
+              578
+            ]
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which opportunistic pulmonary infection is demonstrated by these paired H&E and silver-stained sections?",
+        "case_context": "An immunocompromised patient has fever, progressive dyspnea, nonproductive cough, and diffuse bilateral ground-glass opacity.",
+        "visual_target": "both histology panels jointly: H&E on the left and silver stain on the right",
+        "panel_handling": "retained_composite",
+        "joint_images": true,
+        "options": [
+          "Pneumocystis jirovecii pneumonia",
+          "Pulmonary histoplasmosis",
+          "Pulmonary cryptococcosis",
+          "Invasive pulmonary aspergillosis"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "Alveoli contain pale foamy eosinophilic material on H&E",
+          "Silver stain highlights numerous small dark cyst forms",
+          "Many organisms have a crescentic or cup-shaped contour"
+        ],
+        "explanation": "Foamy intra-alveolar exudate on H&E with crescentic cysts highlighted by silver stain is characteristic of Pneumocystis jirovecii pneumonia.",
+        "choice_rationales": [
+          "Pneumocystis produces a foamy intra-alveolar exudate, and silver stains reveal numerous round-to-crescentic cyst forms, matching both panels.",
+          "Histoplasma appears as tiny narrow-budding yeasts, often within macrophages, rather than diffuse foamy alveolar exudate with cup-shaped cysts.",
+          "Cryptococcus is an encapsulated narrow-budding yeast with a prominent clear halo or mucicarmine-positive capsule, not this paired appearance.",
+          "Invasive aspergillosis shows septate hyphae with acute-angle branching and tissue invasion rather than numerous small crescentic alveolar cysts."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_bc566e33e86d",
+      "source_group_id": "sg_a8eb45085987",
+      "source_id": "src_e05b438bc25b",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "retropharyngeal-abscess-anatomy.jpg",
+      "original_relative_path": "originals/retropharyngeal-abscess-anatomy.jpg",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/retropharyngeal-abscess-anatomy.jpg",
+      "source_sha256": "bc566e33e86de86ef43c1332f8ba0420163132933a7414d4c2441d4dcbd208bf",
+      "pixel_width": 700,
+      "pixel_height": 626,
+      "file_format": "jpg",
+      "media_type": "image/jpeg",
+      "quality": "good",
+      "modality": "Diagram",
+      "organ_system": "Pulmonary",
+      "category": "Upper-airway infection",
+      "tested_condition_structure_finding": "Retropharyngeal abscess",
+      "canonical_correct_answer": "Retropharyngeal abscess",
+      "accepted_answers": [
+        "Retropharyngeal space abscess",
+        "RPA"
+      ],
+      "ground_truth_basis": "The local sagittal teaching diagram identifies a retropharyngeal abscess. The quiz variant removes the answer title and diagnosis label while preserving the complete upper-airway anatomy, the highlighted collection, and the non-answer anatomic labels.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A focal collection lies posterior to the pharyngeal airway and anterior to the cervical vertebral bodies, expanding the retropharyngeal space and narrowing the upper airway.",
+      "what_student_should_recognize": "Retropharyngeal abscess",
+      "lecture_context": "P33 - Otolaryngology - Upper Airway Pathology",
+      "source_document": "P33 - Otolaryngology - Upper Airway Pathology",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture/Retropharyngeal-Abscess.jpg"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A young child has fever, neck stiffness, drooling, and painful swallowing after an upper-respiratory infection.",
+      "panel_handling": "single",
+      "target_region": "the complete sagittal upper-airway diagram, especially the highlighted space posterior to the pharynx",
+      "joint_images": false,
+      "primary_variant_id": "var_24a84994d0de",
+      "quiz_safe_variant_path": "variants/var_24a84994d0de.png",
+      "variants": [
+        {
+          "variant_id": "var_24a84994d0de",
+          "relative_path": "variants/var_24a84994d0de.png",
+          "sha256": "691b2f636b46ed902db918ec9ff758e07047c665477b2a2d995c0610df965558",
+          "pixel_width": 690,
+          "pixel_height": 572,
+          "transformation_recipe": {
+            "crop": [
+              5,
+              48,
+              695,
+              620
+            ],
+            "masks": [
+              [
+                495,
+                255,
+                685,
+                320
+              ]
+            ]
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which deep neck-space infection is represented by the highlighted collection?",
+        "case_context": "A young child has fever, neck stiffness, drooling, and painful swallowing after an upper-respiratory infection.",
+        "visual_target": "the complete sagittal upper-airway diagram, especially the highlighted space posterior to the pharynx",
+        "panel_handling": "single",
+        "joint_images": false,
+        "options": [
+          "Retropharyngeal abscess",
+          "Peritonsillar abscess",
+          "Acute epiglottitis",
+          "Laryngocele"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The collection is posterior to the pharynx",
+          "It lies anterior to the cervical vertebral bodies",
+          "The expanded deep neck space narrows the upper airway"
+        ],
+        "explanation": "A collection between the posterior pharyngeal wall and the prevertebral tissues occupies the retropharyngeal space and represents a retropharyngeal abscess.",
+        "choice_rationales": [
+          "A retropharyngeal abscess forms in the deep space immediately posterior to the pharynx and anterior to the cervical spine, matching the highlighted collection.",
+          "A peritonsillar abscess is centered lateral to the palatine tonsil in the oropharynx and displaces the uvula, not the posterior pharyngeal wall.",
+          "Epiglottitis causes swelling of the epiglottis and supraglottic tissues rather than a discrete posterior deep-neck-space collection.",
+          "A laryngocele is an air- or fluid-filled dilation of the laryngeal saccule that extends beside the larynx, not behind the pharynx."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_60c29f1353b4",
+      "source_group_id": "sg_e5073e2a40b8",
+      "source_id": "src_80b6767d705f",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "superior-vena-cava-syndrome-diagram.png",
+      "original_relative_path": "originals/superior-vena-cava-syndrome-diagram.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/superior-vena-cava-syndrome-diagram.png",
+      "source_sha256": "60c29f1353b4483c89e50b5835451b8aeb0be9fb59af4d7893f4e44969793a32",
+      "pixel_width": 520,
+      "pixel_height": 382,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "Diagram",
+      "organ_system": "Pulmonary",
+      "category": "Lung cancer complications",
+      "tested_condition_structure_finding": "Superior vena cava syndrome",
+      "canonical_correct_answer": "Superior vena cava syndrome",
+      "accepted_answers": [
+        "SVC syndrome",
+        "Superior vena caval obstruction"
+      ],
+      "ground_truth_basis": "The local teaching diagram depicts an intrathoracic mass obstructing central upper-body venous drainage together with facial, neck, and upper-chest edema and failure of arm veins to empty on elevation, the characteristic clinical pattern of superior vena cava syndrome.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "none",
+      "answer_revealing_text_removed": false,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "A central thoracic mass obstructs the major upper-body venous channel; the patient has edema and rubor of the face, neck, and upper chest with persistently distended arm veins on elevation.",
+      "what_student_should_recognize": "Superior vena cava syndrome",
+      "lecture_context": "P21 - Lung Cancer",
+      "source_document": "P21 - Lung Cancer",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture/P500 Superior Vena Cava Syndrome.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A patient with a central lung malignancy develops progressive facial swelling and dyspnea.",
+      "panel_handling": "retained_composite",
+      "target_region": "both parts of the complete diagram together: the thoracic obstruction and upper-body venous findings",
+      "joint_images": true,
+      "primary_variant_id": "var_identity_60c29f1353b4",
+      "quiz_safe_variant_path": "originals/superior-vena-cava-syndrome-diagram.png",
+      "variants": [
+        {
+          "variant_id": "var_identity_60c29f1353b4",
+          "relative_path": "originals/superior-vena-cava-syndrome-diagram.png",
+          "sha256": "60c29f1353b4483c89e50b5835451b8aeb0be9fb59af4d7893f4e44969793a32",
+          "pixel_width": 520,
+          "pixel_height": 382,
+          "transformation_recipe": {
+            "identity": true
+          },
+          "answer_revealing_text_removed": false,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which syndrome is represented by the intrathoracic obstruction and upper-body venous findings shown?",
+        "case_context": "A patient with a central lung malignancy develops progressive facial swelling and dyspnea.",
+        "visual_target": "both parts of the complete diagram together: the thoracic obstruction and upper-body venous findings",
+        "panel_handling": "retained_composite",
+        "joint_images": true,
+        "options": [
+          "Superior vena cava syndrome",
+          "Thoracic outlet syndrome",
+          "Constrictive pericarditis",
+          "Budd-Chiari syndrome"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "An intrathoracic mass compresses a central upper-body vein",
+          "Edema and rubor involve the face, neck, and upper chest",
+          "Arm veins fail to empty when elevated"
+        ],
+        "explanation": "Obstruction of superior vena caval flow causes venous hypertension in the head, neck, upper chest, and arms, producing the pattern shown.",
+        "choice_rationales": [
+          "Superior vena cava obstruction produces facial and upper-extremity venous congestion with distended veins that do not empty on arm elevation, matching the diagram.",
+          "Thoracic outlet syndrome usually affects one upper extremity through focal neurovascular compression and does not cause symmetric facial and neck edema.",
+          "Constrictive pericarditis causes systemic venous congestion with elevated jugular venous pressure, hepatomegaly, and edema rather than isolated upper-body obstruction by a thoracic mass.",
+          "Budd-Chiari syndrome obstructs hepatic venous outflow and presents with hepatomegaly, abdominal pain, and ascites, not facial and arm venous congestion."
+        ]
+      }
+    },
+    {
+      "asset_id": "asset_d7cf57a5c303",
+      "source_group_id": "sg_ab8016398535",
+      "source_id": "src_1203aba9ac08",
+      "active": true,
+      "status": "USABLE",
+      "manual_review_status": "VERIFIED",
+      "inclusion_status": "included",
+      "original_filename": "traumatic-hemothorax-cxr-ct.png",
+      "original_relative_path": "originals/traumatic-hemothorax-cxr-ct.png",
+      "original_image_path": "/Users/chriselwell/Desktop/Pulmonary Picture Quiz App/source-additions/originals/traumatic-hemothorax-cxr-ct.png",
+      "source_sha256": "d7cf57a5c303957e0979344da0351cf56d928f6aada18b24cb204ba5675a23ff",
+      "pixel_width": 661,
+      "pixel_height": 311,
+      "file_format": "png",
+      "media_type": "image/png",
+      "quality": "good",
+      "modality": "X-ray and CT",
+      "organ_system": "Pulmonary",
+      "category": "Thoracic trauma",
+      "tested_condition_structure_finding": "Traumatic hemothorax",
+      "canonical_correct_answer": "Traumatic hemothorax",
+      "accepted_answers": [
+        "Hemothorax",
+        "Right hemothorax"
+      ],
+      "ground_truth_basis": "The local teaching composite identifies traumatic hemothorax and pairs a supine chest radiograph with CT. The quiz crop removes the answer title and footer while preserving both complete diagnostic panels and the finding labels.",
+      "ground_truth_confidence": "high",
+      "answer_leakage_risk": "mitigated",
+      "answer_revealing_text_removed": true,
+      "answer_revealing_text_remaining": "",
+      "key_visual_findings": "The supine radiograph shows diffuse hazy opacity throughout the right hemithorax, while CT confirms a hyperattenuating right pleural collection compatible with acute blood.",
+      "what_student_should_recognize": "Traumatic hemothorax",
+      "lecture_context": "Pulm Pictures thoracic-trauma teaching collection",
+      "source_document": "Pulm Pictures thoracic-trauma teaching collection",
+      "source_type": "curated local pulmonary picture",
+      "source_aliases": [
+        "/Users/chriselwell/Desktop/Pulm/Pulm Pictures/Pulm Picture/Traumatic-Hemothorax.png"
+      ],
+      "landing_page_url": "",
+      "source_organization": "Pulmonary lecture picture collection",
+      "creator": "Course/local collection",
+      "displayed_license": "Local study use only; do not redistribute",
+      "license_url": "",
+      "rights_status": "local_only",
+      "trusted_reference_url": "",
+      "patient_identifiability": "none_visible",
+      "case_context": "A supine patient is imaged immediately after significant thoracic trauma.",
+      "panel_handling": "retained_composite",
+      "target_region": "both complete panels jointly: the supine chest radiograph and axial CT",
+      "joint_images": true,
+      "primary_variant_id": "var_e6dc8eb83012",
+      "quiz_safe_variant_path": "variants/var_e6dc8eb83012.png",
+      "variants": [
+        {
+          "variant_id": "var_e6dc8eb83012",
+          "relative_path": "variants/var_e6dc8eb83012.png",
+          "sha256": "ae74ba9adf60f84f74815829773ae6e55df5356bc30f321280dab0827f529f43",
+          "pixel_width": 651,
+          "pixel_height": 246,
+          "transformation_recipe": {
+            "crop": [
+              5,
+              48,
+              656,
+              294
+            ]
+          },
+          "answer_revealing_text_removed": true,
+          "medically_meaningful_pixels_altered": false
+        }
+      ],
+      "question_spec": {
+        "stem": "Which traumatic pleural diagnosis best unifies the radiographic and CT findings?",
+        "case_context": "A supine patient is imaged immediately after significant thoracic trauma.",
+        "visual_target": "both complete panels jointly: the supine chest radiograph and axial CT",
+        "panel_handling": "retained_composite",
+        "joint_images": true,
+        "options": [
+          "Traumatic hemothorax",
+          "Simple pleural effusion",
+          "Pulmonary contusion",
+          "Tension pneumothorax"
+        ],
+        "correct_index": 0,
+        "visual_clues": [
+          "The supine radiograph shows diffuse unilateral hazy hemithoracic opacity",
+          "CT localizes the abnormality to the pleural space",
+          "The pleural fluid is hyperattenuating, supporting acute blood"
+        ],
+        "explanation": "After thoracic trauma, diffuse unilateral opacity on a supine radiograph with hyperattenuating pleural fluid on CT indicates hemothorax.",
+        "choice_rationales": [
+          "Acute blood is hyperattenuating on CT and can layer posteriorly in a supine patient, producing diffuse unilateral hazy opacity on radiography.",
+          "A simple serous pleural effusion is lower attenuation on CT and lacks the trauma-linked hyperdense appearance shown here.",
+          "Pulmonary contusion is an intraparenchymal patchy ground-glass or consolidative opacity rather than a hyperattenuating pleural collection.",
+          "Tension pneumothorax produces pleural air, absent peripheral lung markings, and mass effect rather than pleural fluid and increased hemithoracic opacity."
         ]
       }
     },
@@ -3039,6 +4797,10 @@
       "rights_status": "local_only",
       "trusted_reference_url": "",
       "patient_identifiability": "none_visible",
+      "case_context": "An intubated premature newborn has persistent oxygen dependence and chronic respiratory difficulty after prolonged ventilatory support.",
+      "panel_handling": "single",
+      "target_region": "the complete AP chest radiograph, including both lung fields and all visible support devices",
+      "joint_images": false,
       "primary_variant_id": "var_identity_b3b01d4f5702",
       "quiz_safe_variant_path": "originals/bronchopulmonary-dysplasia-intubated-newborn-ap.jpg",
       "variants": [
@@ -3057,6 +4819,10 @@
       ],
       "question_spec": {
         "stem": "Identify the neonatal pulmonary disorder shown on this AP chest radiograph.",
+        "case_context": "An intubated premature newborn has persistent oxygen dependence and chronic respiratory difficulty after prolonged ventilatory support.",
+        "visual_target": "the complete AP chest radiograph, including both lung fields and all visible support devices",
+        "panel_handling": "single",
+        "joint_images": false,
         "options": [
           "Bronchopulmonary dysplasia",
           "Neonatal respiratory distress syndrome",
@@ -3086,8 +4852,8 @@
     "all_images_visually_reviewed": true,
     "all_questions_have_four_unique_options": true,
     "all_questions_have_four_aligned_rationales": true,
-    "scored_records": 36,
+    "scored_records": 51,
     "excluded_records": 0,
-    "validated_at": "2026-09-14T10:07:41-04:00"
+    "validated_at": "2026-09-14T20:39:36-04:00"
   }
 }

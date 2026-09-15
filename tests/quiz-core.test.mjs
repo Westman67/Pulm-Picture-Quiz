@@ -3,15 +3,20 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 import {
   PROGRESS_SCHEMA_VERSION,
+  QUALITY_FLAGS_SCHEMA_VERSION,
   applyAnswerToProgress,
   createSession,
+  emptyQualityFlags,
   emptyProgress,
   lockAnswer,
+  normalizeQualityFlags,
   normalizeProgress,
   prepareQuestion,
   rationaleVisible,
   scoreAnswers,
+  setQualityFlagStatus,
   toggleMarked,
+  upsertQualityFlag,
 } from "../src/quiz-core.mjs";
 
 const project = new URL("../", import.meta.url);
@@ -27,6 +32,8 @@ test("new bank uses schema version 2 and valid source lineage", () => {
   const sources = new Map(manifest.records.map((record) => [record.source_id, record]));
   for (const question of questions) {
     assert.equal(sources.get(question.source_id)?.status, "USABLE");
+    assert.equal(sources.get(question.source_id)?.source_origin, question.source_origin);
+    assert.ok(["lecture", "third_party"].includes(question.source_origin));
     assert.ok(question.source_group_id);
     assert.ok(question.variant_id);
   }
@@ -34,11 +41,28 @@ test("new bank uses schema version 2 and valid source lineage", () => {
 
 test("every question has four unique options and four nonempty aligned rationales", () => {
   for (const question of questions) {
+    assert.ok(question.stem?.trim(), question.question_id);
+    assert.ok(question.visual_target?.trim(), question.question_id);
+    assert.equal(typeof question.joint_images, "boolean", question.question_id);
     assert.equal(question.options.length, 4, question.question_id);
     assert.equal(new Set(question.options.map((x) => x.trim().toLowerCase())).size, 4, question.question_id);
     assert.equal(question.choice_rationales.length, 4, question.question_id);
     assert.ok(question.choice_rationales.every((x) => typeof x === "string" && x.trim()), question.question_id);
     assert.match(question.choice_rationales[question.correct_index], /^Correct:/, question.question_id);
+  }
+});
+
+test("stems identify a modality-specific visual task and jointly tested panels are explicit", () => {
+  const retiredGenericStems = new Set([
+    "Identify the pulmonary finding or diagnosis demonstrated in this image.",
+    "Identify the tissue, organism, pathologic process, or diagnosis shown.",
+    "Identify the structure, finding, or diagnosis demonstrated in this image.",
+    "Identify the physiologic pattern or interpretation demonstrated by this visual.",
+    "Identify the pulmonary finding, pattern, or procedure shown.",
+  ]);
+  for (const question of questions) {
+    assert.equal(retiredGenericStems.has(question.stem), false, question.question_id);
+    if (question.joint_images) assert.match(`${question.stem} ${question.visual_target}`, /together|both|joint/i, question.question_id);
   }
 });
 
@@ -81,6 +105,13 @@ test("session selection is deterministic and respects filters and requested leng
   assert.deepEqual(incorrect.questions.map((q) => q.question_id), [questions[0].question_id]);
   const marked = createSession(questions, { ...config, stateFilter: "marked", length: "all" }, progress, 1);
   assert.deepEqual(marked.questions.map((q) => q.question_id), [questions[1].question_id]);
+  const lecture = createSession(questions, { ...config, sourceOrigin: "lecture", length: "all" }, progress, 1);
+  const thirdParty = createSession(questions, { ...config, sourceOrigin: "third_party", length: "all" }, progress, 1);
+  assert.ok(lecture.questions.length > 0);
+  assert.ok(thirdParty.questions.length > 0);
+  assert.ok(lecture.questions.every((q) => q.source_origin === "lecture"));
+  assert.ok(thirdParty.questions.every((q) => q.source_origin === "third_party"));
+  assert.equal(lecture.questions.length + thirdParty.questions.length, questions.length);
 });
 
 test("session selection avoids adjacent source groups when alternatives exist", () => {
@@ -113,6 +144,20 @@ test("scoring and progress update question, source group, and concept", () => {
   assert.equal(updated.concepts[q1.tested_concept].correct_count, 1);
 });
 
+test("unanswered questions remain navigable and count separately in the final score", () => {
+  const q1 = prepareQuestion(questions[0], 8);
+  const q2 = prepareQuestion(questions[1], 8);
+  const answer = lockAnswer(q1, null, q1.correct_index);
+  const score = scoreAnswers([q1, q2], { [q1.question_id]: answer });
+  assert.equal(score.correct, 1);
+  assert.equal(score.incorrect, 0);
+  assert.equal(score.unanswered, 1);
+  assert.equal(score.answered, 1);
+  assert.equal(score.total, 2);
+  assert.equal(score.percentage, 50);
+  assert.equal(score.graded.length, 2);
+});
+
 test("progress schema, marking, import normalization, and reset are versioned", () => {
   const empty = emptyProgress();
   assert.equal(empty.schema_version, PROGRESS_SCHEMA_VERSION);
@@ -120,6 +165,32 @@ test("progress schema, marking, import normalization, and reset are versioned", 
   assert.deepEqual(marked.marked, [questions[0].question_id]);
   assert.deepEqual(toggleMarked(marked, questions[0].question_id).marked, []);
   assert.deepEqual(normalizeProgress({ schema_version: 999 }), emptyProgress());
+});
+
+test("photo-quality flags are versioned, updateable, and resolve without changing study progress", () => {
+  const empty = emptyQualityFlags();
+  assert.equal(empty.schema_version, QUALITY_FLAGS_SCHEMA_VERSION);
+  assert.deepEqual(normalizeQualityFlags({ schema_version: 999 }), emptyQualityFlags());
+  const question = questions[0];
+  const flagged = upsertQualityFlag(empty, {
+    question_id: question.question_id,
+    source_id: question.source_id,
+    variant_id: question.variant_id,
+    issue_type: "cropped-incomplete",
+    note: "Missing a border",
+  });
+  assert.equal(flagged.flags[question.question_id].status, "open");
+  assert.equal(flagged.flags[question.question_id].note, "Missing a border");
+  const updated = upsertQualityFlag(flagged, {
+    question_id: question.question_id,
+    issue_type: "blurry-low-quality",
+    note: "Use the sharper teaching original",
+  });
+  assert.equal(updated.flags[question.question_id].flag_id, flagged.flags[question.question_id].flag_id);
+  assert.equal(updated.flags[question.question_id].issue_type, "blurry-low-quality");
+  const resolved = setQualityFlagStatus(updated, question.question_id, "resolved");
+  assert.equal(resolved.flags[question.question_id].status, "resolved");
+  assert.equal("questions" in resolved, false);
 });
 
 test("rationales reveal only after Learn submission or Exam completion", () => {
@@ -147,4 +218,11 @@ test("learner-facing asset paths are opaque and alt text is neutral", async () =
   }
   const appSource = await readFile(new URL("src/app.js", project), "utf8");
   assert.match(appSource, /alt="quiz source image"/);
+  assert.match(appSource, /data-action="previous"/);
+  assert.match(appSource, /data-action="next"/);
+  assert.match(appSource, /state\.drafts\[currentQuestion\(\)\.question_id\]/);
+  assert.match(appSource, /Flag bad photo/);
+  assert.match(appSource, /pulmonary-picture-quality-flags/);
+  assert.match(appSource, /Picture source/);
+  assert.match(appSource, /sourceOrigin/);
 });

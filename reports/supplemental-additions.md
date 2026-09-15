@@ -4,18 +4,18 @@ Validated September 14, 2026 (America/New_York). The self-contained supplement i
 
 ## Counts
 
-- Scored supplemental sources: **37**
-- Distinct supplemental source groups: **37**
+- Scored supplemental sources: **51**
+- Distinct supplemental source groups: **51**
 - Exact SHA-256 duplicates against the RLS extractor manifest: **0**
-- Modalities: **{'Ultrasound': 5, 'Clinical Image': 7, 'X-ray': 9, 'Flow-Volume Loop': 4, 'Echocardiography': 1, 'EKG': 1, 'X-ray and CT': 1, 'Diagram': 1, 'Histology': 1, 'Histopathology': 2, 'Cytology': 2, 'Microscopy': 2, 'Gross pathology': 1}**
+- Modalities: **{'X-ray': 14, 'Ultrasound': 6, 'Clinical Image': 7, 'CT': 5, 'Flow-Volume Loop': 4, 'Diagram': 3, 'Histopathology': 2, 'Cytology': 2, 'Microscopy': 2, 'X-ray and CT': 2, 'Echocardiography': 1, 'EKG': 1, 'Gross pathology': 1, 'Histology': 1}**
 - Openly licensed/public-domain web sources: **15**
-- Local/user-supplied sources: **22**
-- Reproducibly cropped or masked quiz variants: **6**
+- Local/user-supplied sources: **36**
+- Reproducibly cropped or masked quiz variants: **15**
 - Reproducible fixed frames extracted from licensed videos: **2**
 
 ## Safety and review
 
-- Every displayed supplemental asset was visually inspected, including the six final Pulm Pictures gap additions.
+- Every displayed supplemental asset was visually inspected, including all fifteen additions from the full Pulm Pictures comparison.
 - The 41 lecture picture manifests contributed 660 assignments representing 413 exact-hash-unique curated images; all 413 were reviewed on 12 contact sheets.
 - Fixed lung-ultrasound frames preserve the original pixels, orientation, depth scale, and machine overlays; the source-video hash and exact frame time are retained.
 - Flow-volume loops preserve axes, volume direction, curve relationships, and plotted pixels.
@@ -64,8 +64,22 @@ Validated September 14, 2026 (America/New_York). The self-contained supplement i
 | src_73c4f1d588cf | Clinical Image | Oral candidiasis associated with inhaled corticosteroid use | Local study use only; do not redistribute |
 | src_502d39947bf6 | Gross pathology | Asbestos-related fibrous pleural plaques | Local study use only; do not redistribute |
 | src_fdfb0e719846 | Histopathology | Coccidioides spherule containing endospores | Local study use only; do not redistribute |
+| src_f54f9aaba8d3 | X-ray | Acute epiglottitis with a thumb sign | Local study use only; do not redistribute |
+| src_cc3113ff03a1 | Ultrasound | Acute deep venous thrombosis | Local study use only; do not redistribute |
+| src_e3e49c513b78 | CT | Saddle pulmonary embolism | Local study use only; do not redistribute |
+| src_f10dc0ed3c54 | X-ray | Pancoast tumor with chest-wall extension | Local study use only; do not redistribute |
+| src_af562cd4c3c0 | X-ray | Left diaphragmatic rupture with bowel herniation | Local study use only; do not redistribute |
+| src_05dd5b5c1bb8 | CT | Pulmonary contusion | Local study use only; do not redistribute |
+| src_b18ecdbebbf7 | X-ray | Transient tachypnea of the newborn | Local study use only; do not redistribute |
+| src_36c0d08aff1a | CT | Split pleura sign of empyema | Local study use only; do not redistribute |
+| src_9ae5caa403ec | X-ray | Westermark sign | Local study use only; do not redistribute |
+| src_1a9b3bbc92d7 | CT | Nonspecific interstitial pneumonia pattern | Local study use only; do not redistribute |
+| src_ae47a756de82 | CT | Tree-in-bud pattern | Local study use only; do not redistribute |
+| src_532a1d1b0074 | Histopathology | Pneumocystis jirovecii pneumonia | Local study use only; do not redistribute |
+| src_e05b438bc25b | Diagram | Retropharyngeal abscess | Local study use only; do not redistribute |
+| src_80b6767d705f | Diagram | Superior vena cava syndrome | Local study use only; do not redistribute |
+| src_1203aba9ac08 | X-ray and CT | Traumatic hemothorax | Local study use only; do not redistribute |
 | src_52ea07463a3a | X-ray | Bronchopulmonary dysplasia | Local study use only; do not redistribute |
-| src_f402e786835c | Histopathology | Acute exudative phase of diffuse alveolar damage (ARDS) | Local study use only; do not redistribute |
 
 ## Source integrity
 
@@ -75,4 +89,4 @@ Validated September 14, 2026 (America/New_York). The self-contained supplement i
 
 ## Review-item promotions
 
-Six additional user-approved RLS review sources were copied into the app-local supplemental library and converted to reproducible quiz-safe variants. Effective scored supplemental records are now **43** (37 base additions + 6 promotions). See `review-promotions.md`.
+Six additional user-approved RLS review sources were copied into the app-local supplemental library and converted to reproducible quiz-safe variants. Effective scored supplemental records are now **57** (51 base additions + 6 promotions). See `review-promotions.md`.

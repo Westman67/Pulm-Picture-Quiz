@@ -4,7 +4,7 @@ An offline-capable, local browser application for pulmonary image-identification
 upstream Picture Quiz library is read-only; this project contains separate, metadata-stripped display
 derivatives and a schema-version-2 question bank.
 
-The completed bank contains **262 scored questions**. Forty-three are supplemental pulmonary-picture
+The completed bank contains **276 scored questions**. Fifty-seven are supplemental pulmonary-picture
 questions added from a separate, versioned source library; the original RLS and Pulm Pictures
 collections were not modified.
 
@@ -13,8 +13,12 @@ collections were not modified.
 - Learn Mode with immediate feedback, visual clues, and four option-specific rationales
 - Exam Mode with deferred scoring and rationales
 - category, unseen, incorrect, marked, and mixed filters
+- picture-source filtering for the 225 lecture questions or 51 third-party Pulm Pictures additions
 - lengths 10, 20, 40, all available, and endless practice
-- keyboard controls: `1`–`4`, `Enter`, and `Z`
+- persistent Back/Next navigation with unanswered skipping and restored draft/locked state
+- an in-quiz **Flag bad photo** form with quick issue categories and an optional note
+- a separate local photo-fix queue with open/fixed status, stable source IDs, and JSON export
+- keyboard controls: `1`–`4`, `Enter`, `Z`, `←`, and `→`
 - zoom, pan, reset, and teaching-original toggle
 - source-group/concept-aware local progress with export/import/reset
 - empty manual-review queue; 13 review-only items were removed and 6 were promoted with safe variants
@@ -48,14 +52,16 @@ supplemental library from `source-additions/`. It never writes into the canonica
 
 ```bash
 python3 scripts/generate_bank.py
-python3 "$HOME/.codex/skills/build-medical-picture-quiz/scripts/validate_bank.py" \
-  data/source-manifest.json data/question-bank.json
-node --test tests/*.test.mjs
-node scripts/build.mjs
+npm test
+npm run build
 ```
 
 The generator requires Python 3 and Pillow. The application and tests use no third-party JavaScript
 dependencies.
+
+`npm test` runs the project-local fail-closed bank and image validator before the unit suite. The
+optional `npm run test:visual` command requires the local server to be running and exercises desktop,
+mobile, Learn/Exam, skip/Back restoration, and the newly added questions in headless Chrome.
 
 ## Data and privacy
 
@@ -65,13 +71,15 @@ dependencies.
 - Openly licensed supplemental images show creator, license, and verified landing-page attribution
   only after feedback becomes available.
 - Learner progress remains in browser `localStorage` unless explicitly exported.
+- Photo-quality flags are stored separately from study marks and quiz progress; resetting progress does
+  not erase them. Use **Review & flags** to mark fixes complete, reopen them, or export the queue.
 - Client-side answer hiding is an interface safeguard, not cryptographic secrecy.
 - Third-party educational images must remain local and must not be redistributed.
 
 ## Project outputs
 
 - `reports/preflight-audit.md` and `reports/source-audit.json`
-- `reports/supplemental-additions.md`, `reports/pulm-pictures-audit/`, and `reports/review-queue/`
+- `reports/supplemental-additions.md`, `reports/pulm-pictures-audit/`, `reports/pulm-pictures-full-comparison-2026-09-14/`, and `reports/review-queue/`
 - `data/source-manifest.json`
 - `data/question-bank.json`
 - `data/review-queue.json`

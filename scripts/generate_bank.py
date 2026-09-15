@@ -75,6 +75,13 @@ def clean(value: object) -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()
 
 
+def source_origin(record: dict, supplemental: bool = False) -> str:
+    """Classify canonical lecture extractions separately from Pulm Pictures additions."""
+    if supplemental and not clean(record.get("upstream_source_id")):
+        return "third_party"
+    return "lecture"
+
+
 def short_sentence(value: object, limit: int = 260) -> str:
     text = clean(value)
     if not text:
@@ -126,22 +133,47 @@ def topic_cluster(record: dict) -> str:
     return modality_family(clean(record.get("modality")))
 
 
+def panel_scope(record: dict) -> str:
+    handling = clean(record.get("panel_handling")).casefold()
+    if record.get("joint_images") or handling in {"retained_composite", "split"}:
+        return "all displayed panels together"
+    if handling == "isolated_panel":
+        return "the complete isolated panel"
+    return "the complete displayed image"
+
+
 def stem_for(record: dict) -> str:
+    """Write a modality-specific prompt and explicitly state when panels are tested jointly."""
     modality = clean(record.get("modality")).casefold()
     category = clean(record.get("category")).casefold()
+    scope = panel_scope(record)
+    if "flow-volume" in modality:
+        return f"Which ventilatory pattern is represented by the inspiratory and expiratory limbs in {scope}?"
+    if modality in {"graph", "tracing"}:
+        return f"Which physiologic interpretation matches the plotted axes and curve relationships in {scope}?"
+    if modality == "ekg":
+        return f"Which cardiopulmonary diagnosis is supported by the rhythm, axis, and waveform pattern in {scope}?"
+    if "ultrasound" in modality or "echo" in modality:
+        return f"Which diagnosis or named sign is supported by the sonographic pattern in {scope}?"
+    if "nuclear" in modality:
+        return f"Which diagnosis is supported by the regional ventilation–perfusion pattern in {scope}?"
+    if any(x in modality for x in ("x-ray", "ct", "mri", "angiograph")):
+        if record.get("joint_images") or clean(record.get("panel_handling")).casefold() in {"retained_composite", "split"}:
+            return f"Considering {scope}, which diagnosis best explains the combined imaging findings?"
+        return f"Which diagnosis best explains the dominant radiographic pattern in {scope}?"
+    if any(x in modality for x in ("hist", "micro", "cytology")):
+        return f"Which diagnosis is supported by the dominant cellular or tissue morphology in {scope}?"
+    if "gross" in modality:
+        return f"Which diagnosis is supported by the dominant gross morphologic change in {scope}?"
     if modality == "clinical image":
         if "equipment" in category:
-            return "Identify the pulmonary examination instrument shown in this image."
-        return "Identify the physical or endoscopic finding shown in this clinical image."
-    family = modality_family(clean(record.get("modality")))
-    return {
-        "imaging": "Identify the pulmonary finding or diagnosis demonstrated in this image.",
-        "microscopy": "Identify the tissue, organism, pathologic process, or diagnosis shown.",
-        "tracing": "Identify the physiologic pattern or interpretation demonstrated by this visual.",
-        "gross-clinical": "Identify the structure, finding, or diagnosis demonstrated in this image.",
-        "diagram": "Identify the structure, process, or pattern demonstrated by this visual.",
-        "other": "Identify the pulmonary finding or pattern demonstrated in this image.",
-    }[family]
+            return f"Which pulmonary examination instrument is shown in {scope}?"
+        if "procedure" in category:
+            return f"Which pulmonary procedure is being performed in {scope}?"
+        return f"Which diagnosis or named physical finding is demonstrated by the visible abnormality in {scope}?"
+    if "diagram" in modality or modality == "map":
+        return f"Which named pulmonary structure or process is represented by the labeled relationships in {scope}?"
+    return f"Which named pulmonary diagnosis or finding best matches the visible pattern in {scope}?"
 
 
 def visual_clues(record: dict) -> list[str]:
@@ -348,13 +380,10 @@ def main() -> None:
         for index, item in enumerate(option_records):
             if item["correct"]:
                 correct_index = index
-                rationales.append(f"Correct: the displayed image shows {correct_clue}. This supports {correct_answer}.")
+                rationales.append(f"Correct: {correct_clue}; this is characteristic of {correct_answer}.")
             else:
                 expected = short_sentence(item["record"].get("key_visual_findings"), 190)
-                rationales.append(
-                    f"{item['answer']} would be better supported by {expected}; that pattern is not dominant here. "
-                    f"Instead, this image shows {correct_clue}."
-                )
+                rationales.append(f"{item['answer']} typically shows {expected}, whereas this image shows {correct_clue}.")
 
         qhash = hashlib.sha256((record["source_id"] + ":identification:v2").encode()).hexdigest()[:12]
         clues = visual_clues(record)
@@ -366,6 +395,10 @@ def main() -> None:
             "question_type": "Identification",
             "tested_concept": correct_answer,
             "stem": stem_for(record),
+            "case_context": clean(record.get("case_context")),
+            "visual_target": panel_scope(record),
+            "panel_handling": clean(record.get("panel_handling")) or "single",
+            "joint_images": bool(record.get("joint_images")) or clean(record.get("panel_handling")).casefold() in {"retained_composite", "split"},
             "options": options,
             "correct_index": correct_index,
             "accepted_terminology": record.get("accepted_answers") or [],
@@ -378,6 +411,7 @@ def main() -> None:
             "modality": clean(record.get("modality")),
             "organ_system": "Pulmonary",
             "topic_cluster": topic_cluster(record),
+            "source_origin": source_origin(record),
             "quiz_asset": quiz_path,
             "original_asset": original_path,
             "post_answer_source": {
@@ -428,7 +462,11 @@ def main() -> None:
             "variant_id": variant_id,
             "question_type": "Identification",
             "tested_concept": answer,
-            "stem": clean(spec.get("stem")),
+            "stem": clean(spec.get("stem")) or stem_for(record),
+            "case_context": clean(spec.get("case_context")) or clean(record.get("case_context")),
+            "visual_target": clean(spec.get("visual_target")) or clean(record.get("target_region")) or panel_scope(record),
+            "panel_handling": clean(spec.get("panel_handling")) or clean(record.get("panel_handling")) or "single",
+            "joint_images": bool(spec.get("joint_images")) or bool(record.get("joint_images")),
             "options": options,
             "correct_index": correct_index,
             "accepted_terminology": record.get("accepted_answers") or [],
@@ -441,6 +479,7 @@ def main() -> None:
             "modality": clean(record.get("modality")),
             "organ_system": "Pulmonary",
             "topic_cluster": topic_cluster(record),
+            "source_origin": source_origin(record, supplemental=True),
             "quiz_asset": quiz_path,
             "original_asset": original_path,
             "post_answer_source": {
@@ -524,9 +563,11 @@ def main() -> None:
     }
     projected["records"].extend(copy.deepcopy(supplement_records))
     selected_ids = {q["source_id"] for q in questions}
+    third_party_ids = {clean(r.get("source_id")) for r in supplement_payload.get("records", [])}
     duplicate_ids = {r["source_id"] for r in concept_duplicates}
     for record in projected["records"]:
         sid = record.get("source_id")
+        record["source_origin"] = "third_party" if sid in third_party_ids else "lecture"
         active = record.get("active", True) and record.get("status") == "USABLE"
         promoted_original = sid in promoted_upstream_ids
         removed_from_app = sid in REMOVED_FROM_APP
@@ -558,10 +599,15 @@ def main() -> None:
         elif sid in duplicate_ids:
             record["builder_exclusion_reason"] = "Duplicate modality/answer concept retained upstream but not repeated in the initial scored bank."
 
-    (PROJECT / "data" / "question-bank.json").write_text(json.dumps(bank, indent=2, ensure_ascii=False), encoding="utf-8")
-    (PROJECT / "data" / "review-queue.json").write_text(json.dumps(review_queue, indent=2, ensure_ascii=False), encoding="utf-8")
-    (PROJECT / "data" / "source-manifest.json").write_text(json.dumps(projected, indent=2, ensure_ascii=False), encoding="utf-8")
-    (PROJECT / "data" / "asset-map.json").write_text(json.dumps(asset_map, indent=2), encoding="utf-8")
+    generated_payloads = {
+        "question-bank.json": json.dumps(bank, indent=2, ensure_ascii=False),
+        "review-queue.json": json.dumps(review_queue, indent=2, ensure_ascii=False),
+        "source-manifest.json": json.dumps(projected, indent=2, ensure_ascii=False),
+        "asset-map.json": json.dumps(asset_map, indent=2),
+    }
+    for filename, serialized in generated_payloads.items():
+        (PROJECT / "data" / filename).write_text(serialized, encoding="utf-8")
+        (PROJECT / filename).write_text(serialized, encoding="utf-8")
 
     status_counts = Counter(r.get("status") for r in records if r.get("active", True))
     modality_counts = Counter(q["modality"] for q in questions)

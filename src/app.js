@@ -1,13 +1,18 @@
 import {
+  QUALITY_FLAGS_STORAGE_KEY,
   STORAGE_KEY,
   applyAnswerToProgress,
   createSession,
+  emptyQualityFlags,
   emptyProgress,
   lockAnswer,
+  normalizeQualityFlags,
   normalizeProgress,
   rationaleVisible,
   scoreAnswers,
+  setQualityFlagStatus,
   toggleMarked,
+  upsertQualityFlag,
 } from "./quiz-core.mjs";
 
 const app = document.querySelector("#app");
@@ -15,15 +20,33 @@ const state = {
   bank: null,
   reviewQueue: null,
   progress: loadProgress(),
+  qualityFlags: loadQualityFlags(),
   view: "home",
   session: null,
   position: 0,
-  selectedIndex: null,
+  drafts: {},
   answers: {},
   examComplete: false,
+  flaggingQuestionId: null,
   showingOriginal: false,
   zoom: { scale: 1, x: 0, y: 0 },
   drag: null,
+};
+
+const QUALITY_FLAG_REASONS = {
+  "cropped-incomplete": "Cropped or incomplete",
+  "blurry-low-quality": "Blurry or low quality",
+  "distorted-orientation": "Distorted or wrong orientation",
+  "answer-visible": "Answer visible in image",
+  "wrong-image-answer": "Wrong image or answer",
+  "irrelevant-content": "Irrelevant content included",
+  "context-stem": "Context or stem problem",
+  other: "Other photo issue",
+};
+
+const SOURCE_ORIGIN_LABELS = {
+  lecture: "Lecture",
+  third_party: "Third party",
 };
 
 function loadProgress() {
@@ -36,6 +59,18 @@ function loadProgress() {
 
 function saveProgress() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state.progress));
+}
+
+function loadQualityFlags() {
+  try {
+    return normalizeQualityFlags(JSON.parse(localStorage.getItem(QUALITY_FLAGS_STORAGE_KEY) || "null"));
+  } catch {
+    return emptyQualityFlags();
+  }
+}
+
+function saveQualityFlags() {
+  localStorage.setItem(QUALITY_FLAGS_STORAGE_KEY, JSON.stringify(state.qualityFlags));
 }
 
 function escapeHtml(value) {
@@ -56,14 +91,29 @@ function currentAnswer() {
   return question ? state.answers[question.question_id] : null;
 }
 
+function currentSelection() {
+  const question = currentQuestion();
+  if (!question) return null;
+  const answer = currentAnswer();
+  return answer?.locked ? answer.selected_index : (state.drafts[question.question_id] ?? null);
+}
+
+function currentQualityFlag() {
+  const question = currentQuestion();
+  return question ? state.qualityFlags.flags[question.question_id] || null : null;
+}
+
 function setView(view) {
   state.view = view;
+  state.flaggingQuestionId = null;
   state.showingOriginal = false;
   resetZoom();
   render();
 }
 
 function header() {
+  const openFlagCount = Object.values(state.qualityFlags.flags).filter((flag) => flag.status !== "resolved").length;
+  const reviewCount = (state.reviewQueue?.count || 0) + openFlagCount;
   return `
     <header class="app-header">
       <button class="brand" data-action="home" aria-label="Return to dashboard">
@@ -72,23 +122,28 @@ function header() {
       </button>
       <nav aria-label="Primary navigation">
         <button class="nav-button ${state.view === "home" ? "active" : ""}" data-action="home">Dashboard</button>
-        <button class="nav-button ${state.view === "review" ? "active" : ""}" data-action="review">Review queue <span>${state.reviewQueue?.count || 0}</span></button>
+        <button class="nav-button ${state.view === "review" ? "active" : ""}" data-action="review">Review & flags <span>${reviewCount}</span></button>
       </nav>
     </header>`;
 }
 
 function homeView() {
   const categories = [...new Set(state.bank.questions.map((q) => q.category))].sort();
+  const sourceOriginCounts = state.bank.questions.reduce((counts, question) => {
+    counts[question.source_origin] = (counts[question.source_origin] || 0) + 1;
+    return counts;
+  }, {});
   const answered = Object.values(state.progress.questions).filter((p) => p.times_answered).length;
   const totalCorrect = Object.values(state.progress.questions).reduce((sum, p) => sum + (p.correct_count || 0), 0);
   const totalAnswered = Object.values(state.progress.questions).reduce((sum, p) => sum + (p.times_answered || 0), 0);
+  const openFlagCount = Object.values(state.qualityFlags.flags).filter((flag) => flag.status !== "resolved").length;
   return `
     <main class="dashboard shell">
       <section class="hero">
         <div>
           <p class="eyebrow">Pulmonary visual recognition</p>
           <h1>See it. Name it. Know why.</h1>
-          <p class="hero-copy">A local, image-identification practical built from ${state.bank.question_count} lecture-verified pulmonary sources.</p>
+          <p class="hero-copy">A local, image-identification practical built from ${state.bank.question_count} verified pulmonary sources.</p>
         </div>
         <div class="hero-stat"><strong>${answered}</strong><span>concepts seen</span><small>${totalAnswered ? Math.round(totalCorrect / totalAnswered * 100) : 0}% cumulative accuracy</small></div>
       </section>
@@ -104,6 +159,7 @@ function homeView() {
 
           <div class="form-row">
             <label>Category<select name="category"><option value="all">Mixed — all categories</option>${categories.map((c) => `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join("")}</select></label>
+            <label>Picture source<select name="sourceOrigin"><option value="all">All picture sources (${state.bank.question_count})</option><option value="lecture">Lecture (${sourceOriginCounts.lecture || 0})</option><option value="third_party">Third party (${sourceOriginCounts.third_party || 0})</option></select></label>
             <label>Question state<select name="stateFilter"><option value="all">All available</option><option value="unseen">Unseen only</option><option value="incorrect">Previously incorrect</option><option value="marked">Marked for review</option></select></label>
           </div>
 
@@ -116,7 +172,7 @@ function homeView() {
         </form>
 
         <aside class="dashboard-side">
-          <section class="panel mini-stats"><div><span>Bank</span><strong>${state.bank.question_count}</strong><small>scored visual IDs</small></div><div><span>Review</span><strong>${state.reviewQueue.count}</strong><small>withheld candidates</small></div><div><span>Storage</span><strong>Local</strong><small>no uploads</small></div></section>
+          <section class="panel mini-stats"><div><span>Bank</span><strong>${state.bank.question_count}</strong><small>scored visual IDs</small></div><div><span>Source review</span><strong>${state.reviewQueue.count}</strong><small>withheld candidates</small></div><div><span>Photo flags</span><strong>${openFlagCount}</strong><small>open fixes</small></div><div><span>Storage</span><strong>Local</strong><small>no uploads</small></div></section>
           <section class="panel data-panel"><p class="eyebrow">Learner data</p><h3>Portable progress</h3><p>Export a versioned backup or import it on another browser.</p><div class="button-row"><button data-action="export" class="secondary">Export</button><label class="secondary file-label">Import<input id="import-file" type="file" accept="application/json"></label><button data-action="reset-progress" class="danger-ghost">Reset</button></div></section>
           <section class="safety-note"><strong>Image safety</strong><p>Quiz assets use opaque filenames and preserve diagnostic pixels. Client-side answers are not cryptographically secret.</p></section>
         </aside>
@@ -133,14 +189,21 @@ function quizView() {
   const marked = state.progress.marked.includes(question.question_id);
   const imageSrc = state.showingOriginal && reveal ? question.original_asset : question.quiz_asset;
   const progressLabel = state.session.endless ? `Endless · ${state.position + 1}` : `${state.position + 1} / ${state.session.questions.length}`;
+  const answeredCount = Object.values(state.answers).filter((item) => item?.locked).length;
+  const isLast = state.position === state.session.questions.length - 1 && !state.session.endless;
+  const selectedIndex = currentSelection();
+  const qualityFlag = currentQualityFlag();
   return `
     <main class="quiz-shell shell">
       <section class="quiz-topbar">
-        <div><span class="mode-badge ${state.session.mode}">${state.session.mode === "learn" ? "Learn mode" : "Exam mode"}</span><span class="category-label">${escapeHtml(question.category)} · ${escapeHtml(question.modality)}</span></div>
+        <div><span class="mode-badge ${state.session.mode}">${state.session.mode === "learn" ? "Learn mode" : "Exam mode"}</span><span class="category-label">${escapeHtml(question.category)} · ${escapeHtml(question.modality)} · ${escapeHtml(SOURCE_ORIGIN_LABELS[question.source_origin] || question.source_origin)}</span></div>
         <strong>${progressLabel}</strong>
-        <button class="mark-button ${marked ? "marked" : ""}" data-action="mark">${marked ? "★ Marked" : "☆ Mark for review"}</button>
+        <div class="quiz-topbar-actions">
+          <button class="mark-button ${marked ? "marked" : ""}" data-action="mark">${marked ? "★ Marked" : "☆ Mark for study"}</button>
+          <button class="flag-button ${qualityFlag?.status === "open" ? "flagged" : ""}" data-action="toggle-flag" aria-pressed="${state.flaggingQuestionId === question.question_id}">${qualityFlag?.status === "open" ? "⚑ Photo flagged" : "⚐ Flag bad photo"}</button>
+        </div>
       </section>
-      <div class="progress-track"><span style="width:${state.session.endless ? 100 : ((state.position + (submitted ? 1 : 0)) / state.session.questions.length * 100)}%"></span></div>
+      <div class="progress-track" aria-label="${answeredCount} of ${state.session.questions.length} answers locked"><span style="width:${state.session.endless ? 100 : (answeredCount / state.session.questions.length * 100)}%"></span></div>
 
       <section class="quiz-grid">
         <div class="image-panel panel">
@@ -152,14 +215,22 @@ function quizView() {
         </div>
 
         <div class="question-panel">
-          <div class="question-heading"><p class="eyebrow">Identification</p><h1>${escapeHtml(question.stem)}</h1></div>
+          <div class="question-heading">
+            <p class="eyebrow">Identification</p>
+            ${question.case_context ? `<p class="case-context">${escapeHtml(question.case_context)}</p>` : ""}
+            <h1>${escapeHtml(question.stem)}</h1>
+            <p class="visual-target"><strong>Visual target:</strong> ${escapeHtml(question.visual_target || "the complete displayed image")}${question.joint_images ? " · panels tested jointly" : ""}</p>
+          </div>
+          ${qualityFlagTemplate(question, qualityFlag)}
           <div class="choices" role="radiogroup" aria-label="Answer choices">
             ${question.options.map((option, index) => choiceTemplate(question, option, index, answer, reveal)).join("")}
           </div>
           <div id="answer-error" class="inline-error" role="alert"></div>
           ${feedbackTemplate(question, answer, reveal)}
           <div class="quiz-actions">
-            ${!submitted ? `<button class="primary" data-action="submit">Lock answer <kbd>Enter</kbd></button>` : `<button class="primary" data-action="next">${state.position === state.session.questions.length - 1 && !state.session.endless ? (state.session.mode === "exam" ? "Finish exam" : "View summary") : "Next image"} <kbd>Enter</kbd></button>`}
+            <button class="secondary nav-control" data-action="previous" ${state.position === 0 ? "disabled" : ""}>← Back</button>
+            ${!submitted ? `<button class="secondary lock-control" data-action="submit" ${selectedIndex === null ? "disabled" : ""}>Lock answer <kbd>Enter</kbd></button>` : `<span class="locked-status">Answer locked</span>`}
+            <button class="primary nav-control" data-action="next">${isLast ? (state.session.mode === "exam" ? "Finish exam" : "View summary") : "Next →"}</button>
             ${reveal && question.original_asset !== question.quiz_asset ? `<button class="secondary" data-action="toggle-original">${state.showingOriginal ? "Show quiz crop" : "Show teaching original"}</button>` : ""}
           </div>
         </div>
@@ -167,8 +238,27 @@ function quizView() {
     </main>`;
 }
 
+function qualityFlagTemplate(question, existing) {
+  if (state.flaggingQuestionId !== question.question_id) return "";
+  const selectedReason = existing?.issue_type || "";
+  return `<form id="quality-flag-form" class="quality-flag-form panel">
+    <div><p class="eyebrow">Photo quality flag</p><h2>${existing ? "Update this flag" : "Send this photo for fixing"}</h2><p>Stored locally with the question, source, variant, and image IDs. It will not change your quiz score.</p></div>
+    <label>Issue type
+      <select name="issueType" required>
+        <option value="">Choose an issue…</option>
+        ${Object.entries(QUALITY_FLAG_REASONS).map(([value, label]) => `<option value="${value}" ${selectedReason === value ? "selected" : ""}>${escapeHtml(label)}</option>`).join("")}
+      </select>
+    </label>
+    <label>Optional note
+      <textarea name="note" maxlength="500" placeholder="What should be fixed?">${escapeHtml(existing?.note || "")}</textarea>
+    </label>
+    <p class="flag-error inline-error" role="alert"></p>
+    <div class="button-row"><button class="flag-save" type="submit">Save photo flag</button><button class="secondary" type="button" data-action="cancel-flag">Cancel</button></div>
+  </form>`;
+}
+
 function choiceTemplate(question, option, index, answer, reveal) {
-  const selected = state.selectedIndex === index || answer?.selected_index === index;
+  const selected = currentSelection() === index;
   const correct = reveal && index === question.correct_index;
   const incorrect = reveal && answer?.selected_index === index && !answer.correct;
   const classes = ["choice", selected ? "selected" : "", correct ? "correct" : "", incorrect ? "incorrect" : ""].filter(Boolean).join(" ");
@@ -203,9 +293,9 @@ function feedbackTemplate(question, answer, reveal) {
 function resultsView() {
   const score = scoreAnswers(state.session.questions, state.answers);
   const marked = new Set(state.progress.marked);
-  const review = score.graded.filter(({ question, answer }) => !answer.correct || marked.has(question.question_id));
+  const review = score.graded.filter(({ question, answer }) => !answer?.correct || marked.has(question.question_id));
   return `<main class="results shell">
-    <section class="results-hero"><div class="score-ring" style="--score:${score.percentage * 3.6}deg"><div><strong>${score.percentage}%</strong><span>${score.correct} / ${score.total}</span></div></div><div><p class="eyebrow">Session complete</p><h1>${score.percentage >= 80 ? "Sharp recognition." : "Review the misses, then run it again."}</h1><p>${score.correct} correct · ${score.incorrect} incorrect · ${marked.size} marked overall</p><div class="button-row"><button class="primary" data-action="retry-missed" ${score.incorrect ? "" : "disabled"}>Retry missed</button><button class="secondary" data-action="home">New session</button></div></div></section>
+    <section class="results-hero"><div class="score-ring" style="--score:${score.percentage * 3.6}deg"><div><strong>${score.percentage}%</strong><span>${score.correct} / ${score.total}</span></div></div><div><p class="eyebrow">Session complete</p><h1>${score.percentage >= 80 ? "Sharp recognition." : "Review the misses, then run it again."}</h1><p>${score.correct} correct · ${score.incorrect} incorrect · ${score.unanswered} unanswered · ${marked.size} marked overall</p><div class="button-row"><button class="primary" data-action="retry-missed" ${score.incorrect + score.unanswered ? "" : "disabled"}>Retry missed</button><button class="secondary" data-action="home">New session</button></div></div></section>
     <section class="results-grid">
       <div class="panel"><h2>Performance by category</h2><div class="category-results">${Object.entries(score.byCategory).sort().map(([name, value]) => `<div><span>${escapeHtml(name)}</span><div class="mini-track"><i style="width:${Math.round(value.correct / value.total * 100)}%"></i></div><strong>${value.correct}/${value.total}</strong></div>`).join("")}</div></div>
       <div class="panel"><h2>Review (${review.length})</h2>${review.length ? review.map(resultReviewCard).join("") : '<p class="empty-copy">No missed or marked questions in this session.</p>'}</div>
@@ -214,14 +304,40 @@ function resultsView() {
 }
 
 function resultReviewCard({ question, answer }) {
-  return `<details class="result-card"><summary><img src="${escapeHtml(question.quiz_asset)}" alt="quiz source image"><span><small>${escapeHtml(question.category)}</small><strong>${escapeHtml(question.tested_concept)}</strong><em class="${answer.correct ? "good" : "bad"}">${answer.correct ? "Correct" : "Incorrect"}</em></span></summary><div><p>${escapeHtml(question.explanation)}</p><div class="rationale-list">${question.options.map((option, i) => `<article class="rationale ${i === question.correct_index ? "keyed" : ""} ${i === answer.selected_index ? "selected-rationale" : ""}"><div><span>${i + 1}</span><strong>${escapeHtml(option)}</strong>${i === question.correct_index ? "<em>Keyed</em>" : ""}${i === answer.selected_index ? "<em>Your choice</em>" : ""}</div><p>${escapeHtml(question.choice_rationales[i])}</p></article>`).join("")}</div>${sourceDetailsTemplate(question)}</div></details>`;
+  const status = answer?.correct ? "Correct" : answer?.locked ? "Incorrect" : "Unanswered";
+  return `<details class="result-card"><summary><img src="${escapeHtml(question.quiz_asset)}" alt="quiz source image"><span><small>${escapeHtml(question.category)}</small><strong>${escapeHtml(question.tested_concept)}</strong><em class="${answer?.correct ? "good" : "bad"}">${status}</em></span></summary><div><p>${escapeHtml(question.explanation)}</p><div class="rationale-list">${question.options.map((option, i) => `<article class="rationale ${i === question.correct_index ? "keyed" : ""} ${i === answer?.selected_index ? "selected-rationale" : ""}"><div><span>${i + 1}</span><strong>${escapeHtml(option)}</strong>${i === question.correct_index ? "<em>Keyed</em>" : ""}${i === answer?.selected_index ? "<em>Your choice</em>" : ""}</div><p>${escapeHtml(question.choice_rationales[i])}</p></article>`).join("")}</div>${sourceDetailsTemplate(question)}</div></details>`;
 }
 
 function reviewView() {
+  const flags = Object.values(state.qualityFlags.flags).sort((a, b) => {
+    const statusOrder = Number(a.status === "resolved") - Number(b.status === "resolved");
+    return statusOrder || String(b.updated_at || "").localeCompare(String(a.updated_at || ""));
+  });
+  const openFlags = flags.filter((flag) => flag.status !== "resolved").length;
+  const qualityFlags = flags.length
+    ? `<div class="quality-flag-grid">${flags.map((flag) => {
+        const question = state.bank.questions.find((item) => item.question_id === flag.question_id);
+        const image = question?.quiz_asset || flag.quiz_asset;
+        const status = flag.status === "resolved" ? "resolved" : "open";
+        return `<article class="quality-flag-card panel ${status}">
+          <img src="${escapeHtml(image)}" alt="flagged quiz source image">
+          <div><span class="quality-status ${status}">${status}</span><h3>${escapeHtml(question?.tested_concept || flag.tested_concept || "Flagged photo")}</h3>
+          <p class="quality-reason">${escapeHtml(QUALITY_FLAG_REASONS[flag.issue_type] || flag.issue_type)}</p>
+          ${flag.note ? `<p>${escapeHtml(flag.note)}</p>` : '<p class="empty-copy">No note supplied.</p>'}
+          <dl><dt>Question</dt><dd>${escapeHtml(flag.question_id)}</dd><dt>Source</dt><dd>${escapeHtml(flag.source_id)}</dd><dt>Variant</dt><dd>${escapeHtml(flag.variant_id)}</dd><dt>Updated</dt><dd>${escapeHtml(flag.updated_at)}</dd></dl>
+          <button class="secondary" data-action="set-flag-status" data-question-id="${escapeHtml(flag.question_id)}" data-status="${status === "open" ? "resolved" : "open"}">${status === "open" ? "Mark fixed" : "Reopen flag"}</button>
+          </div>
+        </article>`;
+      }).join("")}</div>`
+    : '<section class="panel quality-empty"><span>⚐</span><h2>No photo-quality flags yet</h2><p>Use “Flag bad photo” while taking a quiz to send an image here for fixing.</p></section>';
   const queue = state.reviewQueue.items.length
     ? `<div class="review-grid">${state.reviewQueue.items.map((item) => `<article class="review-card panel"><img src="${escapeHtml(item.preview_asset)}" alt="review-only source preview"><div><span class="review-status">Needs review</span><h2>${escapeHtml(item.proposed_answer)}</h2><p>${escapeHtml(item.uncertainty_reason)}</p><dl><dt>Modality</dt><dd>${escapeHtml(item.modality)}</dd><dt>Evidence</dt><dd>${escapeHtml(item.evidence)}</dd><dt>Leak risk</dt><dd>${escapeHtml(item.answer_leakage_risk)}</dd><dt>Source ID</dt><dd>${escapeHtml(item.source_id)}</dd></dl></div></article>`).join("")}</div>`
     : '<section class="panel review-empty"><span>✓</span><h2>Review queue is empty</h2><p>There are no review-only photos in this quiz project.</p></section>';
-  return `<main class="review shell"><section class="page-heading"><div><p class="eyebrow">Reviewer mode</p><h1>Manual review queue</h1><p>Review-only sources are excluded from every scored session.</p></div><button class="secondary" data-action="export-review">Export queue</button></section>${queue}</main>`;
+  return `<main class="review shell">
+    <section class="page-heading"><div><p class="eyebrow">Reviewer mode</p><h1>Review & photo flags</h1><p>${openFlags} open learner photo flag${openFlags === 1 ? "" : "s"}. Flags remain local until exported.</p></div><div class="button-row"><button class="secondary" data-action="export-flags" ${flags.length ? "" : "disabled"}>Export photo flags</button><button class="secondary" data-action="export-review">Export source queue</button></div></section>
+    <section class="review-section"><div class="section-heading"><div><p class="eyebrow">Learner-reported fixes</p><h2>Photo quality flags (${flags.length})</h2></div></div>${qualityFlags}</section>
+    <section class="review-section"><div class="section-heading"><div><p class="eyebrow">Bank curation</p><h2>Source review queue (${state.reviewQueue.items.length})</h2></div></div>${queue}</section>
+  </main>`;
 }
 
 function emptyState(title, copy) {
@@ -242,9 +358,10 @@ function startSession(config, explicitQuestions = null) {
   const questions = explicitQuestions || state.bank.questions;
   state.session = createSession(questions, config, state.progress, Date.now());
   state.position = 0;
-  state.selectedIndex = null;
+  state.drafts = {};
   state.answers = {};
   state.examComplete = false;
+  state.flaggingQuestionId = null;
   state.showingOriginal = false;
   resetZoom();
   state.progress.last_session = { id: state.session.id, started_at: new Date().toISOString(), config };
@@ -256,7 +373,7 @@ function submitAnswer() {
   const question = currentQuestion();
   if (!question || currentAnswer()?.locked) return;
   try {
-    const answer = lockAnswer(question, currentAnswer(), state.selectedIndex);
+    const answer = lockAnswer(question, currentAnswer(), currentSelection());
     state.answers[question.question_id] = answer;
     state.progress = applyAnswerToProgress(state.progress, question, answer);
     saveProgress();
@@ -268,10 +385,9 @@ function submitAnswer() {
 }
 
 function nextQuestion() {
-  if (!currentAnswer()?.locked) return submitAnswer();
   if (state.position < state.session.questions.length - 1) {
     state.position += 1;
-    state.selectedIndex = null;
+    state.flaggingQuestionId = null;
     state.showingOriginal = false;
     resetZoom();
     render();
@@ -281,7 +397,7 @@ function nextQuestion() {
     const next = createSession(state.bank.questions, { mode: state.session.mode, category: state.session.category, stateFilter: "all", length: "endless" }, state.progress, state.session.seed + 1);
     state.session.questions.push(...next.questions);
     state.position += 1;
-    state.selectedIndex = null;
+    state.flaggingQuestionId = null;
     resetZoom();
     render();
     return;
@@ -293,6 +409,15 @@ function nextQuestion() {
     saveProgress();
   }
   setView("results");
+}
+
+function previousQuestion() {
+  if (state.position <= 0) return;
+  state.position -= 1;
+  state.flaggingQuestionId = null;
+  state.showingOriginal = false;
+  resetZoom();
+  render();
 }
 
 function resetZoom() {
@@ -338,10 +463,44 @@ function downloadJson(filename, value) {
 }
 
 app.addEventListener("submit", (event) => {
+  if (event.target.id === "quality-flag-form") {
+    event.preventDefault();
+    const question = currentQuestion();
+    if (!question) return;
+    const form = new FormData(event.target);
+    const existing = currentQualityFlag();
+    try {
+      state.qualityFlags = upsertQualityFlag(state.qualityFlags, {
+        question_id: question.question_id,
+        source_group_id: question.source_group_id,
+        source_id: question.source_id,
+        variant_id: question.variant_id,
+        quiz_asset: question.quiz_asset,
+        tested_concept: question.tested_concept,
+        category: question.category,
+        modality: question.modality,
+        stem: question.stem,
+        visual_target: question.visual_target,
+        issue_type: String(form.get("issueType") || ""),
+        note: String(form.get("note") || "").trim(),
+        status: "open",
+        created_at: existing?.created_at,
+        session_mode: state.session.mode,
+        session_position: state.position + 1,
+      });
+      saveQualityFlags();
+      state.flaggingQuestionId = null;
+      render();
+    } catch (error) {
+      const message = event.target.querySelector(".flag-error");
+      if (message) message.textContent = error.message;
+    }
+    return;
+  }
   if (event.target.id !== "session-form") return;
   event.preventDefault();
   const form = new FormData(event.target);
-  startSession({ mode: form.get("mode"), category: form.get("category"), stateFilter: form.get("stateFilter"), length: form.get("length") });
+  startSession({ mode: form.get("mode"), category: form.get("category"), sourceOrigin: form.get("sourceOrigin"), stateFilter: form.get("stateFilter"), length: form.get("length") });
 });
 
 app.addEventListener("change", async (event) => {
@@ -362,9 +521,21 @@ app.addEventListener("click", (event) => {
   const action = target.dataset.action;
   if (action === "home") setView("home");
   if (action === "review") setView("review");
-  if (action === "choose" && !currentAnswer()?.locked) { state.selectedIndex = Number(target.dataset.index); render(); }
+  if (action === "choose" && !currentAnswer()?.locked) { state.drafts[currentQuestion().question_id] = Number(target.dataset.index); render(); }
   if (action === "submit") submitAnswer();
   if (action === "next") nextQuestion();
+  if (action === "previous") previousQuestion();
+  if (action === "toggle-flag") {
+    const questionId = currentQuestion()?.question_id;
+    state.flaggingQuestionId = state.flaggingQuestionId === questionId ? null : questionId;
+    render();
+  }
+  if (action === "cancel-flag") { state.flaggingQuestionId = null; render(); }
+  if (action === "set-flag-status") {
+    state.qualityFlags = setQualityFlagStatus(state.qualityFlags, target.dataset.questionId, target.dataset.status);
+    saveQualityFlags();
+    render();
+  }
   if (action === "mark") { state.progress = toggleMarked(state.progress, currentQuestion().question_id); saveProgress(); render(); }
   if (action === "zoom-in") adjustZoom(0.25);
   if (action === "zoom-out") adjustZoom(-0.25);
@@ -373,22 +544,32 @@ app.addEventListener("click", (event) => {
   if (action === "toggle-original") { state.showingOriginal = !state.showingOriginal; resetZoom(); render(); }
   if (action === "export") downloadJson(`pulmonary-id-progress-${new Date().toISOString().slice(0, 10)}.json`, state.progress);
   if (action === "export-review") downloadJson("pulmonary-picture-review-queue.json", state.reviewQueue);
+  if (action === "export-flags") downloadJson(`pulmonary-picture-quality-flags-${new Date().toISOString().slice(0, 10)}.json`, state.qualityFlags);
   if (action === "reset-progress" && confirm("Reset all local quiz progress? The source bank will not be changed.")) { state.progress = emptyProgress(); saveProgress(); render(); }
   if (action === "retry-missed") {
-    const missed = state.session.questions.filter((question) => state.answers[question.question_id] && !state.answers[question.question_id].correct);
+    const missed = state.session.questions.filter((question) => !state.answers[question.question_id]?.correct);
     startSession({ mode: "learn", category: "all", stateFilter: "all", length: "all" }, missed);
   }
 });
 
 window.addEventListener("keydown", (event) => {
   if (state.view !== "quiz" || event.metaKey || event.ctrlKey || event.altKey) return;
+  if (event.target.closest("input, select, textarea, button")) return;
   if (["1", "2", "3", "4"].includes(event.key) && !currentAnswer()?.locked) {
-    state.selectedIndex = Number(event.key) - 1;
+    state.drafts[currentQuestion().question_id] = Number(event.key) - 1;
     render();
   }
   if (event.key === "Enter") {
     event.preventDefault();
     currentAnswer()?.locked ? nextQuestion() : submitAnswer();
+  }
+  if (event.key === "ArrowLeft") {
+    event.preventDefault();
+    previousQuestion();
+  }
+  if (event.key === "ArrowRight") {
+    event.preventDefault();
+    nextQuestion();
   }
   if (event.key.toLowerCase() === "z") {
     state.zoom = state.zoom.scale > 1 ? { scale: 1, x: 0, y: 0 } : { scale: 2, x: 0, y: 0 };
