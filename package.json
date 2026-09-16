@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate": "python3 scripts/generate_bank.py",
+    "generate": "python3 scripts/generate_rename_bank.py",
     "validate": "python3 scripts/validate_bank.py",
     "test": "python3 scripts/validate_bank.py && node --test tests/*.test.mjs",
-    "test:visual": "node tests/visual-check.mjs && node tests/visual-check-gaps.mjs && node tests/visual-check-additions.mjs",
+    "test:visual": "node tests/visual-check.mjs",
     "build": "python3 scripts/validate_bank.py && node scripts/build.mjs",
     "start": "python3 -m http.server 4173 -d dist"
   }

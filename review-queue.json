@@ -1,6 +1,95 @@
 {
-  "schema_version": 1,
-  "generated_at": "2026-09-14T23:22:30-04:00",
-  "count": 0,
-  "items": []
+  "schema_version": 2,
+  "generated_at": "2026-09-16T18:42:10.335382-04:00",
+  "count": 8,
+  "items": [
+    {
+      "source_id": "src_133c8f085ec9",
+      "source_group_id": "sg_f99bad21fdd1",
+      "preview_asset": "public/assets/images/original_be76c8d1db6aa9a5.png",
+      "proposed_answer": "Acute Asthma Attack",
+      "modality": "X-ray",
+      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "uncertainty_reason": "A near-normal chest radiograph cannot establish an acute asthma diagnosis by itself.",
+      "answer_leakage_risk": "low",
+      "project_status": "NEEDS_REVIEW"
+    },
+    {
+      "source_id": "src_c12eecb01b3b",
+      "source_group_id": "sg_54cad758ac9b",
+      "preview_asset": "public/assets/images/original_82391822cb810208.png",
+      "proposed_answer": "Appendicitis",
+      "modality": "X-ray",
+      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "uncertainty_reason": "The filename and visible target do not establish a defensible pulmonary identification task.",
+      "answer_leakage_risk": "low",
+      "project_status": "NEEDS_REVIEW"
+    },
+    {
+      "source_id": "src_9ea62021eef9",
+      "source_group_id": "sg_b708b1fa2b16",
+      "preview_asset": "public/assets/images/original_febb89d5ad64ffe3.png",
+      "proposed_answer": "Asthma",
+      "modality": "X-ray",
+      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "uncertainty_reason": "A normal or near-normal chest radiograph is not diagnostic of asthma.",
+      "answer_leakage_risk": "low",
+      "project_status": "NEEDS_REVIEW"
+    },
+    {
+      "source_id": "src_14b8edc63179",
+      "source_group_id": "sg_5bc6c692f5ef",
+      "preview_asset": "public/assets/images/original_152309650366f36b.png",
+      "proposed_answer": "Cystic fibrosis",
+      "modality": "CT",
+      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "uncertainty_reason": "The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.",
+      "answer_leakage_risk": "low",
+      "project_status": "NEEDS_REVIEW"
+    },
+    {
+      "source_id": "src_7dfc37266c91",
+      "source_group_id": "sg_5bc6c692f5ef",
+      "preview_asset": "public/assets/images/original_8e317b7e2752bbd6.png",
+      "proposed_answer": "Cystic fibrosis",
+      "modality": "CT",
+      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "uncertainty_reason": "The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.",
+      "answer_leakage_risk": "low",
+      "project_status": "NEEDS_REVIEW"
+    },
+    {
+      "source_id": "src_69eae45a736d",
+      "source_group_id": "sg_ac6a84a28afa",
+      "preview_asset": "public/assets/images/original_320df8fc0922c469.png",
+      "proposed_answer": "Normal",
+      "modality": "Histology",
+      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "uncertainty_reason": "The filename does not identify the organ, tissue compartment, or intended normal structure.",
+      "answer_leakage_risk": "low",
+      "project_status": "NEEDS_REVIEW"
+    },
+    {
+      "source_id": "src_257ebb5b7dd8",
+      "source_group_id": "sg_146ac79f405d",
+      "preview_asset": "public/assets/images/original_76917c5c19ee687b.png",
+      "proposed_answer": "Pulmonary Infarct",
+      "modality": "Gross Pathology",
+      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "uncertainty_reason": "Embedded labels state the tested diagnosis directly over medically meaningful tissue.",
+      "answer_leakage_risk": "high",
+      "project_status": "NEEDS_REVIEW"
+    },
+    {
+      "source_id": "src_38410f8d021a",
+      "source_group_id": "sg_8ffa4c4eaf97",
+      "preview_asset": "public/assets/images/original_3b267fbc03b0b9cc.png",
+      "proposed_answer": "Pulmonary epithelial metaplasia",
+      "modality": "Histology",
+      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "uncertainty_reason": "The source label is ambiguous and the intended metaplastic process is not specified reliably.",
+      "answer_leakage_risk": "low",
+      "project_status": "NEEDS_REVIEW"
+    }
+  ]
 }

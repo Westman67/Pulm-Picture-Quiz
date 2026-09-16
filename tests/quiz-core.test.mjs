@@ -29,12 +29,14 @@ const questions = bank.questions;
 test("new bank uses schema version 2 and valid source lineage", () => {
   assert.equal(bank.schema_version, 2);
   assert.equal(bank.question_count, questions.length);
-  assert.ok(questions.length >= 100);
+  assert.equal(manifest.record_count, 381);
+  assert.equal(manifest.records.length, 381);
+  assert.ok(questions.length >= 350);
   const sources = new Map(manifest.records.map((record) => [record.source_id, record]));
   for (const question of questions) {
     assert.equal(sources.get(question.source_id)?.status, "USABLE");
     assert.equal(sources.get(question.source_id)?.source_origin, question.source_origin);
-    assert.ok(["lecture", "third_party"].includes(question.source_origin));
+    assert.equal(question.source_origin, "third_party");
     assert.ok(question.source_group_id);
     assert.ok(question.variant_id);
   }
@@ -106,13 +108,29 @@ test("session selection is deterministic and respects filters and requested leng
   assert.deepEqual(incorrect.questions.map((q) => q.question_id), [questions[0].question_id]);
   const marked = createSession(questions, { ...config, stateFilter: "marked", length: "all" }, progress, 1);
   assert.deepEqual(marked.questions.map((q) => q.question_id), [questions[1].question_id]);
-  const lecture = createSession(questions, { ...config, sourceOrigin: "lecture", length: "all" }, progress, 1);
   const thirdParty = createSession(questions, { ...config, sourceOrigin: "third_party", length: "all" }, progress, 1);
-  assert.ok(lecture.questions.length > 0);
-  assert.ok(thirdParty.questions.length > 0);
-  assert.ok(lecture.questions.every((q) => q.source_origin === "lecture"));
+  const lecture = createSession(questions, { ...config, sourceOrigin: "lecture", length: "all" }, progress, 1);
+  assert.equal(lecture.questions.length, 0);
+  assert.equal(thirdParty.questions.length, questions.length);
   assert.ok(thirdParty.questions.every((q) => q.source_origin === "third_party"));
-  assert.equal(lecture.questions.length + thirdParty.questions.length, questions.length);
+});
+
+test("modality category filters separate CXR and CT while All Imaging includes both", () => {
+  const categorized = [
+    { ...questions[0], question_id: "filter_cxr", source_group_id: "group_cxr", category: "CXR", modality: "X-ray", category_filters: ["CXR", "All Imaging"] },
+    { ...questions[1], question_id: "filter_ct", source_group_id: "group_ct", category: "CT", modality: "CT", category_filters: ["CT", "All Imaging"] },
+    { ...questions[2], question_id: "filter_histology", source_group_id: "group_histology", category: "Histology", modality: "Histology", category_filters: ["Histology"] },
+    { ...questions[3], question_id: "filter_gross", source_group_id: "group_gross", category: "Gross", modality: "Gross Pathology", category_filters: ["Gross"] },
+    { ...questions[4], question_id: "filter_other", source_group_id: "group_other", category: "Other", modality: "Diagram", category_filters: [] },
+  ];
+  const config = { mode: "learn", stateFilter: "all", length: "all" };
+  const progress = emptyProgress();
+  assert.equal(createSession(categorized, { ...config, category: "CXR" }, progress, 5).questions.length, 1);
+  assert.equal(createSession(categorized, { ...config, category: "CT" }, progress, 5).questions.length, 1);
+  assert.equal(createSession(categorized, { ...config, category: "All Imaging" }, progress, 5).questions.length, 2);
+  assert.equal(createSession(categorized, { ...config, category: "Histology" }, progress, 5).questions.length, 1);
+  assert.equal(createSession(categorized, { ...config, category: "Gross" }, progress, 5).questions.length, 1);
+  assert.equal(createSession(categorized, { ...config, category: "all" }, progress, 5).questions.length, 5);
 });
 
 test("session selection avoids adjacent source groups when alternatives exist", () => {

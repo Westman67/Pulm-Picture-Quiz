@@ -1,7 +1,7 @@
-export const PROGRESS_SCHEMA_VERSION = 2;
-export const STORAGE_KEY = "pulmonary-picture-id-progress-v2";
-export const QUALITY_FLAGS_SCHEMA_VERSION = 1;
-export const QUALITY_FLAGS_STORAGE_KEY = "pulmonary-picture-quality-flags-v1";
+export const PROGRESS_SCHEMA_VERSION = 3;
+export const STORAGE_KEY = "pulmonary-picture-id-progress-v3";
+export const QUALITY_FLAGS_SCHEMA_VERSION = 2;
+export const QUALITY_FLAGS_STORAGE_KEY = "pulmonary-picture-quality-flags-v2";
 
 export function hashSeed(text) {
   let h = 2166136261;
@@ -168,7 +168,7 @@ export function createSession(questions, config, progress, seed = Date.now()) {
   const sourceOrigin = config.sourceOrigin || "all";
   const stateFilter = config.stateFilter || "all";
   let candidates = questions.filter((question) =>
-    (category === "all" || question.category === category || question.modality === category) &&
+    (category === "all" || question.category === category || question.modality === category || question.category_filters?.includes(category)) &&
     (sourceOrigin === "all" || question.source_origin === sourceOrigin) &&
     progressMatches(question, progress, stateFilter),
   );

@@ -14,7 +14,7 @@ import {
   setQualityFlagStatus,
   toggleMarked,
   upsertQualityFlag,
-} from "./quiz-core.mjs";
+} from "./quiz-core.mjs?v=rename-20260916c";
 
 const app = document.querySelector("#app");
 const state = {
@@ -47,8 +47,67 @@ const QUALITY_FLAG_REASONS = {
 
 const SOURCE_ORIGIN_LABELS = {
   lecture: "Lecture",
-  third_party: "Third party",
+  third_party: "Rename collection",
 };
+
+const CATEGORY_FILTERS = ["CXR", "CT", "All Imaging", "Histology", "Gross"];
+const IMAGING_MODALITIES = new Set([
+  "X-ray",
+  "CT",
+  "X-ray and CT",
+  "X-ray and pathology",
+  "MRI",
+  "Angiography",
+  "Nuclear Imaging",
+  "Ultrasound",
+  "Echocardiography",
+]);
+const HISTOLOGY_MODALITIES = new Set([
+  "Histology",
+  "Histopathology",
+  "Microscopy",
+  "Micrograph",
+  "Immunohistochemistry",
+  "Electron Microscopy",
+  "Cytology",
+  "Gross pathology and histology",
+  "X-ray and pathology",
+]);
+const GROSS_MODALITIES = new Set([
+  "Gross Pathology",
+  "Gross pathology",
+  "Gross Anatomy",
+  "Gross pathology and histology",
+]);
+
+function categoryFiltersFor(modality) {
+  const filters = [];
+  if (modality === "X-ray") filters.push("CXR");
+  if (modality === "CT") filters.push("CT");
+  if (IMAGING_MODALITIES.has(modality)) filters.push("All Imaging");
+  if (HISTOLOGY_MODALITIES.has(modality)) filters.push("Histology");
+  if (GROSS_MODALITIES.has(modality)) filters.push("Gross");
+  return filters;
+}
+
+function imageCategoryFor(modality) {
+  if (modality === "X-ray") return "CXR";
+  if (modality === "CT") return "CT";
+  if (IMAGING_MODALITIES.has(modality)) return "All Imaging";
+  if (HISTOLOGY_MODALITIES.has(modality)) return "Histology";
+  if (GROSS_MODALITIES.has(modality)) return "Gross";
+  return "Other";
+}
+
+function applyImageCategories(bank) {
+  bank.questions.forEach((question) => {
+    question.topic = question.category;
+    question.category = imageCategoryFor(question.modality);
+    question.category_filters = categoryFiltersFor(question.modality);
+  });
+  return bank;
+}
+
 
 function loadProgress() {
   try {
@@ -104,12 +163,20 @@ function currentQualityFlag() {
   return question ? state.qualityFlags.flags[question.question_id] || null : null;
 }
 
+function scrollPageTop() {
+  window.scrollTo(0, 0);
+  requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo(0, 0)));
+  for (const delay of [0, 80, 250, 650]) setTimeout(() => window.scrollTo(0, 0), delay);
+}
+
 function setView(view) {
+  document.activeElement?.blur();
   state.view = view;
   state.flaggingQuestionId = null;
   state.showingOriginal = false;
   resetZoom();
   render();
+  scrollPageTop();
 }
 
 function header() {
@@ -129,7 +196,10 @@ function header() {
 }
 
 function homeView() {
-  const categories = [...new Set(state.bank.questions.map((q) => q.category))].sort();
+  const categoryCounts = Object.fromEntries(CATEGORY_FILTERS.map((category) => [
+    category,
+    state.bank.questions.filter((question) => question.category_filters.includes(category)).length,
+  ]));
   const sourceOriginCounts = state.bank.questions.reduce((counts, question) => {
     counts[question.source_origin] = (counts[question.source_origin] || 0) + 1;
     return counts;
@@ -159,8 +229,8 @@ function homeView() {
           </div></fieldset>
 
           <div class="form-row">
-            <label>Category<select name="category"><option value="all">Mixed — all categories</option>${categories.map((c) => `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join("")}</select></label>
-            <label>Picture source<select name="sourceOrigin"><option value="all">All picture sources (${state.bank.question_count})</option><option value="lecture">Lecture (${sourceOriginCounts.lecture || 0})</option><option value="third_party">Third party (${sourceOriginCounts.third_party || 0})</option></select></label>
+            <label>Category<select name="category"><option value="all">Mixed — all categories</option>${CATEGORY_FILTERS.map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)} (${categoryCounts[category]})</option>`).join("")}</select></label>
+            <label>Picture source<select name="sourceOrigin"><option value="all">All pictures (${state.bank.question_count})</option><option value="third_party">Rename collection (${sourceOriginCounts.third_party || 0})</option></select></label>
             <label>Question state<select name="stateFilter"><option value="all">All available</option><option value="unseen">Unseen only</option><option value="incorrect">Previously incorrect</option><option value="marked">Marked for review</option></select></label>
           </div>
 
@@ -197,7 +267,7 @@ function quizView() {
   return `
     <main class="quiz-shell shell">
       <section class="quiz-topbar">
-        <div><span class="mode-badge ${state.session.mode}">${state.session.mode === "learn" ? "Learn mode" : "Exam mode"}</span><span class="category-label">${escapeHtml(question.category)} · ${escapeHtml(question.modality)} · ${escapeHtml(SOURCE_ORIGIN_LABELS[question.source_origin] || question.source_origin)}</span></div>
+        <div><span class="mode-badge ${state.session.mode}">${state.session.mode === "learn" ? "Learn mode" : "Exam mode"}</span><span class="category-label">${escapeHtml(question.category)} · ${escapeHtml(question.topic)} · ${escapeHtml(SOURCE_ORIGIN_LABELS[question.source_origin] || question.source_origin)}</span></div>
         <strong>${progressLabel}</strong>
         <div class="quiz-topbar-actions">
           <button class="mark-button ${marked ? "marked" : ""}" data-action="mark">${marked ? "★ Marked" : "☆ Mark for study"}</button>
@@ -274,7 +344,7 @@ function sourceDetailsTemplate(question) {
   const creator = source.creator ? `<dt>Creator</dt><dd>${escapeHtml(source.creator)}</dd>` : "";
   const license = source.displayed_license ? `<dt>License</dt><dd>${escapeHtml(source.displayed_license)}</dd>` : "";
   const page = source.source_page_or_slide ? `<dt>Page/slide</dt><dd>${escapeHtml(source.source_page_or_slide)}</dd>` : "";
-  return `<details class="source-details"><summary>Lecture provenance and attribution</summary><dl><dt>Source</dt><dd>${escapeHtml(source.source_document)}</dd>${page}<dt>Original file</dt><dd>${escapeHtml(source.original_filename)}</dd>${creator}${license}${landing}<dt>Source ID</dt><dd>${escapeHtml(question.source_id)}</dd></dl></details>`;
+  return `<details class="source-details"><summary>Source provenance and attribution</summary><dl><dt>Source</dt><dd>${escapeHtml(source.source_document)}</dd>${page}<dt>Original file</dt><dd>${escapeHtml(source.original_filename)}</dd>${creator}${license}${landing}<dt>Source ID</dt><dd>${escapeHtml(question.source_id)}</dd></dl></details>`;
 }
 
 function feedbackTemplate(question, answer, reveal) {
@@ -298,7 +368,7 @@ function resultsView() {
   return `<main class="results shell">
     <section class="results-hero"><div class="score-ring" style="--score:${score.percentage * 3.6}deg"><div><strong>${score.percentage}%</strong><span>${score.correct} / ${score.total}</span></div></div><div><p class="eyebrow">Session complete</p><h1>${score.percentage >= 80 ? "Sharp recognition." : "Review the misses, then run it again."}</h1><p>${score.correct} correct · ${score.incorrect} incorrect · ${score.unanswered} unanswered · ${marked.size} marked overall</p><div class="button-row"><button class="primary" data-action="retry-missed" ${score.incorrect + score.unanswered ? "" : "disabled"}>Retry missed</button><button class="secondary" data-action="home">New session</button></div></div></section>
     <section class="results-grid">
-      <div class="panel"><h2>Performance by category</h2><div class="category-results">${Object.entries(score.byCategory).sort().map(([name, value]) => `<div><span>${escapeHtml(name)}</span><div class="mini-track"><i style="width:${Math.round(value.correct / value.total * 100)}%"></i></div><strong>${value.correct}/${value.total}</strong></div>`).join("")}</div></div>
+      <div class="panel"><h2>Performance by image type</h2><div class="category-results">${Object.entries(score.byCategory).sort().map(([name, value]) => `<div><span>${escapeHtml(name)}</span><div class="mini-track"><i style="width:${Math.round(value.correct / value.total * 100)}%"></i></div><strong>${value.correct}/${value.total}</strong></div>`).join("")}</div></div>
       <div class="panel"><h2>Review (${review.length})</h2>${review.length ? review.map(resultReviewCard).join("") : '<p class="empty-copy">No missed or marked questions in this session.</p>'}</div>
     </section>
   </main>`;
@@ -306,7 +376,7 @@ function resultsView() {
 
 function resultReviewCard({ question, answer }) {
   const status = answer?.correct ? "Correct" : answer?.locked ? "Incorrect" : "Unanswered";
-  return `<details class="result-card"><summary><img src="${escapeHtml(question.quiz_asset)}" alt="quiz source image"><span><small>${escapeHtml(question.category)}</small><strong>${escapeHtml(question.tested_concept)}</strong><em class="${answer?.correct ? "good" : "bad"}">${status}</em></span></summary><div><p>${escapeHtml(question.explanation)}</p><div class="rationale-list">${question.options.map((option, i) => `<article class="rationale ${i === question.correct_index ? "keyed" : ""} ${i === answer?.selected_index ? "selected-rationale" : ""}"><div><span>${i + 1}</span><strong>${escapeHtml(option)}</strong>${i === question.correct_index ? "<em>Keyed</em>" : ""}${i === answer?.selected_index ? "<em>Your choice</em>" : ""}</div><p>${escapeHtml(question.choice_rationales[i])}</p></article>`).join("")}</div>${sourceDetailsTemplate(question)}</div></details>`;
+  return `<details class="result-card"><summary><img src="${escapeHtml(question.quiz_asset)}" alt="quiz source image"><span><small>${escapeHtml(question.category)} · ${escapeHtml(question.topic)}</small><strong>${escapeHtml(question.tested_concept)}</strong><em class="${answer?.correct ? "good" : "bad"}">${status}</em></span></summary><div><p>${escapeHtml(question.explanation)}</p><div class="rationale-list">${question.options.map((option, i) => `<article class="rationale ${i === question.correct_index ? "keyed" : ""} ${i === answer?.selected_index ? "selected-rationale" : ""}"><div><span>${i + 1}</span><strong>${escapeHtml(option)}</strong>${i === question.correct_index ? "<em>Keyed</em>" : ""}${i === answer?.selected_index ? "<em>Your choice</em>" : ""}</div><p>${escapeHtml(question.choice_rationales[i])}</p></article>`).join("")}</div>${sourceDetailsTemplate(question)}</div></details>`;
 }
 
 function reviewView() {
@@ -387,20 +457,24 @@ function submitAnswer() {
 
 function nextQuestion() {
   if (state.position < state.session.questions.length - 1) {
+    document.activeElement?.blur();
     state.position += 1;
     state.flaggingQuestionId = null;
     state.showingOriginal = false;
     resetZoom();
     render();
+    scrollPageTop();
     return;
   }
   if (state.session.endless) {
+    document.activeElement?.blur();
     const next = createSession(state.bank.questions, { mode: state.session.mode, category: state.session.category, stateFilter: "all", length: "endless" }, state.progress, state.session.seed + 1);
     state.session.questions.push(...next.questions);
     state.position += 1;
     state.flaggingQuestionId = null;
     resetZoom();
     render();
+    scrollPageTop();
     return;
   }
   state.examComplete = true;
@@ -414,11 +488,13 @@ function nextQuestion() {
 
 function previousQuestion() {
   if (state.position <= 0) return;
+  document.activeElement?.blur();
   state.position -= 1;
   state.flaggingQuestionId = null;
   state.showingOriginal = false;
   resetZoom();
   render();
+  scrollPageTop();
 }
 
 function resetZoom() {
@@ -581,10 +657,10 @@ window.addEventListener("keydown", (event) => {
 async function init() {
   try {
     const [bank, reviewQueue] = await Promise.all([
-      fetch("data/question-bank.json").then((response) => response.json()),
-      fetch("data/review-queue.json").then((response) => response.json()),
+      fetch("data/question-bank.json?v=rename-20260916c").then((response) => response.json()),
+      fetch("data/review-queue.json?v=rename-20260916c").then((response) => response.json()),
     ]);
-    state.bank = bank;
+    state.bank = applyImageCategories(bank);
     state.reviewQueue = reviewQueue;
     const reconciledFlags = reconcileQualityFlags(state.qualityFlags, bank.quality_review);
     if (JSON.stringify(reconciledFlags) !== JSON.stringify(state.qualityFlags)) {
