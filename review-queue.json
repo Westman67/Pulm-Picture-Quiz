@@ -1,21 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-16T20:29:33.541755-04:00",
-  "count": 13,
+  "generated_at": "2026-09-16T20:42:17.671963-04:00",
+  "count": 9,
   "items": [
-    {
-      "source_id": "src_133c8f085ec9",
-      "source_group_id": "sg_f99bad21fdd1",
-      "preview_asset": "public/assets/images/original_be76c8d1db6aa9a5.png",
-      "proposed_answer": "Acute Asthma Attack",
-      "modality": "X-ray",
-      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
-      "source_collection_key": "rename",
-      "source_collection": "Lecture material",
-      "uncertainty_reason": "A near-normal chest radiograph cannot establish an acute asthma diagnosis by itself.",
-      "answer_leakage_risk": "low",
-      "project_status": "NEEDS_REVIEW"
-    },
     {
       "source_id": "src_c12eecb01b3b",
       "source_group_id": "sg_54cad758ac9b",
@@ -26,19 +13,6 @@
       "source_collection_key": "rename",
       "source_collection": "Lecture material",
       "uncertainty_reason": "The filename and visible target do not establish a defensible pulmonary identification task.",
-      "answer_leakage_risk": "low",
-      "project_status": "NEEDS_REVIEW"
-    },
-    {
-      "source_id": "src_9ea62021eef9",
-      "source_group_id": "sg_b708b1fa2b16",
-      "preview_asset": "public/assets/images/original_febb89d5ad64ffe3.png",
-      "proposed_answer": "Asthma",
-      "modality": "X-ray",
-      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
-      "source_collection_key": "rename",
-      "source_collection": "Lecture material",
-      "uncertainty_reason": "A normal or near-normal chest radiograph is not diagnostic of asthma.",
       "answer_leakage_risk": "low",
       "project_status": "NEEDS_REVIEW"
     },
@@ -144,32 +118,6 @@
       "source_collection": "3rd Party",
       "uncertainty_reason": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.",
       "answer_leakage_risk": "high",
-      "project_status": "NEEDS_REVIEW"
-    },
-    {
-      "source_id": "src_b0d776f01771",
-      "source_group_id": "sg_bd4e04cc43e3",
-      "preview_asset": "public/assets/images/original_208b64414530a995.png",
-      "proposed_answer": "Echocardiogram in Pulmonary Artery Hypertension (3:3)",
-      "modality": "Echocardiography",
-      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
-      "source_collection_key": "third_party",
-      "source_collection": "3rd Party",
-      "uncertainty_reason": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.",
-      "answer_leakage_risk": "high",
-      "project_status": "NEEDS_REVIEW"
-    },
-    {
-      "source_id": "src_a1288c90c360",
-      "source_group_id": "sg_edf4182e5f00",
-      "preview_asset": "public/assets/images/original_d09545f65d774385.png",
-      "proposed_answer": "Cystic fibrosis-associated bronchiectasis",
-      "modality": "X-ray",
-      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
-      "source_collection_key": "third_party",
-      "source_collection": "3rd Party",
-      "uncertainty_reason": "The radiographs show chronic airway disease, but cystic fibrosis cannot be uniquely established from this image alone.",
-      "answer_leakage_risk": "low",
       "project_status": "NEEDS_REVIEW"
     }
   ]

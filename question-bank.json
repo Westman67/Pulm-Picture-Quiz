@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "bank_id": "bank_3c0109c75c96",
-  "generated_at": "2026-09-16T20:29:33.541755-04:00",
+  "generated_at": "2026-09-16T20:42:17.671963-04:00",
   "mode": "pulmonary_visual_identification",
-  "question_count": 539,
+  "question_count": 543,
   "quality_review": {
     "batch_id": null,
     "reviewed_at": null,
@@ -27,7 +27,7 @@
       "options": [
         "Chronic Interstitial Lung Disease",
         "Radiation Damage from Breast Cancer Treatment",
-        "Pulmonary fibrosis",
+        "Cystic fibrosis-associated bronchiectasis",
         "Asbestosis"
       ],
       "correct_index": 3,
@@ -39,7 +39,7 @@
       "choice_rationales": [
         "Chronic Interstitial Lung Disease would instead show diffuse reticular interstitial opacity or thickened fibrotic alveolar septa rather than focal air-space filling; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
         "Radiation Damage from Breast Cancer Treatment would instead show sharply geographic consolidation or fibrosis conforming to a prior radiation field; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
-        "Pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
+        "Cystic fibrosis-associated bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
         "Correct: The displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques, supporting Asbestosis."
       ],
       "ground_truth_confidence": "high",
@@ -166,6 +166,59 @@
         "source_collection_key": "rename",
         "source_page_or_slide": "",
         "source_id": "src_96837329ab55",
+        "rights_status": "unknown; local study use only"
+      },
+      "review_status": "VERIFIED",
+      "quality_review_batch": null
+    },
+    {
+      "question_id": "q_04f4a96621bf",
+      "source_group_id": "sg_f99bad21fdd1",
+      "source_id": "src_133c8f085ec9",
+      "variant_id": "var_e4f3303ae26e",
+      "question_type": "Identification",
+      "tested_concept": "Acute Asthma Attack",
+      "stem": "Given this clinical presentation, which diagnosis is most consistent with the history and this chest radiograph?",
+      "case_context": "A 19-year-old presents to the emergency department with acute dyspnea, audible wheeze, and a prolonged expiratory phase during a known asthma exacerbation.",
+      "visual_target": "the complete displayed image",
+      "panel_handling": "single_complete_image",
+      "joint_images": false,
+      "options": [
+        "Hyperinflation in COPD",
+        "CPAM and Emphysema",
+        "Acute Asthma Attack",
+        "Severe COPD"
+      ],
+      "correct_index": 2,
+      "accepted_terminology": [],
+      "explanation": "The decisive visible finding is a chest radiograph that is normal or near-normal, without consolidation, effusion, or a focal mass — the expected pattern during an acute asthma exacerbation, since the diagnosis is made clinically rather than radiographically. This pattern supports Acute Asthma Attack.",
+      "visual_clues": [
+        "a chest radiograph that is normal or near-normal, without consolidation, effusion, or a focal mass — the expected pattern during an acute asthma exacerbation, since the diagnosis is made clinically rather than radiographically"
+      ],
+      "choice_rationales": [
+        "Hyperinflation in COPD would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows a chest radiograph that is normal or near-normal, without consolidation, effusion, or a focal mass — the expected pattern during an acute asthma exacerbation, since the diagnosis is made clinically rather than radiographically.",
+        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows a chest radiograph that is normal or near-normal, without consolidation, effusion, or a focal mass — the expected pattern during an acute asthma exacerbation, since the diagnosis is made clinically rather than radiographically.",
+        "Correct: The displayed image shows a chest radiograph that is normal or near-normal, without consolidation, effusion, or a focal mass — the expected pattern during an acute asthma exacerbation, since the diagnosis is made clinically rather than radiographically, supporting Acute Asthma Attack.",
+        "Severe COPD would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows a chest radiograph that is normal or near-normal, without consolidation, effusion, or a focal mass — the expected pattern during an acute asthma exacerbation, since the diagnosis is made clinically rather than radiographically."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
+      "category": "Airway and obstructive",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "airway-and-obstructive",
+      "source_origin": "third_party",
+      "source_collection": "Lecture material",
+      "source_collection_key": "rename",
+      "quiz_asset": "public/assets/images/quiz_607149bd68dda7e8.webp",
+      "original_asset": "public/assets/images/original_be76c8d1db6aa9a5.png",
+      "post_answer_source": {
+        "original_filename": "Acute Asthma Attack.png",
+        "source_document": "Desktop/Rename user-curated pulmonary image collection",
+        "source_collection": "Lecture material",
+        "source_collection_key": "rename",
+        "source_page_or_slide": "",
+        "source_id": "src_133c8f085ec9",
         "rights_status": "unknown; local study use only"
       },
       "review_status": "VERIFIED",
@@ -1921,6 +1974,59 @@
       "quality_review_batch": null
     },
     {
+      "question_id": "q_38311da7f797",
+      "source_group_id": "sg_b708b1fa2b16",
+      "source_id": "src_9ea62021eef9",
+      "variant_id": "var_c7ad1511b32a",
+      "question_type": "Identification",
+      "tested_concept": "Asthma",
+      "stem": "Given this clinical presentation, which diagnosis is most consistent with the history and this chest radiograph?",
+      "case_context": "A patient with a long-standing history of episodic wheeze, nocturnal cough, and spirometry-confirmed reversible airflow obstruction undergoes this chest radiograph as part of a routine outpatient work-up.",
+      "visual_target": "the complete displayed image",
+      "panel_handling": "single_complete_image",
+      "joint_images": false,
+      "options": [
+        "Bronchiectasis due to Chronic Bronchitis",
+        "Severe COPD",
+        "Asthma",
+        "Emphysema CT Low Attenuation Bullae"
+      ],
+      "correct_index": 2,
+      "accepted_terminology": [],
+      "explanation": "The decisive visible finding is a chest radiograph that remains normal or near-normal despite the patient's documented reversible airflow obstruction, consistent with asthma, in which imaging is typically unremarkable outside of a severe exacerbation. This pattern supports Asthma.",
+      "visual_clues": [
+        "a chest radiograph that remains normal or near-normal despite the patient's documented reversible airflow obstruction, consistent with asthma, in which imaging is typically unremarkable outside of a severe exacerbation"
+      ],
+      "choice_rationales": [
+        "Bronchiectasis due to Chronic Bronchitis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows a chest radiograph that remains normal or near-normal despite the patient's documented reversible airflow obstruction, consistent with asthma, in which imaging is typically unremarkable outside of a severe exacerbation.",
+        "Severe COPD would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows a chest radiograph that remains normal or near-normal despite the patient's documented reversible airflow obstruction, consistent with asthma, in which imaging is typically unremarkable outside of a severe exacerbation.",
+        "Correct: The displayed image shows a chest radiograph that remains normal or near-normal despite the patient's documented reversible airflow obstruction, consistent with asthma, in which imaging is typically unremarkable outside of a severe exacerbation, supporting Asthma.",
+        "Emphysema CT Low Attenuation Bullae would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows a chest radiograph that remains normal or near-normal despite the patient's documented reversible airflow obstruction, consistent with asthma, in which imaging is typically unremarkable outside of a severe exacerbation."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
+      "category": "Airway and obstructive",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "airway-and-obstructive",
+      "source_origin": "third_party",
+      "source_collection": "Lecture material",
+      "source_collection_key": "rename",
+      "quiz_asset": "public/assets/images/quiz_0b018b173a852a70.webp",
+      "original_asset": "public/assets/images/original_febb89d5ad64ffe3.png",
+      "post_answer_source": {
+        "original_filename": "Asthma CXR.png",
+        "source_document": "Desktop/Rename user-curated pulmonary image collection",
+        "source_collection": "Lecture material",
+        "source_collection_key": "rename",
+        "source_page_or_slide": "",
+        "source_id": "src_9ea62021eef9",
+        "rights_status": "unknown; local study use only"
+      },
+      "review_status": "VERIFIED",
+      "quality_review_batch": null
+    },
+    {
       "question_id": "q_14207fe54b2a",
       "source_group_id": "sg_1653e3acaf07",
       "source_id": "src_531a420174ca",
@@ -2517,9 +2623,9 @@
       "joint_images": false,
       "options": [
         "Sarcoidosis Extensive Hilar and Mediastinal Adenopathy",
-        "Pulmonary sarcoidosis",
+        "Cystic fibrosis-associated bronchiectasis",
         "Bleomycin or Amiodarone Pulmonary Fibrosis",
-        "Silicosis"
+        "Pulmonary sarcoidosis"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -2529,9 +2635,9 @@
       ],
       "choice_rationales": [
         "Sarcoidosis Extensive Hilar and Mediastinal Adenopathy would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "Pulmonary sarcoidosis would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Cystic fibrosis-associated bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting Bleomycin or Amiodarone Pulmonary Fibrosis.",
-        "Silicosis would instead show a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
+        "Pulmonary sarcoidosis would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -2942,8 +3048,8 @@
       "options": [
         "Bronchiectasis",
         "Congenital Lobar Emphysema(LUL)",
-        "Hyperinflation in COPD",
-        "Severe COPD"
+        "Asthma",
+        "Hyperinflation in COPD"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -2954,8 +3060,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance, supporting Bronchiectasis.",
         "Congenital Lobar Emphysema(LUL) would instead show marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
-        "Hyperinflation in COPD would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
-        "Severe COPD would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance."
+        "Asthma would instead show airway smooth-muscle thickening, mucus plugging, and hyperinflation rather than focal consolidation; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
+        "Hyperinflation in COPD would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -3048,8 +3154,8 @@
       "options": [
         "Bronchiectasis",
         "Centri-acinar Emphysema",
-        "Acute Infectious Bronchiolitis",
-        "Emphysema with primary lung cancer"
+        "Acute Asthma Attack",
+        "Acute Infectious Bronchiolitis"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -3060,8 +3166,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance, supporting Bronchiectasis.",
         "Centri-acinar Emphysema would instead show enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
-        "Acute Infectious Bronchiolitis would instead show peribronchial thickening with hyperinflation and patchy subsegmental atelectatic opacity in a young child; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
-        "Emphysema with primary lung cancer would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance."
+        "Acute Asthma Attack would instead show airway smooth-muscle thickening, mucus plugging, and hyperinflation rather than focal consolidation; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
+        "Acute Infectious Bronchiolitis would instead show peribronchial thickening with hyperinflation and patchy subsegmental atelectatic opacity in a young child; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -3207,7 +3313,7 @@
       "options": [
         "Bronchiectasis and Cystic fibrosis",
         "Chronic Silicosis Progressive Massive Fibrosis",
-        "Asbestosis",
+        "Cystic fibrosis-associated bronchiectasis",
         "Bronchiectasis due Cystic fibrosis"
       ],
       "correct_index": 3,
@@ -3219,7 +3325,7 @@
       "choice_rationales": [
         "Bronchiectasis and Cystic fibrosis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
         "Chronic Silicosis Progressive Massive Fibrosis would instead show a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
-        "Asbestosis would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
+        "Cystic fibrosis-associated bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
         "Correct: The displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance, supporting Bronchiectasis due Cystic fibrosis."
       ],
       "ground_truth_confidence": "high",
@@ -5168,7 +5274,7 @@
       "options": [
         "Centri-acinar Emphysema",
         "Acute Infectious Bronchiolitis",
-        "Severe COPD",
+        "Asthma",
         "Congenital Lobar Emphysema (LUL) Improvement"
       ],
       "correct_index": 3,
@@ -5180,7 +5286,7 @@
       "choice_rationales": [
         "Centri-acinar Emphysema would instead show enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement.",
         "Acute Infectious Bronchiolitis would instead show peribronchial thickening with hyperinflation and patchy subsegmental atelectatic opacity in a young child; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement.",
-        "Severe COPD would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement.",
+        "Asthma would instead show airway smooth-muscle thickening, mucus plugging, and hyperinflation rather than focal consolidation; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement.",
         "Correct: The displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement, supporting Congenital Lobar Emphysema (LUL) Improvement."
       ],
       "ground_truth_confidence": "high",
@@ -5221,8 +5327,8 @@
       "options": [
         "Congenital Lobar Emphysema",
         "Acute Infectious Bronchiolitis",
-        "CPAM and Emphysema",
-        "Hyperinflation in COPD"
+        "Asthma",
+        "CPAM and Emphysema"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -5233,8 +5339,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement, supporting Congenital Lobar Emphysema.",
         "Acute Infectious Bronchiolitis would instead show peribronchial thickening with hyperinflation and patchy subsegmental atelectatic opacity in a young child; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement.",
-        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement.",
-        "Hyperinflation in COPD would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement."
+        "Asthma would instead show airway smooth-muscle thickening, mucus plugging, and hyperinflation rather than focal consolidation; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement.",
+        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -5697,9 +5803,9 @@
       "joint_images": false,
       "options": [
         "Emphysema with primary lung cancer",
+        "Acute Asthma Attack",
         "Congenital Lobar Emphysema",
-        "Bronchiectasis and Situs Invertis",
-        "CPAM and Emphysema"
+        "Bronchiectasis and Situs Invertis"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -5709,9 +5815,9 @@
       ],
       "choice_rationales": [
         "Correct: The displayed image shows hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces, supporting Emphysema with primary lung cancer.",
+        "Acute Asthma Attack would instead show airway smooth-muscle thickening, mucus plugging, and hyperinflation rather than focal consolidation; the displayed image shows hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces.",
         "Congenital Lobar Emphysema would instead show marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement; the displayed image shows hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces.",
-        "Bronchiectasis and Situs Invertis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces.",
-        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces."
+        "Bronchiectasis and Situs Invertis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -5750,9 +5856,9 @@
       "joint_images": true,
       "options": [
         "Centri-acinar Emphysema",
-        "Bronchiectasis due to Chronic Bronchitis",
+        "Asthma",
         "CPAM and Emphysema",
-        "Congenital Lobar Emphysema (LUL) Improvement"
+        "Acute Asthma Attack"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -5762,9 +5868,9 @@
       ],
       "choice_rationales": [
         "Centri-acinar Emphysema would instead show enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
-        "Bronchiectasis due to Chronic Bronchitis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
+        "Asthma would instead show airway smooth-muscle thickening, mucus plugging, and hyperinflation rather than focal consolidation; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
         "Correct: The displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung, supporting CPAM and Emphysema.",
-        "Congenital Lobar Emphysema (LUL) Improvement would instead show marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung."
+        "Acute Asthma Attack would instead show airway smooth-muscle thickening, mucus plugging, and hyperinflation rather than focal consolidation; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -7657,10 +7763,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Patchy ground-glass opacity",
+        "Pulmonary arterial hypertension",
         "Granulomatosis with polyangiitis",
-        "Multiple small pulmonary nodules",
-        "Lung Mass"
+        "Patchy ground-glass opacity",
+        "Multiple small pulmonary nodules"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -7669,10 +7775,10 @@
         "necrotizing granulomatous inflammation and vasculitis, often producing multiple cavitary pulmonary nodules"
       ],
       "choice_rationales": [
-        "Patchy ground-glass opacity would instead show geographic bilateral ground-glass attenuation that does not completely obscure underlying vessels; the displayed image shows necrotizing granulomatous inflammation and vasculitis, often producing multiple cavitary pulmonary nodules.",
+        "Pulmonary arterial hypertension would instead show marked small-pulmonary-artery medial and intimal remodeling, with plexiform change in advanced disease; the displayed image shows necrotizing granulomatous inflammation and vasculitis, often producing multiple cavitary pulmonary nodules.",
         "Correct: The displayed image shows necrotizing granulomatous inflammation and vasculitis, often producing multiple cavitary pulmonary nodules, supporting Granulomatosis with polyangiitis.",
-        "Multiple small pulmonary nodules would instead show numerous discrete small rounded opacities distributed through both lungs; the displayed image shows necrotizing granulomatous inflammation and vasculitis, often producing multiple cavitary pulmonary nodules.",
-        "Lung Mass would instead show a focal pulmonary soft-tissue opacity distinct from surrounding aerated lung; the displayed image shows necrotizing granulomatous inflammation and vasculitis, often producing multiple cavitary pulmonary nodules."
+        "Patchy ground-glass opacity would instead show geographic bilateral ground-glass attenuation that does not completely obscure underlying vessels; the displayed image shows necrotizing granulomatous inflammation and vasculitis, often producing multiple cavitary pulmonary nodules.",
+        "Multiple small pulmonary nodules would instead show numerous discrete small rounded opacities distributed through both lungs; the displayed image shows necrotizing granulomatous inflammation and vasculitis, often producing multiple cavitary pulmonary nodules."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -8879,7 +8985,7 @@
         "Pulmonary sarcoidosis",
         "Interstitial Lung Filling Pattern",
         "Hilar and Mediastinal Adenopathy Sarcoidosis",
-        "Radiation Damage from Breast Cancer Treatment"
+        "Cystic fibrosis-associated bronchiectasis"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -8891,7 +8997,7 @@
         "Pulmonary sarcoidosis would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows reticular or linear opacity involving the supporting interstitium.",
         "Correct: The displayed image shows reticular or linear opacity involving the supporting interstitium, supporting Interstitial Lung Filling Pattern.",
         "Hilar and Mediastinal Adenopathy Sarcoidosis would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows reticular or linear opacity involving the supporting interstitium.",
-        "Radiation Damage from Breast Cancer Treatment would instead show sharply geographic consolidation or fibrosis conforming to a prior radiation field; the displayed image shows reticular or linear opacity involving the supporting interstitium."
+        "Cystic fibrosis-associated bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows reticular or linear opacity involving the supporting interstitium."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -10787,7 +10893,7 @@
         "Normal Infant",
         "Lymphoma Compressing Trachea",
         "Near Normal Lung Filling Pattern",
-        "Lymphadenopathy"
+        "Cystic fibrosis-associated bronchiectasis"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -10799,7 +10905,7 @@
         "Normal Infant would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
         "Lymphoma Compressing Trachea would instead show respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
         "Correct: The displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion, supporting Near Normal Lung Filling Pattern.",
-        "Lymphadenopathy would instead show enlarged hilar or mediastinal lymph nodes forming lobulated soft-tissue fullness; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion."
+        "Cystic fibrosis-associated bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -21069,7 +21175,7 @@
         "Bronchiectasis",
         "Emphysema CT Low Attenuation Bullae",
         "Centri-acinar Emphysema",
-        "CPAM and Emphysema"
+        "Acute Asthma Attack"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -21081,7 +21187,7 @@
         "Correct: The displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance, supporting Bronchiectasis.",
         "Emphysema CT Low Attenuation Bullae would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
         "Centri-acinar Emphysema would instead show enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
-        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance."
+        "Acute Asthma Attack would instead show airway smooth-muscle thickening, mucus plugging, and hyperinflation rather than focal consolidation; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -21120,9 +21226,9 @@
       "joint_images": false,
       "options": [
         "Acute Infectious Bronchiolitis",
-        "CPAM and Emphysema",
+        "Acute Asthma Attack",
         "Bronchiectasis",
-        "Emphysema CT Low Attenuation Bullae"
+        "CPAM and Emphysema"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -21132,9 +21238,9 @@
       ],
       "choice_rationales": [
         "Acute Infectious Bronchiolitis would instead show peribronchial thickening with hyperinflation and patchy subsegmental atelectatic opacity in a young child; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
-        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
+        "Acute Asthma Attack would instead show airway smooth-muscle thickening, mucus plugging, and hyperinflation rather than focal consolidation; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
         "Correct: The displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance, supporting Bronchiectasis.",
-        "Emphysema CT Low Attenuation Bullae would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance."
+        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -22326,6 +22432,59 @@
       "quality_review_batch": null
     },
     {
+      "question_id": "q_ae398612c4ff",
+      "source_group_id": "sg_f17359e9d01e",
+      "source_id": "src_b0d776f01771",
+      "variant_id": "var_bb87a060d8f3",
+      "question_type": "Identification",
+      "tested_concept": "Pulmonary arterial hypertension",
+      "stem": "Given this echocardiographic report and the labeled apical four-chamber view, which diagnosis is best supported?",
+      "case_context": "A patient with progressive exertional dyspnea and a loud pulmonic component of the second heart sound undergoes transthoracic echocardiography; the report estimates the right ventricular systolic pressure at 58 mmHg with septal flattening in systole.",
+      "visual_target": "all displayed panels together",
+      "panel_handling": "retained_composite",
+      "joint_images": true,
+      "options": [
+        "Pulmonary arterial hypertension",
+        "Bilateral pneumothoraces",
+        "Patchy ground-glass opacity",
+        "Benign calcified pulmonary nodule"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [],
+      "explanation": "The decisive visible finding is an echocardiographic four-chamber view with the right ventricle (RV) and left ventricle (LV) labeled, interpreted alongside a report noting an estimated RVSP of 58 mmHg and systolic septal flattening — findings that indicate right ventricular pressure overload from pulmonary arterial hypertension. This pattern supports Pulmonary arterial hypertension.",
+      "visual_clues": [
+        "an echocardiographic four-chamber view with the right ventricle (RV) and left ventricle (LV) labeled, interpreted alongside a report noting an estimated RVSP of 58 mmHg and systolic septal flattening — findings that indicate right ventricular pressure overload from pulmonary arterial hypertension"
+      ],
+      "choice_rationales": [
+        "Correct: The displayed image shows an echocardiographic four-chamber view with the right ventricle (RV) and left ventricle (LV) labeled, interpreted alongside a report noting an estimated RVSP of 58 mmHg and systolic septal flattening — findings that indicate right ventricular pressure overload from pulmonary arterial hypertension, supporting Pulmonary arterial hypertension.",
+        "Bilateral pneumothoraces would instead show bilateral visceral pleural lines with absent peripheral lung markings on both sides; the displayed image shows an echocardiographic four-chamber view with the right ventricle (RV) and left ventricle (LV) labeled, interpreted alongside a report noting an estimated RVSP of 58 mmHg and systolic septal flattening — findings that indicate right ventricular pressure overload from pulmonary arterial hypertension.",
+        "Patchy ground-glass opacity would instead show geographic bilateral ground-glass attenuation that does not completely obscure underlying vessels; the displayed image shows an echocardiographic four-chamber view with the right ventricle (RV) and left ventricle (LV) labeled, interpreted alongside a report noting an estimated RVSP of 58 mmHg and systolic septal flattening — findings that indicate right ventricular pressure overload from pulmonary arterial hypertension.",
+        "Benign calcified pulmonary nodule would instead show a sharply marginated pulmonary nodule containing dense central or laminated calcification; the displayed image shows an echocardiographic four-chamber view with the right ventricle (RV) and left ventricle (LV) labeled, interpreted alongside a report noting an estimated RVSP of 58 mmHg and systolic septal flattening — findings that indicate right ventricular pressure overload from pulmonary arterial hypertension."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
+      "category": "Pulmonary pathology",
+      "modality": "Echocardiography",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "pulmonary-pathology",
+      "source_origin": "third_party",
+      "source_collection": "3rd Party",
+      "source_collection_key": "third_party",
+      "quiz_asset": "public/assets/images/quiz_7de3593b72170dcf.webp",
+      "original_asset": "public/assets/images/original_208b64414530a995.png",
+      "post_answer_source": {
+        "original_filename": "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg",
+        "source_document": "Desktop/Add third-party pulmonary image collection",
+        "source_collection": "3rd Party",
+        "source_collection_key": "third_party",
+        "source_page_or_slide": "",
+        "source_id": "src_b0d776f01771",
+        "rights_status": "unknown; local study use only"
+      },
+      "review_status": "VERIFIED",
+      "quality_review_batch": null
+    },
+    {
       "question_id": "q_7763d993342d",
       "source_group_id": "sg_f37ab6278c83",
       "source_id": "src_30f86bc113d1",
@@ -23242,7 +23401,7 @@
         "Interstitial Lung Filling Pattern",
         "Idiopathic Pulmonary Fibrosis",
         "Asbestosis Plaque",
-        "Bronchiectasis and Cystic fibrosis"
+        "Cystic fibrosis-associated bronchiectasis"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -23254,7 +23413,7 @@
         "Interstitial Lung Filling Pattern would instead show reticular or linear opacity involving the supporting interstitium; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting Idiopathic Pulmonary Fibrosis.",
         "Asbestosis Plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "Bronchiectasis and Cystic fibrosis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
+        "Cystic fibrosis-associated bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -23824,7 +23983,7 @@
       "options": [
         "Duchenne's Muscular Dystrophy",
         "Lymphadenopathy",
-        "Left Hilar Lung Mass",
+        "Pulmonary arterial hypertension",
         "Neonatal respiratory distress syndrome"
       ],
       "correct_index": 3,
@@ -23836,7 +23995,7 @@
       "choice_rationales": [
         "Duchenne's Muscular Dystrophy would instead show reduced chest expansion and dependent atelectatic change in the setting of neuromuscular weakness; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
         "Lymphadenopathy would instead show enlarged hilar or mediastinal lymph nodes forming lobulated soft-tissue fullness; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
-        "Left Hilar Lung Mass would instead show a focal pulmonary soft-tissue opacity distinct from surrounding aerated lung; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
+        "Pulmonary arterial hypertension would instead show marked small-pulmonary-artery medial and intimal remodeling, with plexiform change in advanced disease; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
         "Correct: The displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli, supporting Neonatal respiratory distress syndrome."
       ],
       "ground_truth_confidence": "high",
@@ -26262,8 +26421,8 @@
       "options": [
         "Hilar and Mediastinal Adenopathy Sarcoidosis",
         "Asbestosis",
-        "Radiation Damage from Breast Cancer Treatment",
-        "Cystic fibrosis with Bronchiectasis"
+        "Cystic fibrosis-associated bronchiectasis",
+        "Radiation Damage from Breast Cancer Treatment"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -26274,8 +26433,8 @@
       "choice_rationales": [
         "Hilar and Mediastinal Adenopathy Sarcoidosis would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
         "Correct: The displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques, supporting Asbestosis.",
-        "Radiation Damage from Breast Cancer Treatment would instead show sharply geographic consolidation or fibrosis conforming to a prior radiation field; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
-        "Cystic fibrosis with Bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques."
+        "Cystic fibrosis-associated bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
+        "Radiation Damage from Breast Cancer Treatment would instead show sharply geographic consolidation or fibrosis conforming to a prior radiation field; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -27090,6 +27249,59 @@
         "source_collection_key": "third_party",
         "source_page_or_slide": "",
         "source_id": "src_e17dd6a8c876",
+        "rights_status": "unknown; local study use only"
+      },
+      "review_status": "VERIFIED",
+      "quality_review_batch": null
+    },
+    {
+      "question_id": "q_e88ba3f8736f",
+      "source_group_id": "sg_edf4182e5f00",
+      "source_id": "src_a1288c90c360",
+      "variant_id": "var_334473c443fc",
+      "question_type": "Identification",
+      "tested_concept": "Cystic fibrosis-associated bronchiectasis",
+      "stem": "Given this history, which diagnosis is best supported by the pattern on this chest radiograph?",
+      "case_context": "A young adult with a history of recurrent childhood pneumonias, chronic productive cough, and a positive sweat chloride test undergoes this chest radiograph.",
+      "visual_target": "all displayed panels together",
+      "panel_handling": "retained_composite",
+      "joint_images": true,
+      "options": [
+        "Cystic fibrosis-associated bronchiectasis",
+        "Rheumatoid Arthritis",
+        "Hilar and Mediastinal Adenopathy Sarcoidosis",
+        "Radiation Damage from Lung Cancer Treatment"
+      ],
+      "correct_index": 0,
+      "accepted_terminology": [],
+      "explanation": "The decisive visible finding is increased bronchovascular markings with peribronchial wall thickening and bronchiectatic change, in a patient with a positive sweat chloride test. This pattern supports Cystic fibrosis-associated bronchiectasis.",
+      "visual_clues": [
+        "increased bronchovascular markings with peribronchial wall thickening and bronchiectatic change, in a patient with a positive sweat chloride test"
+      ],
+      "choice_rationales": [
+        "Correct: The displayed image shows increased bronchovascular markings with peribronchial wall thickening and bronchiectatic change, in a patient with a positive sweat chloride test, supporting Cystic fibrosis-associated bronchiectasis.",
+        "Rheumatoid Arthritis would instead show fibrotic interstitial lung disease occurring with the displayed rheumatoid clinical context; the displayed image shows increased bronchovascular markings with peribronchial wall thickening and bronchiectatic change, in a patient with a positive sweat chloride test.",
+        "Hilar and Mediastinal Adenopathy Sarcoidosis would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows increased bronchovascular markings with peribronchial wall thickening and bronchiectatic change, in a patient with a positive sweat chloride test.",
+        "Radiation Damage from Lung Cancer Treatment would instead show sharply geographic consolidation or fibrosis conforming to a prior radiation field; the displayed image shows increased bronchovascular markings with peribronchial wall thickening and bronchiectatic change, in a patient with a positive sweat chloride test."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
+      "category": "Interstitial lung disease",
+      "modality": "X-ray",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "interstitial-lung-disease",
+      "source_origin": "third_party",
+      "source_collection": "3rd Party",
+      "source_collection_key": "third_party",
+      "quiz_asset": "public/assets/images/quiz_e6c57c63f6d9f806.webp",
+      "original_asset": "public/assets/images/original_d09545f65d774385.png",
+      "post_answer_source": {
+        "original_filename": "P529 CF Lung Disease.png",
+        "source_document": "Desktop/Add third-party pulmonary image collection",
+        "source_collection": "3rd Party",
+        "source_collection_key": "third_party",
+        "source_page_or_slide": "",
+        "source_id": "src_a1288c90c360",
         "rights_status": "unknown; local study use only"
       },
       "review_status": "VERIFIED",
@@ -28062,9 +28274,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
+        "Cystic fibrosis-associated bronchiectasis",
         "Asbestosis",
         "Idiopathic Pulmonary Fibrosis",
-        "Bleomycin or Amiodarone Pulmonary Fibrosis",
         "Sarcoidosis"
       ],
       "correct_index": 3,
@@ -28074,9 +28286,9 @@
         "non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions"
       ],
       "choice_rationales": [
+        "Cystic fibrosis-associated bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions.",
         "Asbestosis would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions.",
         "Idiopathic Pulmonary Fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions.",
-        "Bleomycin or Amiodarone Pulmonary Fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions.",
         "Correct: The displayed image shows non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions, supporting Sarcoidosis."
       ],
       "ground_truth_confidence": "high",
@@ -28115,9 +28327,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
+        "Cystic fibrosis-associated bronchiectasis",
         "Idiopathic Pulmonary Fibrosis",
         "Radiation Damage from Breast Cancer Treatment",
-        "Radiation Damage from Lung Cancer Treatment",
         "Silicosis"
       ],
       "correct_index": 3,
@@ -28127,9 +28339,9 @@
         "a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring"
       ],
       "choice_rationales": [
+        "Cystic fibrosis-associated bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring.",
         "Idiopathic Pulmonary Fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring.",
         "Radiation Damage from Breast Cancer Treatment would instead show sharply geographic consolidation or fibrosis conforming to a prior radiation field; the displayed image shows a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring.",
-        "Radiation Damage from Lung Cancer Treatment would instead show sharply geographic consolidation or fibrosis conforming to a prior radiation field; the displayed image shows a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring.",
         "Correct: The displayed image shows a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring, supporting Silicosis."
       ],
       "ground_truth_confidence": "high",
@@ -28330,7 +28542,7 @@
         "Lung Mass",
         "Multiple small pulmonary nodules",
         "Benign calcified pulmonary nodule",
-        "Lung Nodule"
+        "Pulmonary arterial hypertension"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -28342,7 +28554,7 @@
         "Lung Mass would instead show a focal pulmonary soft-tissue opacity distinct from surrounding aerated lung; the displayed image shows numerous discrete small rounded opacities distributed through both lungs.",
         "Correct: The displayed image shows numerous discrete small rounded opacities distributed through both lungs, supporting Multiple small pulmonary nodules.",
         "Benign calcified pulmonary nodule would instead show a sharply marginated pulmonary nodule containing dense central or laminated calcification; the displayed image shows numerous discrete small rounded opacities distributed through both lungs.",
-        "Lung Nodule would instead show a focal pulmonary soft-tissue opacity distinct from surrounding aerated lung; the displayed image shows numerous discrete small rounded opacities distributed through both lungs."
+        "Pulmonary arterial hypertension would instead show marked small-pulmonary-artery medial and intimal remodeling, with plexiform change in advanced disease; the displayed image shows numerous discrete small rounded opacities distributed through both lungs."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",

@@ -1,13 +1,13 @@
 # Pulmonary multi-collection preflight audit
 
-Generated: 2026-09-16T20:29:33.541755-04:00
+Generated: 2026-09-16T20:42:17.671963-04:00
 
-- Source: `/sessions/rcw-01t75m4lq7i9mvmfffwuwvuu/mnt/Desktop/Rename` (read-only)
-- Source: `/sessions/rcw-01t75m4lq7i9mvmfffwuwvuu/mnt/Desktop/Add` (read-only)
+- Source: `/Users/chriselwell/Desktop/Rename` (read-only)
+- Source: `/Users/chriselwell/Desktop/Add` (read-only)
 - Physical image files: 558
 - Decodable files: 558
-- Scored questions: 539
-- Review-only sources: 13
+- Scored questions: 543
+- Review-only sources: 9
 - Perceptual duplicates withheld: 6
 - Source groups with multiple named variants: 63
 - Low-resolution files (one dimension below 500 px): 145
@@ -17,8 +17,8 @@ Generated: 2026-09-16T20:29:33.541755-04:00
 
 ## Collections
 
-- 3rd Party: 177 sources, 166 scored
-- Lecture material: 381 sources, 373 scored
+- 3rd Party: 177 sources, 168 scored
+- Lecture material: 381 sources, 375 scored
 
 ## Modalities
 
@@ -44,23 +44,21 @@ Generated: 2026-09-16T20:29:33.541755-04:00
 ## Scored topic coverage
 
 - Acute lung injury and edema: 19
-- Airway and obstructive: 47
+- Airway and obstructive: 49
 - Congenital and chest wall: 35
 - Imaging patterns: 20
 - Infection: 88
-- Interstitial lung disease: 72
+- Interstitial lung disease: 73
 - Neoplasm: 74
 - Normal anatomy: 23
 - Pleural disease: 52
-- Pulmonary pathology: 67
+- Pulmonary pathology: 68
 - Pulmonary vascular: 30
 - Upper airway: 12
 
 ## Review-only decisions
 
-- `Acute Asthma Attack` (src_133c8f085ec9): A near-normal chest radiograph cannot establish an acute asthma diagnosis by itself.
 - `Appendicitis` (src_c12eecb01b3b): The filename and visible target do not establish a defensible pulmonary identification task.
-- `Asthma` (src_9ea62021eef9): A normal or near-normal chest radiograph is not diagnostic of asthma.
 - `Cystic fibrosis` (src_14b8edc63179): The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.
 - `Cystic fibrosis` (src_7dfc37266c91): The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.
 - `Normal` (src_69eae45a736d): The filename does not identify the organ, tissue compartment, or intended normal structure.
@@ -69,8 +67,6 @@ Generated: 2026-09-16T20:29:33.541755-04:00
 - `Pneumothorax CT Air in Pleural Space with Partial Lung Collapse` (src_778524185030): Diagnostic labels define the tested pneumothorax directly over medically meaningful pixels and cannot be removed safely.
 - `Echocardiogram in Pulmonary Artery Hypertension (1:3)` (src_3c8badfc2a02): A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.
 - `Echocardiogram in Pulmonary Artery Hypertension (2:3)` (src_83c2c36ca9b3): A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.
-- `Echocardiogram in Pulmonary Artery Hypertension (3:3)` (src_b0d776f01771): A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.
-- `Cystic fibrosis-associated bronchiectasis` (src_a1288c90c360): The radiographs show chronic airway disease, but cystic fibrosis cannot be uniquely established from this image alone.
 
 ## Transformation policy
 

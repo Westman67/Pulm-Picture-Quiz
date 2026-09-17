@@ -49,9 +49,7 @@ IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg"}
 # These files remain visible in reviewer mode but are not used in scored sessions. Their
 # visible evidence does not establish one sufficiently precise pulmonary answer.
 REVIEW_ONLY_RENAME: dict[str, str] = {
-    "Acute Asthma Attack.png": "A near-normal chest radiograph cannot establish an acute asthma diagnosis by itself.",
     "Appendicitis CXR.png": "The filename and visible target do not establish a defensible pulmonary identification task.",
-    "Asthma CXR.png": "A normal or near-normal chest radiograph is not diagnostic of asthma.",
     "CF CT 2.png": "The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.",
     "CF CT 3.png": "The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.",
     "Normal Histo.png": "The filename does not identify the organ, tissue compartment, or intended normal structure.",
@@ -59,12 +57,36 @@ REVIEW_ONLY_RENAME: dict[str, str] = {
     "Pulmonary Metalplasia .png": "The source label is ambiguous and the intended metaplastic process is not specified reliably.",
 }
 
+CASE_CONTEXT: dict[str, str] = {
+    "Acute Asthma Attack.png": "A 19-year-old presents to the emergency department with acute dyspnea, audible wheeze, and a prolonged expiratory phase during a known asthma exacerbation.",
+    "Asthma CXR.png": "A patient with a long-standing history of episodic wheeze, nocturnal cough, and spirometry-confirmed reversible airflow obstruction undergoes this chest radiograph as part of a routine outpatient work-up.",
+    "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "A patient with progressive exertional dyspnea and a loud pulmonic component of the second heart sound undergoes transthoracic echocardiography; the report estimates the right ventricular systolic pressure at 58 mmHg with septal flattening in systole.",
+    "P529 CF Lung Disease.png": "A young adult with a history of recurrent childhood pneumonias, chronic productive cough, and a positive sweat chloride test undergoes this chest radiograph.",
+}
+
+# Stem override for the CASE_CONTEXT questions above: the default stem_for() phrasing asks for
+# an identification from pixels alone, which is exactly what these sources cannot support without
+# the paired vignette.
+CASE_STEM: dict[str, str] = {
+    "Acute Asthma Attack.png": "Given this clinical presentation, which diagnosis is most consistent with the history and this chest radiograph?",
+    "Asthma CXR.png": "Given this clinical presentation, which diagnosis is most consistent with the history and this chest radiograph?",
+    "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "Given this echocardiographic report and the labeled apical four-chamber view, which diagnosis is best supported?",
+    "P529 CF Lung Disease.png": "Given this history, which diagnosis is best supported by the pattern on this chest radiograph?",
+}
+
+# Clue override for the same sources: describes only what is defensibly visible plus the case
+# detail that supplies the missing specificity, instead of the generic pathophysiology fallback.
+CASE_CLUE: dict[str, str] = {
+    "Acute Asthma Attack.png": "a chest radiograph that is normal or near-normal, without consolidation, effusion, or a focal mass \u2014 the expected pattern during an acute asthma exacerbation, since the diagnosis is made clinically rather than radiographically",
+    "Asthma CXR.png": "a chest radiograph that remains normal or near-normal despite the patient's documented reversible airflow obstruction, consistent with asthma, in which imaging is typically unremarkable outside of a severe exacerbation",
+    "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "an echocardiographic four-chamber view with the right ventricle (RV) and left ventricle (LV) labeled, interpreted alongside a report noting an estimated RVSP of 58 mmHg and systolic septal flattening \u2014 findings that indicate right ventricular pressure overload from pulmonary arterial hypertension",
+    "P529 CF Lung Disease.png": "increased bronchovascular markings with peribronchial wall thickening and bronchiectatic change, in a patient with a positive sweat chloride test",
+}
+
 REVIEW_ONLY_ADD: dict[str, str] = {
     "A Pneumothorax CT Air in Pleural Space with Partial Lung Collapse.png": "Diagnostic labels define the tested pneumothorax directly over medically meaningful pixels and cannot be removed safely.",
     "Echocardiogram in Pulmonary Artery Hypertension (1:3).jpg": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.",
     "Echocardiogram in Pulmonary Artery Hypertension (2:3).jpg": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.",
-    "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.",
-    "P529 CF Lung Disease.png": "The radiographs show chronic airway disease, but cystic fibrosis cannot be uniquely established from this image alone.",
 }
 
 DUPLICATE_OF: dict[str, str] = {
@@ -304,6 +326,7 @@ ADD_CONCEPT_OVERRIDES = {
     "Aspergillus Fumigatus.jpg": "Aspergillus fumigatus conidiophore",
     "Asteroid Bodies in Pulmonary Sarcoidosis.jpg": "Asteroid body in a multinucleated giant cell",
     "Bronchiectasis-Gross-Pathology.png": "Bronchiectasis",
+    "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "Pulmonary arterial hypertension",
     "C Berylliosis Noncaseating Granuloma Histology.png": "Noncaseating granuloma",
     "Cocco Copy.png": "Coccidioides spherules",
     "Crypto 2.png": "Cryptococcus neoformans",
@@ -927,6 +950,10 @@ def main() -> None:
         joint = entry["modality"] in {"X-ray and CT", "X-ray and pathology", "X-ray, CT, and pathology", "Gross pathology and histology"} or entry["filename"] in composite_files
         stem, visual_target = stem_for(entry["modality"], joint, entry["concept"])
         clue = feature_for(entry["concept"], entry["modality"])
+        case_context = CASE_CONTEXT.get(entry["filename"], "")
+        if case_context:
+            stem = CASE_STEM.get(entry["filename"], stem)
+            clue = CASE_CLUE.get(entry["filename"], clue)
         group_members = groups[entry["source_group_id"]]
         duplicate_target = None
         if entry["collection_key"] == "third_party" and entry["filename"] in DUPLICATE_OF:
@@ -1045,7 +1072,7 @@ def main() -> None:
             "question_type": "Identification",
             "tested_concept": entry["concept"],
             "stem": stem,
-            "case_context": "",
+            "case_context": case_context,
             "visual_target": visual_target,
             "panel_handling": "retained_composite" if joint else "single_complete_image",
             "joint_images": joint,

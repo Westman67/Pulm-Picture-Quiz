@@ -31,7 +31,7 @@ test("new bank uses schema version 2 and valid source lineage", () => {
   assert.equal(bank.question_count, questions.length);
   assert.equal(manifest.record_count, 558);
   assert.equal(manifest.records.length, 558);
-  assert.equal(questions.length, 539);
+  assert.equal(questions.length, 543);
   const sources = new Map(manifest.records.map((record) => [record.source_id, record]));
   for (const question of questions) {
     assert.equal(sources.get(question.source_id)?.status, "USABLE");
@@ -112,8 +112,8 @@ test("session selection is deterministic and respects filters and requested leng
   assert.deepEqual(marked.questions.map((q) => q.question_id), [questions[1].question_id]);
   const rename = createSession(questions, { ...config, sourceCollection: "rename", length: "all" }, progress, 1);
   const thirdParty = createSession(questions, { ...config, sourceCollection: "third_party", length: "all" }, progress, 1);
-  assert.equal(rename.questions.length, 373);
-  assert.equal(thirdParty.questions.length, 166);
+  assert.equal(rename.questions.length, 375);
+  assert.equal(thirdParty.questions.length, 168);
   assert.ok(rename.questions.every((q) => q.source_collection_key === "rename"));
   assert.ok(thirdParty.questions.every((q) => q.source_collection_key === "third_party"));
 });
