@@ -1073,7 +1073,7 @@ CONCEPT_SYNONYM_GROUPS: list[set[str]] = [
     {"ankylosing spondylitis", "ankylosing spondylitis spine"},
     {"caseating granulomas with central necrosis and langhans giant cell", "tuberculosis caseating granuloma"},
     {"necrotizing pneumonia", "necrotizing pneumonia with pleural effusion"},
-    {"hilar and mediastinal adenopathy sarcoidosis", "sarcoidosis extensive hilar and mediastinal adenopathy"},
+    {"hilar and mediastinal adenopathy sarcoidosis", "sarcoidosis extensive hilar and mediastinal adenopathy", "pulmonary sarcoidosis"},
     {"bronchopneumonia", "extensive bronchopneumonia with confluent areas"},
     {"asbestosis", "asbestosis plaque"},
     {"asteroid body from sarcoidosis", "asteroid body in a multinucleated giant cell"},

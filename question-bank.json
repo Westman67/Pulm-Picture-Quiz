@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "bank_id": "bank_1f1f6759b9d9",
-  "generated_at": "2026-09-17T13:33:29.314178-04:00",
+  "generated_at": "2026-09-17T18:06:07.449799-04:00",
   "mode": "pulmonary_visual_identification",
   "question_count": 544,
   "quality_review": {
@@ -2625,7 +2625,7 @@
         "Sarcoidosis Extensive Hilar and Mediastinal Adenopathy",
         "Cystic fibrosis-associated bronchiectasis",
         "Bleomycin or Amiodarone Pulmonary Fibrosis",
-        "Pulmonary sarcoidosis"
+        "Silicosis"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -2637,7 +2637,7 @@
         "Sarcoidosis Extensive Hilar and Mediastinal Adenopathy would instead show bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic presenting radiographic pattern of sarcoidosis; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, developing in the setting of a fibrosis-inducing chemotherapeutic or antiarrhythmic agent rather than as isolated idiopathic fibrosis.",
         "Cystic fibrosis-associated bronchiectasis would instead show diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, developing in the setting of a fibrosis-inducing chemotherapeutic or antiarrhythmic agent rather than as isolated idiopathic fibrosis.",
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, developing in the setting of a fibrosis-inducing chemotherapeutic or antiarrhythmic agent rather than as isolated idiopathic fibrosis, supporting Bleomycin or Amiodarone Pulmonary Fibrosis.",
-        "Pulmonary sarcoidosis would instead show bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic radiographic pattern of sarcoidosis; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, developing in the setting of a fibrosis-inducing chemotherapeutic or antiarrhythmic agent rather than as isolated idiopathic fibrosis."
+        "Silicosis would instead show upper-lung-predominant silicotic nodules and scarring; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, developing in the setting of a fibrosis-inducing chemotherapeutic or antiarrhythmic agent rather than as isolated idiopathic fibrosis."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -8190,7 +8190,7 @@
         "Hilar and Mediastinal Adenopathy Sarcoidosis",
         "Cavitary pulmonary tuberculosis",
         "Contraction atelectasis TB",
-        "Pulmonary sarcoidosis"
+        "Granulomatosis with polyangiitis"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -8202,7 +8202,7 @@
         "Correct: The displayed image shows bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic presenting radiographic pattern of sarcoidosis, supporting Hilar and Mediastinal Adenopathy Sarcoidosis.",
         "Cavitary pulmonary tuberculosis would instead show upper-lung cavitary destructive opacity with surrounding fibrotic or infiltrative change; the displayed image shows bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic presenting radiographic pattern of sarcoidosis.",
         "Contraction atelectasis TB would instead show fibrotic volume loss with architectural distortion and traction on adjacent structures from healed tuberculous scarring, rather than active cavitary destruction; the displayed image shows bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic presenting radiographic pattern of sarcoidosis.",
-        "Pulmonary sarcoidosis would instead show bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic radiographic pattern of sarcoidosis; the displayed image shows bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic presenting radiographic pattern of sarcoidosis."
+        "Granulomatosis with polyangiitis would instead show necrotizing granulomatous inflammation and vasculitis, often producing multiple cavitary pulmonary nodules; the displayed image shows bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic presenting radiographic pattern of sarcoidosis."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -8984,8 +8984,8 @@
       "options": [
         "Pulmonary sarcoidosis",
         "Interstitial Lung Filling Pattern",
-        "Hilar and Mediastinal Adenopathy Sarcoidosis",
-        "Cystic fibrosis-associated bronchiectasis"
+        "Cystic fibrosis-associated bronchiectasis",
+        "Radiation Damage from Breast Cancer Treatment"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -8996,8 +8996,8 @@
       "choice_rationales": [
         "Pulmonary sarcoidosis would instead show bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic radiographic pattern of sarcoidosis; the displayed image shows reticular or linear opacity involving the supporting interstitium.",
         "Correct: The displayed image shows reticular or linear opacity involving the supporting interstitium, supporting Interstitial Lung Filling Pattern.",
-        "Hilar and Mediastinal Adenopathy Sarcoidosis would instead show bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic presenting radiographic pattern of sarcoidosis; the displayed image shows reticular or linear opacity involving the supporting interstitium.",
-        "Cystic fibrosis-associated bronchiectasis would instead show diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause; the displayed image shows reticular or linear opacity involving the supporting interstitium."
+        "Cystic fibrosis-associated bronchiectasis would instead show diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause; the displayed image shows reticular or linear opacity involving the supporting interstitium.",
+        "Radiation Damage from Breast Cancer Treatment would instead show sharply geographic consolidation or fibrosis conforming to a prior radiation field; the displayed image shows reticular or linear opacity involving the supporting interstitium."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -18737,7 +18737,7 @@
         "Granulomatosis with polyangiitis",
         "TB",
         "Sarcoidosis Extensive Hilar and Mediastinal Adenopathy",
-        "Pulmonary sarcoidosis"
+        "Colonized cavity of Aspergilloma"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -18749,7 +18749,7 @@
         "Granulomatosis with polyangiitis would instead show necrotizing granulomatous inflammation and vasculitis, often producing multiple cavitary pulmonary nodules; the displayed image shows upper-lung cavitation, fibrotic volume loss, or clustered apical destructive disease.",
         "Correct: The displayed image shows upper-lung cavitation, fibrotic volume loss, or clustered apical destructive disease, supporting TB.",
         "Sarcoidosis Extensive Hilar and Mediastinal Adenopathy would instead show bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic presenting radiographic pattern of sarcoidosis; the displayed image shows upper-lung cavitation, fibrotic volume loss, or clustered apical destructive disease.",
-        "Pulmonary sarcoidosis would instead show bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic radiographic pattern of sarcoidosis; the displayed image shows upper-lung cavitation, fibrotic volume loss, or clustered apical destructive disease."
+        "Colonized cavity of Aspergilloma would instead show a rounded intracavitary mass separated from the cavity wall by a crescent of air; the displayed image shows upper-lung cavitation, fibrotic volume loss, or clustered apical destructive disease."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -18790,7 +18790,7 @@
         "Granulomatosis with polyangiitis",
         "TB",
         "Hilar and Mediastinal Adenopathy Sarcoidosis",
-        "Pulmonary sarcoidosis"
+        "Cryptococcus neoformans"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -18802,7 +18802,7 @@
         "Granulomatosis with polyangiitis would instead show necrotizing granulomatous inflammation and vasculitis, often producing multiple cavitary pulmonary nodules; the displayed image shows upper-lung cavitation, fibrotic volume loss, or clustered apical destructive disease.",
         "Correct: The displayed image shows upper-lung cavitation, fibrotic volume loss, or clustered apical destructive disease, supporting TB.",
         "Hilar and Mediastinal Adenopathy Sarcoidosis would instead show bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic presenting radiographic pattern of sarcoidosis; the displayed image shows upper-lung cavitation, fibrotic volume loss, or clustered apical destructive disease.",
-        "Pulmonary sarcoidosis would instead show bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic radiographic pattern of sarcoidosis; the displayed image shows upper-lung cavitation, fibrotic volume loss, or clustered apical destructive disease."
+        "Cryptococcus neoformans would instead show round narrow-based budding yeast surrounded by a prominent polysaccharide capsule; the displayed image shows upper-lung cavitation, fibrotic volume loss, or clustered apical destructive disease."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
