@@ -969,7 +969,7 @@ def main() -> None:
             related_ids.append(duplicate_target["source_id"])
         manual_reason = entry["review_reason"]
         if duplicate_target:
-            manual_reason = f"Perceptual duplicate of {DUPLICATE_OF[entry['filename']]} in the Rename collection."
+            manual_reason = f"Perceptual duplicate of {DUPLICATE_OF[entry['filename']]} in the {duplicate_target['collection_label']} collection."
         record = {
             "asset_id": entry["asset_id"],
             "source_group_id": entry["source_group_id"],

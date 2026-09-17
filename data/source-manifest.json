@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-16T20:47:32.242102-04:00",
+  "generated_at": "2026-09-16T20:50:17.189260-04:00",
   "builder": "build-medical-picture-quiz / multi-collection flat-image builder",
   "source_directories": [
     {
@@ -35531,7 +35531,7 @@
       "candidate_question_types": [
         "Identification"
       ],
-      "manual_review_reason": "Perceptual duplicate of Adenocarcinoma Histo.png in the Rename collection.",
+      "manual_review_reason": "Perceptual duplicate of Adenocarcinoma Histo.png in the Lecture material collection.",
       "source_attribution_visible_in_original": "unknown",
       "source_origin": "third_party",
       "source_collection": "3rd Party",
@@ -35555,7 +35555,7 @@
             "orientation markers"
           ],
           "confidence": "low",
-          "reason_unsupported": "Perceptual duplicate of Adenocarcinoma Histo.png in the Rename collection."
+          "reason_unsupported": "Perceptual duplicate of Adenocarcinoma Histo.png in the Lecture material collection."
         }
       },
       "variants": [
@@ -38313,7 +38313,7 @@
       "candidate_question_types": [
         "Identification"
       ],
-      "manual_review_reason": "Perceptual duplicate of Squamous Cell Carcinoma Histo 2.png in the Rename collection.",
+      "manual_review_reason": "Perceptual duplicate of Squamous Cell Carcinoma Histo 2.png in the Lecture material collection.",
       "source_attribution_visible_in_original": "unknown",
       "source_origin": "third_party",
       "source_collection": "3rd Party",
@@ -38337,7 +38337,7 @@
             "orientation markers"
           ],
           "confidence": "low",
-          "reason_unsupported": "Perceptual duplicate of Squamous Cell Carcinoma Histo 2.png in the Rename collection."
+          "reason_unsupported": "Perceptual duplicate of Squamous Cell Carcinoma Histo 2.png in the Lecture material collection."
         }
       },
       "variants": [
@@ -38580,7 +38580,7 @@
       "candidate_question_types": [
         "Identification"
       ],
-      "manual_review_reason": "Perceptual duplicate of Asthma Histo 3.png in the Rename collection.",
+      "manual_review_reason": "Perceptual duplicate of Asthma Histo 3.png in the Lecture material collection.",
       "source_attribution_visible_in_original": "unknown",
       "source_origin": "third_party",
       "source_collection": "3rd Party",
@@ -38604,7 +38604,7 @@
             "orientation markers"
           ],
           "confidence": "low",
-          "reason_unsupported": "Perceptual duplicate of Asthma Histo 3.png in the Rename collection."
+          "reason_unsupported": "Perceptual duplicate of Asthma Histo 3.png in the Lecture material collection."
         }
       },
       "variants": [
@@ -43265,7 +43265,7 @@
       "candidate_question_types": [
         "Identification"
       ],
-      "manual_review_reason": "Perceptual duplicate of Plexiform Lesion Histo copy.png in the Rename collection.",
+      "manual_review_reason": "Perceptual duplicate of Plexiform Lesion Histo copy.png in the Lecture material collection.",
       "source_attribution_visible_in_original": "unknown",
       "source_origin": "third_party",
       "source_collection": "3rd Party",
@@ -43289,7 +43289,7 @@
             "orientation markers"
           ],
           "confidence": "low",
-          "reason_unsupported": "Perceptual duplicate of Plexiform Lesion Histo copy.png in the Rename collection."
+          "reason_unsupported": "Perceptual duplicate of Plexiform Lesion Histo copy.png in the Lecture material collection."
         }
       },
       "variants": [
@@ -43710,7 +43710,7 @@
       "candidate_question_types": [
         "Identification"
       ],
-      "manual_review_reason": "Perceptual duplicate of Carcinoid Gross.png in the Rename collection.",
+      "manual_review_reason": "Perceptual duplicate of Carcinoid Gross.png in the Lecture material collection.",
       "source_attribution_visible_in_original": "unknown",
       "source_origin": "third_party",
       "source_collection": "3rd Party",
@@ -43734,7 +43734,7 @@
             "orientation markers"
           ],
           "confidence": "low",
-          "reason_unsupported": "Perceptual duplicate of Carcinoid Gross.png in the Rename collection."
+          "reason_unsupported": "Perceptual duplicate of Carcinoid Gross.png in the Lecture material collection."
         }
       },
       "variants": [
@@ -43800,7 +43800,7 @@
       "candidate_question_types": [
         "Identification"
       ],
-      "manual_review_reason": "Perceptual duplicate of Small Cell Histo.png in the Rename collection.",
+      "manual_review_reason": "Perceptual duplicate of Small Cell Histo.png in the Lecture material collection.",
       "source_attribution_visible_in_original": "unknown",
       "source_origin": "third_party",
       "source_collection": "3rd Party",
@@ -43824,7 +43824,7 @@
             "orientation markers"
           ],
           "confidence": "low",
-          "reason_unsupported": "Perceptual duplicate of Small Cell Histo.png in the Rename collection."
+          "reason_unsupported": "Perceptual duplicate of Small Cell Histo.png in the Lecture material collection."
         }
       },
       "variants": [
