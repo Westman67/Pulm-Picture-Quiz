@@ -15,7 +15,7 @@ import {
   setQualityFlagStatus,
   toggleMarked,
   upsertQualityFlag,
-} from "./quiz-core.mjs?v=rename-add-20260917a";
+} from "./quiz-core.mjs?v=rename-add-20260917b";
 
 const app = document.querySelector("#app");
 const state = {
@@ -199,6 +199,32 @@ function header() {
     </header>`;
 }
 
+function computeStateCounts(category, sourceCollection) {
+  const pool = state.bank.questions.filter((question) => {
+    if (category && category !== "all" && !question.category_filters.includes(category)) return false;
+    if (sourceCollection && sourceCollection !== "all" && question.source_collection_key !== sourceCollection) return false;
+    return true;
+  });
+  return {
+    all: pool.length,
+    unseen: pool.filter((question) => progressMatches(question, state.progress, "unseen")).length,
+    incorrect: pool.filter((question) => progressMatches(question, state.progress, "incorrect")).length,
+    marked: pool.filter((question) => progressMatches(question, state.progress, "marked")).length,
+  };
+}
+
+function refreshStateFilterCounts(form) {
+  const stateSelect = form.elements.namedItem("stateFilter");
+  if (!stateSelect) return;
+  const category = form.elements.namedItem("category")?.value ?? "all";
+  const sourceCollection = form.elements.namedItem("sourceCollection")?.value ?? "all";
+  const counts = computeStateCounts(category, sourceCollection);
+  const labels = { all: "All available", unseen: "Unseen only", incorrect: "Previously incorrect", marked: "Marked for review" };
+  for (const option of stateSelect.options) {
+    if (labels[option.value]) option.textContent = `${labels[option.value]} (${counts[option.value]})`;
+  }
+}
+
 function homeView() {
   const categoryCounts = Object.fromEntries(CATEGORY_FILTERS.map((category) => [
     category,
@@ -212,11 +238,7 @@ function homeView() {
   const totalCorrect = Object.values(state.progress.questions).reduce((sum, p) => sum + (p.correct_count || 0), 0);
   const totalAnswered = Object.values(state.progress.questions).reduce((sum, p) => sum + (p.times_answered || 0), 0);
   const openFlagCount = Object.values(state.qualityFlags.flags).filter((flag) => flag.status !== "resolved").length;
-  const stateCounts = {
-    unseen: state.bank.questions.filter((question) => progressMatches(question, state.progress, "unseen")).length,
-    incorrect: state.bank.questions.filter((question) => progressMatches(question, state.progress, "incorrect")).length,
-    marked: state.bank.questions.filter((question) => progressMatches(question, state.progress, "marked")).length,
-  };
+  const stateCounts = computeStateCounts("all", "all");
   return `
     <main class="dashboard shell">
       <section class="hero">
@@ -240,7 +262,7 @@ function homeView() {
           <div class="form-row">
             <label>Category<select name="category"><option value="all">Mixed — all categories</option>${CATEGORY_FILTERS.map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)} (${categoryCounts[category]})</option>`).join("")}</select></label>
             <label>Collection<select name="sourceCollection"><option value="all">All pictures (${state.bank.question_count})</option>${Object.entries(COLLECTION_LABELS).map(([key, label]) => `<option value="${escapeHtml(key)}">${escapeHtml(label)} (${collectionCounts[key] || 0})</option>`).join("")}</select></label>
-            <label>Question state<select name="stateFilter"><option value="all">All available (${state.bank.question_count})</option><option value="unseen">Unseen only (${stateCounts.unseen})</option><option value="incorrect">Previously incorrect (${stateCounts.incorrect})</option><option value="marked">Marked for review (${stateCounts.marked})</option></select></label>
+            <label>Question state<select name="stateFilter"><option value="all">All available (${stateCounts.all})</option><option value="unseen">Unseen only (${stateCounts.unseen})</option><option value="incorrect">Previously incorrect (${stateCounts.incorrect})</option><option value="marked">Marked for review (${stateCounts.marked})</option></select></label>
           </div>
 
           <fieldset><legend>Length</legend><div class="length-options">
@@ -590,6 +612,11 @@ app.addEventListener("submit", (event) => {
 });
 
 app.addEventListener("change", async (event) => {
+  if (event.target.name === "category" || event.target.name === "sourceCollection") {
+    const form = event.target.closest("form");
+    if (form) refreshStateFilterCounts(form);
+    return;
+  }
   if (event.target.id !== "import-file" || !event.target.files?.[0]) return;
   try {
     const imported = normalizeProgress(JSON.parse(await event.target.files[0].text()));
@@ -666,8 +693,8 @@ window.addEventListener("keydown", (event) => {
 async function init() {
   try {
     const [bank, reviewQueue] = await Promise.all([
-      fetch("data/question-bank.json?v=rename-add-20260917a").then((response) => response.json()),
-      fetch("data/review-queue.json?v=rename-add-20260917a").then((response) => response.json()),
+      fetch("data/question-bank.json?v=rename-add-20260917b").then((response) => response.json()),
+      fetch("data/review-queue.json?v=rename-add-20260917b").then((response) => response.json()),
     ]);
     state.bank = applyImageCategories(bank);
     state.reviewQueue = reviewQueue;
