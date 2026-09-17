@@ -1,8 +1,9 @@
 # Pulmonary ID Lab
 
-A local, offline-capable pulmonary visual-identification quiz rebuilt from every PNG in
-`~/Desktop/Rename`. The source collection is read-only. The app contains separate,
-metadata-stripped PNG derivatives with opaque browser paths and a schema-version-2 question bank.
+A local, offline-capable pulmonary visual-identification quiz rebuilt from every supported image in
+`~/Desktop/Rename` and `~/Desktop/Add`. Both source collections are read-only. The app contains
+separate, metadata-stripped PNG derivatives with opaque browser paths and a schema-version-2
+question bank.
 
 ## Start the completed build
 
@@ -22,7 +23,9 @@ Do not open `index.html` through `file://`; browsers block the local JSON reques
 
 - Learn Mode with immediate feedback, visual clues, and four option-specific rationales
 - Exam Mode with deferred results and rationales
-- image-type, unseen, incorrect, marked, and mixed filters
+- separate image-type and collection selectors, plus unseen, incorrect, marked, and mixed filters
+- collections for `Rename collection`, `3rd Party` (Desktop/Add), and all pictures
+- image categories for CXR, CT, All Imaging, Histology, and Gross
 - lengths 10, 20, 40, all available, and endless practice
 - persistent Back/Next navigation with unanswered skipping and restored draft/locked state
 - zoom, pan, reset, teaching-original toggle, and keyboard controls (`1`–`4`, `Enter`, `Z`, arrows)
@@ -31,7 +34,7 @@ Do not open `index.html` through `file://`; browsers block the local JSON reques
 
 ## Regenerate, validate, test, and build
 
-The generator reads `~/Desktop/Rename` and never writes into it:
+The generator reads `~/Desktop/Rename` and `~/Desktop/Add` and never writes into either folder:
 
 ```bash
 python3 scripts/generate_rename_bank.py
@@ -44,7 +47,8 @@ dependencies.
 
 ## Data and privacy
 
-- All images are classified as `third_party` under the persistent `Rename` collection rule.
+- All images are classified as `third_party`; the independent collection key identifies either
+  `Rename collection` or `3rd Party`.
 - Rights are unknown, so the collection and app are restricted to local study use and must not be
   published or redistributed.
 - Learner progress and photo flags stay in browser `localStorage` unless explicitly exported.
@@ -53,7 +57,7 @@ dependencies.
 
 ## Project outputs
 
-- `reports/preflight-audit.md` and `reports/source-audit.json`
+- `reports/preflight-audit.md`, `reports/source-audit-rename.json`, and `reports/source-audit-add.json`
 - `data/source-manifest.json`
 - `data/question-bank.json`
 - `data/review-queue.json`

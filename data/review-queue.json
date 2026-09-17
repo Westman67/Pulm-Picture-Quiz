@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-16T18:42:10.335382-04:00",
-  "count": 8,
+  "generated_at": "2026-09-16T20:04:41.617517-04:00",
+  "count": 13,
   "items": [
     {
       "source_id": "src_133c8f085ec9",
@@ -10,6 +10,8 @@
       "proposed_answer": "Acute Asthma Attack",
       "modality": "X-ray",
       "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "source_collection_key": "rename",
+      "source_collection": "Rename collection",
       "uncertainty_reason": "A near-normal chest radiograph cannot establish an acute asthma diagnosis by itself.",
       "answer_leakage_risk": "low",
       "project_status": "NEEDS_REVIEW"
@@ -21,6 +23,8 @@
       "proposed_answer": "Appendicitis",
       "modality": "X-ray",
       "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "source_collection_key": "rename",
+      "source_collection": "Rename collection",
       "uncertainty_reason": "The filename and visible target do not establish a defensible pulmonary identification task.",
       "answer_leakage_risk": "low",
       "project_status": "NEEDS_REVIEW"
@@ -32,6 +36,8 @@
       "proposed_answer": "Asthma",
       "modality": "X-ray",
       "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "source_collection_key": "rename",
+      "source_collection": "Rename collection",
       "uncertainty_reason": "A normal or near-normal chest radiograph is not diagnostic of asthma.",
       "answer_leakage_risk": "low",
       "project_status": "NEEDS_REVIEW"
@@ -43,6 +49,8 @@
       "proposed_answer": "Cystic fibrosis",
       "modality": "CT",
       "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "source_collection_key": "rename",
+      "source_collection": "Rename collection",
       "uncertainty_reason": "The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.",
       "answer_leakage_risk": "low",
       "project_status": "NEEDS_REVIEW"
@@ -54,6 +62,8 @@
       "proposed_answer": "Cystic fibrosis",
       "modality": "CT",
       "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "source_collection_key": "rename",
+      "source_collection": "Rename collection",
       "uncertainty_reason": "The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.",
       "answer_leakage_risk": "low",
       "project_status": "NEEDS_REVIEW"
@@ -65,6 +75,8 @@
       "proposed_answer": "Normal",
       "modality": "Histology",
       "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "source_collection_key": "rename",
+      "source_collection": "Rename collection",
       "uncertainty_reason": "The filename does not identify the organ, tissue compartment, or intended normal structure.",
       "answer_leakage_risk": "low",
       "project_status": "NEEDS_REVIEW"
@@ -76,6 +88,8 @@
       "proposed_answer": "Pulmonary Infarct",
       "modality": "Gross Pathology",
       "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "source_collection_key": "rename",
+      "source_collection": "Rename collection",
       "uncertainty_reason": "Embedded labels state the tested diagnosis directly over medically meaningful tissue.",
       "answer_leakage_risk": "high",
       "project_status": "NEEDS_REVIEW"
@@ -87,7 +101,74 @@
       "proposed_answer": "Pulmonary epithelial metaplasia",
       "modality": "Histology",
       "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "source_collection_key": "rename",
+      "source_collection": "Rename collection",
       "uncertainty_reason": "The source label is ambiguous and the intended metaplastic process is not specified reliably.",
+      "answer_leakage_risk": "high",
+      "project_status": "NEEDS_REVIEW"
+    },
+    {
+      "source_id": "src_778524185030",
+      "source_group_id": "sg_d0701dfe8ee6",
+      "preview_asset": "public/assets/images/original_521c82cbf026c3d8.png",
+      "proposed_answer": "Pneumothorax CT Air in Pleural Space with Partial Lung Collapse",
+      "modality": "CT",
+      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "source_collection_key": "third_party",
+      "source_collection": "3rd Party",
+      "uncertainty_reason": "Diagnostic labels define the tested pneumothorax directly over medically meaningful pixels and cannot be removed safely.",
+      "answer_leakage_risk": "high",
+      "project_status": "NEEDS_REVIEW"
+    },
+    {
+      "source_id": "src_3c8badfc2a02",
+      "source_group_id": "sg_cb3141e79046",
+      "preview_asset": "public/assets/images/original_aed5a954e0b46aa4.png",
+      "proposed_answer": "Echocardiogram in Pulmonary Artery Hypertension (1:3)",
+      "modality": "Echocardiography",
+      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "source_collection_key": "third_party",
+      "source_collection": "3rd Party",
+      "uncertainty_reason": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.",
+      "answer_leakage_risk": "high",
+      "project_status": "NEEDS_REVIEW"
+    },
+    {
+      "source_id": "src_83c2c36ca9b3",
+      "source_group_id": "sg_5c16ed2aa2d9",
+      "preview_asset": "public/assets/images/original_7e1b7eb0877376a8.png",
+      "proposed_answer": "Echocardiogram in Pulmonary Artery Hypertension (2:3)",
+      "modality": "Echocardiography",
+      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "source_collection_key": "third_party",
+      "source_collection": "3rd Party",
+      "uncertainty_reason": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.",
+      "answer_leakage_risk": "high",
+      "project_status": "NEEDS_REVIEW"
+    },
+    {
+      "source_id": "src_b0d776f01771",
+      "source_group_id": "sg_bd4e04cc43e3",
+      "preview_asset": "public/assets/images/original_208b64414530a995.png",
+      "proposed_answer": "Echocardiogram in Pulmonary Artery Hypertension (3:3)",
+      "modality": "Echocardiography",
+      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "source_collection_key": "third_party",
+      "source_collection": "3rd Party",
+      "uncertainty_reason": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.",
+      "answer_leakage_risk": "high",
+      "project_status": "NEEDS_REVIEW"
+    },
+    {
+      "source_id": "src_a1288c90c360",
+      "source_group_id": "sg_edf4182e5f00",
+      "preview_asset": "public/assets/images/original_d09545f65d774385.png",
+      "proposed_answer": "Cystic fibrosis-associated bronchiectasis",
+      "modality": "X-ray",
+      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
+      "source_collection_key": "third_party",
+      "source_collection": "3rd Party",
+      "uncertainty_reason": "The radiographs show chronic airway disease, but cystic fibrosis cannot be uniquely established from this image alone.",
       "answer_leakage_risk": "low",
       "project_status": "NEEDS_REVIEW"
     }

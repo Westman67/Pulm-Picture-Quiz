@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a local pulmonary picture-identification bank from ~/Desktop/Rename.
+"""Build a local pulmonary picture-identification bank from Desktop/Rename and Add.
 
 The source folder is treated as immutable. Every browser asset is re-encoded into the
 project with an opaque filename and stripped metadata. Filename-derived keys are accepted
@@ -22,17 +22,32 @@ from PIL import Image, ImageOps
 
 
 PROJECT = Path(__file__).resolve().parents[1]
-SOURCE = Path.home() / "Desktop" / "Rename"
+COLLECTIONS = (
+    {
+        "key": "rename",
+        "label": "Rename collection",
+        "path": Path.home() / "Desktop" / "Rename",
+        "document": "Desktop/Rename user-curated pulmonary image collection",
+        "rule": "All images supplied in Desktop/Rename are third-party study images.",
+    },
+    {
+        "key": "third_party",
+        "label": "3rd Party",
+        "path": Path.home() / "Desktop" / "Add",
+        "document": "Desktop/Add third-party pulmonary image collection",
+        "rule": "All images supplied in Desktop/Add are third-party study images in the 3rd Party collection.",
+    },
+)
 ASSET_DIR = PROJECT / "public" / "assets" / "images"
 DATA_DIR = PROJECT / "data"
 REPORT_DIR = PROJECT / "reports"
 NOW = datetime.now(ZoneInfo("America/New_York")).isoformat()
 
-IMAGE_EXTENSIONS = {".png"}
+IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg"}
 
 # These files remain visible in reviewer mode but are not used in scored sessions. Their
 # visible evidence does not establish one sufficiently precise pulmonary answer.
-REVIEW_ONLY: dict[str, str] = {
+REVIEW_ONLY_RENAME: dict[str, str] = {
     "Acute Asthma Attack.png": "A near-normal chest radiograph cannot establish an acute asthma diagnosis by itself.",
     "Appendicitis CXR.png": "The filename and visible target do not establish a defensible pulmonary identification task.",
     "Asthma CXR.png": "A normal or near-normal chest radiograph is not diagnostic of asthma.",
@@ -41,6 +56,23 @@ REVIEW_ONLY: dict[str, str] = {
     "Normal Histo.png": "The filename does not identify the organ, tissue compartment, or intended normal structure.",
     "Pulmonary Infarct Gross.png": "Embedded labels state the tested diagnosis directly over medically meaningful tissue.",
     "Pulmonary Metalplasia .png": "The source label is ambiguous and the intended metaplastic process is not specified reliably.",
+}
+
+REVIEW_ONLY_ADD: dict[str, str] = {
+    "A Pneumothorax CT Air in Pleural Space with Partial Lung Collapse.png": "Diagnostic labels define the tested pneumothorax directly over medically meaningful pixels and cannot be removed safely.",
+    "Echocardiogram in Pulmonary Artery Hypertension (1:3).jpg": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.",
+    "Echocardiogram in Pulmonary Artery Hypertension (2:3).jpg": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.",
+    "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.",
+    "P529 CF Lung Disease.png": "The radiographs show chronic airway disease, but cystic fibrosis cannot be uniquely established from this image alone.",
+}
+
+DUPLICATE_OF: dict[str, str] = {
+    "E_Asthma_Mucus_Plug_Histology.png": "Asthma Histo 3.png",
+    "P010 Primary Pulmonary Hypertension Plexiform Lesion.png": "Plexiform Lesion Histo copy.png",
+    "P013 Small Cell Carcinoma Histology.png": "Small Cell Histo.png",
+    "P013 Carcinoid Tumor Polypoid Bronchial Gross.png": "Carcinoid Gross.png",
+    "D Squamous Cell Lung Carcinoma Keratin Pearls Histology.png": "Squamous Cell Carcinoma Histo 2.png",
+    "B Lung Adenocarcinoma Glandular Histology.png": "Adenocarcinoma Histo.png",
 }
 
 # Safe border crops remove answer-revealing titles or captions that sit outside diagnostic
@@ -52,6 +84,16 @@ CROPS: dict[str, tuple[float, float, float, float]] = {
     "Malignant Left Pleural Effusion CXR.png": (0.0, 0.0, 1.0, 0.88),
     "Normal Bronchus Histo.png": (0.0, 0.12, 1.0, 1.0),
     "Serpentine (Chrysotile)(90%) Asbestos EM.png": (0.0, 0.10, 1.0, 1.0),
+}
+
+ADD_CROPS: dict[str, tuple[float, float, float, float]] = {
+    "Asbestos-Exposure.png": (0.0, 0.06, 1.0, 0.82),
+    "Bronchiectasis-Gross-Pathology.png": (0.0, 0.08, 1.0, 1.0),
+    "Chronic-Silicosis-Progressive-Massive-Fibrosis-Chest-Xray.png": (0.0, 0.07, 1.0, 1.0),
+    "Congenital-Diaphragmatic-Hernia-Chest-Xray.jpg": (0.0, 0.12, 1.0, 1.0),
+    "Crypto 2.png": (0.0, 0.08, 1.0, 1.0),
+    "Haemophilus Influenzae Thumb Sign X Ray.png": (0.0, 0.24, 1.0, 1.0),
+    "Mesothelioma-Ct.jpg": (0.0, 0.11, 1.0, 1.0),
 }
 
 COMPOSITES = {
@@ -81,6 +123,26 @@ COMPOSITES = {
     "Viral Nuclear Inclusions Histo.png",
 }
 
+ADD_COMPOSITES = {
+    "Bilateral-Pulmonary-Emboli.png",
+    "Congenital-Diaphragmatic-Hernia-Chest-Xray.jpg",
+    "Echocardiogram in Pulmonary Artery Hypertension (1:3).jpg",
+    "Echocardiogram in Pulmonary Artery Hypertension (2:3).jpg",
+    "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg",
+    "Empyema.png",
+    "Large cell carcinoma of the lung.jpg",
+    "Nonspecific Interstitial Pneumonia (NSIP).jpg",
+    "P065 Mesothelioma 01.jpeg",
+    "P168 Plexiform Lesions.png",
+    "P354 Kartagener S Syndrome.png",
+    "P449 Klebsiella Pneumonia.png",
+    "P529 CF Lung Disease.png",
+    "Pneumonia CT.jpg",
+    "Pulmonary Fibrosis Plain.jpg",
+    "Sarcoidosis All.png",
+    "Usual Interstitial Pneumonia (UIP).jpg",
+}
+
 CORRECTIONS = {
     "Abcess": "Abscess",
     "Abestosis": "Asbestosis",
@@ -97,9 +159,252 @@ CORRECTIONS = {
     "Silhoutte": "Silhouette",
 }
 
+ADD_MODALITY_OVERRIDES = {
+    "Active TB - Diagnosis.png": "Histology",
+    "Acute-Hypersensitivity-Pneumonitis.png": "CT",
+    "Adenocarcinoma of the Lung.jpg": "Histology",
+    "Anthracotic Pigment in Lung in Coal Worker's Pneumoconiosis.jpg": "Histology",
+    "ARDS Hyaline Membrane.jpeg": "Histology",
+    "ARDS X Ray.png": "X-ray",
+    "Asbestos-Exposure.png": "Gross Pathology",
+    "Asbestosis Gross.jpg": "Gross Pathology",
+    "Aspergillosis.jpg": "Microscopy",
+    "Aspergillus Fumigatus.jpg": "Microscopy",
+    "Asteroid Bodies in Pulmonary Sarcoidosis.jpg": "Histology",
+    "Bilateral Pleural Effusion.jpg": "CT",
+    "Bilateral Upper Lobe Cavitary Lung Disease TB.jpg": "X-ray",
+    "Bilateral-Pulmonary-Emboli.png": "CT",
+    "B Asbestos Ferruginous Body Prussian Blue Stain.png": "Histology",
+    "Blastomyces Dermatitidis (Yeast Form).jpg": "Microscopy",
+    "Bronchiectasis Lung Specimens.jpg": "Gross Pathology",
+    "Bronchiectasis Right Lung Saggital.jpg": "Gross Pathology",
+    "Bronchiectasis-Gross-Pathology.png": "CT",
+    "Bronchiectasis.jpg": "CT",
+    "Bronchopneumonia.jpg": "Histology",
+    "Bronchopulmonary Dysplasia.jpg": "X-ray",
+    "Caseating granulomas with central necrosis and Langhans giant cell.png": "Histology",
+    "Chronic Interstitial Lung Disease.jpg": "CT",
+    "Chronic Rhinosinusitis with Nasal Polyps.jpg": "CT",
+    "Chronic-Silicosis-Progressive-Massive-Fibrosis-Chest-Xray.png": "X-ray",
+    "Coal Worker's Pneumoconiosis.png": "Histology",
+    "Cocco Copy.png": "Histology",
+    "Croup.jpeg": "X-ray",
+    "Crypto 2.png": "Histology",
+    "Crypto Capsule copy.png": "Histology",
+    "Cryptococcus Neoformans India Ink Stain.png": "Microscopy",
+    "Cryptogenic-Organizing-Pneumonia.png": "CT",
+    "Congenital-Diaphragmatic-Hernia-Chest-Xray.jpg": "X-ray",
+    "Diaphragmatic-Rupture-Mediastinal-Shift.png": "X-ray",
+    "Echocardiogram in Pulmonary Artery Hypertension (1:3).jpg": "Echocardiography",
+    "Echocardiogram in Pulmonary Artery Hypertension (2:3).jpg": "Echocardiography",
+    "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "Echocardiography",
+    "Empyema.png": "X-ray and CT",
+    "Epiglottitis-with-Thumb-Sign.png": "X-ray",
+    "Epithelioid Mesothelioma.jpg": "Histology",
+    "Epithelioid-Mesothelioma.png": "Histology",
+    "Ferruginous-Bodies.png": "Histology",
+    "Haemophilus Influenzae Thumb Sign X Ray.png": "X-ray",
+    "Hampton Hump in Pulmonary Infarction.jpg": "X-ray",
+    "Hemosiderin-Laden Macrophages (Heart Failure Cells).png": "Histology",
+    "Histoplasma Capsulatum (Mold Form).jpg": "Microscopy",
+    "Hyaline Membranes in ARDS.jpg": "Histology",
+    "Hyperinflation in COPD.jpg": "X-ray",
+    "Hypersensitivity Pneumonitis HE 2.jpg": "Histology",
+    "Hypersensitivity Pneumonitis HE.jpg": "Histology",
+    "Hypersensitivity Pneumonitis.jpg": "CT",
+    "Hypersensitivity-Pneumonitis.png": "Histology",
+    "Idiopathic Pulmonary Fibrosis 1:2 Pain.jpg": "X-ray",
+    "Idiopathic Pulmonary Fibrosis 2:2.jpg": "CT",
+    "Invasive Aspergillosis.png": "Histology",
+    "IPF X Ray.png": "X-ray",
+    "Large cell carcinoma of the lung.jpg": "Histology",
+    "Left-Hilar-Lung-Mass-Chest-Xray.jpg": "X-ray",
+    "Left-Sided-Pleural-Effusion-in-Malignant-Mesothelioma-Frontal.jpg": "X-ray",
+    "Lines-of-Zahn.jpg": "Histology",
+    "Lymphocytic Infiltrate of Airways.png": "Histology",
+    "Mesothelioma Gross.jpg": "Gross Pathology",
+    "Mesothelioma-Ct.jpg": "CT",
+    "Multinucleated Giant Cells in Pulmonary Sarcoidosis.jpg": "Histology",
+    "NARDS.png": "X-ray",
+    "Neonatal-Respiratory-Distress-Syndrome-Hyaline-Membranes.png": "Histology",
+    "Noncaseating Granuloma in Sarcoidosis.jpg": "Histology",
+    "Nonspecific Interstitial Pneumonia (NSIP).jpg": "CT",
+    "P041 Respiratory Infections Pneumonia 04.jpeg": "Histology",
+    "P005 Tuberculosis AFB Stain.png": "Histology",
+    "P010 Primary Pulmonary Hypertension Plexiform Lesion.png": "Histology",
+    "P058 Pulmonary Fibrosis 02.jpeg": "X-ray",
+    "P058 Pulmonary Fibrosis 03.jpeg": "CT",
+    "P063 Small Cell Carcinoma 01.jpeg": "Histology",
+    "P065 Mesothelioma 01.jpeg": "Gross Pathology",
+    "P068 Pulmonary Hypertension 01.jpeg": "Histology",
+    "P070 Pneumothorax Chest Xrays 01.jpeg": "X-ray",
+    "P070 Pneumothorax Chest Xrays 02.jpeg": "X-ray",
+    "P073 Pleural Effusion Chest Xrays 02.jpeg": "X-ray",
+    "P073 Pleural Effusion Chest Xrays 03.jpeg": "X-ray",
+    "P165 PAH - Pulmonary Arterial Hypertension.png": "Histology",
+    "P168 Plexiform Lesions.png": "Histology",
+    "P182 Tuberculosis.png": "X-ray",
+    "P350 Bronchiectasis 01.png": "CT",
+    "P350 Bronchiectasis 02.png": "Gross Pathology",
+    "P354 Kartagener S Syndrome.png": "X-ray and CT",
+    "P369 Interstitial Lung Disease 01.png": "CT",
+    "P378 Asbestosis 01.png": "X-ray",
+    "P382 Hypersensitivity Pneumonitis.png": "Histology",
+    "P415 Bronchopneumonia 01.png": "X-ray",
+    "P449 Klebsiella Pneumonia.png": "X-ray and CT",
+    "P459 Spontaneous PTX - Clinical Features and Diagnosis.png": "X-ray",
+    "P463 Atelectasis - Alveolar Collapse.png": "X-ray",
+    "P466 Pleural Effusion.png": "X-ray",
+    "P482 Benign Pulmonary Nodules 02.png": "CT",
+    "P484 Small Cell Cancer.png": "Histology",
+    "P489 Squamous Cell Carcinoma.png": "Histology",
+    "P490 Adenocarcinoma.png": "Histology",
+    "P492 Bronchioloalveolar Carcinoma.png": "X-ray",
+    "P493 Bronchioloalveolar Carcinoma 01.png": "Histology",
+    "P493 Bronchioloalveolar Carcinoma 02.png": "Histology",
+    "P494 Large Cell Carcinoma.png": "Histology",
+    "P495 Carcinoid Tumor.png": "Immunohistochemistry",
+    "P529 CF Lung Disease.png": "X-ray",
+    "P559 Ghon Foci 02.png": "X-ray",
+    "P612 Pulmonary Embolism - Diagnosis.png": "CT",
+    "P613 Pulmonary Embolism - Diagnosis CT Angiogram.png": "CT",
+    "P621 Pulmonary Embolism - Pathology Findings Lines of Zahn.png": "Histology",
+    "Paracoccidioidomycosis Histology.png": "Histology",
+    "Parapneumonic effusion.png": "X-ray",
+    "Peripheral Opacity (Hampton Hump) from Pulmonary Embolism.jpg": "X-ray",
+    "Pleural Effusion and Passive Atelectasis.jpg": "X-ray",
+    "Pneumonia CT.jpg": "X-ray and CT",
+    "Pneumothorax X Ray.jpeg": "X-ray",
+    "Pulmonary Fibrosis Plain.jpg": "X-ray and CT",
+    "Pulmonary Hamartoma.jpg": "Histology",
+    "Pulmonary Large Cell Carcinoma.png": "Histology",
+    "Pulmonary Sarcoidosis.jpg": "Histology",
+    "Pulmonary-Adenocarcinoma.png": "Histology",
+    "Pulmonary-Hypertension.png": "Histology",
+    "Sarcoidosis All.png": "X-ray, CT, and pathology",
+    "Sarcoidosis CT.jpg": "CT",
+    "Silicosis X Ray.jpeg": "X-ray",
+    "Small Cell Lung Cancer.jpg": "Histology",
+    "Small Cell Lung Carcinoma HE.jpg": "Histology",
+    "Small Cell Lung Carcinoma.jpg": "Histology",
+    "Small Pulmonary Nodules.jpg": "CT",
+    "Squamous Cell Carcinoma of the Lung.jpg": "Histology",
+    "Streptococcus Pneumoniae (Pneumococci).jpg": "Microscopy",
+    "Streptococcus Pneumoniae with Capsule.jpg": "Microscopy",
+    "Usual Interstitial Pneumonia (UIP).jpg": "CT",
+}
+
+ADD_CONCEPT_OVERRIDES = {
+    "A Sarcoidosis Noncaseating Granuloma Histology.png": "Noncaseating granuloma",
+    "Active TB - Diagnosis.png": "Acid-fast bacilli consistent with pulmonary tuberculosis",
+    "Acute-Hypersensitivity-Pneumonitis.png": "Patchy ground-glass opacity",
+    "Asbestos-Exposure.png": "Asbestos-related calcified pleural plaque",
+    "Aspergillosis.jpg": "Aspergillus septate hyphae",
+    "Aspergillus Fumigatus.jpg": "Aspergillus fumigatus conidiophore",
+    "Asteroid Bodies in Pulmonary Sarcoidosis.jpg": "Asteroid body in a multinucleated giant cell",
+    "Bronchiectasis-Gross-Pathology.png": "Bronchiectasis",
+    "C Berylliosis Noncaseating Granuloma Histology.png": "Noncaseating granuloma",
+    "Cocco Copy.png": "Coccidioides spherules",
+    "Crypto 2.png": "Cryptococcus neoformans",
+    "Crypto Capsule copy.png": "Encapsulated Cryptococcus neoformans",
+    "Haemophilus Influenzae Thumb Sign X Ray.png": "Epiglottitis (thumb sign)",
+    "Hypersensitivity Pneumonitis.jpg": "Patchy ground-glass opacity",
+    "Multinucleated Giant Cells in Pulmonary Sarcoidosis.jpg": "Multinucleated giant cells in a noncaseating granuloma",
+    "NARDS.png": "Neonatal respiratory distress syndrome",
+    "P005 Respiratory Histology Overview 05.jpeg": "Normal pulmonary alveoli",
+    "P005 Tuberculosis AFB Stain.png": "Acid-fast bacilli consistent with pulmonary tuberculosis",
+    "P009 Sarcoidosis Noncaseating Granuloma Histology.png": "Noncaseating granuloma",
+    "P041 Respiratory Infections Pneumonia 04.jpeg": "Acute pneumonia",
+    "P058 Pulmonary Fibrosis 02.jpeg": "Pulmonary fibrosis",
+    "P058 Pulmonary Fibrosis 03.jpeg": "Pulmonary fibrosis",
+    "P063 Small Cell Carcinoma 01.jpeg": "Small cell lung carcinoma",
+    "P065 Mesothelioma 01.jpeg": "Pleural mesothelioma",
+    "P068 Pulmonary Hypertension 01.jpeg": "Pulmonary arterial hypertension",
+    "P070 Pneumothorax Chest Xrays 01.jpeg": "Pneumothorax",
+    "P070 Pneumothorax Chest Xrays 02.jpeg": "Pneumothorax",
+    "P073 Pleural Effusion Chest Xrays 02.jpeg": "Pleural effusion",
+    "P073 Pleural Effusion Chest Xrays 03.jpeg": "Pleural effusion",
+    "P165 PAH - Pulmonary Arterial Hypertension.png": "Pulmonary arterial hypertension",
+    "P168 Plexiform Lesions.png": "Plexiform lesions of pulmonary arterial hypertension",
+    "P182 Tuberculosis.png": "Cavitary pulmonary tuberculosis",
+    "P350 Bronchiectasis 01.png": "Bronchiectasis",
+    "P350 Bronchiectasis 02.png": "Bronchiectasis",
+    "P354 Kartagener S Syndrome.png": "Kartagener syndrome",
+    "P369 Interstitial Lung Disease 01.png": "Fibrotic interstitial lung disease",
+    "P378 Asbestosis 01.png": "Asbestosis",
+    "P382 Hypersensitivity Pneumonitis.png": "Hypersensitivity pneumonitis",
+    "P415 Bronchopneumonia 01.png": "Bronchopneumonia",
+    "P449 Klebsiella Pneumonia.png": "Klebsiella pneumonia",
+    "P459 Spontaneous PTX - Clinical Features and Diagnosis.png": "Pneumothorax",
+    "P463 Atelectasis - Alveolar Collapse.png": "Atelectasis",
+    "P466 Pleural Effusion.png": "Pleural effusion",
+    "P482 Benign Pulmonary Nodules 02.png": "Benign calcified pulmonary nodule",
+    "P484 Small Cell Cancer.png": "Small cell lung carcinoma",
+    "P489 Squamous Cell Carcinoma.png": "Squamous cell lung carcinoma",
+    "P490 Adenocarcinoma.png": "Pulmonary adenocarcinoma",
+    "P492 Bronchioloalveolar Carcinoma.png": "Bronchioloalveolar carcinoma",
+    "P493 Bronchioloalveolar Carcinoma 01.png": "Bronchioloalveolar carcinoma",
+    "P493 Bronchioloalveolar Carcinoma 02.png": "Bronchioloalveolar carcinoma",
+    "P494 Large Cell Carcinoma.png": "Large cell lung carcinoma",
+    "P495 Carcinoid Tumor.png": "Pulmonary carcinoid tumor",
+    "P529 CF Lung Disease.png": "Cystic fibrosis-associated bronchiectasis",
+    "P559 Ghon Foci 02.png": "Ghon focus",
+    "P612 Pulmonary Embolism - Diagnosis.png": "Acute pulmonary embolism",
+    "P613 Pulmonary Embolism - Diagnosis CT Angiogram.png": "Acute pulmonary embolism",
+    "P621 Pulmonary Embolism - Pathology Findings Lines of Zahn.png": "Lines of Zahn in thrombus",
+    "Pneumonia CT.jpg": "Cavitating pneumonia with lung abscess",
+    "Pulmonary Fibrosis Plain.jpg": "Pulmonary fibrosis",
+    "Pulmonary-Adenocarcinoma.png": "Pulmonary adenocarcinoma",
+    "Pulmonary-Hypertension.png": "Pulmonary arterial hypertension",
+    "Pulmonary Sarcoidosis.jpg": "Noncaseating granulomas",
+    "Noncaseating Granuloma in Sarcoidosis.jpg": "Noncaseating granuloma",
+    "Sarcoidosis All.png": "Pulmonary sarcoidosis",
+    "Small Pulmonary Nodules.jpg": "Multiple small pulmonary nodules",
+    "Streptococcus Pneumoniae with Capsule.jpg": "Encapsulated Streptococcus pneumoniae",
+}
+
 
 FEATURE_RULES: list[tuple[str, str]] = [
     (r"^normal$", "symmetric normally aerated lungs without focal opacity, pleural collection, mass, or destructive change"),
+    (r"normal pulmonary alveoli", "delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction"),
+    (r"acid.fast bacilli", "slender red acid-fast rods standing out against a blue counterstained background"),
+    (r"aspergillus.*conidiophore", "a septate stalk ending in a vesicle with radiating phialides and chains of conidia"),
+    (r"aspergillus.*hyphae", "thin septate hyphae with acute-angle branching"),
+    (r"blastomyc", "large thick-walled yeast with characteristic broad-based budding"),
+    (r"coccidio", "large tissue spherules containing numerous endospores"),
+    (r"cryptococcus|encapsulated cryptococcus", "round narrow-based budding yeast surrounded by a prominent polysaccharide capsule"),
+    (r"histoplasma.*mold", "delicate hyphae bearing tuberculate macroconidia"),
+    (r"histoplas", "small intracellular budding yeast clustered within macrophages"),
+    (r"paracoccidio", "multiple narrow-based buds radiating from a mother yeast in a pilot-wheel pattern"),
+    (r"streptococcus pneumoniae|pneumococci", "lancet-shaped paired cocci, with a clear capsule when specifically demonstrated"),
+    (r"noncaseating granuloma", "a compact collection of epithelioid histiocytes and multinucleated giant cells without central caseous necrosis"),
+    (r"multinucleated giant cells", "large fused histiocytes containing numerous nuclei within an organized granulomatous reaction"),
+    (r"asteroid body", "a stellate eosinophilic inclusion within a multinucleated giant cell"),
+    (r"anthracotic pigment|coal worker", "coarse black carbon pigment within macrophages and fibrotic pulmonary tissue"),
+    (r"ferruginous bod|asbestos bodies", "golden-brown beaded ferruginous bodies coating a central asbestos fiber"),
+    (r"lines of zahn", "alternating pale platelet-fibrin layers and darker red-cell-rich layers within an antemortem thrombus"),
+    (r"hemosiderin.laden macrophage", "golden-brown hemosiderin granules within alveolar macrophages indicating prior alveolar hemorrhage or chronic congestion"),
+    (r"patchy ground.glass opacity", "geographic bilateral ground-glass attenuation that does not completely obscure underlying vessels"),
+    (r"calcified pulmonary nodule", "a sharply marginated pulmonary nodule containing dense central or laminated calcification"),
+    (r"multiple small pulmonary nodules", "numerous discrete small rounded opacities distributed through both lungs"),
+    (r"caseating granuloma", "central granular caseous necrosis rimmed by epithelioid histiocytes and Langhans-type giant cells"),
+    (r"diaphragmatic rupture", "intrathoracic abdominal viscera with mediastinal displacement through a disrupted hemidiaphragm"),
+    (r"large cell.*carcinoma|pulmonary large cell", "sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation"),
+    (r"lymphocytic infiltrate.*airway", "dense mononuclear inflammation centered on and surrounding a small airway"),
+    (r"nonspecific interstitial pneumonia|\bnsip\b", "bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing"),
+    (r"vocal cord nodule", "small symmetric benign-appearing nodules arising at the free margins of the true vocal folds"),
+    (r"interstitial pneumonia", "alveolar septal inflammatory thickening with relative preservation of open air spaces"),
+    (r"ghon complex", "a peripheral primary tuberculous focus accompanied by regional hilar nodal disease"),
+    (r"bronchioloalveolar carcinoma", "neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern"),
+    (r"acute pneumonia", "neutrophil-rich intra-alveolar exudate filling air spaces while the supporting lung framework remains visible"),
+    (r"pulmonary fibrosis|\bipf\b", "bilateral basal and subpleural reticulation with traction change or honeycombing"),
+    (r"pulmonary arterial hypertension", "marked small-pulmonary-artery medial and intimal remodeling, with plexiform change in advanced disease"),
+    (r"cavitary pulmonary tuberculosis", "upper-lung cavitary destructive opacity with surrounding fibrotic or infiltrative change"),
+    (r"kartagener", "the combination of bronchiectasis and mirror-image thoracoabdominal orientation from situs inversus"),
+    (r"klebsiella pneumonia", "dense lobar consolidation with bulging fissure or cavitation typical of severe necrotizing bacterial pneumonia"),
+    (r"^atelectasis$", "focal lung opacity accompanied by volume loss and displacement of fissures, hilum, or mediastinum toward the collapse"),
+    (r"cavitating pneumonia", "air-space consolidation containing a thick-walled cavity or abscess"),
+    (r"pulmonary alveolus with alveolar macrophages", "large macrophages lying freely within otherwise thin-walled alveolar spaces"),
     (r"organized (?:venous )?(?:thromboembol|embol)", "a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event"),
     (r"recent thromboembol", "a fresh occlusive thrombus with preserved red-cell and fibrin laminations but no mature recanalization"),
     (r"smaller,? peripheral pulmonary thromboembol", "an occlusive thrombus lodged in a small peripheral pulmonary artery"),
@@ -266,7 +571,9 @@ def clean_text(value: str) -> str:
     return value
 
 
-def modality_for(name: str) -> str:
+def modality_for(name: str, collection_key: str = "rename") -> str:
+    if collection_key == "third_party" and name in ADD_MODALITY_OVERRIDES:
+        return ADD_MODALITY_OVERRIDES[name]
     folded = name.casefold()
     stem = clean_text(Path(name).stem).casefold()
     if "c xr" in folded:
@@ -307,8 +614,17 @@ def modality_for(name: str) -> str:
     return "Other"
 
 
-def concept_for(name: str) -> str:
-    value = re.sub(r"\s+", " ", Path(name).stem).strip()
+def concept_for(name: str, collection_key: str = "rename") -> str:
+    if collection_key == "third_party" and name in ADD_CONCEPT_OVERRIDES:
+        return ADD_CONCEPT_OVERRIDES[name]
+    value = Path(name).stem
+    if collection_key == "third_party":
+        value = value.replace("_", " ").replace("-", " ")
+        value = re.sub(r"^[A-F]\s+", "", value, flags=re.I)
+        value = re.sub(r"^P\d+\s+", "", value, flags=re.I)
+        value = re.sub(r"\s+\d+:\d+(?:\s+Pain)?$", "", value, flags=re.I)
+        value = re.sub(r"\s+(?:0[1-5])$", "", value, flags=re.I)
+    value = re.sub(r"\s+", " ", value).strip()
     # Strip variant suffixes first.
     value = re.sub(r"\s+copy$", "", value, flags=re.I)
     if not re.search(r"\b(?:type|stage)\s+[234]$", value, flags=re.I):
@@ -320,7 +636,7 @@ def concept_for(name: str) -> str:
     while previous != value:
         previous = value
         value = re.sub(r"\s+(?:cxr\s+ct|ct\s+cxr|cxr\s+histo|gross\s+histo)$", "", value, flags=re.I)
-        value = re.sub(r"\s+(?:cxr|ct|histo|gross|diagram|us|echo|em|angiogram|x\s*ray|sputum)$", "", value, flags=re.I)
+        value = re.sub(r"\s+(?:cxr|ct|histo(?:logy)?|gross|diagram|us|echo|em|angiogram|chest\s+xrays?|x\s*ray|xray|sputum|he)$", "", value, flags=re.I)
     value = re.sub(r"\s+\((?:lul|rul)\)$", "", value, flags=re.I)
     value = clean_text(value)
     replacements = {
@@ -385,9 +701,9 @@ def topic_for(concept: str) -> str:
 
 
 def modality_family(modality: str) -> str:
-    if modality in {"X-ray", "CT", "MRI", "Angiography", "Ultrasound", "X-ray and CT", "X-ray and pathology"}:
+    if modality in {"X-ray", "CT", "MRI", "Angiography", "Ultrasound", "Echocardiography", "X-ray and CT", "X-ray and pathology", "X-ray, CT, and pathology"}:
         return "imaging"
-    if modality in {"Histology", "Immunohistochemistry", "Electron Microscopy", "Cytology", "Gross pathology and histology"}:
+    if modality in {"Histology", "Microscopy", "Immunohistochemistry", "Electron Microscopy", "Cytology", "Gross pathology and histology"}:
         return "microscopy"
     if modality == "Gross Pathology":
         return "gross"
@@ -418,9 +734,9 @@ def stem_for(modality: str, joint: bool, concept: str) -> tuple[str, str]:
         stem = "Which normal pattern is demonstrated on this complete chest radiograph?" if normal else "Which diagnosis or named sign best explains the dominant pattern on this complete chest radiograph?"
     elif modality in {"CT", "MRI"}:
         stem = f"Which diagnosis or anatomic abnormality best matches the dominant {modality} finding in {scope}?"
-    elif modality in {"X-ray and CT", "X-ray and pathology", "Gross pathology and histology"}:
+    elif modality in {"X-ray and CT", "X-ray and pathology", "X-ray, CT, and pathology", "Gross pathology and histology"}:
         stem = f"Considering {scope}, which diagnosis best unifies the visible findings?"
-    elif modality == "Histology":
+    elif modality in {"Histology", "Microscopy"}:
         stem = f"Which diagnosis, tissue, or pathologic process best matches the dominant microscopic morphology in {scope}?"
     elif modality == "Immunohistochemistry":
         stem = f"Which diagnosis best matches the immunostaining pattern and cellular morphology in {scope}?"
@@ -430,7 +746,7 @@ def stem_for(modality: str, joint: bool, concept: str) -> tuple[str, str]:
         stem = f"Which diagnosis or anatomic abnormality best matches the gross morphology in {scope}?"
     elif modality == "Diagram":
         stem = f"Which pulmonary structure, anomaly, or intervention is represented by the relationships in {scope}?"
-    elif modality == "Ultrasound":
+    elif modality in {"Ultrasound", "Echocardiography"}:
         stem = f"Which diagnosis best matches the sonographic appearance in {scope}?"
     elif modality == "Angiography":
         stem = f"Which vascular abnormality is demonstrated by the contrast-filled vessels in {scope}?"
@@ -511,53 +827,72 @@ def reencode(source: Path, destination: Path, crop: tuple[float, float, float, f
 
 
 def main() -> None:
-    if not SOURCE.is_dir():
-        raise SystemExit(f"Missing source directory: {SOURCE}")
-    files = sorted((path for path in SOURCE.iterdir() if path.suffix.casefold() in IMAGE_EXTENSIONS), key=lambda path: path.name.casefold())
-    if not files:
-        raise SystemExit(f"No PNG files found in {SOURCE}")
+    for collection in COLLECTIONS:
+        if not collection["path"].is_dir():
+            raise SystemExit(f"Missing source directory: {collection['path']}")
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
     ASSET_DIR.mkdir(parents=True, exist_ok=True)
 
     entries: list[dict] = []
-    for path in files:
-        sha = digest_file(path)
-        with Image.open(path) as opened:
-            image = ImageOps.exif_transpose(opened)
-            width, height = image.size
-            perceptual = dhash(image)
-            has_alpha = image.mode in {"RGBA", "LA"} or "transparency" in image.info
-        modality = modality_for(path.name)
-        concept = concept_for(path.name)
-        topic = topic_for(concept)
-        base = re.sub(r"\s+(?:copy|[234])$", "", path.stem, flags=re.I)
-        group_key = f"{clean_text(base)}:{modality_family(modality)}"
-        entries.append({
-            "path": path,
-            "filename": path.name,
-            "sha": sha,
-            "width": width,
-            "height": height,
-            "aspect_ratio": width / height,
-            "perceptual_hash": perceptual,
-            "has_alpha": has_alpha,
-            "modality": modality,
-            "family": modality_family(modality),
-            "concept": concept,
-            "topic": topic,
-            "asset_id": stable_id("asset", sha),
-            "source_id": stable_id("src", sha),
-            "source_group_id": stable_id("sg", group_key.casefold()),
-            "variant_id": stable_id("var", f"{sha}:quiz-v1"),
-            "question_id": stable_id("q", f"{sha}:{concept}:identification"),
-            "status": "NEEDS_REVIEW" if path.name in REVIEW_ONLY else "USABLE",
-        })
+    for collection in COLLECTIONS:
+        files = sorted(
+            (path for path in collection["path"].iterdir() if path.suffix.casefold() in IMAGE_EXTENSIONS),
+            key=lambda path: path.name.casefold(),
+        )
+        if not files:
+            raise SystemExit(f"No supported image files found in {collection['path']}")
+        for path in files:
+            sha = digest_file(path)
+            with Image.open(path) as opened:
+                image_format = opened.format or path.suffix.lstrip(".").upper()
+                image = ImageOps.exif_transpose(opened)
+                width, height = image.size
+                perceptual = dhash(image)
+                has_alpha = image.mode in {"RGBA", "LA"} or "transparency" in image.info
+            modality = modality_for(path.name, collection["key"])
+            concept = concept_for(path.name, collection["key"])
+            topic = topic_for(concept)
+            if collection["key"] == "rename":
+                base = re.sub(r"\s+(?:copy|[234])$", "", path.stem, flags=re.I)
+                group_key = f"{clean_text(base)}:{modality_family(modality)}"
+                review_reason = REVIEW_ONLY_RENAME.get(path.name, "")
+            else:
+                group_key = f"{concept}:{modality_family(modality)}"
+                review_reason = REVIEW_ONLY_ADD.get(path.name, "")
+            status = "DUPLICATE" if collection["key"] == "third_party" and path.name in DUPLICATE_OF else ("NEEDS_REVIEW" if review_reason else "USABLE")
+            entries.append({
+                "path": path,
+                "filename": path.name,
+                "sha": sha,
+                "width": width,
+                "height": height,
+                "aspect_ratio": width / height,
+                "perceptual_hash": perceptual,
+                "has_alpha": has_alpha,
+                "file_format": image_format,
+                "modality": modality,
+                "family": modality_family(modality),
+                "concept": concept,
+                "topic": topic,
+                "collection_key": collection["key"],
+                "collection_label": collection["label"],
+                "collection_document": collection["document"],
+                "collection_rule": collection["rule"],
+                "review_reason": review_reason,
+                "asset_id": stable_id("asset", sha),
+                "source_id": stable_id("src", sha),
+                "source_group_id": stable_id("sg", group_key.casefold()),
+                "variant_id": stable_id("var", f"{sha}:quiz-v1"),
+                "question_id": stable_id("q", f"{sha}:{concept}:identification"),
+                "status": status,
+            })
 
     groups: dict[str, list[dict]] = defaultdict(list)
     for entry in entries:
         groups[entry["source_group_id"]].append(entry)
+    entry_by_collection_filename = {(entry["collection_key"], entry["filename"]): entry for entry in entries}
 
     records: list[dict] = []
     asset_map: dict[str, dict] = {}
@@ -566,7 +901,7 @@ def main() -> None:
 
     for entry in entries:
         source = entry["path"]
-        crop = CROPS.get(entry["filename"])
+        crop = (CROPS if entry["collection_key"] == "rename" else ADD_CROPS).get(entry["filename"])
         original_name = f"original_{entry['sha'][:16]}.png"
         quiz_key = hashlib.sha256(f"{entry['sha']}:quiz:{crop}".encode()).hexdigest()[:16]
         quiz_name = f"quiz_{quiz_key}.png"
@@ -582,10 +917,20 @@ def main() -> None:
         if crop:
             transformations.append("answer_title_border_crop")
 
-        joint = entry["modality"] in {"X-ray and CT", "X-ray and pathology", "Gross pathology and histology"} or entry["filename"] in COMPOSITES
+        composite_files = COMPOSITES if entry["collection_key"] == "rename" else ADD_COMPOSITES
+        joint = entry["modality"] in {"X-ray and CT", "X-ray and pathology", "X-ray, CT, and pathology", "Gross pathology and histology"} or entry["filename"] in composite_files
         stem, visual_target = stem_for(entry["modality"], joint, entry["concept"])
         clue = feature_for(entry["concept"], entry["modality"])
         group_members = groups[entry["source_group_id"]]
+        duplicate_target = None
+        if entry["collection_key"] == "third_party" and entry["filename"] in DUPLICATE_OF:
+            duplicate_target = entry_by_collection_filename[("rename", DUPLICATE_OF[entry["filename"]])]
+        related_ids = [member["source_id"] for member in group_members if member["source_id"] != entry["source_id"]]
+        if duplicate_target and duplicate_target["source_id"] not in related_ids:
+            related_ids.append(duplicate_target["source_id"])
+        manual_reason = entry["review_reason"]
+        if duplicate_target:
+            manual_reason = f"Perceptual duplicate of {DUPLICATE_OF[entry['filename']]} in the Rename collection."
         record = {
             "asset_id": entry["asset_id"],
             "source_group_id": entry["source_group_id"],
@@ -594,12 +939,12 @@ def main() -> None:
             "original_absolute_path": str(source),
             "source_sha256": entry["sha"],
             "perceptual_hash": entry["perceptual_hash"],
-            "duplicate_relationships": [member["source_id"] for member in group_members if member["source_id"] != entry["source_id"]],
-            "canonical_representative": max(group_members, key=lambda item: item["width"] * item["height"])["source_id"],
+            "duplicate_relationships": related_ids,
+            "canonical_representative": duplicate_target["source_id"] if duplicate_target else max(group_members, key=lambda item: item["width"] * item["height"])["source_id"],
             "pixel_width": entry["width"],
             "pixel_height": entry["height"],
             "aspect_ratio": entry["aspect_ratio"],
-            "file_format": "PNG",
+            "file_format": entry["file_format"],
             "quality_warnings": (["low_resolution_native_display_only"] if min(entry["width"], entry["height"]) < 500 else []),
             "modality": entry["modality"],
             "organ_system": "Pulmonary",
@@ -613,11 +958,12 @@ def main() -> None:
             "required_preserved_regions": ["complete diagnostic field", "visible arrows and orientation markers"],
             "usable_transformations": transformations,
             "candidate_question_types": ["Identification"],
-            "manual_review_reason": REVIEW_ONLY.get(entry["filename"], ""),
+            "manual_review_reason": manual_reason,
             "source_attribution_visible_in_original": "unknown",
             "source_origin": "third_party",
-            "source_collection": "Rename",
-            "collection_rule": "All images supplied in the Desktop Rename collection are third-party study images.",
+            "source_collection": entry["collection_label"],
+            "source_collection_key": entry["collection_key"],
+            "collection_rule": entry["collection_rule"],
             "rights_status": "unknown; local study use only",
             "immutable_source_hash": entry["sha"],
             "status": entry["status"],
@@ -626,13 +972,13 @@ def main() -> None:
             "panel_handling": "retained_composite" if joint else "single_complete_image",
             "question_type_matrix": {
                 "Identification": {
-                    "supported": "YES" if entry["status"] == "USABLE" else "REVIEW",
+                    "supported": "YES" if entry["status"] == "USABLE" else ("DUPLICATE" if entry["status"] == "DUPLICATE" else "REVIEW"),
                     "visual_target": visual_target,
                     "required_variant": entry["variant_id"],
                     "full_image_required": crop is None,
                     "preserve": ["diagnostic pixels", "arrows", "orientation markers"],
                     "confidence": "high" if entry["status"] == "USABLE" else "low",
-                    "reason_unsupported": REVIEW_ONLY.get(entry["filename"], ""),
+                    "reason_unsupported": manual_reason,
                 }
             },
             "variants": [{
@@ -656,7 +1002,7 @@ def main() -> None:
             "original": {"path": original_relative, "sha256": original_meta["sha256"], "width": original_meta["width"], "height": original_meta["height"]},
         }
 
-        if entry["status"] != "USABLE":
+        if entry["status"] == "NEEDS_REVIEW":
             review_items.append({
                 "source_id": entry["source_id"],
                 "source_group_id": entry["source_group_id"],
@@ -664,10 +1010,14 @@ def main() -> None:
                 "proposed_answer": entry["concept"],
                 "modality": entry["modality"],
                 "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
-                "uncertainty_reason": REVIEW_ONLY[entry["filename"]],
-                "answer_leakage_risk": "high" if "Embedded labels" in REVIEW_ONLY[entry["filename"]] else "low",
+                "source_collection_key": entry["collection_key"],
+                "source_collection": entry["collection_label"],
+                "uncertainty_reason": entry["review_reason"],
+                "answer_leakage_risk": "high" if "label" in entry["review_reason"].casefold() else "low",
                 "project_status": "NEEDS_REVIEW",
             })
+            continue
+        if entry["status"] != "USABLE":
             continue
 
         distractors = candidate_pool(entry, [candidate for candidate in entries if candidate["status"] == "USABLE"])
@@ -706,11 +1056,15 @@ def main() -> None:
             "organ_system": "Pulmonary",
             "topic_cluster": entry["topic"].casefold().replace(" ", "-"),
             "source_origin": "third_party",
+            "source_collection": entry["collection_label"],
+            "source_collection_key": entry["collection_key"],
             "quiz_asset": quiz_relative,
             "original_asset": original_relative,
             "post_answer_source": {
                 "original_filename": entry["filename"],
-                "source_document": "Desktop/Rename user-curated pulmonary image collection",
+                "source_document": entry["collection_document"],
+                "source_collection": entry["collection_label"],
+                "source_collection_key": entry["collection_key"],
                 "source_page_or_slide": "",
                 "source_id": entry["source_id"],
                 "rights_status": "unknown; local study use only",
@@ -722,16 +1076,16 @@ def main() -> None:
     manifest = {
         "schema_version": 2,
         "generated_at": NOW,
-        "builder": "build-medical-picture-quiz / Rename flat-collection builder",
-        "source_directory": str(SOURCE),
+        "builder": "build-medical-picture-quiz / multi-collection flat-image builder",
+        "source_directories": [{"key": collection["key"], "label": collection["label"], "path": str(collection["path"])} for collection in COLLECTIONS],
         "source_library_read_only": True,
-        "collection_provenance_rule": "All Desktop/Rename images are third_party and restricted to local study use.",
+        "collection_provenance_rule": "All Desktop/Rename and Desktop/Add images are third_party and restricted to local study use.",
         "record_count": len(records),
         "records": records,
     }
     bank = {
         "schema_version": 2,
-        "bank_id": stable_id("bank", "rename:" + "".join(entry["sha"] for entry in entries)),
+        "bank_id": stable_id("bank", "rename-add:" + "".join(entry["sha"] for entry in entries)),
         "generated_at": NOW,
         "mode": "pulmonary_visual_identification",
         "question_count": len(questions),
@@ -769,21 +1123,29 @@ def main() -> None:
     topic_counts = Counter(question["category"] for question in questions)
     low_resolution = [entry for entry in entries if min(entry["width"], entry["height"]) < 500]
     duplicate_groups = {key: members for key, members in groups.items() if len(members) > 1}
+    status_counts = Counter(entry["status"] for entry in entries)
+    collection_counts = Counter(entry["collection_label"] for entry in entries)
+    scored_collection_counts = Counter(question["source_collection"] for question in questions)
     audit = [
-        "# Pulmonary Rename collection preflight audit",
+        "# Pulmonary multi-collection preflight audit",
         "",
         f"Generated: {NOW}",
         "",
-        f"- Source: `{SOURCE}` (read-only)",
-        f"- Physical PNG files: {len(entries)}",
+        *[f"- Source: `{collection['path']}` (read-only)" for collection in COLLECTIONS],
+        f"- Physical image files: {len(entries)}",
         f"- Decodable files: {len(entries)}",
         f"- Scored questions: {len(questions)}",
-        f"- Review-only sources: {len(review_items)}",
+        f"- Review-only sources: {status_counts['NEEDS_REVIEW']}",
+        f"- Perceptual duplicates withheld: {status_counts['DUPLICATE']}",
         f"- Source groups with multiple named variants: {len(duplicate_groups)}",
         f"- Low-resolution files (one dimension below 500 px): {len(low_resolution)}",
-        f"- Quiz-safe border crops: {len(CROPS)}",
+        f"- Quiz-safe border crops: {len(CROPS) + len(ADD_CROPS)}",
         "- Exact byte-identical duplicate groups: 0",
         "- Provenance: all records are `third_party`; rights are unknown and the build is restricted to local study use.",
+        "",
+        "## Collections",
+        "",
+        *[f"- {label}: {collection_counts[label]} sources, {scored_collection_counts[label]} scored" for label in sorted(collection_counts)],
         "",
         "## Modalities",
         "",
@@ -799,20 +1161,24 @@ def main() -> None:
         "",
         "## Transformation policy",
         "",
-        "All browser assets were losslessly re-encoded as PNG with metadata stripped. Transparency was composited onto a neutral background. Six answer-revealing captions or titles in non-diagnostic border space were removed with recorded source-relative crop coordinates. No image was stretched, upscaled, generatively reconstructed, or altered within diagnostic pixels.",
+        f"All browser assets were losslessly re-encoded as PNG with metadata stripped. Transparency was composited onto a neutral background. {len(CROPS) + len(ADD_CROPS)} answer-revealing captions or titles in non-diagnostic border space were removed with recorded source-relative crop coordinates. No image was stretched, upscaled, generatively reconstructed, or altered within diagnostic pixels.",
         "",
         "## Ground-truth decision",
         "",
         "The collection was descriptively renamed by the user before import. Keys were accepted only where the visible morphology was compatible during the complete contact-sheet review. Sources with insufficient, ambiguous, non-pulmonary, or answer-leaking evidence were withheld in the review queue.",
     ]
     (REPORT_DIR / "preflight-audit.md").write_text("\n".join(audit) + "\n", encoding="utf-8")
-    shutil.copy2(PROJECT.parent / "rename-audit" / "source-audit.json", REPORT_DIR / "source-audit.json") if (PROJECT.parent / "rename-audit" / "source-audit.json").exists() else None
+    if (PROJECT.parent / "rename-audit" / "source-audit.json").exists():
+        shutil.copy2(PROJECT.parent / "rename-audit" / "source-audit.json", REPORT_DIR / "source-audit-rename.json")
+    if (PROJECT.parent / "add-audit" / "source-audit.json").exists():
+        shutil.copy2(PROJECT.parent / "add-audit" / "source-audit.json", REPORT_DIR / "source-audit-add.json")
 
     print(json.dumps({
         "result": "GENERATED",
         "source_files": len(entries),
         "scored_questions": len(questions),
         "review_only": len(review_items),
+        "duplicates_withheld": status_counts["DUPLICATE"],
         "assets": len(list(ASSET_DIR.glob("*.png"))),
     }, indent=2))
 

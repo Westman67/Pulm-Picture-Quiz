@@ -14,7 +14,7 @@ import {
   setQualityFlagStatus,
   toggleMarked,
   upsertQualityFlag,
-} from "./quiz-core.mjs?v=rename-20260916c";
+} from "./quiz-core.mjs?v=rename-add-20260916d";
 
 const app = document.querySelector("#app");
 const state = {
@@ -45,9 +45,9 @@ const QUALITY_FLAG_REASONS = {
   other: "Other photo issue",
 };
 
-const SOURCE_ORIGIN_LABELS = {
-  lecture: "Lecture",
-  third_party: "Rename collection",
+const COLLECTION_LABELS = {
+  rename: "Rename collection",
+  third_party: "3rd Party",
 };
 
 const CATEGORY_FILTERS = ["CXR", "CT", "All Imaging", "Histology", "Gross"];
@@ -56,6 +56,7 @@ const IMAGING_MODALITIES = new Set([
   "CT",
   "X-ray and CT",
   "X-ray and pathology",
+  "X-ray, CT, and pathology",
   "MRI",
   "Angiography",
   "Nuclear Imaging",
@@ -72,6 +73,8 @@ const HISTOLOGY_MODALITIES = new Set([
   "Cytology",
   "Gross pathology and histology",
   "X-ray and pathology",
+  "X-ray, CT, and pathology",
+  "Microscopy",
 ]);
 const GROSS_MODALITIES = new Set([
   "Gross Pathology",
@@ -82,8 +85,8 @@ const GROSS_MODALITIES = new Set([
 
 function categoryFiltersFor(modality) {
   const filters = [];
-  if (modality === "X-ray") filters.push("CXR");
-  if (modality === "CT") filters.push("CT");
+  if (modality.includes("X-ray")) filters.push("CXR");
+  if (modality.includes("CT")) filters.push("CT");
   if (IMAGING_MODALITIES.has(modality)) filters.push("All Imaging");
   if (HISTOLOGY_MODALITIES.has(modality)) filters.push("Histology");
   if (GROSS_MODALITIES.has(modality)) filters.push("Gross");
@@ -200,8 +203,8 @@ function homeView() {
     category,
     state.bank.questions.filter((question) => question.category_filters.includes(category)).length,
   ]));
-  const sourceOriginCounts = state.bank.questions.reduce((counts, question) => {
-    counts[question.source_origin] = (counts[question.source_origin] || 0) + 1;
+  const collectionCounts = state.bank.questions.reduce((counts, question) => {
+    counts[question.source_collection_key] = (counts[question.source_collection_key] || 0) + 1;
     return counts;
   }, {});
   const answered = Object.values(state.progress.questions).filter((p) => p.times_answered).length;
@@ -230,7 +233,7 @@ function homeView() {
 
           <div class="form-row">
             <label>Category<select name="category"><option value="all">Mixed — all categories</option>${CATEGORY_FILTERS.map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)} (${categoryCounts[category]})</option>`).join("")}</select></label>
-            <label>Picture source<select name="sourceOrigin"><option value="all">All pictures (${state.bank.question_count})</option><option value="third_party">Rename collection (${sourceOriginCounts.third_party || 0})</option></select></label>
+            <label>Collection<select name="sourceCollection"><option value="all">All pictures (${state.bank.question_count})</option>${Object.entries(COLLECTION_LABELS).map(([key, label]) => `<option value="${escapeHtml(key)}">${escapeHtml(label)} (${collectionCounts[key] || 0})</option>`).join("")}</select></label>
             <label>Question state<select name="stateFilter"><option value="all">All available</option><option value="unseen">Unseen only</option><option value="incorrect">Previously incorrect</option><option value="marked">Marked for review</option></select></label>
           </div>
 
@@ -267,7 +270,7 @@ function quizView() {
   return `
     <main class="quiz-shell shell">
       <section class="quiz-topbar">
-        <div><span class="mode-badge ${state.session.mode}">${state.session.mode === "learn" ? "Learn mode" : "Exam mode"}</span><span class="category-label">${escapeHtml(question.category)} · ${escapeHtml(question.topic)} · ${escapeHtml(SOURCE_ORIGIN_LABELS[question.source_origin] || question.source_origin)}</span></div>
+        <div><span class="mode-badge ${state.session.mode}">${state.session.mode === "learn" ? "Learn mode" : "Exam mode"}</span><span class="category-label">${escapeHtml(question.category)} · ${escapeHtml(question.topic)} · ${escapeHtml(question.source_collection || COLLECTION_LABELS[question.source_collection_key] || question.source_collection_key)}</span></div>
         <strong>${progressLabel}</strong>
         <div class="quiz-topbar-actions">
           <button class="mark-button ${marked ? "marked" : ""}" data-action="mark">${marked ? "★ Marked" : "☆ Mark for study"}</button>
@@ -577,7 +580,7 @@ app.addEventListener("submit", (event) => {
   if (event.target.id !== "session-form") return;
   event.preventDefault();
   const form = new FormData(event.target);
-  startSession({ mode: form.get("mode"), category: form.get("category"), sourceOrigin: form.get("sourceOrigin"), stateFilter: form.get("stateFilter"), length: form.get("length") });
+  startSession({ mode: form.get("mode"), category: form.get("category"), sourceCollection: form.get("sourceCollection"), stateFilter: form.get("stateFilter"), length: form.get("length") });
 });
 
 app.addEventListener("change", async (event) => {
@@ -657,8 +660,8 @@ window.addEventListener("keydown", (event) => {
 async function init() {
   try {
     const [bank, reviewQueue] = await Promise.all([
-      fetch("data/question-bank.json?v=rename-20260916c").then((response) => response.json()),
-      fetch("data/review-queue.json?v=rename-20260916c").then((response) => response.json()),
+      fetch("data/question-bank.json?v=rename-add-20260916d").then((response) => response.json()),
+      fetch("data/review-queue.json?v=rename-add-20260916d").then((response) => response.json()),
     ]);
     state.bank = applyImageCategories(bank);
     state.reviewQueue = reviewQueue;

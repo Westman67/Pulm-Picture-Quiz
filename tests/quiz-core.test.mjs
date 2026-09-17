@@ -29,14 +29,16 @@ const questions = bank.questions;
 test("new bank uses schema version 2 and valid source lineage", () => {
   assert.equal(bank.schema_version, 2);
   assert.equal(bank.question_count, questions.length);
-  assert.equal(manifest.record_count, 381);
-  assert.equal(manifest.records.length, 381);
-  assert.ok(questions.length >= 350);
+  assert.equal(manifest.record_count, 558);
+  assert.equal(manifest.records.length, 558);
+  assert.equal(questions.length, 539);
   const sources = new Map(manifest.records.map((record) => [record.source_id, record]));
   for (const question of questions) {
     assert.equal(sources.get(question.source_id)?.status, "USABLE");
     assert.equal(sources.get(question.source_id)?.source_origin, question.source_origin);
     assert.equal(question.source_origin, "third_party");
+    assert.ok(["rename", "third_party"].includes(question.source_collection_key));
+    assert.ok(question.source_collection);
     assert.ok(question.source_group_id);
     assert.ok(question.variant_id);
   }
@@ -108,11 +110,12 @@ test("session selection is deterministic and respects filters and requested leng
   assert.deepEqual(incorrect.questions.map((q) => q.question_id), [questions[0].question_id]);
   const marked = createSession(questions, { ...config, stateFilter: "marked", length: "all" }, progress, 1);
   assert.deepEqual(marked.questions.map((q) => q.question_id), [questions[1].question_id]);
-  const thirdParty = createSession(questions, { ...config, sourceOrigin: "third_party", length: "all" }, progress, 1);
-  const lecture = createSession(questions, { ...config, sourceOrigin: "lecture", length: "all" }, progress, 1);
-  assert.equal(lecture.questions.length, 0);
-  assert.equal(thirdParty.questions.length, questions.length);
-  assert.ok(thirdParty.questions.every((q) => q.source_origin === "third_party"));
+  const rename = createSession(questions, { ...config, sourceCollection: "rename", length: "all" }, progress, 1);
+  const thirdParty = createSession(questions, { ...config, sourceCollection: "third_party", length: "all" }, progress, 1);
+  assert.equal(rename.questions.length, 373);
+  assert.equal(thirdParty.questions.length, 166);
+  assert.ok(rename.questions.every((q) => q.source_collection_key === "rename"));
+  assert.ok(thirdParty.questions.every((q) => q.source_collection_key === "third_party"));
 });
 
 test("modality category filters separate CXR and CT while All Imaging includes both", () => {
@@ -262,6 +265,7 @@ test("learner-facing asset paths are opaque and alt text is neutral", async () =
   assert.match(appSource, /state\.drafts\[currentQuestion\(\)\.question_id\]/);
   assert.match(appSource, /Flag bad photo/);
   assert.match(appSource, /pulmonary-picture-quality-flags/);
-  assert.match(appSource, /Picture source/);
-  assert.match(appSource, /sourceOrigin/);
+  assert.match(appSource, /Collection/);
+  assert.match(appSource, /sourceCollection/);
+  assert.match(appSource, /3rd Party/);
 });

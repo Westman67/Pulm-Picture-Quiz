@@ -165,11 +165,11 @@ function spreadSourceGroups(questions) {
 
 export function createSession(questions, config, progress, seed = Date.now()) {
   const category = config.category || "all";
-  const sourceOrigin = config.sourceOrigin || "all";
+  const sourceCollection = config.sourceCollection || "all";
   const stateFilter = config.stateFilter || "all";
   let candidates = questions.filter((question) =>
     (category === "all" || question.category === category || question.modality === category || question.category_filters?.includes(category)) &&
-    (sourceOrigin === "all" || question.source_origin === sourceOrigin) &&
+    (sourceCollection === "all" || question.source_collection_key === sourceCollection) &&
     progressMatches(question, progress, stateFilter),
   );
   candidates = spreadSourceGroups(seededShuffle(candidates, seed));
@@ -178,11 +178,11 @@ export function createSession(questions, config, progress, seed = Date.now()) {
     : Number(config.length || 10);
   const selected = candidates.slice(0, Math.min(requested, candidates.length));
   return {
-    id: `session_${hashSeed(`${seed}:${config.mode}:${category}:${stateFilter}`)}`,
+    id: `session_${hashSeed(`${seed}:${config.mode}:${category}:${sourceCollection}:${stateFilter}`)}`,
     seed,
     mode: config.mode || "learn",
     category,
-    sourceOrigin,
+    sourceCollection,
     stateFilter,
     endless: config.length === "endless",
     requested_length: config.length,

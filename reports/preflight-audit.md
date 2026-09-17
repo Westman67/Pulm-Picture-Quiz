@@ -1,50 +1,60 @@
-# Pulmonary Rename collection preflight audit
+# Pulmonary multi-collection preflight audit
 
-Generated: 2026-09-16T18:42:10.335382-04:00
+Generated: 2026-09-16T20:04:41.617517-04:00
 
 - Source: `/Users/chriselwell/Desktop/Rename` (read-only)
-- Physical PNG files: 381
-- Decodable files: 381
-- Scored questions: 373
-- Review-only sources: 8
-- Source groups with multiple named variants: 47
-- Low-resolution files (one dimension below 500 px): 73
-- Quiz-safe border crops: 6
+- Source: `/Users/chriselwell/Desktop/Add` (read-only)
+- Physical image files: 558
+- Decodable files: 558
+- Scored questions: 539
+- Review-only sources: 13
+- Perceptual duplicates withheld: 6
+- Source groups with multiple named variants: 63
+- Low-resolution files (one dimension below 500 px): 145
+- Quiz-safe border crops: 13
 - Exact byte-identical duplicate groups: 0
 - Provenance: all records are `third_party`; rights are unknown and the build is restricted to local study use.
+
+## Collections
+
+- 3rd Party: 177 sources, 166 scored
+- Rename collection: 381 sources, 373 scored
 
 ## Modalities
 
 - Angiography: 2
-- CT: 68
+- CT: 93
 - Clinical Image: 3
 - Cytology: 2
 - Diagram: 8
+- Echocardiography: 3
 - Electron Microscopy: 4
-- Gross Pathology: 45
+- Gross Pathology: 63
 - Gross pathology and histology: 1
-- Histology: 104
-- Immunohistochemistry: 6
+- Histology: 186
+- Immunohistochemistry: 7
 - MRI: 1
+- Microscopy: 7
 - Ultrasound: 5
-- X-ray: 126
-- X-ray and CT: 5
+- X-ray: 161
+- X-ray and CT: 10
 - X-ray and pathology: 1
+- X-ray, CT, and pathology: 1
 
 ## Scored topic coverage
 
-- Acute lung injury and edema: 12
-- Airway and obstructive: 33
-- Congenital and chest wall: 33
-- Imaging patterns: 19
-- Infection: 64
-- Interstitial lung disease: 50
-- Neoplasm: 47
-- Normal anatomy: 22
-- Pleural disease: 32
-- Pulmonary pathology: 29
-- Pulmonary vascular: 24
-- Upper airway: 8
+- Acute lung injury and edema: 19
+- Airway and obstructive: 47
+- Congenital and chest wall: 35
+- Imaging patterns: 20
+- Infection: 88
+- Interstitial lung disease: 72
+- Neoplasm: 74
+- Normal anatomy: 23
+- Pleural disease: 52
+- Pulmonary pathology: 67
+- Pulmonary vascular: 30
+- Upper airway: 12
 
 ## Review-only decisions
 
@@ -56,10 +66,15 @@ Generated: 2026-09-16T18:42:10.335382-04:00
 - `Normal` (src_69eae45a736d): The filename does not identify the organ, tissue compartment, or intended normal structure.
 - `Pulmonary Infarct` (src_257ebb5b7dd8): Embedded labels state the tested diagnosis directly over medically meaningful tissue.
 - `Pulmonary epithelial metaplasia` (src_38410f8d021a): The source label is ambiguous and the intended metaplastic process is not specified reliably.
+- `Pneumothorax CT Air in Pleural Space with Partial Lung Collapse` (src_778524185030): Diagnostic labels define the tested pneumothorax directly over medically meaningful pixels and cannot be removed safely.
+- `Echocardiogram in Pulmonary Artery Hypertension (1:3)` (src_3c8badfc2a02): A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.
+- `Echocardiogram in Pulmonary Artery Hypertension (2:3)` (src_83c2c36ca9b3): A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.
+- `Echocardiogram in Pulmonary Artery Hypertension (3:3)` (src_b0d776f01771): A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.
+- `Cystic fibrosis-associated bronchiectasis` (src_a1288c90c360): The radiographs show chronic airway disease, but cystic fibrosis cannot be uniquely established from this image alone.
 
 ## Transformation policy
 
-All browser assets were losslessly re-encoded as PNG with metadata stripped. Transparency was composited onto a neutral background. Six answer-revealing captions or titles in non-diagnostic border space were removed with recorded source-relative crop coordinates. No image was stretched, upscaled, generatively reconstructed, or altered within diagnostic pixels.
+All browser assets were losslessly re-encoded as PNG with metadata stripped. Transparency was composited onto a neutral background. 13 answer-revealing captions or titles in non-diagnostic border space were removed with recorded source-relative crop coordinates. No image was stretched, upscaled, generatively reconstructed, or altered within diagnostic pixels.
 
 ## Ground-truth decision
 

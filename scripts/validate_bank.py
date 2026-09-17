@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed validation for the rebuilt Rename-based pulmonary quiz."""
+"""Fail-closed validation for the rebuilt multi-collection pulmonary quiz."""
 
 from __future__ import annotations
 
@@ -12,7 +12,11 @@ from PIL import Image
 
 
 PROJECT = Path(__file__).resolve().parents[1]
-SOURCE = Path.home() / "Desktop" / "Rename"
+SOURCES = {
+    "rename": Path.home() / "Desktop" / "Rename",
+    "third_party": Path.home() / "Desktop" / "Add",
+}
+IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg"}
 OPAQUE_ASSET = re.compile(r"^public/assets/images/(?:quiz|original)_[a-f0-9]{16}\.png$")
 BLOCKED = {"NEEDS_REVIEW", "REFERENCE_ONLY", "DUPLICATE", "AGGREGATE_DUPLICATE", "BROKEN", "EXCLUDED"}
 
@@ -47,7 +51,13 @@ def main() -> None:
     require(bank.get("question_count") == len(questions), "question_count does not match questions", errors)
     require(manifest.get("record_count") == len(records), "record_count does not match records", errors)
     require(review.get("count") == len(review.get("items", [])), "review queue count mismatch", errors)
-    require(len(records) == len(list(SOURCE.glob("*.png"))), "not every source PNG is represented in the manifest", errors)
+    physical_sources = sum(
+        1
+        for root in SOURCES.values()
+        for path in root.iterdir()
+        if path.suffix.casefold() in IMAGE_EXTENSIONS
+    )
+    require(len(records) == physical_sources, "not every source image is represented in the manifest", errors)
     require(len({record.get("asset_id") for record in records}) == len(records), "duplicate asset IDs", errors)
     require(len({record.get("source_id") for record in records}) == len(records), "duplicate source IDs", errors)
     require(len({question.get("question_id") for question in questions}) == len(questions), "duplicate question IDs", errors)
@@ -57,12 +67,15 @@ def main() -> None:
 
     for record in records:
         sid = record.get("source_id", "<missing>")
-        source = SOURCE / str(record.get("original_relative_path", ""))
+        collection_key = record.get("source_collection_key")
+        source_root = SOURCES.get(collection_key)
+        source = source_root / str(record.get("original_relative_path", "")) if source_root else Path("/__invalid_collection__")
+        require(source_root is not None, f"{sid}: unknown collection key {collection_key}", errors)
         require(source.is_file(), f"{sid}: source file missing", errors)
         if source.is_file():
             require(sha256_file(source) == record.get("source_sha256"), f"{sid}: immutable source checksum changed", errors)
         require(record.get("source_origin") == "third_party", f"{sid}: invalid provenance category", errors)
-        require(record.get("status") in {"USABLE", "NEEDS_REVIEW"}, f"{sid}: invalid status", errors)
+        require(record.get("status") in {"USABLE", "NEEDS_REVIEW", "DUPLICATE"}, f"{sid}: invalid status", errors)
         require(bool(record.get("question_type_matrix")), f"{sid}: missing question type matrix", errors)
         variants = record.get("variants") or []
         require(len(variants) == 1, f"{sid}: expected one reproducible variant", errors)
@@ -78,6 +91,8 @@ def main() -> None:
         correct = question.get("correct_index")
         require(source.get("status") == "USABLE", f"{qid}: missing usable source lineage", errors)
         require(question.get("source_origin") == "third_party", f"{qid}: invalid source origin", errors)
+        require(question.get("source_collection_key") in SOURCES, f"{qid}: invalid source collection", errors)
+        require(source.get("source_collection_key") == question.get("source_collection_key"), f"{qid}: collection lineage mismatch", errors)
         require(len(options) == 4, f"{qid}: expected four options", errors)
         require(len({str(option).strip().casefold() for option in options}) == 4, f"{qid}: duplicate options", errors)
         require(len(rationales) == 4 and all(str(item).strip() for item in rationales), f"{qid}: invalid choice rationales", errors)

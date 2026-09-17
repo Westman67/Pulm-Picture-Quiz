@@ -8003,5 +8003,3591 @@
       "width": 1150,
       "height": 1018
     }
+  },
+  "var_e9bc1076365d": {
+    "source_id": "src_772a17c9182e",
+    "source_group_id": "sg_76ddd6b3dc3b",
+    "quiz": {
+      "path": "public/assets/images/quiz_8fb3471741fea05b.png",
+      "sha256": "5f8577c4cc93051d08124061d413875b0a576f4097ed980692f17a0933b2d079",
+      "width": 456,
+      "height": 328,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_13b3b5a6e354f66d.png",
+      "sha256": "5f8577c4cc93051d08124061d413875b0a576f4097ed980692f17a0933b2d079",
+      "width": 456,
+      "height": 328
+    }
+  },
+  "var_b49ea891d4fc": {
+    "source_id": "src_d9bdf7bc214a",
+    "source_group_id": "sg_701b27bc5fd3",
+    "quiz": {
+      "path": "public/assets/images/quiz_1a86e0f28633b45f.png",
+      "sha256": "22248025e737f63532e02adab60929961f815db47607cc5e01d6865a619ddb36",
+      "width": 373,
+      "height": 312,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_919c9a36b9c44a88.png",
+      "sha256": "22248025e737f63532e02adab60929961f815db47607cc5e01d6865a619ddb36",
+      "width": 373,
+      "height": 312
+    }
+  },
+  "var_c712d318a001": {
+    "source_id": "src_778524185030",
+    "source_group_id": "sg_d0701dfe8ee6",
+    "quiz": {
+      "path": "public/assets/images/quiz_b5f24b5693c43f71.png",
+      "sha256": "33c9164f193620661f98af170da80156e0af5c2874b645277eef16c995a8f107",
+      "width": 447,
+      "height": 329,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_521c82cbf026c3d8.png",
+      "sha256": "33c9164f193620661f98af170da80156e0af5c2874b645277eef16c995a8f107",
+      "width": 447,
+      "height": 329
+    }
+  },
+  "var_2f0cfd69569e": {
+    "source_id": "src_69f2ed01f147",
+    "source_group_id": "sg_25acac3c1704",
+    "quiz": {
+      "path": "public/assets/images/quiz_edea16ce0c6758d9.png",
+      "sha256": "966e56a36ba48d165337300f509f40e18c730785e188b85b1d7bd62d06763e3c",
+      "width": 371,
+      "height": 319,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_57630f0725db7298.png",
+      "sha256": "966e56a36ba48d165337300f509f40e18c730785e188b85b1d7bd62d06763e3c",
+      "width": 371,
+      "height": 319
+    }
+  },
+  "var_115779bc7577": {
+    "source_id": "src_ca548c899481",
+    "source_group_id": "sg_84957602be36",
+    "quiz": {
+      "path": "public/assets/images/quiz_8f42d88405eb9be9.png",
+      "sha256": "ef13f7ac4114ff949bdff21f9026e84ada1c584d03707e317b5bbaba0d0f3a4b",
+      "width": 281,
+      "height": 254,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_48142b8f0e16c4a3.png",
+      "sha256": "ef13f7ac4114ff949bdff21f9026e84ada1c584d03707e317b5bbaba0d0f3a4b",
+      "width": 281,
+      "height": 254
+    }
+  },
+  "var_0cd70a6473b6": {
+    "source_id": "src_c870c4e7a22e",
+    "source_group_id": "sg_55857e42e008",
+    "quiz": {
+      "path": "public/assets/images/quiz_5b5fa49e864a9d72.png",
+      "sha256": "1741a98cbdb250b2961a8c259293d8274eb9ed62747cd56861f27c9b9c915069",
+      "width": 1037,
+      "height": 681,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_66416edb9df6bbaa.png",
+      "sha256": "1741a98cbdb250b2961a8c259293d8274eb9ed62747cd56861f27c9b9c915069",
+      "width": 1037,
+      "height": 681
+    }
+  },
+  "var_565af2691771": {
+    "source_id": "src_ec8a2bb2ae6f",
+    "source_group_id": "sg_32b0b660a8aa",
+    "quiz": {
+      "path": "public/assets/images/quiz_f50752f9c9e2b45a.png",
+      "sha256": "586322c8ad54ceede3940ef2b1633a71d923f9dece3d6ae806ee64715d20586a",
+      "width": 1352,
+      "height": 834,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_1e7d06224e746fb2.png",
+      "sha256": "586322c8ad54ceede3940ef2b1633a71d923f9dece3d6ae806ee64715d20586a",
+      "width": 1352,
+      "height": 834
+    }
+  },
+  "var_2c7f928ea55a": {
+    "source_id": "src_2d1fbcf52d6a",
+    "source_group_id": "sg_4d2cde9b2233",
+    "quiz": {
+      "path": "public/assets/images/quiz_2ab58fce2a3b76bc.png",
+      "sha256": "fa8678022ed9580bd15e64ddca99a1fa1aae1cd46e021e440062460d129a3a56",
+      "width": 1567,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_5ebc3c738f84b864.png",
+      "sha256": "fa8678022ed9580bd15e64ddca99a1fa1aae1cd46e021e440062460d129a3a56",
+      "width": 1567,
+      "height": 1000
+    }
+  },
+  "var_b57ae7c0aeea": {
+    "source_id": "src_ab7aacf41bef",
+    "source_group_id": "sg_374ff01622a6",
+    "quiz": {
+      "path": "public/assets/images/quiz_06cf88cad495219a.png",
+      "sha256": "d696b9a14480b75f617f18734d02a25ff80e15950e8b23d611cc8bcdc8655554",
+      "width": 1333,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_00c2b9ae41129a9f.png",
+      "sha256": "d696b9a14480b75f617f18734d02a25ff80e15950e8b23d611cc8bcdc8655554",
+      "width": 1333,
+      "height": 1000
+    }
+  },
+  "var_32d93aed91a2": {
+    "source_id": "src_3d507dfede20",
+    "source_group_id": "sg_3794cd36049a",
+    "quiz": {
+      "path": "public/assets/images/quiz_552628bd515dfa47.png",
+      "sha256": "b04d3bf6d3f318aa763cb4da948fe91f1664576b73f4b7623371d449efc69859",
+      "width": 1599,
+      "height": 1066,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_fb7092b5d302823b.png",
+      "sha256": "b04d3bf6d3f318aa763cb4da948fe91f1664576b73f4b7623371d449efc69859",
+      "width": 1599,
+      "height": 1066
+    }
+  },
+  "var_4458b0ae3ea9": {
+    "source_id": "src_18cecf7724e4",
+    "source_group_id": "sg_f33dde001ace",
+    "quiz": {
+      "path": "public/assets/images/quiz_98ba4bcebe4a13f3.png",
+      "sha256": "ad4b90eab84e4333343093bf39b3a83c7cae93963709fc97b3d592d18e17b562",
+      "width": 790,
+      "height": 631,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_6f078c56b9dccd69.png",
+      "sha256": "ad4b90eab84e4333343093bf39b3a83c7cae93963709fc97b3d592d18e17b562",
+      "width": 790,
+      "height": 631
+    }
+  },
+  "var_0dce78a75304": {
+    "source_id": "src_3fc7a8251431",
+    "source_group_id": "sg_e866c10ab058",
+    "quiz": {
+      "path": "public/assets/images/quiz_35d209ed576de15a.png",
+      "sha256": "72da759b23ef8335b0bd9752e1dd9b3264fd4dda4c34f50b0e2e2862dd7fa519",
+      "width": 700,
+      "height": 439,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite",
+        "answer_title_border_crop"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_f06583ccb1db2640.png",
+      "sha256": "881c8571f716a5bcec2b43b0e5fa25cec0d5a223ad1a4d464bc771f94ddc4f6e",
+      "width": 700,
+      "height": 578
+    }
+  },
+  "var_64b2e1a3b482": {
+    "source_id": "src_2a04c92e1678",
+    "source_group_id": "sg_6e17bd66c469",
+    "quiz": {
+      "path": "public/assets/images/quiz_f73a00d0a94778c7.png",
+      "sha256": "7761a4c4d65948517be75fedeb7a6965a7426299aefb253131eb3df85354ad0e",
+      "width": 809,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_311d24482970aeb3.png",
+      "sha256": "7761a4c4d65948517be75fedeb7a6965a7426299aefb253131eb3df85354ad0e",
+      "width": 809,
+      "height": 1000
+    }
+  },
+  "var_dc3ac41dd0cf": {
+    "source_id": "src_05efeeb7c67d",
+    "source_group_id": "sg_d43f8a021850",
+    "quiz": {
+      "path": "public/assets/images/quiz_fc42c17c4c0eb7a4.png",
+      "sha256": "2a96176b64b42d328c70f649a7a1a54d1ad414ef31c2124b95428c5b843ecc62",
+      "width": 1361,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_93eb01e8289aa520.png",
+      "sha256": "2a96176b64b42d328c70f649a7a1a54d1ad414ef31c2124b95428c5b843ecc62",
+      "width": 1361,
+      "height": 1000
+    }
+  },
+  "var_e32e0bfd56b4": {
+    "source_id": "src_5df036acc70a",
+    "source_group_id": "sg_07f7ab4663ac",
+    "quiz": {
+      "path": "public/assets/images/quiz_2fe80b85b937cc10.png",
+      "sha256": "baf53829ee2b94fcefcfec42cac8430ab65cff99092132f8e2bceaf338d533bd",
+      "width": 1499,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_3fed0687e05bd73a.png",
+      "sha256": "baf53829ee2b94fcefcfec42cac8430ab65cff99092132f8e2bceaf338d533bd",
+      "width": 1499,
+      "height": 1000
+    }
+  },
+  "var_613279c26aa6": {
+    "source_id": "src_0f78b93f33b6",
+    "source_group_id": "sg_c6fcd3b4ec21",
+    "quiz": {
+      "path": "public/assets/images/quiz_22bc4ae1bd6538ea.png",
+      "sha256": "1ba5578c3ca508269ec85617b95aaedca930f805d94d5a130cb3f1758251d860",
+      "width": 1500,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_bc2a36e9d9b4837f.png",
+      "sha256": "1ba5578c3ca508269ec85617b95aaedca930f805d94d5a130cb3f1758251d860",
+      "width": 1500,
+      "height": 1000
+    }
+  },
+  "var_204a7bb16df7": {
+    "source_id": "src_c4e282b127e8",
+    "source_group_id": "sg_48efc5a29507",
+    "quiz": {
+      "path": "public/assets/images/quiz_8b5495612ca7a78d.png",
+      "sha256": "24b2a12a119393953223fbcf72e5ef942b22e0a79b0e82b0ee75a72d249b1a3b",
+      "width": 374,
+      "height": 312,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_f2122b43aa7e5dce.png",
+      "sha256": "24b2a12a119393953223fbcf72e5ef942b22e0a79b0e82b0ee75a72d249b1a3b",
+      "width": 374,
+      "height": 312
+    }
+  },
+  "var_67d478f88663": {
+    "source_id": "src_952870655c81",
+    "source_group_id": "sg_9e2bf636a481",
+    "quiz": {
+      "path": "public/assets/images/quiz_2e48836c7dd66d6f.png",
+      "sha256": "a8eb039ca365951639e16fcc3b14bea4ed61468bde41db0b288f8e28077694f5",
+      "width": 279,
+      "height": 254,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_96d60ea626053752.png",
+      "sha256": "a8eb039ca365951639e16fcc3b14bea4ed61468bde41db0b288f8e28077694f5",
+      "width": 279,
+      "height": 254
+    }
+  },
+  "var_db9edc0a0d3c": {
+    "source_id": "src_d2d16139134d",
+    "source_group_id": "sg_4c8d1f25050d",
+    "quiz": {
+      "path": "public/assets/images/quiz_e9906aaf166427c2.png",
+      "sha256": "dee9e44231dc9917e4344d198dd60d62ee7589bf64760b125c165318af20aa1c",
+      "width": 260,
+      "height": 225,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_17d3840e832159ab.png",
+      "sha256": "dee9e44231dc9917e4344d198dd60d62ee7589bf64760b125c165318af20aa1c",
+      "width": 260,
+      "height": 225
+    }
+  },
+  "var_5505f2e07279": {
+    "source_id": "src_47d3d204583e",
+    "source_group_id": "sg_fb9817ddf9b2",
+    "quiz": {
+      "path": "public/assets/images/quiz_6ee89a65ea8556ff.png",
+      "sha256": "886e901208ae731d790206e0fdcef05d612b0a090d62ceda56fa033aaeceef94",
+      "width": 1001,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_3ba49d02080a9319.png",
+      "sha256": "886e901208ae731d790206e0fdcef05d612b0a090d62ceda56fa033aaeceef94",
+      "width": 1001,
+      "height": 1000
+    }
+  },
+  "var_47bdfac3013c": {
+    "source_id": "src_91ab43968e57",
+    "source_group_id": "sg_93e237e38c55",
+    "quiz": {
+      "path": "public/assets/images/quiz_80385c629c947cf8.png",
+      "sha256": "2f9a38266f57e6c38a747bc1536ae4ac6c4bc5110da3308a5c34422ec1127c2c",
+      "width": 842,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_9f376c1ccf264d73.png",
+      "sha256": "2f9a38266f57e6c38a747bc1536ae4ac6c4bc5110da3308a5c34422ec1127c2c",
+      "width": 842,
+      "height": 1000
+    }
+  },
+  "var_e24e79e49609": {
+    "source_id": "src_1cf06c75e338",
+    "source_group_id": "sg_67dce699ea10",
+    "quiz": {
+      "path": "public/assets/images/quiz_544e56e64194e10e.png",
+      "sha256": "3d57511129780bf283438db76f94db2b998eb54b42c507411fd7ec13f2ca14aa",
+      "width": 700,
+      "height": 327,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_e46cd5eda53bb6df.png",
+      "sha256": "3d57511129780bf283438db76f94db2b998eb54b42c507411fd7ec13f2ca14aa",
+      "width": 700,
+      "height": 327
+    }
+  },
+  "var_c6aae1d71007": {
+    "source_id": "src_60679a6da89a",
+    "source_group_id": "sg_5a523f7afbfc",
+    "quiz": {
+      "path": "public/assets/images/quiz_1255120c77b02336.png",
+      "sha256": "de23e51808a8edeee950572fe5e6753268e1f834b4571a5efd2f96cdea715c63",
+      "width": 1000,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_37c02e7fc1f277bd.png",
+      "sha256": "de23e51808a8edeee950572fe5e6753268e1f834b4571a5efd2f96cdea715c63",
+      "width": 1000,
+      "height": 1000
+    }
+  },
+  "var_3f8cff62c97f": {
+    "source_id": "src_b862bc69ff93",
+    "source_group_id": "sg_3fc9b2b5eca5",
+    "quiz": {
+      "path": "public/assets/images/quiz_21d4614d64e12491.png",
+      "sha256": "90e7ae34ab3d0578959b6cf0280764bb4dbcfd99102715af2f10706a80b9a9d9",
+      "width": 1236,
+      "height": 1192,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_9bab3233b1cf982d.png",
+      "sha256": "90e7ae34ab3d0578959b6cf0280764bb4dbcfd99102715af2f10706a80b9a9d9",
+      "width": 1236,
+      "height": 1192
+    }
+  },
+  "var_8ea7d9a4a84a": {
+    "source_id": "src_903894bc1e62",
+    "source_group_id": "sg_c8a0fb872dd6",
+    "quiz": {
+      "path": "public/assets/images/quiz_b294cce220d83e96.png",
+      "sha256": "adb73744dbf7f1dad7281d69b8ce633e24890fc5cba7877b74e471ff290a26bc",
+      "width": 635,
+      "height": 999,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_bdf973bf09f4cce4.png",
+      "sha256": "adb73744dbf7f1dad7281d69b8ce633e24890fc5cba7877b74e471ff290a26bc",
+      "width": 635,
+      "height": 999
+    }
+  },
+  "var_e844ec7a6d81": {
+    "source_id": "src_9181c527b870",
+    "source_group_id": "sg_d0dade3fa578",
+    "quiz": {
+      "path": "public/assets/images/quiz_143513df1bc6a628.png",
+      "sha256": "97a8b8985f7d6dbc5273fbae01023b8898149568983d36efc185182c745f63cc",
+      "width": 631,
+      "height": 999,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_838aa214e8f43c1a.png",
+      "sha256": "97a8b8985f7d6dbc5273fbae01023b8898149568983d36efc185182c745f63cc",
+      "width": 631,
+      "height": 999
+    }
+  },
+  "var_653894939ef3": {
+    "source_id": "src_d39c2a44d699",
+    "source_group_id": "sg_af940aa49520",
+    "quiz": {
+      "path": "public/assets/images/quiz_e66b0846560db5f1.png",
+      "sha256": "172e538b73eefc11c7dffdb2c19c97ca59a7dfc934dd56609c8b91a373b71260",
+      "width": 700,
+      "height": 548,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "answer_title_border_crop"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_c87716158ab7e26d.png",
+      "sha256": "4d070800768c5c011e42a9de7930c597aeba750aa1c8748d5bd12aa55a47b75f",
+      "width": 700,
+      "height": 596
+    }
+  },
+  "var_9b9e169f0c27": {
+    "source_id": "src_84f1abb9ff5b",
+    "source_group_id": "sg_af940aa49520",
+    "quiz": {
+      "path": "public/assets/images/quiz_105ca2353bb23991.png",
+      "sha256": "5adc6f343a56606ae71b406779a9ce706c9efe900334c097b5d24817278655b1",
+      "width": 1429,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_96a6bc9589ba6a46.png",
+      "sha256": "5adc6f343a56606ae71b406779a9ce706c9efe900334c097b5d24817278655b1",
+      "width": 1429,
+      "height": 1000
+    }
+  },
+  "var_4ae589355d97": {
+    "source_id": "src_9ce3200ffe0b",
+    "source_group_id": "sg_6c2320f9a9a4",
+    "quiz": {
+      "path": "public/assets/images/quiz_1caf267919d657c4.png",
+      "sha256": "2144710f84705987291384243f1ac82963a7ee97cbbcd9ae03e3aec3b55f447f",
+      "width": 1600,
+      "height": 890,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_ae60d5c7b073b544.png",
+      "sha256": "2144710f84705987291384243f1ac82963a7ee97cbbcd9ae03e3aec3b55f447f",
+      "width": 1600,
+      "height": 890
+    }
+  },
+  "var_b6f0569f884c": {
+    "source_id": "src_15b95e745ae2",
+    "source_group_id": "sg_2eea926de5a2",
+    "quiz": {
+      "path": "public/assets/images/quiz_b910bd95af57c96c.png",
+      "sha256": "707a9a99d7cbba6e54ddeb90b8e4c0e7586968e357dfd11dd4c6fa64fc80281c",
+      "width": 1091,
+      "height": 999,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_b3b01d4f57023dbd.png",
+      "sha256": "707a9a99d7cbba6e54ddeb90b8e4c0e7586968e357dfd11dd4c6fa64fc80281c",
+      "width": 1091,
+      "height": 999
+    }
+  },
+  "var_898d83dcdc98": {
+    "source_id": "src_634a1f785fb6",
+    "source_group_id": "sg_25acac3c1704",
+    "quiz": {
+      "path": "public/assets/images/quiz_e77e8071ee5713a6.png",
+      "sha256": "1c3a7a7cb1011f850236df1f72e6ca8156134b83bb843e232be6a11e1c03c892",
+      "width": 373,
+      "height": 312,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_c7d584dce1ecd75c.png",
+      "sha256": "1c3a7a7cb1011f850236df1f72e6ca8156134b83bb843e232be6a11e1c03c892",
+      "width": 373,
+      "height": 312
+    }
+  },
+  "var_7bacac6d55e5": {
+    "source_id": "src_445543edba09",
+    "source_group_id": "sg_ea1c5b19fe34",
+    "quiz": {
+      "path": "public/assets/images/quiz_29930ea2ab0c67f2.png",
+      "sha256": "32372038114c035ce4fdad14f091491dc60a50fe280f666dd05e76486f47c9b3",
+      "width": 262,
+      "height": 225,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_f84473e58e690544.png",
+      "sha256": "32372038114c035ce4fdad14f091491dc60a50fe280f666dd05e76486f47c9b3",
+      "width": 262,
+      "height": 225
+    }
+  },
+  "var_bb7f434cf7b5": {
+    "source_id": "src_278ec094d05f",
+    "source_group_id": "sg_80d308e81327",
+    "quiz": {
+      "path": "public/assets/images/quiz_a5bd9f8ad9b2308f.png",
+      "sha256": "b6577d4f4ee30ba46c16c705c52d8d199f5835cc2cc2499482fabcb98dfce1aa",
+      "width": 370,
+      "height": 319,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_9adcc3127a32f695.png",
+      "sha256": "b6577d4f4ee30ba46c16c705c52d8d199f5835cc2cc2499482fabcb98dfce1aa",
+      "width": 370,
+      "height": 319
+    }
+  },
+  "var_d5c9de6be988": {
+    "source_id": "src_5f70a0e5f05f",
+    "source_group_id": "sg_bd6745dcc541",
+    "quiz": {
+      "path": "public/assets/images/quiz_a6a7c3306978b98c.png",
+      "sha256": "efafa1c6ec4f443e70c815219ce0fe774e3a1b1d9d0d2361891411f73deca6e0",
+      "width": 558,
+      "height": 424,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_17cd577259fa38ca.png",
+      "sha256": "efafa1c6ec4f443e70c815219ce0fe774e3a1b1d9d0d2361891411f73deca6e0",
+      "width": 558,
+      "height": 424
+    }
+  },
+  "var_394d8af8758b": {
+    "source_id": "src_e12af509a0b4",
+    "source_group_id": "sg_3642540d1c07",
+    "quiz": {
+      "path": "public/assets/images/quiz_1a9cc47cc4502d85.png",
+      "sha256": "c961ce0d2e80e4cf48dd5f830027e06d7d9899e94255359568b825661b2920a1",
+      "width": 993,
+      "height": 913,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_2476092e330639a0.png",
+      "sha256": "c961ce0d2e80e4cf48dd5f830027e06d7d9899e94255359568b825661b2920a1",
+      "width": 993,
+      "height": 913
+    }
+  },
+  "var_83b18110dfb7": {
+    "source_id": "src_ab46353d211f",
+    "source_group_id": "sg_95e324bb6e1f",
+    "quiz": {
+      "path": "public/assets/images/quiz_5a869671e87adf3e.png",
+      "sha256": "36f12a7662b033e9432d1abe9c1c412b7de496ffcd0c13818a56241f218daa6f",
+      "width": 1327,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_82346a5021ea64d2.png",
+      "sha256": "36f12a7662b033e9432d1abe9c1c412b7de496ffcd0c13818a56241f218daa6f",
+      "width": 1327,
+      "height": 1000
+    }
+  },
+  "var_a28ad600d78f": {
+    "source_id": "src_9fde0add0ee4",
+    "source_group_id": "sg_87e9e0930e68",
+    "quiz": {
+      "path": "public/assets/images/quiz_41485c05ef322d0a.png",
+      "sha256": "a3f50fe25d81ce1ea60820d880d54efa1d787175ae78eb826d19c6b48792c910",
+      "width": 625,
+      "height": 651,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite",
+        "answer_title_border_crop"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_c2c567a1f0085361.png",
+      "sha256": "56dd88d1083f76802773f79b8dd97697740aaca8ee5976f8037275ac8e7df7a2",
+      "width": 625,
+      "height": 700
+    }
+  },
+  "var_efa201cdb933": {
+    "source_id": "src_e54609cee66e",
+    "source_group_id": "sg_35c831ef5ca2",
+    "quiz": {
+      "path": "public/assets/images/quiz_83e663f21e7fc3b7.png",
+      "sha256": "c87747cabfeb1439708306e18957e6704689544709893259f61763598ebc01b8",
+      "width": 700,
+      "height": 465,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_7129813de12859a4.png",
+      "sha256": "c87747cabfeb1439708306e18957e6704689544709893259f61763598ebc01b8",
+      "width": 700,
+      "height": 465
+    }
+  },
+  "var_fca8c5c04cb7": {
+    "source_id": "src_16d3b92bc0aa",
+    "source_group_id": "sg_2b4df7383f63",
+    "quiz": {
+      "path": "public/assets/images/quiz_83b6a50a652c4ab2.png",
+      "sha256": "566804025fd32c2c47bec1f55839584efdacffcc19a9c0207edf537c2c39f518",
+      "width": 354,
+      "height": 349,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_786c3c5d3fb5033c.png",
+      "sha256": "566804025fd32c2c47bec1f55839584efdacffcc19a9c0207edf537c2c39f518",
+      "width": 354,
+      "height": 349
+    }
+  },
+  "var_188036c824e5": {
+    "source_id": "src_a76bcfc3c3a3",
+    "source_group_id": "sg_068d35c1e4a9",
+    "quiz": {
+      "path": "public/assets/images/quiz_503da468adfb693f.png",
+      "sha256": "f94aeceb6a43960e471a3a640af5cae0bb955d30612e0a9810f4cbd719fb1429",
+      "width": 400,
+      "height": 386,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_d6b27792477729fb.png",
+      "sha256": "f94aeceb6a43960e471a3a640af5cae0bb955d30612e0a9810f4cbd719fb1429",
+      "width": 400,
+      "height": 386
+    }
+  },
+  "var_5f13c9a5845e": {
+    "source_id": "src_2835462e0f13",
+    "source_group_id": "sg_d7aa87d50f47",
+    "quiz": {
+      "path": "public/assets/images/quiz_6c6df10851186ebe.png",
+      "sha256": "1ad522cfb3a56d2b55b047b00568fb7143b2b4ab7263af652aa2f183c74ca626",
+      "width": 700,
+      "height": 679,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_96c3ace30948b80c.png",
+      "sha256": "1ad522cfb3a56d2b55b047b00568fb7143b2b4ab7263af652aa2f183c74ca626",
+      "width": 700,
+      "height": 679
+    }
+  },
+  "var_792d9ad43144": {
+    "source_id": "src_d231eb588961",
+    "source_group_id": "sg_bacfff73a6a3",
+    "quiz": {
+      "path": "public/assets/images/quiz_efcf1fb651d3dbe3.png",
+      "sha256": "dbc85b7cda9cb1357ccdc5d409ecdd5fc1d1aed0e9b7651afe7cf82c9bad608c",
+      "width": 700,
+      "height": 356,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "answer_title_border_crop"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_6a28d0410577ff9d.png",
+      "sha256": "0881ab407f99d1ed538ff0bb9f791d0a7ab2ca78ad455bc6645b2c54ca630a5d",
+      "width": 700,
+      "height": 405
+    }
+  },
+  "var_8c37dba15412": {
+    "source_id": "src_a6bbc92862f4",
+    "source_group_id": "sg_f5247afdc6d8",
+    "quiz": {
+      "path": "public/assets/images/quiz_b953e99fd7892fad.png",
+      "sha256": "b870e90e0bb29915846bb114754b0e6883534b4354d17fac4203d29a0a53d565",
+      "width": 2166,
+      "height": 2165,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_9a9c4b7ae9139938.png",
+      "sha256": "b870e90e0bb29915846bb114754b0e6883534b4354d17fac4203d29a0a53d565",
+      "width": 2166,
+      "height": 2165
+    }
+  },
+  "var_d16c8164b551": {
+    "source_id": "src_5eb49c45c6de",
+    "source_group_id": "sg_148749258fb2",
+    "quiz": {
+      "path": "public/assets/images/quiz_2752e2bf9f1d97bb.png",
+      "sha256": "cec2d8add988d8d05f633a4ab78682df248af1eec039e2301c6b8b1d6cadd581",
+      "width": 700,
+      "height": 597,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite",
+        "answer_title_border_crop"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_c5a2c9390f7a86bc.png",
+      "sha256": "7d9ad52b9637d16d9e18e45a0f54f9974786cf4015bde1daa22a27220452b78d",
+      "width": 700,
+      "height": 649
+    }
+  },
+  "var_b2dc83d39333": {
+    "source_id": "src_6abe0314e27b",
+    "source_group_id": "sg_a9e7d2a16e9a",
+    "quiz": {
+      "path": "public/assets/images/quiz_aed290de0bb379e2.png",
+      "sha256": "d8adc1d4e1d4d4e28480a7256122537809a5ee52d1c6e6b563d3ecfcad386e21",
+      "width": 700,
+      "height": 531,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_0ff4e49330107bb9.png",
+      "sha256": "d8adc1d4e1d4d4e28480a7256122537809a5ee52d1c6e6b563d3ecfcad386e21",
+      "width": 700,
+      "height": 531
+    }
+  },
+  "var_5f66ca88ac1a": {
+    "source_id": "src_d7e0a903c1d0",
+    "source_group_id": "sg_a91c15be3115",
+    "quiz": {
+      "path": "public/assets/images/quiz_4a07c1486e051449.png",
+      "sha256": "7d9787dae96b6b1b801e8cb23a8a109a8d65a06fd690bfc73a665f2b342530a5",
+      "width": 364,
+      "height": 382,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_0938850e7e8c9a6e.png",
+      "sha256": "7d9787dae96b6b1b801e8cb23a8a109a8d65a06fd690bfc73a665f2b342530a5",
+      "width": 364,
+      "height": 382
+    }
+  },
+  "var_893453095292": {
+    "source_id": "src_d3b66922893f",
+    "source_group_id": "sg_9edf310090ca",
+    "quiz": {
+      "path": "public/assets/images/quiz_ae1984d8bead478e.png",
+      "sha256": "084933f89ee7a613233ddd4594d3b14ac25f358f30b216f50814ac933ac2aac8",
+      "width": 601,
+      "height": 613,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_a90a07ffe6de2b6e.png",
+      "sha256": "084933f89ee7a613233ddd4594d3b14ac25f358f30b216f50814ac933ac2aac8",
+      "width": 601,
+      "height": 613
+    }
+  },
+  "var_caa77b03a4f9": {
+    "source_id": "src_76d51d95d438",
+    "source_group_id": "sg_572c6d64a120",
+    "quiz": {
+      "path": "public/assets/images/quiz_b06ed190d40b6856.png",
+      "sha256": "142aaaa9ff112762142a2dadb88bf84f50bed84e45af93c6b7f52941bb9d292b",
+      "width": 257,
+      "height": 215,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_2b75f78505fe3fdf.png",
+      "sha256": "142aaaa9ff112762142a2dadb88bf84f50bed84e45af93c6b7f52941bb9d292b",
+      "width": 257,
+      "height": 215
+    }
+  },
+  "var_dc6facc2d05e": {
+    "source_id": "src_65a3346b8b27",
+    "source_group_id": "sg_30b71786482d",
+    "quiz": {
+      "path": "public/assets/images/quiz_899dea62f3b65a1a.png",
+      "sha256": "a495c6ff2e217fa336f276e5613e328966acf545808bbf79334b4aec47be3be5",
+      "width": 283,
+      "height": 254,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_64d99ec51daf38b0.png",
+      "sha256": "a495c6ff2e217fa336f276e5613e328966acf545808bbf79334b4aec47be3be5",
+      "width": 283,
+      "height": 254
+    }
+  },
+  "var_fc5e6829737f": {
+    "source_id": "src_98757d18039e",
+    "source_group_id": "sg_211b3e014289",
+    "quiz": {
+      "path": "public/assets/images/quiz_1ef7b3323069758f.png",
+      "sha256": "8a9baf41650d83c49d365c70430c810e45bfee4d6a17ba38f91b17024823c60a",
+      "width": 694,
+      "height": 646,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_c2f494b5cf7523e1.png",
+      "sha256": "8a9baf41650d83c49d365c70430c810e45bfee4d6a17ba38f91b17024823c60a",
+      "width": 694,
+      "height": 646
+    }
+  },
+  "var_828a36f0caa6": {
+    "source_id": "src_7d92a038033c",
+    "source_group_id": "sg_0e48014939f7",
+    "quiz": {
+      "path": "public/assets/images/quiz_489033c5c20456a8.png",
+      "sha256": "060179c8b2cdbc7ef4b582da12e31b9b8c8b4b1b332d5fbb0f0768155e74c4a6",
+      "width": 282,
+      "height": 254,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_e362e199dd037f10.png",
+      "sha256": "060179c8b2cdbc7ef4b582da12e31b9b8c8b4b1b332d5fbb0f0768155e74c4a6",
+      "width": 282,
+      "height": 254
+    }
+  },
+  "var_dfe908c8e25f": {
+    "source_id": "src_6545dc2a8941",
+    "source_group_id": "sg_15d8d41b96b1",
+    "quiz": {
+      "path": "public/assets/images/quiz_d23611c22bae1b74.png",
+      "sha256": "fde16c93ba308c2a25c27de01d0e38bbfe67310cdce85c799885877d6433f7cb",
+      "width": 264,
+      "height": 250,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_b7ffd53db038620f.png",
+      "sha256": "fde16c93ba308c2a25c27de01d0e38bbfe67310cdce85c799885877d6433f7cb",
+      "width": 264,
+      "height": 250
+    }
+  },
+  "var_b24f0275d55f": {
+    "source_id": "src_3c8badfc2a02",
+    "source_group_id": "sg_cb3141e79046",
+    "quiz": {
+      "path": "public/assets/images/quiz_192137963a0d6daa.png",
+      "sha256": "e57c46558c039c9ca8e464203171e8d214fdfb7109dbf0a05ccd785952dbd2d4",
+      "width": 1472,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_aed5a954e0b46aa4.png",
+      "sha256": "e57c46558c039c9ca8e464203171e8d214fdfb7109dbf0a05ccd785952dbd2d4",
+      "width": 1472,
+      "height": 1000
+    }
+  },
+  "var_6a1199d4268a": {
+    "source_id": "src_83c2c36ca9b3",
+    "source_group_id": "sg_5c16ed2aa2d9",
+    "quiz": {
+      "path": "public/assets/images/quiz_452c3aea621f2311.png",
+      "sha256": "2f6ddfe64f03725d50bff935f15b229eae041b9c832bbbe9ddfe93792b584c2a",
+      "width": 1486,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_7e1b7eb0877376a8.png",
+      "sha256": "2f6ddfe64f03725d50bff935f15b229eae041b9c832bbbe9ddfe93792b584c2a",
+      "width": 1486,
+      "height": 1000
+    }
+  },
+  "var_bb87a060d8f3": {
+    "source_id": "src_b0d776f01771",
+    "source_group_id": "sg_bd4e04cc43e3",
+    "quiz": {
+      "path": "public/assets/images/quiz_7de3593b72170dcf.png",
+      "sha256": "5687344730ad1c03b13aac3d792058e8eb67d0ffe3fec40840d21c76d55eeffa",
+      "width": 1478,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_208b64414530a995.png",
+      "sha256": "5687344730ad1c03b13aac3d792058e8eb67d0ffe3fec40840d21c76d55eeffa",
+      "width": 1478,
+      "height": 1000
+    }
+  },
+  "var_0cc9ddc78bba": {
+    "source_id": "src_30f86bc113d1",
+    "source_group_id": "sg_f37ab6278c83",
+    "quiz": {
+      "path": "public/assets/images/quiz_d203c1f2544e5250.png",
+      "sha256": "48a2472ad1400b42cac85f7c912ff4807b2081378706b85a86cdfc34ac1d2b58",
+      "width": 660,
+      "height": 406,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_1a4ee249587bf8f1.png",
+      "sha256": "48a2472ad1400b42cac85f7c912ff4807b2081378706b85a86cdfc34ac1d2b58",
+      "width": 660,
+      "height": 406
+    }
+  },
+  "var_6435699af5d2": {
+    "source_id": "src_211b1cab87a9",
+    "source_group_id": "sg_5cd96c36ffed",
+    "quiz": {
+      "path": "public/assets/images/quiz_0c3dd98f7bde9d61.png",
+      "sha256": "c0d0afe880091ec0ced99ac3ddfd3a0d2be533f70b3a1504bd32e8fe5e222941",
+      "width": 666,
+      "height": 844,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_afa75ce487324c74.png",
+      "sha256": "c0d0afe880091ec0ced99ac3ddfd3a0d2be533f70b3a1504bd32e8fe5e222941",
+      "width": 666,
+      "height": 844
+    }
+  },
+  "var_e6184dc0e4ca": {
+    "source_id": "src_90c352089b1c",
+    "source_group_id": "sg_d710b1ae32fd",
+    "quiz": {
+      "path": "public/assets/images/quiz_d8752832e9f45787.png",
+      "sha256": "1dffc103e9176a44fca262cde6d6b9173ade4ad82b2f6b2889e46aadd84f2332",
+      "width": 1333,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_7927187b4ff26e3f.png",
+      "sha256": "1dffc103e9176a44fca262cde6d6b9173ade4ad82b2f6b2889e46aadd84f2332",
+      "width": 1333,
+      "height": 1000
+    }
+  },
+  "var_939050895b52": {
+    "source_id": "src_35d7e0f18196",
+    "source_group_id": "sg_d710b1ae32fd",
+    "quiz": {
+      "path": "public/assets/images/quiz_7de495d4084f3aa2.png",
+      "sha256": "9daefe1d203d5412eea71aa043fe19e00f9329cb8380256a23c402658bcf2914",
+      "width": 700,
+      "height": 629,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_91f67686bffe5c00.png",
+      "sha256": "9daefe1d203d5412eea71aa043fe19e00f9329cb8380256a23c402658bcf2914",
+      "width": 700,
+      "height": 629
+    }
+  },
+  "var_8eb61add5cea": {
+    "source_id": "src_7a2c626ce7ec",
+    "source_group_id": "sg_431b2c15498d",
+    "quiz": {
+      "path": "public/assets/images/quiz_1076da784e663e45.png",
+      "sha256": "f103d4e224ce25bd3f5dcc7213325a94ea7b303fb7277c65d300f14b56b8d0e4",
+      "width": 700,
+      "height": 684,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_054a2a5a5d1072bb.png",
+      "sha256": "f103d4e224ce25bd3f5dcc7213325a94ea7b303fb7277c65d300f14b56b8d0e4",
+      "width": 700,
+      "height": 684
+    }
+  },
+  "var_ec5f3b5cf333": {
+    "source_id": "src_15faa65abc24",
+    "source_group_id": "sg_1745f8854704",
+    "quiz": {
+      "path": "public/assets/images/quiz_f6622649e385fb80.png",
+      "sha256": "4981b7bf85ee476e6c2f4490be48ba1db0b980ec3817d81c7392153d3a94bee3",
+      "width": 294,
+      "height": 286,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite",
+        "answer_title_border_crop"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_9afb37e22316c012.png",
+      "sha256": "74bdd4b9f5fb81212ec27331459706bfd16361e6ebedc23a6589b95d6bc8154e",
+      "width": 294,
+      "height": 376
+    }
+  },
+  "var_e9318661fd54": {
+    "source_id": "src_33e190ca7207",
+    "source_group_id": "sg_af751f64b75d",
+    "quiz": {
+      "path": "public/assets/images/quiz_6c618e7f6b9452ba.png",
+      "sha256": "c4c1818eee07cbb35e5329b56505ec74f356dd5b3339dd71099f91a9d84db6ac",
+      "width": 1201,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_4e8b04c971d360b2.png",
+      "sha256": "c4c1818eee07cbb35e5329b56505ec74f356dd5b3339dd71099f91a9d84db6ac",
+      "width": 1201,
+      "height": 1000
+    }
+  },
+  "var_74b92341528d": {
+    "source_id": "src_1dbfa38b55f5",
+    "source_group_id": "sg_cb14db6d6e90",
+    "quiz": {
+      "path": "public/assets/images/quiz_5a3ef99eb7874222.png",
+      "sha256": "9b1dd5e9246c490f4b9a0d6e434d5c6c4becc454e2a7443d3c38ce3e213d73b3",
+      "width": 969,
+      "height": 1094,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_18b87cfbe9478644.png",
+      "sha256": "9b1dd5e9246c490f4b9a0d6e434d5c6c4becc454e2a7443d3c38ce3e213d73b3",
+      "width": 969,
+      "height": 1094
+    }
+  },
+  "var_cc7d735d6756": {
+    "source_id": "src_6d739d7dfc76",
+    "source_group_id": "sg_d35283a34a5a",
+    "quiz": {
+      "path": "public/assets/images/quiz_de54a70467390b45.png",
+      "sha256": "a555fb0cceb40fdf6269837ed96e5b1bdcaab4379d5ea1ad58f2277622dd5eea",
+      "width": 1509,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_69d63111002962c1.png",
+      "sha256": "a555fb0cceb40fdf6269837ed96e5b1bdcaab4379d5ea1ad58f2277622dd5eea",
+      "width": 1509,
+      "height": 1000
+    }
+  },
+  "var_5a705671f53d": {
+    "source_id": "src_f52e5b0cea2e",
+    "source_group_id": "sg_8881f9433105",
+    "quiz": {
+      "path": "public/assets/images/quiz_30f8d050587ea60f.png",
+      "sha256": "ef5b126c3464b4b97b23ee88a6762771444f6e69a57dec37d0c09c0b4ed8a12c",
+      "width": 1238,
+      "height": 1184,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_6c83e30a77d0afe6.png",
+      "sha256": "ef5b126c3464b4b97b23ee88a6762771444f6e69a57dec37d0c09c0b4ed8a12c",
+      "width": 1238,
+      "height": 1184
+    }
+  },
+  "var_eea3041cfa4d": {
+    "source_id": "src_b18d0d9367e8",
+    "source_group_id": "sg_8621d4bcd0a8",
+    "quiz": {
+      "path": "public/assets/images/quiz_48234912a84c1e39.png",
+      "sha256": "8da6d7c8d9f346e7083fcf141a9e4293689fde225b1285881018c2270680b682",
+      "width": 1500,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_696e22a112fa7124.png",
+      "sha256": "8da6d7c8d9f346e7083fcf141a9e4293689fde225b1285881018c2270680b682",
+      "width": 1500,
+      "height": 1000
+    }
+  },
+  "var_6aceef8d97ab": {
+    "source_id": "src_5244be76e813",
+    "source_group_id": "sg_9775980509e7",
+    "quiz": {
+      "path": "public/assets/images/quiz_759d8c9f18201c8d.png",
+      "sha256": "a668d5f452367bf919ed3ad6f4f541a4bdfa23ed6512047604aaf1f2a1b3fc43",
+      "width": 1530,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_b3fdfdbcac95b6b4.png",
+      "sha256": "a668d5f452367bf919ed3ad6f4f541a4bdfa23ed6512047604aaf1f2a1b3fc43",
+      "width": 1530,
+      "height": 1000
+    }
+  },
+  "var_9d27984041b0": {
+    "source_id": "src_4d91d23889ef",
+    "source_group_id": "sg_752287530bdd",
+    "quiz": {
+      "path": "public/assets/images/quiz_5125903ab9143bdc.png",
+      "sha256": "7cccf2550636754b24aeb9bd1dd467d7dc4f4215f47b53e8f8743f03da1899d6",
+      "width": 1333,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_ce07db9ef09969f7.png",
+      "sha256": "7cccf2550636754b24aeb9bd1dd467d7dc4f4215f47b53e8f8743f03da1899d6",
+      "width": 1333,
+      "height": 1000
+    }
+  },
+  "var_a5d84c428ff5": {
+    "source_id": "src_0f7e613e6f8a",
+    "source_group_id": "sg_752287530bdd",
+    "quiz": {
+      "path": "public/assets/images/quiz_c97814300f438bf7.png",
+      "sha256": "9bd7827933ff6e836060eaf4547ecffc0400e7795b33282ccecfc1eaf1501dee",
+      "width": 1508,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_61beabde06fb7012.png",
+      "sha256": "9bd7827933ff6e836060eaf4547ecffc0400e7795b33282ccecfc1eaf1501dee",
+      "width": 1508,
+      "height": 1000
+    }
+  },
+  "var_e9b76d7dfc1d": {
+    "source_id": "src_c417e60bc5e6",
+    "source_group_id": "sg_32b0b660a8aa",
+    "quiz": {
+      "path": "public/assets/images/quiz_26cd4424ad768483.png",
+      "sha256": "5368a919179ad6da4152a56f57d85033f48fb7c8864451f26325b87e5adf339e",
+      "width": 1334,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_1253ebe95317f833.png",
+      "sha256": "5368a919179ad6da4152a56f57d85033f48fb7c8864451f26325b87e5adf339e",
+      "width": 1334,
+      "height": 1000
+    }
+  },
+  "var_9fd8cf5f2e2b": {
+    "source_id": "src_b1f100d1871e",
+    "source_group_id": "sg_752287530bdd",
+    "quiz": {
+      "path": "public/assets/images/quiz_09fcd85f15700dc9.png",
+      "sha256": "c00ce05cd95955a843c00dda1fffb875c338496c73c72d19529c5efd61c90f85",
+      "width": 700,
+      "height": 623,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_08c4e2479db63802.png",
+      "sha256": "c00ce05cd95955a843c00dda1fffb875c338496c73c72d19529c5efd61c90f85",
+      "width": 700,
+      "height": 623
+    }
+  },
+  "var_a7188b82feb8": {
+    "source_id": "src_b47603f518b4",
+    "source_group_id": "sg_ca254a078e8e",
+    "quiz": {
+      "path": "public/assets/images/quiz_0b328a4fdbbcf6e0.png",
+      "sha256": "2a4c9816289348a50611c0053001d0dc3852d8c9aefc0893d101592dc1e0ec57",
+      "width": 1033,
+      "height": 999,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_ab699b8c6fb5f31e.png",
+      "sha256": "2a4c9816289348a50611c0053001d0dc3852d8c9aefc0893d101592dc1e0ec57",
+      "width": 1033,
+      "height": 999
+    }
+  },
+  "var_f4282a6ffb8e": {
+    "source_id": "src_e915b483ead7",
+    "source_group_id": "sg_ca254a078e8e",
+    "quiz": {
+      "path": "public/assets/images/quiz_4751b653722a7372.png",
+      "sha256": "02f8cffb14cf315f5bd8d99a961d899fa56efe766ffd6be0b658757e5f0c6d4f",
+      "width": 1080,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_1d3ea84d4b4946ac.png",
+      "sha256": "02f8cffb14cf315f5bd8d99a961d899fa56efe766ffd6be0b658757e5f0c6d4f",
+      "width": 1080,
+      "height": 1000
+    }
+  },
+  "var_2de21992c01e": {
+    "source_id": "src_8c3713febfa7",
+    "source_group_id": "sg_9fdd4f473e4a",
+    "quiz": {
+      "path": "public/assets/images/quiz_5adce9e9514c62b8.png",
+      "sha256": "c6bdb35e74d67c4b1909aadf933a8177d5da7a50ca63b5a18f203fdbb36ada93",
+      "width": 700,
+      "height": 584,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_5a5944012c5f8d95.png",
+      "sha256": "c6bdb35e74d67c4b1909aadf933a8177d5da7a50ca63b5a18f203fdbb36ada93",
+      "width": 700,
+      "height": 584
+    }
+  },
+  "var_713c46a496a8": {
+    "source_id": "src_d8c28e283268",
+    "source_group_id": "sg_deea2b2c70a6",
+    "quiz": {
+      "path": "public/assets/images/quiz_da0e9b9fdea299b5.png",
+      "sha256": "e52a9a7025c470c2ada445b8d7f4eaf49064b24d3ebb7e659f95ea00ffe10048",
+      "width": 840,
+      "height": 1024,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_81e913c43d56059d.png",
+      "sha256": "e52a9a7025c470c2ada445b8d7f4eaf49064b24d3ebb7e659f95ea00ffe10048",
+      "width": 840,
+      "height": 1024
+    }
+  },
+  "var_3a0c0b2fbfee": {
+    "source_id": "src_d5aad24dcb72",
+    "source_group_id": "sg_ddd3052b944a",
+    "quiz": {
+      "path": "public/assets/images/quiz_e9657b0f47f35903.png",
+      "sha256": "4048154489f9221e8d76ca6e6231a90d6307bf1d436b28299d57c163b629b4c2",
+      "width": 776,
+      "height": 999,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_75d1f34e34f4b13c.png",
+      "sha256": "4048154489f9221e8d76ca6e6231a90d6307bf1d436b28299d57c163b629b4c2",
+      "width": 776,
+      "height": 999
+    }
+  },
+  "var_a4a3b800d24e": {
+    "source_id": "src_422608e930cd",
+    "source_group_id": "sg_718576389955",
+    "quiz": {
+      "path": "public/assets/images/quiz_70fb5781cb4e0c96.png",
+      "sha256": "d2ada86d073d27160473d7655b077f3b4cab42c7cb17d8352381f423a911bdb0",
+      "width": 1072,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_f2e652d96a70b6e4.png",
+      "sha256": "d2ada86d073d27160473d7655b077f3b4cab42c7cb17d8352381f423a911bdb0",
+      "width": 1072,
+      "height": 1000
+    }
+  },
+  "var_7b222d75f401": {
+    "source_id": "src_e50a644eee33",
+    "source_group_id": "sg_e1d8c2def728",
+    "quiz": {
+      "path": "public/assets/images/quiz_00180d87a7e143c5.png",
+      "sha256": "dd121067fe831e415a26ee30e44804ff04cfff2e5855140e78bbd9ad44387742",
+      "width": 1201,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_d9f196842c04fb26.png",
+      "sha256": "dd121067fe831e415a26ee30e44804ff04cfff2e5855140e78bbd9ad44387742",
+      "width": 1201,
+      "height": 1000
+    }
+  },
+  "var_2201c9b4de35": {
+    "source_id": "src_4ee09d8dbbe3",
+    "source_group_id": "sg_cdd72fef5682",
+    "quiz": {
+      "path": "public/assets/images/quiz_db5a50377c2fd209.png",
+      "sha256": "3a9af4492f914817298ca3ef9b00cc2bd8ff8cb97b1f5d1b51f159e341bab156",
+      "width": 1333,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_e1929fb1c8dbb4e4.png",
+      "sha256": "3a9af4492f914817298ca3ef9b00cc2bd8ff8cb97b1f5d1b51f159e341bab156",
+      "width": 1333,
+      "height": 1000
+    }
+  },
+  "var_50a5a96dd667": {
+    "source_id": "src_1ad08ec81cca",
+    "source_group_id": "sg_905b4729f3f7",
+    "quiz": {
+      "path": "public/assets/images/quiz_0f9ec448a84fcb30.png",
+      "sha256": "9d73266ccbf58f88a8da8ff5a38d808b198dd360459423b4d1138def6ad119a4",
+      "width": 1816,
+      "height": 1378,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_3dbf0d67b3c8976d.png",
+      "sha256": "9d73266ccbf58f88a8da8ff5a38d808b198dd360459423b4d1138def6ad119a4",
+      "width": 1816,
+      "height": 1378
+    }
+  },
+  "var_e7e71e4e0373": {
+    "source_id": "src_0012409dfad2",
+    "source_group_id": "sg_8cf5ee726aa6",
+    "quiz": {
+      "path": "public/assets/images/quiz_370a2e885100fe17.png",
+      "sha256": "07dca29659851de743aae83ff4164424b868ab30aff742a00820cc2eaa12871b",
+      "width": 636,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_5983bce5bfe7263d.png",
+      "sha256": "07dca29659851de743aae83ff4164424b868ab30aff742a00820cc2eaa12871b",
+      "width": 636,
+      "height": 1000
+    }
+  },
+  "var_feaf4b6cd889": {
+    "source_id": "src_e6974b9e43bf",
+    "source_group_id": "sg_eabb0aea1f2b",
+    "quiz": {
+      "path": "public/assets/images/quiz_10bdf1dab444cf0e.png",
+      "sha256": "e9850802f4ef585da4f96a1857169b33c760787fb36f541fdfa73a937e570f69",
+      "width": 400,
+      "height": 405,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "answer_title_border_crop"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_e7dd26532107d1f0.png",
+      "sha256": "a1e4f52e6452b1bc1985293085107e18d24253064b0e2c211ab4d3ed70bd57fb",
+      "width": 400,
+      "height": 455
+    }
+  },
+  "var_38fe24c7b12c": {
+    "source_id": "src_5de03d55e754",
+    "source_group_id": "sg_9403060e5f9c",
+    "quiz": {
+      "path": "public/assets/images/quiz_adec066651568ef5.png",
+      "sha256": "83b10bd8c3b8464698f1002a2f62ae82f6ff5d4e0141de8844362e7729b8ab3f",
+      "width": 1463,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_7c86ed95266eba9b.png",
+      "sha256": "83b10bd8c3b8464698f1002a2f62ae82f6ff5d4e0141de8844362e7729b8ab3f",
+      "width": 1463,
+      "height": 1000
+    }
+  },
+  "var_deeca440ca7d": {
+    "source_id": "src_baf383f092b2",
+    "source_group_id": "sg_f59c2cd93c1a",
+    "quiz": {
+      "path": "public/assets/images/quiz_d52bf99012cdec04.png",
+      "sha256": "89d44c687889e0fe892e1758842a1606f8b3642d4ab14ec6c68c8da941d4517a",
+      "width": 680,
+      "height": 640,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_a7137284d889fa91.png",
+      "sha256": "89d44c687889e0fe892e1758842a1606f8b3642d4ab14ec6c68c8da941d4517a",
+      "width": 680,
+      "height": 640
+    }
+  },
+  "var_b05df25cb45e": {
+    "source_id": "src_423de5cd9b5f",
+    "source_group_id": "sg_de143a450382",
+    "quiz": {
+      "path": "public/assets/images/quiz_a52cbf039c966fb0.png",
+      "sha256": "8a46482d09ca4853afb90ebd61f02ee60610ba3dcb54e4840aa2e95617b25e67",
+      "width": 674,
+      "height": 1014,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_c7c2a7ad13e1b016.png",
+      "sha256": "8a46482d09ca4853afb90ebd61f02ee60610ba3dcb54e4840aa2e95617b25e67",
+      "width": 674,
+      "height": 1014
+    }
+  },
+  "var_e9f019cd6141": {
+    "source_id": "src_d745d557c410",
+    "source_group_id": "sg_25acac3c1704",
+    "quiz": {
+      "path": "public/assets/images/quiz_901bfe165f6dfc52.png",
+      "sha256": "c46ae7b16ec4f1d12783b1adbc1477c1c78496fc0a70f8a947a5b2607ffa9cef",
+      "width": 1500,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_34e303bcd69514fb.png",
+      "sha256": "c46ae7b16ec4f1d12783b1adbc1477c1c78496fc0a70f8a947a5b2607ffa9cef",
+      "width": 1500,
+      "height": 1000
+    }
+  },
+  "var_dd631a5ed7ad": {
+    "source_id": "src_c15710f907f6",
+    "source_group_id": "sg_3593688417a4",
+    "quiz": {
+      "path": "public/assets/images/quiz_fbeca98437966d51.png",
+      "sha256": "c73715da63807c7348be20063003152ff6113e1fba86e8741de0b0021fbc7d36",
+      "width": 1420,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_6f1d2ffa880a0be0.png",
+      "sha256": "c73715da63807c7348be20063003152ff6113e1fba86e8741de0b0021fbc7d36",
+      "width": 1420,
+      "height": 1000
+    }
+  },
+  "var_3dc12c680030": {
+    "source_id": "src_4cb9198a68cc",
+    "source_group_id": "sg_f7b96ff5d928",
+    "quiz": {
+      "path": "public/assets/images/quiz_10be66d956fe00e7.png",
+      "sha256": "22579a5a9bb04a8bf28c51b432ce66ced2ef326a29bf0f6920c11787f1e8ef45",
+      "width": 400,
+      "height": 315,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_de6f91aa910bb855.png",
+      "sha256": "22579a5a9bb04a8bf28c51b432ce66ced2ef326a29bf0f6920c11787f1e8ef45",
+      "width": 400,
+      "height": 315
+    }
+  },
+  "var_c6c5ea469089": {
+    "source_id": "src_80cc88fff439",
+    "source_group_id": "sg_4b418e7f9350",
+    "quiz": {
+      "path": "public/assets/images/quiz_42b4c2250fe789d0.png",
+      "sha256": "662023adc64f6979770d5448f4be09132cb6278f8ffcf6062ec894dca6b3ed2b",
+      "width": 399,
+      "height": 315,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_6c39fdc46bc27065.png",
+      "sha256": "662023adc64f6979770d5448f4be09132cb6278f8ffcf6062ec894dca6b3ed2b",
+      "width": 399,
+      "height": 315
+    }
+  },
+  "var_b6c95a72ece7": {
+    "source_id": "src_e38fad950bdf",
+    "source_group_id": "sg_9cc304c9210f",
+    "quiz": {
+      "path": "public/assets/images/quiz_91e64053303aa3cf.png",
+      "sha256": "10de40a06f88719ea7fcf20a72b96ccab2ce6a1a1347eb29f488ba175128a5dc",
+      "width": 399,
+      "height": 316,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_a64b9e4c63db32bf.png",
+      "sha256": "10de40a06f88719ea7fcf20a72b96ccab2ce6a1a1347eb29f488ba175128a5dc",
+      "width": 399,
+      "height": 316
+    }
+  },
+  "var_0f2118705e9f": {
+    "source_id": "src_e0ce659b5fa5",
+    "source_group_id": "sg_0dc9458ad82a",
+    "quiz": {
+      "path": "public/assets/images/quiz_a5142480d5a8c912.png",
+      "sha256": "3cd870c9df094179d0ebab76369f2e71dc99818211a17f8ac3cc63a51f68f0a1",
+      "width": 398,
+      "height": 307,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_3f878896878869ad.png",
+      "sha256": "3cd870c9df094179d0ebab76369f2e71dc99818211a17f8ac3cc63a51f68f0a1",
+      "width": 398,
+      "height": 307
+    }
+  },
+  "var_1f88e0855ff0": {
+    "source_id": "src_8bc21482f542",
+    "source_group_id": "sg_bd3ab1f9180c",
+    "quiz": {
+      "path": "public/assets/images/quiz_28667296707861b8.png",
+      "sha256": "023a53f63306f6f9a01eb0af3786fce9e6383ce09d5e0ed0f0d9d7dccef761e5",
+      "width": 398,
+      "height": 304,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_cdfe9cba4d7645d2.png",
+      "sha256": "023a53f63306f6f9a01eb0af3786fce9e6383ce09d5e0ed0f0d9d7dccef761e5",
+      "width": 398,
+      "height": 304
+    }
+  },
+  "var_373715398b34": {
+    "source_id": "src_47604dc3e347",
+    "source_group_id": "sg_519f637aee12",
+    "quiz": {
+      "path": "public/assets/images/quiz_759a23314898d41b.png",
+      "sha256": "83805c918a2e487a48f4de65a9721fc7afd176a87fa5ac09b82c73a7eecbe3a7",
+      "width": 692,
+      "height": 720,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_654fbed187704214.png",
+      "sha256": "83805c918a2e487a48f4de65a9721fc7afd176a87fa5ac09b82c73a7eecbe3a7",
+      "width": 692,
+      "height": 720
+    }
+  },
+  "var_55d754504efb": {
+    "source_id": "src_fc9b96cb7767",
+    "source_group_id": "sg_55857e42e008",
+    "quiz": {
+      "path": "public/assets/images/quiz_315bf20860a67490.png",
+      "sha256": "028fc7cb716e6a570eb165f80adc0074358bc70d22aa64d575557c2a9c9d5dda",
+      "width": 400,
+      "height": 306,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_181dfb28b3a9bffc.png",
+      "sha256": "028fc7cb716e6a570eb165f80adc0074358bc70d22aa64d575557c2a9c9d5dda",
+      "width": 400,
+      "height": 306
+    }
+  },
+  "var_eb201b13280a": {
+    "source_id": "src_5d8a0be94b5e",
+    "source_group_id": "sg_47ab31f09022",
+    "quiz": {
+      "path": "public/assets/images/quiz_af6bf7d45b929202.png",
+      "sha256": "31d7815909c976249d9d22bc5525f098de389bafe2aa7a3e31ff71eed9dbec04",
+      "width": 402,
+      "height": 306,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_a30a31e9e4a221fe.png",
+      "sha256": "31d7815909c976249d9d22bc5525f098de389bafe2aa7a3e31ff71eed9dbec04",
+      "width": 402,
+      "height": 306
+    }
+  },
+  "var_f6d76b286cdf": {
+    "source_id": "src_1308302bc930",
+    "source_group_id": "sg_749c4fd549b4",
+    "quiz": {
+      "path": "public/assets/images/quiz_a3b12c14af26b888.png",
+      "sha256": "5e6b862e43935ce6d9449752d5782d7a218d715065c2024003c84652e38cd8d3",
+      "width": 401,
+      "height": 306,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_831fc7e6aceebf32.png",
+      "sha256": "5e6b862e43935ce6d9449752d5782d7a218d715065c2024003c84652e38cd8d3",
+      "width": 401,
+      "height": 306
+    }
+  },
+  "var_7247fd9e60a6": {
+    "source_id": "src_3c1e1e7fcb57",
+    "source_group_id": "sg_359ad241d5aa",
+    "quiz": {
+      "path": "public/assets/images/quiz_36cca241190f0dc9.png",
+      "sha256": "84cf888247bbdb09dfbdf1f2982f9414a50dc996e97acc8b8fe458b2c510e9d7",
+      "width": 400,
+      "height": 310,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_3ae5b770aad2e3c9.png",
+      "sha256": "84cf888247bbdb09dfbdf1f2982f9414a50dc996e97acc8b8fe458b2c510e9d7",
+      "width": 400,
+      "height": 310
+    }
+  },
+  "var_9fe1393f6fad": {
+    "source_id": "src_4db356d103f3",
+    "source_group_id": "sg_5adeb6b117a0",
+    "quiz": {
+      "path": "public/assets/images/quiz_d784ab9afeccb443.png",
+      "sha256": "bef0338e28cc3982667c254a44cfc2ca7ab6d6d5a7c9de58149dc9139609d8d9",
+      "width": 401,
+      "height": 310,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_66cb1ff002cf9364.png",
+      "sha256": "bef0338e28cc3982667c254a44cfc2ca7ab6d6d5a7c9de58149dc9139609d8d9",
+      "width": 401,
+      "height": 310
+    }
+  },
+  "var_5b4aeec21917": {
+    "source_id": "src_d55da0dd8e7a",
+    "source_group_id": "sg_4aace33ad6b4",
+    "quiz": {
+      "path": "public/assets/images/quiz_eacd41e3a092afee.png",
+      "sha256": "cf6aa259760970908e34e2aac9d0397c3a61be7cfd477d9d7ba8a6f422591066",
+      "width": 401,
+      "height": 310,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_4ef845ed49ae2358.png",
+      "sha256": "cf6aa259760970908e34e2aac9d0397c3a61be7cfd477d9d7ba8a6f422591066",
+      "width": 401,
+      "height": 310
+    }
+  },
+  "var_53c556103447": {
+    "source_id": "src_0e4d5860d826",
+    "source_group_id": "sg_816787d8ffd1",
+    "quiz": {
+      "path": "public/assets/images/quiz_45b847e83643c681.png",
+      "sha256": "59b711d091278603571b1e578c76fd4207e132e2d0421a6a0ec7cfbbca9362c4",
+      "width": 404,
+      "height": 320,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_822ec10fc2212455.png",
+      "sha256": "59b711d091278603571b1e578c76fd4207e132e2d0421a6a0ec7cfbbca9362c4",
+      "width": 404,
+      "height": 320
+    }
+  },
+  "var_4454cec5b3fd": {
+    "source_id": "src_178e1bf3ddf6",
+    "source_group_id": "sg_22ca4b849e00",
+    "quiz": {
+      "path": "public/assets/images/quiz_fa9ae96809bacad3.png",
+      "sha256": "5a11f42d63fc9c1360c5abbd5dc99e357e0fd29e5aa002d9b09c35a2340beab7",
+      "width": 405,
+      "height": 320,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_02f8a0ecb0be12d8.png",
+      "sha256": "5a11f42d63fc9c1360c5abbd5dc99e357e0fd29e5aa002d9b09c35a2340beab7",
+      "width": 405,
+      "height": 320
+    }
+  },
+  "var_31a78645e9e8": {
+    "source_id": "src_e439e55e3dcb",
+    "source_group_id": "sg_9c7759c3f5ad",
+    "quiz": {
+      "path": "public/assets/images/quiz_8c19be2bd666721a.png",
+      "sha256": "1566b22c91ac1f83a6985afa4d4d09dd1ddbdf05bc4127a53f2c9e6b98160f9e",
+      "width": 402,
+      "height": 318,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_32cb082b5eb075c9.png",
+      "sha256": "1566b22c91ac1f83a6985afa4d4d09dd1ddbdf05bc4127a53f2c9e6b98160f9e",
+      "width": 402,
+      "height": 318
+    }
+  },
+  "var_09c8845def25": {
+    "source_id": "src_622184ff4fa1",
+    "source_group_id": "sg_25acac3c1704",
+    "quiz": {
+      "path": "public/assets/images/quiz_291b79f78c7743aa.png",
+      "sha256": "316328e86eff541fc69cb46f6b672f867ba28bbce94543808f21f8cf3abd78a6",
+      "width": 402,
+      "height": 318,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_3c2f82548a4c5820.png",
+      "sha256": "316328e86eff541fc69cb46f6b672f867ba28bbce94543808f21f8cf3abd78a6",
+      "width": 402,
+      "height": 318
+    }
+  },
+  "var_6eabb8bb89db": {
+    "source_id": "src_b33e1c98c140",
+    "source_group_id": "sg_ac2eaa32f047",
+    "quiz": {
+      "path": "public/assets/images/quiz_223242ef8c385a55.png",
+      "sha256": "8a111af8b514984114ed94df76c8c4d3c4ada0fec865631a950c31f2d90c93be",
+      "width": 404,
+      "height": 305,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_3eab48127f697daa.png",
+      "sha256": "8a111af8b514984114ed94df76c8c4d3c4ada0fec865631a950c31f2d90c93be",
+      "width": 404,
+      "height": 305
+    }
+  },
+  "var_c691631d4dc3": {
+    "source_id": "src_ece268fec04b",
+    "source_group_id": "sg_11e1cfc57e93",
+    "quiz": {
+      "path": "public/assets/images/quiz_f904c9574f34ce02.png",
+      "sha256": "887aa72cfb64a856325ac568dbf19295a8bd3f89e2e0702d14ef3a9b70d74ce9",
+      "width": 400,
+      "height": 305,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_60a557bb94fd88eb.png",
+      "sha256": "887aa72cfb64a856325ac568dbf19295a8bd3f89e2e0702d14ef3a9b70d74ce9",
+      "width": 400,
+      "height": 305
+    }
+  },
+  "var_7ea39d62d070": {
+    "source_id": "src_3d56a056118c",
+    "source_group_id": "sg_cc54ad12da79",
+    "quiz": {
+      "path": "public/assets/images/quiz_bfb487301b994b00.png",
+      "sha256": "8efd40c6c810896a5fd5d11a462efb6cedbd6c29da3318aa4b3311a933dfba88",
+      "width": 397,
+      "height": 306,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_2983502a6257eeb0.png",
+      "sha256": "8efd40c6c810896a5fd5d11a462efb6cedbd6c29da3318aa4b3311a933dfba88",
+      "width": 397,
+      "height": 306
+    }
+  },
+  "var_81de7fa9d19e": {
+    "source_id": "src_6156f5a8b03a",
+    "source_group_id": "sg_acb5326a5145",
+    "quiz": {
+      "path": "public/assets/images/quiz_55ab4f22de50e238.png",
+      "sha256": "4d126115e38801c7ad6cd152bd025a67e62497755f9c9980e1fea67cf0d52f20",
+      "width": 399,
+      "height": 306,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_a3d744da5c79b409.png",
+      "sha256": "4d126115e38801c7ad6cd152bd025a67e62497755f9c9980e1fea67cf0d52f20",
+      "width": 399,
+      "height": 306
+    }
+  },
+  "var_a51a2cb89b96": {
+    "source_id": "src_cf34ee411e43",
+    "source_group_id": "sg_70e3069a74bf",
+    "quiz": {
+      "path": "public/assets/images/quiz_bf8f64f09cf4b530.png",
+      "sha256": "2a1d778e0cbe0248777d585f23c1ee708b4ba643cd3b2164583b165cf71092c3",
+      "width": 397,
+      "height": 306,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_3cffeb3fd6bf3305.png",
+      "sha256": "2a1d778e0cbe0248777d585f23c1ee708b4ba643cd3b2164583b165cf71092c3",
+      "width": 397,
+      "height": 306
+    }
+  },
+  "var_394a40dfa6c9": {
+    "source_id": "src_1875b8699042",
+    "source_group_id": "sg_ae16caa4764d",
+    "quiz": {
+      "path": "public/assets/images/quiz_24b65d314e63b21d.png",
+      "sha256": "347cd6d1eeb006229a5b0cc85eb3d182b7a0fd5bf62eb32499ea38554d462e7d",
+      "width": 397,
+      "height": 303,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_2c6be63eb57535ea.png",
+      "sha256": "347cd6d1eeb006229a5b0cc85eb3d182b7a0fd5bf62eb32499ea38554d462e7d",
+      "width": 397,
+      "height": 303
+    }
+  },
+  "var_c0a7cef4710a": {
+    "source_id": "src_802c2612bb77",
+    "source_group_id": "sg_4c842afdba59",
+    "quiz": {
+      "path": "public/assets/images/quiz_e4ad86ff83fd3f3e.png",
+      "sha256": "d8f88c89037385cccadaf7ff17120195433a0d9a50601571dae0a01d0f9a9890",
+      "width": 397,
+      "height": 303,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_e56a49f9ee35025c.png",
+      "sha256": "d8f88c89037385cccadaf7ff17120195433a0d9a50601571dae0a01d0f9a9890",
+      "width": 397,
+      "height": 303
+    }
+  },
+  "var_becdd5e96894": {
+    "source_id": "src_76bc9a815c5b",
+    "source_group_id": "sg_0aba75c1f4fb",
+    "quiz": {
+      "path": "public/assets/images/quiz_15e0f7d892839835.png",
+      "sha256": "e499c5c5da3efe6243813325c8384ce570dde03ba99540bd24c36f71337afc52",
+      "width": 399,
+      "height": 312,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_7a26c069de6f042b.png",
+      "sha256": "e499c5c5da3efe6243813325c8384ce570dde03ba99540bd24c36f71337afc52",
+      "width": 399,
+      "height": 312
+    }
+  },
+  "var_3a62fcd442db": {
+    "source_id": "src_c0246133cf0c",
+    "source_group_id": "sg_54f5d3be4bcc",
+    "quiz": {
+      "path": "public/assets/images/quiz_463ddfcb0b50649b.png",
+      "sha256": "32e39f329246073ea5a7d086a7416ba0e4d6a88873f2c1633c76fd72764eba98",
+      "width": 397,
+      "height": 308,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_e542bcd85a2e1f7b.png",
+      "sha256": "32e39f329246073ea5a7d086a7416ba0e4d6a88873f2c1633c76fd72764eba98",
+      "width": 397,
+      "height": 308
+    }
+  },
+  "var_f5a05d915587": {
+    "source_id": "src_28396320f686",
+    "source_group_id": "sg_9e6141fab0e1",
+    "quiz": {
+      "path": "public/assets/images/quiz_b844c5a49eb61a28.png",
+      "sha256": "0c6b26ff41b5e8dca9e89288d4fdc9ab5527742792ced560f300b24b8c0a5148",
+      "width": 399,
+      "height": 308,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_a8db47390cd141bc.png",
+      "sha256": "0c6b26ff41b5e8dca9e89288d4fdc9ab5527742792ced560f300b24b8c0a5148",
+      "width": 399,
+      "height": 308
+    }
+  },
+  "var_3491bdfe43eb": {
+    "source_id": "src_8a7b8f7b6910",
+    "source_group_id": "sg_5c303f5072ee",
+    "quiz": {
+      "path": "public/assets/images/quiz_f4f2b6d83142c3b4.png",
+      "sha256": "d6aab572eca13984808aef489a412fd90a5a55e3f44c661f9e7173f041c5e55d",
+      "width": 397,
+      "height": 308,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_edeef3a6f7067e54.png",
+      "sha256": "d6aab572eca13984808aef489a412fd90a5a55e3f44c661f9e7173f041c5e55d",
+      "width": 397,
+      "height": 308
+    }
+  },
+  "var_76511c0a974a": {
+    "source_id": "src_ebcde2e49443",
+    "source_group_id": "sg_9bd61f191717",
+    "quiz": {
+      "path": "public/assets/images/quiz_4050ba9715c6f2ca.png",
+      "sha256": "1f7cb778b3b748d1dfa81d107feb617bb85922345b24e40e5e311d3864fa6ed5",
+      "width": 402,
+      "height": 306,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_179711384952812c.png",
+      "sha256": "1f7cb778b3b748d1dfa81d107feb617bb85922345b24e40e5e311d3864fa6ed5",
+      "width": 402,
+      "height": 306
+    }
+  },
+  "var_54a2559e507f": {
+    "source_id": "src_b41ee3d19dc9",
+    "source_group_id": "sg_3f25b935b350",
+    "quiz": {
+      "path": "public/assets/images/quiz_01f40a3bb19ee1f5.png",
+      "sha256": "2803c3f2c785559c15ac4b5db65f158a2c63d6ae4ee68b73bfd685910e70e924",
+      "width": 1024,
+      "height": 768,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_b5f6e95819d348de.png",
+      "sha256": "2803c3f2c785559c15ac4b5db65f158a2c63d6ae4ee68b73bfd685910e70e924",
+      "width": 1024,
+      "height": 768
+    }
+  },
+  "var_08eb6517341e": {
+    "source_id": "src_824027fee4c0",
+    "source_group_id": "sg_eea87a335744",
+    "quiz": {
+      "path": "public/assets/images/quiz_df48f7b5d1fd2a10.png",
+      "sha256": "147a6bd7318bdbbe823e06e352e0ba35c1281b5e4e6d449c526aa1a53c9d509e",
+      "width": 628,
+      "height": 560,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_adce17bccc61572c.png",
+      "sha256": "147a6bd7318bdbbe823e06e352e0ba35c1281b5e4e6d449c526aa1a53c9d509e",
+      "width": 628,
+      "height": 560
+    }
+  },
+  "var_7ab5d6430b8b": {
+    "source_id": "src_2c938ee48d15",
+    "source_group_id": "sg_eea87a335744",
+    "quiz": {
+      "path": "public/assets/images/quiz_2b355c5bc20c5dd7.png",
+      "sha256": "23345816284e82d659e4b430e8d79345d386fe727a93913e520aca8fc87fcdfe",
+      "width": 778,
+      "height": 780,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_821ee45a7808ac14.png",
+      "sha256": "23345816284e82d659e4b430e8d79345d386fe727a93913e520aca8fc87fcdfe",
+      "width": 778,
+      "height": 780
+    }
+  },
+  "var_adb2317154e2": {
+    "source_id": "src_91e7092641d2",
+    "source_group_id": "sg_b80951883325",
+    "quiz": {
+      "path": "public/assets/images/quiz_8e3463ff6305a8d2.png",
+      "sha256": "e75c13408bafc0208a3f93dbbd3ddaadc6831a9e0a48b22f9f2b48d309446b5b",
+      "width": 800,
+      "height": 533,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_db5dd16448d4f962.png",
+      "sha256": "e75c13408bafc0208a3f93dbbd3ddaadc6831a9e0a48b22f9f2b48d309446b5b",
+      "width": 800,
+      "height": 533
+    }
+  },
+  "var_902b060d6963": {
+    "source_id": "src_92ef1351c044",
+    "source_group_id": "sg_0067a121c6e2",
+    "quiz": {
+      "path": "public/assets/images/quiz_aa1967daf3ffd4a0.png",
+      "sha256": "7d34158a4e1341a41c8bccd04dd0ea433c3f19aee72cb4e0d34b353ce3eb349f",
+      "width": 1346,
+      "height": 1184,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_fc285583b640d85a.png",
+      "sha256": "7d34158a4e1341a41c8bccd04dd0ea433c3f19aee72cb4e0d34b353ce3eb349f",
+      "width": 1346,
+      "height": 1184
+    }
+  },
+  "var_28bac196b0cb": {
+    "source_id": "src_0da4d9671d41",
+    "source_group_id": "sg_5d4f586ff566",
+    "quiz": {
+      "path": "public/assets/images/quiz_d938adbadac544a0.png",
+      "sha256": "3cd7aeb7278c2b7dd82927b0ba739a0be20fb07a477db9bd18e024d67b83500d",
+      "width": 1262,
+      "height": 1140,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_84b20c04585a1d9b.png",
+      "sha256": "3cd7aeb7278c2b7dd82927b0ba739a0be20fb07a477db9bd18e024d67b83500d",
+      "width": 1262,
+      "height": 1140
+    }
+  },
+  "var_2043cfd7ad19": {
+    "source_id": "src_8ee3ab02d601",
+    "source_group_id": "sg_532749edb8ce",
+    "quiz": {
+      "path": "public/assets/images/quiz_b2fb08e375e62f7c.png",
+      "sha256": "b4d0f8d5b13111364374140ffc5043f45a1917a3eab1bae92650efb21f72319f",
+      "width": 844,
+      "height": 1052,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_3c3cfe400a80a8eb.png",
+      "sha256": "b4d0f8d5b13111364374140ffc5043f45a1917a3eab1bae92650efb21f72319f",
+      "width": 844,
+      "height": 1052
+    }
+  },
+  "var_33bdcb86a2d9": {
+    "source_id": "src_caf81d288278",
+    "source_group_id": "sg_532749edb8ce",
+    "quiz": {
+      "path": "public/assets/images/quiz_4c5669ac77c8f261.png",
+      "sha256": "f65dfb48ed6c61ce19a08697220127c3b69c988a72fc44112ba4c2c8b23bc104",
+      "width": 440,
+      "height": 363,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_e4e586b11044dbf8.png",
+      "sha256": "f65dfb48ed6c61ce19a08697220127c3b69c988a72fc44112ba4c2c8b23bc104",
+      "width": 440,
+      "height": 363
+    }
+  },
+  "var_eed85b9ab78b": {
+    "source_id": "src_b2147562ec26",
+    "source_group_id": "sg_0936f5c00b62",
+    "quiz": {
+      "path": "public/assets/images/quiz_6904a37ca96cf736.png",
+      "sha256": "148e551cf6139a6d326dab6462f3cc38447cfc47f8f6227bcb81d02af52af140",
+      "width": 608,
+      "height": 696,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_f865936ef4a4a6b5.png",
+      "sha256": "148e551cf6139a6d326dab6462f3cc38447cfc47f8f6227bcb81d02af52af140",
+      "width": 608,
+      "height": 696
+    }
+  },
+  "var_5d3be5212523": {
+    "source_id": "src_63eca2c217ec",
+    "source_group_id": "sg_0936f5c00b62",
+    "quiz": {
+      "path": "public/assets/images/quiz_8faa5ae9dc2ad9e2.png",
+      "sha256": "58c11a701387e92a3a89abac5c1564c8df9a6e9fcb0d3154fbaa22a6a643fdac",
+      "width": 738,
+      "height": 728,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_8c143d3cc929da4f.png",
+      "sha256": "58c11a701387e92a3a89abac5c1564c8df9a6e9fcb0d3154fbaa22a6a643fdac",
+      "width": 738,
+      "height": 728
+    }
+  },
+  "var_c39aa27b280e": {
+    "source_id": "src_f71612a4ccb7",
+    "source_group_id": "sg_5d4f586ff566",
+    "quiz": {
+      "path": "public/assets/images/quiz_a62b15014f724b1f.png",
+      "sha256": "f4494b2e0f99db88248a6f856155a5dea20d0c009bdba7522a75f3477c683ef0",
+      "width": 510,
+      "height": 401,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_ea48609d44c38be9.png",
+      "sha256": "f4494b2e0f99db88248a6f856155a5dea20d0c009bdba7522a75f3477c683ef0",
+      "width": 510,
+      "height": 401
+    }
+  },
+  "var_9075ab10f4a4": {
+    "source_id": "src_448ff94d8784",
+    "source_group_id": "sg_3f14a6e13db0",
+    "quiz": {
+      "path": "public/assets/images/quiz_5d68b4ba5d8183cb.png",
+      "sha256": "242515968db12b0d8cb695a0a67d8090e0bae0ccd52d5c2c0b8f72e986510870",
+      "width": 1015,
+      "height": 521,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_aae572d9313cea92.png",
+      "sha256": "242515968db12b0d8cb695a0a67d8090e0bae0ccd52d5c2c0b8f72e986510870",
+      "width": 1015,
+      "height": 521
+    }
+  },
+  "var_f6c4d29a7e94": {
+    "source_id": "src_7c0cc5866749",
+    "source_group_id": "sg_d0721d9c014f",
+    "quiz": {
+      "path": "public/assets/images/quiz_407490fff7b1672d.png",
+      "sha256": "88f5f34d957d77c51c61c4134ca230bbeac56a8dd40951d7a2937f6d42a55a13",
+      "width": 210,
+      "height": 191,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_f492e6ad6414cf1a.png",
+      "sha256": "88f5f34d957d77c51c61c4134ca230bbeac56a8dd40951d7a2937f6d42a55a13",
+      "width": 210,
+      "height": 191
+    }
+  },
+  "var_4bc222d7ea79": {
+    "source_id": "src_b51b320fedc1",
+    "source_group_id": "sg_af940aa49520",
+    "quiz": {
+      "path": "public/assets/images/quiz_bce03046b44ef922.png",
+      "sha256": "51a73e96b3d11f899179aec7ee0c13f3197502e6568353f87d1d02f868e8b308",
+      "width": 484,
+      "height": 436,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_c140d68d8970d7d4.png",
+      "sha256": "51a73e96b3d11f899179aec7ee0c13f3197502e6568353f87d1d02f868e8b308",
+      "width": 484,
+      "height": 436
+    }
+  },
+  "var_f530da427085": {
+    "source_id": "src_0652f0e1bc6c",
+    "source_group_id": "sg_816787d8ffd1",
+    "quiz": {
+      "path": "public/assets/images/quiz_4d71a87de396dd00.png",
+      "sha256": "bce090172d87188e126a294a9d55b589dcdd8852469b7bc7fab5e8bbe67c78e2",
+      "width": 641,
+      "height": 851,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_f3517accf4610aa4.png",
+      "sha256": "bce090172d87188e126a294a9d55b589dcdd8852469b7bc7fab5e8bbe67c78e2",
+      "width": 641,
+      "height": 851
+    }
+  },
+  "var_882248d4745a": {
+    "source_id": "src_544496381f6d",
+    "source_group_id": "sg_1143befd8fb4",
+    "quiz": {
+      "path": "public/assets/images/quiz_2845ec9f9bd664d9.png",
+      "sha256": "eab24c89e0d5599f40f62252f73329b2399550eb59cd73af7dff359af25693bf",
+      "width": 1005,
+      "height": 877,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_213e38e5429a1221.png",
+      "sha256": "eab24c89e0d5599f40f62252f73329b2399550eb59cd73af7dff359af25693bf",
+      "width": 1005,
+      "height": 877
+    }
+  },
+  "var_5fc1573c5bce": {
+    "source_id": "src_8cdc858f37ea",
+    "source_group_id": "sg_42d448b4aecf",
+    "quiz": {
+      "path": "public/assets/images/quiz_1013882504125464.png",
+      "sha256": "9ab7c328438440a2372ccdca441134681a2309258943e4951de2afef95be33b1",
+      "width": 484,
+      "height": 407,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_7e263f8bb346c096.png",
+      "sha256": "9ab7c328438440a2372ccdca441134681a2309258943e4951de2afef95be33b1",
+      "width": 484,
+      "height": 407
+    }
+  },
+  "var_7e4d118ec875": {
+    "source_id": "src_d6f061a43845",
+    "source_group_id": "sg_7237826c32e6",
+    "quiz": {
+      "path": "public/assets/images/quiz_bda69e55d1880d8f.png",
+      "sha256": "14570842e023250995da36444c2f813446faf2318b3aadae8bbff0db94215c94",
+      "width": 510,
+      "height": 555,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_c15825cc27167eae.png",
+      "sha256": "14570842e023250995da36444c2f813446faf2318b3aadae8bbff0db94215c94",
+      "width": 510,
+      "height": 555
+    }
+  },
+  "var_0a3aaf977b1c": {
+    "source_id": "src_d3f8554e716a",
+    "source_group_id": "sg_752287530bdd",
+    "quiz": {
+      "path": "public/assets/images/quiz_48bf3ea069f64f74.png",
+      "sha256": "02917c40bc3e9c0cdb02bd17a11a1178696e88c2f270a138b0c1ab6164ff285c",
+      "width": 495,
+      "height": 423,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_0031ca19f36d41cd.png",
+      "sha256": "02917c40bc3e9c0cdb02bd17a11a1178696e88c2f270a138b0c1ab6164ff285c",
+      "width": 495,
+      "height": 423
+    }
+  },
+  "var_eaa6270a74a6": {
+    "source_id": "src_ff58bf052183",
+    "source_group_id": "sg_b7434981c4c2",
+    "quiz": {
+      "path": "public/assets/images/quiz_2ab9bcd2666115cb.png",
+      "sha256": "0e7f849593c2e6cd744a7646cf47833f61acbfc810e26129db4d2302cd5abd10",
+      "width": 450,
+      "height": 447,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_5419a4a299d52b94.png",
+      "sha256": "0e7f849593c2e6cd744a7646cf47833f61acbfc810e26129db4d2302cd5abd10",
+      "width": 450,
+      "height": 447
+    }
+  },
+  "var_6e57400c8ca6": {
+    "source_id": "src_cf4fdc5b4a09",
+    "source_group_id": "sg_540a9f541140",
+    "quiz": {
+      "path": "public/assets/images/quiz_4e2c5bd00c87b417.png",
+      "sha256": "d5c83debc8d8e5cc4dec61c050c08aae3f5956371b19ce48034f4dd999b953b1",
+      "width": 872,
+      "height": 871,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_302b041d57f2ac8a.png",
+      "sha256": "d5c83debc8d8e5cc4dec61c050c08aae3f5956371b19ce48034f4dd999b953b1",
+      "width": 872,
+      "height": 871
+    }
+  },
+  "var_70f50b05c3fa": {
+    "source_id": "src_6b83d91f5917",
+    "source_group_id": "sg_532749edb8ce",
+    "quiz": {
+      "path": "public/assets/images/quiz_abd9a39d3dee60c8.png",
+      "sha256": "94c819dd29d4c163ea28917c062e5f7963e51d0b8430c30c2bf76c499e4b0c0f",
+      "width": 661,
+      "height": 597,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_e1e00c1b38b0d3be.png",
+      "sha256": "94c819dd29d4c163ea28917c062e5f7963e51d0b8430c30c2bf76c499e4b0c0f",
+      "width": 661,
+      "height": 597
+    }
+  },
+  "var_19a92be6ded0": {
+    "source_id": "src_f583c11d08c2",
+    "source_group_id": "sg_a37ecd081954",
+    "quiz": {
+      "path": "public/assets/images/quiz_4d4c1c6c83282a23.png",
+      "sha256": "1df5a5cc7fef3b8e11e1f32e977ea7cdceecf6f6615679a7c83d071266965e70",
+      "width": 510,
+      "height": 453,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_f701e88fb038a4c4.png",
+      "sha256": "1df5a5cc7fef3b8e11e1f32e977ea7cdceecf6f6615679a7c83d071266965e70",
+      "width": 510,
+      "height": 453
+    }
+  },
+  "var_03342f8e439b": {
+    "source_id": "src_f1ab23fa8181",
+    "source_group_id": "sg_0936f5c00b62",
+    "quiz": {
+      "path": "public/assets/images/quiz_4e7d76de374f4767.png",
+      "sha256": "69290a1c3af3593994785d0f38609acb7fd98ce3dd9cfb7b4e43d464d2dbd993",
+      "width": 417,
+      "height": 485,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_c1747b770ad026ea.png",
+      "sha256": "69290a1c3af3593994785d0f38609acb7fd98ce3dd9cfb7b4e43d464d2dbd993",
+      "width": 417,
+      "height": 485
+    }
+  },
+  "var_2af78b694cd2": {
+    "source_id": "src_4fbd3c488150",
+    "source_group_id": "sg_281265e53771",
+    "quiz": {
+      "path": "public/assets/images/quiz_0c91fab752de5153.png",
+      "sha256": "c106bc8a6e84561e869f3fe2854d886b929b2bad16c39b3ab036fb2445a7a113",
+      "width": 520,
+      "height": 500,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_3ecb05f95bd6c5d5.png",
+      "sha256": "c106bc8a6e84561e869f3fe2854d886b929b2bad16c39b3ab036fb2445a7a113",
+      "width": 520,
+      "height": 500
+    }
+  },
+  "var_15fe4d5050ae": {
+    "source_id": "src_64b881144405",
+    "source_group_id": "sg_b80951883325",
+    "quiz": {
+      "path": "public/assets/images/quiz_14d66f6b1284d98d.png",
+      "sha256": "64d16c23f393eb0c0b6fbbdc2884bd53479e44ea704ffa9e6331b2adb7220a4c",
+      "width": 252,
+      "height": 189,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_e4bb4c2e1171fe6b.png",
+      "sha256": "64d16c23f393eb0c0b6fbbdc2884bd53479e44ea704ffa9e6331b2adb7220a4c",
+      "width": 252,
+      "height": 189
+    }
+  },
+  "var_0cb4c532cc4d": {
+    "source_id": "src_f38e239e90b8",
+    "source_group_id": "sg_6f55563da2e6",
+    "quiz": {
+      "path": "public/assets/images/quiz_67d57b8e97019cc1.png",
+      "sha256": "44799ffaa3ed0655b8ef19cd07f1ce54309eab8cc12ade5d8d01700fb4722592",
+      "width": 450,
+      "height": 403,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_eaa668a26d9c7781.png",
+      "sha256": "44799ffaa3ed0655b8ef19cd07f1ce54309eab8cc12ade5d8d01700fb4722592",
+      "width": 450,
+      "height": 403
+    }
+  },
+  "var_3cf295f05504": {
+    "source_id": "src_804111fb6e4e",
+    "source_group_id": "sg_e675ffedcecf",
+    "quiz": {
+      "path": "public/assets/images/quiz_a80f8d5b11e43e06.png",
+      "sha256": "783f98bc0df04232b023fca6eb81f4cc41b7e3da2e9c7ebe210272c17d4d59fe",
+      "width": 426,
+      "height": 365,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_6323b2eb6b11e760.png",
+      "sha256": "783f98bc0df04232b023fca6eb81f4cc41b7e3da2e9c7ebe210272c17d4d59fe",
+      "width": 426,
+      "height": 365
+    }
+  },
+  "var_c054078e5acd": {
+    "source_id": "src_1252fbbdb472",
+    "source_group_id": "sg_33ed10479cf9",
+    "quiz": {
+      "path": "public/assets/images/quiz_fe90d8d03997a9ee.png",
+      "sha256": "b184bd93a3c4de35af29b90a77679c65a11b46314dadadd32742df304e9bc7e0",
+      "width": 691,
+      "height": 621,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_9c22c96cf50e3fe6.png",
+      "sha256": "b184bd93a3c4de35af29b90a77679c65a11b46314dadadd32742df304e9bc7e0",
+      "width": 691,
+      "height": 621
+    }
+  },
+  "var_0dd3c4f0f541": {
+    "source_id": "src_fa109537ea7d",
+    "source_group_id": "sg_70e3069a74bf",
+    "quiz": {
+      "path": "public/assets/images/quiz_13ac9223e023d1ca.png",
+      "sha256": "bbddf5c3e2adb384ea843e68f6c064d11fd03c88f519497403dcf29c1631c73c",
+      "width": 495,
+      "height": 315,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_609e1a5d9b4fd039.png",
+      "sha256": "bbddf5c3e2adb384ea843e68f6c064d11fd03c88f519497403dcf29c1631c73c",
+      "width": 495,
+      "height": 315
+    }
+  },
+  "var_27cc9ff0d806": {
+    "source_id": "src_d5fa3b225a29",
+    "source_group_id": "sg_70e3069a74bf",
+    "quiz": {
+      "path": "public/assets/images/quiz_95cf4b70dd2f30ca.png",
+      "sha256": "248d9d593d2de47fa4ba58c6e7f36d6ea8852dda87f53ea610d1fc24bcc5aac9",
+      "width": 502,
+      "height": 390,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_9dfeba1f71fd9a8f.png",
+      "sha256": "248d9d593d2de47fa4ba58c6e7f36d6ea8852dda87f53ea610d1fc24bcc5aac9",
+      "width": 502,
+      "height": 390
+    }
+  },
+  "var_0cf13d1e780c": {
+    "source_id": "src_72a85a6c4d6b",
+    "source_group_id": "sg_743a763d7b46",
+    "quiz": {
+      "path": "public/assets/images/quiz_f004373a76aab3d1.png",
+      "sha256": "6c3adeca4a5f943cb3692b782dbf13f66ff85f7bf832bc5cce2351b77ff17483",
+      "width": 495,
+      "height": 418,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_7854040e8b4e05b1.png",
+      "sha256": "6c3adeca4a5f943cb3692b782dbf13f66ff85f7bf832bc5cce2351b77ff17483",
+      "width": 495,
+      "height": 418
+    }
+  },
+  "var_313dd23b9da9": {
+    "source_id": "src_e17dd6a8c876",
+    "source_group_id": "sg_dd5a49d4cf98",
+    "quiz": {
+      "path": "public/assets/images/quiz_def05c5378b8c822.png",
+      "sha256": "b223a8b17403b61f95edbf4c3ea69e91bfd175fda01c01483f846a7db4e5b7d0",
+      "width": 495,
+      "height": 423,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_0ed0c9bac2d728f6.png",
+      "sha256": "b223a8b17403b61f95edbf4c3ea69e91bfd175fda01c01483f846a7db4e5b7d0",
+      "width": 495,
+      "height": 423
+    }
+  },
+  "var_334473c443fc": {
+    "source_id": "src_a1288c90c360",
+    "source_group_id": "sg_edf4182e5f00",
+    "quiz": {
+      "path": "public/assets/images/quiz_e6c57c63f6d9f806.png",
+      "sha256": "7e1fadada5eb7f8d62ce17fd14898473fcc90725599519cf3e4a44e27f296a51",
+      "width": 821,
+      "height": 549,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_d09545f65d774385.png",
+      "sha256": "7e1fadada5eb7f8d62ce17fd14898473fcc90725599519cf3e4a44e27f296a51",
+      "width": 821,
+      "height": 549
+    }
+  },
+  "var_f18eb81deb46": {
+    "source_id": "src_e652538f1f77",
+    "source_group_id": "sg_7cd3f7c99c7b",
+    "quiz": {
+      "path": "public/assets/images/quiz_4ae511140b72b455.png",
+      "sha256": "0a6e918490f3eda35cb50ba1eca856d94a010d67115e8c82672394e09b5d73a3",
+      "width": 520,
+      "height": 434,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_2496a2a23ae8e656.png",
+      "sha256": "0a6e918490f3eda35cb50ba1eca856d94a010d67115e8c82672394e09b5d73a3",
+      "width": 520,
+      "height": 434
+    }
+  },
+  "var_12a8390e1f63": {
+    "source_id": "src_deec62ca18da",
+    "source_group_id": "sg_b955b16ce528",
+    "quiz": {
+      "path": "public/assets/images/quiz_f2da27e1ec8c97d4.png",
+      "sha256": "16ff72ad57282f967bc71b9d90de3daab4ac8223cf9669f477f03be39ba70104",
+      "width": 846,
+      "height": 725,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_6b5b557bdc94ad59.png",
+      "sha256": "16ff72ad57282f967bc71b9d90de3daab4ac8223cf9669f477f03be39ba70104",
+      "width": 846,
+      "height": 725
+    }
+  },
+  "var_ad275d46f3c7": {
+    "source_id": "src_b71cc41e8374",
+    "source_group_id": "sg_b955b16ce528",
+    "quiz": {
+      "path": "public/assets/images/quiz_1f08f1a9a4448c0e.png",
+      "sha256": "bac8ea2882cb45ae9d84479c7edf9ddf870ded0ebba35b4d0b351dc5c296685f",
+      "width": 415,
+      "height": 322,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_ba9e983c8d1b45ad.png",
+      "sha256": "bac8ea2882cb45ae9d84479c7edf9ddf870ded0ebba35b4d0b351dc5c296685f",
+      "width": 415,
+      "height": 322
+    }
+  },
+  "var_13607441aac9": {
+    "source_id": "src_097eaa9657ec",
+    "source_group_id": "sg_06539db9034e",
+    "quiz": {
+      "path": "public/assets/images/quiz_0ae39c165bef5581.png",
+      "sha256": "1a374588f5816ef065ab9c6e67c801cdd46d46f5230c774b4535fca58d6a40ea",
+      "width": 450,
+      "height": 403,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_1c2cc4b41027821c.png",
+      "sha256": "1a374588f5816ef065ab9c6e67c801cdd46d46f5230c774b4535fca58d6a40ea",
+      "width": 450,
+      "height": 403
+    }
+  },
+  "var_d6b30c9d1c30": {
+    "source_id": "src_724ae9a5604e",
+    "source_group_id": "sg_a6be02adf3d5",
+    "quiz": {
+      "path": "public/assets/images/quiz_443a0b9fd1097902.png",
+      "sha256": "3284cc5d41e93c13ce46f1022a6f361cdc4878a0f55009789a77cde734a0dbc4",
+      "width": 1094,
+      "height": 1048,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_01db12fe528bc5cd.png",
+      "sha256": "3284cc5d41e93c13ce46f1022a6f361cdc4878a0f55009789a77cde734a0dbc4",
+      "width": 1094,
+      "height": 1048
+    }
+  },
+  "var_d5a687311edd": {
+    "source_id": "src_0af1c7e776c6",
+    "source_group_id": "sg_dda5d5684b2b",
+    "quiz": {
+      "path": "public/assets/images/quiz_995c1c64c05b7f54.png",
+      "sha256": "94bc23ac3d22e552cd91c604aaea8d36f570bab76ef6da76a035ee51a42c249e",
+      "width": 780,
+      "height": 792,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_072d73b28fee3e6c.png",
+      "sha256": "94bc23ac3d22e552cd91c604aaea8d36f570bab76ef6da76a035ee51a42c249e",
+      "width": 780,
+      "height": 792
+    }
+  },
+  "var_04aace2e285e": {
+    "source_id": "src_553432865b3d",
+    "source_group_id": "sg_1aba948f121a",
+    "quiz": {
+      "path": "public/assets/images/quiz_fd94d1c235933a1f.png",
+      "sha256": "105282a10109fcd1b7e0274a1267adcf7b72ef27230aba9b2cdaff18389396d8",
+      "width": 1014,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_ff1e14a008d1daa7.png",
+      "sha256": "105282a10109fcd1b7e0274a1267adcf7b72ef27230aba9b2cdaff18389396d8",
+      "width": 1014,
+      "height": 1000
+    }
+  },
+  "var_964b0845dcf0": {
+    "source_id": "src_c4ce473455b3",
+    "source_group_id": "sg_cd49b0036dd6",
+    "quiz": {
+      "path": "public/assets/images/quiz_d8ea2d9cba84082a.png",
+      "sha256": "e39a51a1900c9a99f7812d068b6382c01ae3c7b12a475ee4f0c69ff7588e198b",
+      "width": 1183,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_93c78bf657c2e84c.png",
+      "sha256": "e39a51a1900c9a99f7812d068b6382c01ae3c7b12a475ee4f0c69ff7588e198b",
+      "width": 1183,
+      "height": 1000
+    }
+  },
+  "var_f474abab0134": {
+    "source_id": "src_ea4f0606714b",
+    "source_group_id": "sg_64540e3d8c50",
+    "quiz": {
+      "path": "public/assets/images/quiz_de84feda673ede88.png",
+      "sha256": "effac0d035eb1eb776340f4d2960bb8d5303c274732614849a2d917c2989db1d",
+      "width": 700,
+      "height": 462,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_5284f701a0f036ba.png",
+      "sha256": "effac0d035eb1eb776340f4d2960bb8d5303c274732614849a2d917c2989db1d",
+      "width": 700,
+      "height": 462
+    }
+  },
+  "var_21c4b88e6c96": {
+    "source_id": "src_bd2df17425bd",
+    "source_group_id": "sg_532749edb8ce",
+    "quiz": {
+      "path": "public/assets/images/quiz_9248a20db308569d.png",
+      "sha256": "9b285a31c6c643e0e669c075289db63f47ec91a619090775f9c0fa3a318bae20",
+      "width": 850,
+      "height": 700,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_232166b68682b178.png",
+      "sha256": "9b285a31c6c643e0e669c075289db63f47ec91a619090775f9c0fa3a318bae20",
+      "width": 850,
+      "height": 700
+    }
+  },
+  "var_5dfbb891258a": {
+    "source_id": "src_80c659a5598b",
+    "source_group_id": "sg_7a0e87977955",
+    "quiz": {
+      "path": "public/assets/images/quiz_04af3fbe78589aa3.png",
+      "sha256": "a3860822b02940cbf7742b23c8e46c852e1213118db8a57a1e35ec3947e78edd",
+      "width": 2042,
+      "height": 1204,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_4e5a4b6b61479e5c.png",
+      "sha256": "a3860822b02940cbf7742b23c8e46c852e1213118db8a57a1e35ec3947e78edd",
+      "width": 2042,
+      "height": 1204
+    }
+  },
+  "var_b776711ca2b7": {
+    "source_id": "src_1f7188d4ee8a",
+    "source_group_id": "sg_eea87a335744",
+    "quiz": {
+      "path": "public/assets/images/quiz_e844c9f9bcd2e939.png",
+      "sha256": "2557b76afefe776b8e376bd2475ba0f1ce03e0135c07eb1e9e1e660113ed1107",
+      "width": 1600,
+      "height": 996,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_caecbb60e111676b.png",
+      "sha256": "2557b76afefe776b8e376bd2475ba0f1ce03e0135c07eb1e9e1e660113ed1107",
+      "width": 1600,
+      "height": 996
+    }
+  },
+  "var_04d79b980a82": {
+    "source_id": "src_8d77c87710ce",
+    "source_group_id": "sg_cf3829799916",
+    "quiz": {
+      "path": "public/assets/images/quiz_525bfa35ef88a787.png",
+      "sha256": "2a9061269cc07d11bb8242caab42e952ef890e833bc6b4676d77b303faf67c1c",
+      "width": 1500,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_a4b9fde5fcdccd9f.png",
+      "sha256": "2a9061269cc07d11bb8242caab42e952ef890e833bc6b4676d77b303faf67c1c",
+      "width": 1500,
+      "height": 1000
+    }
+  },
+  "var_8490a0b681b9": {
+    "source_id": "src_31127bd2e681",
+    "source_group_id": "sg_0986a9a6fa12",
+    "quiz": {
+      "path": "public/assets/images/quiz_2e096b60b4f7ddcf.png",
+      "sha256": "1849223dd007548fac9efd8e3f28978a2097ed77aa111eb6bc0db83ad75ab774",
+      "width": 700,
+      "height": 649,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_c662e2ded45f559a.png",
+      "sha256": "1849223dd007548fac9efd8e3f28978a2097ed77aa111eb6bc0db83ad75ab774",
+      "width": 700,
+      "height": 649
+    }
+  },
+  "var_087496ca7b74": {
+    "source_id": "src_e511be5b8148",
+    "source_group_id": "sg_274374824059",
+    "quiz": {
+      "path": "public/assets/images/quiz_4a10a19840ae87f6.png",
+      "sha256": "c8b0298e32ca3372ee999d172a708b6fb2b9a4ae18f54b088fc1b1ddba7aae4c",
+      "width": 1369,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_e711205cb09b7394.png",
+      "sha256": "c8b0298e32ca3372ee999d172a708b6fb2b9a4ae18f54b088fc1b1ddba7aae4c",
+      "width": 1369,
+      "height": 1000
+    }
+  },
+  "var_ab0e42b0abd2": {
+    "source_id": "src_82fe063eabce",
+    "source_group_id": "sg_e675ffedcecf",
+    "quiz": {
+      "path": "public/assets/images/quiz_d8fc100b44902ef8.png",
+      "sha256": "b002a395023579ca21a5ba301223e91018f89f8cee934f909ce091990dd8afdf",
+      "width": 700,
+      "height": 530,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_8d5f0551109fda72.png",
+      "sha256": "b002a395023579ca21a5ba301223e91018f89f8cee934f909ce091990dd8afdf",
+      "width": 700,
+      "height": 530
+    }
+  },
+  "var_994ffae4cacf": {
+    "source_id": "src_9152438887d3",
+    "source_group_id": "sg_5d4f586ff566",
+    "quiz": {
+      "path": "public/assets/images/quiz_44574ea5be939632.png",
+      "sha256": "f44245f05d2764c77cc9463e6e29f66573055b78f6f5b86d99e4dac5ed8f5c16",
+      "width": 657,
+      "height": 532,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_952458831fe11e96.png",
+      "sha256": "f44245f05d2764c77cc9463e6e29f66573055b78f6f5b86d99e4dac5ed8f5c16",
+      "width": 657,
+      "height": 532
+    }
+  },
+  "var_e67739e51969": {
+    "source_id": "src_004d70823df6",
+    "source_group_id": "sg_5467d8849a5a",
+    "quiz": {
+      "path": "public/assets/images/quiz_018fff9cc2ddd10f.png",
+      "sha256": "ae6338f568669bc1438ccc8d374289fbe8ccb0035b439fde2f54947089cff721",
+      "width": 1766,
+      "height": 578,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode",
+        "neutral_background_composite"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_0a95b019b20ea923.png",
+      "sha256": "ae6338f568669bc1438ccc8d374289fbe8ccb0035b439fde2f54947089cff721",
+      "width": 1766,
+      "height": 578
+    }
+  },
+  "var_83a483f22f64": {
+    "source_id": "src_e9902b94aac1",
+    "source_group_id": "sg_71b014983e8a",
+    "quiz": {
+      "path": "public/assets/images/quiz_04229362d337f5a9.png",
+      "sha256": "b0080b3819bf4fbda5d130459cac6410738c307d8c606f14dd0e125d145256fb",
+      "width": 1158,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_7fed8a22b4d85234.png",
+      "sha256": "b0080b3819bf4fbda5d130459cac6410738c307d8c606f14dd0e125d145256fb",
+      "width": 1158,
+      "height": 1000
+    }
+  },
+  "var_17f9f0a70716": {
+    "source_id": "src_dd93b3df7b54",
+    "source_group_id": "sg_a6e52dfe7c72",
+    "quiz": {
+      "path": "public/assets/images/quiz_5daad987722f8d07.png",
+      "sha256": "566bcd18199c9b0affc8d1e56ca1afe1e4db983d655e64aaa00f23bf025c16f7",
+      "width": 1481,
+      "height": 1800,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_2fcc1506545f4288.png",
+      "sha256": "566bcd18199c9b0affc8d1e56ca1afe1e4db983d655e64aaa00f23bf025c16f7",
+      "width": 1481,
+      "height": 1800
+    }
+  },
+  "var_736c4090534a": {
+    "source_id": "src_527af9a721d8",
+    "source_group_id": "sg_b34cefe0b7d3",
+    "quiz": {
+      "path": "public/assets/images/quiz_116c4e577da7b90b.png",
+      "sha256": "c12f65fc3dbe61c9b2d576da3012cf908704352698fcc7fb28a250c8539e84da",
+      "width": 1324,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_83061f1db34aa2b9.png",
+      "sha256": "c12f65fc3dbe61c9b2d576da3012cf908704352698fcc7fb28a250c8539e84da",
+      "width": 1324,
+      "height": 1000
+    }
+  },
+  "var_3113529902f0": {
+    "source_id": "src_20855a343c4c",
+    "source_group_id": "sg_b80951883325",
+    "quiz": {
+      "path": "public/assets/images/quiz_e8e463a72e89ab4b.png",
+      "sha256": "352087d0f6b6483ab68e699891213f83ca9583593a74437ecc7ead1e0b81d030",
+      "width": 1576,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_34f35d86069685e6.png",
+      "sha256": "352087d0f6b6483ab68e699891213f83ca9583593a74437ecc7ead1e0b81d030",
+      "width": 1576,
+      "height": 1000
+    }
+  },
+  "var_252d6438334f": {
+    "source_id": "src_ec9f506e4538",
+    "source_group_id": "sg_b80951883325",
+    "quiz": {
+      "path": "public/assets/images/quiz_c3f5c2d427b09961.png",
+      "sha256": "254eb1a7c64dc16c73d9f161a7f91d56941250878916f061837a021ce03fef67",
+      "width": 1241,
+      "height": 999,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_5dadf4a12960ec0e.png",
+      "sha256": "254eb1a7c64dc16c73d9f161a7f91d56941250878916f061837a021ce03fef67",
+      "width": 1241,
+      "height": 999
+    }
+  },
+  "var_a48ede12bacb": {
+    "source_id": "src_d9f54c2fa8af",
+    "source_group_id": "sg_983da24555b5",
+    "quiz": {
+      "path": "public/assets/images/quiz_b593157e3d1258a6.png",
+      "sha256": "b0ef7f9640fc1a5579d62d9da375140392519525bd77312f1b4af8f1b73b0b34",
+      "width": 1146,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_5148f9ba3513f3c8.png",
+      "sha256": "b0ef7f9640fc1a5579d62d9da375140392519525bd77312f1b4af8f1b73b0b34",
+      "width": 1146,
+      "height": 1000
+    }
+  },
+  "var_a39259399a8b": {
+    "source_id": "src_68a394cbee72",
+    "source_group_id": "sg_a3d10fd39d6d",
+    "quiz": {
+      "path": "public/assets/images/quiz_b813cbb2b8a8067e.png",
+      "sha256": "ed8f7abce27974ec7b8c2e4db7c0d2b414ab1c8c6d854b1758c4ce4b8f8fea34",
+      "width": 1546,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_3dbfad71e3d147fd.png",
+      "sha256": "ed8f7abce27974ec7b8c2e4db7c0d2b414ab1c8c6d854b1758c4ce4b8f8fea34",
+      "width": 1546,
+      "height": 1000
+    }
+  },
+  "var_c3c9dc671a18": {
+    "source_id": "src_c73024e312ad",
+    "source_group_id": "sg_f686d360216c",
+    "quiz": {
+      "path": "public/assets/images/quiz_64af064ea822b3b8.png",
+      "sha256": "86ababa584f8a7721540411bda466c9fd1a4570285ba0802315b4ab39b7aff4d",
+      "width": 1433,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_d2d9daf6d80ec463.png",
+      "sha256": "86ababa584f8a7721540411bda466c9fd1a4570285ba0802315b4ab39b7aff4d",
+      "width": 1433,
+      "height": 1000
+    }
+  },
+  "var_43153d1bd7d1": {
+    "source_id": "src_6e39a46b184e",
+    "source_group_id": "sg_346d589e2efd",
+    "quiz": {
+      "path": "public/assets/images/quiz_7261becc6e319b2c.png",
+      "sha256": "cd8162baa8e6c5bac8777283bcbc6eb9c9b55826db89ddb45302dd8cf60a04b3",
+      "width": 1170,
+      "height": 1000,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_293198cbf5a3b9b7.png",
+      "sha256": "cd8162baa8e6c5bac8777283bcbc6eb9c9b55826db89ddb45302dd8cf60a04b3",
+      "width": 1170,
+      "height": 1000
+    }
+  },
+  "var_754d635f04b4": {
+    "source_id": "src_29b1bf015948",
+    "source_group_id": "sg_fb8ff91941a0",
+    "quiz": {
+      "path": "public/assets/images/quiz_601cd3954b95481f.png",
+      "sha256": "f214099b70862e8cf17ff2b79b22f58522ead95ce05bd9328397b152fdb6e610",
+      "width": 1600,
+      "height": 676,
+      "transformations": [
+        "metadata_strip",
+        "lossless_png_reencode"
+      ]
+    },
+    "original": {
+      "path": "public/assets/images/original_30d8ba7b99136073.png",
+      "sha256": "f214099b70862e8cf17ff2b79b22f58522ead95ce05bd9328397b152fdb6e610",
+      "width": 1600,
+      "height": 676
+    }
   }
 }
