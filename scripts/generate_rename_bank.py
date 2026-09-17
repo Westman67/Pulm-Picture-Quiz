@@ -849,6 +849,10 @@ MODALITY_FEATURE_OVERRIDES: dict[str, dict[str, str]] = {
         "gross": "a centrally located, gray-white to tan mass with a cavitating, necrotic cut surface",
         "microscopy": "keratin pearls and intercellular bridges within nests of malignant squamous cells",
     },
+    r"(?<!non-)(?<!non )small cell": {
+        "gross": "a large, soft, white-tan, centrally located perihilar mass, often with extensive necrosis",
+        "microscopy": "sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression",
+    },
     r"pleural plaque": {
         "microscopy": "a dense, hypocellular collagenous plaque with the characteristic \"basket-weave\" pattern of collagen bundles",
     },
@@ -1249,29 +1253,61 @@ def has_technique_descriptor(concept: str) -> bool:
     return bool(_TECHNIQUE_DESCRIPTOR_RE.search(concept.casefold()))
 
 
-# Some concepts describe a histologic PROCESS occurring within a dilated
-# airway (e.g. fibrosis/inflammation, squamous metaplasia) rather than a
-# specific underlying cause or syndrome. A process description is not
-# mutually exclusive with any cause- or syndrome-based bronchiectasis
-# diagnosis -- a lung with cystic-fibrosis-driven bronchiectasis can still
-# show fibrosis, inflammation, or squamous metaplasia in its airway walls --
-# so pairing the two as competing answer options produces a distractor that
-# isn't actually a rival diagnosis. These concepts are kept from competing
-# against each other even though they are not literal synonyms.
-BRONCHIECTASIS_PROCESS_DESCRIPTOR_NORMS = {
-    "bronchiectasis fibrosis and inflammation",
-    "bronchiectasis squamous metaplasia",
-}
-BRONCHIECTASIS_CAUSE_BASED_NORMS = {
-    "bronchiectasis due cystic fibrosis",
-    "bronchiectasis and cystic fibrosis",
-    "cystic fibrosis with bronchiectasis",
-    "cystic fibrosis associated bronchiectasis",
-    "bronchiectasis due to chronic bronchitis",
-    "kartagener syndrome",
-    "bronchiectasis and situs invertis",
-    "situs invertis",
-}
+# Some concepts describe a PROCESS, PHASE, or ANATOMIC-SITE FACET of a
+# broader disease rather than a specific underlying cause, etiology, or
+# rival syndrome -- and a facet is not mutually exclusive with a cause- or
+# etiology-based diagnosis of the same disease (a lung with
+# cystic-fibrosis-driven bronchiectasis can still show fibrosis,
+# inflammation, or squamous metaplasia in its airway walls; a lobar
+# pneumonia case caused by a specific organism still passes through
+# congestion, red-hepatization, and gray-hepatization). Pairing a facet
+# concept against a cause/etiology concept from the same group produces a
+# distractor that looks like a rival diagnosis but isn't one. Each tuple
+# below is (facet_norms, rival_norms): facet and rival concepts never
+# compete against each other as answer options, while facet-vs-facet and
+# rival-vs-rival pairings (which usually ARE visually distinguishable on a
+# given image) are left untouched.
+NONPARALLEL_CONCEPT_PAIRS: list[tuple[set[str], set[str]]] = [
+    (
+        {  # bronchiectasis histologic process
+            "bronchiectasis fibrosis and inflammation",
+            "bronchiectasis squamous metaplasia",
+        },
+        {  # bronchiectasis cause/syndrome
+            "bronchiectasis due cystic fibrosis",
+            "bronchiectasis and cystic fibrosis",
+            "cystic fibrosis with bronchiectasis",
+            "cystic fibrosis associated bronchiectasis",
+            "bronchiectasis due to chronic bronchitis",
+            "kartagener syndrome",
+            "bronchiectasis and situs invertis",
+            "situs invertis",
+        },
+    ),
+    (
+        {  # sequential phases of the classic lobar-pneumonia gross/histologic
+            # course (congestion -> red hepatization -> gray hepatization),
+            # which any lobar pneumonia passes through regardless of cause
+            "congestion phase of pneumonia",
+            "gray hepatization of lobar pneumonia",
+            "grey hepatization phase of pneumonia",
+            "red hepatization phase of pneumonia",
+            "lobar pneumonia red hepatization",
+            "lobar pneumonia acute alveolar inflammation",
+            "acute inflammation in lobar pneumonia",
+        },
+        {  # pneumonia etiology/organism or pattern, which is orthogonal to
+            # which phase of the lobar course a given image happens to catch
+            "aspiration pneumonia",
+            "atypical pneumonia",
+            "community acquired pneumonia",
+            "klebsiella pneumonia",
+            "mycoplasma pneumonia pneumonia",
+            "viral pneumonia",
+            "bacterial pneumonia",
+        },
+    ),
+]
 
 
 def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
@@ -1280,18 +1316,30 @@ def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
     correct_keys = _synonym_keys(correct_norm)
     correct_clusters = confusable_cluster_ids(correct_norm)
     correct_has_technique = has_technique_descriptor(correct)
-    if correct_norm in BRONCHIECTASIS_CAUSE_BASED_NORMS:
-        nonparallel_norms = set(BRONCHIECTASIS_PROCESS_DESCRIPTOR_NORMS)
-    elif correct_norm in BRONCHIECTASIS_PROCESS_DESCRIPTOR_NORMS:
-        nonparallel_norms = set(BRONCHIECTASIS_CAUSE_BASED_NORMS)
-    else:
-        nonparallel_norms = set()
+    correct_family = modality_family(current["modality"])
+    nonparallel_norms: set[str] = set()
+
+    def block_nonparallel(norm: str) -> None:
+        # Once any selected option (correct answer or a chosen distractor)
+        # is a member of one side of a facet/rival pair, block the other
+        # side from being offered too -- regardless of which side happened
+        # to be the correct answer or which side gets considered first.
+        for facet_norms, rival_norms in NONPARALLEL_CONCEPT_PAIRS:
+            if norm in facet_norms:
+                nonparallel_norms.update(rival_norms)
+            elif norm in rival_norms:
+                nonparallel_norms.update(facet_norms)
+
+    block_nonparallel(correct_norm)
 
     def shares_cluster(entry: dict) -> bool:
         if not correct_clusters:
             return False
         entry_norm = re.sub(r"[^a-z0-9]+", " ", entry["concept"].casefold()).strip()
         return bool(confusable_cluster_ids(entry_norm) & correct_clusters)
+
+    def same_modality(entry: dict) -> bool:
+        return modality_family(entry["modality"]) == correct_family
 
     if current["topic"] == "Normal anatomy":
         # A normal-anatomy image tests whether the learner recognizes normal
@@ -1300,7 +1348,7 @@ def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
         # pathologic entries in the same modality first, and only fall back
         # to other normal-anatomy siblings if too few pathologic candidates
         # exist to fill all three distractors.
-        tiers = [
+        base_tiers = [
             [e for e in entries if shares_cluster(e)],
             [e for e in entries if e["family"] == current["family"] and e["topic"] != "Normal anatomy"],
             [e for e in entries if e["topic"] == current["topic"] and e["family"] == current["family"]],
@@ -1309,13 +1357,25 @@ def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
             entries,
         ]
     else:
-        tiers = [
+        base_tiers = [
             [e for e in entries if shares_cluster(e)],
             [e for e in entries if e["topic"] == current["topic"] and e["family"] == current["family"]],
             [e for e in entries if e["family"] == current["family"]],
             [e for e in entries if e["topic"] == current["topic"]],
             entries,
         ]
+    # Within each specificity level, prefer a distractor whose own source
+    # image is the SAME modality as the current question before falling
+    # back to a cross-modality one from that same tier. A cross-modality
+    # distractor's own "why this is wrong" rationale describes a finding
+    # from its own modality (e.g. a histology-only feature), which reads as
+    # nonsensical when the current image is a different modality (e.g. a
+    # gross photo or a radiograph) that could never show that finding.
+    tiers: list[list[dict]] = []
+    for tier in base_tiers:
+        tiers.append([e for e in tier if same_modality(e)])
+        tiers.append(tier)
+
     result: list[str] = []
     seen_norms: set[str] = set()
     seen_keys: set[str] = set(correct_keys)
@@ -1329,7 +1389,7 @@ def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
                 option_norm = re.sub(r"[^a-z0-9]+", " ", option.casefold()).strip()
                 if not option_norm or option_norm == correct_norm or option_norm in seen_norms:
                     continue
-                if correct_norm in option_norm or option_norm in correct_norm:
+                if any(option_norm in existing or existing in option_norm for existing in seen_norms | {correct_norm}):
                     continue
                 if require_specificity_match and has_technique_descriptor(option) != correct_has_technique:
                     continue
@@ -1341,6 +1401,7 @@ def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
                 result.append(option)
                 seen_norms.add(option_norm)
                 seen_keys |= option_keys
+                block_nonparallel(option_norm)
                 if len(result) == 3:
                     return result
     raise RuntimeError(f"Could not create distractors for {current['filename']}")

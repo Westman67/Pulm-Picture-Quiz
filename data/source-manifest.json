@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-17T13:21:33.801771-04:00",
+  "generated_at": "2026-09-17T13:33:29.314178-04:00",
   "builder": "build-medical-picture-quiz / multi-collection flat-image builder",
   "source_directories": [
     {
@@ -30025,7 +30025,7 @@
       "immutable_source_hash": "a193aefd355ca1928cd29052a9cb5ffbc99f2faa4b00379aa87179c8ee361892",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression",
+      "key_visual_findings": "a large, soft, white-tan, centrally located perihilar mass, often with extensive necrosis",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -30117,7 +30117,7 @@
       "immutable_source_hash": "53b970cb33f85be0a39cccb6c62deb9f010722396222acec59ff047acc4ef19b",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression",
+      "key_visual_findings": "a large, soft, white-tan, centrally located perihilar mass, often with extensive necrosis",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
