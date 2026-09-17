@@ -25,7 +25,7 @@ PROJECT = Path(__file__).resolve().parents[1]
 COLLECTIONS = (
     {
         "key": "rename",
-        "label": "Rename collection",
+        "label": "Lecture material",
         "path": Path.home() / "Desktop" / "Rename",
         "document": "Desktop/Rename user-curated pulmonary image collection",
         "rule": "All images supplied in Desktop/Rename are third-party study images.",

@@ -46,7 +46,7 @@ const QUALITY_FLAG_REASONS = {
 };
 
 const COLLECTION_LABELS = {
-  rename: "Rename collection",
+  rename: "Lecture material",
   third_party: "3rd Party",
 };
 

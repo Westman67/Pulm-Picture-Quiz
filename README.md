@@ -24,7 +24,7 @@ Do not open `index.html` through `file://`; browsers block the local JSON reques
 - Learn Mode with immediate feedback, visual clues, and four option-specific rationales
 - Exam Mode with deferred results and rationales
 - separate image-type and collection selectors, plus unseen, incorrect, marked, and mixed filters
-- collections for `Rename collection`, `3rd Party` (Desktop/Add), and all pictures
+- collections for `Lecture material`, `3rd Party` (Desktop/Add), and all pictures
 - image categories for CXR, CT, All Imaging, Histology, and Gross
 - lengths 10, 20, 40, all available, and endless practice
 - persistent Back/Next navigation with unanswered skipping and restored draft/locked state
@@ -48,7 +48,7 @@ dependencies.
 ## Data and privacy
 
 - All images are classified as `third_party`; the independent collection key identifies either
-  `Rename collection` or `3rd Party`.
+  `Lecture material` or `3rd Party`.
 - Rights are unknown, so the collection and app are restricted to local study use and must not be
   published or redistributed.
 - Learner progress and photo flags stay in browser `localStorage` unless explicitly exported.

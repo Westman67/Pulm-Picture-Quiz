@@ -1,6 +1,6 @@
 # Pulmonary multi-collection preflight audit
 
-Generated: 2026-09-16T20:24:04.017133-04:00
+Generated: 2026-09-16T20:29:33.541755-04:00
 
 - Source: `/sessions/rcw-01t75m4lq7i9mvmfffwuwvuu/mnt/Desktop/Rename` (read-only)
 - Source: `/sessions/rcw-01t75m4lq7i9mvmfffwuwvuu/mnt/Desktop/Add` (read-only)
@@ -18,7 +18,7 @@ Generated: 2026-09-16T20:24:04.017133-04:00
 ## Collections
 
 - 3rd Party: 177 sources, 166 scored
-- Rename collection: 381 sources, 373 scored
+- Lecture material: 381 sources, 373 scored
 
 ## Modalities
 

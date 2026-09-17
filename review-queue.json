@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-16T20:24:04.017133-04:00",
+  "generated_at": "2026-09-16T20:29:33.541755-04:00",
   "count": 13,
   "items": [
     {
@@ -11,7 +11,7 @@
       "modality": "X-ray",
       "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
       "source_collection_key": "rename",
-      "source_collection": "Rename collection",
+      "source_collection": "Lecture material",
       "uncertainty_reason": "A near-normal chest radiograph cannot establish an acute asthma diagnosis by itself.",
       "answer_leakage_risk": "low",
       "project_status": "NEEDS_REVIEW"
@@ -24,7 +24,7 @@
       "modality": "X-ray",
       "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
       "source_collection_key": "rename",
-      "source_collection": "Rename collection",
+      "source_collection": "Lecture material",
       "uncertainty_reason": "The filename and visible target do not establish a defensible pulmonary identification task.",
       "answer_leakage_risk": "low",
       "project_status": "NEEDS_REVIEW"
@@ -37,7 +37,7 @@
       "modality": "X-ray",
       "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
       "source_collection_key": "rename",
-      "source_collection": "Rename collection",
+      "source_collection": "Lecture material",
       "uncertainty_reason": "A normal or near-normal chest radiograph is not diagnostic of asthma.",
       "answer_leakage_risk": "low",
       "project_status": "NEEDS_REVIEW"
@@ -50,7 +50,7 @@
       "modality": "CT",
       "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
       "source_collection_key": "rename",
-      "source_collection": "Rename collection",
+      "source_collection": "Lecture material",
       "uncertainty_reason": "The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.",
       "answer_leakage_risk": "low",
       "project_status": "NEEDS_REVIEW"
@@ -63,7 +63,7 @@
       "modality": "CT",
       "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
       "source_collection_key": "rename",
-      "source_collection": "Rename collection",
+      "source_collection": "Lecture material",
       "uncertainty_reason": "The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.",
       "answer_leakage_risk": "low",
       "project_status": "NEEDS_REVIEW"
@@ -76,7 +76,7 @@
       "modality": "Histology",
       "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
       "source_collection_key": "rename",
-      "source_collection": "Rename collection",
+      "source_collection": "Lecture material",
       "uncertainty_reason": "The filename does not identify the organ, tissue compartment, or intended normal structure.",
       "answer_leakage_risk": "low",
       "project_status": "NEEDS_REVIEW"
@@ -89,7 +89,7 @@
       "modality": "Gross Pathology",
       "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
       "source_collection_key": "rename",
-      "source_collection": "Rename collection",
+      "source_collection": "Lecture material",
       "uncertainty_reason": "Embedded labels state the tested diagnosis directly over medically meaningful tissue.",
       "answer_leakage_risk": "high",
       "project_status": "NEEDS_REVIEW"
@@ -102,7 +102,7 @@
       "modality": "Histology",
       "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
       "source_collection_key": "rename",
-      "source_collection": "Rename collection",
+      "source_collection": "Lecture material",
       "uncertainty_reason": "The source label is ambiguous and the intended metaplastic process is not specified reliably.",
       "answer_leakage_risk": "high",
       "project_status": "NEEDS_REVIEW"

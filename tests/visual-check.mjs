@@ -124,7 +124,7 @@ await sourceFilter.screenshot({ path: shot("desktop-rename-filter.png"), fullPag
 await sourceFilter.getByRole("button", { name: /Start ID quiz/ }).click();
 await sourceFilter.waitForSelector("#quiz-image");
 if (!(await sourceFilter.getByText(`1 / ${sourceTotals.rename}`, { exact: true }).count())) findings.push(`Rename collection filter did not produce the expected ${sourceTotals.rename}-question session`);
-if (!/Rename collection/.test(await sourceFilter.locator(".category-label").textContent())) findings.push("Rename collection is not shown on the quiz question");
+if (!/Lecture material/.test(await sourceFilter.locator(".category-label").textContent())) findings.push("Rename collection is not shown on the quiz question");
 await sourceFilter.close();
 
 await browser.close();
