@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "bank_id": "bank_3c0109c75c96",
-  "generated_at": "2026-09-17T11:12:26.424681-04:00",
+  "generated_at": "2026-09-17T11:30:16.666897-04:00",
   "mode": "pulmonary_visual_identification",
   "question_count": 544,
   "quality_review": {
@@ -197,7 +197,7 @@
       ],
       "choice_rationales": [
         "Hyperinflation in COPD would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows a chest radiograph that is normal or near-normal, without consolidation, effusion, or a focal mass — the expected pattern during an acute asthma exacerbation, since the diagnosis is made clinically rather than radiographically.",
-        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows a chest radiograph that is normal or near-normal, without consolidation, effusion, or a focal mass — the expected pattern during an acute asthma exacerbation, since the diagnosis is made clinically rather than radiographically.",
+        "CPAM and Emphysema would instead show a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component; the displayed image shows a chest radiograph that is normal or near-normal, without consolidation, effusion, or a focal mass — the expected pattern during an acute asthma exacerbation, since the diagnosis is made clinically rather than radiographically.",
         "Correct: The displayed image shows a chest radiograph that is normal or near-normal, without consolidation, effusion, or a focal mass — the expected pattern during an acute asthma exacerbation, since the diagnosis is made clinically rather than radiographically, supporting Acute Asthma Attack.",
         "Bronchiectasis would instead show permanently dilated, tortuous, easily collapsible bronchi extending toward the visceral pleura with copious secretions and lack of normal tapering (a signet-ring appearance on cross-section); the displayed image shows a chest radiograph that is normal or near-normal, without consolidation, effusion, or a focal mass — the expected pattern during an acute asthma exacerbation, since the diagnosis is made clinically rather than radiographically."
       ],
@@ -410,7 +410,7 @@
       "choice_rationales": [
         "Centri-acinar Emphysema would instead show enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing; the displayed image shows peribronchial thickening with hyperinflation and patchy subsegmental atelectatic opacity in a young child.",
         "Severe COPD would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows peribronchial thickening with hyperinflation and patchy subsegmental atelectatic opacity in a young child.",
-        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows peribronchial thickening with hyperinflation and patchy subsegmental atelectatic opacity in a young child.",
+        "CPAM and Emphysema would instead show a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component; the displayed image shows peribronchial thickening with hyperinflation and patchy subsegmental atelectatic opacity in a young child.",
         "Correct: The displayed image shows peribronchial thickening with hyperinflation and patchy subsegmental atelectatic opacity in a young child, supporting Acute Infectious Bronchiolitis."
       ],
       "ground_truth_confidence": "high",
@@ -834,7 +834,7 @@
       "choice_rationales": [
         "Correct: The displayed image shows absence of the right lung with ipsilateral volume loss and compensatory hyperinflation of the left lung, supporting Right lung agenesis with left compensatory hyperinflation.",
         "Pectus Excavatum Treatment would instead show posterior displacement of the sternum with reduced anteroposterior chest diameter; the displayed image shows absence of the right lung with ipsilateral volume loss and compensatory hyperinflation of the left lung.",
-        "Ankylosing Spondylitis Spine would instead show marked spinal deformity producing restrictive chest-wall mechanics; the displayed image shows absence of the right lung with ipsilateral volume loss and compensatory hyperinflation of the left lung.",
+        "Ankylosing Spondylitis Spine would instead show a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature; the displayed image shows absence of the right lung with ipsilateral volume loss and compensatory hyperinflation of the left lung.",
         "Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows absence of the right lung with ipsilateral volume loss and compensatory hyperinflation of the left lung."
       ],
       "ground_truth_confidence": "high",
@@ -1198,15 +1198,15 @@
       ],
       "correct_index": 0,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is marked spinal deformity producing restrictive chest-wall mechanics. This pattern supports Ankylosing Spondylitis.",
+      "explanation": "The decisive visible finding is a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature. This pattern supports Ankylosing Spondylitis.",
       "visual_clues": [
-        "marked spinal deformity producing restrictive chest-wall mechanics"
+        "a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature"
       ],
       "choice_rationales": [
-        "Correct: The displayed image shows marked spinal deformity producing restrictive chest-wall mechanics, supporting Ankylosing Spondylitis.",
-        "Pectus Excavatum would instead show posterior displacement of the sternum with reduced anteroposterior chest diameter; the displayed image shows marked spinal deformity producing restrictive chest-wall mechanics.",
-        "CPAM with pulmonary sequestration would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows marked spinal deformity producing restrictive chest-wall mechanics.",
-        "Right lung agenesis with left compensatory hyperinflation would instead show absence of the right lung with ipsilateral volume loss and compensatory hyperinflation of the left lung; the displayed image shows marked spinal deformity producing restrictive chest-wall mechanics."
+        "Correct: The displayed image shows a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature, supporting Ankylosing Spondylitis.",
+        "Pectus Excavatum would instead show posterior displacement of the sternum with reduced anteroposterior chest diameter; the displayed image shows a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature.",
+        "CPAM with pulmonary sequestration would instead show a hybrid lesion: a multicystic CPAM-type malformation together with sequestered, systemically supplied lung tissue, presenting with atelectasis and bronchiectasis on imaging; the displayed image shows a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature.",
+        "Right lung agenesis with left compensatory hyperinflation would instead show absence of the right lung with ipsilateral volume loss and compensatory hyperinflation of the left lung; the displayed image shows a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -1251,15 +1251,15 @@
       ],
       "correct_index": 2,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is marked spinal deformity producing restrictive chest-wall mechanics. This pattern supports Ankylosing Spondylitis.",
+      "explanation": "The decisive visible finding is a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature. This pattern supports Ankylosing Spondylitis.",
       "visual_clues": [
-        "marked spinal deformity producing restrictive chest-wall mechanics"
+        "a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature"
       ],
       "choice_rationales": [
-        "Pulmonary Sequestration would instead show nonfunctioning lung tissue supplied by an anomalous systemic artery; the displayed image shows marked spinal deformity producing restrictive chest-wall mechanics.",
-        "Scoliosis would instead show marked spinal deformity producing restrictive chest-wall mechanics; the displayed image shows marked spinal deformity producing restrictive chest-wall mechanics.",
-        "Correct: The displayed image shows marked spinal deformity producing restrictive chest-wall mechanics, supporting Ankylosing Spondylitis.",
-        "Kyphosis would instead show marked spinal deformity producing restrictive chest-wall mechanics; the displayed image shows marked spinal deformity producing restrictive chest-wall mechanics."
+        "Pulmonary Sequestration would instead show nonfunctioning lung tissue supplied by an anomalous systemic artery; the displayed image shows a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature.",
+        "Scoliosis would instead show lateral (side-to-side) spinal curvature, as from Marfan syndrome, Down syndrome, Ehlers-Danlos syndrome, muscular dystrophy, or idiopathic causes -- a different plane of deformity than kyphosis; the displayed image shows a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature.",
+        "Correct: The displayed image shows a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature, supporting Ankylosing Spondylitis.",
+        "Kyphosis would instead show excessive anteroposterior (forward) spinal curvature, from causes such as Scheuermann's disease, osteoporotic compression fracture, or arthritis -- a different plane of deformity than scoliosis; the displayed image shows a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -1304,15 +1304,15 @@
       ],
       "correct_index": 0,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is marked spinal deformity producing restrictive chest-wall mechanics. This pattern supports Ankylosing Spondylitis Spine.",
+      "explanation": "The decisive visible finding is a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature. This pattern supports Ankylosing Spondylitis Spine.",
       "visual_clues": [
-        "marked spinal deformity producing restrictive chest-wall mechanics"
+        "a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature"
       ],
       "choice_rationales": [
-        "Correct: The displayed image shows marked spinal deformity producing restrictive chest-wall mechanics, supporting Ankylosing Spondylitis Spine.",
-        "Right lung agenesis with left compensatory hyperinflation would instead show absence of the right lung with ipsilateral volume loss and compensatory hyperinflation of the left lung; the displayed image shows marked spinal deformity producing restrictive chest-wall mechanics.",
-        "Diaphragmatic Eventration would instead show smooth focal elevation of an intact hemidiaphragm without herniated abdominal viscera; the displayed image shows marked spinal deformity producing restrictive chest-wall mechanics.",
-        "Large CPAM with right lung hyperinflation would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows marked spinal deformity producing restrictive chest-wall mechanics."
+        "Correct: The displayed image shows a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature, supporting Ankylosing Spondylitis Spine.",
+        "Right lung agenesis with left compensatory hyperinflation would instead show absence of the right lung with ipsilateral volume loss and compensatory hyperinflation of the left lung; the displayed image shows a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature.",
+        "Diaphragmatic Eventration would instead show smooth focal elevation of an intact hemidiaphragm without herniated abdominal viscera; the displayed image shows a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature.",
+        "Large CPAM with right lung hyperinflation would instead show a single very large CPAM causing mass effect with severe ipsilateral hyperinflation and multiple septae, rather than a smaller lesion or a hybrid/co-occurring-disease pattern; the displayed image shows a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -3696,7 +3696,7 @@
       "choice_rationales": [
         "Left-Sided Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining.",
         "Congenital Lobar Emphysema would instead show marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement; the displayed image shows a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining.",
-        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining.",
+        "CPAM and Emphysema would instead show a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component; the displayed image shows a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining.",
         "Correct: The displayed image shows a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining, supporting Bronchogenic Cyst."
       ],
       "ground_truth_confidence": "high",
@@ -4383,7 +4383,7 @@
         "enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing"
       ],
       "choice_rationales": [
-        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing.",
+        "CPAM and Emphysema would instead show a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component; the displayed image shows enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing.",
         "Emphysema Gross Lung Bullae would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing.",
         "Correct: The displayed image shows enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing, supporting Centri-acinar Emphysema.",
         "Pink Puffer would instead show the emphysema-predominant COPD phenotype: dyspneic and tachypneic but with gas exchange reasonably maintained, in contrast to the hypoxemic/hypercapnic 'blue bloater' bronchitic phenotype; the displayed image shows enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing."
@@ -5338,7 +5338,7 @@
       ],
       "choice_rationales": [
         "Correct: The displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement, supporting Congenital Lobar Emphysema.",
-        "Type 4 CPAM versus pleuropulmonary blastoma would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement.",
+        "Type 4 CPAM versus pleuropulmonary blastoma would instead show Stocker type 4 CPAM: large cysts lined by alveolar type I/II cells, raising concern for overlap with pleuropulmonary blastoma if the septal stroma is even focally hypercellular; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement.",
         "Centri-acinar Emphysema Secondary Pneumonia would instead show enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement.",
         "Pink Puffer would instead show the emphysema-predominant COPD phenotype: dyspneic and tachypneic but with gas exchange reasonably maintained, in contrast to the hypoxemic/hypercapnic 'blue bloater' bronchitic phenotype; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement."
       ],
@@ -5393,7 +5393,7 @@
         "Hyperinflation in COPD would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement.",
         "Correct: The displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement, supporting Congenital Lobar Emphysema.",
         "Chronic Bronchitis would instead show mucous-gland and goblet-cell enlargement with airway wall inflammation; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement.",
-        "Type 4 CPAM versus pleuropulmonary blastoma would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement."
+        "Type 4 CPAM versus pleuropulmonary blastoma would instead show Stocker type 4 CPAM: large cysts lined by alveolar type I/II cells, raising concern for overlap with pleuropulmonary blastoma if the septal stroma is even focally hypercellular; the displayed image shows marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -5817,7 +5817,7 @@
         "Correct: The displayed image shows a discrete mass lesion superimposed on a background of emphysematous change, rather than emphysema alone, supporting Emphysema with primary lung cancer.",
         "Chronic bronchitis would instead show mucous-gland and goblet-cell enlargement with airway wall inflammation; the displayed image shows a discrete mass lesion superimposed on a background of emphysematous change, rather than emphysema alone.",
         "Congenital Lobar Emphysema would instead show marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement; the displayed image shows a discrete mass lesion superimposed on a background of emphysematous change, rather than emphysema alone.",
-        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows a discrete mass lesion superimposed on a background of emphysematous change, rather than emphysema alone."
+        "CPAM and Emphysema would instead show a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component; the displayed image shows a discrete mass lesion superimposed on a background of emphysematous change, rather than emphysema alone."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -5862,15 +5862,15 @@
       ],
       "correct_index": 2,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is a congenital multicystic intrapulmonary lesion replacing part of a developing lung. This pattern supports CPAM and Emphysema.",
+      "explanation": "The decisive visible finding is a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component. This pattern supports CPAM and Emphysema.",
       "visual_clues": [
-        "a congenital multicystic intrapulmonary lesion replacing part of a developing lung"
+        "a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component"
       ],
       "choice_rationales": [
-        "Mediastinal Bronchogenic Cyst would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
-        "Emphysema Gross Lung Bullae would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
-        "Correct: The displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung, supporting CPAM and Emphysema.",
-        "Centri-acinar Emphysema would instead show enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung."
+        "Mediastinal Bronchogenic Cyst would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component.",
+        "Emphysema Gross Lung Bullae would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component.",
+        "Correct: The displayed image shows a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component, supporting CPAM and Emphysema.",
+        "Centri-acinar Emphysema would instead show enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing; the displayed image shows a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -5910,20 +5910,20 @@
       "options": [
         "CPAM Type 3",
         "Congenital Diaphragmatic Hernia",
-        "Congenital Lobar Emphysema",
-        "Bronchogenic Cyst"
+        "Type 4 CPAM versus pleuropulmonary blastoma",
+        "Congenital Lobar Emphysema"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is a congenital multicystic intrapulmonary lesion replacing part of a developing lung. This pattern supports CPAM Type 3.",
+      "explanation": "The decisive visible finding is Stocker type 3 CPAM: a bronchiolar/alveolar-duct-type lesion, radiographically resembling pneumonia in an infant. This pattern supports CPAM Type 3.",
       "visual_clues": [
-        "a congenital multicystic intrapulmonary lesion replacing part of a developing lung"
+        "Stocker type 3 CPAM: a bronchiolar/alveolar-duct-type lesion, radiographically resembling pneumonia in an infant"
       ],
       "choice_rationales": [
-        "Correct: The displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung, supporting CPAM Type 3.",
-        "Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
-        "Congenital Lobar Emphysema would instead show marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
-        "Bronchogenic Cyst would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung."
+        "Correct: The displayed image shows Stocker type 3 CPAM: a bronchiolar/alveolar-duct-type lesion, radiographically resembling pneumonia in an infant, supporting CPAM Type 3.",
+        "Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows Stocker type 3 CPAM: a bronchiolar/alveolar-duct-type lesion, radiographically resembling pneumonia in an infant.",
+        "Type 4 CPAM versus pleuropulmonary blastoma would instead show Stocker type 4 CPAM: large cysts lined by alveolar type I/II cells, raising concern for overlap with pleuropulmonary blastoma if the septal stroma is even focally hypercellular; the displayed image shows Stocker type 3 CPAM: a bronchiolar/alveolar-duct-type lesion, radiographically resembling pneumonia in an infant.",
+        "Congenital Lobar Emphysema would instead show marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement; the displayed image shows Stocker type 3 CPAM: a bronchiolar/alveolar-duct-type lesion, radiographically resembling pneumonia in an infant."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -6133,7 +6133,7 @@
       ],
       "choice_rationales": [
         "Pulmonary Sequestration would instead show nonfunctioning lung tissue supplied by an anomalous systemic artery; the displayed image shows smooth focal elevation of an intact hemidiaphragm without herniated abdominal viscera.",
-        "Ankylosing Spondylitis Spine would instead show marked spinal deformity producing restrictive chest-wall mechanics; the displayed image shows smooth focal elevation of an intact hemidiaphragm without herniated abdominal viscera.",
+        "Ankylosing Spondylitis Spine would instead show a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature; the displayed image shows smooth focal elevation of an intact hemidiaphragm without herniated abdominal viscera.",
         "Dextrocardia would instead show right-sided cardiac apex with mirror-image thoracoabdominal orientation when complete; the displayed image shows smooth focal elevation of an intact hemidiaphragm without herniated abdominal viscera.",
         "Correct: The displayed image shows smooth focal elevation of an intact hemidiaphragm without herniated abdominal viscera, supporting Diaphragmatic Eventration."
       ],
@@ -6187,7 +6187,7 @@
       "choice_rationales": [
         "Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows smooth focal elevation of an intact hemidiaphragm without herniated abdominal viscera.",
         "Correct: The displayed image shows smooth focal elevation of an intact hemidiaphragm without herniated abdominal viscera, supporting Diaphragmatic Eventration.",
-        "Kyphosis would instead show marked spinal deformity producing restrictive chest-wall mechanics; the displayed image shows smooth focal elevation of an intact hemidiaphragm without herniated abdominal viscera.",
+        "Kyphosis would instead show excessive anteroposterior (forward) spinal curvature, from causes such as Scheuermann's disease, osteoporotic compression fracture, or arthritis -- a different plane of deformity than scoliosis; the displayed image shows smooth focal elevation of an intact hemidiaphragm without herniated abdominal viscera.",
         "Pectus Excavatum would instead show posterior displacement of the sternum with reduced anteroposterior chest diameter; the displayed image shows smooth focal elevation of an intact hemidiaphragm without herniated abdominal viscera."
       ],
       "ground_truth_confidence": "high",
@@ -6240,7 +6240,7 @@
       "choice_rationales": [
         "Dextrocardia would instead show right-sided cardiac apex with mirror-image thoracoabdominal orientation when complete; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
         "Correct: The displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen, supporting Diaphragmatic Hernia.",
-        "Scoliosis would instead show marked spinal deformity producing restrictive chest-wall mechanics; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
+        "Scoliosis would instead show lateral (side-to-side) spinal curvature, as from Marfan syndrome, Down syndrome, Ehlers-Danlos syndrome, muscular dystrophy, or idiopathic causes -- a different plane of deformity than kyphosis; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
         "Pectus Excavatum would instead show posterior displacement of the sternum with reduced anteroposterior chest diameter; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen."
       ],
       "ground_truth_confidence": "high",
@@ -6293,7 +6293,7 @@
       "choice_rationales": [
         "Pectus Excavatum Treatment would instead show posterior displacement of the sternum with reduced anteroposterior chest diameter; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
         "Right lung agenesis with left compensatory hyperinflation would instead show absence of the right lung with ipsilateral volume loss and compensatory hyperinflation of the left lung; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
-        "Ankylosing Spondylitis Spine would instead show marked spinal deformity producing restrictive chest-wall mechanics; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
+        "Ankylosing Spondylitis Spine would instead show a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
         "Correct: The displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen, supporting Diaphragmatic Hernia."
       ],
       "ground_truth_confidence": "high",
@@ -7457,7 +7457,7 @@
         "a sequestered lobe with its own separate pleural investment, systemic venous drainage, typically lower lobe/left-sided, presenting in infancy"
       ],
       "choice_rationales": [
-        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows a sequestered lobe with its own separate pleural investment, systemic venous drainage, typically lower lobe/left-sided, presenting in infancy.",
+        "CPAM and Emphysema would instead show a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component; the displayed image shows a sequestered lobe with its own separate pleural investment, systemic venous drainage, typically lower lobe/left-sided, presenting in infancy.",
         "Mediastinal Bronchogenic Cyst in the Carina would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows a sequestered lobe with its own separate pleural investment, systemic venous drainage, typically lower lobe/left-sided, presenting in infancy.",
         "Left-Sided Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows a sequestered lobe with its own separate pleural investment, systemic venous drainage, typically lower lobe/left-sided, presenting in infancy.",
         "Correct: The displayed image shows a sequestered lobe with its own separate pleural investment, systemic venous drainage, typically lower lobe/left-sided, presenting in infancy, supporting Extralobar Pulmonary Sequestration."
@@ -9050,7 +9050,7 @@
         "Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows a sequestered lobe sharing the visceral pleura of the adjacent normal lung, with pulmonary venous drainage, typically presenting later in childhood or adolescence.",
         "Correct: The displayed image shows a sequestered lobe sharing the visceral pleura of the adjacent normal lung, with pulmonary venous drainage, typically presenting later in childhood or adolescence, supporting Intralobar Pulmonary Sequestration.",
         "Mediastinal Bronchogenic Cyst in the Carina would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows a sequestered lobe sharing the visceral pleura of the adjacent normal lung, with pulmonary venous drainage, typically presenting later in childhood or adolescence.",
-        "Large CPAM with right lung hyperinflation would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows a sequestered lobe sharing the visceral pleura of the adjacent normal lung, with pulmonary venous drainage, typically presenting later in childhood or adolescence."
+        "Large CPAM with right lung hyperinflation would instead show a single very large CPAM causing mass effect with severe ipsilateral hyperinflation and multiple septae, rather than a smaller lesion or a hybrid/co-occurring-disease pattern; the displayed image shows a sequestered lobe sharing the visceral pleura of the adjacent normal lung, with pulmonary venous drainage, typically presenting later in childhood or adolescence."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -9360,15 +9360,15 @@
       ],
       "correct_index": 1,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is marked spinal deformity producing restrictive chest-wall mechanics. This pattern supports Kyphosis.",
+      "explanation": "The decisive visible finding is excessive anteroposterior (forward) spinal curvature, from causes such as Scheuermann's disease, osteoporotic compression fracture, or arthritis -- a different plane of deformity than scoliosis. This pattern supports Kyphosis.",
       "visual_clues": [
-        "marked spinal deformity producing restrictive chest-wall mechanics"
+        "excessive anteroposterior (forward) spinal curvature, from causes such as Scheuermann's disease, osteoporotic compression fracture, or arthritis -- a different plane of deformity than scoliosis"
       ],
       "choice_rationales": [
-        "Pectus Excavatum Haller Index would instead show posterior displacement of the sternum with reduced anteroposterior chest diameter; the displayed image shows marked spinal deformity producing restrictive chest-wall mechanics.",
-        "Correct: The displayed image shows marked spinal deformity producing restrictive chest-wall mechanics, supporting Kyphosis.",
-        "Type 4 CPAM versus pleuropulmonary blastoma would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows marked spinal deformity producing restrictive chest-wall mechanics.",
-        "Diaphragmatic Eventration would instead show smooth focal elevation of an intact hemidiaphragm without herniated abdominal viscera; the displayed image shows marked spinal deformity producing restrictive chest-wall mechanics."
+        "Pectus Excavatum Haller Index would instead show posterior displacement of the sternum with reduced anteroposterior chest diameter; the displayed image shows excessive anteroposterior (forward) spinal curvature, from causes such as Scheuermann's disease, osteoporotic compression fracture, or arthritis -- a different plane of deformity than scoliosis.",
+        "Correct: The displayed image shows excessive anteroposterior (forward) spinal curvature, from causes such as Scheuermann's disease, osteoporotic compression fracture, or arthritis -- a different plane of deformity than scoliosis, supporting Kyphosis.",
+        "Type 4 CPAM versus pleuropulmonary blastoma would instead show Stocker type 4 CPAM: large cysts lined by alveolar type I/II cells, raising concern for overlap with pleuropulmonary blastoma if the septal stroma is even focally hypercellular; the displayed image shows excessive anteroposterior (forward) spinal curvature, from causes such as Scheuermann's disease, osteoporotic compression fracture, or arthritis -- a different plane of deformity than scoliosis.",
+        "Diaphragmatic Eventration would instead show smooth focal elevation of an intact hemidiaphragm without herniated abdominal viscera; the displayed image shows excessive anteroposterior (forward) spinal curvature, from causes such as Scheuermann's disease, osteoporotic compression fracture, or arthritis -- a different plane of deformity than scoliosis."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -9525,7 +9525,7 @@
       ],
       "choice_rationales": [
         "Correct: The displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen, supporting Left-Sided Congenital Diaphragmatic Hernia.",
-        "Large CPAM with right lung hyperinflation would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
+        "Large CPAM with right lung hyperinflation would instead show a single very large CPAM causing mass effect with severe ipsilateral hyperinflation and multiple septae, rather than a smaller lesion or a hybrid/co-occurring-disease pattern; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
         "Pulmonary Sequestration would instead show nonfunctioning lung tissue supplied by an anomalous systemic artery; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
         "Mediastinal Bronchogenic Cyst would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen."
       ],
@@ -10373,7 +10373,7 @@
       ],
       "choice_rationales": [
         "Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining.",
-        "CPAM Type 3 would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining.",
+        "CPAM Type 3 would instead show Stocker type 3 CPAM: a bronchiolar/alveolar-duct-type lesion, radiographically resembling pneumonia in an infant; the displayed image shows a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining.",
         "Pulmonary Sequestration would instead show nonfunctioning lung tissue supplied by an anomalous systemic artery; the displayed image shows a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining.",
         "Correct: The displayed image shows a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining, supporting Mediastinal Bronchogenic Cyst."
       ],
@@ -10428,7 +10428,7 @@
         "Congenital diaphragmatic hernia with scaphoid abdomen would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining.",
         "Congenital Lobar Emphysema would instead show marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement; the displayed image shows a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining.",
         "Correct: The displayed image shows a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining, supporting Mediastinal Bronchogenic Cyst in the Carina.",
-        "CPAM Type 3 would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining."
+        "CPAM Type 3 would instead show Stocker type 3 CPAM: a bronchiolar/alveolar-duct-type lesion, radiographically resembling pneumonia in an infant; the displayed image shows a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -10685,15 +10685,15 @@
       ],
       "correct_index": 3,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is a congenital multicystic intrapulmonary lesion replacing part of a developing lung. This pattern supports CPAM with pulmonary sequestration.",
+      "explanation": "The decisive visible finding is a hybrid lesion: a multicystic CPAM-type malformation together with sequestered, systemically supplied lung tissue, presenting with atelectasis and bronchiectasis on imaging. This pattern supports CPAM with pulmonary sequestration.",
       "visual_clues": [
-        "a congenital multicystic intrapulmonary lesion replacing part of a developing lung"
+        "a hybrid lesion: a multicystic CPAM-type malformation together with sequestered, systemically supplied lung tissue, presenting with atelectasis and bronchiectasis on imaging"
       ],
       "choice_rationales": [
-        "Intralobar Pulmonary Sequestration would instead show a sequestered lobe sharing the visceral pleura of the adjacent normal lung, with pulmonary venous drainage, typically presenting later in childhood or adolescence; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
-        "Mediastinal Bronchogenic Cyst would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
-        "Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
-        "Correct: The displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung, supporting CPAM with pulmonary sequestration."
+        "Intralobar Pulmonary Sequestration would instead show a sequestered lobe sharing the visceral pleura of the adjacent normal lung, with pulmonary venous drainage, typically presenting later in childhood or adolescence; the displayed image shows a hybrid lesion: a multicystic CPAM-type malformation together with sequestered, systemically supplied lung tissue, presenting with atelectasis and bronchiectasis on imaging.",
+        "Mediastinal Bronchogenic Cyst would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows a hybrid lesion: a multicystic CPAM-type malformation together with sequestered, systemically supplied lung tissue, presenting with atelectasis and bronchiectasis on imaging.",
+        "Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows a hybrid lesion: a multicystic CPAM-type malformation together with sequestered, systemically supplied lung tissue, presenting with atelectasis and bronchiectasis on imaging.",
+        "Correct: The displayed image shows a hybrid lesion: a multicystic CPAM-type malformation together with sequestered, systemically supplied lung tissue, presenting with atelectasis and bronchiectasis on imaging, supporting CPAM with pulmonary sequestration."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -12759,8 +12759,8 @@
       "choice_rationales": [
         "Right Pulmonary Agenesis would instead show absence of one lung and pulmonary vasculature with compensatory hyperinflation of the opposite lung; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter.",
         "Correct: The displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter, supporting Pectus Excavatum.",
-        "Large CPAM with right lung hyperinflation would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter.",
-        "Kyphosis would instead show marked spinal deformity producing restrictive chest-wall mechanics; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter."
+        "Large CPAM with right lung hyperinflation would instead show a single very large CPAM causing mass effect with severe ipsilateral hyperinflation and multiple septae, rather than a smaller lesion or a hybrid/co-occurring-disease pattern; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter.",
+        "Kyphosis would instead show excessive anteroposterior (forward) spinal curvature, from causes such as Scheuermann's disease, osteoporotic compression fracture, or arthritis -- a different plane of deformity than scoliosis; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -12813,7 +12813,7 @@
         "Right Pulmonary Agenesis would instead show absence of one lung and pulmonary vasculature with compensatory hyperinflation of the opposite lung; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter.",
         "Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter.",
         "Correct: The displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter, supporting Pectus Excavatum.",
-        "Ankylosing Spondylitis Spine would instead show marked spinal deformity producing restrictive chest-wall mechanics; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter."
+        "Ankylosing Spondylitis Spine would instead show a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -12971,7 +12971,7 @@
       "choice_rationales": [
         "Diaphragmatic Eventration would instead show smooth focal elevation of an intact hemidiaphragm without herniated abdominal viscera; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter.",
         "Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter.",
-        "Ankylosing Spondylitis Spine would instead show marked spinal deformity producing restrictive chest-wall mechanics; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter.",
+        "Ankylosing Spondylitis Spine would instead show a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter.",
         "Correct: The displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter, supporting Pectus Excavatum Haller Index."
       ],
       "ground_truth_confidence": "high",
@@ -13024,8 +13024,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter, supporting Pectus Excavatum Treatment.",
         "Left-Sided Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter.",
-        "Ankylosing Spondylitis would instead show marked spinal deformity producing restrictive chest-wall mechanics; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter.",
-        "CPAM with pulmonary sequestration would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter."
+        "Ankylosing Spondylitis would instead show a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter.",
+        "CPAM with pulmonary sequestration would instead show a hybrid lesion: a multicystic CPAM-type malformation together with sequestered, systemically supplied lung tissue, presenting with atelectasis and bronchiectasis on imaging; the displayed image shows posterior displacement of the sternum with reduced anteroposterior chest diameter."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -15145,7 +15145,7 @@
         "Correct: The displayed image shows nonfunctioning lung tissue supplied by an anomalous systemic artery, supporting Pulmonary Sequestration.",
         "Left-Sided Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows nonfunctioning lung tissue supplied by an anomalous systemic artery.",
         "Mediastinal Bronchogenic Cyst in the Carina would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows nonfunctioning lung tissue supplied by an anomalous systemic artery.",
-        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows nonfunctioning lung tissue supplied by an anomalous systemic artery."
+        "CPAM and Emphysema would instead show a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component; the displayed image shows nonfunctioning lung tissue supplied by an anomalous systemic artery."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -15195,7 +15195,7 @@
         "nonfunctioning lung tissue supplied by an anomalous systemic artery"
       ],
       "choice_rationales": [
-        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows nonfunctioning lung tissue supplied by an anomalous systemic artery.",
+        "CPAM and Emphysema would instead show a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component; the displayed image shows nonfunctioning lung tissue supplied by an anomalous systemic artery.",
         "Correct: The displayed image shows nonfunctioning lung tissue supplied by an anomalous systemic artery, supporting Pulmonary Sequestration.",
         "Congenital diaphragmatic hernia with scaphoid abdomen would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows nonfunctioning lung tissue supplied by an anomalous systemic artery.",
         "Mediastinal Bronchogenic Cyst would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows nonfunctioning lung tissue supplied by an anomalous systemic artery."
@@ -15990,8 +15990,8 @@
         "absence of one lung and pulmonary vasculature with compensatory hyperinflation of the opposite lung"
       ],
       "choice_rationales": [
-        "Large CPAM with right lung hyperinflation would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows absence of one lung and pulmonary vasculature with compensatory hyperinflation of the opposite lung.",
-        "Scoliosis would instead show marked spinal deformity producing restrictive chest-wall mechanics; the displayed image shows absence of one lung and pulmonary vasculature with compensatory hyperinflation of the opposite lung.",
+        "Large CPAM with right lung hyperinflation would instead show a single very large CPAM causing mass effect with severe ipsilateral hyperinflation and multiple septae, rather than a smaller lesion or a hybrid/co-occurring-disease pattern; the displayed image shows absence of one lung and pulmonary vasculature with compensatory hyperinflation of the opposite lung.",
+        "Scoliosis would instead show lateral (side-to-side) spinal curvature, as from Marfan syndrome, Down syndrome, Ehlers-Danlos syndrome, muscular dystrophy, or idiopathic causes -- a different plane of deformity than kyphosis; the displayed image shows absence of one lung and pulmonary vasculature with compensatory hyperinflation of the opposite lung.",
         "Correct: The displayed image shows absence of one lung and pulmonary vasculature with compensatory hyperinflation of the opposite lung, supporting Right Pulmonary Agenesis.",
         "Pectus Excavatum would instead show posterior displacement of the sternum with reduced anteroposterior chest diameter; the displayed image shows absence of one lung and pulmonary vasculature with compensatory hyperinflation of the opposite lung."
       ],
@@ -16521,8 +16521,8 @@
       ],
       "choice_rationales": [
         "Bronchogenic Cyst would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
-        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
-        "CPAM Type 3 would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
+        "CPAM and Emphysema would instead show a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
+        "CPAM Type 3 would instead show Stocker type 3 CPAM: a bronchiolar/alveolar-duct-type lesion, radiographically resembling pneumonia in an infant; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
         "Correct: The displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen, supporting Congenital diaphragmatic hernia with scaphoid abdomen."
       ],
       "ground_truth_confidence": "high",
@@ -16674,15 +16674,15 @@
       ],
       "correct_index": 3,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is marked spinal deformity producing restrictive chest-wall mechanics. This pattern supports Scoliosis.",
+      "explanation": "The decisive visible finding is lateral (side-to-side) spinal curvature, as from Marfan syndrome, Down syndrome, Ehlers-Danlos syndrome, muscular dystrophy, or idiopathic causes -- a different plane of deformity than kyphosis. This pattern supports Scoliosis.",
       "visual_clues": [
-        "marked spinal deformity producing restrictive chest-wall mechanics"
+        "lateral (side-to-side) spinal curvature, as from Marfan syndrome, Down syndrome, Ehlers-Danlos syndrome, muscular dystrophy, or idiopathic causes -- a different plane of deformity than kyphosis"
       ],
       "choice_rationales": [
-        "Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows marked spinal deformity producing restrictive chest-wall mechanics.",
-        "Type 4 CPAM versus pleuropulmonary blastoma would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows marked spinal deformity producing restrictive chest-wall mechanics.",
-        "Right Pulmonary Agenesis would instead show absence of one lung and pulmonary vasculature with compensatory hyperinflation of the opposite lung; the displayed image shows marked spinal deformity producing restrictive chest-wall mechanics.",
-        "Correct: The displayed image shows marked spinal deformity producing restrictive chest-wall mechanics, supporting Scoliosis."
+        "Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows lateral (side-to-side) spinal curvature, as from Marfan syndrome, Down syndrome, Ehlers-Danlos syndrome, muscular dystrophy, or idiopathic causes -- a different plane of deformity than kyphosis.",
+        "Type 4 CPAM versus pleuropulmonary blastoma would instead show Stocker type 4 CPAM: large cysts lined by alveolar type I/II cells, raising concern for overlap with pleuropulmonary blastoma if the septal stroma is even focally hypercellular; the displayed image shows lateral (side-to-side) spinal curvature, as from Marfan syndrome, Down syndrome, Ehlers-Danlos syndrome, muscular dystrophy, or idiopathic causes -- a different plane of deformity than kyphosis.",
+        "Right Pulmonary Agenesis would instead show absence of one lung and pulmonary vasculature with compensatory hyperinflation of the opposite lung; the displayed image shows lateral (side-to-side) spinal curvature, as from Marfan syndrome, Down syndrome, Ehlers-Danlos syndrome, muscular dystrophy, or idiopathic causes -- a different plane of deformity than kyphosis.",
+        "Correct: The displayed image shows lateral (side-to-side) spinal curvature, as from Marfan syndrome, Down syndrome, Ehlers-Danlos syndrome, muscular dystrophy, or idiopathic causes -- a different plane of deformity than kyphosis, supporting Scoliosis."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -19320,19 +19320,19 @@
         "Extralobar Pulmonary Sequestration",
         "Type 4 CPAM versus pleuropulmonary blastoma",
         "Left-Sided Congenital Diaphragmatic Hernia",
-        "CPAM and Emphysema"
+        "CPAM Type 3"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is a congenital multicystic intrapulmonary lesion replacing part of a developing lung. This pattern supports Type 4 CPAM versus pleuropulmonary blastoma.",
+      "explanation": "The decisive visible finding is Stocker type 4 CPAM: large cysts lined by alveolar type I/II cells, raising concern for overlap with pleuropulmonary blastoma if the septal stroma is even focally hypercellular. This pattern supports Type 4 CPAM versus pleuropulmonary blastoma.",
       "visual_clues": [
-        "a congenital multicystic intrapulmonary lesion replacing part of a developing lung"
+        "Stocker type 4 CPAM: large cysts lined by alveolar type I/II cells, raising concern for overlap with pleuropulmonary blastoma if the septal stroma is even focally hypercellular"
       ],
       "choice_rationales": [
-        "Extralobar Pulmonary Sequestration would instead show a sequestered lobe with its own separate pleural investment, systemic venous drainage, typically lower lobe/left-sided, presenting in infancy; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
-        "Correct: The displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung, supporting Type 4 CPAM versus pleuropulmonary blastoma.",
-        "Left-Sided Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
-        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung."
+        "Extralobar Pulmonary Sequestration would instead show a sequestered lobe with its own separate pleural investment, systemic venous drainage, typically lower lobe/left-sided, presenting in infancy; the displayed image shows Stocker type 4 CPAM: large cysts lined by alveolar type I/II cells, raising concern for overlap with pleuropulmonary blastoma if the septal stroma is even focally hypercellular.",
+        "Correct: The displayed image shows Stocker type 4 CPAM: large cysts lined by alveolar type I/II cells, raising concern for overlap with pleuropulmonary blastoma if the septal stroma is even focally hypercellular, supporting Type 4 CPAM versus pleuropulmonary blastoma.",
+        "Left-Sided Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows Stocker type 4 CPAM: large cysts lined by alveolar type I/II cells, raising concern for overlap with pleuropulmonary blastoma if the septal stroma is even focally hypercellular.",
+        "CPAM Type 3 would instead show Stocker type 3 CPAM: a bronchiolar/alveolar-duct-type lesion, radiographically resembling pneumonia in an infant; the displayed image shows Stocker type 4 CPAM: large cysts lined by alveolar type I/II cells, raising concern for overlap with pleuropulmonary blastoma if the septal stroma is even focally hypercellular."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -19642,15 +19642,15 @@
       ],
       "correct_index": 0,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is a congenital multicystic intrapulmonary lesion replacing part of a developing lung. This pattern supports Large CPAM with right lung hyperinflation.",
+      "explanation": "The decisive visible finding is a single very large CPAM causing mass effect with severe ipsilateral hyperinflation and multiple septae, rather than a smaller lesion or a hybrid/co-occurring-disease pattern. This pattern supports Large CPAM with right lung hyperinflation.",
       "visual_clues": [
-        "a congenital multicystic intrapulmonary lesion replacing part of a developing lung"
+        "a single very large CPAM causing mass effect with severe ipsilateral hyperinflation and multiple septae, rather than a smaller lesion or a hybrid/co-occurring-disease pattern"
       ],
       "choice_rationales": [
-        "Correct: The displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung, supporting Large CPAM with right lung hyperinflation.",
-        "CPAM Type 3 would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
-        "CPAM with pulmonary sequestration would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
-        "Extralobar Pulmonary Sequestration would instead show a sequestered lobe with its own separate pleural investment, systemic venous drainage, typically lower lobe/left-sided, presenting in infancy; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung."
+        "Correct: The displayed image shows a single very large CPAM causing mass effect with severe ipsilateral hyperinflation and multiple septae, rather than a smaller lesion or a hybrid/co-occurring-disease pattern, supporting Large CPAM with right lung hyperinflation.",
+        "CPAM Type 3 would instead show Stocker type 3 CPAM: a bronchiolar/alveolar-duct-type lesion, radiographically resembling pneumonia in an infant; the displayed image shows a single very large CPAM causing mass effect with severe ipsilateral hyperinflation and multiple septae, rather than a smaller lesion or a hybrid/co-occurring-disease pattern.",
+        "CPAM with pulmonary sequestration would instead show a hybrid lesion: a multicystic CPAM-type malformation together with sequestered, systemically supplied lung tissue, presenting with atelectasis and bronchiectasis on imaging; the displayed image shows a single very large CPAM causing mass effect with severe ipsilateral hyperinflation and multiple septae, rather than a smaller lesion or a hybrid/co-occurring-disease pattern.",
+        "Extralobar Pulmonary Sequestration would instead show a sequestered lobe with its own separate pleural investment, systemic venous drainage, typically lower lobe/left-sided, presenting in infancy; the displayed image shows a single very large CPAM causing mass effect with severe ipsilateral hyperinflation and multiple septae, rather than a smaller lesion or a hybrid/co-occurring-disease pattern."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -22032,7 +22032,7 @@
         "abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen"
       ],
       "choice_rationales": [
-        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
+        "CPAM and Emphysema would instead show a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
         "Bronchogenic Cyst would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen.",
         "Correct: The displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen, supporting Congenital Diaphragmatic Hernia.",
         "Pulmonary Sequestration would instead show nonfunctioning lung tissue supplied by an anomalous systemic artery; the displayed image shows abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen."
@@ -22404,7 +22404,7 @@
       ],
       "choice_rationales": [
         "Pectus Excavatum would instead show posterior displacement of the sternum with reduced anteroposterior chest diameter; the displayed image shows intrathoracic abdominal viscera with mediastinal displacement through a disrupted hemidiaphragm.",
-        "Large CPAM with right lung hyperinflation would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows intrathoracic abdominal viscera with mediastinal displacement through a disrupted hemidiaphragm.",
+        "Large CPAM with right lung hyperinflation would instead show a single very large CPAM causing mass effect with severe ipsilateral hyperinflation and multiple septae, rather than a smaller lesion or a hybrid/co-occurring-disease pattern; the displayed image shows intrathoracic abdominal viscera with mediastinal displacement through a disrupted hemidiaphragm.",
         "Correct: The displayed image shows intrathoracic abdominal viscera with mediastinal displacement through a disrupted hemidiaphragm, supporting Diaphragmatic Rupture Mediastinal Shift.",
         "Dextrocardia would instead show right-sided cardiac apex with mirror-image thoracoabdominal orientation when complete; the displayed image shows intrathoracic abdominal viscera with mediastinal displacement through a disrupted hemidiaphragm."
       ],

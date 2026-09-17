@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-17T11:12:26.424681-04:00",
+  "generated_at": "2026-09-17T11:30:16.666897-04:00",
   "builder": "build-medical-picture-quiz / multi-collection flat-image builder",
   "source_directories": [
     {
@@ -2049,7 +2049,7 @@
       "immutable_source_hash": "144d25d81fe5a602cfede1e236fe1222c05153799bb59903fe9e4692988e0850",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "marked spinal deformity producing restrictive chest-wall mechanics",
+      "key_visual_findings": "a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -2137,7 +2137,7 @@
       "immutable_source_hash": "9616044c40989fae8cdba8983edba4e6334291e8b12f4578cd9ae45b9b674459",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "marked spinal deformity producing restrictive chest-wall mechanics",
+      "key_visual_findings": "a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -2225,7 +2225,7 @@
       "immutable_source_hash": "44124dcdf9c9b0c4ee53c22fc83b9db54300171207135692806c73d60ae5e8ff",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "marked spinal deformity producing restrictive chest-wall mechanics",
+      "key_visual_findings": "a seronegative spondyloarthropathy causing fusion (ankylosis) of the spine and sacroiliac joints, producing the characteristic 'bamboo spine' appearance rather than a nonspecific curvature",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -10144,7 +10144,7 @@
       "immutable_source_hash": "361c7fcef4512381f8db6e71b5fb6a536fe6f98789097dd44488bbf8b7096bab",
       "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "a congenital multicystic intrapulmonary lesion replacing part of a developing lung",
+      "key_visual_findings": "a CPAM with coexisting emphysematous change, without a specified Stocker subtype or hybrid sequestration component",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
@@ -10232,7 +10232,7 @@
       "immutable_source_hash": "a08c0ecc9e52986818171d0ae8763689b3b5701b170a8bb6715471740ec8c639",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a congenital multicystic intrapulmonary lesion replacing part of a developing lung",
+      "key_visual_findings": "Stocker type 3 CPAM: a bronchiolar/alveolar-duct-type lesion, radiographically resembling pneumonia in an infant",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -16027,7 +16027,7 @@
       "immutable_source_hash": "39e7ed3215b509f6431d1bc5d7b49ca85d918057dfec36ab817222044c011cee",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "marked spinal deformity producing restrictive chest-wall mechanics",
+      "key_visual_findings": "excessive anteroposterior (forward) spinal curvature, from causes such as Scheuermann's disease, osteoporotic compression fracture, or arthritis -- a different plane of deformity than scoliosis",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -18253,7 +18253,7 @@
       "immutable_source_hash": "8f2ff12dc7cc4157ddaba904c0786057b5c98eb484f81d6a6130a98d12038b4b",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a congenital multicystic intrapulmonary lesion replacing part of a developing lung",
+      "key_visual_findings": "a hybrid lesion: a multicystic CPAM-type malformation together with sequestered, systemically supplied lung tissue, presenting with atelectasis and bronchiectasis on imaging",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -28487,7 +28487,7 @@
       "immutable_source_hash": "bb35158d14f7318107024a58737e1dd5e2d9c31d7bef2d496ebaf996a9faaef9",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "marked spinal deformity producing restrictive chest-wall mechanics",
+      "key_visual_findings": "lateral (side-to-side) spinal curvature, as from Marfan syndrome, Down syndrome, Ehlers-Danlos syndrome, muscular dystrophy, or idiopathic causes -- a different plane of deformity than kyphosis",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -32974,7 +32974,7 @@
       "immutable_source_hash": "c519e963b10dde88b5c2e7eb1b56b8758a91017d4a757cff46e65f4c43564557",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a congenital multicystic intrapulmonary lesion replacing part of a developing lung",
+      "key_visual_findings": "Stocker type 4 CPAM: large cysts lined by alveolar type I/II cells, raising concern for overlap with pleuropulmonary blastoma if the septal stroma is even focally hypercellular",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -33510,7 +33510,7 @@
       "immutable_source_hash": "7cdbb433ac6eebb8d54591d1a9bce8bd03247c7184d2378bf9261f94eff6c729",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a congenital multicystic intrapulmonary lesion replacing part of a developing lung",
+      "key_visual_findings": "a single very large CPAM causing mass effect with severe ipsilateral hyperinflation and multiple septae, rather than a smaller lesion or a hybrid/co-occurring-disease pattern",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {

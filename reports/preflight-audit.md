@@ -1,6 +1,6 @@
 # Pulmonary multi-collection preflight audit
 
-Generated: 2026-09-17T11:12:26.424681-04:00
+Generated: 2026-09-17T11:30:16.666897-04:00
 
 - Source: `/Desktop/Rename` (read-only)
 - Source: `/Desktop/Add` (read-only)

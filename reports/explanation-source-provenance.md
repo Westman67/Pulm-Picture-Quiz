@@ -52,15 +52,16 @@ specificity or from different source images:
 - Lung mass + Left hilar lung mass + Lung nodule (undifferentiated focal lesion labels)
 - Emphysema + Hyperinflation in COPD + Severe COPD (hyperinflation is emphysema's radiographic manifestation, per P19 RLS p.47-64)
 
-## Known remaining gaps (not fixed this pass)
+## Follow-up pass (closed the remaining gaps)
 
-As of the last duplicate-clue scan (5 questions remaining, down from 133 at
-the start of this pass), these clusters still share identical auto-generated
-rationale text and were left unresolved because no lecture grounding was
-located for a distinguishing feature:
+The two gaps below were resolved in a follow-up verification pass:
 
-- Ankylosing Spondylitis / Kyphosis / Scoliosis triad (chest-wall restrictive mechanics) -- these are three legitimately different diagnoses; distinguishing content would need a specific musculoskeletal/rheumatology lecture page not yet located.
-- CPAM subtype cluster (CPAM Type 3 / CPAM and Emphysema / Type 4 CPAM vs pleuropulmonary blastoma / CPAM with pulmonary sequestration / Large CPAM with right lung hyperinflation) -- P36 RLS has partial CPAM-type content (e.g. p.28-31) but not a full Type 1-4 comparison table; needs a follow-up read of the full CPAM section before either merging or writing distinguishing clues.
+| Concept(s) | Lecture source | Page(s) | Grounded fact used |
+|---|---|---|---|
+| Ankylosing Spondylitis vs Kyphosis vs Scoliosis | P25 Radiology Restrictive Diseases RLS | (Causes of Scoliosis / Causes of Kyphosis slide) | Scoliosis = lateral curvature (Marfan, Down syndrome, Ehlers-Danlos, muscular dystrophy, idiopathic). Kyphosis = anteroposterior curvature, with Ankylosing Spondylitis listed as one of several specific causes (others: Scheuermann's disease, compression fracture, arthritis). Ankylosing Spondylitis itself = seronegative spondyloarthropathy causing spinal/SI-joint fusion ("bamboo spine"), a specific radiographic marker distinct from generic kyphosis. |
+| CPAM Type 3 vs Type 4 CPAM/PPB vs CPAM+sequestration vs CPAM+emphysema vs large CPAM+hyperinflation | P36 Pulmonary Developmental Anomalies RLS | (Stocker CPAM Type classification slide; case vignette slides) | Stocker Type 3 = bronchiolar/alveolar-duct architecture, CXR resembling pneumonia in an infant (case vignette). Type 4 = large cysts lined by alveolar type I/II cells, with a recognized spectrum/overlap concern with pleuropulmonary blastoma if septal stroma is focally hypercellular. "CPAM with pulmonary sequestration" = a distinct hybrid lesion (multicystic + systemically-supplied sequestered tissue) from a separate case vignette (atelectasis + bronchiectasis on CT). "Large CPAM with right lung hyperinflation" = a single very large lesion causing mass effect, per its own case vignette. "CPAM and Emphysema" = a co-occurrence label with no specified Stocker subtype. **Correction**: the pre-pass `CONCEPT_SYNONYM_GROUPS` had incorrectly merged "CPAM Type 3" with "Type 4 CPAM versus pleuropulmonary blastoma" as synonyms -- these are different Stocker subtypes with different histology and prognosis (same class of error as the earlier Ghon-complex/Cavitary-TB mistake caught in an earlier pass); the merge was removed and both given distinct grounded clue text instead. |
+
+Duplicate-clue questions after this follow-up pass: **0** (all 544 scored questions have 4 options that each resolve to a distinct auto-generated rationale clue).
 
 ## Methodology note
 
