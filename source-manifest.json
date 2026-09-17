@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-17T11:30:16.666897-04:00",
+  "generated_at": "2026-09-17T11:42:31.576936-04:00",
   "builder": "build-medical-picture-quiz / multi-collection flat-image builder",
   "source_directories": [
     {
@@ -7119,7 +7119,7 @@
       "immutable_source_hash": "fd4b449234ee399befac331019f68f5b018524c332138a0341cf3caf600ee2ee",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "cardiomegaly with vascular congestion, septal lines, and central alveolar edema",
+      "key_visual_findings": "cardiomegaly with vascular congestion and confluent central alveolar edema, the more advanced alveolar-filling stage of cardiogenic pulmonary edema",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -8183,7 +8183,7 @@
       "immutable_source_hash": "049bef91320e6018f511f5a3d7f4044fcb57467a50b43aa849565d60461fc48c",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "cardiomegaly with vascular congestion, septal lines, and central alveolar edema",
+      "key_visual_findings": "cardiomegaly with vascular congestion and confluent central alveolar edema, the more advanced alveolar-filling stage of cardiogenic pulmonary edema",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -8722,7 +8722,7 @@
       "immutable_source_hash": "43cb36286c4a3a95d34bf380ed01c0fe9b9d88b70ce18659ba2bd2e97f663505",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "a cobblestone-appearing pleural surface, the gross correlate of underlying honeycomb parenchymal remodeling",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -9616,7 +9616,7 @@
       "immutable_source_hash": "2476442b5959598ec18a5d2e9406811e3c28e7b79935cb1f023ddc4f43d8d60c",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "cardiomegaly with vascular congestion, septal lines, and central alveolar edema",
+      "key_visual_findings": "the earlier interstitial-edema stage of CHF: cardiomegaly with vascular congestion and Kerley B (septal) lines, without the confluent central alveolar filling of frank pulmonary edema",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -9704,7 +9704,7 @@
       "immutable_source_hash": "f325fae8811d4ecf64bc2cb4ae285ac3164ec8ea4b89eea972c5c970215b2f82",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "cardiomegaly with vascular congestion, septal lines, and central alveolar edema",
+      "key_visual_findings": "cardiomegaly with vascular congestion and confluent central alveolar edema, the more advanced alveolar-filling stage of cardiogenic pulmonary edema",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -14237,7 +14237,7 @@
       "immutable_source_hash": "300fa6d3ac89d1ac40a73fd62e00a1c3f90df4df99060a3d18609c4cfdda05af",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "alveolar septal inflammatory thickening with relative preservation of open air spaces",
+      "key_visual_findings": "Usual Interstitial Pneumonia, the pathologic pattern underlying IPF: temporally and spatially heterogeneous fibrosis (old scars, recent injury, and normal lung side by side) with subpleural, lower-lobe-predominant honeycomb cystic change",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -14325,7 +14325,7 @@
       "immutable_source_hash": "b7cc7c4d1bb0d1a13724685c9bf25ca011f96ffb7f9706c96d86733a25fc7c66",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "Usual Interstitial Pneumonia, the pathologic pattern underlying IPF: temporally and spatially heterogeneous fibrosis (old scars, recent injury, and normal lung side by side) with subpleural, lower-lobe-predominant honeycomb cystic change",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -14679,7 +14679,7 @@
       "immutable_source_hash": "9056a7a6d7b12a125403d3cbfe0b68e362c9518fe8cfd53cceb76c0a778b7dc6",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "Idiopathic Pulmonary Fibrosis: a clinical diagnosis of insidious, progressive fibrosing lung disease of unknown cause with a poor prognosis (~20% 5-year survival), typically in older smokers with dry cough and reduced DLco",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -14769,7 +14769,7 @@
       "immutable_source_hash": "9c88809404f810441b0f44b9461d032efcc4d6b3e992f25a853860eecd0228d6",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "Idiopathic Pulmonary Fibrosis: a clinical diagnosis of insidious, progressive fibrosing lung disease of unknown cause with a poor prognosis (~20% 5-year survival), typically in older smokers with dry cough and reduced DLco",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -14861,7 +14861,7 @@
       "immutable_source_hash": "cd28b6e5dd785cff42d78a37c08e4d74b48e66bbe6705964d798eb65dd3e16d6",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "Idiopathic Pulmonary Fibrosis: a clinical diagnosis of insidious, progressive fibrosing lung disease of unknown cause with a poor prognosis (~20% 5-year survival), typically in older smokers with dry cough and reduced DLco",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -14955,7 +14955,7 @@
       "immutable_source_hash": "d165d4e9eb3fd83060de5bd98e24e7dca52f4bc7bcd74579df092e185203b3eb",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "Idiopathic Pulmonary Fibrosis: a clinical diagnosis of insidious, progressive fibrosing lung disease of unknown cause with a poor prognosis (~20% 5-year survival), typically in older smokers with dry cough and reduced DLco",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -15047,7 +15047,7 @@
       "immutable_source_hash": "bc591c3699e238d8f8d97c8f1bcc7ef2091d8f1cb84118b50ccc75cded1aa4e5",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "Idiopathic Pulmonary Fibrosis: a clinical diagnosis of insidious, progressive fibrosing lung disease of unknown cause with a poor prognosis (~20% 5-year survival), typically in older smokers with dry cough and reduced DLco",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -15139,7 +15139,7 @@
       "immutable_source_hash": "2300ee918e044c0cf5dee41ebf60ce5fbb376ec1ae1596d3d68ebf56ca642049",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "Idiopathic Pulmonary Fibrosis: a clinical diagnosis of insidious, progressive fibrosing lung disease of unknown cause with a poor prognosis (~20% 5-year survival), typically in older smokers with dry cough and reduced DLco",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -17265,7 +17265,7 @@
       "immutable_source_hash": "4c880f32a720b1e36532354e96fdccfaef676da10b826f81ad44ca3119f971cb",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall",
+      "key_visual_findings": "bulky mediastinal soft tissue narrowing or displacing the trachea",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -21273,7 +21273,7 @@
       "immutable_source_hash": "3083b0c4d0bd8f65d25d10471d8f73df2cb08d5f50f94c1ba6e1173c95913391",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "Usual Interstitial Pneumonia, the pathologic pattern underlying IPF: temporally and spatially heterogeneous fibrosis (old scars, recent injury, and normal lung side by side) with subpleural, lower-lobe-predominant honeycomb cystic change",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -28131,7 +28131,7 @@
       "immutable_source_hash": "d440997eb388fb209ec0bee4690c6f61262e3fb13023e40683a30c51c808943b",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation",
+      "key_visual_findings": "the sarcomatoid (spindle-cell) histologic subtype of mesothelioma, resembling a spindle-cell sarcoma rather than the epithelial or biphasic subtypes",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -33066,7 +33066,7 @@
       "immutable_source_hash": "cfe7edd5c93c4f910792a8c1c13c9e918f98760a9e83d26edfde9246c24eaea9",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "basal subpleural reticulation with traction change and stacked cystic honeycombing",
+      "key_visual_findings": "Usual Interstitial Pneumonia, the pathologic pattern underlying IPF: temporally and spatially heterogeneous fibrosis (old scars, recent injury, and normal lung side by side) with subpleural, lower-lobe-predominant honeycomb cystic change",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -33158,7 +33158,7 @@
       "immutable_source_hash": "413d4414f80542e4535d4cac253343e524f6f1065610c30414040c387e768b04",
       "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "basal subpleural reticulation with traction change and stacked cystic honeycombing",
+      "key_visual_findings": "Usual Interstitial Pneumonia, the pathologic pattern underlying IPF: temporally and spatially heterogeneous fibrosis (old scars, recent injury, and normal lung side by side) with subpleural, lower-lobe-predominant honeycomb cystic change",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
@@ -33246,7 +33246,7 @@
       "immutable_source_hash": "bc3a96d46161400bacb49f0341b7996f96eef5d5fcda25b6d6b9560e9b9bafa1",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "alveolar septal inflammatory thickening with relative preservation of open air spaces",
+      "key_visual_findings": "Usual Interstitial Pneumonia, the pathologic pattern underlying IPF: temporally and spatially heterogeneous fibrosis (old scars, recent injury, and normal lung side by side) with subpleural, lower-lobe-predominant honeycomb cystic change",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -39115,7 +39115,7 @@
       "immutable_source_hash": "7927187b4ff26e3f04a7ef8fe0e7b5661470c81ec239270fff3dbb7e0a661340",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation",
+      "key_visual_findings": "the epithelial histologic subtype of mesothelioma: tubulopapillary or sheet-like malignant mesothelial cells, one of the three recognized subtypes (epithelial, sarcomatoid, biphasic)",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -39204,7 +39204,7 @@
       "immutable_source_hash": "91f67686bffe5c0007344c052119debed222642cc7cb459b654ad17f149dfb2f",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation",
+      "key_visual_findings": "the epithelial histologic subtype of mesothelioma: tubulopapillary or sheet-like malignant mesothelial cells, one of the three recognized subtypes (epithelial, sarcomatoid, biphasic)",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -40363,7 +40363,7 @@
       "immutable_source_hash": "ab699b8c6fb5f31e277f2d27adf528ae784172f93b3c31e82afe9bcf81b7aa15",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "Idiopathic Pulmonary Fibrosis: a clinical diagnosis of insidious, progressive fibrosing lung disease of unknown cause with a poor prognosis (~20% 5-year survival), typically in older smokers with dry cough and reduced DLco",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -40451,7 +40451,7 @@
       "immutable_source_hash": "1d3ea84d4b4946ac744bc1a46c382032c75b8792a221d899d5cb4d0e51258023",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "Idiopathic Pulmonary Fibrosis: a clinical diagnosis of insidious, progressive fibrosing lung disease of unknown cause with a poor prognosis (~20% 5-year survival), typically in older smokers with dry cough and reduced DLco",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -40626,7 +40626,7 @@
       "immutable_source_hash": "81e913c43d56059d86979f896f90f91d45ee69dfd8b0787195e9ab2185071824",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "Idiopathic Pulmonary Fibrosis: a clinical diagnosis of insidious, progressive fibrosing lung disease of unknown cause with a poor prognosis (~20% 5-year survival), typically in older smokers with dry cough and reduced DLco",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -42917,7 +42917,7 @@
       "immutable_source_hash": "02f8a0ecb0be12d84c33248fb2bf6c91470be1569b6ba2da25d758f5541064c0",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "Idiopathic Pulmonary Fibrosis: a clinical diagnosis of insidious, progressive fibrosing lung disease of unknown cause with a poor prognosis (~20% 5-year survival), typically in older smokers with dry cough and reduced DLco",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -44337,7 +44337,7 @@
       "immutable_source_hash": "adce17bccc61572cbd40a0b5a3a0304d8941d640cdad622e349a0c398c8ba60b",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "Idiopathic Pulmonary Fibrosis: a clinical diagnosis of insidious, progressive fibrosing lung disease of unknown cause with a poor prognosis (~20% 5-year survival), typically in older smokers with dry cough and reduced DLco",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -44426,7 +44426,7 @@
       "immutable_source_hash": "821ee45a7808ac1499ca3c66608dacbd9dbf145348c20c0330c4e88a4be0eb0e",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "Idiopathic Pulmonary Fibrosis: a clinical diagnosis of insidious, progressive fibrosing lung disease of unknown cause with a poor prognosis (~20% 5-year survival), typically in older smokers with dry cough and reduced DLco",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -44691,7 +44691,7 @@
       "immutable_source_hash": "84b20c04585a1d9b166ff116b23f2e9ec697630143e66861161e33db8235ee31",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "marked small-pulmonary-artery medial and intimal remodeling, with plexiform change in advanced disease",
+      "key_visual_findings": "medial hypertrophy and muscularization of pulmonary arteries with right ventricular hypertrophy/cor pulmonale, without the specific glomeruloid plexiform tuft described as its own finding",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -45142,7 +45142,7 @@
       "immutable_source_hash": "ea48609d44c38be9671ff519c8596efcabbdf842022589dbc107470380b305a6",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "marked small-pulmonary-artery medial and intimal remodeling, with plexiform change in advanced disease",
+      "key_visual_findings": "medial hypertrophy and muscularization of pulmonary arteries with right ventricular hypertrophy/cor pulmonale, without the specific glomeruloid plexiform tuft described as its own finding",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -45228,7 +45228,7 @@
       "immutable_source_hash": "aae572d9313cea92944c85cada05e3e1ffa94a44213d8b5809a188757ed93858",
       "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "marked small-pulmonary-artery medial and intimal remodeling, with plexiform change in advanced disease",
+      "key_visual_findings": "a discrete glomeruloid tuft of proliferating endothelial channels within a dilated, often thrombosed pulmonary arteriole -- the advanced Heath-Edwards histologic marker of pulmonary arterial hypertension",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
@@ -47617,7 +47617,7 @@
       "immutable_source_hash": "01db12fe528bc5cd22611f559bfbd2214f55be7ad28e4667bc262ed11eaefc4e",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "large tissue spherules containing numerous endospores",
+      "key_visual_findings": "multiple narrow-based buds radiating from a mother yeast in a pilot-wheel pattern",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -48233,7 +48233,7 @@
       "immutable_source_hash": "caecbb60e111676bb050e17e47300631df924a9c6e2277bb305553dc8454b3b4",
       "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "Idiopathic Pulmonary Fibrosis: a clinical diagnosis of insidious, progressive fibrosing lung disease of unknown cause with a poor prognosis (~20% 5-year survival), typically in older smokers with dry cough and reduced DLco",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
@@ -48673,7 +48673,7 @@
       "immutable_source_hash": "952458831fe11e96591412871c7c054844719b5ea3de8a75c06a7045cc67aa61",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "marked small-pulmonary-artery medial and intimal remodeling, with plexiform change in advanced disease",
+      "key_visual_findings": "medial hypertrophy and muscularization of pulmonary arteries with right ventricular hypertrophy/cor pulmonale, without the specific glomeruloid plexiform tuft described as its own finding",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -49630,7 +49630,7 @@
       "immutable_source_hash": "30d8ba7b99136073e51fe4061dcf2c7414440a9a387a75bcd1ae2f8466630b80",
       "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "alveolar septal inflammatory thickening with relative preservation of open air spaces",
+      "key_visual_findings": "Usual Interstitial Pneumonia, the pathologic pattern underlying IPF: temporally and spatially heterogeneous fibrosis (old scars, recent injury, and normal lung side by side) with subpleural, lower-lobe-predominant honeycomb cystic change",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {

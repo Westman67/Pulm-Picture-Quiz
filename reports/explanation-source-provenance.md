@@ -73,3 +73,85 @@ re-running a duplicate-clue scan (`feature_for()` applied to all 4 options of
 every question) to confirm the fix took effect, (4) re-running
 `scripts/validate_bank.py` (must show `PASS`) and the Node test suite (must
 show 17/17) before committing.
+
+## Comprehensive completion pass
+
+Following a user request to "complete all the answer explanations," a deeper
+audit was run beyond the live per-question duplicate scan: for all 365
+distinct concepts in the bank, every pair that resolves to the *same*
+auto-generated clue text was checked for whether it is also blocked from
+co-occurring as distractors via `CONCEPT_SYNONYM_GROUPS` (a "latent"
+duplicate -- one that hasn't shown up in the current question pool only by
+chance of topic/family bucketing, not because it's actually been resolved).
+This surfaced several real regex-ordering bugs and a large set of legitimate
+same-finding/different-label pairs that had not yet been merged. Also
+confirmed: 0 of 365 concepts fall through to the generic per-modality
+fallback text (every concept matches a specific `FEATURE_RULES` entry).
+
+### Regex-ordering bugs fixed (wrong text, unrelated to lecture content)
+
+- `paracoccidio` was being swallowed by the broader `coccidio` match, so
+  Paracoccidioidomycosis got the Coccidioides spherule description instead
+  of its own pilot-wheel budding description -- reordered.
+- `lymphoma` (mediastinal mass compressing the trachea) was being swallowed
+  by the generic `trachea` (normal anatomy) match for "Lymphoma Compressing
+  Trachea" -- reordered so the pathologic finding takes precedence over the
+  normal-anatomy label.
+- The UIP/honeycomb-specific rule added earlier in this pass was itself
+  being swallowed by the generic `interstitial pneumonia` catch-all because
+  it was positioned after it -- moved earlier so "Usual Interstitial
+  Pneumonia" resolves to the UIP-specific text rather than the generic
+  interstitial-pneumonia text.
+- A pre-existing `pulmonary arterial hypertension` rule (older, generic)
+  was intercepting both "Plexiform Lesion..." and bare "Pulmonary arterial
+  hypertension" before they could reach this pass's plexiform/PAH split;
+  removed the redundant rule and widened the generic PAH pattern to
+  `pulmonary (arterial )?hypertension` so it still catches the "arterial"
+  wording.
+- Kerley-B/interstitial-stage cardiogenic edema was sharing the generic
+  `cardiogenic|congestive heart failure|kerley` clue with alveolar-stage
+  cardiogenic edema despite "kerley" being in the pattern; split into two
+  rules (interstitial-stage vs alveolar-stage) using the CHF Stage
+  II (Kerley B) vs Stage III (alveolar) distinction already present in the
+  source image labels.
+
+### New lecture-grounded FEATURE_RULES splits
+
+| Concept(s) | Lecture source | Page(s) | Grounded fact used |
+|---|---|---|---|
+| Idiopathic Pulmonary Fibrosis (clinical) vs Usual Interstitial Pneumonia/honeycombing (pathologic) vs pleural cobblestoning vs drug-induced (bleomycin/amiodarone) fibrosis | P24 RLS | 60-66 | IPF = clinical term (insidious, progressive, ~20% 5-yr survival, older smokers). UIP = the "usual" pathologic pattern in IPF: temporally/spatially heterogeneous fibrosis (old scars + recent injury + normal lung coexisting), subpleural/lower-lobe honeycombing, cobblestone pleural surface. Drug-induced fibrosis (bleomycin/amiodarone) is listed as a *known*-cause category, distinct from IPF's definitionally *unknown* cause. |
+| Epithelioid vs sarcomatoid (spindle) mesothelioma | P26.1 RLS | 42 | 3 recognized histologic subtypes: epithelial, sarcomatoid/spindle, biphasic |
+
+### Synonym merges added this pass (same finding, no distinguishing content found)
+
+Lung mass/nodule/peripheral tumor/NSCLC/primary lung cancer variants; TB
+reactivation-pattern labels (cavitary/secondary/upper-lobe TB); Golden
+S sign / post-obstructive atelectasis variants; "normal lung" labels;
+generic ILD labels; ARDS/DAD labels; diaphragmatic hernia laterality
+variants; Cryptococcus stain-context labels; invasive fungal
+sinusitis/Aspergillus labels; pectus carinatum variants; lobar pneumonia
+(non-phase-specific) labels; normal airway/bronchus/bronchi; generic
+sarcoidosis labels; silicosis + progressive massive fibrosis (no PMF-specific
+lecture content found); bacterial pneumonia/CAP/lung consolidation; normal
+acinus; Ankylosing Spondylitis spine-context label; caseating granuloma
+labels; necrotizing pneumonia +/- effusion; sarcoid hilar/mediastinal
+adenopathy labels; bronchopneumonia extent labels; asbestosis +/- plaque
+descriptor; sarcoid asteroid body labels; acute asthma attack/asthma;
+Blastomyces yeast-form/blastomycosis; radiation damage regardless of
+underlying cancer treated; viral nuclear inclusions/viral pneumonia; central
+tumor/endobronchial tumor; pneumonia congestion-phase labels; remaining
+mesothelioma non-subtype-specific labels; nasal polyp labels regardless of
+associated condition (chronic rhinosinusitis, EGPA/Churg-Strauss, CF) --
+lecture (P33 RLS, Nasal Polyps slide) states the pathophysiology
+(chronic inflammation -> polypoid degeneration) is the same regardless of
+the associated systemic condition; Coccidioidomycosis wording variants;
+Trachea size-descriptor variants; TB-associated vs generic lymphadenopathy;
+Pulmonary (arterial) hypertension wording variants; Plexiform Lesion wording
+variants.
+
+### Result
+
+Live duplicate-clue questions: 0. Latent (not-yet-collided but
+un-synonym-linked) duplicate-clue clusters: 0. Concepts falling through to
+the generic per-modality fallback: 0 of 365. `validate_bank.py` PASS,
+17/17 tests pass, production build succeeds.
