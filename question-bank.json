@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "bank_id": "bank_3c0109c75c96",
-  "generated_at": "2026-09-16T22:53:59.966233-04:00",
+  "generated_at": "2026-09-16T23:10:46.630237-04:00",
   "mode": "pulmonary_visual_identification",
   "question_count": 544,
   "quality_review": {
@@ -239,7 +239,7 @@
       "options": [
         "Croup Steeple Sign",
         "Severe Laryngomalacia",
-        "Croup",
+        "Peritonsillar abscess",
         "Acute Epiglottitis"
       ],
       "correct_index": 3,
@@ -251,7 +251,7 @@
       "choice_rationales": [
         "Croup Steeple Sign would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Severe Laryngomalacia would instead show dynamic-appearing supraglottic collapse with an omega-shaped epiglottic configuration; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
-        "Croup would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
+        "Peritonsillar abscess would instead show a unilateral rim-enhancing peritonsillar collection with mass effect; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Correct: The displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue, supporting Acute Epiglottitis."
       ],
       "ground_truth_confidence": "high",
@@ -291,8 +291,8 @@
       "joint_images": false,
       "options": [
         "Croup",
-        "Croup Steeple Sign",
         "Peritonsillar abscess",
+        "Severe Laryngomalacia",
         "Acute Epiglottitis"
       ],
       "correct_index": 3,
@@ -303,8 +303,8 @@
       ],
       "choice_rationales": [
         "Croup would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
-        "Croup Steeple Sign would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Peritonsillar abscess would instead show a unilateral rim-enhancing peritonsillar collection with mass effect; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
+        "Severe Laryngomalacia would instead show dynamic-appearing supraglottic collapse with an omega-shaped epiglottic configuration; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Correct: The displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue, supporting Acute Epiglottitis."
       ],
       "ground_truth_confidence": "high",
@@ -1511,7 +1511,7 @@
       "options": [
         "Asbestos Related Pleural Plaques",
         "Anthracotic Pigment in Lung in Coal Worker's Pneumoconiosis",
-        "Asbestos Bodies",
+        "Amphibole asbestos fibers",
         "Asbestos body"
       ],
       "correct_index": 3,
@@ -1523,7 +1523,7 @@
       "choice_rationales": [
         "Asbestos Related Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows a golden-brown beaded ferruginous body with a translucent central fiber.",
         "Anthracotic Pigment in Lung in Coal Worker's Pneumoconiosis would instead show coarse black carbon pigment within macrophages and fibrotic pulmonary tissue; the displayed image shows a golden-brown beaded ferruginous body with a translucent central fiber.",
-        "Asbestos Bodies would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows a golden-brown beaded ferruginous body with a translucent central fiber.",
+        "Amphibole asbestos fibers would instead show straight, rigid needle-like mineral fibers rather than curled serpentine fibers; the displayed image shows a golden-brown beaded ferruginous body with a translucent central fiber.",
         "Correct: The displayed image shows a golden-brown beaded ferruginous body with a translucent central fiber, supporting Asbestos body."
       ],
       "ground_truth_confidence": "high",
@@ -10202,9 +10202,9 @@
       "joint_images": false,
       "options": [
         "Malignant Pleural Effusion",
-        "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal",
         "Parapneumonic effusion",
-        "Asbestos-related pleural plaque"
+        "Asbestos-related pleural plaque",
+        "Empyema"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -10214,9 +10214,9 @@
       ],
       "choice_rationales": [
         "Correct: The displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis, supporting Malignant Pleural Effusion.",
-        "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
         "Parapneumonic effusion would instead show pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
-        "Asbestos-related pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis."
+        "Asbestos-related pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
+        "Empyema would instead show a loculated pleural fluid collection with pleural thickening or a lentiform contour; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -10256,7 +10256,7 @@
       "options": [
         "Asbestos Related Pleural Plaques",
         "Pleural effusion",
-        "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal",
+        "Tension Pneumothorax",
         "Malignant pleural mesothelioma"
       ],
       "correct_index": 3,
@@ -10268,7 +10268,7 @@
       "choice_rationales": [
         "Asbestos Related Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
         "Pleural effusion would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
-        "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
+        "Tension Pneumothorax would instead show a visceral pleural line with absent peripheral lung markings and increased lucency; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
         "Correct: The displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation, supporting Malignant pleural mesothelioma."
       ],
       "ground_truth_confidence": "high",
@@ -12377,7 +12377,7 @@
         "Parapneumonic Effusion",
         "Parietal Pleural Plaques",
         "Pleural Effusion from Pulmonary Embolism",
-        "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal"
+        "Empyema"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -12389,7 +12389,7 @@
         "Correct: The displayed image shows pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated, supporting Parapneumonic Effusion.",
         "Parietal Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated.",
         "Pleural Effusion from Pulmonary Embolism would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated.",
-        "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated."
+        "Empyema would instead show a loculated pleural fluid collection with pleural thickening or a lentiform contour; the displayed image shows pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -12535,8 +12535,8 @@
       "options": [
         "Parietal Pleural Plaques",
         "Malignant Left Pleural Effusion",
-        "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal",
-        "Empyema eith air from gas producing organisms"
+        "Empyema eith air from gas producing organisms",
+        "Parapneumonic Effusion"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -12547,8 +12547,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques, supporting Parietal Pleural Plaques.",
         "Malignant Left Pleural Effusion would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
-        "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
-        "Empyema eith air from gas producing organisms would instead show a loculated pleural fluid collection with pleural thickening or a lentiform contour; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques."
+        "Empyema eith air from gas producing organisms would instead show a loculated pleural fluid collection with pleural thickening or a lentiform contour; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
+        "Parapneumonic Effusion would instead show pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -18843,7 +18843,7 @@
         "Tension Pneumothorax",
         "Bilateral calcified asbestos-related pleural plaques",
         "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal",
-        "Malignant Pleural Effusion"
+        "Necrotizing pneumonia with pleural effusion"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -18855,7 +18855,7 @@
         "Correct: The displayed image shows a visceral pleural line with absent peripheral lung markings and increased lucency, supporting Tension Pneumothorax.",
         "Bilateral calcified asbestos-related pleural plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows a visceral pleural line with absent peripheral lung markings and increased lucency.",
         "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows a visceral pleural line with absent peripheral lung markings and increased lucency.",
-        "Malignant Pleural Effusion would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows a visceral pleural line with absent peripheral lung markings and increased lucency."
+        "Necrotizing pneumonia with pleural effusion would instead show consolidation containing cavitation or nonenhancing necrotic parenchyma; the displayed image shows a visceral pleural line with absent peripheral lung markings and increased lucency."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -20538,8 +20538,8 @@
       "options": [
         "Asbestos Body",
         "Asbestosis",
-        "Asbestos Bodies",
-        "Amphibole asbestos fibers"
+        "Amphibole asbestos fibers",
+        "Asbestos-related pleural plaque"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -20550,8 +20550,8 @@
       "choice_rationales": [
         "Asbestos Body would instead show a golden-brown beaded ferruginous body with a translucent central fiber; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
         "Correct: The displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques, supporting Asbestosis.",
-        "Asbestos Bodies would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
-        "Amphibole asbestos fibers would instead show straight, rigid needle-like mineral fibers rather than curled serpentine fibers; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques."
+        "Amphibole asbestos fibers would instead show straight, rigid needle-like mineral fibers rather than curled serpentine fibers; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
+        "Asbestos-related pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -22818,7 +22818,7 @@
         "Peritonsillar abscess",
         "Croup Steeple Sign",
         "Epiglottitis (thumb sign)",
-        "Croup"
+        "Severe Laryngomalacia"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -22830,7 +22830,7 @@
         "Peritonsillar abscess would instead show a unilateral rim-enhancing peritonsillar collection with mass effect; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Croup Steeple Sign would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Correct: The displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue, supporting Epiglottitis (thumb sign).",
-        "Croup would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue."
+        "Severe Laryngomalacia would instead show dynamic-appearing supraglottic collapse with an omega-shaped epiglottic configuration; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -23719,7 +23719,7 @@
         "Asbestos-related calcified pleural plaque",
         "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal",
         "Parapneumonic effusion",
-        "Right Pleural Effusion"
+        "Necrotizing pneumonia with pleural effusion"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -23731,7 +23731,7 @@
         "Asbestos-related calcified pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
         "Correct: The displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis, supporting Left Sided Pleural Effusion in Malignant Mesothelioma Frontal.",
         "Parapneumonic effusion would instead show pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
-        "Right Pleural Effusion would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis."
+        "Necrotizing pneumonia with pleural effusion would instead show consolidation containing cavitation or nonenhancing necrotic parenchyma; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -26475,7 +26475,7 @@
         "Asbestos Body",
         "Asbestosis",
         "Chrysotile asbestos fibers",
-        "Asbestos Bodies"
+        "Asbestos Related Pleural Plaques"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -26487,7 +26487,7 @@
         "Asbestos Body would instead show a golden-brown beaded ferruginous body with a translucent central fiber; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
         "Correct: The displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques, supporting Asbestosis.",
         "Chrysotile asbestos fibers would instead show curled, flexible serpentine mineral fibers rather than straight rigid amphibole fibers; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
-        "Asbestos Bodies would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques."
+        "Asbestos Related Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -27746,7 +27746,7 @@
       "options": [
         "Bilateral calcified asbestos-related pleural plaques",
         "Necrotizing pneumonia with pleural effusion",
-        "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal",
+        "Empyema",
         "Pleural Effusion and Passive Atelectasis"
       ],
       "correct_index": 3,
@@ -27758,7 +27758,7 @@
       "choice_rationales": [
         "Bilateral calcified asbestos-related pleural plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
         "Necrotizing pneumonia with pleural effusion would instead show consolidation containing cavitation or nonenhancing necrotic parenchyma; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
-        "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
+        "Empyema would instead show a loculated pleural fluid collection with pleural thickening or a lentiform contour; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
         "Correct: The displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis, supporting Pleural Effusion and Passive Atelectasis."
       ],
       "ground_truth_confidence": "high",
@@ -27851,8 +27851,8 @@
       "joint_images": false,
       "options": [
         "Pleural Effusion and Passive Atelectasis",
-        "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal",
         "Parapneumonic effusion",
+        "Empyema eith air from gas producing organisms",
         "Pneumothorax"
       ],
       "correct_index": 3,
@@ -27863,8 +27863,8 @@
       ],
       "choice_rationales": [
         "Pleural Effusion and Passive Atelectasis would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows a visceral pleural line with absent peripheral lung markings and increased lucency.",
-        "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows a visceral pleural line with absent peripheral lung markings and increased lucency.",
         "Parapneumonic effusion would instead show pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated; the displayed image shows a visceral pleural line with absent peripheral lung markings and increased lucency.",
+        "Empyema eith air from gas producing organisms would instead show a loculated pleural fluid collection with pleural thickening or a lentiform contour; the displayed image shows a visceral pleural line with absent peripheral lung markings and increased lucency.",
         "Correct: The displayed image shows a visceral pleural line with absent peripheral lung markings and increased lucency, supporting Pneumothorax."
       ],
       "ground_truth_confidence": "high",
