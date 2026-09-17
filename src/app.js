@@ -17,7 +17,7 @@ import {
   setQualityFlagStatus,
   toggleMarked,
   upsertQualityFlag,
-} from "./quiz-core.mjs?v=rename-add-20260917l";
+} from "./quiz-core.mjs?v=rename-add-20260917m";
 
 const app = document.querySelector("#app");
 const state = {
@@ -726,8 +726,8 @@ window.addEventListener("keydown", (event) => {
 async function init() {
   try {
     const [bank, reviewQueue] = await Promise.all([
-      fetch("data/question-bank.json?v=rename-add-20260917l").then((response) => response.json()),
-      fetch("data/review-queue.json?v=rename-add-20260917l").then((response) => response.json()),
+      fetch("data/question-bank.json?v=rename-add-20260917m").then((response) => response.json()),
+      fetch("data/review-queue.json?v=rename-add-20260917m").then((response) => response.json()),
     ]);
     state.bank = applyImageCategories(bank);
     state.reviewQueue = reviewQueue;

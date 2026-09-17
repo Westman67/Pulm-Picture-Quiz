@@ -146,7 +146,12 @@ export function reconcileQualityFlags(value, qualityReview) {
 export function progressMatches(question, progress, stateFilter) {
   const item = progress.questions?.[question.question_id] || {};
   if (stateFilter === "unseen") return !item.times_answered;
-  if (stateFilter === "incorrect") return (item.incorrect_count || 0) > 0;
+  // "Previously incorrect" tracks the MOST RECENT attempt, not a lifetime tally: a question
+  // answered wrong stays on the list (and stays on it if missed again), a question answered
+  // wrong then later answered right drops off, and a question answered right then later missed
+  // is added back -- last_result is updated on every bump()/unbumpToCorrect() call, so this
+  // always reflects the latest outcome rather than accumulating forever.
+  if (stateFilter === "incorrect") return item.last_result === "incorrect";
   if (stateFilter === "marked") return progress.marked?.includes(question.question_id);
   return true;
 }

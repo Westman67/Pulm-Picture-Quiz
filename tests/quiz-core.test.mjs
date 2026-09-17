@@ -14,6 +14,7 @@ import {
   normalizeProgress,
   overrideAnswer,
   prepareQuestion,
+  progressMatches,
   reconcileQualityFlags,
   rationaleVisible,
   scoreAnswers,
@@ -101,7 +102,7 @@ test("option randomization keeps rationales and key aligned", () => {
 
 test("session selection is deterministic and respects filters and requested length", () => {
   let progress = emptyProgress();
-  progress.questions[questions[0].question_id] = { times_answered: 1, incorrect_count: 1 };
+  progress.questions[questions[0].question_id] = { times_answered: 1, incorrect_count: 1, last_result: "incorrect" };
   progress.marked = [questions[1].question_id];
   const config = { mode: "learn", category: "all", stateFilter: "all", length: 20 };
   const one = createSession(questions, config, progress, 12345);
@@ -201,6 +202,38 @@ test("Keanne Button overrides a locked incorrect answer to correct without distu
   const rescored = scoreAnswers([q1], { [q1.question_id]: overridden });
   assert.equal(rescored.correct, 1);
   assert.equal(rescored.incorrect, 0);
+});
+
+test("\"Previously incorrect\" tracks the most recent attempt, not a lifetime tally", () => {
+  const question = prepareQuestion(questions[0], 4);
+  const wrongIndex = (question.correct_index + 1) % 4;
+
+  // Miss it: shows up as previously incorrect.
+  let progress = emptyProgress();
+  let answer = lockAnswer(question, null, wrongIndex);
+  progress = applyAnswerToProgress(progress, question, answer);
+  assert.equal(progressMatches(question, progress, "incorrect"), true);
+
+  // Miss it again: still on the list, not duplicated or dropped.
+  answer = lockAnswer(question, null, wrongIndex);
+  progress = applyAnswerToProgress(progress, question, answer);
+  assert.equal(progressMatches(question, progress, "incorrect"), true);
+  assert.equal(progress.questions[question.question_id].incorrect_count, 2);
+
+  // Get it right: drops off the incorrect list.
+  answer = lockAnswer(question, null, question.correct_index);
+  progress = applyAnswerToProgress(progress, question, answer);
+  assert.equal(progressMatches(question, progress, "incorrect"), false);
+
+  // Get it wrong again later: reappears on the list even though it was once correct.
+  answer = lockAnswer(question, null, wrongIndex);
+  progress = applyAnswerToProgress(progress, question, answer);
+  assert.equal(progressMatches(question, progress, "incorrect"), true);
+
+  // The Keanne Button overriding a miss to correct also clears it from the list.
+  const overridden = overrideAnswer(answer);
+  progress = applyOverrideToProgress(progress, question, overridden);
+  assert.equal(progressMatches(question, progress, "incorrect"), false);
 });
 
 test("unanswered questions remain navigable and count separately in the final score", () => {
