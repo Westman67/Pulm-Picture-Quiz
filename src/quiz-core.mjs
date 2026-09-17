@@ -209,6 +209,20 @@ export function rationaleVisible(mode, submitted, examComplete) {
   return mode === "learn" ? Boolean(submitted) : Boolean(examComplete);
 }
 
+// The "Keanne Button": lets the learner flip a locked, incorrect answer to
+// correct when they judge the miss was not a real knowledge gap (a typo tap,
+// an ambiguous option wording, etc). Only ever moves incorrect -> correct,
+// never the reverse, and never touches an answer that isn't locked yet.
+export function overrideAnswer(answer) {
+  if (!answer?.locked || answer.correct) return answer;
+  return {
+    ...answer,
+    correct: true,
+    overridden: true,
+    overridden_at: new Date().toISOString(),
+  };
+}
+
 function bump(record, correct, now) {
   return {
     times_seen: (record?.times_seen || 0) + 1,
@@ -227,6 +241,33 @@ export function applyAnswerToProgress(progressValue, question, answer) {
   next.questions[question.question_id] = bump(next.questions[question.question_id], answer.correct, now);
   next.source_groups[question.source_group_id] = bump(next.source_groups[question.source_group_id], answer.correct, now);
   next.concepts[question.tested_concept] = bump(next.concepts[question.tested_concept], answer.correct, now);
+  next.updated_at = now;
+  return next;
+}
+
+function unbumpToCorrect(record, now) {
+  const base = record || { times_seen: 1, times_answered: 1, correct_count: 0, incorrect_count: 1 };
+  return {
+    ...base,
+    correct_count: (base.correct_count || 0) + 1,
+    incorrect_count: Math.max(0, (base.incorrect_count || 0) - 1),
+    last_result: "correct",
+    last_answered_at: now,
+  };
+}
+
+// Adjusts the same three progress buckets applyAnswerToProgress() updates,
+// but as a correction to an already-recorded answer rather than a new
+// attempt: correct_count/incorrect_count move by one and last_result flips,
+// while times_seen/times_answered are left untouched since no new attempt
+// happened.
+export function applyOverrideToProgress(progressValue, question, answer) {
+  const progress = normalizeProgress(progressValue);
+  const now = answer.overridden_at || new Date().toISOString();
+  const next = structuredClone(progress);
+  next.questions[question.question_id] = unbumpToCorrect(next.questions[question.question_id], now);
+  next.source_groups[question.source_group_id] = unbumpToCorrect(next.source_groups[question.source_group_id], now);
+  next.concepts[question.tested_concept] = unbumpToCorrect(next.concepts[question.tested_concept], now);
   next.updated_at = now;
   return next;
 }

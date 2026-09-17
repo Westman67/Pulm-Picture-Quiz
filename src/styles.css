@@ -135,6 +135,8 @@ select { width: 100%; padding: 12px 38px 12px 13px; background: #fff; border: 1p
 .choice.selected { border-color: var(--teal); background: #eff9f7; box-shadow: inset 0 0 0 1px var(--teal); }
 .choice.correct { border-color: var(--correct); background: #edf8f1; }
 .choice.incorrect { border-color: var(--incorrect); background: #fff1f0; }
+.choice.overridden { border-color: var(--amber); background: #fdf3e3; }
+.choice.overridden .choice-number { background: var(--amber); color: white; }
 .choice-number { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: #eef2f4; font-weight: 800; font-size: 12px; }
 .choice.selected .choice-number { background: var(--teal); color: white; }
 .choice.correct .choice-number { background: var(--correct); color: white; }
@@ -150,6 +152,13 @@ kbd { margin-left: 9px; padding: 2px 5px; border-radius: 4px; background: rgba(2
 .feedback { margin-top: 15px; padding: 18px; border-radius: 14px; border: 1px solid; background: white; }
 .feedback.is-correct { border-color: #a8d9bd; }
 .feedback.is-incorrect { border-color: #ebbbb7; }
+.feedback.is-overridden { border-color: var(--amber); }
+.feedback.is-overridden .feedback-title > span { background: var(--amber); }
+.override-note { margin: 0 0 6px; font-size: 12px; font-weight: 700; color: var(--amber); }
+.override-row { margin-top: 16px; padding-top: 14px; border-top: 1px dashed var(--line); display: grid; gap: 6px; }
+.keanne-button { justify-self: start; border-color: var(--amber); color: var(--amber); }
+.keanne-button:hover { background: #fdf3e3; }
+.override-hint { margin: 0; font-size: 12px; color: var(--muted); }
 .feedback-title { display: flex; gap: 11px; align-items: center; }
 .feedback-title > span { width: 35px; height: 35px; display: grid; place-items: center; border-radius: 50%; color: white; font-weight: 900; font-size: 19px; }
 .is-correct .feedback-title > span { background: var(--correct); }

@@ -2,12 +2,14 @@ import {
   QUALITY_FLAGS_STORAGE_KEY,
   STORAGE_KEY,
   applyAnswerToProgress,
+  applyOverrideToProgress,
   createSession,
   emptyQualityFlags,
   emptyProgress,
   lockAnswer,
   normalizeQualityFlags,
   normalizeProgress,
+  overrideAnswer,
   progressMatches,
   reconcileQualityFlags,
   rationaleVisible,
@@ -15,7 +17,7 @@ import {
   setQualityFlagStatus,
   toggleMarked,
   upsertQualityFlag,
-} from "./quiz-core.mjs?v=rename-add-20260917k";
+} from "./quiz-core.mjs?v=rename-add-20260917l";
 
 const app = document.querySelector("#app");
 const state = {
@@ -367,9 +369,11 @@ function qualityFlagTemplate(question, existing) {
 function choiceTemplate(question, option, index, answer, reveal) {
   const selected = currentSelection() === index;
   const correct = reveal && index === question.correct_index;
+  const overridden = reveal && answer?.selected_index === index && answer?.overridden;
   const incorrect = reveal && answer?.selected_index === index && !answer.correct;
-  const classes = ["choice", selected ? "selected" : "", correct ? "correct" : "", incorrect ? "incorrect" : ""].filter(Boolean).join(" ");
-  return `<button class="${classes}" data-action="choose" data-index="${index}" role="radio" aria-checked="${selected}" ${answer?.locked ? "disabled" : ""}><span class="choice-number">${index + 1}</span><span>${escapeHtml(option)}</span>${correct ? '<span class="choice-status">Correct</span>' : incorrect ? '<span class="choice-status">Your answer</span>' : ""}</button>`;
+  const classes = ["choice", selected ? "selected" : "", correct ? "correct" : "", overridden ? "overridden" : "", incorrect ? "incorrect" : ""].filter(Boolean).join(" ");
+  const status = correct ? "Correct" : overridden ? "Marked correct (Keanne Button)" : incorrect ? "Your answer" : "";
+  return `<button class="${classes}" data-action="choose" data-index="${index}" role="radio" aria-checked="${selected}" ${answer?.locked ? "disabled" : ""}><span class="choice-number">${index + 1}</span><span>${escapeHtml(option)}</span>${status ? `<span class="choice-status">${status}</span>` : ""}</button>`;
 }
 
 function sourceDetailsTemplate(question) {
@@ -388,12 +392,20 @@ function feedbackTemplate(question, answer, reveal) {
     if (state.session.mode === "exam" && answer?.locked) return `<div class="exam-lock-note">Answer locked. Feedback will be available when the exam is complete.</div>`;
     return "";
   }
-  return `<section class="feedback ${answer.correct ? "is-correct" : "is-incorrect"}">
-    <div class="feedback-title"><span>${answer.correct ? "✓" : "×"}</span><div><p>${answer.correct ? "Correct" : "Not quite"}</p><strong>${escapeHtml(question.options[question.correct_index])}</strong></div></div>
+  const canOverride = !answer.correct;
+  const statusLabel = answer.overridden ? "Correct (overridden)" : answer.correct ? "Correct" : "Not quite";
+  const overrideNote = answer.overridden ? `<p class="override-note">Marked correct via the Keanne Button.</p>` : "";
+  const overrideButton = canOverride
+    ? `<div class="override-row"><button class="secondary keanne-button" type="button" data-action="keanne-override">Keanne Button</button><p class="override-hint">Got it wrong for a dumb reason but you were actually right? Use the Keanne Button to mark it correct.</p></div>`
+    : "";
+  return `<section class="feedback ${answer.correct ? "is-correct" : "is-incorrect"} ${answer.overridden ? "is-overridden" : ""}">
+    <div class="feedback-title"><span>${answer.correct ? "✓" : "×"}</span><div><p>${statusLabel}</p><strong>${escapeHtml(question.options[question.correct_index])}</strong></div></div>
+    ${overrideNote}
     <p>${escapeHtml(question.explanation)}</p>
     <div class="clue-box"><strong>What to notice</strong><ul>${question.visual_clues.map((clue) => `<li>${escapeHtml(capitalizeFirst(clue))}</li>`).join("")}</ul></div>
     <div class="rationale-list"><h3>Choice rationales</h3>${question.options.map((option, index) => `<article class="rationale ${index === question.correct_index ? "keyed" : ""} ${index === answer.selected_index ? "selected-rationale" : ""}"><div><span>${index + 1}</span><strong>${escapeHtml(option)}</strong>${index === question.correct_index ? "<em>Keyed</em>" : ""}${index === answer.selected_index ? "<em>Your choice</em>" : ""}</div><p>${escapeHtml(question.choice_rationales[index])}</p></article>`).join("")}</div>
     ${sourceDetailsTemplate(question)}
+    ${overrideButton}
   </section>`;
 }
 
@@ -489,6 +501,21 @@ function submitAnswer() {
     const message = document.querySelector("#answer-error");
     if (message) message.textContent = error.message;
   }
+}
+
+// The "Keanne Button": the learner marks a missed answer as correct after
+// the fact (e.g. the wording was ambiguous, or they mistapped). Only valid
+// on a locked, currently-incorrect answer; overrideAnswer() is a no-op
+// otherwise.
+function overrideCurrentAnswer() {
+  const question = currentQuestion();
+  const answer = currentAnswer();
+  if (!question || !answer?.locked || answer.correct) return;
+  const overridden = overrideAnswer(answer);
+  state.answers[question.question_id] = overridden;
+  state.progress = applyOverrideToProgress(state.progress, question, overridden);
+  saveProgress();
+  render();
 }
 
 function nextQuestion() {
@@ -641,6 +668,7 @@ app.addEventListener("click", (event) => {
   if (action === "review") setView("review");
   if (action === "choose" && !currentAnswer()?.locked) { state.drafts[currentQuestion().question_id] = Number(target.dataset.index); render(); }
   if (action === "submit") submitAnswer();
+  if (action === "keanne-override") overrideCurrentAnswer();
   if (action === "next") nextQuestion();
   if (action === "previous") previousQuestion();
   if (action === "toggle-flag") {
@@ -698,8 +726,8 @@ window.addEventListener("keydown", (event) => {
 async function init() {
   try {
     const [bank, reviewQueue] = await Promise.all([
-      fetch("data/question-bank.json?v=rename-add-20260917k").then((response) => response.json()),
-      fetch("data/review-queue.json?v=rename-add-20260917k").then((response) => response.json()),
+      fetch("data/question-bank.json?v=rename-add-20260917l").then((response) => response.json()),
+      fetch("data/review-queue.json?v=rename-add-20260917l").then((response) => response.json()),
     ]);
     state.bank = applyImageCategories(bank);
     state.reviewQueue = reviewQueue;

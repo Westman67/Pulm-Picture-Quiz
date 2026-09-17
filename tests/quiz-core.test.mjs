@@ -5,12 +5,14 @@ import {
   PROGRESS_SCHEMA_VERSION,
   QUALITY_FLAGS_SCHEMA_VERSION,
   applyAnswerToProgress,
+  applyOverrideToProgress,
   createSession,
   emptyQualityFlags,
   emptyProgress,
   lockAnswer,
   normalizeQualityFlags,
   normalizeProgress,
+  overrideAnswer,
   prepareQuestion,
   reconcileQualityFlags,
   rationaleVisible,
@@ -164,6 +166,41 @@ test("scoring and progress update question, source group, and concept", () => {
   assert.equal(updated.questions[q1.question_id].correct_count, 1);
   assert.equal(updated.source_groups[q1.source_group_id].correct_count, 1);
   assert.equal(updated.concepts[q1.tested_concept].correct_count, 1);
+});
+
+test("Keanne Button overrides a locked incorrect answer to correct without disturbing the original selection", () => {
+  const q1 = prepareQuestion(questions[0], 4);
+  const wrongIndex = (q1.correct_index + 1) % 4;
+  const wrongAnswer = lockAnswer(q1, null, wrongIndex);
+  assert.equal(wrongAnswer.correct, false);
+
+  const overridden = overrideAnswer(wrongAnswer);
+  assert.equal(overridden.correct, true);
+  assert.equal(overridden.overridden, true);
+  assert.equal(overridden.selected_index, wrongIndex);
+  assert.ok(overridden.overridden_at);
+
+  // Overriding an already-correct answer, or an unlocked answer, is a no-op.
+  const rightAnswer = lockAnswer(prepareQuestion(questions[1], 4), null, questions[1].correct_index);
+  assert.strictEqual(overrideAnswer(rightAnswer), rightAnswer);
+  assert.strictEqual(overrideAnswer(null), null);
+
+  const baseProgress = applyAnswerToProgress(emptyProgress(), q1, wrongAnswer);
+  assert.equal(baseProgress.questions[q1.question_id].incorrect_count, 1);
+  assert.equal(baseProgress.questions[q1.question_id].correct_count, 0);
+  assert.equal(baseProgress.questions[q1.question_id].times_answered, 1);
+
+  const adjusted = applyOverrideToProgress(baseProgress, q1, overridden);
+  assert.equal(adjusted.questions[q1.question_id].correct_count, 1);
+  assert.equal(adjusted.questions[q1.question_id].incorrect_count, 0);
+  assert.equal(adjusted.questions[q1.question_id].times_answered, 1, "override corrects a scored attempt, it is not a new attempt");
+  assert.equal(adjusted.questions[q1.question_id].last_result, "correct");
+  assert.equal(adjusted.source_groups[q1.source_group_id].correct_count, 1);
+  assert.equal(adjusted.concepts[q1.tested_concept].correct_count, 1);
+
+  const rescored = scoreAnswers([q1], { [q1.question_id]: overridden });
+  assert.equal(rescored.correct, 1);
+  assert.equal(rescored.incorrect, 0);
 });
 
 test("unanswered questions remain navigable and count separately in the final score", () => {
