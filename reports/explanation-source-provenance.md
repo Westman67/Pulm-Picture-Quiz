@@ -352,35 +352,42 @@ Following the comprehensive completion pass above, a systematic audit was run ag
 | `pulmonary contusion` | P0 USMLE Content | 2 |
 | `vocal cord nodule` | P33 Enriched | 25 |
 
+### Confirmed via Pulm Vault study notes (further extended pass)
+
+A further extended pass searched the Pulm Vault Obsidian notes (`Desktop/Pulm Vault/Pulm Vault/Pulmonary/`, 186 markdown files: one "Detailed Notes" file per lecture plus topic/concept study-guide files). These are the user's own study notes derived from the lecture material, not the raw lecture PDFs themselves, so they are listed in a separate table rather than merged into the RLS/Tran citation table above. 15 of the remaining 26 gaps were located and confirmed here.
+
+| FEATURE_RULES pattern | Vault source | What it confirms |
+|---|---|---|
+| `amphibole asbestos` | Pulm Vault: Pulmonary/Lecture/P24 - Detailed Notes.md | "Amphibole fibers are rod-shaped and more fibrogenic than serpentine/chrysotile fibers" |
+| `calcified pulmonary nodule` | Pulm Vault: Pulmonary/Lecture/P26 - Detailed Notes.md | hamartoma "popcorn" calcification; benign calcification patterns discussion (P27 - Detailed Notes.md) |
+| `caseating granuloma` | Pulm Vault: Pulmonary/Lecture/P26 - Detailed Notes.md | "central zone of caseous necrosis...peripheral zone of activated epithelioid macrophages...Langhans multinucleated giant cells" |
+| `cavitary pulmonary tuberculosis` | Pulm Vault: Pulmonary/Lecture/P27 - Detailed Notes.md | cavitary-lesion/abscess and reactivation-TB differential discussion |
+| `chrysotile asbestos` | Pulm Vault: Pulmonary/Lecture/P24 - Detailed Notes.md | same line -- "chrysotile accounts for about 90% of exposure" (serpentine fiber) |
+| `lymph node sarcoid` | Pulm Vault: Pulmonary/Lecture/P24 - Detailed Notes.md | "Sarcoid is multisystemic (lung, skin, eye, heart, nodes, spleen, nervous system)" |
+| `multinucleated giant cells` | Pulm Vault: Pulmonary/Lecture/P26 - Detailed Notes.md | necrotizing granuloma anatomy incl. "Langhans multinucleated giant cells" |
+| `multiple small pulmonary nodules` | Pulm Vault: Pulmonary/Lecture/P39 - Detailed Notes.md | "Miliary tuberculosis: innumerable tiny diffuse nodules" |
+| `nodular lung filling` | Pulm Vault: Pulmonary/Lecture/P18 - Detailed Notes.md | "Diffuse micronodules \| Miliary pattern such as hematogenous tuberculosis" |
+| `noncaseating granuloma` | Pulm Vault: Pulmonary/Lecture/P24 - Detailed Notes.md | "well-formed compact non-necrotizing granulomas" (sarcoidosis) |
+| `pleural cobbleston` | Pulm Vault: Pulmonary/Lecture/P24 - Detailed Notes.md | "nodular/lumpy cobblestone appearance of the visceral pleura" |
+| `pulmonary alveolus with alveolar macrophages` | Pulm Vault: Pulmonary/Lecture/P1 - Detailed Notes.md | "Alveolar macrophages are also called dust cells"; normal BAL is macrophage-predominant |
+| `recent thromboembol` | Pulm Vault: Pulmonary/Lecture/P26 - Detailed Notes.md | peripheral thromboemboli histology: partial occlusion with organizing thrombus/recanalization vs. antemortem thrombus |
+| `right lung agenesis\|lung agenesis` | Pulm Vault: Pulmonary/Lecture/P36 - Detailed Notes.md | agenesis-vs-aplasia table: "Volume loss on affected side...contralateral hyperinflation" |
+| `spleen sarcoid` | Pulm Vault: Pulmonary/Lecture/P24 - Detailed Notes.md | same multisystemic-sarcoid line |
+
 ### Not found in the searched RLS/Tran corpus (open gaps)
 
-These rule patterns were searched across the original 98-file RLS/Tran corpus and, in an extended pass, a further 89 non-RLS/Tran lecture files (full Lecture Slides decks, Enriched decks, case-review PDFs, notes, and the USMLE content outline -- effectively the full `Desktop/Pulm/Lectures/` folder). 11 of the original 37 gaps were located in that extended search and moved into the confirmed table above (several under a related lecture term, e.g. "vocal cord nodule" -> the lecture's "vocal fold nodule"). The following 26 still do not appear anywhere in the full lecture folder searched. Their text is the generator's own morphologic/radiographic phrasing (consistent with general pathology/radiology teaching, e.g. Robbins-level descriptions used elsewhere in this course) rather than content located in any lecture file. Per the citation requirement, these remain flagged as **unverified against lecture material**.
+These rule patterns were searched across the original 98-file RLS/Tran corpus, an extended pass over the remaining 89 non-RLS/Tran lecture files, and a further extended pass over the 186-file Pulm Vault study notes (see above) -- effectively every lecture-derived text source available for this course. The following 11 still do not appear in any of those sources. Their text is the generator's own morphologic/radiographic phrasing (consistent with general pathology/radiology teaching, e.g. Robbins-level descriptions used elsewhere in this course) rather than content located in any lecture-derived source searched. Per the citation requirement, these remain flagged as **unverified against lecture material**.
 
 | FEATURE_RULES pattern | Text |
 |---|---|
-| `amphibole asbestos` | straight, rigid needle-like mineral fibers rather than curled serpentine fibers |
 | `bronchioloalveolar carcinoma` | neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern |
-| `calcified pulmonary nodule` | a sharply marginated pulmonary nodule containing dense central or laminated calcification |
-| `caseating granuloma` | central granular caseous necrosis rimmed by epithelioid histiocytes and Langhans-type giant cells |
-| `cavitary pulmonary tuberculosis` | upper-lung cavitary destructive opacity with surrounding fibrotic or infiltrative change |
 | `cavitating pneumonia` | air-space consolidation containing a thick-walled cavity or abscess |
-| `chrysotile asbestos` | curled, flexible serpentine mineral fibers rather than straight rigid amphibole fibers |
 | `compression atelectasis` | passive lung collapse immediately adjacent to pleural air or fluid |
 | `diaphragmatic rupture` | intrathoracic abdominal viscera with mediastinal displacement through a disrupted hemidiaphragm |
 | `healed fibrocalcific granuloma` | a densely fibrotic old granuloma containing central dystrophic calcification |
 | `interstitial lung filling` | reticular or linear opacity involving the supporting interstitium |
-| `lymph node sarcoid` | non-necrotizing granulomatous replacement of nodal architecture on lymph node biopsy |
-| `multinucleated giant cells` | large fused histiocytes containing numerous nuclei within an organized granulomatous reaction |
-| `multiple small pulmonary nodules` | numerous discrete small rounded opacities distributed through both lungs |
 | `near normal lung filling` | preserved lung lucency without a dominant alveolar, interstitial, or nodular filling pattern |
-| `nodular lung filling` | multiple discrete rounded pulmonary opacities rather than confluent air-space disease |
-| `noncaseating granuloma` | a compact collection of epithelioid histiocytes and multinucleated giant cells without central caseous necrosis |
 | `normal pulmonary alveoli` | delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction |
-| `pleural cobbleston` | a cobblestone-appearing pleural surface, the gross correlate of underlying honeycomb parenchymal remodeling |
-| `pulmonary alveolus with alveolar macrophages` | large macrophages lying freely within otherwise thin-walled alveolar spaces |
 | `radiation damage` | sharply geographic consolidation or fibrosis conforming to a prior radiation field |
-| `recent thromboembol` | a fresh occlusive thrombus with preserved red-cell and fibrin laminations but no mature recanalization |
-| `right lung agenesis\|lung agenesis` | absence of the right lung with ipsilateral volume loss and compensatory hyperinflation of the left lung |
 | `rml silhouette\|lingula silhouette` | silhouetting (loss of the sharp border) of the heart, since RML/lingula disease abuts and effaces the cardiac silhouette |
-| `spleen sarcoid` | non-necrotizing granulomas within splenic parenchyma, reflecting extrapulmonary sarcoid organ involvement beyond the lung |
 | `alveolar lung filling` | fluffy confluent air-space opacities with indistinct margins and possible air bronchograms |
