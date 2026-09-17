@@ -823,6 +823,7 @@ CONCEPT_SYNONYM_GROUPS: list[set[str]] = [
         "ards hyaline membranes",
         "hyaline membranes in ards",
         "ards intraalveolar hyaline membranes",
+        "neonatal respiratory distress syndrome hyaline membranes",
     },
     {
         "large cell lung carcinoma",
@@ -904,6 +905,7 @@ CONCEPT_SYNONYM_GROUPS: list[set[str]] = [
     {"cavitary tb", "cavitary pulmonary tuberculosis"},
     {"pulmonary embolism", "pulmonary embolims", "acute pulmonary embolism"},
     {"sarcoidosis", "pulmonary sarcoidosis"},
+    {"cpam type 3", "type 4 cpam versus pleuropulmonary blastoma"},
 ]
 
 

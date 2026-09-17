@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "bank_id": "bank_3c0109c75c96",
-  "generated_at": "2026-09-16T22:31:44.617485-04:00",
+  "generated_at": "2026-09-16T22:34:48.478217-04:00",
   "mode": "pulmonary_visual_identification",
   "question_count": 544,
   "quality_review": {
@@ -3789,8 +3789,8 @@
       "joint_images": true,
       "options": [
         "Neonatal Respiratory Distress Syndrome Hyaline Membranes",
-        "ARDS Hyaline Membrane",
         "Neonatal respiratory distress syndrome",
+        "Multiple small pulmonary nodules",
         "Bronchopulmonary dysplasia"
       ],
       "correct_index": 3,
@@ -3801,8 +3801,8 @@
       ],
       "choice_rationales": [
         "Neonatal Respiratory Distress Syndrome Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
-        "ARDS Hyaline Membrane would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
         "Neonatal respiratory distress syndrome would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
+        "Multiple small pulmonary nodules would instead show numerous discrete small rounded opacities distributed through both lungs; the displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
         "Correct: The displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation, supporting Bronchopulmonary dysplasia."
       ],
       "ground_truth_confidence": "high",
@@ -3843,8 +3843,8 @@
       "options": [
         "Bronchopulmonary dysplasia",
         "ARDS Intraalveolar Hyaline Membranes",
-        "Neonatal Respiratory Distress Syndrome Hyaline Membranes",
-        "Neonatal respiratory distress syndrome"
+        "Neonatal respiratory distress syndrome",
+        "Healed fibrocalcific granuloma"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -3855,8 +3855,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows simplified, enlarged air spaces on histology, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation, supporting Bronchopulmonary dysplasia.",
         "ARDS Intraalveolar Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows simplified, enlarged air spaces on histology, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
-        "Neonatal Respiratory Distress Syndrome Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows simplified, enlarged air spaces on histology, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
-        "Neonatal respiratory distress syndrome would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows simplified, enlarged air spaces on histology, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation."
+        "Neonatal respiratory distress syndrome would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows simplified, enlarged air spaces on histology, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
+        "Healed fibrocalcific granuloma would instead show a densely fibrotic old granuloma containing central dystrophic calcification; the displayed image shows simplified, enlarged air spaces on histology, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -5910,8 +5910,8 @@
       "options": [
         "CPAM Type 3",
         "Congenital Diaphragmatic Hernia",
-        "Type 4 CPAM versus pleuropulmonary blastoma",
-        "Left-Sided Congenital Diaphragmatic Hernia"
+        "Left-Sided Congenital Diaphragmatic Hernia",
+        "Congenital Lobar Emphysema"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -5922,8 +5922,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung, supporting CPAM Type 3.",
         "Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
-        "Type 4 CPAM versus pleuropulmonary blastoma would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
-        "Left-Sided Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung."
+        "Left-Sided Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
+        "Congenital Lobar Emphysema would instead show marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -19320,7 +19320,7 @@
         "Extralobar Pulmonary Sequestration",
         "Type 4 CPAM versus pleuropulmonary blastoma",
         "Left-Sided Congenital Diaphragmatic Hernia",
-        "CPAM Type 3"
+        "CPAM and Emphysema"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -19332,7 +19332,7 @@
         "Extralobar Pulmonary Sequestration would instead show nonfunctioning lung tissue supplied by an anomalous systemic artery; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
         "Correct: The displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung, supporting Type 4 CPAM versus pleuropulmonary blastoma.",
         "Left-Sided Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
-        "CPAM Type 3 would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung."
+        "CPAM and Emphysema would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -19953,9 +19953,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Neonatal Respiratory Distress Syndrome Hyaline Membranes",
         "Bronchopulmonary dysplasia",
         "Neonatal respiratory distress syndrome",
+        "Alveolar hemorrhage",
         "ARDS Intraalveolar Hyaline Membranes"
       ],
       "correct_index": 3,
@@ -19965,9 +19965,9 @@
         "diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli"
       ],
       "choice_rationales": [
-        "Neonatal Respiratory Distress Syndrome Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
         "Bronchopulmonary dysplasia would instead show coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
         "Neonatal respiratory distress syndrome would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
+        "Alveolar hemorrhage would instead show diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
         "Correct: The displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli, supporting ARDS Intraalveolar Hyaline Membranes."
       ],
       "ground_truth_confidence": "high",
@@ -20379,7 +20379,7 @@
       "options": [
         "Bronchopulmonary Dysplasia",
         "Neonatal respiratory distress syndrome",
-        "Neonatal Respiratory Distress Syndrome Hyaline Membranes",
+        "Trauma-induced diffuse alveolar damage",
         "ARDS Hyaline Membrane"
       ],
       "correct_index": 3,
@@ -20391,7 +20391,7 @@
       "choice_rationales": [
         "Bronchopulmonary Dysplasia would instead show coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
         "Neonatal respiratory distress syndrome would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
-        "Neonatal Respiratory Distress Syndrome Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
+        "Trauma-induced diffuse alveolar damage would instead show bilateral diffuse air-space opacity with hyaline membranes and acute alveolar injury; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
         "Correct: The displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli, supporting ARDS Hyaline Membrane."
       ],
       "ground_truth_confidence": "high",
@@ -21386,7 +21386,7 @@
       "options": [
         "ARDS Hyaline Membrane",
         "Neonatal respiratory distress syndrome",
-        "Neonatal Respiratory Distress Syndrome Hyaline Membranes",
+        "Granulomatosis with polyangiitis",
         "Bronchopulmonary Dysplasia"
       ],
       "correct_index": 3,
@@ -21398,7 +21398,7 @@
       "choice_rationales": [
         "ARDS Hyaline Membrane would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
         "Neonatal respiratory distress syndrome would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
-        "Neonatal Respiratory Distress Syndrome Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
+        "Granulomatosis with polyangiitis would instead show necrotizing granulomatous inflammation and vasculitis, often producing multiple cavitary pulmonary nodules; the displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
         "Correct: The displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation, supporting Bronchopulmonary Dysplasia."
       ],
       "ground_truth_confidence": "high",
@@ -23083,7 +23083,7 @@
         "Neonatal respiratory distress syndrome",
         "Hyaline Membranes in ARDS",
         "Bronchopulmonary dysplasia",
-        "Neonatal Respiratory Distress Syndrome Hyaline Membranes"
+        "Diffuse Alveolar Damage (ARDS)"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -23095,7 +23095,7 @@
         "Neonatal respiratory distress syndrome would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
         "Correct: The displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli, supporting Hyaline Membranes in ARDS.",
         "Bronchopulmonary dysplasia would instead show coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
-        "Neonatal Respiratory Distress Syndrome Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli."
+        "Diffuse Alveolar Damage (ARDS) would instead show bilateral diffuse air-space opacity with hyaline membranes and acute alveolar injury; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -24087,9 +24087,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Hyaline Membranes in ARDS",
         "Bronchopulmonary dysplasia",
         "Pulmonary Edema",
+        "Goodpasture",
         "Neonatal Respiratory Distress Syndrome Hyaline Membranes"
       ],
       "correct_index": 3,
@@ -24099,9 +24099,9 @@
         "diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli"
       ],
       "choice_rationales": [
-        "Hyaline Membranes in ARDS would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
         "Bronchopulmonary dysplasia would instead show coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
         "Pulmonary Edema would instead show pink proteinaceous intra-alveolar fluid or bilateral central air-space opacity; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
+        "Goodpasture would instead show diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
         "Correct: The displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli, supporting Neonatal Respiratory Distress Syndrome Hyaline Membranes."
       ],
       "ground_truth_confidence": "high",
@@ -25095,9 +25095,9 @@
       "joint_images": false,
       "options": [
         "Bronchopulmonary dysplasia",
-        "Neonatal Respiratory Distress Syndrome Hyaline Membranes",
+        "Neonatal respiratory distress syndrome",
         "ARDS Hyaline Membranes",
-        "Neonatal respiratory distress syndrome"
+        "Diffuse Alveolar Damage (ARDS)"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -25107,9 +25107,9 @@
       ],
       "choice_rationales": [
         "Bronchopulmonary dysplasia would instead show coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
-        "Neonatal Respiratory Distress Syndrome Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
+        "Neonatal respiratory distress syndrome would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
         "Correct: The displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli, supporting ARDS Hyaline Membranes.",
-        "Neonatal respiratory distress syndrome would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli."
+        "Diffuse Alveolar Damage (ARDS) would instead show bilateral diffuse air-space opacity with hyaline membranes and acute alveolar injury; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
