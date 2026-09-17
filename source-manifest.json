@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-17T18:28:10.658854-04:00",
+  "generated_at": "2026-09-17T18:49:45.769094-04:00",
   "builder": "build-medical-picture-quiz / multi-collection flat-image builder",
   "source_directories": [
     {
@@ -25529,11 +25529,11 @@
       "modality": "Histology",
       "organ_system": "Pulmonary",
       "category": "Pulmonary pathology",
-      "tested_condition_structure_finding": "Pulmonary epithelial metaplasia",
-      "canonical_correct_answer": "Pulmonary epithelial metaplasia",
+      "tested_condition_structure_finding": "Squamous metaplasia of the respiratory epithelium",
+      "canonical_correct_answer": "Squamous metaplasia of the respiratory epithelium",
       "accepted_synonyms": [],
       "ground_truth_basis": "user-curated descriptive filename plus full-set visual review",
-      "ground_truth_confidence": "low",
+      "ground_truth_confidence": "high",
       "answer_leakage_assessment": "no unmasked exact answer observed in full-set review",
       "required_preserved_regions": [
         "complete diagnostic field",
@@ -25547,7 +25547,7 @@
       "candidate_question_types": [
         "Identification"
       ],
-      "manual_review_reason": "The source label is ambiguous and the intended metaplastic process is not specified reliably.",
+      "manual_review_reason": "",
       "source_attribution_visible_in_original": "unknown",
       "source_origin": "third_party",
       "source_collection": "Lecture material",
@@ -25555,13 +25555,13 @@
       "collection_rule": "All images supplied in Desktop/Rename are third-party study images.",
       "rights_status": "unknown; local study use only",
       "immutable_source_hash": "3b267fbc03b0b9cc88081a477516f2da8e81c30b4261cfc477ebdeb983eb2668",
-      "status": "NEEDS_REVIEW",
+      "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a different dominant cell population, tissue architecture, and distribution of injury",
+      "key_visual_findings": "replacement of ciliated respiratory epithelium by stratified squamous epithelium",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "YES",
           "visual_target": "the complete displayed image",
           "required_variant": "var_df1c5dfbe06c",
           "full_image_required": true,
@@ -25570,8 +25570,8 @@
             "arrows",
             "orientation markers"
           ],
-          "confidence": "low",
-          "reason_unsupported": "The source label is ambiguous and the intended metaplastic process is not specified reliably."
+          "confidence": "high",
+          "reason_unsupported": ""
         }
       },
       "variants": [
@@ -38366,14 +38366,17 @@
     },
     {
       "asset_id": "asset_3c8badfc2a02",
-      "source_group_id": "sg_cb3141e79046",
+      "source_group_id": "sg_f17359e9d01e",
       "source_id": "src_3c8badfc2a02",
       "original_relative_path": "Echocardiogram in Pulmonary Artery Hypertension (1:3).jpg",
       "original_absolute_path": "/Desktop/Add/Echocardiogram in Pulmonary Artery Hypertension (1:3).jpg",
       "source_sha256": "aed5a954e0b46aa4a281a80537564137a8f4b8053d334a35347a5b1c366d09e1",
       "perceptual_hash": "cd801c203c702c600d340cb4025903dc27adc63fc1fd41d90179003020493000",
-      "duplicate_relationships": [],
-      "canonical_representative": "src_3c8badfc2a02",
+      "duplicate_relationships": [
+        "src_83c2c36ca9b3",
+        "src_b0d776f01771"
+      ],
+      "canonical_representative": "src_83c2c36ca9b3",
       "pixel_width": 1472,
       "pixel_height": 1000,
       "aspect_ratio": 1.472,
@@ -38382,11 +38385,11 @@
       "modality": "Echocardiography",
       "organ_system": "Pulmonary",
       "category": "Pulmonary pathology",
-      "tested_condition_structure_finding": "Echocardiogram in Pulmonary Artery Hypertension (1:3)",
-      "canonical_correct_answer": "Echocardiogram in Pulmonary Artery Hypertension (1:3)",
+      "tested_condition_structure_finding": "Pulmonary arterial hypertension",
+      "canonical_correct_answer": "Pulmonary arterial hypertension",
       "accepted_synonyms": [],
       "ground_truth_basis": "user-curated descriptive filename plus full-set visual review",
-      "ground_truth_confidence": "low",
+      "ground_truth_confidence": "high",
       "answer_leakage_assessment": "no unmasked exact answer observed in full-set review",
       "required_preserved_regions": [
         "complete diagnostic field",
@@ -38399,7 +38402,7 @@
       "candidate_question_types": [
         "Identification"
       ],
-      "manual_review_reason": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.",
+      "manual_review_reason": "",
       "source_attribution_visible_in_original": "unknown",
       "source_origin": "third_party",
       "source_collection": "3rd Party",
@@ -38407,13 +38410,13 @@
       "collection_rule": "All images supplied in Desktop/Add are third-party study images in the 3rd Party collection.",
       "rights_status": "unknown; local study use only",
       "immutable_source_hash": "aed5a954e0b46aa4a281a80537564137a8f4b8053d334a35347a5b1c366d09e1",
-      "status": "NEEDS_REVIEW",
+      "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "a characteristic distribution, density, and anatomic localization different from the displayed imaging pattern",
+      "key_visual_findings": "an echocardiographic apical four-chamber view with the right ventricle (RV), left ventricle (LV), and left atrium (LA) labeled, interpreted alongside a report noting right ventricular enlargement, systolic septal flattening, and an elevated tricuspid regurgitant jet velocity — findings that indicate right ventricular pressure overload from pulmonary arterial hypertension",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "YES",
           "visual_target": "all displayed panels together",
           "required_variant": "var_b24f0275d55f",
           "full_image_required": true,
@@ -38422,8 +38425,8 @@
             "arrows",
             "orientation markers"
           ],
-          "confidence": "low",
-          "reason_unsupported": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence."
+          "confidence": "high",
+          "reason_unsupported": ""
         }
       },
       "variants": [
@@ -38452,13 +38455,16 @@
     },
     {
       "asset_id": "asset_83c2c36ca9b3",
-      "source_group_id": "sg_5c16ed2aa2d9",
+      "source_group_id": "sg_f17359e9d01e",
       "source_id": "src_83c2c36ca9b3",
       "original_relative_path": "Echocardiogram in Pulmonary Artery Hypertension (2:3).jpg",
       "original_absolute_path": "/Desktop/Add/Echocardiogram in Pulmonary Artery Hypertension (2:3).jpg",
       "source_sha256": "7e1b7eb0877376a82c296256bd579cfb7a3f17cc043b087b66bf5b0b1a7d1bdd",
       "perceptual_hash": "cd041c243cd43ce40cb40b1906d9276c076bc771c37941f301e105b002418040",
-      "duplicate_relationships": [],
+      "duplicate_relationships": [
+        "src_3c8badfc2a02",
+        "src_b0d776f01771"
+      ],
       "canonical_representative": "src_83c2c36ca9b3",
       "pixel_width": 1486,
       "pixel_height": 1000,
@@ -38468,11 +38474,11 @@
       "modality": "Echocardiography",
       "organ_system": "Pulmonary",
       "category": "Pulmonary pathology",
-      "tested_condition_structure_finding": "Echocardiogram in Pulmonary Artery Hypertension (2:3)",
-      "canonical_correct_answer": "Echocardiogram in Pulmonary Artery Hypertension (2:3)",
+      "tested_condition_structure_finding": "Pulmonary arterial hypertension",
+      "canonical_correct_answer": "Pulmonary arterial hypertension",
       "accepted_synonyms": [],
       "ground_truth_basis": "user-curated descriptive filename plus full-set visual review",
-      "ground_truth_confidence": "low",
+      "ground_truth_confidence": "high",
       "answer_leakage_assessment": "no unmasked exact answer observed in full-set review",
       "required_preserved_regions": [
         "complete diagnostic field",
@@ -38485,7 +38491,7 @@
       "candidate_question_types": [
         "Identification"
       ],
-      "manual_review_reason": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.",
+      "manual_review_reason": "",
       "source_attribution_visible_in_original": "unknown",
       "source_origin": "third_party",
       "source_collection": "3rd Party",
@@ -38493,13 +38499,13 @@
       "collection_rule": "All images supplied in Desktop/Add are third-party study images in the 3rd Party collection.",
       "rights_status": "unknown; local study use only",
       "immutable_source_hash": "7e1b7eb0877376a82c296256bd579cfb7a3f17cc043b087b66bf5b0b1a7d1bdd",
-      "status": "NEEDS_REVIEW",
+      "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "a characteristic distribution, density, and anatomic localization different from the displayed imaging pattern",
+      "key_visual_findings": "an echocardiographic parasternal short-axis view with the right ventricle (RV) and left ventricle (LV) labeled, interpreted alongside a report noting right ventricular enlargement, systolic septal flattening, and an elevated tricuspid regurgitant jet velocity — findings that indicate right ventricular pressure overload from pulmonary arterial hypertension",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "YES",
           "visual_target": "all displayed panels together",
           "required_variant": "var_6a1199d4268a",
           "full_image_required": true,
@@ -38508,8 +38514,8 @@
             "arrows",
             "orientation markers"
           ],
-          "confidence": "low",
-          "reason_unsupported": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence."
+          "confidence": "high",
+          "reason_unsupported": ""
         }
       },
       "variants": [
@@ -38544,8 +38550,11 @@
       "original_absolute_path": "/Desktop/Add/Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg",
       "source_sha256": "208b64414530a995dec801de4175316170a8cf8f231a1619492633a869b8c910",
       "perceptual_hash": "ecc01c203ce43cf41d700a99033c087b0ec9c49bd69b43190939007059b35c20",
-      "duplicate_relationships": [],
-      "canonical_representative": "src_b0d776f01771",
+      "duplicate_relationships": [
+        "src_3c8badfc2a02",
+        "src_83c2c36ca9b3"
+      ],
+      "canonical_representative": "src_83c2c36ca9b3",
       "pixel_width": 1478,
       "pixel_height": 1000,
       "aspect_ratio": 1.478,

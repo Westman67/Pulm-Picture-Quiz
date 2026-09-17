@@ -50,13 +50,14 @@ IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg"}
 # visible evidence does not establish one sufficiently precise pulmonary answer.
 REVIEW_ONLY_RENAME: dict[str, str] = {
     "Pulmonary Infarct Gross.png": "Embedded labels state the tested diagnosis directly over medically meaningful tissue.",
-    "Pulmonary Metalplasia .png": "The source label is ambiguous and the intended metaplastic process is not specified reliably.",
 }
 
 CASE_CONTEXT: dict[str, str] = {
     "Acute Asthma Attack.png": "A 19-year-old presents to the emergency department with acute dyspnea, audible wheeze, and a prolonged expiratory phase during a known asthma exacerbation.",
     "Asthma CXR.png": "A patient with a long-standing history of episodic wheeze, nocturnal cough, and spirometry-confirmed reversible airflow obstruction undergoes this chest radiograph as part of a routine outpatient work-up.",
     "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "A patient with progressive exertional dyspnea and a loud pulmonic component of the second heart sound undergoes transthoracic echocardiography; the report estimates the right ventricular systolic pressure at 58 mmHg with septal flattening in systole.",
+    "Echocardiogram in Pulmonary Artery Hypertension (1:3).jpg": "A patient with progressive exertional dyspnea and a loud pulmonic component of the second heart sound undergoes transthoracic echocardiography; the accompanying report describes right ventricular enlargement with systolic septal flattening and an elevated tricuspid regurgitant jet velocity.",
+    "Echocardiogram in Pulmonary Artery Hypertension (2:3).jpg": "A patient with progressive exertional dyspnea and a loud pulmonic component of the second heart sound undergoes transthoracic echocardiography; the accompanying report describes right ventricular enlargement with systolic septal flattening and an elevated tricuspid regurgitant jet velocity.",
     "P529 CF Lung Disease.png": "A young adult with a history of recurrent childhood pneumonias, chronic productive cough, and a positive sweat chloride test undergoes this chest radiograph.",
     "Blue Bloater.png": "A 58-year-old with a 40-pack-year smoking history presents with a chronic productive cough, peripheral edema, and mild resting cyanosis; pulmonary function testing shows a chronic bronchitis-predominant obstructive pattern.",
     "Bleomycin or Amiodarone Pulmonary Fibrosis CXR .png": "A patient undergoing treatment with bleomycin for testicular cancer develops progressive dyspnea and bibasilar crackles; pulmonary function testing shows a new restrictive pattern with a reduced diffusion capacity.",
@@ -75,6 +76,8 @@ CASE_STEM: dict[str, str] = {
     "Acute Asthma Attack.png": "Given this clinical presentation, which diagnosis is most consistent with the history and this chest radiograph?",
     "Asthma CXR.png": "Given this clinical presentation, which diagnosis is most consistent with the history and this chest radiograph?",
     "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "Given this echocardiographic report and the labeled apical four-chamber view, which diagnosis is best supported?",
+    "Echocardiogram in Pulmonary Artery Hypertension (1:3).jpg": "Given this echocardiographic report and the labeled apical four-chamber view, which diagnosis is best supported?",
+    "Echocardiogram in Pulmonary Artery Hypertension (2:3).jpg": "Given this echocardiographic report and the labeled parasternal short-axis view, which diagnosis is best supported?",
     "P529 CF Lung Disease.png": "Given this history, which diagnosis is best supported by the pattern on this chest radiograph?",
     "Blue Bloater.png": "Given this clinical presentation, which COPD phenotype does this patient's photograph best match?",
     "Bleomycin or Amiodarone Pulmonary Fibrosis CXR .png": "Given this treatment history, which diagnosis is best supported by the pattern on this chest radiograph?",
@@ -92,6 +95,8 @@ CASE_CLUE: dict[str, str] = {
     "Acute Asthma Attack.png": "a chest radiograph that is normal or near-normal, without consolidation, effusion, or a focal mass \u2014 the expected pattern during an acute asthma exacerbation, since the diagnosis is made clinically rather than radiographically",
     "Asthma CXR.png": "a chest radiograph that remains normal or near-normal despite the patient's documented reversible airflow obstruction, consistent with asthma, in which imaging is typically unremarkable outside of a severe exacerbation",
     "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "an echocardiographic four-chamber view with the right ventricle (RV) and left ventricle (LV) labeled, interpreted alongside a report noting an estimated RVSP of 58 mmHg and systolic septal flattening \u2014 findings that indicate right ventricular pressure overload from pulmonary arterial hypertension",
+    "Echocardiogram in Pulmonary Artery Hypertension (1:3).jpg": "an echocardiographic apical four-chamber view with the right ventricle (RV), left ventricle (LV), and left atrium (LA) labeled, interpreted alongside a report noting right ventricular enlargement, systolic septal flattening, and an elevated tricuspid regurgitant jet velocity \u2014 findings that indicate right ventricular pressure overload from pulmonary arterial hypertension",
+    "Echocardiogram in Pulmonary Artery Hypertension (2:3).jpg": "an echocardiographic parasternal short-axis view with the right ventricle (RV) and left ventricle (LV) labeled, interpreted alongside a report noting right ventricular enlargement, systolic septal flattening, and an elevated tricuspid regurgitant jet velocity \u2014 findings that indicate right ventricular pressure overload from pulmonary arterial hypertension",
     "P529 CF Lung Disease.png": "increased bronchovascular markings with peribronchial wall thickening and bronchiectatic change, in a patient with a positive sweat chloride test",
     "Blue Bloater.png": "a stocky, overweight body habitus consistent with the chronic-bronchitis-predominant ('blue bloater') COPD phenotype — the vignette supplies the cyanosis and cor pulmonale that the photograph alone can't definitively show",
     "Bleomycin or Amiodarone Pulmonary Fibrosis CXR .png": "bilateral basal and subpleural reticulation with traction change or honeycombing, developing in the setting of a fibrosis-inducing chemotherapeutic or antiarrhythmic agent rather than as isolated idiopathic fibrosis",
@@ -105,8 +110,6 @@ CASE_CLUE: dict[str, str] = {
 
 REVIEW_ONLY_ADD: dict[str, str] = {
     "A Pneumothorax CT Air in Pleural Space with Partial Lung Collapse.png": "Diagnostic labels define the tested pneumothorax directly over medically meaningful pixels and cannot be removed safely.",
-    "Echocardiogram in Pulmonary Artery Hypertension (1:3).jpg": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.",
-    "Echocardiogram in Pulmonary Artery Hypertension (2:3).jpg": "A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.",
 }
 
 DUPLICATE_OF: dict[str, str] = {
@@ -347,6 +350,8 @@ ADD_CONCEPT_OVERRIDES = {
     "Asteroid Bodies in Pulmonary Sarcoidosis.jpg": "Asteroid body in a multinucleated giant cell",
     "Bronchiectasis-Gross-Pathology.png": "Bronchiectasis",
     "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "Pulmonary arterial hypertension",
+    "Echocardiogram in Pulmonary Artery Hypertension (1:3).jpg": "Pulmonary arterial hypertension",
+    "Echocardiogram in Pulmonary Artery Hypertension (2:3).jpg": "Pulmonary arterial hypertension",
     "C Berylliosis Noncaseating Granuloma Histology.png": "Noncaseating granuloma",
     "Cocco Copy.png": "Coccidioides spherules",
     "Crypto 2.png": "Cryptococcus neoformans",
@@ -703,6 +708,7 @@ def modality_for(name: str, collection_key: str = "rename") -> str:
 
 RENAME_CONCEPT_OVERRIDES = {
     "Normal Histo.png": "Normal bronchus",
+    "Pulmonary Metalplasia .png": "Squamous metaplasia of the respiratory epithelium",
 }
 
 

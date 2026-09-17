@@ -1,15 +1,15 @@
 # Pulmonary multi-collection preflight audit
 
-Generated: 2026-09-17T18:28:10.658854-04:00
+Generated: 2026-09-17T18:49:45.769094-04:00
 
 - Source: `/Desktop/Rename` (read-only)
 - Source: `/Desktop/Add` (read-only)
 - Physical image files: 555
 - Decodable files: 555
-- Scored questions: 544
-- Review-only sources: 5
+- Scored questions: 547
+- Review-only sources: 2
 - Perceptual duplicates withheld: 6
-- Source groups with multiple named variants: 62
+- Source groups with multiple named variants: 63
 - Low-resolution files (one dimension below 500 px): 145
 - Quiz-safe border crops: 13
 - Exact byte-identical duplicate groups: 0
@@ -17,8 +17,8 @@ Generated: 2026-09-17T18:28:10.658854-04:00
 
 ## Collections
 
-- 3rd Party: 177 sources, 168 scored
-- Lecture material: 378 sources, 376 scored
+- 3rd Party: 177 sources, 170 scored
+- Lecture material: 378 sources, 377 scored
 
 ## Modalities
 
@@ -52,17 +52,14 @@ Generated: 2026-09-17T18:28:10.658854-04:00
 - Neoplasm: 74
 - Normal anatomy: 24
 - Pleural disease: 52
-- Pulmonary pathology: 68
+- Pulmonary pathology: 71
 - Pulmonary vascular: 30
 - Upper airway: 12
 
 ## Review-only decisions
 
 - `Pulmonary Infarct` (src_257ebb5b7dd8): Embedded labels state the tested diagnosis directly over medically meaningful tissue.
-- `Pulmonary epithelial metaplasia` (src_38410f8d021a): The source label is ambiguous and the intended metaplastic process is not specified reliably.
 - `Pneumothorax CT Air in Pleural Space with Partial Lung Collapse` (src_778524185030): Diagnostic labels define the tested pneumothorax directly over medically meaningful pixels and cannot be removed safely.
-- `Echocardiogram in Pulmonary Artery Hypertension (1:3)` (src_3c8badfc2a02): A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.
-- `Echocardiogram in Pulmonary Artery Hypertension (2:3)` (src_83c2c36ca9b3): A single unlabeled echocardiographic still does not uniquely establish pulmonary arterial hypertension without diagnostic measurements or Doppler evidence.
 
 ## Transformation policy
 
