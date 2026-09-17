@@ -143,7 +143,7 @@ export function reconcileQualityFlags(value, qualityReview) {
   return next;
 }
 
-function progressMatches(question, progress, stateFilter) {
+export function progressMatches(question, progress, stateFilter) {
   const item = progress.questions?.[question.question_id] || {};
   if (stateFilter === "unseen") return !item.times_answered;
   if (stateFilter === "incorrect") return (item.incorrect_count || 0) > 0;

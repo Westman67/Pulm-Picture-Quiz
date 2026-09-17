@@ -8,13 +8,14 @@ import {
   lockAnswer,
   normalizeQualityFlags,
   normalizeProgress,
+  progressMatches,
   reconcileQualityFlags,
   rationaleVisible,
   scoreAnswers,
   setQualityFlagStatus,
   toggleMarked,
   upsertQualityFlag,
-} from "./quiz-core.mjs?v=rename-add-20260916d";
+} from "./quiz-core.mjs?v=rename-add-20260917a";
 
 const app = document.querySelector("#app");
 const state = {
@@ -211,6 +212,11 @@ function homeView() {
   const totalCorrect = Object.values(state.progress.questions).reduce((sum, p) => sum + (p.correct_count || 0), 0);
   const totalAnswered = Object.values(state.progress.questions).reduce((sum, p) => sum + (p.times_answered || 0), 0);
   const openFlagCount = Object.values(state.qualityFlags.flags).filter((flag) => flag.status !== "resolved").length;
+  const stateCounts = {
+    unseen: state.bank.questions.filter((question) => progressMatches(question, state.progress, "unseen")).length,
+    incorrect: state.bank.questions.filter((question) => progressMatches(question, state.progress, "incorrect")).length,
+    marked: state.bank.questions.filter((question) => progressMatches(question, state.progress, "marked")).length,
+  };
   return `
     <main class="dashboard shell">
       <section class="hero">
@@ -234,7 +240,7 @@ function homeView() {
           <div class="form-row">
             <label>Category<select name="category"><option value="all">Mixed — all categories</option>${CATEGORY_FILTERS.map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)} (${categoryCounts[category]})</option>`).join("")}</select></label>
             <label>Collection<select name="sourceCollection"><option value="all">All pictures (${state.bank.question_count})</option>${Object.entries(COLLECTION_LABELS).map(([key, label]) => `<option value="${escapeHtml(key)}">${escapeHtml(label)} (${collectionCounts[key] || 0})</option>`).join("")}</select></label>
-            <label>Question state<select name="stateFilter"><option value="all">All available</option><option value="unseen">Unseen only</option><option value="incorrect">Previously incorrect</option><option value="marked">Marked for review</option></select></label>
+            <label>Question state<select name="stateFilter"><option value="all">All available (${state.bank.question_count})</option><option value="unseen">Unseen only (${stateCounts.unseen})</option><option value="incorrect">Previously incorrect (${stateCounts.incorrect})</option><option value="marked">Marked for review (${stateCounts.marked})</option></select></label>
           </div>
 
           <fieldset><legend>Length</legend><div class="length-options">
@@ -660,8 +666,8 @@ window.addEventListener("keydown", (event) => {
 async function init() {
   try {
     const [bank, reviewQueue] = await Promise.all([
-      fetch("data/question-bank.json?v=rename-add-20260916d").then((response) => response.json()),
-      fetch("data/review-queue.json?v=rename-add-20260916d").then((response) => response.json()),
+      fetch("data/question-bank.json?v=rename-add-20260917a").then((response) => response.json()),
+      fetch("data/review-queue.json?v=rename-add-20260917a").then((response) => response.json()),
     ]);
     state.bank = applyImageCategories(bank);
     state.reviewQueue = reviewQueue;
