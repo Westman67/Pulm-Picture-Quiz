@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "bank_id": "bank_3c0109c75c96",
-  "generated_at": "2026-09-16T23:21:48.525516-04:00",
+  "generated_at": "2026-09-16T23:29:18.172032-04:00",
   "mode": "pulmonary_visual_identification",
   "question_count": 544,
   "quality_review": {
@@ -132,9 +132,9 @@
       "joint_images": false,
       "options": [
         "Acinus",
-        "Normal Airway",
-        "Normal Lung Large",
-        "Normal bronchus"
+        "Smaller, Peripheral Pulmonary Thromboembolus",
+        "Bronchopulmonary dysplasia",
+        "Squamous Cell Carcinoma of the Lung"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -144,9 +144,9 @@
       ],
       "choice_rationales": [
         "Correct: The displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit, supporting Acinus.",
-        "Normal Airway would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit.",
-        "Normal Lung Large would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit.",
-        "Normal bronchus would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit."
+        "Smaller, Peripheral Pulmonary Thromboembolus would instead show an occlusive thrombus lodged in a small peripheral pulmonary artery; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit.",
+        "Bronchopulmonary dysplasia would instead show coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit.",
+        "Squamous Cell Carcinoma of the Lung would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -3629,9 +3629,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Normal Lung Large",
-        "Normal Airway",
-        "Normal bronchus",
+        "Amphibole asbestos fibers",
+        "Pulmonary Hypertension",
+        "Bronchiectasis Squamous Metaplasia",
         "Bronchiole"
       ],
       "correct_index": 3,
@@ -3641,9 +3641,9 @@
         "a small conducting airway lacking cartilage and submucosal glands, with a prominent smooth-muscle wall"
       ],
       "choice_rationales": [
-        "Normal Lung Large would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows a small conducting airway lacking cartilage and submucosal glands, with a prominent smooth-muscle wall.",
-        "Normal Airway would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows a small conducting airway lacking cartilage and submucosal glands, with a prominent smooth-muscle wall.",
-        "Normal bronchus would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows a small conducting airway lacking cartilage and submucosal glands, with a prominent smooth-muscle wall.",
+        "Amphibole asbestos fibers would instead show straight, rigid needle-like mineral fibers rather than curled serpentine fibers; the displayed image shows a small conducting airway lacking cartilage and submucosal glands, with a prominent smooth-muscle wall.",
+        "Pulmonary Hypertension would instead show concentric and plexiform remodeling of small pulmonary arteries; the displayed image shows a small conducting airway lacking cartilage and submucosal glands, with a prominent smooth-muscle wall.",
+        "Bronchiectasis Squamous Metaplasia would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows a small conducting airway lacking cartilage and submucosal glands, with a prominent smooth-muscle wall.",
         "Correct: The displayed image shows a small conducting airway lacking cartilage and submucosal glands, with a prominent smooth-muscle wall, supporting Bronchiole."
       ],
       "ground_truth_confidence": "high",
@@ -9459,10 +9459,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Normal Carina",
+        "Bronchiectasis Right Lung Saggital",
         "Lateral Pectus Carinatum",
-        "Mediastinal Bronchogenic Cyst in the Carina",
-        "Normal Lungs"
+        "Intrinsic Tracheomalacia",
+        "Bronchiectasis"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -9471,10 +9471,10 @@
         "anterior protrusion of the sternum and adjacent costal cartilages"
       ],
       "choice_rationales": [
-        "Normal Carina would instead show a smooth central airway bifurcation without an obstructing endobronchial lesion; the displayed image shows anterior protrusion of the sternum and adjacent costal cartilages.",
+        "Bronchiectasis Right Lung Saggital would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows anterior protrusion of the sternum and adjacent costal cartilages.",
         "Correct: The displayed image shows anterior protrusion of the sternum and adjacent costal cartilages, supporting Lateral Pectus Carinatum.",
-        "Mediastinal Bronchogenic Cyst in the Carina would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows anterior protrusion of the sternum and adjacent costal cartilages.",
-        "Normal Lungs would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows anterior protrusion of the sternum and adjacent costal cartilages."
+        "Intrinsic Tracheomalacia would instead show marked expiratory narrowing or collapse of the tracheal lumen; the displayed image shows anterior protrusion of the sternum and adjacent costal cartilages.",
+        "Bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows anterior protrusion of the sternum and adjacent costal cartilages."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -9725,9 +9725,9 @@
       "joint_images": false,
       "options": [
         "Lower Pectus Carinatum",
-        "Mediastinal Bronchogenic Cyst in the Carina",
-        "Normal Lungs",
-        "Normal Carina"
+        "Vocal Cord Nodules",
+        "Squamous Cell Carcinoma",
+        "Invasive Aspergillus"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -9737,9 +9737,9 @@
       ],
       "choice_rationales": [
         "Correct: The displayed image shows anterior protrusion of the sternum and adjacent costal cartilages, supporting Lower Pectus Carinatum.",
-        "Mediastinal Bronchogenic Cyst in the Carina would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows anterior protrusion of the sternum and adjacent costal cartilages.",
-        "Normal Lungs would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows anterior protrusion of the sternum and adjacent costal cartilages.",
-        "Normal Carina would instead show a smooth central airway bifurcation without an obstructing endobronchial lesion; the displayed image shows anterior protrusion of the sternum and adjacent costal cartilages."
+        "Vocal Cord Nodules would instead show small symmetric benign-appearing nodules arising at the free margins of the true vocal folds; the displayed image shows anterior protrusion of the sternum and adjacent costal cartilages.",
+        "Squamous Cell Carcinoma would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows anterior protrusion of the sternum and adjacent costal cartilages.",
+        "Invasive Aspergillus would instead show tissue-invasive necrosis or destructive sinonasal/pulmonary disease rather than a simple colonized cavity; the displayed image shows anterior protrusion of the sternum and adjacent costal cartilages."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -10096,9 +10096,9 @@
       "joint_images": false,
       "options": [
         "Lymphoma Compressing Trachea",
-        "Near Normal Lung Filling Pattern",
-        "Normal Infant",
-        "Red Hepatization Phase of Pneumonia"
+        "Red Hepatization Phase of Pneumonia",
+        "Vanishing Lung Syndrome",
+        "Croup"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -10108,9 +10108,9 @@
       ],
       "choice_rationales": [
         "Correct: The displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall, supporting Lymphoma Compressing Trachea.",
-        "Near Normal Lung Filling Pattern would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall.",
-        "Normal Infant would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall.",
-        "Red Hepatization Phase of Pneumonia would instead show confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall."
+        "Red Hepatization Phase of Pneumonia would instead show confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall.",
+        "Vanishing Lung Syndrome would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall.",
+        "Croup would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -10890,10 +10890,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Normal Infant",
-        "Lymphoma Compressing Trachea",
+        "Cystic fibrosis-associated bronchiectasis",
+        "Lymphadenopathy",
         "Near Normal Lung Filling Pattern",
-        "Cystic fibrosis-associated bronchiectasis"
+        "Congenital Lobar Emphysema"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -10902,10 +10902,10 @@
         "symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion"
       ],
       "choice_rationales": [
-        "Normal Infant would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
-        "Lymphoma Compressing Trachea would instead show respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
+        "Cystic fibrosis-associated bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
+        "Lymphadenopathy would instead show enlarged hilar or mediastinal lymph nodes forming lobulated soft-tissue fullness; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
         "Correct: The displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion, supporting Near Normal Lung Filling Pattern.",
-        "Cystic fibrosis-associated bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion."
+        "Congenital Lobar Emphysema would instead show marked lobar hyperinflation with compression of adjacent lung and mediastinal displacement; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -11421,9 +11421,9 @@
       "joint_images": false,
       "options": [
         "Normal Acinus",
-        "Bronchiole",
-        "Normal bronchus",
-        "Normal pulmonary alveoli"
+        "Interstitial Fibrosis",
+        "Bronchopneumonia",
+        "Schaumann bodies in Sarcoidosis"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -11433,9 +11433,9 @@
       ],
       "choice_rationales": [
         "Correct: The displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit, supporting Normal Acinus.",
-        "Bronchiole would instead show a small conducting airway lacking cartilage and submucosal glands, with a prominent smooth-muscle wall; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit.",
-        "Normal bronchus would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit.",
-        "Normal pulmonary alveoli would instead show delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit."
+        "Interstitial Fibrosis would instead show diffuse reticular interstitial opacity or thickened fibrotic alveolar septa rather than focal air-space filling; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit.",
+        "Bronchopneumonia would instead show patchy bronchiolocentric suppurative consolidation involving multiple lobules; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit.",
+        "Schaumann bodies in Sarcoidosis would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -11473,9 +11473,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Trachea Large",
-        "Normal Acinus",
-        "Normal Lung Large",
+        "Noncaseating granuloma",
+        "Hypersensitivity pneumonitis",
+        "Honeycomb change in idiopathic pulmonary fibrosis",
         "Normal Airway"
       ],
       "correct_index": 3,
@@ -11485,9 +11485,9 @@
         "an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma"
       ],
       "choice_rationales": [
-        "Trachea Large would instead show respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
-        "Normal Acinus would instead show a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
-        "Normal Lung Large would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
+        "Noncaseating granuloma would instead show a compact collection of epithelioid histiocytes and multinucleated giant cells without central caseous necrosis; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
+        "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
+        "Honeycomb change in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
         "Correct: The displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma, supporting Normal Airway."
       ],
       "ground_truth_confidence": "high",
@@ -11527,9 +11527,9 @@
       "joint_images": false,
       "options": [
         "Normal Alveolar",
-        "Normal Lung Large",
-        "Normal pulmonary alveoli",
-        "Normal Mesothelium"
+        "Atypical Pneumonia",
+        "Small Cell Carcinoma",
+        "Multinucleated giant cells in a noncaseating granuloma"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -11539,9 +11539,9 @@
       ],
       "choice_rationales": [
         "Correct: The displayed image shows delicate open alveoli separated by thin septa without inflammatory filling or fibrosis, supporting Normal Alveolar.",
-        "Normal Lung Large would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows delicate open alveoli separated by thin septa without inflammatory filling or fibrosis.",
-        "Normal pulmonary alveoli would instead show delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction; the displayed image shows delicate open alveoli separated by thin septa without inflammatory filling or fibrosis.",
-        "Normal Mesothelium would instead show a single bland layer of flattened-to-cuboidal mesothelial cells lining the pleural surface; the displayed image shows delicate open alveoli separated by thin septa without inflammatory filling or fibrosis."
+        "Atypical Pneumonia would instead show a diffuse interstitial or patchy peribronchial pattern without dense lobar air-space consolidation; the displayed image shows delicate open alveoli separated by thin septa without inflammatory filling or fibrosis.",
+        "Small Cell Carcinoma would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows delicate open alveoli separated by thin septa without inflammatory filling or fibrosis.",
+        "Multinucleated giant cells in a noncaseating granuloma would instead show a compact collection of epithelioid histiocytes and multinucleated giant cells without central caseous necrosis; the displayed image shows delicate open alveoli separated by thin septa without inflammatory filling or fibrosis."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -11579,9 +11579,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Trachea",
-        "Normal Mesothelium",
-        "Bronchiole",
+        "Lines of Zahn in thrombus",
+        "Viral Nuclear Inclusions",
+        "Noncaseating granulomas",
         "Normal Bronchus"
       ],
       "correct_index": 3,
@@ -11591,9 +11591,9 @@
         "an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma"
       ],
       "choice_rationales": [
-        "Trachea would instead show respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
-        "Normal Mesothelium would instead show a single bland layer of flattened-to-cuboidal mesothelial cells lining the pleural surface; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
-        "Bronchiole would instead show a small conducting airway lacking cartilage and submucosal glands, with a prominent smooth-muscle wall; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
+        "Lines of Zahn in thrombus would instead show alternating pale platelet-fibrin layers and darker red-cell-rich layers within an antemortem thrombus; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
+        "Viral Nuclear Inclusions would instead show interstitial inflammation with viral cytopathic nuclear inclusions rather than dense alveolar neutrophils; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
+        "Noncaseating granulomas would instead show a compact collection of epithelioid histiocytes and multinucleated giant cells without central caseous necrosis; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
         "Correct: The displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma, supporting Normal Bronchus."
       ],
       "ground_truth_confidence": "high",
@@ -11632,10 +11632,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Mediastinal Bronchogenic Cyst in the Carina",
+        "Tuberculosis Ghon Complex",
         "Normal Carina",
-        "Lateral Pectus Carinatum",
-        "Normal Lungs"
+        "Small Cell",
+        "Adenocarcinoma Peripheral Lung"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -11644,10 +11644,10 @@
         "a smooth central airway bifurcation without an obstructing endobronchial lesion"
       ],
       "choice_rationales": [
-        "Mediastinal Bronchogenic Cyst in the Carina would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows a smooth central airway bifurcation without an obstructing endobronchial lesion.",
+        "Tuberculosis Ghon Complex would instead show a peripheral primary tuberculous focus accompanied by regional hilar nodal disease; the displayed image shows a smooth central airway bifurcation without an obstructing endobronchial lesion.",
         "Correct: The displayed image shows a smooth central airway bifurcation without an obstructing endobronchial lesion, supporting Normal Carina.",
-        "Lateral Pectus Carinatum would instead show anterior protrusion of the sternum and adjacent costal cartilages; the displayed image shows a smooth central airway bifurcation without an obstructing endobronchial lesion.",
-        "Normal Lungs would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows a smooth central airway bifurcation without an obstructing endobronchial lesion."
+        "Small Cell would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows a smooth central airway bifurcation without an obstructing endobronchial lesion.",
+        "Adenocarcinoma Peripheral Lung would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows a smooth central airway bifurcation without an obstructing endobronchial lesion."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -11685,10 +11685,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Lymphoma Compressing Trachea",
         "Lung Mass",
+        "Usual Interstitial Pneumonia",
         "Normal",
-        "Usual Interstitial Pneumonia"
+        "Malignant Left Pleural Effusion"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -11697,10 +11697,10 @@
         "symmetric normally aerated lungs without focal opacity, pleural collection, mass, or destructive change"
       ],
       "choice_rationales": [
-        "Lymphoma Compressing Trachea would instead show respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall; the displayed image shows symmetric normally aerated lungs without focal opacity, pleural collection, mass, or destructive change.",
         "Lung Mass would instead show a focal pulmonary soft-tissue opacity distinct from surrounding aerated lung; the displayed image shows symmetric normally aerated lungs without focal opacity, pleural collection, mass, or destructive change.",
+        "Usual Interstitial Pneumonia would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows symmetric normally aerated lungs without focal opacity, pleural collection, mass, or destructive change.",
         "Correct: The displayed image shows symmetric normally aerated lungs without focal opacity, pleural collection, mass, or destructive change, supporting Normal.",
-        "Usual Interstitial Pneumonia would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows symmetric normally aerated lungs without focal opacity, pleural collection, mass, or destructive change."
+        "Malignant Left Pleural Effusion would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows symmetric normally aerated lungs without focal opacity, pleural collection, mass, or destructive change."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -11738,10 +11738,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Acinus",
-        "Normal Lung Large",
+        "Paracoccidioidomycosis",
+        "Recent Thromboembolism",
         "Normal bronchus",
-        "Trachea"
+        "Small cell lung carcinoma"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -11750,10 +11750,10 @@
         "an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma"
       ],
       "choice_rationales": [
-        "Acinus would instead show a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
-        "Normal Lung Large would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
+        "Paracoccidioidomycosis would instead show large tissue spherules containing numerous endospores; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
+        "Recent Thromboembolism would instead show a fresh occlusive thrombus with preserved red-cell and fibrin laminations but no mature recanalization; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
         "Correct: The displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma, supporting Normal bronchus.",
-        "Trachea would instead show respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma."
+        "Small cell lung carcinoma would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -11791,10 +11791,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Lymphoma Compressing Trachea",
+        "Fleischner's Sign of The PA from Pulmonary Embolism",
         "Normal Infant",
-        "Near Normal Lung Filling Pattern",
-        "Fleischner's Sign of The PA from Pulmonary Embolism"
+        "Deep venous thrombosis",
+        "Neonatal respiratory distress syndrome"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -11803,10 +11803,10 @@
         "symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion"
       ],
       "choice_rationales": [
-        "Lymphoma Compressing Trachea would instead show respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
+        "Fleischner's Sign of The PA from Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
         "Correct: The displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion, supporting Normal Infant.",
-        "Near Normal Lung Filling Pattern would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
-        "Fleischner's Sign of The PA from Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion."
+        "Deep venous thrombosis would instead show a noncompressible deep vein containing intraluminal thrombus on ultrasound; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
+        "Neonatal respiratory distress syndrome would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -11844,9 +11844,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Near Normal Lung Filling Pattern",
-        "Lymphoma Compressing Trachea",
         "Compression atelectasis PTX",
+        "Sarcoidosis Extensive Hilar and Mediastinal Adenopathy",
+        "Lung Nodule",
         "Normal Infant"
       ],
       "correct_index": 3,
@@ -11856,9 +11856,9 @@
         "symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion"
       ],
       "choice_rationales": [
-        "Near Normal Lung Filling Pattern would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
-        "Lymphoma Compressing Trachea would instead show respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
         "Compression atelectasis PTX would instead show passive lung collapse immediately adjacent to pleural air or fluid; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
+        "Sarcoidosis Extensive Hilar and Mediastinal Adenopathy would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
+        "Lung Nodule would instead show a focal pulmonary soft-tissue opacity distinct from surrounding aerated lung; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
         "Correct: The displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion, supporting Normal Infant."
       ],
       "ground_truth_confidence": "high",
@@ -11897,9 +11897,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Lymphoma Compressing Trachea",
-        "Near Normal Lung Filling Pattern",
         "Pulmonary involvement by recurrent respiratory papillomatosis",
+        "Extensive bronchopneumonia with confluent areas",
+        "Severe Polyposis",
         "Normal Infant"
       ],
       "correct_index": 3,
@@ -11909,9 +11909,9 @@
         "symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion"
       ],
       "choice_rationales": [
-        "Lymphoma Compressing Trachea would instead show respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
-        "Near Normal Lung Filling Pattern would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
         "Pulmonary involvement by recurrent respiratory papillomatosis would instead show multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
+        "Extensive bronchopneumonia with confluent areas would instead show patchy bronchiolocentric suppurative consolidation involving multiple lobules; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
+        "Severe Polyposis would instead show smooth polypoid soft tissue filling the nasal cavity or paranasal sinuses; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
         "Correct: The displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion, supporting Normal Infant."
       ],
       "ground_truth_confidence": "high",
@@ -11950,10 +11950,10 @@
       "panel_handling": "retained_composite",
       "joint_images": true,
       "options": [
-        "Normal Airway",
+        "Bronchi",
         "Normal Lung Large",
-        "Trachea Large",
-        "Acinus"
+        "Granulomatosis with polyangiitis",
+        "Large cell carcinoma of the lung"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -11962,10 +11962,10 @@
         "symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion"
       ],
       "choice_rationales": [
-        "Normal Airway would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
+        "Bronchi would instead show a conducting airway with pseudostratified ciliated epithelium, submucosal glands, smooth muscle, and cartilage; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
         "Correct: The displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion, supporting Normal Lung Large.",
-        "Trachea Large would instead show respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
-        "Acinus would instead show a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion."
+        "Granulomatosis with polyangiitis would instead show necrotizing granulomatous inflammation and vasculitis, often producing multiple cavitary pulmonary nodules; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
+        "Large cell carcinoma of the lung would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -12003,9 +12003,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Lateral Pectus Carinatum",
-        "Normal Carina",
-        "Mediastinal Bronchogenic Cyst in the Carina",
+        "Emphysema Gross Lung Bullae",
+        "Squamous Cell Carcinoma Central Lung",
+        "Honeycomb lung from idiopathic pulmonary fibrosis",
         "Normal Lungs"
       ],
       "correct_index": 3,
@@ -12015,9 +12015,9 @@
         "symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion"
       ],
       "choice_rationales": [
-        "Lateral Pectus Carinatum would instead show anterior protrusion of the sternum and adjacent costal cartilages; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
-        "Normal Carina would instead show a smooth central airway bifurcation without an obstructing endobronchial lesion; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
-        "Mediastinal Bronchogenic Cyst in the Carina would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
+        "Emphysema Gross Lung Bullae would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
+        "Squamous Cell Carcinoma Central Lung would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
+        "Honeycomb lung from idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion.",
         "Correct: The displayed image shows symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion, supporting Normal Lungs."
       ],
       "ground_truth_confidence": "high",
@@ -12057,9 +12057,9 @@
       "joint_images": false,
       "options": [
         "Normal Mesothelium",
-        "Normal bronchus",
-        "Normal pulmonary alveoli",
-        "Trachea"
+        "Hyaline Membranes in ARDS",
+        "Plexiform lesions of pulmonary arterial hypertension",
+        "Hypersensitivity pneumonitis"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -12069,9 +12069,9 @@
       ],
       "choice_rationales": [
         "Correct: The displayed image shows a single bland layer of flattened-to-cuboidal mesothelial cells lining the pleural surface, supporting Normal Mesothelium.",
-        "Normal bronchus would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows a single bland layer of flattened-to-cuboidal mesothelial cells lining the pleural surface.",
-        "Normal pulmonary alveoli would instead show delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction; the displayed image shows a single bland layer of flattened-to-cuboidal mesothelial cells lining the pleural surface.",
-        "Trachea would instead show respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall; the displayed image shows a single bland layer of flattened-to-cuboidal mesothelial cells lining the pleural surface."
+        "Hyaline Membranes in ARDS would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows a single bland layer of flattened-to-cuboidal mesothelial cells lining the pleural surface.",
+        "Plexiform lesions of pulmonary arterial hypertension would instead show marked small-pulmonary-artery medial and intimal remodeling, with plexiform change in advanced disease; the displayed image shows a single bland layer of flattened-to-cuboidal mesothelial cells lining the pleural surface.",
+        "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows a single bland layer of flattened-to-cuboidal mesothelial cells lining the pleural surface."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -13752,10 +13752,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Normal pulmonary alveoli",
+        "Paracoccidioidomycosis",
         "Pores of Kohn",
-        "Normal Lung Large",
-        "Trachea Large"
+        "Lobar Pneumonia Acute Alveolar Inflammation",
+        "Bronchioloalveolar Carcinoma"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -13764,10 +13764,10 @@
         "small interalveolar channels connecting adjacent air spaces"
       ],
       "choice_rationales": [
-        "Normal pulmonary alveoli would instead show delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction; the displayed image shows small interalveolar channels connecting adjacent air spaces.",
+        "Paracoccidioidomycosis would instead show large tissue spherules containing numerous endospores; the displayed image shows small interalveolar channels connecting adjacent air spaces.",
         "Correct: The displayed image shows small interalveolar channels connecting adjacent air spaces, supporting Pores of Kohn.",
-        "Normal Lung Large would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows small interalveolar channels connecting adjacent air spaces.",
-        "Trachea Large would instead show respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall; the displayed image shows small interalveolar channels connecting adjacent air spaces."
+        "Lobar Pneumonia Acute Alveolar Inflammation would instead show confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross; the displayed image shows small interalveolar channels connecting adjacent air spaces.",
+        "Bronchioloalveolar Carcinoma would instead show neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern; the displayed image shows small interalveolar channels connecting adjacent air spaces."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -19000,9 +19000,9 @@
       "joint_images": false,
       "options": [
         "Trachea",
-        "Normal Alveolar",
-        "Normal Acinus",
-        "Normal pulmonary alveoli"
+        "Multinucleated giant cells in a noncaseating granuloma",
+        "Adenocarcinoma",
+        "Coccidioides spherules"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -19012,9 +19012,9 @@
       ],
       "choice_rationales": [
         "Correct: The displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall, supporting Trachea.",
-        "Normal Alveolar would instead show delicate open alveoli separated by thin septa without inflammatory filling or fibrosis; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall.",
-        "Normal Acinus would instead show a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall.",
-        "Normal pulmonary alveoli would instead show delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall."
+        "Multinucleated giant cells in a noncaseating granuloma would instead show a compact collection of epithelioid histiocytes and multinucleated giant cells without central caseous necrosis; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall.",
+        "Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall.",
+        "Coccidioides spherules would instead show large tissue spherules containing numerous endospores; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -19052,10 +19052,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Normal bronchus",
+        "Asbestos body",
         "Trachea Large",
-        "Acinus",
-        "Normal pulmonary alveoli"
+        "Encapsulated Streptococcus pneumoniae",
+        "Pulmonary carcinoid tumor"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -19064,10 +19064,10 @@
         "respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall"
       ],
       "choice_rationales": [
-        "Normal bronchus would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall.",
+        "Asbestos body would instead show a golden-brown beaded ferruginous body with a translucent central fiber; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall.",
         "Correct: The displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall, supporting Trachea Large.",
-        "Acinus would instead show a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall.",
-        "Normal pulmonary alveoli would instead show delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall."
+        "Encapsulated Streptococcus pneumoniae would instead show lancet-shaped paired cocci, with a clear capsule when specifically demonstrated; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall.",
+        "Pulmonary carcinoid tumor would instead show an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -24511,10 +24511,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Pores of Kohn",
+        "Squamous cell carcinoma of the lung, right upper lobe",
         "Normal pulmonary alveoli",
-        "Normal Mesothelium",
-        "Acinus"
+        "Grey Hepatization Phase of Pneumonia",
+        "Ferruginous Bodies"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -24523,10 +24523,10 @@
         "delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction"
       ],
       "choice_rationales": [
-        "Pores of Kohn would instead show small interalveolar channels connecting adjacent air spaces; the displayed image shows delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction.",
+        "Squamous cell carcinoma of the lung, right upper lobe would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction.",
         "Correct: The displayed image shows delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction, supporting Normal pulmonary alveoli.",
-        "Normal Mesothelium would instead show a single bland layer of flattened-to-cuboidal mesothelial cells lining the pleural surface; the displayed image shows delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction.",
-        "Acinus would instead show a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit; the displayed image shows delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction."
+        "Grey Hepatization Phase of Pneumonia would instead show confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross; the displayed image shows delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction.",
+        "Ferruginous Bodies would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",

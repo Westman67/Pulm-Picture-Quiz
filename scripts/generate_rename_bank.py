@@ -1110,13 +1110,29 @@ def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
         entry_norm = re.sub(r"[^a-z0-9]+", " ", entry["concept"].casefold()).strip()
         return bool(confusable_cluster_ids(entry_norm) & correct_clusters)
 
-    tiers = [
-        [e for e in entries if shares_cluster(e)],
-        [e for e in entries if e["topic"] == current["topic"] and e["family"] == current["family"]],
-        [e for e in entries if e["family"] == current["family"]],
-        [e for e in entries if e["topic"] == current["topic"]],
-        entries,
-    ]
+    if current["topic"] == "Normal anatomy":
+        # A normal-anatomy image tests whether the learner recognizes normal
+        # tissue/imaging as normal in the first place -- that skill is lost
+        # if every distractor is just another normal structure label. Pull
+        # pathologic entries in the same modality first, and only fall back
+        # to other normal-anatomy siblings if too few pathologic candidates
+        # exist to fill all three distractors.
+        tiers = [
+            [e for e in entries if shares_cluster(e)],
+            [e for e in entries if e["family"] == current["family"] and e["topic"] != "Normal anatomy"],
+            [e for e in entries if e["topic"] == current["topic"] and e["family"] == current["family"]],
+            [e for e in entries if e["family"] == current["family"]],
+            [e for e in entries if e["topic"] == current["topic"]],
+            entries,
+        ]
+    else:
+        tiers = [
+            [e for e in entries if shares_cluster(e)],
+            [e for e in entries if e["topic"] == current["topic"] and e["family"] == current["family"]],
+            [e for e in entries if e["family"] == current["family"]],
+            [e for e in entries if e["topic"] == current["topic"]],
+            entries,
+        ]
     result: list[str] = []
     seen_norms: set[str] = set()
     seen_keys: set[str] = set(correct_keys)
