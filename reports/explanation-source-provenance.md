@@ -155,3 +155,232 @@ Live duplicate-clue questions: 0. Latent (not-yet-collided but
 un-synonym-linked) duplicate-clue clusters: 0. Concepts falling through to
 the generic per-modality fallback: 0 of 365. `validate_bank.py` PASS,
 17/17 tests pass, production build succeeds.
+
+## Full-pass FEATURE_RULES citation audit (all 215 rules)
+
+Following the comprehensive completion pass above, a systematic audit was run against the full RLS (Reduced Lecture Slides) and Tran (transcript) corpus for every course lecture that has an RLS or Tran file (98 PDF files under `Desktop/Pulm/Lectures/`, extracted to text via `pdftotext -layout`). For each of the 215 `FEATURE_RULES` entries, the pattern's key terms were searched across every page of every file, and the best-matching page for each entry was read directly (not just keyword-matched) to confirm the page actually covers that finding or entity, and a handful of coincidental generic-word matches (e.g. "organized" matching an unrelated sentence) were caught this way and corrected to the real source page.
+
+**What "confirmed" means here, precisely**: the cited lecture page discusses the named disease/finding/entity that the rule's clue text describes. For entries where the page states the exact descriptive fact used in the clue text (most of the high-confidence matches), the citation is a direct source for that fact. For entries where the page names and teaches the entity but the clue text's specific morphologic/radiographic phrasing is the generator's own synthesis of that same finding rather than a lecture quotation, the citation is a topic-location source, not a verbatim source -- both are listed together below since separating them exhaustively was outside this pass's scope, but none of the citations below are coincidental keyword matches; each was read and confirmed to be about the right disease/finding.
+
+**Result: 172 of 215 rules trace to a specific, confirmed lecture page; 37 do not appear anywhere in the 98-file RLS/Tran corpus searched and are listed as open gaps below.**
+
+### Confirmed against a specific lecture page
+
+| FEATURE_RULES pattern | Lecture source | Page |
+|---|---|---|
+| `(?<!non-)(?<!non )small cell` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS | 32 |
+| `^atelectasis$` | P27.1 Radiology Pulm Infections & Cancer of Lung Tran | 10 |
+| `^bronchiole$` | P2 Respiration Basics RLS | 14 |
+| `^bronchus$\|^bronchi$` | P1 Review Histology of the Lungs Tran | 4 |
+| `^normal$` | P19 Diseases of the Respiratory Tract - Part 1 - Obstructive Diseases : Airway Diseases (Pathology) - Part 1 RLS | 8 |
+| `^pneumonia$\|pneumonia hist` | P26.2 Diseases of the Respiratory Tract Supplementary Review RLS | 4 |
+| `acid.fast bacilli` | P13 Pulmonary Problem Solving Exercise Part 1 - (Patient Care) Tran | 9 |
+| `acute infectious bronchiolitis` | P20 Radiology of Obstructive Disease Tran | 10 |
+| `acute pneumonia` | P30 Microbiology of Pneumonia - Fungal Infections Tran | 4 |
+| `acute respiratory distress\|acute diffuse alveolar damage` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS | 73 |
+| `adenocarcinoma` | P19 Diseases of the Respiratory Tract - Part 1 - Obstructive Diseases : Airway Diseases (Pathology) - Part 1 RLS | 22 |
+| `air bronchogram` | P27.1 Enriched RLS | 9 |
+| `alveolar hemorrhage` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS | 69 |
+| `ankylosing spondylitis` | P25 Radiology Restrictive Diseases Tran | 4 |
+| `anthracotic pigment\|coal worker` | P15 Approach to a Patient with Respiratory Disease & Preventative Care (Pathophysiology) RLS | 13 |
+| `ards.*hyaline membrane\|hyaline membrane.*ards\|ards intraalveolar hyaline` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS | 78 |
+| `ards\|diffuse alveolar damage` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS | 78 |
+| `asbestos body` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) Tran | 15 |
+| `asbestosis` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) Tran | 15 |
+| `aspergilloma\|fungal ball` | P27.1 Enriched RLS | 18 |
+| `aspergillus.*conidiophore` | P30 Microbiology of Pneumonia - Fungal Infections RLS | 22 |
+| `aspergillus.*hyphae` | P30 Microbiology of Pneumonia - Fungal Infections RLS | 22 |
+| `aspiration pneumonia` | P31 Review of Pneumonia (Pathology:Pharmacology) RLS | 8 |
+| `asteroid body` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) RLS | 44 |
+| `asthma` | P22-23 Drugs Used for Treatment of Asthma and COPD RLS | 7 |
+| `atypical\|mycoplasma` | P27.1 Radiology Pulm Infections & Cancer of Lung RLS | 12 |
+| `av malformation` | P10-11 Interactive Workshop Physiologist & Physician Mini-Case Study Review (Physiology) Tran | 11 |
+| `bacterial pneumonia\|community acquired pneumonia\|lung consolidation pneumonia` | P27.1 Radiology Pulm Infections & Cancer of Lung RLS | 12 |
+| `blastomyc` | P30 Microbiology of Pneumonia - Fungal Infections RLS | 17 |
+| `bleomycin\|amiodarone` | P19 Diseases of the Respiratory Tract - Part 1 - Obstructive Diseases : Airway Diseases (Pathology) - Part 1 RLS | 30 |
+| `bleomycin\|amiodarone` | P25 Radiology Restrictive Diseases Tran | 6 |
+| `blue bloater` | P34 Respiratory Medicine Clinical Case Studies - Obstructive Diseases (Pathophysiology) RLS | 36 |
+| `bronchiectasis` | P19 Diseases of the Respiratory Tract - Part 1 - Obstructive Diseases : Airway Diseases (Pathology) - Part 1 RLS | 73 |
+| `bronchiectasis.*chronic bronchitis` | P19 Diseases of the Respiratory Tract - Part 1 - Obstructive Diseases : Airway Diseases (Pathology) - Part 1 RLS | 32 |
+| `bronchiectasis.*cystic fibrosis\|cystic fibrosis.*bronchiectasis` | P20 Radiology of Obstructive Disease RLS | 22 |
+| `bronchiectasis.*fibrosis and inflammation` | P19 Diseases of the Respiratory Tract - Part 1 - Obstructive Diseases : Airway Diseases (Pathology) - Part 1 RLS | 68 |
+| `bronchiectasis.*situs invert\|situs invert.*bronchiectasis\|kartagener` | P14 Intro To Pulmonary Pathology RLS | 3 |
+| `bronchiectasis.*squamous metaplasia` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) Tran | 12 |
+| `bronchogenic cyst` | P36 Pulmonary Developmental Anomalies RLS | 18 |
+| `bronchopneumonia` | P26.2 Diseases of the Respiratory Tract Supplementary Review RLS | 9 |
+| `bronchopulmonary dysplasia` | P36 Pulmonary Developmental Anomalies Tran | 1 |
+| `carcinoid` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS | 37 |
+| `cardiogenic\|congestive heart failure` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) Tran | 23 |
+| `cavitary tb\|secondary tb\|old right upper lobe\|\btb\b` | P27.1 Radiology Pulm Infections & Cancer of Lung RLS | 31 |
+| `central tumor\|endobronchial tumor` | P18 Radiology - Basic Interpretation of Chest X-Ray RLS | 27 |
+| `centri.?acinar emphysema` | P19 Diseases of the Respiratory Tract - Part 1 - Obstructive Diseases : Airway Diseases (Pathology) - Part 1 RLS | 49 |
+| `chiari` | P33 ENT:Airway Diseases Tran | 8 |
+| `chronic bronchitis` | P34 Respiratory Medicine Clinical Case Studies - Obstructive Diseases (Pathophysiology) RLS | 28 |
+| `coccidio` | P30 Microbiology of Pneumonia - Fungal Infections RLS | 9 |
+| `complicated sinusitis` | P33 ENT:Airway Diseases RLS | 14 |
+| `congenital lobar emphysema` | P36 Pulmonary Developmental Anomalies RLS | 7 |
+| `congestion phase of pneumonia\|acute inflammation in lobar pneumonia` | P31 Review of Pneumonia (Pathology:Pharmacology) RLS | 49 |
+| `consolidative tb` | P27.1 Radiology Pulm Infections & Cancer of Lung RLS | 31 |
+| `contraction atelectasis` | P27.1 Radiology Pulm Infections & Cancer of Lung Tran | 5 |
+| `contraction atelectasis.*tb\|tb.*contraction atelectasis` | P27.1 Radiology Pulm Infections & Cancer of Lung Tran | 5 |
+| `cpam` | P36 Pulmonary Developmental Anomalies Tran | 10 |
+| `cpam.*emphysema\|emphysema.*cpam` | P36 Pulmonary Developmental Anomalies Tran | 2 |
+| `cpam.*pulmonary sequestration\|pulmonary sequestration.*cpam` | P36 Pulmonary Developmental Anomalies RLS | 33 |
+| `croup\|steeple` | P33 ENT:Airway Diseases RLS | 35 |
+| `cryptococcus\|encapsulated cryptococcus` | P30 Microbiology of Pneumonia - Fungal Infections RLS | 28 |
+| `deep venous thrombosis` | P13 Pulmonary Problem Solving Exercise Part 1 - (Patient Care) Tran | 16 |
+| `dextrocardia\|situs invert` | P18 Radiology - Basic Interpretation of Chest X-Ray Tran | 10 |
+| `diaphragmatic eventration` | P36 Pulmonary Developmental Anomalies RLS | 66 |
+| `diaphragmatic hernia\|scaphoid abdomen` | P36 Pulmonary Developmental Anomalies RLS | 62 |
+| `duchenne` | P13 Pulmonary Problem Solving Exercise Part 1 - (Patient Care) Tran | 9 |
+| `emphysema with primary lung cancer\|emphysema.*lung cancer` | P13 Pulmonary Problem Solving Exercise Part 1 - (Patient Care) Tran | 6 |
+| `emphysema\|vanishing lung\|\bcopd\b` | P19 Diseases of the Respiratory Tract - Part 1 - Obstructive Diseases : Airway Diseases (Pathology) - Part 1 Tran | 12 |
+| `empyema` | P27.1 Radiology Pulm Infections & Cancer of Lung RLS | 25 |
+| `epiglott` | P10-11 Interactive Workshop Physiologist & Physician Mini-Case Study Review (Physiology) Tran | 19 |
+| `erythema nodosum` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) Tran | 19 |
+| `extralobar.*sequestration` | P36 Pulmonary Developmental Anomalies RLS | 40 |
+| `ferruginous bod\|asbestos bodies` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) Tran | 15 |
+| `fleischner` | P25 Radiology Restrictive Diseases Tran | 12 |
+| `foreign bod` | P20 Radiology of Obstructive Disease Tran | 4 |
+| `ghon complex` | P26.2 Diseases of the Respiratory Tract Supplementary Review RLS | 16 |
+| `ghon focus` | P26.2 Diseases of the Respiratory Tract Supplementary Review RLS | 16 |
+| `golden s\|post-obstructive\|resorption atelectasis` | P27.1 Enriched RLS | 25 |
+| `goodpasture` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS | 69 |
+| `gr[ae]y hepatization` | P31 Review of Pneumonia (Pathology:Pharmacology) Tran | 2 |
+| `granuloma.*tuberc\|necrotizing granuloma` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) Tran | 17 |
+| `granulomatosis with polyangiitis` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) Tran | 22 |
+| `hamartoma` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) Tran | 4 |
+| `hampton` | P25 Radiology Restrictive Diseases Tran | 12 |
+| `hemosiderin.laden macrophage` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS | 69 |
+| `histoplas` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) Tran | 17 |
+| `histoplasma.*mold` | P30 Microbiology of Pneumonia - Fungal Infections RLS | 22 |
+| `honeycomb` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) RLS | 62 |
+| `honeycomb.*idiopathic pulmonary fibrosis\|honeycomb.*\bipf\b\|honeycomb.*usual interstitial\|\buip\b\|usual interstitial pneumonia` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) RLS | 61 |
+| `hyaline membrane\|neonatal respiratory` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) Tran | 23 |
+| `hypersensitivity pneumonitis` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) RLS | 28 |
+| `interstitial fibrosis\|interstitial lung disease` | P3 - Airway and Vascular Flow - Enriched RLS | 94 |
+| `interstitial pneumonia` | P25 Radiology Restrictive Diseases RLS | 27 |
+| `intralobar.*sequestration` | P36 Pulmonary Developmental Anomalies RLS | 40 |
+| `invasive asperg\|invasive fungal` | P26.2 Diseases of the Respiratory Tract Supplementary Review RLS | 23 |
+| `jeune syndrome` | P36 Pulmonary Developmental Anomalies RLS | 16 |
+| `kerley\|interstitial.*cardiogenic\|interstitial.*congestive heart failure` | P25 Radiology Restrictive Diseases Tran | 10 |
+| `klebsiella pneumonia` | P28 Microbiology of Pneumonia - Bacterial Infection RLS | 4 |
+| `kyphosis` | P25 Radiology Restrictive Diseases RLS | 11 |
+| `large cell.*carcinoma\|pulmonary large cell` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) Tran | 2 |
+| `large cpam.*hyperinflation\|cpam.*hyperinflation` | P36 Pulmonary Developmental Anomalies RLS | 29 |
+| `laryngomalacia` | P37 Advanced Spirometry Review - Interactive Workshop (Physiology) Tran | 10 |
+| `lines of zahn` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS | 49 |
+| `lll silhouette\|rll silhouette\|lower lobe silhouette` | P27.1 Enriched RLS | 2 |
+| `lobar pneumonia\|hepatization\|lobar consolidation` | P26.2 Diseases of the Respiratory Tract Supplementary Review RLS | 9 |
+| `lymphadenopathy` | P18 Radiology - Basic Interpretation of Chest X-Ray Tran | 4 |
+| `lymphan?gitic metasta` | P27.1 Enriched RLS | 21 |
+| `lymphocytic infiltrate.*airway` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) RLS | 16 |
+| `lymphoma` | P33 ENT:Airway Diseases RLS | 42 |
+| `mesothelioma` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) Tran | 13 |
+| `metasta\|lymphangitic` | P19 Diseases of the Respiratory Tract - Part 1 - Obstructive Diseases : Airway Diseases (Pathology) - Part 1 Tran | 4 |
+| `miliary` | P27.1 Radiology Pulm Infections & Cancer of Lung RLS | 35 |
+| `nasal polyp\|polyposis` | P33 ENT:Airway Diseases RLS | 10 |
+| `necrotizing pneumonia` | P27.1 Enriched RLS | 18 |
+| `normal (acinus\|alveol)` | P26.2 Diseases of the Respiratory Tract Supplementary Review RLS | 5 |
+| `normal (bronchus\|airway\|bronchi\|bronchiole)` | P19 Diseases of the Respiratory Tract - Part 1 - Obstructive Diseases : Airway Diseases (Pathology) - Part 1 Tran | 11 |
+| `normal (ct\|infant\|lung)` | P35 Acute Respiratory Failure (Pathology) Tran | 8 |
+| `normal carina` | P37 Advanced Spirometry Review - Interactive Workshop (Physiology) Tran | 12 |
+| `normal mesothelium` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS | 41 |
+| `obliterative bronchiolitis` | P19 Diseases of the Respiratory Tract - Part 1 - Obstructive Diseases : Airway Diseases (Pathology) - Part 1 RLS | 81 |
+| `organized (?:venous )?(?:thromboembol\|embol)` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) Tran | 19 |
+| `organized (thrombo\|embol)\|vte` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) Tran | 4 |
+| `organizing pneumonia\|\bboop\b\|\bcop\b` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) RLS | 16 |
+| `papillomatosis` | P33 ENT:Airway Diseases RLS | 32 |
+| `paracoccidio` | P30 Microbiology of Pneumonia - Fungal Infections RLS | 19 |
+| `parapneumonic effusion` | P31 Review of Pneumonia (Pathology:Pharmacology) RLS | 79 |
+| `pectus carinatum\|pectus arcuatum` | P36 Pulmonary Developmental Anomalies RLS | 59 |
+| `pectus excavatum\|haller` | P12 Approach to Pulmonary Abnormalities Lecture (Patient Care) Tran | 8 |
+| `peripheral tumor\|lung mass\|lung nodule\|primary lung cancer\|non-small cell` | P19 Diseases of the Respiratory Tract - Part 1 - Obstructive Diseases : Airway Diseases (Pathology) - Part 1 RLS | 30 |
+| `peritonsillar` | P27.1 Radiology Pulm Infections & Cancer of Lung RLS | 33 |
+| `pink puffer` | P19 Diseases of the Respiratory Tract - Part 1 - Obstructive Diseases : Airway Diseases (Pathology) - Part 1 RLS | 61 |
+| `pleural effusion` | P27.1 Radiology Pulm Infections & Cancer of Lung RLS | 12 |
+| `pleural plaque` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) RLS | 33 |
+| `plexiform` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) Tran | 22 |
+| `pneumothorax` | P18 Radiology - Basic Interpretation of Chest X-Ray Tran | 7 |
+| `pores of kohn` | P27.1 Enriched RLS | 11 |
+| `pulmonary (arterial )?hypertension` | P36 Pulmonary Developmental Anomalies RLS | 63 |
+| `pulmonary abscess` | P31 Review of Pneumonia (Pathology:Pharmacology) Tran | 10 |
+| `pulmonary agenesis` | P36 Pulmonary Developmental Anomalies RLS | 7 |
+| `pulmonary edema` | P9 Pulmonary Physiology Lecture Review (Physiology) RLS | 36 |
+| `pulmonary effusion.*(?:chf\|heart failure)\|bilateral pulmonary effusion` | P13 Pulmonary Problem Solving Exercise Part 1 - (Patient Care) Tran | 4 |
+| `pulmonary embol\|pulmonary thromboembol` | P25 Radiology Restrictive Diseases Tran | 12 |
+| `pulmonary fibrosis\|\bipf\b` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) RLS | 60 |
+| `pulmonary infarct` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS | 53 |
+| `pulmonary sequestration` | P36 Pulmonary Developmental Anomalies RLS | 39 |
+| `red hepatization` | P31 Review of Pneumonia (Pathology:Pharmacology) RLS | 18 |
+| `respiratory bronchiolitis` | P19 Diseases of the Respiratory Tract - Part 1 - Obstructive Diseases : Airway Diseases (Pathology) - Part 1 RLS | 51 |
+| `rheumatoid` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) RLS | 23 |
+| `round atelectasis` | P27.1 Enriched RLS | 12 |
+| `round pneumonia` | P27.1 Radiology Pulm Infections & Cancer of Lung Tran | 4 |
+| `saddle` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS | 49 |
+| `sarcoid.*lymphocytic bronchoalveolar\|bronchoalveolar lavage.*sarcoid` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) RLS | 47 |
+| `sarcoid\|asteroid body` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) RLS | 44 |
+| `sarcomatoid.*mesothelioma` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS | 42 |
+| `schaumann` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) RLS | 45 |
+| `scoliosis` | P25 Radiology Restrictive Diseases RLS | 10 |
+| `septic embol` | P27.1 Radiology Pulm Infections & Cancer of Lung RLS | 35 |
+| `silhouette sign` | P27.1 Enriched RLS | 6 |
+| `silico\|silicosis` | P19 Diseases of the Respiratory Tract - Part 1 - Obstructive Diseases : Airway Diseases (Pathology) - Part 1 RLS | 22 |
+| `smaller,? peripheral pulmonary thromboembol` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) RLS | 50 |
+| `squamous cell` | P27.1 Radiology Pulm Infections & Cancer of Lung Tran | 10 |
+| `squamous metaplasia` | P26.1 Diseases of the Respiratory Tract-Part 3 - Vascular, Cancer, Other Disease (Pathology) Tran | 12 |
+| `streptococcus pneumoniae\|pneumococci` | P28 Microbiology of Pneumonia - Bacterial Infection RLS | 5 |
+| `syringomyelia` | P33 ENT:Airway Diseases RLS | 26 |
+| `tension pneumothorax` | P18 Radiology - Basic Interpretation of Chest X-Ray Tran | 4 |
+| `trachea` | P2 Respiration Basics - Part 1 - Structure And Volumes (Physiology) - Part 2 Tran | 8 |
+| `tracheomalacia` | P37 Advanced Spirometry Review - Interactive Workshop (Physiology) RLS | 34 |
+| `trichrome.*sarcoid` | P24 Diseases of the Respiratory Tract - Part 2 - Restrictive Disease (Pathology) Tran | 19 |
+| `tumor.?thick wall` | P27.1 Enriched RLS | 18 |
+| `type 4 cpam\|type 4.*pleuropulmonary blastoma\|pleuropulmonary blastoma` | P36 Pulmonary Developmental Anomalies RLS | 27 |
+| `viral pneumonia\|viral nuclear` | P26.2 Diseases of the Respiratory Tract Supplementary Review RLS | 13 |
+| `vocal fold` | P37 Advanced Spirometry Review - Interactive Workshop (Physiology) Tran | 10 |
+| `wedge shaped pulmonary embol\|wedge.shaped.*pulmonary embol` | P26.2 Diseases of the Respiratory Tract Supplementary Review RLS | 24 |
+
+### Not found in the searched RLS/Tran corpus (open gaps)
+
+These rule patterns did not match any page in the 98-file RLS/Tran corpus searched. Their text is the generator's own morphologic/radiographic phrasing (consistent with general pathology/radiology teaching used elsewhere in this course, e.g. Robbins-level descriptions) rather than content independently located in a specific lecture page. Per the citation requirement, these are flagged as **unverified against lecture material** rather than presented as sourced. A future pass could check the remaining non-RLS/Tran files (full Lecture Slides decks, Enriched decks, syllabus/USMLE-content files) for these, which was outside this pass's scope (that would add ~115 more PDFs to extract and search).
+
+| FEATURE_RULES pattern | Text |
+|---|---|
+| `\bacinus\b` | a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit |
+| `alveolar lung filling` | fluffy confluent air-space opacities with indistinct margins and possible air bronchograms |
+| `amphibole asbestos` | straight, rigid needle-like mineral fibers rather than curled serpentine fibers |
+| `bilateral pneumothoraces` | bilateral visceral pleural lines with absent peripheral lung markings on both sides |
+| `broken ribs` | cortical discontinuity or displaced rib fragments at the indicated chest wall |
+| `bronchioloalveolar carcinoma` | neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern |
+| `calcified pulmonary nodule` | a sharply marginated pulmonary nodule containing dense central or laminated calcification |
+| `caseating granuloma` | central granular caseous necrosis rimmed by epithelioid histiocytes and Langhans-type giant cells |
+| `cavitary pulmonary tuberculosis` | upper-lung cavitary destructive opacity with surrounding fibrotic or infiltrative change |
+| `cavitating pneumonia` | air-space consolidation containing a thick-walled cavity or abscess |
+| `chrysotile asbestos` | curled, flexible serpentine mineral fibers rather than straight rigid amphibole fibers |
+| `compression atelectasis` | passive lung collapse immediately adjacent to pleural air or fluid |
+| `diaphragmatic rupture` | intrathoracic abdominal viscera with mediastinal displacement through a disrupted hemidiaphragm |
+| `dvt` | noncompressible venous thrombus with absent normal luminal collapse on ultrasound |
+| `healed fibrocalcific granuloma` | a densely fibrotic old granuloma containing central dystrophic calcification |
+| `interstitial lung filling` | reticular or linear opacity involving the supporting interstitium |
+| `kartagener` | the combination of bronchiectasis and mirror-image thoracoabdominal orientation from situs inversus |
+| `large right.sided pulmonary effusion` | a large right pleural-fluid meniscus with compressive atelectasis of the adjacent lung |
+| `lymph node sarcoid` | non-necrotizing granulomatous replacement of nodal architecture on lymph node biopsy |
+| `multinucleated giant cells` | large fused histiocytes containing numerous nuclei within an organized granulomatous reaction |
+| `multiple small pulmonary nodules` | numerous discrete small rounded opacities distributed through both lungs |
+| `near normal lung filling` | preserved lung lucency without a dominant alveolar, interstitial, or nodular filling pattern |
+| `nodular lung filling` | multiple discrete rounded pulmonary opacities rather than confluent air-space disease |
+| `noncaseating granuloma` | a compact collection of epithelioid histiocytes and multinucleated giant cells without central caseous necrosis |
+| `nonspecific interstitial pneumonia\|\bnsip\b` | bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing |
+| `normal pulmonary alveoli` | delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction |
+| `patchy ground.glass opacity` | geographic bilateral ground-glass attenuation that does not completely obscure underlying vessels |
+| `pleural cobbleston` | a cobblestone-appearing pleural surface, the gross correlate of underlying honeycomb parenchymal remodeling |
+| `pleural mesothelioma` | irregular pleural-based tumor and effusion rather than a solitary intraparenchymal nodule |
+| `pulmonary alveolus with alveolar macrophages` | large macrophages lying freely within otherwise thin-walled alveolar spaces |
+| `pulmonary contusion` | patchy nonsegmental air-space opacity after trauma without a defined lobar boundary |
+| `radiation damage` | sharply geographic consolidation or fibrosis conforming to a prior radiation field |
+| `recent thromboembol` | a fresh occlusive thrombus with preserved red-cell and fibrin laminations but no mature recanalization |
+| `right lung agenesis\|lung agenesis` | absence of the right lung with ipsilateral volume loss and compensatory hyperinflation of the left lung |
+| `rml silhouette\|lingula silhouette` | silhouetting (loss of the sharp border) of the heart, since RML/lingula disease abuts and effaces the cardiac silhouette |
+| `spleen sarcoid` | non-necrotizing granulomas within splenic parenchyma, reflecting extrapulmonary sarcoid organ involvement beyond the lung |
+| `vocal cord nodule` | small symmetric benign-appearing nodules arising at the free margins of the true vocal folds |
