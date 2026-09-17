@@ -868,16 +868,75 @@ def _synonym_key(concept_norm: str) -> str:
     return concept_norm
 
 
+# Keyword clusters of classically confusable / "trap answer" diagnoses that
+# should be preferentially offered as distractors for each other, even when
+# they fall in different auto-derived topics. Matching is a simple substring
+# test against the padded, casefolded concept string (same style as
+# topic_for). A concept may belong to more than one cluster.
+CONFUSABLE_CLUSTERS: list[list[str]] = [
+    [
+        "small cell", "squamous cell carcinoma", "squamous cell lung carcinoma",
+        "adenocarcinoma", "large cell carcinoma", "large cell lung carcinoma",
+        "carcinoid", "non-small cell lung cancer", "bronchioloalveolar carcinoma",
+    ],
+    [
+        "usual interstitial pneumonia", " uip", "nonspecific interstitial pneumonia",
+        " nsip", "hypersensitivity pneumonitis", "idiopathic pulmonary fibrosis",
+        " ipf", "organizing pneumonia", "honeycomb",
+    ],
+    [
+        "tuberculosis", " tb ", " tb", "tb ", "sarcoidosis", "histoplasm",
+        "coccidioid", "blastomyc", "aspergill", "cryptococc",
+        "granulomatosis with polyangiitis", "paracoccidioid",
+    ],
+    [
+        "pulmonary embol", "hampton", "saddle", "deep venous thrombosis",
+        " dvt", "pulmonary hypertension", "plexiform", "pulmonary infarct",
+        "thromboembol",
+    ],
+    ["blue bloater", "pink puffer", "chronic bronchitis", "emphysema", " copd"],
+    ["pleural effusion", "empyema", "parapneumonic", "hemothorax", "pleural plaque"],
+    [
+        "lobar pneumonia", "bronchopneumonia", "atypical pneumonia", "mycoplasma",
+        "aspiration pneumonia", "necrotizing pneumonia", "viral pneumonia",
+        "community acquired pneumonia", "round pneumonia", "hepatization",
+    ],
+    ["epiglottitis", "croup", "peritonsillar", "laryngomalacia"],
+    [
+        "cpam", "pulmonary sequestration", "congenital lobar emphysema",
+        "congenital diaphragmatic hernia", "bronchogenic cyst",
+    ],
+    ["neonatal respiratory distress syndrome", "bronchopulmonary dysplasia", "hyaline membrane"],
+    ["goodpasture", "granulomatosis with polyangiitis", "alveolar hemorrhage"],
+    ["asbestosis", "silicosis", "coal worker", "anthracotic", "asbestos"],
+    ["bronchiectasis", "cystic fibrosis", "kartagener", "situs invert"],
+]
+
+
+def confusable_cluster_ids(concept_norm: str) -> set[int]:
+    padded = f" {concept_norm} "
+    return {idx for idx, keywords in enumerate(CONFUSABLE_CLUSTERS) if any(kw in padded for kw in keywords)}
+
+
 def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
+    correct = current["concept"]
+    correct_norm = re.sub(r"[^a-z0-9]+", " ", correct.casefold()).strip()
+    correct_key = _synonym_key(correct_norm)
+    correct_clusters = confusable_cluster_ids(correct_norm)
+
+    def shares_cluster(entry: dict) -> bool:
+        if not correct_clusters:
+            return False
+        entry_norm = re.sub(r"[^a-z0-9]+", " ", entry["concept"].casefold()).strip()
+        return bool(confusable_cluster_ids(entry_norm) & correct_clusters)
+
     tiers = [
+        [e for e in entries if shares_cluster(e)],
         [e for e in entries if e["topic"] == current["topic"] and e["family"] == current["family"]],
         [e for e in entries if e["family"] == current["family"]],
         [e for e in entries if e["topic"] == current["topic"]],
         entries,
     ]
-    correct = current["concept"]
-    correct_norm = re.sub(r"[^a-z0-9]+", " ", correct.casefold()).strip()
-    correct_key = _synonym_key(correct_norm)
     result: list[str] = []
     seen_norms: set[str] = set()
     seen_keys: set[str] = {correct_key}
