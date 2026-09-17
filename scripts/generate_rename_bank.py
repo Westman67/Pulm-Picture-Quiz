@@ -901,19 +901,87 @@ CONCEPT_SYNONYM_GROUPS: list[set[str]] = [
         "bilateral calcified asbestos related pleural plaques",
         "parietal pleural plaques",
     },
-    {"miliary tb", "miliary tuberculosis"},
-    {"cavitary tb", "cavitary pulmonary tuberculosis"},
+    {"miliary tb", "miliary tuberculosis", "tb"},
+    {"cavitary tb", "cavitary pulmonary tuberculosis", "tb"},
     {"pulmonary embolism", "pulmonary embolims", "acute pulmonary embolism"},
     {"sarcoidosis", "pulmonary sarcoidosis"},
     {"cpam type 3", "type 4 cpam versus pleuropulmonary blastoma"},
+    {"organizing pneumonia", "cryptogenic organizing pneumonia"},
+    {
+        "congenital lobar emphysema",
+        "congenital lobar emphysema lul improvement",
+        "congenital lobar emphysema lul",
+    },
+    {"hyperinflation in copd", "severe copd"},
+    {"neonatal respiratory distress syndrome", "neonatal respiratory distress syndrome hyaline membranes"},
+    {"bronchogenic cyst", "mediastinal bronchogenic cyst", "mediastinal bronchogenic cyst in the carina"},
+    {"cryptococcus neoformans", "encapsulated cryptococcus neoformans"},
+    {"round pneumonia", "round pneumonia ct child"},
+    {"grey hepatization phase of pneumonia", "gray hepatization of lobar pneumonia"},
+    {
+        "congenital diaphragmatic hernia",
+        "left sided congenital diaphragmatic hernia",
+        "congenital diaphragmatic hernia with scaphoid abdomen",
+    },
+    {"carcinoid", "carcinoid tumor", "pulmonary carcinoid tumor"},
+    {
+        "lobar pneumonia",
+        "lobar pneumonia acute alveolar inflammation",
+        "acute inflammation in lobar pneumonia",
+        "red hepatization phase of pneumonia",
+        "lobar pneumonia red hepatization",
+    },
+    {
+        "coal worker s pneumoconiosis",
+        "anthracotic pigment in lung in coal worker s pneumoconiosis",
+    },
+    {"lung mass", "left hilar lung mass"},
+    {"pneumothorax", "bilateral pneumothorax", "bilateral pneumothoraces"},
+    {"normal", "normal infant"},
+    {"lateral pectus carinatum", "lower pectus carinatum"},
+    # Any image showing simple/generic pleural fluid, regardless of stated
+    # laterality or presumed etiology, cannot be told apart from another such
+    # image on visual grounds alone -- these are never offered as distractors
+    # against each other. Findings with a genuinely distinguishing visual
+    # feature (empyema's loculation/air-fluid level, mesothelioma's pleural
+    # rind, a named complicating process) stay in their own separate groups.
+    {
+        "pleural effusion",
+        "right pleural effusion",
+        "bilateral pleural effusion",
+        "malignant pleural effusion",
+        "malignant left pleural effusion",
+        "pleural effusion and passive atelectasis",
+        "pleural effusion from pulmonary embolism",
+        "large right sided pulmonary effusion",
+        "bilateral pulmonary effusion from chf",
+    },
 ]
 
+# Concepts that are a logical superset of other concepts (e.g. "Non-Small
+# Cell Lung Cancer" is not a distinct histologic entity distinguishable from
+# its own subtypes -- it names the category that squamous cell, large cell,
+# adenocarcinoma, and bronchioloalveolar carcinoma all belong to) are cross-
+# listed into each of those groups below, so they are excluded as a
+# distractor for any of them, while remaining a legitimate distractor for a
+# genuinely separate category such as small cell carcinoma.
+NSCLC_SUPERSET_OF: list[str] = [
+    "large cell lung carcinoma",
+    "squamous cell carcinoma",
+    "adenocarcinoma",
+    "bronchioloalveolar carcinoma",
+]
+for _group in CONCEPT_SYNONYM_GROUPS:
+    if _group & set(NSCLC_SUPERSET_OF):
+        _group.add("non small cell lung cancer")
 
-def _synonym_key(concept_norm: str) -> str:
+
+def _synonym_keys(concept_norm: str) -> set[str]:
+    keys = {concept_norm}
     for group in CONCEPT_SYNONYM_GROUPS:
         if concept_norm in group:
-            return next(iter(sorted(group)))
-    return concept_norm
+            keys.add(next(iter(sorted(group))))
+    return keys
 
 
 # Keyword clusters of classically confusable / "trap answer" diagnoses that
@@ -969,7 +1037,7 @@ def confusable_cluster_ids(concept_norm: str) -> set[int]:
 def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
     correct = current["concept"]
     correct_norm = re.sub(r"[^a-z0-9]+", " ", correct.casefold()).strip()
-    correct_key = _synonym_key(correct_norm)
+    correct_keys = _synonym_keys(correct_norm)
     correct_clusters = confusable_cluster_ids(correct_norm)
 
     def shares_cluster(entry: dict) -> bool:
@@ -987,7 +1055,7 @@ def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
     ]
     result: list[str] = []
     seen_norms: set[str] = set()
-    seen_keys: set[str] = {correct_key}
+    seen_keys: set[str] = set(correct_keys)
     for tier in tiers:
         for entry in sorted(tier, key=lambda item: hashlib.sha256(f"{current['sha']}:{item['concept']}".encode()).hexdigest()):
             option = entry["concept"]
@@ -996,12 +1064,12 @@ def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
                 continue
             if correct_norm in option_norm or option_norm in correct_norm:
                 continue
-            option_key = _synonym_key(option_norm)
-            if option_key in seen_keys:
+            option_keys = _synonym_keys(option_norm)
+            if option_keys & seen_keys:
                 continue
             result.append(option)
             seen_norms.add(option_norm)
-            seen_keys.add(option_key)
+            seen_keys |= option_keys
             if len(result) == 3:
                 return result
     raise RuntimeError(f"Could not create distractors for {current['filename']}")
