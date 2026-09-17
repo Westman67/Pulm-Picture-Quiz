@@ -1,47 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-17T11:42:31.576936-04:00",
-  "count": 8,
+  "generated_at": "2026-09-17T12:17:12.444602-04:00",
+  "count": 5,
   "items": [
-    {
-      "source_id": "src_c12eecb01b3b",
-      "source_group_id": "sg_54cad758ac9b",
-      "preview_asset": "public/assets/images/original_82391822cb810208.png",
-      "proposed_answer": "Appendicitis",
-      "modality": "X-ray",
-      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
-      "source_collection_key": "rename",
-      "source_collection": "Lecture material",
-      "uncertainty_reason": "The filename and visible target do not establish a defensible pulmonary identification task.",
-      "answer_leakage_risk": "low",
-      "project_status": "NEEDS_REVIEW"
-    },
-    {
-      "source_id": "src_14b8edc63179",
-      "source_group_id": "sg_5bc6c692f5ef",
-      "preview_asset": "public/assets/images/original_152309650366f36b.png",
-      "proposed_answer": "Cystic fibrosis",
-      "modality": "CT",
-      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
-      "source_collection_key": "rename",
-      "source_collection": "Lecture material",
-      "uncertainty_reason": "The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.",
-      "answer_leakage_risk": "low",
-      "project_status": "NEEDS_REVIEW"
-    },
-    {
-      "source_id": "src_7dfc37266c91",
-      "source_group_id": "sg_5bc6c692f5ef",
-      "preview_asset": "public/assets/images/original_8e317b7e2752bbd6.png",
-      "proposed_answer": "Cystic fibrosis",
-      "modality": "CT",
-      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
-      "source_collection_key": "rename",
-      "source_collection": "Lecture material",
-      "uncertainty_reason": "The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.",
-      "answer_leakage_risk": "low",
-      "project_status": "NEEDS_REVIEW"
-    },
     {
       "source_id": "src_257ebb5b7dd8",
       "source_group_id": "sg_146ac79f405d",

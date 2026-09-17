@@ -1,15 +1,15 @@
 # Pulmonary multi-collection preflight audit
 
-Generated: 2026-09-17T11:42:31.576936-04:00
+Generated: 2026-09-17T12:17:12.444602-04:00
 
 - Source: `/Desktop/Rename` (read-only)
 - Source: `/Desktop/Add` (read-only)
-- Physical image files: 558
-- Decodable files: 558
+- Physical image files: 555
+- Decodable files: 555
 - Scored questions: 544
-- Review-only sources: 8
+- Review-only sources: 5
 - Perceptual duplicates withheld: 6
-- Source groups with multiple named variants: 63
+- Source groups with multiple named variants: 62
 - Low-resolution files (one dimension below 500 px): 145
 - Quiz-safe border crops: 13
 - Exact byte-identical duplicate groups: 0
@@ -18,12 +18,12 @@ Generated: 2026-09-17T11:42:31.576936-04:00
 ## Collections
 
 - 3rd Party: 177 sources, 168 scored
-- Lecture material: 381 sources, 376 scored
+- Lecture material: 378 sources, 376 scored
 
 ## Modalities
 
 - Angiography: 2
-- CT: 93
+- CT: 91
 - Clinical Image: 3
 - Cytology: 2
 - Diagram: 8
@@ -36,7 +36,7 @@ Generated: 2026-09-17T11:42:31.576936-04:00
 - MRI: 1
 - Microscopy: 7
 - Ultrasound: 5
-- X-ray: 161
+- X-ray: 160
 - X-ray and CT: 10
 - X-ray and pathology: 1
 - X-ray, CT, and pathology: 1
@@ -58,9 +58,6 @@ Generated: 2026-09-17T11:42:31.576936-04:00
 
 ## Review-only decisions
 
-- `Appendicitis` (src_c12eecb01b3b): The filename and visible target do not establish a defensible pulmonary identification task.
-- `Cystic fibrosis` (src_14b8edc63179): The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.
-- `Cystic fibrosis` (src_7dfc37266c91): The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.
 - `Pulmonary Infarct` (src_257ebb5b7dd8): Embedded labels state the tested diagnosis directly over medically meaningful tissue.
 - `Pulmonary epithelial metaplasia` (src_38410f8d021a): The source label is ambiguous and the intended metaplastic process is not specified reliably.
 - `Pneumothorax CT Air in Pleural Space with Partial Lung Collapse` (src_778524185030): Diagnostic labels define the tested pneumothorax directly over medically meaningful pixels and cannot be removed safely.

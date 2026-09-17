@@ -49,9 +49,6 @@ IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg"}
 # These files remain visible in reviewer mode but are not used in scored sessions. Their
 # visible evidence does not establish one sufficiently precise pulmonary answer.
 REVIEW_ONLY_RENAME: dict[str, str] = {
-    "Appendicitis CXR.png": "The filename and visible target do not establish a defensible pulmonary identification task.",
-    "CF CT 2.png": "The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.",
-    "CF CT 3.png": "The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.",
     "Pulmonary Infarct Gross.png": "Embedded labels state the tested diagnosis directly over medically meaningful tissue.",
     "Pulmonary Metalplasia .png": "The source label is ambiguous and the intended metaplastic process is not specified reliably.",
 }

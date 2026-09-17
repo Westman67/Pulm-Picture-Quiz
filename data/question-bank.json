@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "bank_id": "bank_3c0109c75c96",
-  "generated_at": "2026-09-17T11:42:31.576936-04:00",
+  "bank_id": "bank_1f1f6759b9d9",
+  "generated_at": "2026-09-17T12:17:12.444602-04:00",
   "mode": "pulmonary_visual_identification",
   "question_count": 544,
   "quality_review": {

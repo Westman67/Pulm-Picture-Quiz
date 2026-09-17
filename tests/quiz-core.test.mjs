@@ -29,8 +29,8 @@ const questions = bank.questions;
 test("new bank uses schema version 2 and valid source lineage", () => {
   assert.equal(bank.schema_version, 2);
   assert.equal(bank.question_count, questions.length);
-  assert.equal(manifest.record_count, 558);
-  assert.equal(manifest.records.length, 558);
+  assert.equal(manifest.record_count, 555);
+  assert.equal(manifest.records.length, 555);
   assert.equal(questions.length, 544);
   const sources = new Map(manifest.records.map((record) => [record.source_id, record]));
   for (const question of questions) {

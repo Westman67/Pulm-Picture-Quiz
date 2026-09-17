@@ -525,27 +525,6 @@
       "height": 1040
     }
   },
-  "var_769732339d6f": {
-    "source_id": "src_c12eecb01b3b",
-    "source_group_id": "sg_54cad758ac9b",
-    "quiz": {
-      "path": "public/assets/images/quiz_7a1ac464cd091edd.webp",
-      "sha256": "b384ee9254014dacd8b3678642fd85a2ca7a30bbe41873f0fdc02718868c5966",
-      "width": 698,
-      "height": 682,
-      "transformations": [
-        "metadata_strip",
-        "lossless_png_reencode",
-        "neutral_background_composite"
-      ]
-    },
-    "original": {
-      "path": "public/assets/images/original_82391822cb810208.png",
-      "sha256": "271f930457377402d0a5fa083a28c2b211958acdb97f156a5c070592e84f73fa",
-      "width": 698,
-      "height": 682
-    }
-  },
   "var_ae9551c58524": {
     "source_id": "src_8d5ba82e52da",
     "source_group_id": "sg_ec8522c6bcb9",
@@ -1825,48 +1804,6 @@
       "sha256": "5aae7e17dd7fac4cc4e84a365dff316f9359c788683026d1d57d7bd65a0a9544",
       "width": 798,
       "height": 520
-    }
-  },
-  "var_7a877c937d89": {
-    "source_id": "src_14b8edc63179",
-    "source_group_id": "sg_5bc6c692f5ef",
-    "quiz": {
-      "path": "public/assets/images/quiz_519aca47f3a1f67c.webp",
-      "sha256": "b2d7a5546bd9f08a3549517d6f22733d15796301e0c42888c55119f9e05f963a",
-      "width": 884,
-      "height": 618,
-      "transformations": [
-        "metadata_strip",
-        "lossless_png_reencode",
-        "neutral_background_composite"
-      ]
-    },
-    "original": {
-      "path": "public/assets/images/original_152309650366f36b.png",
-      "sha256": "b7fb2ae023bcff9ac911da201219c9634625bdb84bba7cd1c74ca7e4eebaa1ed",
-      "width": 884,
-      "height": 618
-    }
-  },
-  "var_22a5d211d565": {
-    "source_id": "src_7dfc37266c91",
-    "source_group_id": "sg_5bc6c692f5ef",
-    "quiz": {
-      "path": "public/assets/images/quiz_1dc28bbd3bd54990.webp",
-      "sha256": "60e9fe08c7c56b186381b1482c703392989bb43f66f81c218cbd56068bacc56e",
-      "width": 918,
-      "height": 742,
-      "transformations": [
-        "metadata_strip",
-        "lossless_png_reencode",
-        "neutral_background_composite"
-      ]
-    },
-    "original": {
-      "path": "public/assets/images/original_8e317b7e2752bbd6.png",
-      "sha256": "5551eacbd4a8244d30a20e078b8aef38ec53064d5c2436f9d4788d41419c24d5",
-      "width": 918,
-      "height": 742
     }
   },
   "var_e2905e17eb89": {
