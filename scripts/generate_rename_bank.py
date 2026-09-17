@@ -807,10 +807,70 @@ def modality_family(modality: str) -> str:
     return "clinical"
 
 
+# Some FEATURE_RULES entries combine a microscopic-only finding (visible only
+# under a microscope, e.g. keratin pearls, gland formation, hyalinized
+# collagen) and a gross/imaging-only finding (visible only on a specimen
+# photograph or a radiograph/CT, e.g. a cavitating mass, calcified pleural
+# plaques, hilar lymphadenopathy) into one "X or Y" description. That is fine
+# when a question's image could plausibly be either, but it produces a
+# nonsensical "what to notice" clue when the actual displayed image is one
+# specific modality and the clue leads with the other modality's finding
+# (e.g. citing keratin pearls -- an H&E finding -- for a gross specimen
+# photograph). This table gives a modality-appropriate replacement for the
+# feature text of specific FEATURE_RULES entries (keyed by that entry's own
+# regex pattern, so ordering/specificity still comes from FEATURE_RULES
+# itself); a modality family with no entry here falls back to the original
+# combined text.
+MODALITY_FEATURE_OVERRIDES: dict[str, dict[str, str]] = {
+    r"pulmonary abscess": {
+        "microscopy": "suppurative necrosis with a dense neutrophilic infiltrate destroying the underlying lung parenchyma",
+        "gross": "a thick-walled cavitary lesion with central suppurative necrosis",
+        "imaging": "a thick-walled cavitary lesion, often with an air-fluid level",
+    },
+    r"silico|silicosis": {
+        "gross": "a rounded, whorled, blackened fibrotic nodule on cut section",
+        "microscopy": "a rounded whorled hyalinized collagen nodule",
+        "imaging": "upper-lung-predominant silicotic nodules and scarring",
+    },
+    r"emphysema|vanishing lung|\bcopd\b": {
+        "gross": "markedly hyperinflated, pale lung with enlarged bullous air spaces and loss of the normal spongy parenchymal texture",
+        "microscopy": "destruction of alveolar walls with permanent enlargement of the airspaces distal to the terminal bronchiole",
+        "imaging": "hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces",
+    },
+    r"carcinoid": {
+        "gross": "an endobronchial tan, well-vascularized mass",
+        "microscopy": "uniform neuroendocrine cells arranged in nests or trabeculae",
+    },
+    r"adenocarcinoma": {
+        "gross": "a peripheral, infiltrative lung mass, sometimes with a puckered overlying pleural surface",
+        "microscopy": "malignant gland formation and mucin production by the neoplastic cells",
+    },
+    r"squamous cell": {
+        "gross": "a centrally located, gray-white to tan mass with a cavitating, necrotic cut surface",
+        "microscopy": "keratin pearls and intercellular bridges within nests of malignant squamous cells",
+    },
+    r"pleural plaque": {
+        "microscopy": "a dense, hypocellular collagenous plaque with the characteristic \"basket-weave\" pattern of collagen bundles",
+    },
+    r"mesothelioma": {
+        "microscopy": "malignant mesothelial cell proliferation",
+        "gross": "diffuse nodular pleural thickening encasing the lung",
+        "imaging": "diffuse nodular pleural thickening encasing the lung",
+    },
+    r"sarcoid|asteroid body": {
+        "imaging": "bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic radiographic pattern of sarcoidosis",
+    },
+}
+
+
 def feature_for(concept: str, modality: str) -> str:
     folded = concept.casefold()
+    family = modality_family(modality)
     for pattern, feature in FEATURE_RULES:
         if re.search(pattern, folded):
+            override = MODALITY_FEATURE_OVERRIDES.get(pattern)
+            if override and family in override:
+                return override[family]
             return feature
     fallbacks = {
         "imaging": "a characteristic distribution, density, and anatomic localization different from the displayed imaging pattern",

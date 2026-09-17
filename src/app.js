@@ -15,7 +15,7 @@ import {
   setQualityFlagStatus,
   toggleMarked,
   upsertQualityFlag,
-} from "./quiz-core.mjs?v=rename-add-20260917e";
+} from "./quiz-core.mjs?v=rename-add-20260917f";
 
 const app = document.querySelector("#app");
 const state = {
@@ -144,6 +144,11 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
+}
+
+function capitalizeFirst(value) {
+  const text = String(value ?? "");
+  return text.length ? text[0].toUpperCase() + text.slice(1) : text;
 }
 
 function currentQuestion() {
@@ -386,7 +391,7 @@ function feedbackTemplate(question, answer, reveal) {
   return `<section class="feedback ${answer.correct ? "is-correct" : "is-incorrect"}">
     <div class="feedback-title"><span>${answer.correct ? "✓" : "×"}</span><div><p>${answer.correct ? "Correct" : "Not quite"}</p><strong>${escapeHtml(question.options[question.correct_index])}</strong></div></div>
     <p>${escapeHtml(question.explanation)}</p>
-    <div class="clue-box"><strong>What to notice</strong><ul>${question.visual_clues.map((clue) => `<li>${escapeHtml(clue)}</li>`).join("")}</ul></div>
+    <div class="clue-box"><strong>What to notice</strong><ul>${question.visual_clues.map((clue) => `<li>${escapeHtml(capitalizeFirst(clue))}</li>`).join("")}</ul></div>
     <div class="rationale-list"><h3>Choice rationales</h3>${question.options.map((option, index) => `<article class="rationale ${index === question.correct_index ? "keyed" : ""} ${index === answer.selected_index ? "selected-rationale" : ""}"><div><span>${index + 1}</span><strong>${escapeHtml(option)}</strong>${index === question.correct_index ? "<em>Keyed</em>" : ""}${index === answer.selected_index ? "<em>Your choice</em>" : ""}</div><p>${escapeHtml(question.choice_rationales[index])}</p></article>`).join("")}</div>
     ${sourceDetailsTemplate(question)}
   </section>`;
@@ -693,8 +698,8 @@ window.addEventListener("keydown", (event) => {
 async function init() {
   try {
     const [bank, reviewQueue] = await Promise.all([
-      fetch("data/question-bank.json?v=rename-add-20260917e").then((response) => response.json()),
-      fetch("data/review-queue.json?v=rename-add-20260917e").then((response) => response.json()),
+      fetch("data/question-bank.json?v=rename-add-20260917f").then((response) => response.json()),
+      fetch("data/review-queue.json?v=rename-add-20260917f").then((response) => response.json()),
     ]);
     state.bank = applyImageCategories(bank);
     state.reviewQueue = reviewQueue;

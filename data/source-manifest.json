@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-17T13:14:33.259277-04:00",
+  "generated_at": "2026-09-17T13:21:33.801771-04:00",
   "builder": "build-medical-picture-quiz / multi-collection flat-image builder",
   "source_directories": [
     {
@@ -970,7 +970,7 @@
       "immutable_source_hash": "60909e363891405cbba2c850c34adea561f90a68dbb361a5ec77d058b834c2ee",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "malignant gland formation, mucin production, or a peripheral infiltrative lung mass",
+      "key_visual_findings": "a peripheral, infiltrative lung mass, sometimes with a puckered overlying pleural surface",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -1062,7 +1062,7 @@
       "immutable_source_hash": "24a223c059cc844d5a31836187b74bb8866575477160b7a2268a97eef76dab96",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "malignant gland formation, mucin production, or a peripheral infiltrative lung mass",
+      "key_visual_findings": "a peripheral, infiltrative lung mass, sometimes with a puckered overlying pleural surface",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -1153,7 +1153,7 @@
       "immutable_source_hash": "d3c2c5d72d05ef4c0180d127eb6af0562b4c9ac2ba694b3b30604e4fc23461da",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "malignant gland formation, mucin production, or a peripheral infiltrative lung mass",
+      "key_visual_findings": "malignant gland formation and mucin production by the neoplastic cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -1244,7 +1244,7 @@
       "immutable_source_hash": "8702c8bb5ce13c19729c7d87afb906faca0127cb982b5620e65397e50e384963",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "malignant gland formation, mucin production, or a peripheral infiltrative lung mass",
+      "key_visual_findings": "malignant gland formation and mucin production by the neoplastic cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -1337,7 +1337,7 @@
       "immutable_source_hash": "cf13b03725f0ee48cdcc595ac95bac8a8726daf545a1c1870c3f75f0e8252c97",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "malignant gland formation, mucin production, or a peripheral infiltrative lung mass",
+      "key_visual_findings": "malignant gland formation and mucin production by the neoplastic cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -6671,7 +6671,7 @@
       "immutable_source_hash": "c12ac2ddd14a7cae8a27faafe21405fff749d102448e2e09eac6d9796fea9411",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae",
+      "key_visual_findings": "an endobronchial tan, well-vascularized mass",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -6761,7 +6761,7 @@
       "immutable_source_hash": "73e71ba563c19b019d1afa1c1b36b25a1009881c864b15b2fe4d213aa967a751",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae",
+      "key_visual_findings": "an endobronchial tan, well-vascularized mass",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -6851,7 +6851,7 @@
       "immutable_source_hash": "720cf5d3bf9417a757f8985b92cf48f36fb14c27061e41761e81ac1f167b14a9",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae",
+      "key_visual_findings": "uniform neuroendocrine cells arranged in nests or trabeculae",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -6941,7 +6941,7 @@
       "immutable_source_hash": "9f6e7db8739632967b1d349bf61fd721b26c4df7b593214beda8247b8b247d52",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae",
+      "key_visual_findings": "uniform neuroendocrine cells arranged in nests or trabeculae",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -8366,7 +8366,7 @@
       "immutable_source_hash": "1bc143bfbe089b7cfd7bf0645d99e09fa206271ca46e8cce675dfeeaa92f06cb",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring",
+      "key_visual_findings": "a rounded whorled hyalinized collagen nodule",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -11038,7 +11038,7 @@
       "immutable_source_hash": "69758a036ff378af8c1a140372fafd3ab138ef67d9cc0f3c83c7e4537ebe73e6",
       "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces",
+      "key_visual_findings": "destruction of alveolar walls with permanent enlargement of the airspaces distal to the terminal bronchiole",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
@@ -12027,7 +12027,7 @@
       "immutable_source_hash": "27ed419b977051aade8bfb57bbde1cedf19a8738fd8aa484adaedc70937544e8",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "malignant gland formation, mucin production, or a peripheral infiltrative lung mass",
+      "key_visual_findings": "malignant gland formation and mucin production by the neoplastic cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -17273,7 +17273,7 @@
       "immutable_source_hash": "07821662cd7d6db1c79ea2d97643e06595611f8a507cc8b39bcb35f6ec9846a8",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation",
+      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -17361,7 +17361,7 @@
       "immutable_source_hash": "c0e2f13ece220f39869a7e086a36107c6ec246f3c71ead36b05d9ff30b493d41",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation",
+      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -17629,7 +17629,7 @@
       "immutable_source_hash": "8d1a98a23d9b480bb10a8a0b1c67bcb5925c99495b4aa1427c2aa579fd65beb5",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation",
+      "key_visual_findings": "malignant mesothelial cell proliferation",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -17721,7 +17721,7 @@
       "immutable_source_hash": "daec8895a9d1e546ea76bc094f2200bc0ef27dd5ac17f23f69e2ab24092d73dd",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation",
+      "key_visual_findings": "malignant mesothelial cell proliferation",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -21183,7 +21183,7 @@
       "immutable_source_hash": "763ff8500198b6af901cd58314a393f0c451b3f2168a8ba250fb7cb1197f99c6",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "sharply marginated, often bilateral calcified pleural-based plaques that serve as a marker of asbestos exposure without necessarily indicating interstitial disease",
+      "key_visual_findings": "a dense, hypocellular collagenous plaque with the characteristic \"basket-weave\" pattern of collagen bundles",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -23675,7 +23675,7 @@
       "immutable_source_hash": "80e0c97eca5bada7670a3fa52c3ed18c6d8eb26b72ad8f08ed2289ec4ba7b8f8",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a thick-walled cavitary lesion with central suppurative necrosis or an air-fluid level",
+      "key_visual_findings": "a thick-walled cavitary lesion, often with an air-fluid level",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -23769,7 +23769,7 @@
       "immutable_source_hash": "0972a30888ef5299122a17cbff632786b95634a249874fd41d945cfc07e8bebb",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a thick-walled cavitary lesion with central suppurative necrosis or an air-fluid level",
+      "key_visual_findings": "a thick-walled cavitary lesion, often with an air-fluid level",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -23863,7 +23863,7 @@
       "immutable_source_hash": "468157253b95512c70d335f5b0a74856397fa4f0971cfb07cde1c12eff48bb30",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a thick-walled cavitary lesion with central suppurative necrosis or an air-fluid level",
+      "key_visual_findings": "a thick-walled cavitary lesion, often with an air-fluid level",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -23955,7 +23955,7 @@
       "immutable_source_hash": "b0982616cee2c9d97dc304350da9c2b57894cc6cbd121a4d1cff6b2ac03d668f",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a thick-walled cavitary lesion with central suppurative necrosis or an air-fluid level",
+      "key_visual_findings": "a thick-walled cavitary lesion, often with an air-fluid level",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -24047,7 +24047,7 @@
       "immutable_source_hash": "daf366c33a9dfc79facb3671f919e08911cb4f0e3d58630f8e34547d6b0b4d79",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a thick-walled cavitary lesion with central suppurative necrosis or an air-fluid level",
+      "key_visual_findings": "a thick-walled cavitary lesion, often with an air-fluid level",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -24137,7 +24137,7 @@
       "immutable_source_hash": "37a87bab52d58cc610c962d23cd9c6a47a7c506633885ecf6f0c4472558c3826",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a thick-walled cavitary lesion with central suppurative necrosis or an air-fluid level",
+      "key_visual_findings": "a thick-walled cavitary lesion, often with an air-fluid level",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -24225,7 +24225,7 @@
       "immutable_source_hash": "65ef9bb78aa0764229c5c685b3823aaee6e7dd82dbe3b6a926e45c7ae51cac17",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a thick-walled cavitary lesion with central suppurative necrosis or an air-fluid level",
+      "key_visual_findings": "a thick-walled cavitary lesion with central suppurative necrosis",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -24313,7 +24313,7 @@
       "immutable_source_hash": "69e18b548bceb9edc2bbd2c8099d469086f74197784d4845f83113b59ad30c65",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a thick-walled cavitary lesion with central suppurative necrosis or an air-fluid level",
+      "key_visual_findings": "suppurative necrosis with a dense neutrophilic infiltrate destroying the underlying lung parenchyma",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -27775,7 +27775,7 @@
       "immutable_source_hash": "92c88480b50d886026ddbf25bc30caa3a5008f917e04589a3270aa170071a807",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "non-necrotizing granulomas, sometimes with a laminated Schaumann body or stellate asteroid inclusion",
+      "key_visual_findings": "bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic radiographic pattern of sarcoidosis",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -29213,7 +29213,7 @@
       "immutable_source_hash": "6802f8eb2f57009cb818c17631c0df335d256f5a2d56d80a7088b35f5659564c",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring",
+      "key_visual_findings": "a rounded, whorled, blackened fibrotic nodule on cut section",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -30560,7 +30560,7 @@
       "immutable_source_hash": "8ba534b428ebd5b6ffe10e936a0746710e8c3b6145323b379dc553e8f14c21d2",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "a centrally located, gray-white to tan mass with a cavitating, necrotic cut surface",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -30651,7 +30651,7 @@
       "immutable_source_hash": "4316dc126a94549f3f1f2dd3d00ae5f11c6606b67a4cf5bdfd1bd00700d1e750",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "a centrally located, gray-white to tan mass with a cavitating, necrotic cut surface",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -30744,7 +30744,7 @@
       "immutable_source_hash": "97e896a55d801f89868895702a6954dc5b8a01d899dc61d23b0e1081340e8203",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "a centrally located, gray-white to tan mass with a cavitating, necrotic cut surface",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -30836,7 +30836,7 @@
       "immutable_source_hash": "64c48b3639f493fe8cb7fbf4fbba82032fd0370336c1779bac90c5ffbe6c44a3",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "keratin pearls and intercellular bridges within nests of malignant squamous cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -30928,7 +30928,7 @@
       "immutable_source_hash": "06e23878578c8cbdc977e7ba167941ff272ef27915a4eebe4876234da232232b",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "keratin pearls and intercellular bridges within nests of malignant squamous cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -31020,7 +31020,7 @@
       "immutable_source_hash": "b80e1b1d4d5cf37cc7a396c3951922f9646ddbc06b611c5855cda035e7309c05",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "keratin pearls and intercellular bridges within nests of malignant squamous cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -31112,7 +31112,7 @@
       "immutable_source_hash": "0b6baba095fd1dc7c3d8b99e3c24968ddfc20f4e8ac771d7faefcbab4ceccae6",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "keratin pearls and intercellular bridges within nests of malignant squamous cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -31200,7 +31200,7 @@
       "immutable_source_hash": "3f74248a33c0bedb8ac6186cb5d2ed7ec1b9c7f8c88bf08f2b27e94af98b4388",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "keratin pearls and intercellular bridges within nests of malignant squamous cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -31378,7 +31378,7 @@
       "immutable_source_hash": "6ed591fe6fec48c107c52474810a7581b003a78dd31f1f209f688da6e80776f2",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "a centrally located, gray-white to tan mass with a cavitating, necrotic cut surface",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -31466,7 +31466,7 @@
       "immutable_source_hash": "b2d54bd3d96eaf66568201eb6d61af3157fffd0d867bda9288d52d92016602a1",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "keratin pearls and intercellular bridges within nests of malignant squamous cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -31554,7 +31554,7 @@
       "immutable_source_hash": "0699942c7a9eeccd9447a97a2bed568c22623b9f4f938a05c1bbc2f7f86e4afe",
       "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "keratin pearls and intercellular bridges within nests of malignant squamous cells",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
@@ -34393,7 +34393,7 @@
       "immutable_source_hash": "5ebc3c738f84b86453396177e9335b9391877aebaed9d260da8cf4198381411c",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "malignant gland formation, mucin production, or a peripheral infiltrative lung mass",
+      "key_visual_findings": "malignant gland formation and mucin production by the neoplastic cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -35273,7 +35273,7 @@
       "immutable_source_hash": "96d60ea62605375217ad6435536b7cd8d459b6254b13c868da2a8048a143d065",
       "status": "DUPLICATE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "malignant gland formation, mucin production, or a peripheral infiltrative lung mass",
+      "key_visual_findings": "malignant gland formation and mucin production by the neoplastic cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -35362,7 +35362,7 @@
       "immutable_source_hash": "17d3840e832159ab6b7ec5ef7613ed43375b999c2e1a7927f65e74ae3b61b1fa",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces",
+      "key_visual_findings": "destruction of alveolar walls with permanent enlargement of the airspaces distal to the terminal bronchiole",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -36514,7 +36514,7 @@
       "immutable_source_hash": "f84473e58e690544c4e47722dca3e74d36d759518b381a321c4893dd72d5069e",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces",
+      "key_visual_findings": "markedly hyperinflated, pale lung with enlarged bullous air spaces and loss of the normal spongy parenchymal texture",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -36953,7 +36953,7 @@
       "immutable_source_hash": "c2c567a1f0085361c6bbe5b65b8513231996fd6328879e4254c600840e49afb2",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring",
+      "key_visual_findings": "upper-lung-predominant silicotic nodules and scarring",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -37054,7 +37054,7 @@
       "immutable_source_hash": "7129813de12859a42cb5b64f4d5bae1b767709527243ab9c4779b605fe149cc0",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring",
+      "key_visual_findings": "a rounded whorled hyalinized collagen nodule",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -38055,7 +38055,7 @@
       "immutable_source_hash": "64d99ec51daf38b0134844a6b9d8420ecefea64aa1ff6f4792f6c455044887eb",
       "status": "DUPLICATE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "keratin pearls and intercellular bridges within nests of malignant squamous cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -40877,7 +40877,7 @@
       "immutable_source_hash": "5983bce5bfe7263d7d4eb66fcbdb4e65c30b5794f94207cd0d8527e569de3bc5",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation",
+      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -40966,7 +40966,7 @@
       "immutable_source_hash": "e7dd26532107d1f00721d960493cdb423bebd782128e2d37686529e524d23cb1",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation",
+      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -42383,7 +42383,7 @@
       "immutable_source_hash": "66cb1ff002cf93649cce4ea33fd95986e624bbc09fc5945ce2f36d36fa742156",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces",
+      "key_visual_findings": "markedly hyperinflated, pale lung with enlarged bullous air spaces and loss of the normal spongy parenchymal texture",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -42471,7 +42471,7 @@
       "immutable_source_hash": "4ef845ed49ae2358b17ae703d65e96583a50ff82e0607ebe8be5d0e8231ff1ee",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces",
+      "key_visual_findings": "destruction of alveolar walls with permanent enlargement of the airspaces distal to the terminal bronchiole",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -43095,7 +43095,7 @@
       "immutable_source_hash": "2983502a6257eeb05ed5fba6ce7a41219332d5d04275492836678f0f5feccbb2",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "malignant gland formation, mucin production, or a peripheral infiltrative lung mass",
+      "key_visual_findings": "malignant gland formation and mucin production by the neoplastic cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -43183,7 +43183,7 @@
       "immutable_source_hash": "a3d744da5c79b4098be242a36b947dab7a547986f2e707dcbd87a95237c61962",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "malignant gland formation, mucin production, or a peripheral infiltrative lung mass",
+      "key_visual_findings": "a peripheral, infiltrative lung mass, sometimes with a puckered overlying pleural surface",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -43362,7 +43362,7 @@
       "immutable_source_hash": "2c6be63eb57535eace39b2878fe943fec98de65bf179c22d1d758d4689b7e79c",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae",
+      "key_visual_findings": "uniform neuroendocrine cells arranged in nests or trabeculae",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -43452,7 +43452,7 @@
       "immutable_source_hash": "e56a49f9ee35025cb6aad41c371c6cca3ee8ac6406fb137729610aa9016ed029",
       "status": "DUPLICATE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae",
+      "key_visual_findings": "an endobronchial tan, well-vascularized mass",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -43630,7 +43630,7 @@
       "immutable_source_hash": "e542bcd85a2e1f7b1e3c6282efd9de531f6e239e6a80820d6e45456764cf9a04",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "a centrally located, gray-white to tan mass with a cavitating, necrotic cut surface",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -43718,7 +43718,7 @@
       "immutable_source_hash": "a8db47390cd141bc677f7a1aa9f36aaa247a2d7fb201d27e1f0d35b18e12aa84",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "keratin pearls and intercellular bridges within nests of malignant squamous cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -43806,7 +43806,7 @@
       "immutable_source_hash": "edeef3a6f7067e540ded6018515858bd8bbd635fbe42987495ca4739e053f80c",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "keratin pearls and intercellular bridges within nests of malignant squamous cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -43894,7 +43894,7 @@
       "immutable_source_hash": "179711384952812c014659020793f0ab3f04ef845e21d9a55564115f8c0fe7d7",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation",
+      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -44334,7 +44334,7 @@
       "immutable_source_hash": "fc285583b640d85aa12704bf7ac66fd32b129f5a46cfcb1e8fdf12eedf8bbfa2",
       "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation",
+      "key_visual_findings": "diffuse nodular pleural thickening encasing the lung",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
@@ -46288,7 +46288,7 @@
       "immutable_source_hash": "eaa668a26d9c77818377f0844d6e98d4c4dee3c7874f29a91464f12459b676a1",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "keratin pearls and intercellular bridges within nests of malignant squamous cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -46378,7 +46378,7 @@
       "immutable_source_hash": "6323b2eb6b11e76000f9619704f5727e6ad8dc2b73f3813b91d8a288db8e339c",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "malignant gland formation, mucin production, or a peripheral infiltrative lung mass",
+      "key_visual_findings": "malignant gland formation and mucin production by the neoplastic cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -46822,7 +46822,7 @@
       "immutable_source_hash": "0ed0c9bac2d728f6a28d44bd5726faf6e3c34223348022d64bc22a4700b5c833",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae",
+      "key_visual_findings": "uniform neuroendocrine cells arranged in nests or trabeculae",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -48314,7 +48314,7 @@
       "immutable_source_hash": "8d5f0551109fda72a8ffc932611c959217cdc3b156034f7199d43cfd45336ab8",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "malignant gland formation, mucin production, or a peripheral infiltrative lung mass",
+      "key_visual_findings": "malignant gland formation and mucin production by the neoplastic cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -48493,7 +48493,7 @@
       "immutable_source_hash": "0a95b019b20ea923c46599e3969316aa7487303cd4f7520ea4791e4b66057db1",
       "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "non-necrotizing granulomas, sometimes with a laminated Schaumann body or stellate asteroid inclusion",
+      "key_visual_findings": "bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic radiographic pattern of sarcoidosis",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
@@ -48580,7 +48580,7 @@
       "immutable_source_hash": "7fed8a22b4d8523417c3a6916ee1b223c8434479a1fbc4158fa7efe0305b1eec",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "non-necrotizing granulomas, sometimes with a laminated Schaumann body or stellate asteroid inclusion",
+      "key_visual_findings": "bilateral, symmetric hilar and mediastinal lymph node enlargement, the classic radiographic pattern of sarcoidosis",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -48666,7 +48666,7 @@
       "immutable_source_hash": "2fcc1506545f42888654aed09db49e9160d8f5512e9edf8cc2a1f9a22aec60c0",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring",
+      "key_visual_findings": "upper-lung-predominant silicotic nodules and scarring",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -49104,7 +49104,7 @@
       "immutable_source_hash": "3dbfad71e3d147fd3a226461ae2bd39e38dea15eac9f5646194aac90ba7b93f9",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "keratin pearls and intercellular bridges or a centrally located cavitating mass",
+      "key_visual_findings": "keratin pearls and intercellular bridges within nests of malignant squamous cells",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
