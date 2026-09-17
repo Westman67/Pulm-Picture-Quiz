@@ -817,7 +817,7 @@ def stem_for(modality: str, joint: bool, concept: str) -> tuple[str, str]:
 # distractors against each other, even though each source image remains its
 # own separate scored question.
 CONCEPT_SYNONYM_GROUPS: list[set[str]] = [
-    {"epiglottitis with thumb sign", "epiglottitis thumb sign"},
+    {"epiglottitis with thumb sign", "epiglottitis thumb sign", "acute epiglottitis"},
     {
         "ards hyaline membrane",
         "ards hyaline membranes",
@@ -858,6 +858,52 @@ CONCEPT_SYNONYM_GROUPS: list[set[str]] = [
         "hampton hump in pulmonary infarction",
         "peripheral opacity hampton hump from pulmonary embolism",
     },
+    {
+        "ipf",
+        "idiopathic pulmonary fibrosis",
+        "uip",
+        "usual interstitial pneumonia",
+        "usual interstitial pneumonia uip",
+        "honeycomb lung from idiopathic pulmonary fibrosis",
+        "honeycomb change in idiopathic pulmonary fibrosis",
+        "honeycombing from usual interstitial pneumonia",
+        "pleural cobblestoning in idiopathic pulmonary fibrosis",
+    },
+    {
+        "adenocarcinoma",
+        "adenocarcinoma of the lung",
+        "adenocarcinoma peripheral lung",
+        "adenocarcinoma gland formation and mucin",
+        "epithelial adenocarcinoma",
+        "pulmonary adenocarcinoma",
+    },
+    {"red hepatization phase of pneumonia", "lobar pneumonia red hepatization"},
+    {
+        "emphysema",
+        "emphysema alveolar wall destruction",
+        "emphysema ct low attenuation bullae",
+        "emphysema gross lung bullae",
+        "vanishing lung syndrome",
+    },
+    {"centri acinar emphysema", "centriacinar emphysema"},
+    {
+        "pectus excavatum",
+        "pectus excavatum haller index",
+        "pectus excavatum treatment",
+        "nuss bar for pectus excavatum",
+    },
+    {
+        "asbestos related pleural plaques",
+        "asbestos related calcified pleural plaque",
+        "asbestos related pleural plaque",
+        "asbestosis plaque",
+        "bilateral calcified asbestos related pleural plaques",
+        "parietal pleural plaques",
+    },
+    {"miliary tb", "miliary tuberculosis"},
+    {"cavitary tb", "cavitary pulmonary tuberculosis"},
+    {"pulmonary embolism", "pulmonary embolims", "acute pulmonary embolism"},
+    {"sarcoidosis", "pulmonary sarcoidosis"},
 ]
 
 

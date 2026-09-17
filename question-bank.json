@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "bank_id": "bank_3c0109c75c96",
-  "generated_at": "2026-09-16T22:17:04.203251-04:00",
+  "generated_at": "2026-09-16T22:31:44.617485-04:00",
   "mode": "pulmonary_visual_identification",
   "question_count": 544,
   "quality_review": {
@@ -239,7 +239,7 @@
       "options": [
         "Croup Steeple Sign",
         "Severe Laryngomalacia",
-        "Epiglottitis with Thumb Sign",
+        "Croup",
         "Acute Epiglottitis"
       ],
       "correct_index": 3,
@@ -251,7 +251,7 @@
       "choice_rationales": [
         "Croup Steeple Sign would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Severe Laryngomalacia would instead show dynamic-appearing supraglottic collapse with an omega-shaped epiglottic configuration; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
-        "Epiglottitis with Thumb Sign would instead show an enlarged edematous epiglottis or swollen supraglottic tissue; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
+        "Croup would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Correct: The displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue, supporting Acute Epiglottitis."
       ],
       "ground_truth_confidence": "high",
@@ -292,7 +292,7 @@
       "options": [
         "Croup",
         "Croup Steeple Sign",
-        "Epiglottitis (thumb sign)",
+        "Peritonsillar abscess",
         "Acute Epiglottitis"
       ],
       "correct_index": 3,
@@ -304,7 +304,7 @@
       "choice_rationales": [
         "Croup would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Croup Steeple Sign would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
-        "Epiglottitis (thumb sign) would instead show an enlarged edematous epiglottis or swollen supraglottic tissue; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
+        "Peritonsillar abscess would instead show a unilateral rim-enhancing peritonsillar collection with mass effect; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Correct: The displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue, supporting Acute Epiglottitis."
       ],
       "ground_truth_confidence": "high",
@@ -345,8 +345,8 @@
       "options": [
         "Acute Epiglottitis",
         "Croup",
-        "Epiglottitis with Thumb Sign",
-        "Peritonsillar abscess"
+        "Peritonsillar abscess",
+        "Severe Laryngomalacia"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -357,8 +357,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue, supporting Acute Epiglottitis.",
         "Croup would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
-        "Epiglottitis with Thumb Sign would instead show an enlarged edematous epiglottis or swollen supraglottic tissue; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
-        "Peritonsillar abscess would instead show a unilateral rim-enhancing peritonsillar collection with mass effect; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue."
+        "Peritonsillar abscess would instead show a unilateral rim-enhancing peritonsillar collection with mass effect; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
+        "Severe Laryngomalacia would instead show dynamic-appearing supraglottic collapse with an omega-shaped epiglottic configuration; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -1458,7 +1458,7 @@
       "options": [
         "Chronic Silicosis Progressive Massive Fibrosis",
         "Bilateral calcified asbestos-related pleural plaques",
-        "Asbestos-related pleural plaque",
+        "Asbestos Ferruginous Body Prussian Blue Stain",
         "Asbestos Body"
       ],
       "correct_index": 3,
@@ -1470,7 +1470,7 @@
       "choice_rationales": [
         "Chronic Silicosis Progressive Massive Fibrosis would instead show a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring; the displayed image shows a golden-brown beaded ferruginous body with a translucent central fiber.",
         "Bilateral calcified asbestos-related pleural plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows a golden-brown beaded ferruginous body with a translucent central fiber.",
-        "Asbestos-related pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows a golden-brown beaded ferruginous body with a translucent central fiber.",
+        "Asbestos Ferruginous Body Prussian Blue Stain would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows a golden-brown beaded ferruginous body with a translucent central fiber.",
         "Correct: The displayed image shows a golden-brown beaded ferruginous body with a translucent central fiber, supporting Asbestos Body."
       ],
       "ground_truth_confidence": "high",
@@ -1668,10 +1668,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Bilateral calcified asbestos-related pleural plaques",
+        "Anthracotic Pigment in Lung in Coal Worker's Pneumoconiosis",
         "Asbestosis Plaque",
-        "Asbestos Related Pleural Plaques",
-        "Anthracotic Pigment in Lung in Coal Worker's Pneumoconiosis"
+        "Coal Worker's Pneumoconiosis",
+        "Asbestos body"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -1680,10 +1680,10 @@
         "lower-lung fibrotic change or sharply marginated pleural-based calcified plaques"
       ],
       "choice_rationales": [
-        "Bilateral calcified asbestos-related pleural plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
+        "Anthracotic Pigment in Lung in Coal Worker's Pneumoconiosis would instead show coarse black carbon pigment within macrophages and fibrotic pulmonary tissue; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
         "Correct: The displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques, supporting Asbestosis Plaque.",
-        "Asbestos Related Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
-        "Anthracotic Pigment in Lung in Coal Worker's Pneumoconiosis would instead show coarse black carbon pigment within macrophages and fibrotic pulmonary tissue; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques."
+        "Coal Worker's Pneumoconiosis would instead show coarse black carbon pigment within macrophages and fibrotic pulmonary tissue; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
+        "Asbestos body would instead show a golden-brown beaded ferruginous body with a translucent central fiber; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -2093,9 +2093,9 @@
       "joint_images": false,
       "options": [
         "Emphysema Alveolar Wall Destruction",
-        "Emphysema",
+        "Chronic bronchitis",
         "Asthma",
-        "Chronic bronchitis"
+        "Centriacinar Emphysema"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -2105,9 +2105,9 @@
       ],
       "choice_rationales": [
         "Emphysema Alveolar Wall Destruction would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows airway smooth-muscle thickening, mucus plugging, and hyperinflation rather than focal consolidation.",
-        "Emphysema would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows airway smooth-muscle thickening, mucus plugging, and hyperinflation rather than focal consolidation.",
+        "Chronic bronchitis would instead show mucous-gland and goblet-cell enlargement with airway wall inflammation; the displayed image shows airway smooth-muscle thickening, mucus plugging, and hyperinflation rather than focal consolidation.",
         "Correct: The displayed image shows airway smooth-muscle thickening, mucus plugging, and hyperinflation rather than focal consolidation, supporting Asthma.",
-        "Chronic bronchitis would instead show mucous-gland and goblet-cell enlargement with airway wall inflammation; the displayed image shows airway smooth-muscle thickening, mucus plugging, and hyperinflation rather than focal consolidation."
+        "Centriacinar Emphysema would instead show enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing; the displayed image shows airway smooth-muscle thickening, mucus plugging, and hyperinflation rather than focal consolidation."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -2730,8 +2730,8 @@
       "options": [
         "Organizing pneumonia",
         "Usual Interstitial Pneumonia",
-        "Honeycomb change in idiopathic pulmonary fibrosis",
-        "Honeycombing from Usual Interstitial Pneumonia"
+        "Nonspecific Interstitial Pneumonia (NSIP)",
+        "Hypersensitivity pneumonitis"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -2742,8 +2742,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture, supporting Organizing pneumonia.",
         "Usual Interstitial Pneumonia would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture.",
-        "Honeycomb change in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture.",
-        "Honeycombing from Usual Interstitial Pneumonia would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture."
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture.",
+        "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -2782,8 +2782,8 @@
       "joint_images": false,
       "options": [
         "Honeycombing from Usual Interstitial Pneumonia",
-        "Idiopathic Pulmonary Fibrosis",
         "Hypersensitivity pneumonitis",
+        "Nonspecific Interstitial Pneumonia (NSIP)",
         "Organizing pneumonia"
       ],
       "correct_index": 3,
@@ -2794,8 +2794,8 @@
       ],
       "choice_rationales": [
         "Honeycombing from Usual Interstitial Pneumonia would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture.",
-        "Idiopathic Pulmonary Fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture.",
         "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture.",
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture.",
         "Correct: The displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture, supporting Organizing pneumonia."
       ],
       "ground_truth_confidence": "high",
@@ -4956,7 +4956,7 @@
       "options": [
         "Asbestos Ferruginous Body Prussian Blue Stain",
         "Asbestos Related Pleural Plaques",
-        "Asbestosis Plaque",
+        "Asbestos Body",
         "Circumscribed silicotic nodule from silicosis"
       ],
       "correct_index": 3,
@@ -4968,7 +4968,7 @@
       "choice_rationales": [
         "Asbestos Ferruginous Body Prussian Blue Stain would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring.",
         "Asbestos Related Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring.",
-        "Asbestosis Plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring.",
+        "Asbestos Body would instead show a golden-brown beaded ferruginous body with a translucent central fiber; the displayed image shows a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring.",
         "Correct: The displayed image shows a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring, supporting Circumscribed silicotic nodule from silicosis."
       ],
       "ground_truth_confidence": "high",
@@ -5007,9 +5007,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Usual Interstitial Pneumonia",
         "Nonspecific Interstitial Pneumonia (NSIP)",
         "Cryptogenic Organizing Pneumonia",
+        "Hypersensitivity Pneumonitis",
         "Pleural cobblestoning in idiopathic pulmonary fibrosis"
       ],
       "correct_index": 3,
@@ -5019,9 +5019,9 @@
         "bilateral basal and subpleural reticulation with traction change or honeycombing"
       ],
       "choice_rationales": [
-        "Usual Interstitial Pneumonia would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Hypersensitivity Pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting Pleural cobblestoning in idiopathic pulmonary fibrosis."
       ],
       "ground_truth_confidence": "high",
@@ -5858,7 +5858,7 @@
         "Mediastinal Bronchogenic Cyst",
         "Emphysema Gross Lung Bullae",
         "CPAM and Emphysema",
-        "Emphysema Alveolar Wall Destruction"
+        "Centri-acinar Emphysema"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -5870,7 +5870,7 @@
         "Mediastinal Bronchogenic Cyst would instead show a well-circumscribed fluid-filled lesion near the tracheobronchial tree with respiratory-type lining; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
         "Emphysema Gross Lung Bullae would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung.",
         "Correct: The displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung, supporting CPAM and Emphysema.",
-        "Emphysema Alveolar Wall Destruction would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung."
+        "Centri-acinar Emphysema would instead show enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing; the displayed image shows a congenital multicystic intrapulmonary lesion replacing part of a developing lung."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -6598,8 +6598,8 @@
       "joint_images": false,
       "options": [
         "Asbestos Related Pleural Plaques",
-        "Asbestos-related pleural plaque",
         "Malignant Left Pleural Effusion",
+        "Pleural Effusion",
         "Empyema"
       ],
       "correct_index": 3,
@@ -6610,8 +6610,8 @@
       ],
       "choice_rationales": [
         "Asbestos Related Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows a loculated pleural fluid collection with pleural thickening or a lentiform contour.",
-        "Asbestos-related pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows a loculated pleural fluid collection with pleural thickening or a lentiform contour.",
         "Malignant Left Pleural Effusion would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows a loculated pleural fluid collection with pleural thickening or a lentiform contour.",
+        "Pleural Effusion would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows a loculated pleural fluid collection with pleural thickening or a lentiform contour.",
         "Correct: The displayed image shows a loculated pleural fluid collection with pleural thickening or a lentiform contour, supporting Empyema."
       ],
       "ground_truth_confidence": "high",
@@ -8295,8 +8295,8 @@
       "options": [
         "Honeycombing from Usual Interstitial Pneumonia",
         "Hypersensitivity pneumonitis",
-        "UIP",
-        "Honeycomb lung from idiopathic pulmonary fibrosis"
+        "Nonspecific Interstitial Pneumonia (NSIP)",
+        "Cryptogenic Organizing Pneumonia"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -8307,8 +8307,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces, supporting Honeycombing from Usual Interstitial Pneumonia.",
         "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces.",
-        "UIP would instead show basal subpleural reticulation with traction change and stacked cystic honeycombing; the displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces.",
-        "Honeycomb lung from idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces."
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces.",
+        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -8347,8 +8347,8 @@
       "joint_images": false,
       "options": [
         "Nonspecific Interstitial Pneumonia (NSIP)",
-        "Pleural cobblestoning in idiopathic pulmonary fibrosis",
-        "Honeycomb change in idiopathic pulmonary fibrosis",
+        "Organizing pneumonia",
+        "Hypersensitivity Pneumonitis",
         "Honeycomb lung from idiopathic pulmonary fibrosis"
       ],
       "correct_index": 3,
@@ -8359,8 +8359,8 @@
       ],
       "choice_rationales": [
         "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "Pleural cobblestoning in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "Honeycomb change in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Hypersensitivity Pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting Honeycomb lung from idiopathic pulmonary fibrosis."
       ],
       "ground_truth_confidence": "high",
@@ -8507,8 +8507,8 @@
       "options": [
         "Hypersensitivity Pneumonitis",
         "Honeycombing from Usual Interstitial Pneumonia",
-        "Usual Interstitial Pneumonia (UIP)",
-        "Honeycomb lung from idiopathic pulmonary fibrosis"
+        "Cryptogenic Organizing Pneumonia",
+        "Nonspecific Interstitial Pneumonia (NSIP)"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -8519,8 +8519,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas, supporting Hypersensitivity Pneumonitis.",
         "Honeycombing from Usual Interstitial Pneumonia would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas.",
-        "Usual Interstitial Pneumonia (UIP) would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas.",
-        "Honeycomb lung from idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas."
+        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas.",
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -8559,9 +8559,9 @@
       "joint_images": false,
       "options": [
         "Idiopathic Pulmonary Fibrosis",
-        "Usual Interstitial Pneumonia",
         "Hypersensitivity pneumonitis",
-        "Usual Interstitial Pneumonia (UIP)"
+        "Organizing pneumonia",
+        "Cryptogenic Organizing Pneumonia"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -8571,9 +8571,9 @@
       ],
       "choice_rationales": [
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting Idiopathic Pulmonary Fibrosis.",
-        "Usual Interstitial Pneumonia would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "Usual Interstitial Pneumonia (UIP) would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
+        "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -8613,8 +8613,8 @@
       "options": [
         "Idiopathic Pulmonary Fibrosis",
         "Hypersensitivity pneumonitis",
-        "IPF",
-        "Usual Interstitial Pneumonia (UIP)"
+        "Organizing pneumonia",
+        "Cryptogenic Organizing Pneumonia"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -8625,8 +8625,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting Idiopathic Pulmonary Fibrosis.",
         "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "IPF would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "Usual Interstitial Pneumonia (UIP) would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
+        "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -8664,10 +8664,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Usual Interstitial Pneumonia (UIP)",
+        "Cryptogenic Organizing Pneumonia",
         "Idiopathic Pulmonary Fibrosis",
-        "IPF",
-        "Cryptogenic Organizing Pneumonia"
+        "Hypersensitivity Pneumonitis",
+        "Organizing pneumonia"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -8676,10 +8676,10 @@
         "bilateral basal and subpleural reticulation with traction change or honeycombing"
       ],
       "choice_rationales": [
-        "Usual Interstitial Pneumonia (UIP) would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting Idiopathic Pulmonary Fibrosis.",
-        "IPF would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
+        "Hypersensitivity Pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -8720,7 +8720,7 @@
         "Organizing pneumonia",
         "Idiopathic Pulmonary Fibrosis",
         "Hypersensitivity Pneumonitis",
-        "IPF"
+        "Nonspecific Interstitial Pneumonia (NSIP)"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -8732,7 +8732,7 @@
         "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting Idiopathic Pulmonary Fibrosis.",
         "Hypersensitivity Pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "IPF would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -8771,9 +8771,9 @@
       "joint_images": false,
       "options": [
         "Idiopathic Pulmonary Fibrosis",
-        "UIP",
         "Nonspecific Interstitial Pneumonia (NSIP)",
-        "Organizing pneumonia"
+        "Organizing pneumonia",
+        "Hypersensitivity pneumonitis"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -8783,9 +8783,9 @@
       ],
       "choice_rationales": [
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting Idiopathic Pulmonary Fibrosis.",
-        "UIP would instead show basal subpleural reticulation with traction change and stacked cystic honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
+        "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -8823,9 +8823,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "UIP",
         "Hypersensitivity pneumonitis",
-        "IPF",
+        "Nonspecific Interstitial Pneumonia (NSIP)",
+        "Cryptogenic Organizing Pneumonia",
         "Idiopathic Pulmonary Fibrosis"
       ],
       "correct_index": 3,
@@ -8835,9 +8835,9 @@
         "bilateral basal and subpleural reticulation with traction change or honeycombing"
       ],
       "choice_rationales": [
-        "UIP would instead show basal subpleural reticulation with traction change and stacked cystic honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "IPF would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting Idiopathic Pulmonary Fibrosis."
       ],
       "ground_truth_confidence": "high",
@@ -9302,8 +9302,8 @@
       "options": [
         "Pectus Excavatum Haller Index",
         "Jeune Syndrome (decreased thoracic volume)",
-        "Pectus Excavatum",
-        "Congenital Diaphragmatic Hernia"
+        "Congenital Diaphragmatic Hernia",
+        "Type 4 CPAM versus pleuropulmonary blastoma"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -9314,8 +9314,8 @@
       "choice_rationales": [
         "Pectus Excavatum Haller Index would instead show posterior displacement of the sternum with reduced anteroposterior chest diameter; the displayed image shows a narrow bell-shaped thorax with short, horizontally oriented ribs.",
         "Correct: The displayed image shows a narrow bell-shaped thorax with short, horizontally oriented ribs, supporting Jeune Syndrome (decreased thoracic volume).",
-        "Pectus Excavatum would instead show posterior displacement of the sternum with reduced anteroposterior chest diameter; the displayed image shows a narrow bell-shaped thorax with short, horizontally oriented ribs.",
-        "Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows a narrow bell-shaped thorax with short, horizontally oriented ribs."
+        "Congenital Diaphragmatic Hernia would instead show abdominal viscera occupying the hemithorax with compressed ipsilateral lung and a small abdomen; the displayed image shows a narrow bell-shaped thorax with short, horizontally oriented ribs.",
+        "Type 4 CPAM versus pleuropulmonary blastoma would instead show a congenital multicystic intrapulmonary lesion replacing part of a developing lung; the displayed image shows a narrow bell-shaped thorax with short, horizontally oriented ribs."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -9938,8 +9938,8 @@
       "options": [
         "Lymph Node Sarcoidosis",
         "Miliary TB",
-        "Miliary Tuberculosis",
-        "Sarcoidosis Extensive Hilar and Mediastinal Adenopathy"
+        "Sarcoidosis Extensive Hilar and Mediastinal Adenopathy",
+        "Lymphangitic granulomas of sarcoidosis"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -9950,8 +9950,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions, supporting Lymph Node Sarcoidosis.",
         "Miliary TB would instead show innumerable tiny, fairly uniform nodules distributed throughout both lungs; the displayed image shows non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions.",
-        "Miliary Tuberculosis would instead show innumerable tiny, fairly uniform nodules distributed throughout both lungs; the displayed image shows non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions.",
-        "Sarcoidosis Extensive Hilar and Mediastinal Adenopathy would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions."
+        "Sarcoidosis Extensive Hilar and Mediastinal Adenopathy would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions.",
+        "Lymphangitic granulomas of sarcoidosis would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -10151,7 +10151,7 @@
         "Malignant Left Pleural Effusion",
         "Necrotizing pneumonia with pleural effusion",
         "Asbestos Related Pleural Plaques",
-        "Asbestos-related calcified pleural plaque"
+        "Parapneumonic effusion"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -10163,7 +10163,7 @@
         "Correct: The displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis, supporting Malignant Left Pleural Effusion.",
         "Necrotizing pneumonia with pleural effusion would instead show consolidation containing cavitation or nonenhancing necrotic parenchyma; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
         "Asbestos Related Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
-        "Asbestos-related calcified pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis."
+        "Parapneumonic effusion would instead show pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -10255,8 +10255,8 @@
       "joint_images": false,
       "options": [
         "Asbestos Related Pleural Plaques",
-        "Parietal Pleural Plaques",
         "Pleural effusion",
+        "Pleural Effusion from Pulmonary Embolism",
         "Malignant pleural mesothelioma"
       ],
       "correct_index": 3,
@@ -10267,8 +10267,8 @@
       ],
       "choice_rationales": [
         "Asbestos Related Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
-        "Parietal Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
         "Pleural effusion would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
+        "Pleural Effusion from Pulmonary Embolism would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
         "Correct: The displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation, supporting Malignant pleural mesothelioma."
       ],
       "ground_truth_confidence": "high",
@@ -12269,9 +12269,9 @@
       "joint_images": false,
       "options": [
         "Acute pulmonary embolism",
-        "Pulmonary Embolism",
+        "Hampton's Hump Pulmonary Embolism",
         "Old, organized Thromboembolism",
-        "Hampton's Hump Pulmonary Embolism"
+        "Organized venous thromboembolus"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -12281,9 +12281,9 @@
       ],
       "choice_rationales": [
         "Acute pulmonary embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event.",
-        "Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event.",
+        "Hampton's Hump Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event.",
         "Correct: The displayed image shows a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event, supporting Old, organized Thromboembolism.",
-        "Hampton's Hump Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event."
+        "Organized venous thromboembolus would instead show a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event; the displayed image shows a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -12324,7 +12324,7 @@
         "Organizing pneumonia",
         "Pleural cobblestoning in idiopathic pulmonary fibrosis",
         "Hypersensitivity pneumonitis",
-        "Honeycomb lung from idiopathic pulmonary fibrosis"
+        "Nonspecific Interstitial Pneumonia (NSIP)"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -12336,7 +12336,7 @@
         "Correct: The displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture, supporting Organizing pneumonia.",
         "Pleural cobblestoning in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture.",
         "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture.",
-        "Honeycomb lung from idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture."
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -12481,9 +12481,9 @@
       "joint_images": false,
       "options": [
         "Honeycomb change in idiopathic pulmonary fibrosis",
-        "Usual Interstitial Pneumonia (UIP)",
-        "Honeycombing from Usual Interstitial Pneumonia",
-        "Cryptogenic Organizing Pneumonia"
+        "Cryptogenic Organizing Pneumonia",
+        "Hypersensitivity pneumonitis",
+        "Nonspecific Interstitial Pneumonia (NSIP)"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -12493,9 +12493,9 @@
       ],
       "choice_rationales": [
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting Honeycomb change in idiopathic pulmonary fibrosis.",
-        "Usual Interstitial Pneumonia (UIP) would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "Honeycombing from Usual Interstitial Pneumonia would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
+        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -12535,8 +12535,8 @@
       "options": [
         "Parietal Pleural Plaques",
         "Malignant Left Pleural Effusion",
-        "Asbestos-related calcified pleural plaque",
-        "Asbestos-related pleural plaque"
+        "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal",
+        "Pleural Effusion from Pulmonary Embolism"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -12547,8 +12547,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques, supporting Parietal Pleural Plaques.",
         "Malignant Left Pleural Effusion would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
-        "Asbestos-related calcified pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
-        "Asbestos-related pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques."
+        "Left Sided Pleural Effusion in Malignant Mesothelioma Frontal would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
+        "Pleural Effusion from Pulmonary Embolism would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -12640,8 +12640,8 @@
       "joint_images": false,
       "options": [
         "Bilateral Pleural Effusion",
-        "Asbestos-related calcified pleural plaque",
         "Parapneumonic Effusion",
+        "Pleural Effusion from Pulmonary Embolism",
         "Parietal Pleural Plaques"
       ],
       "correct_index": 3,
@@ -12652,8 +12652,8 @@
       ],
       "choice_rationales": [
         "Bilateral Pleural Effusion would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
-        "Asbestos-related calcified pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
         "Parapneumonic Effusion would instead show pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
+        "Pleural Effusion from Pulmonary Embolism would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
         "Correct: The displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques, supporting Parietal Pleural Plaques."
       ],
       "ground_truth_confidence": "high",
@@ -13118,8 +13118,8 @@
       "options": [
         "Peritonsillar abscess",
         "Epiglottitis (thumb sign)",
-        "Acute Epiglottitis",
-        "Severe Laryngomalacia"
+        "Severe Laryngomalacia",
+        "Croup"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -13130,8 +13130,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows a unilateral rim-enhancing peritonsillar collection with mass effect, supporting Peritonsillar abscess.",
         "Epiglottitis (thumb sign) would instead show an enlarged edematous epiglottis or swollen supraglottic tissue; the displayed image shows a unilateral rim-enhancing peritonsillar collection with mass effect.",
-        "Acute Epiglottitis would instead show an enlarged edematous epiglottis or swollen supraglottic tissue; the displayed image shows a unilateral rim-enhancing peritonsillar collection with mass effect.",
-        "Severe Laryngomalacia would instead show dynamic-appearing supraglottic collapse with an omega-shaped epiglottic configuration; the displayed image shows a unilateral rim-enhancing peritonsillar collection with mass effect."
+        "Severe Laryngomalacia would instead show dynamic-appearing supraglottic collapse with an omega-shaped epiglottic configuration; the displayed image shows a unilateral rim-enhancing peritonsillar collection with mass effect.",
+        "Croup would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows a unilateral rim-enhancing peritonsillar collection with mass effect."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -13223,8 +13223,8 @@
       "joint_images": false,
       "options": [
         "Asbestos-related calcified pleural plaque",
-        "Bilateral calcified asbestos-related pleural plaques",
-        "Parietal Pleural Plaques",
+        "Parapneumonic effusion",
+        "Empyema",
         "Pleural Effusion"
       ],
       "correct_index": 3,
@@ -13235,8 +13235,8 @@
       ],
       "choice_rationales": [
         "Asbestos-related calcified pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
-        "Bilateral calcified asbestos-related pleural plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
-        "Parietal Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
+        "Parapneumonic effusion would instead show pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
+        "Empyema would instead show a loculated pleural fluid collection with pleural thickening or a lentiform contour; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
         "Correct: The displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis, supporting Pleural Effusion."
       ],
       "ground_truth_confidence": "high",
@@ -13277,8 +13277,8 @@
       "options": [
         "Parietal Pleural Plaques",
         "Pleural Effusion",
-        "Asbestos Related Pleural Plaques",
-        "Asbestos-related pleural plaque"
+        "Parapneumonic Effusion",
+        "Empyema eith air from gas producing organisms"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -13289,8 +13289,8 @@
       "choice_rationales": [
         "Parietal Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
         "Correct: The displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis, supporting Pleural Effusion.",
-        "Asbestos Related Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
-        "Asbestos-related pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis."
+        "Parapneumonic Effusion would instead show pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
+        "Empyema eith air from gas producing organisms would instead show a loculated pleural fluid collection with pleural thickening or a lentiform contour; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -13647,9 +13647,9 @@
       "joint_images": false,
       "options": [
         "UIP",
-        "Pleural cobblestoning in idiopathic pulmonary fibrosis",
+        "Nonspecific Interstitial Pneumonia (NSIP)",
         "Organizing pneumonia",
-        "Honeycomb change in idiopathic pulmonary fibrosis"
+        "Hypersensitivity Pneumonitis"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -13659,9 +13659,9 @@
       ],
       "choice_rationales": [
         "UIP would instead show basal subpleural reticulation with traction change and stacked cystic honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture.",
-        "Pleural cobblestoning in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture.",
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture.",
         "Correct: The displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture, supporting Organizing pneumonia.",
-        "Honeycomb change in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture."
+        "Hypersensitivity Pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -13702,7 +13702,7 @@
         "Honeycomb change in idiopathic pulmonary fibrosis",
         "Organizing pneumonia",
         "Hypersensitivity pneumonitis",
-        "UIP"
+        "Cryptogenic Organizing Pneumonia"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -13714,7 +13714,7 @@
         "Honeycomb change in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas.",
         "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas.",
         "Correct: The displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas, supporting Hypersensitivity pneumonitis.",
-        "UIP would instead show basal subpleural reticulation with traction change and stacked cystic honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas."
+        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -14759,9 +14759,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Acute pulmonary embolism",
         "Peripheral Opacity (Hampton Hump) from Pulmonary Embolism",
-        "Pulmonary Embolism",
+        "Old, organized Thromboembolism",
+        "Pulmonary Embolism Saddle",
         "Pulmonary Embolims"
       ],
       "correct_index": 3,
@@ -14771,9 +14771,9 @@
         "an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign"
       ],
       "choice_rationales": [
-        "Acute pulmonary embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
         "Peripheral Opacity (Hampton Hump) from Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
-        "Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
+        "Old, organized Thromboembolism would instead show a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
+        "Pulmonary Embolism Saddle would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
         "Correct: The displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign, supporting Pulmonary Embolims."
       ],
       "ground_truth_confidence": "high",
@@ -14972,8 +14972,8 @@
       "joint_images": false,
       "options": [
         "Adenocarcinoma Gland Formation and Mucin",
-        "Adenocarcinoma",
         "Small Cell Lung Carcinoma",
+        "Carcinoid Tumor",
         "Pulmonary Hamartoma"
       ],
       "correct_index": 3,
@@ -14984,8 +14984,8 @@
       ],
       "choice_rationales": [
         "Adenocarcinoma Gland Formation and Mucin would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue.",
-        "Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue.",
         "Small Cell Lung Carcinoma would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue.",
+        "Carcinoid Tumor would instead show an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae; the displayed image shows a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue.",
         "Correct: The displayed image shows a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue, supporting Pulmonary Hamartoma."
       ],
       "ground_truth_confidence": "high",
@@ -15450,7 +15450,7 @@
       "options": [
         "Squamous cell carcinoma of the lung, right upper lobe",
         "Adenocarcinoma Peripheral Lung",
-        "Adenocarcinoma",
+        "Pulmonary Hamartoma",
         "Recurrent Respiratory Papillomatosis"
       ],
       "correct_index": 3,
@@ -15462,7 +15462,7 @@
       "choice_rationales": [
         "Squamous cell carcinoma of the lung, right upper lobe would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread.",
         "Adenocarcinoma Peripheral Lung would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread.",
-        "Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread.",
+        "Pulmonary Hamartoma would instead show a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue; the displayed image shows multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread.",
         "Correct: The displayed image shows multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread, supporting Recurrent Respiratory Papillomatosis."
       ],
       "ground_truth_confidence": "high",
@@ -15607,10 +15607,10 @@
       "panel_handling": "retained_composite",
       "joint_images": true,
       "options": [
-        "Lobar Pneumonia Red Hepatization",
         "Mycoplasma Pneumonia Pneumonia",
+        "Acute inflammation in lobar pneumonia",
         "Red Hepatization Phase of Pneumonia",
-        "Acute inflammation in lobar pneumonia"
+        "Round Pneumonia"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -15619,10 +15619,10 @@
         "confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross"
       ],
       "choice_rationales": [
-        "Lobar Pneumonia Red Hepatization would instead show confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross; the displayed image shows confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross.",
         "Mycoplasma Pneumonia Pneumonia would instead show a diffuse interstitial or patchy peribronchial pattern without dense lobar air-space consolidation; the displayed image shows confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross.",
+        "Acute inflammation in lobar pneumonia would instead show confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross; the displayed image shows confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross.",
         "Correct: The displayed image shows confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross, supporting Red Hepatization Phase of Pneumonia.",
-        "Acute inflammation in lobar pneumonia would instead show confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross; the displayed image shows confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross."
+        "Round Pneumonia would instead show a rounded focus of air-space consolidation, often with air bronchograms and typically seen in a child; the displayed image shows confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -16987,7 +16987,7 @@
       "options": [
         "Asbestos Bodies",
         "Asbestos-related pleural plaque",
-        "Asbestosis Plaque",
+        "Asbestos Ferruginous Body Prussian Blue Stain",
         "Chrysotile asbestos fibers"
       ],
       "correct_index": 3,
@@ -16999,7 +16999,7 @@
       "choice_rationales": [
         "Asbestos Bodies would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows curled, flexible serpentine mineral fibers rather than straight rigid amphibole fibers.",
         "Asbestos-related pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows curled, flexible serpentine mineral fibers rather than straight rigid amphibole fibers.",
-        "Asbestosis Plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows curled, flexible serpentine mineral fibers rather than straight rigid amphibole fibers.",
+        "Asbestos Ferruginous Body Prussian Blue Stain would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows curled, flexible serpentine mineral fibers rather than straight rigid amphibole fibers.",
         "Correct: The displayed image shows curled, flexible serpentine mineral fibers rather than straight rigid amphibole fibers, supporting Chrysotile asbestos fibers."
       ],
       "ground_truth_confidence": "high",
@@ -17306,7 +17306,7 @@
         "Hypersensitivity pneumonitis",
         "Organizing pneumonia",
         "Honeycomb change in idiopathic pulmonary fibrosis",
-        "IPF"
+        "Nonspecific Interstitial Pneumonia (NSIP)"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -17318,7 +17318,7 @@
         "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture.",
         "Correct: The displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture, supporting Organizing pneumonia.",
         "Honeycomb change in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture.",
-        "IPF would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture."
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -17359,7 +17359,7 @@
         "Squamous Cell Carcinoma",
         "Small Cell Carcinoma",
         "Adenocarcinoma Gland Formation and Mucin",
-        "Adenocarcinoma"
+        "Large cell carcinoma of the lung"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -17371,7 +17371,7 @@
         "Squamous Cell Carcinoma would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
         "Correct: The displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression, supporting Small Cell Carcinoma.",
         "Adenocarcinoma Gland Formation and Mucin would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
-        "Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
+        "Large cell carcinoma of the lung would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -17622,9 +17622,9 @@
       "joint_images": false,
       "options": [
         "Adenocarcinoma of the Lung",
-        "Adenocarcinoma Peripheral Lung",
+        "Squamous Cell Carcinoma of the Lung",
         "Small Cell Carcinoma",
-        "Squamous Cell Carcinoma of the Lung"
+        "Large cell carcinoma of the lung"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -17634,9 +17634,9 @@
       ],
       "choice_rationales": [
         "Adenocarcinoma of the Lung would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
-        "Adenocarcinoma Peripheral Lung would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
+        "Squamous Cell Carcinoma of the Lung would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
         "Correct: The displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression, supporting Small Cell Carcinoma.",
-        "Squamous Cell Carcinoma of the Lung would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
+        "Large cell carcinoma of the lung would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -18099,8 +18099,8 @@
       "joint_images": false,
       "options": [
         "Epithelial Adenocarcinoma",
-        "Adenocarcinoma",
-        "Pulmonary adenocarcinoma",
+        "Non-Small Cell Lung Cancer",
+        "Small Cell Lung Cancer",
         "Squamous Cell Carcinoma"
       ],
       "correct_index": 3,
@@ -18111,8 +18111,8 @@
       ],
       "choice_rationales": [
         "Epithelial Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass.",
-        "Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass.",
-        "Pulmonary adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass.",
+        "Non-Small Cell Lung Cancer would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass.",
+        "Small Cell Lung Cancer would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass.",
         "Correct: The displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass, supporting Squamous Cell Carcinoma."
       ],
       "ground_truth_confidence": "high",
@@ -19370,9 +19370,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Pleural cobblestoning in idiopathic pulmonary fibrosis",
-        "Usual Interstitial Pneumonia",
         "Cryptogenic Organizing Pneumonia",
+        "Nonspecific Interstitial Pneumonia (NSIP)",
+        "Organizing pneumonia",
         "UIP"
       ],
       "correct_index": 3,
@@ -19382,9 +19382,9 @@
         "basal subpleural reticulation with traction change and stacked cystic honeycombing"
       ],
       "choice_rationales": [
-        "Pleural cobblestoning in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows basal subpleural reticulation with traction change and stacked cystic honeycombing.",
-        "Usual Interstitial Pneumonia would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows basal subpleural reticulation with traction change and stacked cystic honeycombing.",
         "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows basal subpleural reticulation with traction change and stacked cystic honeycombing.",
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows basal subpleural reticulation with traction change and stacked cystic honeycombing.",
+        "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows basal subpleural reticulation with traction change and stacked cystic honeycombing.",
         "Correct: The displayed image shows basal subpleural reticulation with traction change and stacked cystic honeycombing, supporting UIP."
       ],
       "ground_truth_confidence": "high",
@@ -19425,8 +19425,8 @@
       "options": [
         "Nonspecific Interstitial Pneumonia (NSIP)",
         "UIP",
-        "Idiopathic Pulmonary Fibrosis",
-        "Honeycomb lung from idiopathic pulmonary fibrosis"
+        "Hypersensitivity pneumonitis",
+        "Organizing pneumonia"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -19437,8 +19437,8 @@
       "choice_rationales": [
         "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows basal subpleural reticulation with traction change and stacked cystic honeycombing.",
         "Correct: The displayed image shows basal subpleural reticulation with traction change and stacked cystic honeycombing, supporting UIP.",
-        "Idiopathic Pulmonary Fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows basal subpleural reticulation with traction change and stacked cystic honeycombing.",
-        "Honeycomb lung from idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows basal subpleural reticulation with traction change and stacked cystic honeycombing."
+        "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows basal subpleural reticulation with traction change and stacked cystic honeycombing.",
+        "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows basal subpleural reticulation with traction change and stacked cystic honeycombing."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -19479,7 +19479,7 @@
         "Usual Interstitial Pneumonia",
         "Nonspecific Interstitial Pneumonia (NSIP)",
         "Hypersensitivity pneumonitis",
-        "Pleural cobblestoning in idiopathic pulmonary fibrosis"
+        "Cryptogenic Organizing Pneumonia"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -19491,7 +19491,7 @@
         "Correct: The displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces, supporting Usual Interstitial Pneumonia.",
         "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces.",
         "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces.",
-        "Pleural cobblestoning in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces."
+        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -20274,7 +20274,7 @@
         "Large cell lung carcinoma",
         "Small Cell Lung Cancer",
         "Adenocarcinoma of the Lung",
-        "Adenocarcinoma Peripheral Lung"
+        "Bronchioloalveolar carcinoma"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -20286,7 +20286,7 @@
         "Large cell lung carcinoma would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass.",
         "Small Cell Lung Cancer would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass.",
         "Correct: The displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass, supporting Adenocarcinoma of the Lung.",
-        "Adenocarcinoma Peripheral Lung would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass."
+        "Bronchioloalveolar carcinoma would instead show neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -20327,7 +20327,7 @@
         "Anthracotic Pigment in Lung in Coal Worker's Pneumoconiosis",
         "Asbestos-related calcified pleural plaque",
         "Asbestosis",
-        "Bilateral calcified asbestos-related pleural plaques"
+        "Circumscribed silicotic nodule from silicosis"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -20339,7 +20339,7 @@
         "Correct: The displayed image shows coarse black carbon pigment within macrophages and fibrotic pulmonary tissue, supporting Anthracotic Pigment in Lung in Coal Worker's Pneumoconiosis.",
         "Asbestos-related calcified pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows coarse black carbon pigment within macrophages and fibrotic pulmonary tissue.",
         "Asbestosis would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows coarse black carbon pigment within macrophages and fibrotic pulmonary tissue.",
-        "Bilateral calcified asbestos-related pleural plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows coarse black carbon pigment within macrophages and fibrotic pulmonary tissue."
+        "Circumscribed silicotic nodule from silicosis would instead show a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring; the displayed image shows coarse black carbon pigment within macrophages and fibrotic pulmonary tissue."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -20486,7 +20486,7 @@
         "Asbestos-related calcified pleural plaque",
         "Right Pleural Effusion",
         "Parapneumonic Effusion",
-        "Asbestos Related Pleural Plaques"
+        "Bilateral Pleural Effusion"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -20498,7 +20498,7 @@
         "Correct: The displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques, supporting Asbestos-related calcified pleural plaque.",
         "Right Pleural Effusion would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
         "Parapneumonic Effusion would instead show pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
-        "Asbestos Related Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques."
+        "Bilateral Pleural Effusion would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -20751,7 +20751,7 @@
         "Chronic Silicosis Progressive Massive Fibrosis",
         "Bilateral calcified asbestos-related pleural plaques",
         "Asbestos Ferruginous Body Prussian Blue Stain",
-        "Asbestos Related Pleural Plaques"
+        "Coal Worker's Pneumoconiosis"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -20763,7 +20763,7 @@
         "Chronic Silicosis Progressive Massive Fibrosis would instead show a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring; the displayed image shows golden-brown beaded ferruginous bodies coating a central asbestos fiber.",
         "Bilateral calcified asbestos-related pleural plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows golden-brown beaded ferruginous bodies coating a central asbestos fiber.",
         "Correct: The displayed image shows golden-brown beaded ferruginous bodies coating a central asbestos fiber, supporting Asbestos Ferruginous Body Prussian Blue Stain.",
-        "Asbestos Related Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows golden-brown beaded ferruginous bodies coating a central asbestos fiber."
+        "Coal Worker's Pneumoconiosis would instead show coarse black carbon pigment within macrophages and fibrotic pulmonary tissue; the displayed image shows golden-brown beaded ferruginous bodies coating a central asbestos fiber."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -21864,7 +21864,7 @@
         "Coal Worker's Pneumoconiosis",
         "Asbestos-related pleural plaque",
         "Asbestos Body",
-        "Asbestosis Plaque"
+        "Asbestos Ferruginous Body Prussian Blue Stain"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -21876,7 +21876,7 @@
         "Correct: The displayed image shows coarse black carbon pigment within macrophages and fibrotic pulmonary tissue, supporting Coal Worker's Pneumoconiosis.",
         "Asbestos-related pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows coarse black carbon pigment within macrophages and fibrotic pulmonary tissue.",
         "Asbestos Body would instead show a golden-brown beaded ferruginous body with a translucent central fiber; the displayed image shows coarse black carbon pigment within macrophages and fibrotic pulmonary tissue.",
-        "Asbestosis Plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows coarse black carbon pigment within macrophages and fibrotic pulmonary tissue."
+        "Asbestos Ferruginous Body Prussian Blue Stain would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows coarse black carbon pigment within macrophages and fibrotic pulmonary tissue."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -22076,7 +22076,7 @@
         "Severe Laryngomalacia",
         "Acute Epiglottitis",
         "Croup",
-        "Epiglottitis (thumb sign)"
+        "Peritonsillar abscess"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -22088,7 +22088,7 @@
         "Severe Laryngomalacia would instead show dynamic-appearing supraglottic collapse with an omega-shaped epiglottic configuration; the displayed image shows symmetric subglottic airway narrowing producing the steeple sign.",
         "Acute Epiglottitis would instead show an enlarged edematous epiglottis or swollen supraglottic tissue; the displayed image shows symmetric subglottic airway narrowing producing the steeple sign.",
         "Correct: The displayed image shows symmetric subglottic airway narrowing producing the steeple sign, supporting Croup.",
-        "Epiglottitis (thumb sign) would instead show an enlarged edematous epiglottis or swollen supraglottic tissue; the displayed image shows symmetric subglottic airway narrowing producing the steeple sign."
+        "Peritonsillar abscess would instead show a unilateral rim-enhancing peritonsillar collection with mass effect; the displayed image shows symmetric subglottic airway narrowing producing the steeple sign."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -22288,7 +22288,7 @@
         "Hypersensitivity pneumonitis",
         "Cryptogenic Organizing Pneumonia",
         "IPF",
-        "Pleural cobblestoning in idiopathic pulmonary fibrosis"
+        "Nonspecific Interstitial Pneumonia (NSIP)"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -22300,7 +22300,7 @@
         "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture.",
         "Correct: The displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture, supporting Cryptogenic Organizing Pneumonia.",
         "IPF would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture.",
-        "Pleural cobblestoning in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture."
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -22446,7 +22446,7 @@
       "options": [
         "Squamous cell carcinoma of the lung, right upper lobe",
         "Adenocarcinoma Gland Formation and Mucin",
-        "Adenocarcinoma Peripheral Lung",
+        "Small cell lung carcinoma",
         "Large Cell Lung Carcinoma Pleomorphic Giant Cells"
       ],
       "correct_index": 3,
@@ -22458,7 +22458,7 @@
       "choice_rationales": [
         "Squamous cell carcinoma of the lung, right upper lobe would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
         "Adenocarcinoma Gland Formation and Mucin would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
-        "Adenocarcinoma Peripheral Lung would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
+        "Small cell lung carcinoma would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
         "Correct: The displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation, supporting Large Cell Lung Carcinoma Pleomorphic Giant Cells."
       ],
       "ground_truth_confidence": "high",
@@ -22605,7 +22605,7 @@
       "options": [
         "Peritonsillar abscess",
         "Croup Steeple Sign",
-        "Acute Epiglottitis",
+        "Severe Laryngomalacia",
         "Epiglottitis with Thumb Sign"
       ],
       "correct_index": 3,
@@ -22617,7 +22617,7 @@
       "choice_rationales": [
         "Peritonsillar abscess would instead show a unilateral rim-enhancing peritonsillar collection with mass effect; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Croup Steeple Sign would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
-        "Acute Epiglottitis would instead show an enlarged edematous epiglottis or swollen supraglottic tissue; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
+        "Severe Laryngomalacia would instead show dynamic-appearing supraglottic collapse with an omega-shaped epiglottic configuration; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Correct: The displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue, supporting Epiglottitis with Thumb Sign."
       ],
       "ground_truth_confidence": "high",
@@ -22815,10 +22815,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Acute Epiglottitis",
         "Peritonsillar abscess",
+        "Croup Steeple Sign",
         "Epiglottitis (thumb sign)",
-        "Croup Steeple Sign"
+        "Croup"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -22827,10 +22827,10 @@
         "an enlarged edematous epiglottis or swollen supraglottic tissue"
       ],
       "choice_rationales": [
-        "Acute Epiglottitis would instead show an enlarged edematous epiglottis or swollen supraglottic tissue; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Peritonsillar abscess would instead show a unilateral rim-enhancing peritonsillar collection with mass effect; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
+        "Croup Steeple Sign would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Correct: The displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue, supporting Epiglottitis (thumb sign).",
-        "Croup Steeple Sign would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue."
+        "Croup would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -23134,8 +23134,8 @@
       "joint_images": false,
       "options": [
         "Emphysema",
-        "Emphysema CT Low Attenuation Bullae",
         "Centriacinar Emphysema",
+        "Bronchiectasis due to Chronic Bronchitis",
         "Hyperinflation in COPD"
       ],
       "correct_index": 3,
@@ -23146,8 +23146,8 @@
       ],
       "choice_rationales": [
         "Emphysema would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces.",
-        "Emphysema CT Low Attenuation Bullae would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces.",
         "Centriacinar Emphysema would instead show enlarged destroyed respiratory air spaces centered on respiratory bronchioles with relative distal sparing; the displayed image shows hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces.",
+        "Bronchiectasis due to Chronic Bronchitis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces.",
         "Correct: The displayed image shows hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces, supporting Hyperinflation in COPD."
       ],
       "ground_truth_confidence": "high",
@@ -23189,7 +23189,7 @@
         "UIP",
         "Nonspecific Interstitial Pneumonia (NSIP)",
         "Hypersensitivity Pneumonitis",
-        "Usual Interstitial Pneumonia (UIP)"
+        "Organizing pneumonia"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -23201,7 +23201,7 @@
         "UIP would instead show basal subpleural reticulation with traction change and stacked cystic honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas.",
         "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas.",
         "Correct: The displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas, supporting Hypersensitivity Pneumonitis.",
-        "Usual Interstitial Pneumonia (UIP) would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas."
+        "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -23241,8 +23241,8 @@
       "options": [
         "Pleural cobblestoning in idiopathic pulmonary fibrosis",
         "Hypersensitivity Pneumonitis",
-        "Idiopathic Pulmonary Fibrosis",
-        "Nonspecific Interstitial Pneumonia (NSIP)"
+        "Nonspecific Interstitial Pneumonia (NSIP)",
+        "Organizing pneumonia"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -23253,8 +23253,8 @@
       "choice_rationales": [
         "Pleural cobblestoning in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas.",
         "Correct: The displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas, supporting Hypersensitivity Pneumonitis.",
-        "Idiopathic Pulmonary Fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas.",
-        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas."
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas.",
+        "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -23347,8 +23347,8 @@
       "options": [
         "Hypersensitivity Pneumonitis",
         "Pleural cobblestoning in idiopathic pulmonary fibrosis",
-        "Honeycomb change in idiopathic pulmonary fibrosis",
-        "Cryptogenic Organizing Pneumonia"
+        "Cryptogenic Organizing Pneumonia",
+        "Nonspecific Interstitial Pneumonia (NSIP)"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -23359,8 +23359,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas, supporting Hypersensitivity Pneumonitis.",
         "Pleural cobblestoning in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas.",
-        "Honeycomb change in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas.",
-        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas."
+        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas.",
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -23398,9 +23398,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "IPF",
-        "UIP",
         "Nonspecific Interstitial Pneumonia (NSIP)",
+        "Hypersensitivity pneumonitis",
+        "Organizing pneumonia",
         "Idiopathic Pulmonary Fibrosis"
       ],
       "correct_index": 3,
@@ -23410,9 +23410,9 @@
         "bilateral basal and subpleural reticulation with traction change or honeycombing"
       ],
       "choice_rationales": [
-        "IPF would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "UIP would instead show basal subpleural reticulation with traction change and stacked cystic honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting Idiopathic Pulmonary Fibrosis."
       ],
       "ground_truth_confidence": "high",
@@ -23454,7 +23454,7 @@
         "Cryptogenic Organizing Pneumonia",
         "Idiopathic Pulmonary Fibrosis",
         "Hypersensitivity pneumonitis",
-        "UIP"
+        "Organizing pneumonia"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -23466,7 +23466,7 @@
         "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting Idiopathic Pulmonary Fibrosis.",
         "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "UIP would instead show basal subpleural reticulation with traction change and stacked cystic honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
+        "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -23560,7 +23560,7 @@
         "Organizing pneumonia",
         "IPF",
         "Hypersensitivity pneumonitis",
-        "Honeycomb lung from idiopathic pulmonary fibrosis"
+        "Cryptogenic Organizing Pneumonia"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -23572,7 +23572,7 @@
         "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting IPF.",
         "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "Honeycomb lung from idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
+        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -23877,8 +23877,8 @@
       "options": [
         "Parietal Pleural Plaques",
         "Mesothelioma",
-        "Asbestos-related calcified pleural plaque",
-        "Pectus Arcuatum"
+        "Pectus Arcuatum",
+        "Pulmonary Abscess"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -23889,8 +23889,8 @@
       "choice_rationales": [
         "Parietal Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
         "Correct: The displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation, supporting Mesothelioma.",
-        "Asbestos-related calcified pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
-        "Pectus Arcuatum would instead show anterior protrusion of the sternum and adjacent costal cartilages; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation."
+        "Pectus Arcuatum would instead show anterior protrusion of the sternum and adjacent costal cartilages; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
+        "Pulmonary Abscess would instead show a thick-walled cavitary lesion with central suppurative necrosis or an air-fluid level; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -24194,8 +24194,8 @@
       "joint_images": true,
       "options": [
         "Pleural cobblestoning in idiopathic pulmonary fibrosis",
-        "Usual Interstitial Pneumonia",
         "Organizing pneumonia",
+        "Cryptogenic Organizing Pneumonia",
         "Nonspecific Interstitial Pneumonia (NSIP)"
       ],
       "correct_index": 3,
@@ -24206,8 +24206,8 @@
       ],
       "choice_rationales": [
         "Pleural cobblestoning in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing.",
-        "Usual Interstitial Pneumonia would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing.",
         "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing.",
+        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing.",
         "Correct: The displayed image shows bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing, supporting Nonspecific Interstitial Pneumonia (NSIP)."
       ],
       "ground_truth_confidence": "high",
@@ -24935,10 +24935,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "UIP",
-        "Honeycombing from Usual Interstitial Pneumonia",
+        "Organizing pneumonia",
+        "Nonspecific Interstitial Pneumonia (NSIP)",
         "Idiopathic Pulmonary Fibrosis",
-        "IPF"
+        "Cryptogenic Organizing Pneumonia"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -24947,10 +24947,10 @@
         "bilateral basal and subpleural reticulation with traction change or honeycombing"
       ],
       "choice_rationales": [
-        "UIP would instead show basal subpleural reticulation with traction change and stacked cystic honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "Honeycombing from Usual Interstitial Pneumonia would instead show alveolar septal inflammatory thickening with relative preservation of open air spaces; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Organizing pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting Idiopathic Pulmonary Fibrosis.",
-        "IPF would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
+        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -25147,10 +25147,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Epithelial Adenocarcinoma",
-        "Adenocarcinoma Gland Formation and Mucin",
         "Squamous cell carcinoma of the lung, right upper lobe",
-        "Non-Small Cell Lung Cancer"
+        "Adenocarcinoma Gland Formation and Mucin",
+        "Non-Small Cell Lung Cancer",
+        "Small Cell Carcinoma"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -25159,10 +25159,10 @@
         "malignant gland formation, mucin production, or a peripheral infiltrative lung mass"
       ],
       "choice_rationales": [
-        "Epithelial Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass.",
-        "Correct: The displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass, supporting Adenocarcinoma Gland Formation and Mucin.",
         "Squamous cell carcinoma of the lung, right upper lobe would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass.",
-        "Non-Small Cell Lung Cancer would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass."
+        "Correct: The displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass, supporting Adenocarcinoma Gland Formation and Mucin.",
+        "Non-Small Cell Lung Cancer would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass.",
+        "Small Cell Carcinoma would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -25202,7 +25202,7 @@
       "options": [
         "Bronchioloalveolar carcinoma",
         "Small Cell Carcinoma",
-        "Epithelial Adenocarcinoma",
+        "Large Cell Lung Carcinoma Pleomorphic Giant Cells",
         "Adenocarcinoma Peripheral Lung"
       ],
       "correct_index": 3,
@@ -25214,7 +25214,7 @@
       "choice_rationales": [
         "Bronchioloalveolar carcinoma would instead show neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass.",
         "Small Cell Carcinoma would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass.",
-        "Epithelial Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass.",
+        "Large Cell Lung Carcinoma Pleomorphic Giant Cells would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass.",
         "Correct: The displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass, supporting Adenocarcinoma Peripheral Lung."
       ],
       "ground_truth_confidence": "high",
@@ -25520,7 +25520,7 @@
       "options": [
         "Asbestos-related calcified pleural plaque",
         "Pleural mesothelioma",
-        "Parietal Pleural Plaques",
+        "Pleural cobblestoning in idiopathic pulmonary fibrosis",
         "Mesothelioma Encasing Lung"
       ],
       "correct_index": 3,
@@ -25532,7 +25532,7 @@
       "choice_rationales": [
         "Asbestos-related calcified pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
         "Pleural mesothelioma would instead show diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
-        "Parietal Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
+        "Pleural cobblestoning in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
         "Correct: The displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation, supporting Mesothelioma Encasing Lung."
       ],
       "ground_truth_confidence": "high",
@@ -25680,7 +25680,7 @@
         "Sarcoidosis",
         "Chronic Silicosis Progressive Massive Fibrosis",
         "Pulmonary fibrosis",
-        "Pulmonary sarcoidosis"
+        "Fibrotic interstitial lung disease"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -25692,7 +25692,7 @@
         "Sarcoidosis would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Chronic Silicosis Progressive Massive Fibrosis would instead show a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
         "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting Pulmonary fibrosis.",
-        "Pulmonary sarcoidosis would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
+        "Fibrotic interstitial lung disease would instead show diffuse reticular interstitial opacity or thickened fibrotic alveolar septa rather than focal air-space filling; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -25786,7 +25786,7 @@
         "Pleural mesothelioma",
         "Asbestos-related calcified pleural plaque",
         "Mesothelioma Encasing Lung",
-        "Parietal Pleural Plaques"
+        "Lateral Pectus Carinatum"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -25798,7 +25798,7 @@
         "Correct: The displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation, supporting Pleural mesothelioma.",
         "Asbestos-related calcified pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
         "Mesothelioma Encasing Lung would instead show diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation.",
-        "Parietal Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation."
+        "Lateral Pectus Carinatum would instead show anterior protrusion of the sternum and adjacent costal cartilages; the displayed image shows diffuse nodular pleural thickening encasing the lung or malignant mesothelial proliferation."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -25998,7 +25998,7 @@
         "Pleural effusion",
         "Bilateral calcified asbestos-related pleural plaques",
         "Empyema eith air from gas producing organisms",
-        "Asbestos-related calcified pleural plaque"
+        "Empyema"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -26010,7 +26010,7 @@
         "Correct: The displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis, supporting Pleural effusion.",
         "Bilateral calcified asbestos-related pleural plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
         "Empyema eith air from gas producing organisms would instead show a loculated pleural fluid collection with pleural thickening or a lentiform contour; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
-        "Asbestos-related calcified pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis."
+        "Empyema would instead show a loculated pleural fluid collection with pleural thickening or a lentiform contour; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -26050,8 +26050,8 @@
       "options": [
         "Pleural effusion",
         "Asbestos Related Pleural Plaques",
-        "Asbestos-related calcified pleural plaque",
-        "Empyema"
+        "Empyema",
+        "Parapneumonic effusion"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -26062,8 +26062,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis, supporting Pleural effusion.",
         "Asbestos Related Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
-        "Asbestos-related calcified pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
-        "Empyema would instead show a loculated pleural fluid collection with pleural thickening or a lentiform contour; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis."
+        "Empyema would instead show a loculated pleural fluid collection with pleural thickening or a lentiform contour; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
+        "Parapneumonic effusion would instead show pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -26527,8 +26527,8 @@
       "options": [
         "Hypersensitivity pneumonitis",
         "Pleural cobblestoning in idiopathic pulmonary fibrosis",
-        "Honeycomb lung from idiopathic pulmonary fibrosis",
-        "IPF"
+        "Nonspecific Interstitial Pneumonia (NSIP)",
+        "Cryptogenic Organizing Pneumonia"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -26539,8 +26539,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas, supporting Hypersensitivity pneumonitis.",
         "Pleural cobblestoning in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas.",
-        "Honeycomb lung from idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas.",
-        "IPF would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas."
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas.",
+        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -26793,7 +26793,7 @@
         "Bilateral calcified asbestos-related pleural plaques",
         "Pleural effusion",
         "Parapneumonic Effusion",
-        "Asbestos-related calcified pleural plaque"
+        "Empyema eith air from gas producing organisms"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -26805,7 +26805,7 @@
         "Bilateral calcified asbestos-related pleural plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
         "Correct: The displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis, supporting Pleural effusion.",
         "Parapneumonic Effusion would instead show pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
-        "Asbestos-related calcified pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis."
+        "Empyema eith air from gas producing organisms would instead show a loculated pleural fluid collection with pleural thickening or a lentiform contour; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -26952,7 +26952,7 @@
         "Small Cell Lung Cancer",
         "Adenocarcinoma of the Lung",
         "Squamous cell lung carcinoma",
-        "Adenocarcinoma"
+        "Pulmonary carcinoid tumor"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -26964,7 +26964,7 @@
         "Small Cell Lung Cancer would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass.",
         "Adenocarcinoma of the Lung would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass.",
         "Correct: The displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass, supporting Squamous cell lung carcinoma.",
-        "Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass."
+        "Pulmonary carcinoid tumor would instead show an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -28063,9 +28063,9 @@
       "joint_images": false,
       "options": [
         "Epithelial Adenocarcinoma",
-        "Adenocarcinoma Gland Formation and Mucin",
+        "Small Cell Lung Carcinoma",
         "Pulmonary Large Cell Carcinoma",
-        "Pulmonary adenocarcinoma"
+        "Squamous cell carcinoma of the lung, right upper lobe"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -28075,9 +28075,9 @@
       ],
       "choice_rationales": [
         "Epithelial Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
-        "Adenocarcinoma Gland Formation and Mucin would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
+        "Small Cell Lung Carcinoma would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
         "Correct: The displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation, supporting Pulmonary Large Cell Carcinoma.",
-        "Pulmonary adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation."
+        "Squamous cell carcinoma of the lung, right upper lobe would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -28805,9 +28805,9 @@
       "joint_images": true,
       "options": [
         "Usual Interstitial Pneumonia (UIP)",
-        "IPF",
         "Hypersensitivity pneumonitis",
-        "Honeycomb change in idiopathic pulmonary fibrosis"
+        "Cryptogenic Organizing Pneumonia",
+        "Nonspecific Interstitial Pneumonia (NSIP)"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -28817,9 +28817,9 @@
       ],
       "choice_rationales": [
         "Correct: The displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces, supporting Usual Interstitial Pneumonia (UIP).",
-        "IPF would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces.",
         "Hypersensitivity pneumonitis would instead show a bronchiolocentric interstitial infiltrate with small poorly formed non-necrotizing granulomas; the displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces.",
-        "Honeycomb change in idiopathic pulmonary fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces."
+        "Cryptogenic Organizing Pneumonia would instead show polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture; the displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces.",
+        "Nonspecific Interstitial Pneumonia (NSIP) would instead show bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing; the displayed image shows alveolar septal inflammatory thickening with relative preservation of open air spaces."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
