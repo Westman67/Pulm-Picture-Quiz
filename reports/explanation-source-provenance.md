@@ -354,7 +354,7 @@ Following the comprehensive completion pass above, a systematic audit was run ag
 
 ### Confirmed via Pulm Vault study notes (further extended pass)
 
-A further extended pass searched the Pulm Vault Obsidian notes (`Desktop/Pulm Vault/Pulm Vault/Pulmonary/`, 186 markdown files: one "Detailed Notes" file per lecture plus topic/concept study-guide files). These are the user's own study notes derived from the lecture material, not the raw lecture PDFs themselves, so they are listed in a separate table rather than merged into the RLS/Tran citation table above. 15 of the remaining 26 gaps were located and confirmed here.
+A further extended pass searched the Pulm Vault Obsidian notes (`Desktop/Pulm Vault/Pulm Vault/Pulmonary/`, 186 markdown files: one "Detailed Notes" file per lecture plus topic/concept study-guide files). These are the user's own study notes derived from the lecture material, not the raw lecture PDFs themselves, so they are listed in a separate table rather than merged into the RLS/Tran citation table above. 18 of the remaining 26 gaps were located and confirmed here (3 of them -- the alveolar/interstitial/near-normal "lung filling" pattern rules -- via a single dedicated vault note mapping radiographic pattern to pulmonary compartment).
 
 | FEATURE_RULES pattern | Vault source | What it confirms |
 |---|---|---|
@@ -373,10 +373,13 @@ A further extended pass searched the Pulm Vault Obsidian notes (`Desktop/Pulm Va
 | `recent thromboembol` | Pulm Vault: Pulmonary/Lecture/P26 - Detailed Notes.md | peripheral thromboemboli histology: partial occlusion with organizing thrombus/recanalization vs. antemortem thrombus |
 | `right lung agenesis\|lung agenesis` | Pulm Vault: Pulmonary/Lecture/P36 - Detailed Notes.md | agenesis-vs-aplasia table: "Volume loss on affected side...contralateral hyperinflation" |
 | `spleen sarcoid` | Pulm Vault: Pulmonary/Lecture/P24 - Detailed Notes.md | same multisystemic-sarcoid line |
+| `alveolar lung filling` | Pulm Vault: Pulmonary/Study Material/Concepts/How radiographic patterns localize pulmonary pathology.md | "Alveolar filling \| Material replaces alveolar gas \| Pneumonia, edema, ARDS, organizing pneumonia" |
+| `interstitial lung filling` | Pulm Vault: Pulmonary/Study Material/Concepts/How radiographic patterns localize pulmonary pathology.md | "Interstitial \| Septal or connective-tissue abnormality \| Inflammation, edema, fibrosis, neoplastic infiltration" |
+| `near normal lung filling` | Pulm Vault: Pulmonary/Study Material/Concepts/How radiographic patterns localize pulmonary pathology.md | "Near normal \| Physiology exceeds radiographic sensitivity \| Early emphysema, pulmonary hypertension, airway disease" |
 
 ### Not found in the searched RLS/Tran corpus (open gaps)
 
-These rule patterns were searched across the original 98-file RLS/Tran corpus, an extended pass over the remaining 89 non-RLS/Tran lecture files, and a further extended pass over the 186-file Pulm Vault study notes (see above) -- effectively every lecture-derived text source available for this course. The following 11 still do not appear in any of those sources. Their text is the generator's own morphologic/radiographic phrasing (consistent with general pathology/radiology teaching, e.g. Robbins-level descriptions used elsewhere in this course) rather than content located in any lecture-derived source searched. Per the citation requirement, these remain flagged as **unverified against lecture material**.
+These rule patterns were searched across the original 98-file RLS/Tran corpus, an extended pass over the remaining 89 non-RLS/Tran lecture files, and two further extended passes over the 186-file Pulm Vault study notes (see above) -- effectively every lecture-derived text source available for this course, including the vault's dedicated concept/integration notes. The following 8 still do not appear in any of those sources. Their text is the generator's own morphologic/radiographic phrasing (consistent with general pathology/radiology teaching, e.g. Robbins-level descriptions used elsewhere in this course) rather than content located in any lecture-derived source searched. Per the citation requirement, these remain flagged as **unverified against lecture material**.
 
 | FEATURE_RULES pattern | Text |
 |---|---|
@@ -385,9 +388,6 @@ These rule patterns were searched across the original 98-file RLS/Tran corpus, a
 | `compression atelectasis` | passive lung collapse immediately adjacent to pleural air or fluid |
 | `diaphragmatic rupture` | intrathoracic abdominal viscera with mediastinal displacement through a disrupted hemidiaphragm |
 | `healed fibrocalcific granuloma` | a densely fibrotic old granuloma containing central dystrophic calcification |
-| `interstitial lung filling` | reticular or linear opacity involving the supporting interstitium |
-| `near normal lung filling` | preserved lung lucency without a dominant alveolar, interstitial, or nodular filling pattern |
 | `normal pulmonary alveoli` | delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction |
 | `radiation damage` | sharply geographic consolidation or fibrosis conforming to a prior radiation field |
 | `rml silhouette\|lingula silhouette` | silhouetting (loss of the sharp border) of the heart, since RML/lingula disease abuts and effaces the cardiac silhouette |
-| `alveolar lung filling` | fluffy confluent air-space opacities with indistinct margins and possible air bronchograms |
