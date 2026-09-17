@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "bank_id": "bank_3c0109c75c96",
-  "generated_at": "2026-09-16T23:10:46.630237-04:00",
+  "generated_at": "2026-09-16T23:17:01.792293-04:00",
   "mode": "pulmonary_visual_identification",
   "question_count": 544,
   "quality_review": {
@@ -26,8 +26,8 @@
       "joint_images": false,
       "options": [
         "Asbestos Bodies",
-        "Asbestos Ferruginous Body Prussian Blue Stain",
         "Silicosis",
+        "Chrysotile asbestos fibers",
         "Asbestosis"
       ],
       "correct_index": 3,
@@ -38,8 +38,8 @@
       ],
       "choice_rationales": [
         "Asbestos Bodies would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
-        "Asbestos Ferruginous Body Prussian Blue Stain would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
         "Silicosis would instead show a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
+        "Chrysotile asbestos fibers would instead show curled, flexible serpentine mineral fibers rather than straight rigid amphibole fibers; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
         "Correct: The displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques, supporting Asbestosis."
       ],
       "ground_truth_confidence": "high",
@@ -1458,7 +1458,7 @@
       "options": [
         "Chronic Silicosis Progressive Massive Fibrosis",
         "Bilateral calcified asbestos-related pleural plaques",
-        "Asbestos Ferruginous Body Prussian Blue Stain",
+        "Asbestosis",
         "Asbestos Body"
       ],
       "correct_index": 3,
@@ -1470,7 +1470,7 @@
       "choice_rationales": [
         "Chronic Silicosis Progressive Massive Fibrosis would instead show a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring; the displayed image shows a golden-brown beaded ferruginous body with a translucent central fiber.",
         "Bilateral calcified asbestos-related pleural plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows a golden-brown beaded ferruginous body with a translucent central fiber.",
-        "Asbestos Ferruginous Body Prussian Blue Stain would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows a golden-brown beaded ferruginous body with a translucent central fiber.",
+        "Asbestosis would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows a golden-brown beaded ferruginous body with a translucent central fiber.",
         "Correct: The displayed image shows a golden-brown beaded ferruginous body with a translucent central fiber, supporting Asbestos Body."
       ],
       "ground_truth_confidence": "high",
@@ -1617,8 +1617,8 @@
       "options": [
         "Asbestosis",
         "Asbestos Bodies",
-        "Asbestos Ferruginous Body Prussian Blue Stain",
-        "Coal Worker's Pneumoconiosis"
+        "Coal Worker's Pneumoconiosis",
+        "Silicosis"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -1629,8 +1629,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques, supporting Asbestosis.",
         "Asbestos Bodies would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
-        "Asbestos Ferruginous Body Prussian Blue Stain would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
-        "Coal Worker's Pneumoconiosis would instead show coarse black carbon pigment within macrophages and fibrotic pulmonary tissue; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques."
+        "Coal Worker's Pneumoconiosis would instead show coarse black carbon pigment within macrophages and fibrotic pulmonary tissue; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques.",
+        "Silicosis would instead show a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring; the displayed image shows lower-lung fibrotic change or sharply marginated pleural-based calcified plaques."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -2995,8 +2995,8 @@
       "options": [
         "Bronchiectasis and Situs Invertis",
         "Bronchiectasis Right Lung Saggital",
-        "Kartagener syndrome",
-        "Cystic fibrosis with Bronchiectasis"
+        "Cystic fibrosis with Bronchiectasis",
+        "Bronchiectasis due to Chronic Bronchitis"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -3007,8 +3007,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance, supporting Bronchiectasis and Situs Invertis.",
         "Bronchiectasis Right Lung Saggital would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
-        "Kartagener syndrome would instead show the combination of bronchiectasis and mirror-image thoracoabdominal orientation from situs inversus; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
-        "Cystic fibrosis with Bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance."
+        "Cystic fibrosis with Bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
+        "Bronchiectasis due to Chronic Bronchitis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -4584,8 +4584,8 @@
       "joint_images": true,
       "options": [
         "Kartagener syndrome",
-        "Bronchiectasis and Situs Invertis",
         "Bronchiectasis due to Chronic Bronchitis",
+        "Bronchiectasis Squamous Metaplasia",
         "Cystic fibrosis with Bronchiectasis"
       ],
       "correct_index": 3,
@@ -4596,8 +4596,8 @@
       ],
       "choice_rationales": [
         "Kartagener syndrome would instead show the combination of bronchiectasis and mirror-image thoracoabdominal orientation from situs inversus; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
-        "Bronchiectasis and Situs Invertis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
         "Bronchiectasis due to Chronic Bronchitis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
+        "Bronchiectasis Squamous Metaplasia would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
         "Correct: The displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance, supporting Cystic fibrosis with Bronchiectasis."
       ],
       "ground_truth_confidence": "high",
@@ -4956,7 +4956,7 @@
       "options": [
         "Asbestos Ferruginous Body Prussian Blue Stain",
         "Asbestos Related Pleural Plaques",
-        "Asbestos Body",
+        "Asbestosis",
         "Circumscribed silicotic nodule from silicosis"
       ],
       "correct_index": 3,
@@ -4968,7 +4968,7 @@
       "choice_rationales": [
         "Asbestos Ferruginous Body Prussian Blue Stain would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring.",
         "Asbestos Related Pleural Plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring.",
-        "Asbestos Body would instead show a golden-brown beaded ferruginous body with a translucent central fiber; the displayed image shows a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring.",
+        "Asbestosis would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring.",
         "Correct: The displayed image shows a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring, supporting Circumscribed silicotic nodule from silicosis."
       ],
       "ground_truth_confidence": "high",
@@ -12271,7 +12271,7 @@
         "Acute pulmonary embolism",
         "Hampton's Hump Pulmonary Embolism",
         "Old, organized Thromboembolism",
-        "Organized venous thromboembolus"
+        "Pleural Effusion from Pulmonary Embolism"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -12283,7 +12283,7 @@
         "Acute pulmonary embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event.",
         "Hampton's Hump Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event.",
         "Correct: The displayed image shows a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event, supporting Old, organized Thromboembolism.",
-        "Organized venous thromboembolus would instead show a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event; the displayed image shows a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event."
+        "Pleural Effusion from Pulmonary Embolism would instead show dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis; the displayed image shows a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -14020,7 +14020,7 @@
         "Central Tumor",
         "Primary lung cancer",
         "Golden S sign from obstructing squamous cell carcinoma",
-        "Endobronchial Tumor Golden S Sign"
+        "Hematogenous Metastatic Spread"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -14032,7 +14032,7 @@
         "Central Tumor would instead show a hilar or endobronchial mass causing airway obstruction and distal collapse; the displayed image shows a focal pulmonary soft-tissue opacity distinct from surrounding aerated lung.",
         "Correct: The displayed image shows a focal pulmonary soft-tissue opacity distinct from surrounding aerated lung, supporting Primary lung cancer.",
         "Golden S sign from obstructing squamous cell carcinoma would instead show lobar volume loss distorted around a central obstructing mass, producing an S-shaped fissure; the displayed image shows a focal pulmonary soft-tissue opacity distinct from surrounding aerated lung.",
-        "Endobronchial Tumor Golden S Sign would instead show lobar volume loss distorted around a central obstructing mass, producing an S-shaped fissure; the displayed image shows a focal pulmonary soft-tissue opacity distinct from surrounding aerated lung."
+        "Hematogenous Metastatic Spread would instead show multiple bilateral nodules or diffuse interstitial tumor spread along lymphatic routes; the displayed image shows a focal pulmonary soft-tissue opacity distinct from surrounding aerated lung."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -16987,7 +16987,7 @@
       "options": [
         "Asbestos Bodies",
         "Asbestos-related pleural plaque",
-        "Asbestos Ferruginous Body Prussian Blue Stain",
+        "Silicosis",
         "Chrysotile asbestos fibers"
       ],
       "correct_index": 3,
@@ -16999,7 +16999,7 @@
       "choice_rationales": [
         "Asbestos Bodies would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows curled, flexible serpentine mineral fibers rather than straight rigid amphibole fibers.",
         "Asbestos-related pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows curled, flexible serpentine mineral fibers rather than straight rigid amphibole fibers.",
-        "Asbestos Ferruginous Body Prussian Blue Stain would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows curled, flexible serpentine mineral fibers rather than straight rigid amphibole fibers.",
+        "Silicosis would instead show a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring; the displayed image shows curled, flexible serpentine mineral fibers rather than straight rigid amphibole fibers.",
         "Correct: The displayed image shows curled, flexible serpentine mineral fibers rather than straight rigid amphibole fibers, supporting Chrysotile asbestos fibers."
       ],
       "ground_truth_confidence": "high",
@@ -21864,7 +21864,7 @@
         "Coal Worker's Pneumoconiosis",
         "Asbestos-related pleural plaque",
         "Asbestos Body",
-        "Asbestos Ferruginous Body Prussian Blue Stain"
+        "Chrysotile asbestos fibers"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -21876,7 +21876,7 @@
         "Correct: The displayed image shows coarse black carbon pigment within macrophages and fibrotic pulmonary tissue, supporting Coal Worker's Pneumoconiosis.",
         "Asbestos-related pleural plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows coarse black carbon pigment within macrophages and fibrotic pulmonary tissue.",
         "Asbestos Body would instead show a golden-brown beaded ferruginous body with a translucent central fiber; the displayed image shows coarse black carbon pigment within macrophages and fibrotic pulmonary tissue.",
-        "Asbestos Ferruginous Body Prussian Blue Stain would instead show golden-brown beaded ferruginous bodies coating a central asbestos fiber; the displayed image shows coarse black carbon pigment within macrophages and fibrotic pulmonary tissue."
+        "Chrysotile asbestos fibers would instead show curled, flexible serpentine mineral fibers rather than straight rigid amphibole fibers; the displayed image shows coarse black carbon pigment within macrophages and fibrotic pulmonary tissue."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -25998,7 +25998,7 @@
         "Pleural effusion",
         "Bilateral calcified asbestos-related pleural plaques",
         "Empyema eith air from gas producing organisms",
-        "Empyema"
+        "Parapneumonic effusion"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -26010,7 +26010,7 @@
         "Correct: The displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis, supporting Pleural effusion.",
         "Bilateral calcified asbestos-related pleural plaques would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
         "Empyema eith air from gas producing organisms would instead show a loculated pleural fluid collection with pleural thickening or a lentiform contour; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis.",
-        "Empyema would instead show a loculated pleural fluid collection with pleural thickening or a lentiform contour; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis."
+        "Parapneumonic effusion would instead show pleural fluid adjacent to pneumonic consolidation, often with internal septations when complicated; the displayed image shows dependent pleural fluid with a meniscus, blunted costophrenic angle, or compressive atelectasis."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
