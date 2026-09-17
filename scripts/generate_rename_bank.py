@@ -1015,6 +1015,12 @@ CONCEPT_SYNONYM_GROUPS: list[set[str]] = [
         "acute pulmonary embolism",
         "pulmonary embolism saddle",
         "right middle lung wedge shaped pulmonary embolism",
+        # A generic "Pulmonary Embolism" image's own grounding never confirms
+        # whether the clot is unilateral -- the label just means bilaterality
+        # wasn't called out in the source filename, not that it was ruled
+        # out. Pairing it against "Bilateral Pulmonary Emboli" as if the two
+        # were a verified either/or is an unfair, unverifiable distinction.
+        "bilateral pulmonary emboli",
     },
     {"sarcoidosis", "pulmonary sarcoidosis"},
     {"organizing pneumonia", "cryptogenic organizing pneumonia"},
@@ -1268,6 +1274,47 @@ def has_technique_descriptor(concept: str) -> bool:
 # rival-vs-rival pairings (which usually ARE visually distinguishable on a
 # given image) are left untouched.
 NONPARALLEL_CONCEPT_PAIRS: list[tuple[set[str], set[str]]] = [
+    (
+        {  # neonatal respiratory distress syndrome (surfactant deficiency)
+            "neonatal respiratory distress syndrome",
+            "neonatal respiratory distress syndrome hyaline membranes",
+        },
+        {
+            # ARDS / diffuse alveolar damage, on both X-ray and histology:
+            # NRDS and ARDS show the SAME hyaline-membrane pattern on
+            # imaging and under the microscope -- the only real
+            # differentiator is patient age (premature neonate vs. an
+            # adult with a precipitating insult), which isn't visible in
+            # the image and none of these questions supply a case vignette
+            # stating the patient's age. Reported live as unfairly close.
+            "ards",
+            "acute respiratory distress syndrome",
+            "diffuse alveolar damage ards",
+            "trauma induced diffuse alveolar damage",
+            "ards hyaline membrane",
+            "ards hyaline membranes",
+            "ards intraalveolar hyaline membranes",
+            "hyaline membranes in ards",
+        },
+    ),
+    (
+        {"asthma", "acute asthma attack"},
+        {
+            # X-ray/clinical-impression-level COPD labels: these describe the
+            # SAME kind of nonspecific hyperinflation appearance an asthma
+            # exacerbation's chest film can also show, so a plain
+            # identification pairing between them is not a reliable
+            # either/or unless the question's own vignette (age, history)
+            # is what's actually doing the distinguishing -- reported live
+            # as too close to call from a 19-year-old asthma exacerbation
+            # film that itself shows some hyperinflation.
+            "hyperinflation in copd",
+            "severe copd",
+            "blue bloater",
+            "pink puffer",
+            "vanishing lung syndrome",
+        },
+    ),
     (
         {  # bronchiectasis histologic process
             "bronchiectasis fibrosis and inflammation",
