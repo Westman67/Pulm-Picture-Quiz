@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-16T20:50:17.189260-04:00",
+  "generated_at": "2026-09-16T21:03:38.292976-04:00",
   "builder": "build-medical-picture-quiz / multi-collection flat-image builder",
   "source_directories": [
     {
@@ -29123,7 +29123,7 @@
       "immutable_source_hash": "f966b327865cd49716a224a1a08834f8e8c9ff5fbb153e9e6417bb965d09cd77",
       "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture",
+      "key_visual_findings": "hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
@@ -39915,7 +39915,7 @@
       "immutable_source_hash": "b3fdfdbcac95b6b48165fd5e7a68df0da0bf2903c377748808940cde0aa87863",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "polypoid fibroblastic plugs within distal air spaces with preserved underlying architecture",
+      "key_visual_findings": "hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
