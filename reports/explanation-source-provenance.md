@@ -340,18 +340,25 @@ Following the comprehensive completion pass above, a systematic audit was run ag
 | `viral pneumonia\|viral nuclear` | P26.2 Diseases of the Respiratory Tract Supplementary Review RLS | 13 |
 | `vocal fold` | P37 Advanced Spirometry Review - Interactive Workshop (Physiology) Tran | 10 |
 | `wedge shaped pulmonary embol\|wedge.shaped.*pulmonary embol` | P26.2 Diseases of the Respiratory Tract Supplementary Review RLS | 24 |
+| `\bacinus\b` | P17 Enriched | 16 |
+| `bilateral pneumothoraces` | P27.2 CXR Final Review | 12 |
+| `broken ribs` | P27.2 Enriched | 8 |
+| `dvt` | P17 Introduction to Respiratory Pathophysiology (Pathology) Lecture Slides | 5 |
+| `kartagener` | P27.2 Enriched | 15 |
+| `large right.sided pulmonary effusion` | P27.2 Enriched | 22 |
+| `nonspecific interstitial pneumonia\|\bnsip\b` | P24 Enriched | 2 |
+| `patchy ground.glass opacity` | P25 Radiology Restrictive Diseases Lecture Slides | 29 |
+| `pleural mesothelioma` | P27.2 Enriched | 19 |
+| `pulmonary contusion` | P0 USMLE Content | 2 |
+| `vocal cord nodule` | P33 Enriched | 25 |
 
 ### Not found in the searched RLS/Tran corpus (open gaps)
 
-These rule patterns did not match any page in the 98-file RLS/Tran corpus searched. Their text is the generator's own morphologic/radiographic phrasing (consistent with general pathology/radiology teaching used elsewhere in this course, e.g. Robbins-level descriptions) rather than content independently located in a specific lecture page. Per the citation requirement, these are flagged as **unverified against lecture material** rather than presented as sourced. A future pass could check the remaining non-RLS/Tran files (full Lecture Slides decks, Enriched decks, syllabus/USMLE-content files) for these, which was outside this pass's scope (that would add ~115 more PDFs to extract and search).
+These rule patterns were searched across the original 98-file RLS/Tran corpus and, in an extended pass, a further 89 non-RLS/Tran lecture files (full Lecture Slides decks, Enriched decks, case-review PDFs, notes, and the USMLE content outline -- effectively the full `Desktop/Pulm/Lectures/` folder). 11 of the original 37 gaps were located in that extended search and moved into the confirmed table above (several under a related lecture term, e.g. "vocal cord nodule" -> the lecture's "vocal fold nodule"). The following 26 still do not appear anywhere in the full lecture folder searched. Their text is the generator's own morphologic/radiographic phrasing (consistent with general pathology/radiology teaching, e.g. Robbins-level descriptions used elsewhere in this course) rather than content located in any lecture file. Per the citation requirement, these remain flagged as **unverified against lecture material**.
 
 | FEATURE_RULES pattern | Text |
 |---|---|
-| `\bacinus\b` | a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit |
-| `alveolar lung filling` | fluffy confluent air-space opacities with indistinct margins and possible air bronchograms |
 | `amphibole asbestos` | straight, rigid needle-like mineral fibers rather than curled serpentine fibers |
-| `bilateral pneumothoraces` | bilateral visceral pleural lines with absent peripheral lung markings on both sides |
-| `broken ribs` | cortical discontinuity or displaced rib fragments at the indicated chest wall |
 | `bronchioloalveolar carcinoma` | neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern |
 | `calcified pulmonary nodule` | a sharply marginated pulmonary nodule containing dense central or laminated calcification |
 | `caseating granuloma` | central granular caseous necrosis rimmed by epithelioid histiocytes and Langhans-type giant cells |
@@ -360,27 +367,20 @@ These rule patterns did not match any page in the 98-file RLS/Tran corpus search
 | `chrysotile asbestos` | curled, flexible serpentine mineral fibers rather than straight rigid amphibole fibers |
 | `compression atelectasis` | passive lung collapse immediately adjacent to pleural air or fluid |
 | `diaphragmatic rupture` | intrathoracic abdominal viscera with mediastinal displacement through a disrupted hemidiaphragm |
-| `dvt` | noncompressible venous thrombus with absent normal luminal collapse on ultrasound |
 | `healed fibrocalcific granuloma` | a densely fibrotic old granuloma containing central dystrophic calcification |
 | `interstitial lung filling` | reticular or linear opacity involving the supporting interstitium |
-| `kartagener` | the combination of bronchiectasis and mirror-image thoracoabdominal orientation from situs inversus |
-| `large right.sided pulmonary effusion` | a large right pleural-fluid meniscus with compressive atelectasis of the adjacent lung |
 | `lymph node sarcoid` | non-necrotizing granulomatous replacement of nodal architecture on lymph node biopsy |
 | `multinucleated giant cells` | large fused histiocytes containing numerous nuclei within an organized granulomatous reaction |
 | `multiple small pulmonary nodules` | numerous discrete small rounded opacities distributed through both lungs |
 | `near normal lung filling` | preserved lung lucency without a dominant alveolar, interstitial, or nodular filling pattern |
 | `nodular lung filling` | multiple discrete rounded pulmonary opacities rather than confluent air-space disease |
 | `noncaseating granuloma` | a compact collection of epithelioid histiocytes and multinucleated giant cells without central caseous necrosis |
-| `nonspecific interstitial pneumonia\|\bnsip\b` | bilateral basal ground-glass and fine reticular change with relative subpleural sparing and limited honeycombing |
 | `normal pulmonary alveoli` | delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction |
-| `patchy ground.glass opacity` | geographic bilateral ground-glass attenuation that does not completely obscure underlying vessels |
 | `pleural cobbleston` | a cobblestone-appearing pleural surface, the gross correlate of underlying honeycomb parenchymal remodeling |
-| `pleural mesothelioma` | irregular pleural-based tumor and effusion rather than a solitary intraparenchymal nodule |
 | `pulmonary alveolus with alveolar macrophages` | large macrophages lying freely within otherwise thin-walled alveolar spaces |
-| `pulmonary contusion` | patchy nonsegmental air-space opacity after trauma without a defined lobar boundary |
 | `radiation damage` | sharply geographic consolidation or fibrosis conforming to a prior radiation field |
 | `recent thromboembol` | a fresh occlusive thrombus with preserved red-cell and fibrin laminations but no mature recanalization |
 | `right lung agenesis\|lung agenesis` | absence of the right lung with ipsilateral volume loss and compensatory hyperinflation of the left lung |
 | `rml silhouette\|lingula silhouette` | silhouetting (loss of the sharp border) of the heart, since RML/lingula disease abuts and effaces the cardiac silhouette |
 | `spleen sarcoid` | non-necrotizing granulomas within splenic parenchyma, reflecting extrapulmonary sarcoid organ involvement beyond the lung |
-| `vocal cord nodule` | small symmetric benign-appearing nodules arising at the free margins of the true vocal folds |
+| `alveolar lung filling` | fluffy confluent air-space opacities with indistinct margins and possible air bronchograms |
