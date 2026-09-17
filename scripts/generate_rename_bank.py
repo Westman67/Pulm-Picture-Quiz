@@ -811,6 +811,63 @@ def stem_for(modality: str, joint: bool, concept: str) -> tuple[str, str]:
     return stem, scope
 
 
+# Groups of concept names that refer to the same underlying diagnosis despite
+# different source-file wording (added-detail suffixes, word reordering, or
+# synonymous phrasing). Members of the same group are never offered as
+# distractors against each other, even though each source image remains its
+# own separate scored question.
+CONCEPT_SYNONYM_GROUPS: list[set[str]] = [
+    {"epiglottitis with thumb sign", "epiglottitis thumb sign"},
+    {
+        "ards hyaline membrane",
+        "ards hyaline membranes",
+        "hyaline membranes in ards",
+        "ards intraalveolar hyaline membranes",
+    },
+    {
+        "large cell lung carcinoma",
+        "large cell carcinoma of the lung",
+        "pulmonary large cell carcinoma",
+        "large cell lung carcinoma pleomorphic giant cells",
+    },
+    {
+        "small cell carcinoma",
+        "small cell lung carcinoma",
+        "small cell lung cancer",
+        "small cell lung carcinoma small dark blue cells",
+        "small cell",
+    },
+    {
+        "squamous cell carcinoma",
+        "squamous cell carcinoma of the lung",
+        "squamous cell carcinoma of the lung right upper lobe",
+        "squamous cell lung carcinoma",
+        "squamous cell carcinoma central lung",
+        "squamous cell carcinoma intercellular bridges",
+        "squamous cell carcinoma keratin pearls",
+    },
+    {
+        "bronchiectasis due cystic fibrosis",
+        "bronchiectasis and cystic fibrosis",
+        "cystic fibrosis with bronchiectasis",
+        "cystic fibrosis associated bronchiectasis",
+    },
+    {
+        "hampton hump pulmonary embolism",
+        "hampton s hump pulmonary embolism",
+        "hampton hump in pulmonary infarction",
+        "peripheral opacity hampton hump from pulmonary embolism",
+    },
+]
+
+
+def _synonym_key(concept_norm: str) -> str:
+    for group in CONCEPT_SYNONYM_GROUPS:
+        if concept_norm in group:
+            return next(iter(sorted(group)))
+    return concept_norm
+
+
 def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
     tiers = [
         [e for e in entries if e["topic"] == current["topic"] and e["family"] == current["family"]],
@@ -820,8 +877,10 @@ def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
     ]
     correct = current["concept"]
     correct_norm = re.sub(r"[^a-z0-9]+", " ", correct.casefold()).strip()
+    correct_key = _synonym_key(correct_norm)
     result: list[str] = []
     seen_norms: set[str] = set()
+    seen_keys: set[str] = {correct_key}
     for tier in tiers:
         for entry in sorted(tier, key=lambda item: hashlib.sha256(f"{current['sha']}:{item['concept']}".encode()).hexdigest()):
             option = entry["concept"]
@@ -830,8 +889,12 @@ def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
                 continue
             if correct_norm in option_norm or option_norm in correct_norm:
                 continue
+            option_key = _synonym_key(option_norm)
+            if option_key in seen_keys:
+                continue
             result.append(option)
             seen_norms.add(option_norm)
+            seen_keys.add(option_key)
             if len(result) == 3:
                 return result
     raise RuntimeError(f"Could not create distractors for {current['filename']}")

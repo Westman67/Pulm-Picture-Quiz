@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "bank_id": "bank_3c0109c75c96",
-  "generated_at": "2026-09-16T21:13:33.166423-04:00",
+  "generated_at": "2026-09-16T22:12:56.927542-04:00",
   "mode": "pulmonary_visual_identification",
   "question_count": 544,
   "quality_review": {
@@ -768,8 +768,8 @@
       "joint_images": false,
       "options": [
         "Squamous Cell Carcinoma Intercellular Bridges",
-        "Squamous cell lung carcinoma",
         "Bronchioloalveolar Carcinoma",
+        "Large Cell Lung Carcinoma Pleomorphic Giant Cells",
         "Adenocarcinoma"
       ],
       "correct_index": 3,
@@ -780,8 +780,8 @@
       ],
       "choice_rationales": [
         "Squamous Cell Carcinoma Intercellular Bridges would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass.",
-        "Squamous cell lung carcinoma would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass.",
         "Bronchioloalveolar Carcinoma would instead show neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass.",
+        "Large Cell Lung Carcinoma Pleomorphic Giant Cells would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass.",
         "Correct: The displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass, supporting Adenocarcinoma."
       ],
       "ground_truth_confidence": "high",
@@ -3311,9 +3311,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Bronchiectasis and Cystic fibrosis",
         "Chronic Silicosis Progressive Massive Fibrosis",
-        "Cystic fibrosis-associated bronchiectasis",
+        "Asbestosis",
+        "Fibrotic interstitial lung disease",
         "Bronchiectasis due Cystic fibrosis"
       ],
       "correct_index": 3,
@@ -3323,9 +3323,9 @@
         "permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance"
       ],
       "choice_rationales": [
-        "Bronchiectasis and Cystic fibrosis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
         "Chronic Silicosis Progressive Massive Fibrosis would instead show a rounded whorled hyalinized collagen nodule or upper-lung silicotic scarring; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
-        "Cystic fibrosis-associated bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
+        "Asbestosis would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
+        "Fibrotic interstitial lung disease would instead show diffuse reticular interstitial opacity or thickened fibrotic alveolar septa rather than focal air-space filling; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
         "Correct: The displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance, supporting Bronchiectasis due Cystic fibrosis."
       ],
       "ground_truth_confidence": "high",
@@ -4001,8 +4001,8 @@
       "joint_images": false,
       "options": [
         "Squamous Cell Carcinoma",
-        "Squamous Cell Carcinoma Central Lung",
         "Endobronchial Tumor",
+        "Pulmonary Hamartoma",
         "Carcinoid"
       ],
       "correct_index": 3,
@@ -4013,8 +4013,8 @@
       ],
       "choice_rationales": [
         "Squamous Cell Carcinoma would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae.",
-        "Squamous Cell Carcinoma Central Lung would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae.",
         "Endobronchial Tumor would instead show a hilar or endobronchial mass causing airway obstruction and distal collapse; the displayed image shows an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae.",
+        "Pulmonary Hamartoma would instead show a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue; the displayed image shows an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae.",
         "Correct: The displayed image shows an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae, supporting Carcinoid."
       ],
       "ground_truth_confidence": "high",
@@ -4108,7 +4108,7 @@
       "options": [
         "Bronchioloalveolar carcinoma",
         "Squamous Cell Carcinoma of the Lung",
-        "Squamous Cell Carcinoma",
+        "Large cell lung carcinoma",
         "Carcinoid"
       ],
       "correct_index": 3,
@@ -4120,7 +4120,7 @@
       "choice_rationales": [
         "Bronchioloalveolar carcinoma would instead show neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern; the displayed image shows an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae.",
         "Squamous Cell Carcinoma of the Lung would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae.",
-        "Squamous Cell Carcinoma would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae.",
+        "Large cell lung carcinoma would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae.",
         "Correct: The displayed image shows an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae, supporting Carcinoid."
       ],
       "ground_truth_confidence": "high",
@@ -4583,9 +4583,9 @@
       "panel_handling": "retained_composite",
       "joint_images": true,
       "options": [
-        "Bronchiectasis and Cystic fibrosis",
         "Radiation Damage from Breast Cancer Treatment",
         "Interstitial Lung Filling Pattern",
+        "Asbestosis Plaque",
         "Cystic fibrosis with Bronchiectasis"
       ],
       "correct_index": 3,
@@ -4595,9 +4595,9 @@
         "permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance"
       ],
       "choice_rationales": [
-        "Bronchiectasis and Cystic fibrosis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
         "Radiation Damage from Breast Cancer Treatment would instead show sharply geographic consolidation or fibrosis conforming to a prior radiation field; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
         "Interstitial Lung Filling Pattern would instead show reticular or linear opacity involving the supporting interstitium; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
+        "Asbestosis Plaque would instead show lower-lung fibrotic change or sharply marginated pleural-based calcified plaques; the displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance.",
         "Correct: The displayed image shows permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance, supporting Cystic fibrosis with Bronchiectasis."
       ],
       "ground_truth_confidence": "high",
@@ -7077,7 +7077,7 @@
         "Endobronchial Tumor",
         "Adenocarcinoma",
         "Squamous Cell Carcinoma",
-        "Squamous Cell Carcinoma Central Lung"
+        "Carcinoid"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -7089,7 +7089,7 @@
         "Correct: The displayed image shows a hilar or endobronchial mass causing airway obstruction and distal collapse, supporting Endobronchial Tumor.",
         "Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows a hilar or endobronchial mass causing airway obstruction and distal collapse.",
         "Squamous Cell Carcinoma would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows a hilar or endobronchial mass causing airway obstruction and distal collapse.",
-        "Squamous Cell Carcinoma Central Lung would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows a hilar or endobronchial mass causing airway obstruction and distal collapse."
+        "Carcinoid would instead show an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae; the displayed image shows a hilar or endobronchial mass causing airway obstruction and distal collapse."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -7713,7 +7713,7 @@
         "Diffuse Alveolar Damage (ARDS)",
         "Goodpasture",
         "ARDS Hyaline Membrane",
-        "ARDS Hyaline Membranes"
+        "Pulmonary Edema"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -7725,7 +7725,7 @@
         "Diffuse Alveolar Damage (ARDS) would instead show bilateral diffuse air-space opacity with hyaline membranes and acute alveolar injury; the displayed image shows diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate, in a patient whose vignette supplies the anti-GBM antibody and renal findings that distinguish this from other causes of diffuse alveolar hemorrhage.",
         "Correct: The displayed image shows diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate, in a patient whose vignette supplies the anti-GBM antibody and renal findings that distinguish this from other causes of diffuse alveolar hemorrhage, supporting Goodpasture.",
         "ARDS Hyaline Membrane would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate, in a patient whose vignette supplies the anti-GBM antibody and renal findings that distinguish this from other causes of diffuse alveolar hemorrhage.",
-        "ARDS Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate, in a patient whose vignette supplies the anti-GBM antibody and renal findings that distinguish this from other causes of diffuse alveolar hemorrhage."
+        "Pulmonary Edema would instead show pink proteinaceous intra-alveolar fluid or bilateral central air-space opacity; the displayed image shows diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate, in a patient whose vignette supplies the anti-GBM antibody and renal findings that distinguish this from other causes of diffuse alveolar hemorrhage."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -8190,7 +8190,7 @@
         "Hilar and Mediastinal Adenopathy Sarcoidosis",
         "Bleomycin or Amiodarone Pulmonary Fibrosis",
         "Bronchiectasis due Cystic fibrosis",
-        "Cystic fibrosis with Bronchiectasis"
+        "Pulmonary sarcoidosis"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -8202,7 +8202,7 @@
         "Correct: The displayed image shows non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions, supporting Hilar and Mediastinal Adenopathy Sarcoidosis.",
         "Bleomycin or Amiodarone Pulmonary Fibrosis would instead show bilateral basal and subpleural reticulation with traction change or honeycombing; the displayed image shows non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions.",
         "Bronchiectasis due Cystic fibrosis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions.",
-        "Cystic fibrosis with Bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions."
+        "Pulmonary sarcoidosis would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -14709,7 +14709,7 @@
         "ARDS Hyaline Membrane",
         "Diffuse Alveolar Damage (ARDS)",
         "Pulmonary Edema",
-        "ARDS Intraalveolar Hyaline Membranes"
+        "Alveolar hemorrhage"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -14721,7 +14721,7 @@
         "ARDS Hyaline Membrane would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows pink proteinaceous intra-alveolar fluid or bilateral central air-space opacity.",
         "Diffuse Alveolar Damage (ARDS) would instead show bilateral diffuse air-space opacity with hyaline membranes and acute alveolar injury; the displayed image shows pink proteinaceous intra-alveolar fluid or bilateral central air-space opacity.",
         "Correct: The displayed image shows pink proteinaceous intra-alveolar fluid or bilateral central air-space opacity, supporting Pulmonary Edema.",
-        "ARDS Intraalveolar Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows pink proteinaceous intra-alveolar fluid or bilateral central air-space opacity."
+        "Alveolar hemorrhage would instead show diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate; the displayed image shows pink proteinaceous intra-alveolar fluid or bilateral central air-space opacity."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -15450,7 +15450,7 @@
       "options": [
         "Squamous cell carcinoma of the lung, right upper lobe",
         "Adenocarcinoma Peripheral Lung",
-        "Squamous Cell Carcinoma",
+        "Adenocarcinoma",
         "Recurrent Respiratory Papillomatosis"
       ],
       "correct_index": 3,
@@ -15462,7 +15462,7 @@
       "choice_rationales": [
         "Squamous cell carcinoma of the lung, right upper lobe would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread.",
         "Adenocarcinoma Peripheral Lung would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread.",
-        "Squamous Cell Carcinoma would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread.",
+        "Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread.",
         "Correct: The displayed image shows multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread, supporting Recurrent Respiratory Papillomatosis."
       ],
       "ground_truth_confidence": "high",
@@ -15503,8 +15503,8 @@
       "options": [
         "Large cell carcinoma of the lung",
         "Recurrent Respiratory Papillomatosis",
-        "Pulmonary Large Cell Carcinoma",
-        "Pulmonary Hamartoma"
+        "Pulmonary Hamartoma",
+        "Pulmonary adenocarcinoma"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -15515,8 +15515,8 @@
       "choice_rationales": [
         "Large cell carcinoma of the lung would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread.",
         "Correct: The displayed image shows multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread, supporting Recurrent Respiratory Papillomatosis.",
-        "Pulmonary Large Cell Carcinoma would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread.",
-        "Pulmonary Hamartoma would instead show a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue; the displayed image shows multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread."
+        "Pulmonary Hamartoma would instead show a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue; the displayed image shows multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread.",
+        "Pulmonary adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -15873,8 +15873,8 @@
       "joint_images": false,
       "options": [
         "Hampton's Hump Pulmonary Embolism",
-        "Hampton Hump Pulmonary Embolism",
-        "Peripheral Opacity (Hampton Hump) from Pulmonary Embolism",
+        "Old, organized Thromboembolism",
+        "Pulmonary Embolims",
         "Right Middle Lung Wedge Shaped Pulmonary Embolism"
       ],
       "correct_index": 3,
@@ -15885,8 +15885,8 @@
       ],
       "choice_rationales": [
         "Hampton's Hump Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
-        "Hampton Hump Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
-        "Peripheral Opacity (Hampton Hump) from Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
+        "Old, organized Thromboembolism would instead show a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
+        "Pulmonary Embolims would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
         "Correct: The displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign, supporting Right Middle Lung Wedge Shaped Pulmonary Embolism."
       ],
       "ground_truth_confidence": "high",
@@ -17358,8 +17358,8 @@
       "options": [
         "Squamous Cell Carcinoma",
         "Small Cell Carcinoma",
-        "Squamous Cell Carcinoma Keratin Pearls",
-        "Adenocarcinoma Gland Formation and Mucin"
+        "Adenocarcinoma Gland Formation and Mucin",
+        "Adenocarcinoma"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -17370,8 +17370,8 @@
       "choice_rationales": [
         "Squamous Cell Carcinoma would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
         "Correct: The displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression, supporting Small Cell Carcinoma.",
-        "Squamous Cell Carcinoma Keratin Pearls would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
-        "Adenocarcinoma Gland Formation and Mucin would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
+        "Adenocarcinoma Gland Formation and Mucin would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
+        "Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -17462,10 +17462,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Small cell lung carcinoma",
         "Squamous cell lung carcinoma",
+        "Large cell carcinoma of the lung",
         "Small Cell Carcinoma",
-        "Squamous Cell Carcinoma of the Lung"
+        "Carcinoid"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -17474,10 +17474,10 @@
         "sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression"
       ],
       "choice_rationales": [
-        "Small cell lung carcinoma would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
         "Squamous cell lung carcinoma would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
+        "Large cell carcinoma of the lung would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
         "Correct: The displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression, supporting Small Cell Carcinoma.",
-        "Squamous Cell Carcinoma of the Lung would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
+        "Carcinoid would instead show an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -17517,8 +17517,8 @@
       "options": [
         "Small Cell Carcinoma",
         "Pulmonary Large Cell Carcinoma",
-        "Small Cell Lung Carcinoma Small Dark Blue Cells",
-        "Squamous cell lung carcinoma"
+        "Squamous cell lung carcinoma",
+        "Carcinoid Tumor"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -17529,8 +17529,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression, supporting Small Cell Carcinoma.",
         "Pulmonary Large Cell Carcinoma would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
-        "Small Cell Lung Carcinoma Small Dark Blue Cells would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
-        "Squamous cell lung carcinoma would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
+        "Squamous cell lung carcinoma would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
+        "Carcinoid Tumor would instead show an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -17570,8 +17570,8 @@
       "options": [
         "Small Cell Carcinoma",
         "Large cell carcinoma of the lung",
-        "Large cell lung carcinoma",
-        "Carcinoid"
+        "Carcinoid",
+        "Pulmonary carcinoid tumor"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -17582,8 +17582,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression, supporting Small Cell Carcinoma.",
         "Large cell carcinoma of the lung would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
-        "Large cell lung carcinoma would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
-        "Carcinoid would instead show an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
+        "Carcinoid would instead show an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
+        "Pulmonary carcinoid tumor would instead show an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -17624,7 +17624,7 @@
         "Pulmonary Hamartoma",
         "Adenocarcinoma of the Lung",
         "Small Cell Carcinoma",
-        "Small cell lung carcinoma"
+        "Squamous Cell Carcinoma of the Lung"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -17636,7 +17636,7 @@
         "Pulmonary Hamartoma would instead show a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
         "Adenocarcinoma of the Lung would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
         "Correct: The displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression, supporting Small Cell Carcinoma.",
-        "Small cell lung carcinoma would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
+        "Squamous Cell Carcinoma of the Lung would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -17674,10 +17674,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Small Cell Lung Cancer",
+        "Squamous cell lung carcinoma",
         "Small Cell Carcinoma",
-        "Small Cell Lung Carcinoma",
-        "Squamous cell lung carcinoma"
+        "Carcinoid Tumor",
+        "Bronchioloalveolar carcinoma"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -17686,10 +17686,10 @@
         "sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression"
       ],
       "choice_rationales": [
-        "Small Cell Lung Cancer would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
+        "Squamous cell lung carcinoma would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
         "Correct: The displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression, supporting Small Cell Carcinoma.",
-        "Small Cell Lung Carcinoma would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
-        "Squamous cell lung carcinoma would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
+        "Carcinoid Tumor would instead show an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
+        "Bronchioloalveolar carcinoma would instead show neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -20274,7 +20274,7 @@
         "Recurrent Respiratory Papillomatosis",
         "Large cell lung carcinoma",
         "Adenocarcinoma of the Lung",
-        "Large Cell Lung Carcinoma Pleomorphic Giant Cells"
+        "Small Cell Lung Cancer"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -20286,7 +20286,7 @@
         "Recurrent Respiratory Papillomatosis would instead show multiple exophytic papillomatous airway lesions with possible cavitating pulmonary spread; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass.",
         "Large cell lung carcinoma would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass.",
         "Correct: The displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass, supporting Adenocarcinoma of the Lung.",
-        "Large Cell Lung Carcinoma Pleomorphic Giant Cells would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass."
+        "Small Cell Lung Cancer would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows malignant gland formation, mucin production, or a peripheral infiltrative lung mass."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -20378,8 +20378,8 @@
       "joint_images": false,
       "options": [
         "Trauma-induced diffuse alveolar damage",
-        "Hyaline Membranes in ARDS",
-        "ARDS Intraalveolar Hyaline Membranes",
+        "Goodpasture",
+        "Diffuse Alveolar Damage (ARDS)",
         "ARDS Hyaline Membrane"
       ],
       "correct_index": 3,
@@ -20390,8 +20390,8 @@
       ],
       "choice_rationales": [
         "Trauma-induced diffuse alveolar damage would instead show bilateral diffuse air-space opacity with hyaline membranes and acute alveolar injury; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
-        "Hyaline Membranes in ARDS would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
-        "ARDS Intraalveolar Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
+        "Goodpasture would instead show diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
+        "Diffuse Alveolar Damage (ARDS) would instead show bilateral diffuse air-space opacity with hyaline membranes and acute alveolar injury; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
         "Correct: The displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli, supporting ARDS Hyaline Membrane."
       ],
       "ground_truth_confidence": "high",
@@ -20963,7 +20963,7 @@
         "Bilateral Pulmonary Emboli",
         "Hampton Hump in Pulmonary Infarction",
         "Pulmonary Infarct",
-        "Hampton's Hump Pulmonary Embolism"
+        "Old, organized Thromboembolism"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -20975,7 +20975,7 @@
         "Correct: The displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign, supporting Bilateral Pulmonary Emboli.",
         "Hampton Hump in Pulmonary Infarction would instead show a peripheral pleural-based wedge-shaped opacity representing pulmonary infarction; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
         "Pulmonary Infarct would instead show a peripheral wedge-shaped hemorrhagic lesion caused by vascular occlusion; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
-        "Hampton's Hump Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign."
+        "Old, organized Thromboembolism would instead show a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -22074,9 +22074,9 @@
       "joint_images": false,
       "options": [
         "Epiglottitis (thumb sign)",
-        "Epiglottitis with Thumb Sign",
+        "Chronic Rhinosinusitis with Nasal Polyps",
         "Croup",
-        "Chronic Rhinosinusitis with Nasal Polyps"
+        "Complicated Sinusitis"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -22086,9 +22086,9 @@
       ],
       "choice_rationales": [
         "Epiglottitis (thumb sign) would instead show an enlarged edematous epiglottis or swollen supraglottic tissue; the displayed image shows symmetric subglottic airway narrowing producing the steeple sign.",
-        "Epiglottitis with Thumb Sign would instead show an enlarged edematous epiglottis or swollen supraglottic tissue; the displayed image shows symmetric subglottic airway narrowing producing the steeple sign.",
+        "Chronic Rhinosinusitis with Nasal Polyps would instead show smooth polypoid soft tissue filling the nasal cavity or paranasal sinuses; the displayed image shows symmetric subglottic airway narrowing producing the steeple sign.",
         "Correct: The displayed image shows symmetric subglottic airway narrowing producing the steeple sign, supporting Croup.",
-        "Chronic Rhinosinusitis with Nasal Polyps would instead show smooth polypoid soft tissue filling the nasal cavity or paranasal sinuses; the displayed image shows symmetric subglottic airway narrowing producing the steeple sign."
+        "Complicated Sinusitis would instead show opacified paranasal sinus with marked mucosal thickening and an adjacent rim-enhancing collection or destructive extension; the displayed image shows symmetric subglottic airway narrowing producing the steeple sign."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -22445,8 +22445,8 @@
       "joint_images": false,
       "options": [
         "Squamous cell carcinoma of the lung, right upper lobe",
-        "Large cell carcinoma of the lung",
-        "Squamous Cell Carcinoma",
+        "Pulmonary Hamartoma",
+        "Adenocarcinoma Gland Formation and Mucin",
         "Large Cell Lung Carcinoma Pleomorphic Giant Cells"
       ],
       "correct_index": 3,
@@ -22457,8 +22457,8 @@
       ],
       "choice_rationales": [
         "Squamous cell carcinoma of the lung, right upper lobe would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
-        "Large cell carcinoma of the lung would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
-        "Squamous Cell Carcinoma would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
+        "Pulmonary Hamartoma would instead show a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
+        "Adenocarcinoma Gland Formation and Mucin would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
         "Correct: The displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation, supporting Large Cell Lung Carcinoma Pleomorphic Giant Cells."
       ],
       "ground_truth_confidence": "high",
@@ -22603,9 +22603,9 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Epiglottitis (thumb sign)",
         "Complicated Sinusitis",
         "Croup Steeple Sign",
+        "Chronic Rhinosinusitis with Nasal Polyps",
         "Epiglottitis with Thumb Sign"
       ],
       "correct_index": 3,
@@ -22615,9 +22615,9 @@
         "an enlarged edematous epiglottis or swollen supraglottic tissue"
       ],
       "choice_rationales": [
-        "Epiglottitis (thumb sign) would instead show an enlarged edematous epiglottis or swollen supraglottic tissue; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Complicated Sinusitis would instead show opacified paranasal sinus with marked mucosal thickening and an adjacent rim-enhancing collection or destructive extension; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Croup Steeple Sign would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
+        "Chronic Rhinosinusitis with Nasal Polyps would instead show smooth polypoid soft tissue filling the nasal cavity or paranasal sinuses; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Correct: The displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue, supporting Epiglottitis with Thumb Sign."
       ],
       "ground_truth_confidence": "high",
@@ -22816,9 +22816,9 @@
       "joint_images": false,
       "options": [
         "Chronic Rhinosinusitis with Nasal Polyps",
-        "Epiglottitis with Thumb Sign",
+        "Croup Steeple Sign",
         "Epiglottitis (thumb sign)",
-        "Croup Steeple Sign"
+        "Croup"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -22828,9 +22828,9 @@
       ],
       "choice_rationales": [
         "Chronic Rhinosinusitis with Nasal Polyps would instead show smooth polypoid soft tissue filling the nasal cavity or paranasal sinuses; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
-        "Epiglottitis with Thumb Sign would instead show an enlarged edematous epiglottis or swollen supraglottic tissue; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
+        "Croup Steeple Sign would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue.",
         "Correct: The displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue, supporting Epiglottitis (thumb sign).",
-        "Croup Steeple Sign would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue."
+        "Croup would instead show symmetric subglottic airway narrowing producing the steeple sign; the displayed image shows an enlarged edematous epiglottis or swollen supraglottic tissue."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -22871,7 +22871,7 @@
         "Pulmonary AV Malformation",
         "Right Middle Lung Wedge Shaped Pulmonary Embolism",
         "Hampton Hump in Pulmonary Infarction",
-        "Peripheral Opacity (Hampton Hump) from Pulmonary Embolism"
+        "Deep venous thrombosis"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -22883,7 +22883,7 @@
         "Pulmonary AV Malformation would instead show a direct dilated connection between a pulmonary artery and vein; the displayed image shows a peripheral pleural-based wedge-shaped opacity representing pulmonary infarction.",
         "Right Middle Lung Wedge Shaped Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows a peripheral pleural-based wedge-shaped opacity representing pulmonary infarction.",
         "Correct: The displayed image shows a peripheral pleural-based wedge-shaped opacity representing pulmonary infarction, supporting Hampton Hump in Pulmonary Infarction.",
-        "Peripheral Opacity (Hampton Hump) from Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows a peripheral pleural-based wedge-shaped opacity representing pulmonary infarction."
+        "Deep venous thrombosis would instead show a noncompressible deep vein containing intraluminal thrombus on ultrasound; the displayed image shows a peripheral pleural-based wedge-shaped opacity representing pulmonary infarction."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -23082,8 +23082,8 @@
       "options": [
         "Diffuse Alveolar Damage (ARDS)",
         "Hyaline Membranes in ARDS",
-        "ARDS Hyaline Membranes",
-        "Pulmonary Edema"
+        "Pulmonary Edema",
+        "Hemosiderin Laden Macrophages (Heart Failure Cells)"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -23094,8 +23094,8 @@
       "choice_rationales": [
         "Diffuse Alveolar Damage (ARDS) would instead show bilateral diffuse air-space opacity with hyaline membranes and acute alveolar injury; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
         "Correct: The displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli, supporting Hyaline Membranes in ARDS.",
-        "ARDS Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
-        "Pulmonary Edema would instead show pink proteinaceous intra-alveolar fluid or bilateral central air-space opacity; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli."
+        "Pulmonary Edema would instead show pink proteinaceous intra-alveolar fluid or bilateral central air-space opacity; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
+        "Hemosiderin Laden Macrophages (Heart Failure Cells) would instead show golden-brown hemosiderin granules within alveolar macrophages indicating prior alveolar hemorrhage or chronic congestion; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -23612,8 +23612,8 @@
       "options": [
         "Squamous cell carcinoma of the lung, right upper lobe",
         "Large cell carcinoma of the lung",
-        "Squamous Cell Carcinoma Intercellular Bridges",
-        "Bronchioloalveolar Carcinoma"
+        "Bronchioloalveolar Carcinoma",
+        "Carcinoid Tumor"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -23624,8 +23624,8 @@
       "choice_rationales": [
         "Squamous cell carcinoma of the lung, right upper lobe would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
         "Correct: The displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation, supporting Large cell carcinoma of the lung.",
-        "Squamous Cell Carcinoma Intercellular Bridges would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
-        "Bronchioloalveolar Carcinoma would instead show neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation."
+        "Bronchioloalveolar Carcinoma would instead show neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
+        "Carcinoid Tumor would instead show an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -25094,10 +25094,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "ARDS Intraalveolar Hyaline Membranes",
         "Diffuse Alveolar Damage (ARDS)",
+        "Neonatal Respiratory Distress Syndrome Hyaline Membranes",
         "ARDS Hyaline Membranes",
-        "Neonatal Respiratory Distress Syndrome Hyaline Membranes"
+        "Goodpasture"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -25106,10 +25106,10 @@
         "diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli"
       ],
       "choice_rationales": [
-        "ARDS Intraalveolar Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
         "Diffuse Alveolar Damage (ARDS) would instead show bilateral diffuse air-space opacity with hyaline membranes and acute alveolar injury; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
+        "Neonatal Respiratory Distress Syndrome Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli.",
         "Correct: The displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli, supporting ARDS Hyaline Membranes.",
-        "Neonatal Respiratory Distress Syndrome Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli."
+        "Goodpasture would instead show diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate; the displayed image shows diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -25467,8 +25467,8 @@
       "options": [
         "Large Cell Lung Carcinoma Pleomorphic Giant Cells",
         "Squamous Cell Carcinoma Keratin Pearls",
-        "Pulmonary Large Cell Carcinoma",
-        "Adenocarcinoma of the Lung"
+        "Adenocarcinoma of the Lung",
+        "Pulmonary carcinoid tumor"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -25479,8 +25479,8 @@
       "choice_rationales": [
         "Large Cell Lung Carcinoma Pleomorphic Giant Cells would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass.",
         "Correct: The displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass, supporting Squamous Cell Carcinoma Keratin Pearls.",
-        "Pulmonary Large Cell Carcinoma would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass.",
-        "Adenocarcinoma of the Lung would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass."
+        "Adenocarcinoma of the Lung would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass.",
+        "Pulmonary carcinoid tumor would instead show an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -26899,7 +26899,7 @@
         "Small cell lung carcinoma",
         "Pulmonary Hamartoma",
         "Large cell lung carcinoma",
-        "Large Cell Lung Carcinoma Pleomorphic Giant Cells"
+        "Adenocarcinoma Gland Formation and Mucin"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -26911,7 +26911,7 @@
         "Correct: The displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression, supporting Small cell lung carcinoma.",
         "Pulmonary Hamartoma would instead show a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
         "Large cell lung carcinoma would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
-        "Large Cell Lung Carcinoma Pleomorphic Giant Cells would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
+        "Adenocarcinoma Gland Formation and Mucin would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -26950,9 +26950,9 @@
       "joint_images": false,
       "options": [
         "Small Cell Lung Cancer",
-        "Small Cell Lung Carcinoma Small Dark Blue Cells",
+        "Adenocarcinoma of the Lung",
         "Squamous cell lung carcinoma",
-        "Squamous Cell Carcinoma of the Lung"
+        "Adenocarcinoma"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -26962,9 +26962,9 @@
       ],
       "choice_rationales": [
         "Small Cell Lung Cancer would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass.",
-        "Small Cell Lung Carcinoma Small Dark Blue Cells would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass.",
+        "Adenocarcinoma of the Lung would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass.",
         "Correct: The displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass, supporting Squamous cell lung carcinoma.",
-        "Squamous Cell Carcinoma of the Lung would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass."
+        "Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows keratin pearls and intercellular bridges or a centrally located cavitating mass."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -27111,7 +27111,7 @@
         "Bronchioloalveolar carcinoma",
         "Small Cell Carcinoma",
         "Squamous Cell Carcinoma",
-        "Small Cell Lung Cancer"
+        "Epithelial Adenocarcinoma"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -27123,7 +27123,7 @@
         "Correct: The displayed image shows neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern, supporting Bronchioloalveolar carcinoma.",
         "Small Cell Carcinoma would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern.",
         "Squamous Cell Carcinoma would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern.",
-        "Small Cell Lung Cancer would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern."
+        "Epithelial Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -27216,8 +27216,8 @@
       "options": [
         "Large cell lung carcinoma",
         "Epithelial Adenocarcinoma",
-        "Large cell carcinoma of the lung",
-        "Squamous Cell Carcinoma Keratin Pearls"
+        "Squamous Cell Carcinoma Keratin Pearls",
+        "Small Cell Lung Carcinoma"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -27228,8 +27228,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation, supporting Large cell lung carcinoma.",
         "Epithelial Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
-        "Large cell carcinoma of the lung would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
-        "Squamous Cell Carcinoma Keratin Pearls would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation."
+        "Squamous Cell Carcinoma Keratin Pearls would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
+        "Small Cell Lung Carcinoma would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -27692,8 +27692,8 @@
       "joint_images": false,
       "options": [
         "Right Middle Lung Wedge Shaped Pulmonary Embolism",
-        "Hampton Hump Pulmonary Embolism",
-        "Hampton Hump in Pulmonary Infarction",
+        "Acute pulmonary embolism",
+        "Pulmonary Embolims",
         "Peripheral Opacity (Hampton Hump) from Pulmonary Embolism"
       ],
       "correct_index": 3,
@@ -27704,8 +27704,8 @@
       ],
       "choice_rationales": [
         "Right Middle Lung Wedge Shaped Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
-        "Hampton Hump Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
-        "Hampton Hump in Pulmonary Infarction would instead show a peripheral pleural-based wedge-shaped opacity representing pulmonary infarction; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
+        "Acute pulmonary embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
+        "Pulmonary Embolims would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
         "Correct: The displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign, supporting Peripheral Opacity (Hampton Hump) from Pulmonary Embolism."
       ],
       "ground_truth_confidence": "high",
@@ -28012,7 +28012,7 @@
         "Pulmonary Hamartoma",
         "Squamous Cell Carcinoma Intercellular Bridges",
         "Adenocarcinoma Gland Formation and Mucin",
-        "Squamous cell carcinoma of the lung, right upper lobe"
+        "Carcinoid Tumor"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -28024,7 +28024,7 @@
         "Correct: The displayed image shows a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue, supporting Pulmonary Hamartoma.",
         "Squamous Cell Carcinoma Intercellular Bridges would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue.",
         "Adenocarcinoma Gland Formation and Mucin would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue.",
-        "Squamous cell carcinoma of the lung, right upper lobe would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue."
+        "Carcinoid Tumor would instead show an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae; the displayed image shows a sharply circumscribed nodule containing disorganized cartilage, fat, and fibrous tissue."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -28062,10 +28062,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Large cell carcinoma of the lung",
         "Epithelial Adenocarcinoma",
+        "Adenocarcinoma Gland Formation and Mucin",
         "Pulmonary Large Cell Carcinoma",
-        "Adenocarcinoma Gland Formation and Mucin"
+        "Pulmonary adenocarcinoma"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -28074,10 +28074,10 @@
         "sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation"
       ],
       "choice_rationales": [
-        "Large cell carcinoma of the lung would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
         "Epithelial Adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
+        "Adenocarcinoma Gland Formation and Mucin would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation.",
         "Correct: The displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation, supporting Pulmonary Large Cell Carcinoma.",
-        "Adenocarcinoma Gland Formation and Mucin would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation."
+        "Pulmonary adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -28434,8 +28434,8 @@
       "joint_images": false,
       "options": [
         "Pulmonary adenocarcinoma",
-        "Small Cell Lung Carcinoma Small Dark Blue Cells",
         "Squamous cell carcinoma of the lung, right upper lobe",
+        "Large cell lung carcinoma",
         "Small Cell Lung Cancer"
       ],
       "correct_index": 3,
@@ -28446,8 +28446,8 @@
       ],
       "choice_rationales": [
         "Pulmonary adenocarcinoma would instead show malignant gland formation, mucin production, or a peripheral infiltrative lung mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
-        "Small Cell Lung Carcinoma Small Dark Blue Cells would instead show sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
         "Squamous cell carcinoma of the lung, right upper lobe would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
+        "Large cell lung carcinoma would instead show sheets of markedly pleomorphic malignant epithelial cells without glandular or squamous differentiation; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
         "Correct: The displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression, supporting Small Cell Lung Cancer."
       ],
       "ground_truth_confidence": "high",
@@ -28542,7 +28542,7 @@
         "Carcinoid",
         "Small Cell Lung Carcinoma",
         "Squamous Cell Carcinoma of the Lung",
-        "Squamous cell carcinoma of the lung, right upper lobe"
+        "Bronchioloalveolar carcinoma"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -28554,7 +28554,7 @@
         "Carcinoid would instead show an endobronchial tan mass composed of uniform neuroendocrine cells in nests or trabeculae; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
         "Correct: The displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression, supporting Small Cell Lung Carcinoma.",
         "Squamous Cell Carcinoma of the Lung would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression.",
-        "Squamous cell carcinoma of the lung, right upper lobe would instead show keratin pearls and intercellular bridges or a centrally located cavitating mass; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
+        "Bronchioloalveolar carcinoma would instead show neoplastic cells growing along pre-existing alveolar septa in a lepidic pattern; the displayed image shows sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
