@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "bank_id": "bank_3c0109c75c96",
-  "generated_at": "2026-09-16T21:09:03.535155-04:00",
+  "generated_at": "2026-09-16T21:13:33.166423-04:00",
   "mode": "pulmonary_visual_identification",
   "question_count": 544,
   "quality_review": {
@@ -2616,8 +2616,8 @@
       "variant_id": "var_ab9f36b26e11",
       "question_type": "Identification",
       "tested_concept": "Bleomycin or Amiodarone Pulmonary Fibrosis",
-      "stem": "Which diagnosis or named sign best explains the dominant pattern on this complete chest radiograph?",
-      "case_context": "",
+      "stem": "Given this treatment history, which diagnosis is best supported by the pattern on this chest radiograph?",
+      "case_context": "A patient undergoing treatment with bleomycin for testicular cancer develops progressive dyspnea and bibasilar crackles; pulmonary function testing shows a new restrictive pattern with a reduced diffusion capacity.",
       "visual_target": "the complete displayed image",
       "panel_handling": "single_complete_image",
       "joint_images": false,
@@ -2629,15 +2629,15 @@
       ],
       "correct_index": 2,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is bilateral basal and subpleural reticulation with traction change or honeycombing. This pattern supports Bleomycin or Amiodarone Pulmonary Fibrosis.",
+      "explanation": "The decisive visible finding is bilateral basal and subpleural reticulation with traction change or honeycombing, developing in the setting of a fibrosis-inducing chemotherapeutic or antiarrhythmic agent rather than as isolated idiopathic fibrosis. This pattern supports Bleomycin or Amiodarone Pulmonary Fibrosis.",
       "visual_clues": [
-        "bilateral basal and subpleural reticulation with traction change or honeycombing"
+        "bilateral basal and subpleural reticulation with traction change or honeycombing, developing in the setting of a fibrosis-inducing chemotherapeutic or antiarrhythmic agent rather than as isolated idiopathic fibrosis"
       ],
       "choice_rationales": [
-        "Sarcoidosis Extensive Hilar and Mediastinal Adenopathy would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "Cystic fibrosis-associated bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing.",
-        "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, supporting Bleomycin or Amiodarone Pulmonary Fibrosis.",
-        "Pulmonary sarcoidosis would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing."
+        "Sarcoidosis Extensive Hilar and Mediastinal Adenopathy would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, developing in the setting of a fibrosis-inducing chemotherapeutic or antiarrhythmic agent rather than as isolated idiopathic fibrosis.",
+        "Cystic fibrosis-associated bronchiectasis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, developing in the setting of a fibrosis-inducing chemotherapeutic or antiarrhythmic agent rather than as isolated idiopathic fibrosis.",
+        "Correct: The displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, developing in the setting of a fibrosis-inducing chemotherapeutic or antiarrhythmic agent rather than as isolated idiopathic fibrosis, supporting Bleomycin or Amiodarone Pulmonary Fibrosis.",
+        "Pulmonary sarcoidosis would instead show non-necrotizing granulomas, sometimes with laminated Schaumann or stellate asteroid inclusions; the displayed image shows bilateral basal and subpleural reticulation with traction change or honeycombing, developing in the setting of a fibrosis-inducing chemotherapeutic or antiarrhythmic agent rather than as isolated idiopathic fibrosis."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -3782,8 +3782,8 @@
       "variant_id": "var_fe435b731674",
       "question_type": "Identification",
       "tested_concept": "Bronchopulmonary dysplasia",
-      "stem": "Which diagnosis or named sign best explains the dominant pattern on this complete chest radiograph?",
-      "case_context": "",
+      "stem": "Given this history, which diagnosis is best supported by the pattern on this chest radiograph?",
+      "case_context": "A former 26-week premature infant who required prolonged mechanical ventilation and supplemental oxygen for respiratory distress syndrome now, at 36 weeks postmenstrual age, continues to require oxygen support.",
       "visual_target": "all displayed panels together",
       "panel_handling": "retained_composite",
       "joint_images": true,
@@ -3795,15 +3795,15 @@
       ],
       "correct_index": 3,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology. This pattern supports Bronchopulmonary dysplasia.",
+      "explanation": "The decisive visible finding is coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation. This pattern supports Bronchopulmonary dysplasia.",
       "visual_clues": [
-        "coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology"
+        "coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation"
       ],
       "choice_rationales": [
-        "Multiple small pulmonary nodules would instead show numerous discrete small rounded opacities distributed through both lungs; the displayed image shows coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology.",
-        "Acute respiratory distress syndrome would instead show bilateral diffuse air-space opacity with hyaline membranes and acute alveolar injury; the displayed image shows coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology.",
-        "Lung Mass would instead show a focal pulmonary soft-tissue opacity distinct from surrounding aerated lung; the displayed image shows coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology.",
-        "Correct: The displayed image shows coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology, supporting Bronchopulmonary dysplasia."
+        "Multiple small pulmonary nodules would instead show numerous discrete small rounded opacities distributed through both lungs; the displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
+        "Acute respiratory distress syndrome would instead show bilateral diffuse air-space opacity with hyaline membranes and acute alveolar injury; the displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
+        "Lung Mass would instead show a focal pulmonary soft-tissue opacity distinct from surrounding aerated lung; the displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
+        "Correct: The displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation, supporting Bronchopulmonary dysplasia."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -3835,8 +3835,8 @@
       "variant_id": "var_719b05be4a83",
       "question_type": "Identification",
       "tested_concept": "Bronchopulmonary dysplasia",
-      "stem": "Which diagnosis, tissue, or pathologic process best matches the dominant microscopic morphology in the complete displayed image?",
-      "case_context": "",
+      "stem": "Given this history, which diagnosis is best supported by the pattern on this lung histology?",
+      "case_context": "A former 26-week premature infant who required prolonged mechanical ventilation and supplemental oxygen for respiratory distress syndrome now, at 36 weeks postmenstrual age, continues to require oxygen support.",
       "visual_target": "the complete displayed image",
       "panel_handling": "single_complete_image",
       "joint_images": false,
@@ -3848,15 +3848,15 @@
       ],
       "correct_index": 0,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology. This pattern supports Bronchopulmonary dysplasia.",
+      "explanation": "The decisive visible finding is simplified, enlarged air spaces on histology, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation. This pattern supports Bronchopulmonary dysplasia.",
       "visual_clues": [
-        "coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology"
+        "simplified, enlarged air spaces on histology, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation"
       ],
       "choice_rationales": [
-        "Correct: The displayed image shows coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology, supporting Bronchopulmonary dysplasia.",
-        "Healed fibrocalcific granuloma would instead show a densely fibrotic old granuloma containing central dystrophic calcification; the displayed image shows coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology.",
-        "Cryptococcus neoformans would instead show round narrow-based budding yeast surrounded by a prominent polysaccharide capsule; the displayed image shows coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology.",
-        "Cryptococcus Neoformans India Ink Stain would instead show round narrow-based budding yeast surrounded by a prominent polysaccharide capsule; the displayed image shows coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology."
+        "Correct: The displayed image shows simplified, enlarged air spaces on histology, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation, supporting Bronchopulmonary dysplasia.",
+        "Healed fibrocalcific granuloma would instead show a densely fibrotic old granuloma containing central dystrophic calcification; the displayed image shows simplified, enlarged air spaces on histology, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
+        "Cryptococcus neoformans would instead show round narrow-based budding yeast surrounded by a prominent polysaccharide capsule; the displayed image shows simplified, enlarged air spaces on histology, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
+        "Cryptococcus Neoformans India Ink Stain would instead show round narrow-based budding yeast surrounded by a prominent polysaccharide capsule; the displayed image shows simplified, enlarged air spaces on histology, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -6432,8 +6432,8 @@
       "variant_id": "var_5e06f0dc04ca",
       "question_type": "Identification",
       "tested_concept": "Duchenne's Muscular Dystrophy",
-      "stem": "Considering all displayed panels together, which diagnosis best unifies the visible findings?",
-      "case_context": "",
+      "stem": "Given this history, which diagnosis best unifies the visible findings across all displayed panels?",
+      "case_context": "A 10-year-old boy with a known dystrophin gene mutation, progressive proximal muscle weakness, and calf pseudohypertrophy is evaluated for worsening restrictive respiratory symptoms.",
       "visual_target": "all displayed panels together",
       "panel_handling": "retained_composite",
       "joint_images": true,
@@ -6445,15 +6445,15 @@
       ],
       "correct_index": 1,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is reduced chest expansion and dependent atelectatic change in the setting of neuromuscular weakness. This pattern supports Duchenne's Muscular Dystrophy.",
+      "explanation": "The decisive visible finding is reduced chest expansion and dependent atelectatic change from chronic respiratory muscle weakness, in a patient whose vignette supplies the diagnosis (dystrophin mutation, calf pseudohypertrophy) that a chest image alone cannot establish. This pattern supports Duchenne's Muscular Dystrophy.",
       "visual_clues": [
-        "reduced chest expansion and dependent atelectatic change in the setting of neuromuscular weakness"
+        "reduced chest expansion and dependent atelectatic change from chronic respiratory muscle weakness, in a patient whose vignette supplies the diagnosis (dystrophin mutation, calf pseudohypertrophy) that a chest image alone cannot establish"
       ],
       "choice_rationales": [
-        "Severe Polyposis would instead show smooth polypoid soft tissue filling the nasal cavity or paranasal sinuses; the displayed image shows reduced chest expansion and dependent atelectatic change in the setting of neuromuscular weakness.",
-        "Correct: The displayed image shows reduced chest expansion and dependent atelectatic change in the setting of neuromuscular weakness, supporting Duchenne's Muscular Dystrophy.",
-        "Bronchopulmonary Dysplasia would instead show coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology; the displayed image shows reduced chest expansion and dependent atelectatic change in the setting of neuromuscular weakness.",
-        "Neonatal respiratory distress syndrome would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows reduced chest expansion and dependent atelectatic change in the setting of neuromuscular weakness."
+        "Severe Polyposis would instead show smooth polypoid soft tissue filling the nasal cavity or paranasal sinuses; the displayed image shows reduced chest expansion and dependent atelectatic change from chronic respiratory muscle weakness, in a patient whose vignette supplies the diagnosis (dystrophin mutation, calf pseudohypertrophy) that a chest image alone cannot establish.",
+        "Correct: The displayed image shows reduced chest expansion and dependent atelectatic change from chronic respiratory muscle weakness, in a patient whose vignette supplies the diagnosis (dystrophin mutation, calf pseudohypertrophy) that a chest image alone cannot establish, supporting Duchenne's Muscular Dystrophy.",
+        "Bronchopulmonary Dysplasia would instead show coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology; the displayed image shows reduced chest expansion and dependent atelectatic change from chronic respiratory muscle weakness, in a patient whose vignette supplies the diagnosis (dystrophin mutation, calf pseudohypertrophy) that a chest image alone cannot establish.",
+        "Neonatal respiratory distress syndrome would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows reduced chest expansion and dependent atelectatic change from chronic respiratory muscle weakness, in a patient whose vignette supplies the diagnosis (dystrophin mutation, calf pseudohypertrophy) that a chest image alone cannot establish."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -7704,8 +7704,8 @@
       "variant_id": "var_aaf5c542405b",
       "question_type": "Identification",
       "tested_concept": "Goodpasture",
-      "stem": "Which diagnosis, tissue, or pathologic process best matches the dominant microscopic morphology in the complete displayed image?",
-      "case_context": "",
+      "stem": "Given this history, which diagnosis, tissue, or pathologic process best matches the dominant microscopic morphology in the complete displayed image?",
+      "case_context": "A patient presents with hemoptysis, progressive dyspnea, and acute kidney injury; serum testing is positive for anti-glomerular basement membrane antibodies.",
       "visual_target": "the complete displayed image",
       "panel_handling": "single_complete_image",
       "joint_images": false,
@@ -7717,15 +7717,15 @@
       ],
       "correct_index": 1,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate. This pattern supports Goodpasture.",
+      "explanation": "The decisive visible finding is diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate, in a patient whose vignette supplies the anti-GBM antibody and renal findings that distinguish this from other causes of diffuse alveolar hemorrhage. This pattern supports Goodpasture.",
       "visual_clues": [
-        "diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate"
+        "diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate, in a patient whose vignette supplies the anti-GBM antibody and renal findings that distinguish this from other causes of diffuse alveolar hemorrhage"
       ],
       "choice_rationales": [
-        "Diffuse Alveolar Damage (ARDS) would instead show bilateral diffuse air-space opacity with hyaline membranes and acute alveolar injury; the displayed image shows diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate.",
-        "Correct: The displayed image shows diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate, supporting Goodpasture.",
-        "ARDS Hyaline Membrane would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate.",
-        "ARDS Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate."
+        "Diffuse Alveolar Damage (ARDS) would instead show bilateral diffuse air-space opacity with hyaline membranes and acute alveolar injury; the displayed image shows diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate, in a patient whose vignette supplies the anti-GBM antibody and renal findings that distinguish this from other causes of diffuse alveolar hemorrhage.",
+        "Correct: The displayed image shows diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate, in a patient whose vignette supplies the anti-GBM antibody and renal findings that distinguish this from other causes of diffuse alveolar hemorrhage, supporting Goodpasture.",
+        "ARDS Hyaline Membrane would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate, in a patient whose vignette supplies the anti-GBM antibody and renal findings that distinguish this from other causes of diffuse alveolar hemorrhage.",
+        "ARDS Hyaline Membranes would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate, in a patient whose vignette supplies the anti-GBM antibody and renal findings that distinguish this from other causes of diffuse alveolar hemorrhage."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -10831,8 +10831,8 @@
       "variant_id": "var_10b0a64fb46e",
       "question_type": "Identification",
       "tested_concept": "Nasal Polyps from EGPA (Churg-Strauss)",
-      "stem": "Which pulmonary diagnosis, phenotype, or structure best matches the visible finding in the complete displayed image?",
-      "case_context": "",
+      "stem": "Given this clinical presentation, which diagnosis is best supported by the appearance of the nasal cavity?",
+      "case_context": "A patient with adult-onset asthma and marked peripheral eosinophilia develops nasal polyps, sinusitis, and new mononeuritis multiplex; ANCA testing is positive.",
       "visual_target": "the complete displayed image",
       "panel_handling": "single_complete_image",
       "joint_images": false,
@@ -10844,15 +10844,15 @@
       ],
       "correct_index": 0,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is smooth polypoid soft tissue filling the nasal cavity or paranasal sinuses. This pattern supports Nasal Polyps from EGPA (Churg-Strauss).",
+      "explanation": "The decisive visible finding is smooth polypoid soft tissue filling the nasal cavity, in a patient whose vignette (asthma, eosinophilia, vasculitic neuropathy) supplies the systemic features of EGPA that nasal polyps alone cannot show, distinguishing it from routine chronic rhinosinusitis with nasal polyps. This pattern supports Nasal Polyps from EGPA (Churg-Strauss).",
       "visual_clues": [
-        "smooth polypoid soft tissue filling the nasal cavity or paranasal sinuses"
+        "smooth polypoid soft tissue filling the nasal cavity, in a patient whose vignette (asthma, eosinophilia, vasculitic neuropathy) supplies the systemic features of EGPA that nasal polyps alone cannot show, distinguishing it from routine chronic rhinosinusitis with nasal polyps"
       ],
       "choice_rationales": [
-        "Correct: The displayed image shows smooth polypoid soft tissue filling the nasal cavity or paranasal sinuses, supporting Nasal Polyps from EGPA (Churg-Strauss).",
-        "Blue Bloater would instead show the chronic-bronchitis-predominant COPD phenotype with cyanosis and a stocky body habitus; the displayed image shows smooth polypoid soft tissue filling the nasal cavity or paranasal sinuses.",
-        "Pink Puffer would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows smooth polypoid soft tissue filling the nasal cavity or paranasal sinuses.",
-        "Acute Epiglottitis would instead show an enlarged edematous epiglottis or swollen supraglottic tissue; the displayed image shows smooth polypoid soft tissue filling the nasal cavity or paranasal sinuses."
+        "Correct: The displayed image shows smooth polypoid soft tissue filling the nasal cavity, in a patient whose vignette (asthma, eosinophilia, vasculitic neuropathy) supplies the systemic features of EGPA that nasal polyps alone cannot show, distinguishing it from routine chronic rhinosinusitis with nasal polyps, supporting Nasal Polyps from EGPA (Churg-Strauss).",
+        "Blue Bloater would instead show the chronic-bronchitis-predominant COPD phenotype with cyanosis and a stocky body habitus; the displayed image shows smooth polypoid soft tissue filling the nasal cavity, in a patient whose vignette (asthma, eosinophilia, vasculitic neuropathy) supplies the systemic features of EGPA that nasal polyps alone cannot show, distinguishing it from routine chronic rhinosinusitis with nasal polyps.",
+        "Pink Puffer would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows smooth polypoid soft tissue filling the nasal cavity, in a patient whose vignette (asthma, eosinophilia, vasculitic neuropathy) supplies the systemic features of EGPA that nasal polyps alone cannot show, distinguishing it from routine chronic rhinosinusitis with nasal polyps.",
+        "Acute Epiglottitis would instead show an enlarged edematous epiglottis or swollen supraglottic tissue; the displayed image shows smooth polypoid soft tissue filling the nasal cavity, in a patient whose vignette (asthma, eosinophilia, vasculitic neuropathy) supplies the systemic features of EGPA that nasal polyps alone cannot show, distinguishing it from routine chronic rhinosinusitis with nasal polyps."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -21378,8 +21378,8 @@
       "variant_id": "var_b6f0569f884c",
       "question_type": "Identification",
       "tested_concept": "Bronchopulmonary Dysplasia",
-      "stem": "Which diagnosis or named sign best explains the dominant pattern on this complete chest radiograph?",
-      "case_context": "",
+      "stem": "Given this history, which diagnosis is best supported by the pattern on this chest radiograph?",
+      "case_context": "A former 26-week premature infant who required prolonged mechanical ventilation and supplemental oxygen for respiratory distress syndrome now, at 36 weeks postmenstrual age, continues to require oxygen support.",
       "visual_target": "the complete displayed image",
       "panel_handling": "single_complete_image",
       "joint_images": false,
@@ -21391,15 +21391,15 @@
       ],
       "correct_index": 3,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology. This pattern supports Bronchopulmonary Dysplasia.",
+      "explanation": "The decisive visible finding is coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation. This pattern supports Bronchopulmonary Dysplasia.",
       "visual_clues": [
-        "coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology"
+        "coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation"
       ],
       "choice_rationales": [
-        "Granulomatosis with polyangiitis would instead show necrotizing granulomatous inflammation and vasculitis, often producing multiple cavitary pulmonary nodules; the displayed image shows coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology.",
-        "Neonatal respiratory distress syndrome would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology.",
-        "Patchy ground-glass opacity would instead show geographic bilateral ground-glass attenuation that does not completely obscure underlying vessels; the displayed image shows coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology.",
-        "Correct: The displayed image shows coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology, supporting Bronchopulmonary Dysplasia."
+        "Granulomatosis with polyangiitis would instead show necrotizing granulomatous inflammation and vasculitis, often producing multiple cavitary pulmonary nodules; the displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
+        "Neonatal respiratory distress syndrome would instead show diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli; the displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
+        "Patchy ground-glass opacity would instead show geographic bilateral ground-glass attenuation that does not completely obscure underlying vessels; the displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation.",
+        "Correct: The displayed image shows coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation, supporting Bronchopulmonary Dysplasia."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",

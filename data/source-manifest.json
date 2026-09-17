@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-16T21:09:03.535155-04:00",
+  "generated_at": "2026-09-16T21:13:33.166423-04:00",
   "builder": "build-medical-picture-quiz / multi-collection flat-image builder",
   "source_directories": [
     {
@@ -4542,7 +4542,7 @@
       "immutable_source_hash": "7a2f0b3694af4e25d99d9ffeb3cbf52760f15853d2369c313c2a61195f1ace51",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing",
+      "key_visual_findings": "bilateral basal and subpleural reticulation with traction change or honeycombing, developing in the setting of a fibrosis-inducing chemotherapeutic or antiarrhythmic agent rather than as isolated idiopathic fibrosis",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -6491,7 +6491,7 @@
       "immutable_source_hash": "b74b540c4709f42b0a1dbebd350a680c9869b4137922acfda44ccd39768bbb13",
       "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology",
+      "key_visual_findings": "coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
@@ -6581,7 +6581,7 @@
       "immutable_source_hash": "884c0690b54a1b095ae29114d2cf1f4e05e880e16e45bc30a598ac50a01ba53b",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology",
+      "key_visual_findings": "simplified, enlarged air spaces on histology, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -11128,7 +11128,7 @@
       "immutable_source_hash": "fddf84e365cb4c877c846d3feac718fce7b976ebcb193fcf502a220c7c70993d",
       "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "reduced chest expansion and dependent atelectatic change in the setting of neuromuscular weakness",
+      "key_visual_findings": "reduced chest expansion and dependent atelectatic change from chronic respiratory muscle weakness, in a patient whose vignette supplies the diagnosis (dystrophin mutation, calf pseudohypertrophy) that a chest image alone cannot establish",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
@@ -13267,7 +13267,7 @@
       "immutable_source_hash": "4968fe4eca59bba0503722431e708425ba1435222ff75de4dd5415a17f0753fd",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate",
+      "key_visual_findings": "diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate, in a patient whose vignette supplies the anti-GBM antibody and renal findings that distinguish this from other causes of diffuse alveolar hemorrhage",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -18519,7 +18519,7 @@
       "immutable_source_hash": "b0e9fa4475462cfc2eca1bb9c44ef37e3b7528391705a609bdfdc093cdca0bf5",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "smooth polypoid soft tissue filling the nasal cavity or paranasal sinuses",
+      "key_visual_findings": "smooth polypoid soft tissue filling the nasal cavity, in a patient whose vignette (asthma, eosinophilia, vasculitic neuropathy) supplies the systemic features of EGPA that nasal polyps alone cannot show, distinguishing it from routine chronic rhinosinusitis with nasal polyps",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -36601,7 +36601,7 @@
       "immutable_source_hash": "b3b01d4f57023dbdfbd3caf461ffe8523c12594ecee61618d59754fecda42caa",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "coarse heterogeneous neonatal lung opacity with simplified enlarged air spaces on histology",
+      "key_visual_findings": "coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {

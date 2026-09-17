@@ -62,6 +62,13 @@ CASE_CONTEXT: dict[str, str] = {
     "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "A patient with progressive exertional dyspnea and a loud pulmonic component of the second heart sound undergoes transthoracic echocardiography; the report estimates the right ventricular systolic pressure at 58 mmHg with septal flattening in systole.",
     "P529 CF Lung Disease.png": "A young adult with a history of recurrent childhood pneumonias, chronic productive cough, and a positive sweat chloride test undergoes this chest radiograph.",
     "Blue Bloater.png": "A 58-year-old with a 40-pack-year smoking history presents with a chronic productive cough, peripheral edema, and mild resting cyanosis; pulmonary function testing shows a chronic bronchitis-predominant obstructive pattern.",
+    "Bleomycin or Amiodarone Pulmonary Fibrosis CXR .png": "A patient undergoing treatment with bleomycin for testicular cancer develops progressive dyspnea and bibasilar crackles; pulmonary function testing shows a new restrictive pattern with a reduced diffusion capacity.",
+    "Bronchopulmonary dysplasia CXR.png": "A former 26-week premature infant who required prolonged mechanical ventilation and supplemental oxygen for respiratory distress syndrome now, at 36 weeks postmenstrual age, continues to require oxygen support.",
+    "Bronchopulmonary dysplasia Histo.png": "A former 26-week premature infant who required prolonged mechanical ventilation and supplemental oxygen for respiratory distress syndrome now, at 36 weeks postmenstrual age, continues to require oxygen support.",
+    "Bronchopulmonary Dysplasia.jpg": "A former 26-week premature infant who required prolonged mechanical ventilation and supplemental oxygen for respiratory distress syndrome now, at 36 weeks postmenstrual age, continues to require oxygen support.",
+    "Duchenne's Muscular Dystrophy CXR CT.png": "A 10-year-old boy with a known dystrophin gene mutation, progressive proximal muscle weakness, and calf pseudohypertrophy is evaluated for worsening restrictive respiratory symptoms.",
+    "Goodpasture Histo.png": "A patient presents with hemoptysis, progressive dyspnea, and acute kidney injury; serum testing is positive for anti-glomerular basement membrane antibodies.",
+    "Nasal Polyps from EGPA (Churg-Strauss).png": "A patient with adult-onset asthma and marked peripheral eosinophilia develops nasal polyps, sinusitis, and new mononeuritis multiplex; ANCA testing is positive.",
 }
 
 # Stem override for the CASE_CONTEXT questions above: the default stem_for() phrasing asks for
@@ -73,6 +80,13 @@ CASE_STEM: dict[str, str] = {
     "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "Given this echocardiographic report and the labeled apical four-chamber view, which diagnosis is best supported?",
     "P529 CF Lung Disease.png": "Given this history, which diagnosis is best supported by the pattern on this chest radiograph?",
     "Blue Bloater.png": "Given this clinical presentation, which COPD phenotype does this patient's photograph best match?",
+    "Bleomycin or Amiodarone Pulmonary Fibrosis CXR .png": "Given this treatment history, which diagnosis is best supported by the pattern on this chest radiograph?",
+    "Bronchopulmonary dysplasia CXR.png": "Given this history, which diagnosis is best supported by the pattern on this chest radiograph?",
+    "Bronchopulmonary dysplasia Histo.png": "Given this history, which diagnosis is best supported by the pattern on this lung histology?",
+    "Bronchopulmonary Dysplasia.jpg": "Given this history, which diagnosis is best supported by the pattern on this chest radiograph?",
+    "Duchenne's Muscular Dystrophy CXR CT.png": "Given this history, which diagnosis best unifies the visible findings across all displayed panels?",
+    "Goodpasture Histo.png": "Given this history, which diagnosis, tissue, or pathologic process best matches the dominant microscopic morphology in the complete displayed image?",
+    "Nasal Polyps from EGPA (Churg-Strauss).png": "Given this clinical presentation, which diagnosis is best supported by the appearance of the nasal cavity?",
 }
 
 # Clue override for the same sources: describes only what is defensibly visible plus the case
@@ -83,6 +97,13 @@ CASE_CLUE: dict[str, str] = {
     "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "an echocardiographic four-chamber view with the right ventricle (RV) and left ventricle (LV) labeled, interpreted alongside a report noting an estimated RVSP of 58 mmHg and systolic septal flattening \u2014 findings that indicate right ventricular pressure overload from pulmonary arterial hypertension",
     "P529 CF Lung Disease.png": "increased bronchovascular markings with peribronchial wall thickening and bronchiectatic change, in a patient with a positive sweat chloride test",
     "Blue Bloater.png": "a stocky, overweight body habitus consistent with the chronic-bronchitis-predominant ('blue bloater') COPD phenotype — the vignette supplies the cyanosis and cor pulmonale that the photograph alone can't definitively show",
+    "Bleomycin or Amiodarone Pulmonary Fibrosis CXR .png": "bilateral basal and subpleural reticulation with traction change or honeycombing, developing in the setting of a fibrosis-inducing chemotherapeutic or antiarrhythmic agent rather than as isolated idiopathic fibrosis",
+    "Bronchopulmonary dysplasia CXR.png": "coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation",
+    "Bronchopulmonary dysplasia Histo.png": "simplified, enlarged air spaces on histology, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation",
+    "Bronchopulmonary Dysplasia.jpg": "coarse heterogeneous neonatal lung opacity, developing after prolonged mechanical ventilation and oxygen exposure in a premature infant rather than as an acute presentation",
+    "Duchenne's Muscular Dystrophy CXR CT.png": "reduced chest expansion and dependent atelectatic change from chronic respiratory muscle weakness, in a patient whose vignette supplies the diagnosis (dystrophin mutation, calf pseudohypertrophy) that a chest image alone cannot establish",
+    "Goodpasture Histo.png": "diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate, in a patient whose vignette supplies the anti-GBM antibody and renal findings that distinguish this from other causes of diffuse alveolar hemorrhage",
+    "Nasal Polyps from EGPA (Churg-Strauss).png": "smooth polypoid soft tissue filling the nasal cavity, in a patient whose vignette (asthma, eosinophilia, vasculitic neuropathy) supplies the systemic features of EGPA that nasal polyps alone cannot show, distinguishing it from routine chronic rhinosinusitis with nasal polyps",
 }
 
 REVIEW_ONLY_ADD: dict[str, str] = {
