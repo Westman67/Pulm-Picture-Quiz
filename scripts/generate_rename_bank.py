@@ -1076,11 +1076,33 @@ def confusable_cluster_ids(concept_norm: str) -> set[int]:
     return {idx for idx, keywords in enumerate(CONFUSABLE_CLUSTERS) if any(kw in padded for kw in keywords)}
 
 
+# A label that names a specific stain, lab technique, or ancillary test result
+# (e.g. "Cryptococcus Neoformans India Ink Stain", "Sarcoidosis (lymphocytic
+# bronchoalveolar lavage)") gives itself away as a distractor when paired
+# against plain disease-name options, since that technique's result is not
+# something the displayed image could show either way -- a learner can
+# eliminate it on format alone, without knowing the actual diagnosis. Prefer
+# pairing options that match the correct answer's own level of technique-
+# specific detail, falling back to a mismatched pool only when there are not
+# enough same-shape candidates to fill all three distractors.
+_TECHNIQUE_DESCRIPTOR_RE = re.compile(
+    r"\b(stain|smear|biopsy|lavage|culture|cytology|histo|pas|gms|india ink|"
+    r"acid.?fast|afb|fna|\bbal\b|immunohisto|serology|aspirate|silver stain)\b"
+)
+
+
+def has_technique_descriptor(concept: str) -> bool:
+    if "(" in concept or ")" in concept:
+        return True
+    return bool(_TECHNIQUE_DESCRIPTOR_RE.search(concept.casefold()))
+
+
 def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
     correct = current["concept"]
     correct_norm = re.sub(r"[^a-z0-9]+", " ", correct.casefold()).strip()
     correct_keys = _synonym_keys(correct_norm)
     correct_clusters = confusable_cluster_ids(correct_norm)
+    correct_has_technique = has_technique_descriptor(correct)
 
     def shares_cluster(entry: dict) -> bool:
         if not correct_clusters:
@@ -1098,22 +1120,28 @@ def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
     result: list[str] = []
     seen_norms: set[str] = set()
     seen_keys: set[str] = set(correct_keys)
-    for tier in tiers:
-        for entry in sorted(tier, key=lambda item: hashlib.sha256(f"{current['sha']}:{item['concept']}".encode()).hexdigest()):
-            option = entry["concept"]
-            option_norm = re.sub(r"[^a-z0-9]+", " ", option.casefold()).strip()
-            if not option_norm or option_norm == correct_norm or option_norm in seen_norms:
-                continue
-            if correct_norm in option_norm or option_norm in correct_norm:
-                continue
-            option_keys = _synonym_keys(option_norm)
-            if option_keys & seen_keys:
-                continue
-            result.append(option)
-            seen_norms.add(option_norm)
-            seen_keys |= option_keys
-            if len(result) == 3:
-                return result
+    # Pass 1 requires the same technique-descriptor "shape" as the correct
+    # answer; pass 2 drops that requirement so a question never fails to
+    # generate distractors purely because too few same-shape candidates exist.
+    for require_specificity_match in (True, False):
+        for tier in tiers:
+            for entry in sorted(tier, key=lambda item: hashlib.sha256(f"{current['sha']}:{item['concept']}".encode()).hexdigest()):
+                option = entry["concept"]
+                option_norm = re.sub(r"[^a-z0-9]+", " ", option.casefold()).strip()
+                if not option_norm or option_norm == correct_norm or option_norm in seen_norms:
+                    continue
+                if correct_norm in option_norm or option_norm in correct_norm:
+                    continue
+                if require_specificity_match and has_technique_descriptor(option) != correct_has_technique:
+                    continue
+                option_keys = _synonym_keys(option_norm)
+                if option_keys & seen_keys:
+                    continue
+                result.append(option)
+                seen_norms.add(option_norm)
+                seen_keys |= option_keys
+                if len(result) == 3:
+                    return result
     raise RuntimeError(f"Could not create distractors for {current['filename']}")
 
 
