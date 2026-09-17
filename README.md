@@ -2,8 +2,8 @@
 
 A local, offline-capable pulmonary visual-identification quiz rebuilt from every supported image in
 `~/Desktop/Rename` and `~/Desktop/Add`. Both source collections are read-only. The app contains
-separate, metadata-stripped PNG derivatives with opaque browser paths and a schema-version-2
-question bank.
+separate, metadata-stripped derivatives with opaque browser paths (lossless PNG teaching originals,
+visually-lossless WebP quiz-display copies for fast loading) and a schema-version-2 question bank.
 
 ## Start the completed build
 
@@ -11,7 +11,7 @@ No package installation is required. From Terminal:
 
 ```bash
 cd "$HOME/Desktop/Pulmonary Picture Quiz App"
-python3 -m http.server 4173 -d dist
+python3 scripts/serve.py 4173 dist
 ```
 
 Then open <http://localhost:4173>. The app works with internet access disabled. On macOS you may

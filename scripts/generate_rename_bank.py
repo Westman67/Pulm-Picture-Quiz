@@ -39,6 +39,7 @@ COLLECTIONS = (
     },
 )
 ASSET_DIR = PROJECT / "public" / "assets" / "images"
+QUIZ_WEBP_QUALITY = 88  # visually-lossless for on-screen identification; teaching original stays lossless PNG
 DATA_DIR = PROJECT / "data"
 REPORT_DIR = PROJECT / "reports"
 NOW = datetime.now(ZoneInfo("America/New_York")).isoformat()
@@ -783,7 +784,7 @@ def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
     raise RuntimeError(f"Could not create distractors for {current['filename']}")
 
 
-def reencode(source: Path, destination: Path, crop: tuple[float, float, float, float] | None = None) -> dict:
+def reencode(source: Path, destination: Path, crop: tuple[float, float, float, float] | None = None, output_format: str = "PNG") -> dict:
     with Image.open(source) as opened:
         image = ImageOps.exif_transpose(opened)
         had_alpha = image.mode in {"RGBA", "LA"} or "transparency" in image.info
@@ -809,13 +810,18 @@ def reencode(source: Path, destination: Path, crop: tuple[float, float, float, f
         if destination.is_file():
             try:
                 with Image.open(destination) as existing:
-                    reuse = existing.format == "PNG" and existing.size == image.size
+                    reuse = existing.format == output_format and existing.size == image.size
             except OSError:
                 reuse = False
         if not reuse:
-            # Lossless level-3 deflate keeps generation practical for hundreds of large medical
-            # images; exhaustive PNG optimization changes only size, not pixels.
-            image.save(destination, format="PNG", compress_level=3)
+            if output_format == "WEBP":
+                # Quiz-display copy only: visually-lossless WebP keeps the in-app payload small.
+                # The teaching-original tier below is always saved lossless PNG for full fidelity.
+                image.save(destination, format="WEBP", quality=QUIZ_WEBP_QUALITY, method=6)
+            else:
+                # Lossless level-3 deflate keeps generation practical for hundreds of large medical
+                # images; exhaustive PNG optimization changes only size, not pixels.
+                image.save(destination, format="PNG", compress_level=3)
         return {
             "width": image.width,
             "height": image.height,
@@ -904,11 +910,11 @@ def main() -> None:
         crop = (CROPS if entry["collection_key"] == "rename" else ADD_CROPS).get(entry["filename"])
         original_name = f"original_{entry['sha'][:16]}.png"
         quiz_key = hashlib.sha256(f"{entry['sha']}:quiz:{crop}".encode()).hexdigest()[:16]
-        quiz_name = f"quiz_{quiz_key}.png"
+        quiz_name = f"quiz_{quiz_key}.webp"
         original_path = ASSET_DIR / original_name
         quiz_path = ASSET_DIR / quiz_name
         original_meta = reencode(source, original_path)
-        quiz_meta = reencode(source, quiz_path, crop)
+        quiz_meta = reencode(source, quiz_path, crop, output_format="WEBP")
         original_relative = original_path.relative_to(PROJECT).as_posix()
         quiz_relative = quiz_path.relative_to(PROJECT).as_posix()
         transformations = ["metadata_strip", "lossless_png_reencode"]
@@ -1104,7 +1110,7 @@ def main() -> None:
         for mapped in asset_map.values()
         for side in ("quiz", "original")
     }
-    for path in ASSET_DIR.glob("*.png"):
+    for path in list(ASSET_DIR.glob("*.png")) + list(ASSET_DIR.glob("*.webp")):
         if path.name not in referenced_assets:
             path.unlink()
 
@@ -1161,7 +1167,7 @@ def main() -> None:
         "",
         "## Transformation policy",
         "",
-        f"All browser assets were losslessly re-encoded as PNG with metadata stripped. Transparency was composited onto a neutral background. {len(CROPS) + len(ADD_CROPS)} answer-revealing captions or titles in non-diagnostic border space were removed with recorded source-relative crop coordinates. No image was stretched, upscaled, generatively reconstructed, or altered within diagnostic pixels.",
+        f"All browser assets were re-encoded with metadata stripped. Transparency was composited onto a neutral background. The teaching-original tier is always losslessly re-encoded as PNG. The quiz-display tier is re-encoded as visually-lossless WebP (quality {QUIZ_WEBP_QUALITY}) to keep in-app payload size small; no diagnostic pixel content was cropped, stretched, upscaled, or generatively reconstructed in either tier. {len(CROPS) + len(ADD_CROPS)} answer-revealing captions or titles in non-diagnostic border space were removed with recorded source-relative crop coordinates.",
         "",
         "## Ground-truth decision",
         "",
@@ -1179,7 +1185,7 @@ def main() -> None:
         "scored_questions": len(questions),
         "review_only": len(review_items),
         "duplicates_withheld": status_counts["DUPLICATE"],
-        "assets": len(list(ASSET_DIR.glob("*.png"))),
+        "assets": len(list(ASSET_DIR.glob("*.png"))) + len(list(ASSET_DIR.glob("*.webp"))),
     }, indent=2))
 
 

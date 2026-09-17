@@ -253,7 +253,7 @@ test("review queue is excluded from the scored bank", () => {
 
 test("learner-facing asset paths are opaque and alt text is neutral", async () => {
   for (const question of questions) {
-    assert.match(question.quiz_asset, /^public\/assets\/images\/quiz_[a-f0-9]{16}\.png$/);
+    assert.match(question.quiz_asset, /^public\/assets\/images\/quiz_[a-f0-9]{16}\.webp$/);
     const folded = question.quiz_asset.toLowerCase();
     const answerWords = question.options[question.correct_index].toLowerCase().split(/[^a-z0-9]+/).filter((x) => x.length >= 5);
     assert.equal(answerWords.some((word) => folded.includes(word)), false);

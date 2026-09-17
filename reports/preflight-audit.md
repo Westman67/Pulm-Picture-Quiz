@@ -1,9 +1,9 @@
 # Pulmonary multi-collection preflight audit
 
-Generated: 2026-09-16T20:04:41.617517-04:00
+Generated: 2026-09-16T20:24:04.017133-04:00
 
-- Source: `/Users/chriselwell/Desktop/Rename` (read-only)
-- Source: `/Users/chriselwell/Desktop/Add` (read-only)
+- Source: `/sessions/rcw-01t75m4lq7i9mvmfffwuwvuu/mnt/Desktop/Rename` (read-only)
+- Source: `/sessions/rcw-01t75m4lq7i9mvmfffwuwvuu/mnt/Desktop/Add` (read-only)
 - Physical image files: 558
 - Decodable files: 558
 - Scored questions: 539
@@ -74,7 +74,7 @@ Generated: 2026-09-16T20:04:41.617517-04:00
 
 ## Transformation policy
 
-All browser assets were losslessly re-encoded as PNG with metadata stripped. Transparency was composited onto a neutral background. 13 answer-revealing captions or titles in non-diagnostic border space were removed with recorded source-relative crop coordinates. No image was stretched, upscaled, generatively reconstructed, or altered within diagnostic pixels.
+All browser assets were re-encoded with metadata stripped. Transparency was composited onto a neutral background. The teaching-original tier is always losslessly re-encoded as PNG. The quiz-display tier is re-encoded as visually-lossless WebP (quality 88) to keep in-app payload size small; no diagnostic pixel content was cropped, stretched, upscaled, or generatively reconstructed in either tier. 13 answer-revealing captions or titles in non-diagnostic border space were removed with recorded source-relative crop coordinates.
 
 ## Ground-truth decision
 

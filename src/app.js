@@ -283,7 +283,7 @@ function quizView() {
         <div class="image-panel panel">
           <div class="image-toolbar"><span>${state.showingOriginal && reveal ? "Teaching original" : "Quiz image"}</span><div><button data-action="zoom-out" aria-label="Zoom out">−</button><button data-action="reset-zoom">Reset</button><button data-action="zoom-in" aria-label="Zoom in">+</button><button data-action="toggle-zoom" aria-label="Toggle zoom">Z</button></div></div>
           <div id="image-stage" class="image-stage ${state.zoom.scale > 1 ? "zoomed" : ""}">
-            <img id="quiz-image" src="${escapeHtml(imageSrc)}" alt="quiz source image" draggable="false" style="transform:translate(${state.zoom.x}px, ${state.zoom.y}px) scale(${state.zoom.scale})">
+            <img id="quiz-image" src="${escapeHtml(imageSrc)}" alt="quiz source image" draggable="false" decoding="async" fetchpriority="high" style="transform:translate(${state.zoom.x}px, ${state.zoom.y}px) scale(${state.zoom.scale})">
           </div>
           <p class="image-hint">Scroll or use controls to zoom · drag to pan · double-click to reset</p>
         </div>
@@ -379,7 +379,7 @@ function resultsView() {
 
 function resultReviewCard({ question, answer }) {
   const status = answer?.correct ? "Correct" : answer?.locked ? "Incorrect" : "Unanswered";
-  return `<details class="result-card"><summary><img src="${escapeHtml(question.quiz_asset)}" alt="quiz source image"><span><small>${escapeHtml(question.category)} · ${escapeHtml(question.topic)}</small><strong>${escapeHtml(question.tested_concept)}</strong><em class="${answer?.correct ? "good" : "bad"}">${status}</em></span></summary><div><p>${escapeHtml(question.explanation)}</p><div class="rationale-list">${question.options.map((option, i) => `<article class="rationale ${i === question.correct_index ? "keyed" : ""} ${i === answer?.selected_index ? "selected-rationale" : ""}"><div><span>${i + 1}</span><strong>${escapeHtml(option)}</strong>${i === question.correct_index ? "<em>Keyed</em>" : ""}${i === answer?.selected_index ? "<em>Your choice</em>" : ""}</div><p>${escapeHtml(question.choice_rationales[i])}</p></article>`).join("")}</div>${sourceDetailsTemplate(question)}</div></details>`;
+  return `<details class="result-card"><summary><img src="${escapeHtml(question.quiz_asset)}" alt="quiz source image" loading="lazy" decoding="async"><span><small>${escapeHtml(question.category)} · ${escapeHtml(question.topic)}</small><strong>${escapeHtml(question.tested_concept)}</strong><em class="${answer?.correct ? "good" : "bad"}">${status}</em></span></summary><div><p>${escapeHtml(question.explanation)}</p><div class="rationale-list">${question.options.map((option, i) => `<article class="rationale ${i === question.correct_index ? "keyed" : ""} ${i === answer?.selected_index ? "selected-rationale" : ""}"><div><span>${i + 1}</span><strong>${escapeHtml(option)}</strong>${i === question.correct_index ? "<em>Keyed</em>" : ""}${i === answer?.selected_index ? "<em>Your choice</em>" : ""}</div><p>${escapeHtml(question.choice_rationales[i])}</p></article>`).join("")}</div>${sourceDetailsTemplate(question)}</div></details>`;
 }
 
 function reviewView() {
@@ -394,7 +394,7 @@ function reviewView() {
         const image = question?.quiz_asset || flag.quiz_asset;
         const status = flag.status === "resolved" ? "resolved" : "open";
         return `<article class="quality-flag-card panel ${status}">
-          <img src="${escapeHtml(image)}" alt="flagged quiz source image">
+          <img src="${escapeHtml(image)}" alt="flagged quiz source image" loading="lazy" decoding="async">
           <div><span class="quality-status ${status}">${status}</span><h3>${escapeHtml(question?.tested_concept || flag.tested_concept || "Flagged photo")}</h3>
           <p class="quality-reason">${escapeHtml(QUALITY_FLAG_REASONS[flag.issue_type] || flag.issue_type)}</p>
           ${flag.note ? `<p>${escapeHtml(flag.note)}</p>` : '<p class="empty-copy">No note supplied.</p>'}
@@ -405,7 +405,7 @@ function reviewView() {
       }).join("")}</div>`
     : '<section class="panel quality-empty"><span>⚐</span><h2>No photo-quality flags yet</h2><p>Use “Flag bad photo” while taking a quiz to send an image here for fixing.</p></section>';
   const queue = state.reviewQueue.items.length
-    ? `<div class="review-grid">${state.reviewQueue.items.map((item) => `<article class="review-card panel"><img src="${escapeHtml(item.preview_asset)}" alt="review-only source preview"><div><span class="review-status">Needs review</span><h2>${escapeHtml(item.proposed_answer)}</h2><p>${escapeHtml(item.uncertainty_reason)}</p><dl><dt>Modality</dt><dd>${escapeHtml(item.modality)}</dd><dt>Evidence</dt><dd>${escapeHtml(item.evidence)}</dd><dt>Leak risk</dt><dd>${escapeHtml(item.answer_leakage_risk)}</dd><dt>Source ID</dt><dd>${escapeHtml(item.source_id)}</dd></dl></div></article>`).join("")}</div>`
+    ? `<div class="review-grid">${state.reviewQueue.items.map((item) => `<article class="review-card panel"><img src="${escapeHtml(item.preview_asset)}" alt="review-only source preview" loading="lazy" decoding="async"><div><span class="review-status">Needs review</span><h2>${escapeHtml(item.proposed_answer)}</h2><p>${escapeHtml(item.uncertainty_reason)}</p><dl><dt>Modality</dt><dd>${escapeHtml(item.modality)}</dd><dt>Evidence</dt><dd>${escapeHtml(item.evidence)}</dd><dt>Leak risk</dt><dd>${escapeHtml(item.answer_leakage_risk)}</dd><dt>Source ID</dt><dd>${escapeHtml(item.source_id)}</dd></dl></div></article>`).join("")}</div>`
     : '<section class="panel review-empty"><span>✓</span><h2>Review queue is empty</h2><p>There are no review-only photos in this quiz project.</p></section>';
   return `<main class="review shell">
     <section class="page-heading"><div><p class="eyebrow">Reviewer mode</p><h1>Review & photo flags</h1><p>${openFlags} open learner photo flag${openFlags === 1 ? "" : "s"}. Flags remain local until exported.</p></div><div class="button-row"><button class="secondary" data-action="export-flags" ${flags.length ? "" : "disabled"}>Export photo flags</button><button class="secondary" data-action="export-review">Export source queue</button></div></section>

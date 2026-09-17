@@ -17,7 +17,11 @@ SOURCES = {
     "third_party": Path.home() / "Desktop" / "Add",
 }
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg"}
-OPAQUE_ASSET = re.compile(r"^public/assets/images/(?:quiz|original)_[a-f0-9]{16}\.png$")
+OPAQUE_ASSET = {
+    "quiz_asset": re.compile(r"^public/assets/images/quiz_[a-f0-9]{16}\.webp$"),
+    "original_asset": re.compile(r"^public/assets/images/original_[a-f0-9]{16}\.png$"),
+}
+EXPECTED_FORMAT = {"quiz_asset": "WEBP", "original_asset": "PNG"}
 BLOCKED = {"NEEDS_REVIEW", "REFERENCE_ONLY", "DUPLICATE", "AGGREGATE_DUPLICATE", "BROKEN", "EXCLUDED"}
 
 
@@ -108,7 +112,7 @@ def main() -> None:
 
         for field in ("quiz_asset", "original_asset"):
             relative = str(question.get(field, ""))
-            require(bool(OPAQUE_ASSET.fullmatch(relative)), f"{qid}: nonopaque {field}: {relative}", errors)
+            require(bool(OPAQUE_ASSET[field].fullmatch(relative)), f"{qid}: nonopaque {field}: {relative}", errors)
             path = (PROJECT / relative).resolve()
             require(path.is_relative_to(PROJECT.resolve()), f"{qid}: {field} escapes project", errors)
             require(path.is_file(), f"{qid}: missing {field}", errors)
@@ -117,7 +121,7 @@ def main() -> None:
                     with Image.open(path) as image:
                         image.verify()
                     with Image.open(path) as image:
-                        require(image.format == "PNG", f"{qid}: {field} is not PNG", errors)
+                        require(image.format == EXPECTED_FORMAT[field], f"{qid}: {field} is not {EXPECTED_FORMAT[field]}", errors)
                         require(image.width > 0 and image.height > 0, f"{qid}: invalid {field} dimensions", errors)
                     decoded.add(relative)
                 except Exception as exc:

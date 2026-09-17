@@ -9,6 +9,6 @@
     "test": "python3 scripts/validate_bank.py && node --test tests/*.test.mjs",
     "test:visual": "node tests/visual-check.mjs",
     "build": "python3 scripts/validate_bank.py && node scripts/build.mjs",
-    "start": "python3 -m http.server 4173 -d dist"
+    "start": "python3 scripts/serve.py 4173 dist"
   }
 }
