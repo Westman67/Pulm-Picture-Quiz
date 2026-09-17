@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-16T20:42:17.671963-04:00",
-  "count": 9,
+  "generated_at": "2026-09-16T20:47:32.242102-04:00",
+  "count": 8,
   "items": [
     {
       "source_id": "src_c12eecb01b3b",
@@ -39,19 +39,6 @@
       "source_collection_key": "rename",
       "source_collection": "Lecture material",
       "uncertainty_reason": "The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.",
-      "answer_leakage_risk": "low",
-      "project_status": "NEEDS_REVIEW"
-    },
-    {
-      "source_id": "src_69eae45a736d",
-      "source_group_id": "sg_ac6a84a28afa",
-      "preview_asset": "public/assets/images/original_320df8fc0922c469.png",
-      "proposed_answer": "Normal",
-      "modality": "Histology",
-      "evidence": "User-supplied filename and visual review were insufficient for a unique scored key.",
-      "source_collection_key": "rename",
-      "source_collection": "Lecture material",
-      "uncertainty_reason": "The filename does not identify the organ, tissue compartment, or intended normal structure.",
       "answer_leakage_risk": "low",
       "project_status": "NEEDS_REVIEW"
     },

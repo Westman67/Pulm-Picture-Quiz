@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "bank_id": "bank_3c0109c75c96",
-  "generated_at": "2026-09-16T20:42:17.671963-04:00",
+  "generated_at": "2026-09-16T20:47:32.242102-04:00",
   "mode": "pulmonary_visual_identification",
-  "question_count": 543,
+  "question_count": 544,
   "quality_review": {
     "batch_id": null,
     "reviewed_at": null,
@@ -134,7 +134,7 @@
         "Acinus",
         "Normal Airway",
         "Normal Lung Large",
-        "Normal pulmonary alveoli"
+        "Normal bronchus"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -146,7 +146,7 @@
         "Correct: The displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit, supporting Acinus.",
         "Normal Airway would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit.",
         "Normal Lung Large would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit.",
-        "Normal pulmonary alveoli would instead show delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit."
+        "Normal bronchus would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -3631,7 +3631,7 @@
       "options": [
         "Normal Lung Large",
         "Normal Airway",
-        "Normal pulmonary alveoli",
+        "Normal bronchus",
         "Bronchiole"
       ],
       "correct_index": 3,
@@ -3643,7 +3643,7 @@
       "choice_rationales": [
         "Normal Lung Large would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows a small conducting airway lacking cartilage and submucosal glands, with a prominent smooth-muscle wall.",
         "Normal Airway would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows a small conducting airway lacking cartilage and submucosal glands, with a prominent smooth-muscle wall.",
-        "Normal pulmonary alveoli would instead show delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction; the displayed image shows a small conducting airway lacking cartilage and submucosal glands, with a prominent smooth-muscle wall.",
+        "Normal bronchus would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows a small conducting airway lacking cartilage and submucosal glands, with a prominent smooth-muscle wall.",
         "Correct: The displayed image shows a small conducting airway lacking cartilage and submucosal glands, with a prominent smooth-muscle wall, supporting Bronchiole."
       ],
       "ground_truth_confidence": "high",
@@ -11422,8 +11422,8 @@
       "options": [
         "Normal Acinus",
         "Bronchiole",
-        "Normal pulmonary alveoli",
-        "Normal Airway"
+        "Normal bronchus",
+        "Normal pulmonary alveoli"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -11434,8 +11434,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit, supporting Normal Acinus.",
         "Bronchiole would instead show a small conducting airway lacking cartilage and submucosal glands, with a prominent smooth-muscle wall; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit.",
-        "Normal pulmonary alveoli would instead show delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit.",
-        "Normal Airway would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit."
+        "Normal bronchus would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit.",
+        "Normal pulmonary alveoli would instead show delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction; the displayed image shows a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -11726,6 +11726,59 @@
       "quality_review_batch": null
     },
     {
+      "question_id": "q_384bd8f61ad7",
+      "source_group_id": "sg_ac6a84a28afa",
+      "source_id": "src_69eae45a736d",
+      "variant_id": "var_ed1e0d3ff42c",
+      "question_type": "Identification",
+      "tested_concept": "Normal bronchus",
+      "stem": "Which diagnosis, tissue, or pathologic process best matches the dominant microscopic morphology in the complete displayed image?",
+      "case_context": "",
+      "visual_target": "the complete displayed image",
+      "panel_handling": "single_complete_image",
+      "joint_images": false,
+      "options": [
+        "Acinus",
+        "Normal Lung Large",
+        "Normal bronchus",
+        "Trachea"
+      ],
+      "correct_index": 2,
+      "accepted_terminology": [],
+      "explanation": "The decisive visible finding is an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma. This pattern supports Normal bronchus.",
+      "visual_clues": [
+        "an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma"
+      ],
+      "choice_rationales": [
+        "Acinus would instead show a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
+        "Normal Lung Large would instead show symmetric aerated lungs without a focal opacity, pleural collection, or destructive lesion; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma.",
+        "Correct: The displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma, supporting Normal bronchus.",
+        "Trachea would instead show respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall; the displayed image shows an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma."
+      ],
+      "ground_truth_confidence": "high",
+      "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
+      "category": "Normal anatomy",
+      "modality": "Histology",
+      "organ_system": "Pulmonary",
+      "topic_cluster": "normal-anatomy",
+      "source_origin": "third_party",
+      "source_collection": "Lecture material",
+      "source_collection_key": "rename",
+      "quiz_asset": "public/assets/images/quiz_45633eb020c50c8f.webp",
+      "original_asset": "public/assets/images/original_320df8fc0922c469.png",
+      "post_answer_source": {
+        "original_filename": "Normal Histo.png",
+        "source_document": "Desktop/Rename user-curated pulmonary image collection",
+        "source_collection": "Lecture material",
+        "source_collection_key": "rename",
+        "source_page_or_slide": "",
+        "source_id": "src_69eae45a736d",
+        "rights_status": "unknown; local study use only"
+      },
+      "review_status": "VERIFIED",
+      "quality_review_batch": null
+    },
+    {
       "question_id": "q_c2ac01104122",
       "source_group_id": "sg_1c8d07eea28c",
       "source_id": "src_d24463dd1141",
@@ -12004,7 +12057,7 @@
       "joint_images": false,
       "options": [
         "Normal Mesothelium",
-        "Normal Bronchus",
+        "Normal bronchus",
         "Normal pulmonary alveoli",
         "Trachea"
       ],
@@ -12016,7 +12069,7 @@
       ],
       "choice_rationales": [
         "Correct: The displayed image shows a single bland layer of flattened-to-cuboidal mesothelial cells lining the pleural surface, supporting Normal Mesothelium.",
-        "Normal Bronchus would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows a single bland layer of flattened-to-cuboidal mesothelial cells lining the pleural surface.",
+        "Normal bronchus would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows a single bland layer of flattened-to-cuboidal mesothelial cells lining the pleural surface.",
         "Normal pulmonary alveoli would instead show delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction; the displayed image shows a single bland layer of flattened-to-cuboidal mesothelial cells lining the pleural surface.",
         "Trachea would instead show respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall; the displayed image shows a single bland layer of flattened-to-cuboidal mesothelial cells lining the pleural surface."
       ],
@@ -18999,10 +19052,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Acinus",
+        "Normal bronchus",
         "Trachea Large",
-        "Normal pulmonary alveoli",
-        "Normal Alveolar"
+        "Acinus",
+        "Normal pulmonary alveoli"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -19011,10 +19064,10 @@
         "respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall"
       ],
       "choice_rationales": [
-        "Acinus would instead show a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall.",
+        "Normal bronchus would instead show an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall.",
         "Correct: The displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall, supporting Trachea Large.",
-        "Normal pulmonary alveoli would instead show delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall.",
-        "Normal Alveolar would instead show delicate open alveoli separated by thin septa without inflammatory filling or fibrosis; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall."
+        "Acinus would instead show a terminal bronchiole giving rise to respiratory bronchioles, alveolar ducts, and alveoli within one gas-exchanging unit; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall.",
+        "Normal pulmonary alveoli would instead show delicate open alveolar spaces separated by very thin septa without inflammatory filling, fibrosis, or architectural destruction; the displayed image shows respiratory epithelium, submucosal glands, cartilage, and the posterior smooth-muscle wall."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",

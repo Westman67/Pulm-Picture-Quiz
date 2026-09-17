@@ -52,7 +52,6 @@ REVIEW_ONLY_RENAME: dict[str, str] = {
     "Appendicitis CXR.png": "The filename and visible target do not establish a defensible pulmonary identification task.",
     "CF CT 2.png": "The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.",
     "CF CT 3.png": "The displayed upper-abdominal CT does not provide sufficient pulmonary evidence for cystic fibrosis.",
-    "Normal Histo.png": "The filename does not identify the organ, tissue compartment, or intended normal structure.",
     "Pulmonary Infarct Gross.png": "Embedded labels state the tested diagnosis directly over medically meaningful tissue.",
     "Pulmonary Metalplasia .png": "The source label is ambiguous and the intended metaplastic process is not specified reliably.",
 }
@@ -638,9 +637,16 @@ def modality_for(name: str, collection_key: str = "rename") -> str:
     return "Other"
 
 
+RENAME_CONCEPT_OVERRIDES = {
+    "Normal Histo.png": "Normal bronchus",
+}
+
+
 def concept_for(name: str, collection_key: str = "rename") -> str:
     if collection_key == "third_party" and name in ADD_CONCEPT_OVERRIDES:
         return ADD_CONCEPT_OVERRIDES[name]
+    if collection_key == "rename" and name in RENAME_CONCEPT_OVERRIDES:
+        return RENAME_CONCEPT_OVERRIDES[name]
     value = Path(name).stem
     if collection_key == "third_party":
         value = value.replace("_", " ").replace("-", " ")

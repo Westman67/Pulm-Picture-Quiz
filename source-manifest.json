@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-16T20:42:17.671963-04:00",
+  "generated_at": "2026-09-16T20:47:32.242102-04:00",
   "builder": "build-medical-picture-quiz / multi-collection flat-image builder",
   "source_directories": [
     {
@@ -20001,11 +20001,11 @@
       "modality": "Histology",
       "organ_system": "Pulmonary",
       "category": "Normal anatomy",
-      "tested_condition_structure_finding": "Normal",
-      "canonical_correct_answer": "Normal",
+      "tested_condition_structure_finding": "Normal bronchus",
+      "canonical_correct_answer": "Normal bronchus",
       "accepted_synonyms": [],
       "ground_truth_basis": "user-curated descriptive filename plus full-set visual review",
-      "ground_truth_confidence": "low",
+      "ground_truth_confidence": "high",
       "answer_leakage_assessment": "no unmasked exact answer observed in full-set review",
       "required_preserved_regions": [
         "complete diagnostic field",
@@ -20019,7 +20019,7 @@
       "candidate_question_types": [
         "Identification"
       ],
-      "manual_review_reason": "The filename does not identify the organ, tissue compartment, or intended normal structure.",
+      "manual_review_reason": "",
       "source_attribution_visible_in_original": "unknown",
       "source_origin": "third_party",
       "source_collection": "Lecture material",
@@ -20027,13 +20027,13 @@
       "collection_rule": "All images supplied in Desktop/Rename are third-party study images.",
       "rights_status": "unknown; local study use only",
       "immutable_source_hash": "320df8fc0922c469787baf3629adc3a4c17c0d2c5d2b8ddfe130065abcc10e87",
-      "status": "NEEDS_REVIEW",
+      "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "symmetric normally aerated lungs without focal opacity, pleural collection, mass, or destructive change",
+      "key_visual_findings": "an intact airway lumen with the expected epithelium, wall layers, and surrounding aerated parenchyma",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
-          "supported": "REVIEW",
+          "supported": "YES",
           "visual_target": "the complete displayed image",
           "required_variant": "var_ed1e0d3ff42c",
           "full_image_required": true,
@@ -20042,8 +20042,8 @@
             "arrows",
             "orientation markers"
           ],
-          "confidence": "low",
-          "reason_unsupported": "The filename does not identify the organ, tissue compartment, or intended normal structure."
+          "confidence": "high",
+          "reason_unsupported": ""
         }
       },
       "variants": [
