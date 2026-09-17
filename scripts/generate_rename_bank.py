@@ -728,6 +728,7 @@ def concept_for(name: str, collection_key: str = "rename") -> str:
         "Agenesis on Right Compensatory Hyperinflation on Left": "Right lung agenesis with left compensatory hyperinflation",
         "Recurrent Respiratory Papillomatosis Pulm Involvment": "Pulmonary involvement by recurrent respiratory papillomatosis",
         "Trauma Induced Diffuse Alveolar Damage in ARDS": "Trauma-induced diffuse alveolar damage",
+        "Pulmonary Embolims": "Pulmonary Embolism",
     }
     return replacements.get(value, value)
 
@@ -903,7 +904,13 @@ CONCEPT_SYNONYM_GROUPS: list[set[str]] = [
     },
     {"miliary tb", "miliary tuberculosis", "tb"},
     {"cavitary tb", "cavitary pulmonary tuberculosis", "tb"},
-    {"pulmonary embolism", "pulmonary embolims", "acute pulmonary embolism"},
+    {
+        "pulmonary embolism",
+        "pulmonary embolims",
+        "acute pulmonary embolism",
+        "pulmonary embolism saddle",
+        "right middle lung wedge shaped pulmonary embolism",
+    },
     {"sarcoidosis", "pulmonary sarcoidosis"},
     {"cpam type 3", "type 4 cpam versus pleuropulmonary blastoma"},
     {"organizing pneumonia", "cryptogenic organizing pneumonia"},

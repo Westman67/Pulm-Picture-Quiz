@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "bank_id": "bank_3c0109c75c96",
-  "generated_at": "2026-09-16T23:29:18.172032-04:00",
+  "generated_at": "2026-09-17T10:49:33.719581-04:00",
   "mode": "pulmonary_visual_identification",
   "question_count": 544,
   "quality_review": {
@@ -7978,7 +7978,7 @@
         "Pulmonary Hypertension",
         "Smaller, Peripheral Pulmonary Thromboembolus",
         "Hampton Hump Pulmonary Embolism",
-        "Pulmonary Embolims"
+        "Acute pulmonary embolism"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -7990,7 +7990,7 @@
         "Pulmonary Hypertension would instead show concentric and plexiform remodeling of small pulmonary arteries; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
         "Smaller, Peripheral Pulmonary Thromboembolus would instead show an occlusive thrombus lodged in a small peripheral pulmonary artery; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
         "Correct: The displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign, supporting Hampton Hump Pulmonary Embolism.",
-        "Pulmonary Embolims would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign."
+        "Acute pulmonary embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -14747,12 +14747,12 @@
       "quality_review_batch": null
     },
     {
-      "question_id": "q_1b405a37c097",
+      "question_id": "q_891c0984caac",
       "source_group_id": "sg_f28e22ed9f14",
       "source_id": "src_bbc946e2c011",
       "variant_id": "var_705fc76e87eb",
       "question_type": "Identification",
-      "tested_concept": "Pulmonary Embolims",
+      "tested_concept": "Pulmonary Embolism",
       "stem": "Which diagnosis or anatomic abnormality best matches the dominant CT finding in the complete displayed image?",
       "case_context": "",
       "visual_target": "the complete displayed image",
@@ -14760,21 +14760,21 @@
       "joint_images": false,
       "options": [
         "Old, organized Thromboembolism",
-        "Pulmonary Embolism Saddle",
-        "Right Middle Lung Wedge Shaped Pulmonary Embolism",
-        "Pulmonary Embolims"
+        "Bilateral Pulmonary Emboli",
+        "Pulmonary Hypertension",
+        "Pulmonary Embolism"
       ],
       "correct_index": 3,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign. This pattern supports Pulmonary Embolims.",
+      "explanation": "The decisive visible finding is an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign. This pattern supports Pulmonary Embolism.",
       "visual_clues": [
         "an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign"
       ],
       "choice_rationales": [
         "Old, organized Thromboembolism would instead show a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
-        "Pulmonary Embolism Saddle would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
-        "Right Middle Lung Wedge Shaped Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
-        "Correct: The displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign, supporting Pulmonary Embolims."
+        "Bilateral Pulmonary Emboli would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
+        "Pulmonary Hypertension would instead show concentric and plexiform remodeling of small pulmonary arteries; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
+        "Correct: The displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign, supporting Pulmonary Embolism."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -15874,7 +15874,7 @@
       "options": [
         "Hampton's Hump Pulmonary Embolism",
         "Old, organized Thromboembolism",
-        "Pulmonary Embolims",
+        "Smaller, Peripheral Pulmonary Thromboembolus",
         "Right Middle Lung Wedge Shaped Pulmonary Embolism"
       ],
       "correct_index": 3,
@@ -15886,7 +15886,7 @@
       "choice_rationales": [
         "Hampton's Hump Pulmonary Embolism would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
         "Old, organized Thromboembolism would instead show a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
-        "Pulmonary Embolims would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
+        "Smaller, Peripheral Pulmonary Thromboembolus would instead show an occlusive thrombus lodged in a small peripheral pulmonary artery; the displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign.",
         "Correct: The displayed image shows an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign, supporting Right Middle Lung Wedge Shaped Pulmonary Embolism."
       ],
       "ground_truth_confidence": "high",
@@ -17889,7 +17889,7 @@
         "Old, organized Thromboembolism",
         "Recent Thromboembolism",
         "Smaller, Peripheral Pulmonary Thromboembolus",
-        "Pulmonary Embolims"
+        "Bilateral Pulmonary Emboli"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -17901,7 +17901,7 @@
         "Old, organized Thromboembolism would instead show a fibrotic, recanalized thrombus incorporated into the vessel wall, indicating an older organized event; the displayed image shows an occlusive thrombus lodged in a small peripheral pulmonary artery.",
         "Recent Thromboembolism would instead show a fresh occlusive thrombus with preserved red-cell and fibrin laminations but no mature recanalization; the displayed image shows an occlusive thrombus lodged in a small peripheral pulmonary artery.",
         "Correct: The displayed image shows an occlusive thrombus lodged in a small peripheral pulmonary artery, supporting Smaller, Peripheral Pulmonary Thromboembolus.",
-        "Pulmonary Embolims would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an occlusive thrombus lodged in a small peripheral pulmonary artery."
+        "Bilateral Pulmonary Emboli would instead show an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign; the displayed image shows an occlusive thrombus lodged in a small peripheral pulmonary artery."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",

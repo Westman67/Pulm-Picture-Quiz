@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-16T23:29:18.172032-04:00",
+  "generated_at": "2026-09-17T10:49:33.719581-04:00",
   "builder": "build-medical-picture-quiz / multi-collection flat-image builder",
   "source_directories": [
     {
@@ -25083,8 +25083,8 @@
       "modality": "CT",
       "organ_system": "Pulmonary",
       "category": "Pulmonary vascular",
-      "tested_condition_structure_finding": "Pulmonary Embolims",
-      "canonical_correct_answer": "Pulmonary Embolims",
+      "tested_condition_structure_finding": "Pulmonary Embolism",
+      "canonical_correct_answer": "Pulmonary Embolism",
       "accepted_synonyms": [],
       "ground_truth_basis": "user-curated descriptive filename plus full-set visual review",
       "ground_truth_confidence": "high",
