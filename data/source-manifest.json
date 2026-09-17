@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-17T11:00:29.667711-04:00",
+  "generated_at": "2026-09-17T11:12:26.424681-04:00",
   "builder": "build-medical-picture-quiz / multi-collection flat-image builder",
   "source_directories": [
     {
@@ -64,7 +64,7 @@
       "immutable_source_hash": "7b44d736ba6b138357c428c968aa5aeacf274b9c9e0528f4811f8a63127f343c",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "lower-lung fibrotic change or sharply marginated pleural-based calcified plaques",
+      "key_visual_findings": "subpleural and lower-lung-zone predominant interstitial fibrosis with asbestos (ferruginous) bodies on histology, reflecting parenchymal rather than purely pleural involvement",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -779,7 +779,7 @@
       "immutable_source_hash": "0604e3f75b91d06edcb7fc9ccaf65f79b23b012e57d5172466e2a3d817c7c3e7",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross",
+      "key_visual_findings": "the earliest congestion phase: engorged alveolar capillaries with proteinaceous intra-alveolar edema and relatively few neutrophils, before dense consolidation develops",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -1785,7 +1785,7 @@
       "immutable_source_hash": "d79014cc0c3a9aed5d70c58359e89b36c546efc0a3c4be2725f2f9e501e21a79",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate",
+      "key_visual_findings": "diffuse alveolar blood and hemosiderin-laden macrophage injury rather than purulent exudate, without a specified etiology-defining immunofluorescence pattern",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -2757,7 +2757,7 @@
       "immutable_source_hash": "fb9d40b489c9b09a08c2267186949abae009d4b56ec30f78c5fc66fdb4ca7c46",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "lower-lung fibrotic change or sharply marginated pleural-based calcified plaques",
+      "key_visual_findings": "subpleural and lower-lung-zone predominant interstitial fibrosis with asbestos (ferruginous) bodies on histology, reflecting parenchymal rather than purely pleural involvement",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -2845,7 +2845,7 @@
       "immutable_source_hash": "ac38afb26251df818547c2f556e79f93b651eb9c2930d4f84b5a68bedf85a52b",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "lower-lung fibrotic change or sharply marginated pleural-based calcified plaques",
+      "key_visual_findings": "subpleural and lower-lung-zone predominant interstitial fibrosis with asbestos (ferruginous) bodies on histology, reflecting parenchymal rather than purely pleural involvement",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -2933,7 +2933,7 @@
       "immutable_source_hash": "19dec370c0df86c8f33f5df4aeaaffe1d12bbfa2d27f73c9fd5ed7a4737a727d",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "lower-lung fibrotic change or sharply marginated pleural-based calcified plaques",
+      "key_visual_findings": "subpleural and lower-lung-zone predominant interstitial fibrosis with asbestos (ferruginous) bodies on histology, reflecting parenchymal rather than purely pleural involvement",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -4188,7 +4188,7 @@
       "immutable_source_hash": "bf921998a7a7adf4027b6b17ce4499d1c1067cd4fa85905efed7d00d730b443f",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "lower-lung fibrotic change or sharply marginated pleural-based calcified plaques",
+      "key_visual_findings": "sharply marginated, often bilateral calcified pleural-based plaques that serve as a marker of asbestos exposure without necessarily indicating interstitial disease",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -9528,7 +9528,7 @@
       "immutable_source_hash": "60d0f4fa34499e19db25d03ee912fb380af1cf72120da70d22b133cbf7a66fd7",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "engorged alveolar capillaries with proteinaceous intra-alveolar edema and relatively few neutrophils",
+      "key_visual_findings": "the earliest congestion phase: engorged alveolar capillaries with proteinaceous intra-alveolar edema and relatively few neutrophils, before dense consolidation develops",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -9968,7 +9968,7 @@
       "immutable_source_hash": "de489218f963fb7d59c82b67b1c171310da0e1df509def91b68201ed062119ec",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "upper-lung cavitation, fibrotic volume loss, or clustered apical destructive disease",
+      "key_visual_findings": "fibrotic volume loss with architectural distortion and traction on adjacent structures from healed tuberculous scarring, rather than active cavitary destruction",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -10056,7 +10056,7 @@
       "immutable_source_hash": "9cec9c6b3d9b833d39a23210114a9a98c5b77a3389ea52a6055d6e967a9f6df0",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces",
+      "key_visual_findings": "a discrete mass lesion superimposed on a background of emphysematous change, rather than emphysema alone",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -10410,7 +10410,7 @@
       "immutable_source_hash": "b1d089e4a72a1528907acf95595d3eaca646b13507b60b9d0cbfbc40783e6589",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross",
+      "key_visual_findings": "the gray hepatization phase: red blood cells within the alveoli have lysed and lost their heme pigment, with increasing fibrin deposition marking progression toward organizing pneumonia",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -12827,7 +12827,7 @@
       "immutable_source_hash": "ff76059adfa59afd0f862201a0f54fe63e2e32336dff895ce2898317b1d453c9",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "nonfunctioning lung tissue supplied by an anomalous systemic artery",
+      "key_visual_findings": "a sequestered lobe with its own separate pleural investment, systemic venous drainage, typically lower lobe/left-sided, presenting in infancy",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -12915,7 +12915,7 @@
       "immutable_source_hash": "520d7657380613cdce2a40f0c0abc762310693c3a10509a686a40064f2fdf89b",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign",
+      "key_visual_findings": "prominent enlargement of a central pulmonary artery associated with acute pulmonary embolism",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -13003,7 +13003,7 @@
       "immutable_source_hash": "376f1995f81d716d9d6e32316963751c1874907748f821d62cf30fc9372fc757",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign",
+      "key_visual_findings": "prominent enlargement of a central pulmonary artery associated with acute pulmonary embolism",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -13621,7 +13621,7 @@
       "immutable_source_hash": "582bf7a462d788a33aa01ab24cdc9d196568e0d71589e77350abc61361455e46",
       "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross",
+      "key_visual_findings": "the gray hepatization phase: red blood cells within the alveoli have lysed and lost their heme pigment, with increasing fibrin deposition marking progression toward organizing pneumonia",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
@@ -13709,7 +13709,7 @@
       "immutable_source_hash": "de169e69b9433ae6a3a73112d3db8270c154074b3c2de5fa4bdcc9b925d1833a",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign",
+      "key_visual_findings": "a peripheral pleural-based wedge-shaped opacity representing pulmonary infarction",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -13797,7 +13797,7 @@
       "immutable_source_hash": "ff7e2cc2ba7613f684eac637dd7c6a05d50c7923b349e5edace48efc80a2b61c",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign",
+      "key_visual_findings": "a peripheral pleural-based wedge-shaped opacity representing pulmonary infarction",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -13973,7 +13973,7 @@
       "immutable_source_hash": "644e8b07b12c43d1bfb211f3bb2a48c8662f521a142254b42272d2c395bde390",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "multiple bilateral nodules or diffuse interstitial tumor spread along lymphatic routes",
+      "key_visual_findings": "multiple discrete, similarly sized round nodules scattered through both lungs, reflecting blood-borne tumor spread rather than a lymphatic-route pattern",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -14413,7 +14413,7 @@
       "immutable_source_hash": "b1c84a072bd38eb1f8b97f20d04d7d9ac7b59d7b302839b2c44763864e7b280b",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli",
+      "key_visual_findings": "hyaline membrane changes presenting as a distinct neonatal clinical entity rather than the adult-onset, insult-triggered pattern seen in ARDS",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -14501,7 +14501,7 @@
       "immutable_source_hash": "d6f45ffe0d05772d871cfa4bcd13e6cb256c543c4332d640b1bbfd7d38e9362a",
       "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli",
+      "key_visual_findings": "hyaline membrane changes presenting as a distinct neonatal clinical entity rather than the adult-onset, insult-triggered pattern seen in ARDS",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
@@ -15493,7 +15493,7 @@
       "immutable_source_hash": "b9e1eaec19cd31c2d3c4f1e47a7dac30310f8f369611879e2a73fc6536ccf132",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "nonfunctioning lung tissue supplied by an anomalous systemic artery",
+      "key_visual_findings": "a sequestered lobe sharing the visceral pleura of the adjacent normal lung, with pulmonary venous drainage, typically presenting later in childhood or adolescence",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -16383,7 +16383,7 @@
       "immutable_source_hash": "608a01473745e2832e4f2e9165740b5ff3d73dcdc09e86ff9a861882d6e275b1",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "loss of a normal cardiomediastinal or diaphragmatic border from adjacent air-space disease",
+      "key_visual_findings": "silhouetting (loss of the sharp border) of the hemidiaphragm, since lower-lobe disease abuts and effaces the diaphragmatic margin rather than the heart border",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -17177,7 +17177,7 @@
       "immutable_source_hash": "bf202f03d0dea748ddded00bb249e147896be0da6db080e69f4663d137d63edc",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "multiple bilateral nodules or diffuse interstitial tumor spread along lymphatic routes",
+      "key_visual_findings": "tumor spreading along lymphatic routes -- bronchovascular bundles, interlobular septa, and subpleural regions -- producing a linear/reticular interstitial pattern rather than discrete round nodules",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -18341,7 +18341,7 @@
       "immutable_source_hash": "67cbebb74cdc28f716e9051b7b2dc26ba723b4ad4d2a5addea8014ed8aea83c2",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "multiple bilateral nodules or diffuse interstitial tumor spread along lymphatic routes",
+      "key_visual_findings": "multiple discrete, similarly sized round nodules scattered through both lungs, reflecting blood-borne tumor spread rather than a lymphatic-route pattern",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -19319,7 +19319,7 @@
       "immutable_source_hash": "cbc1c77733c7446ff09a5975742ae9a4e9c147f012a66930b2c7498ef5bb2fc5",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression",
+      "key_visual_findings": "a focal pulmonary soft-tissue opacity distinct from surrounding aerated lung",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -19407,7 +19407,7 @@
       "immutable_source_hash": "02dc6ffefad9a26d293f6afba67d8d506cfe03e923630af963d1be0ac9abd9ad",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "sheets of small hyperchromatic cells with nuclear molding and neuroendocrine marker expression",
+      "key_visual_findings": "a focal pulmonary soft-tissue opacity distinct from surrounding aerated lung",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -21361,7 +21361,7 @@
       "immutable_source_hash": "d0ef88ab19361c68ec5f6b95b555ef6bb6109f7456cd875b9b2d242390e8eb02",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "lower-lung fibrotic change or sharply marginated pleural-based calcified plaques",
+      "key_visual_findings": "sharply marginated, often bilateral calcified pleural-based plaques that serve as a marker of asbestos exposure without necessarily indicating interstitial disease",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -21451,7 +21451,7 @@
       "immutable_source_hash": "763ff8500198b6af901cd58314a393f0c451b3f2168a8ba250fb7cb1197f99c6",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "lower-lung fibrotic change or sharply marginated pleural-based calcified plaques",
+      "key_visual_findings": "sharply marginated, often bilateral calcified pleural-based plaques that serve as a marker of asbestos exposure without necessarily indicating interstitial disease",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -21539,7 +21539,7 @@
       "immutable_source_hash": "b3ca64fcaef6a6e94a469722ab3a76011179dd67171a7e16834a711f5cc99eb7",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "lower-lung fibrotic change or sharply marginated pleural-based calcified plaques",
+      "key_visual_findings": "sharply marginated, often bilateral calcified pleural-based plaques that serve as a marker of asbestos exposure without necessarily indicating interstitial disease",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -22779,7 +22779,7 @@
       "immutable_source_hash": "56e9f7d338b199bfd3721c8d0623aaa9ddcd0f8464017d29c166082b5c9c5221",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "concentric and plexiform remodeling of small pulmonary arteries",
+      "key_visual_findings": "a discrete glomeruloid tuft of proliferating endothelial channels within a dilated, often thrombosed pulmonary arteriole -- the advanced Heath-Edwards histologic marker of pulmonary arterial hypertension",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -22871,7 +22871,7 @@
       "immutable_source_hash": "25868a621b2f6d30b4126293a0e47ecbd02be2888f08b6181a53866d9716e5aa",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "concentric and plexiform remodeling of small pulmonary arteries",
+      "key_visual_findings": "a discrete glomeruloid tuft of proliferating endothelial channels within a dilated, often thrombosed pulmonary arteriole -- the advanced Heath-Edwards histologic marker of pulmonary arterial hypertension",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -25559,7 +25559,7 @@
       "immutable_source_hash": "75c4c8e128bdfaf92b830280292fc3c6ca94701d1fee6af6e55f21bea500c656",
       "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "concentric and plexiform remodeling of small pulmonary arteries",
+      "key_visual_findings": "medial hypertrophy and muscularization of pulmonary arteries with right ventricular hypertrophy/cor pulmonale, without the specific glomeruloid plexiform tuft described as its own finding",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
@@ -26713,7 +26713,7 @@
       "immutable_source_hash": "2ac2ad387374c549abacbf8fb8a8977c0409a38127c28db8767657cfb02fc10b",
       "status": "USABLE",
       "visual_target": "all displayed panels together",
-      "key_visual_findings": "confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross",
+      "key_visual_findings": "the red hepatization phase: dense, liver-like consolidation from neutrophils and red blood cells filling the alveoli along with protein exudate",
       "panel_handling": "retained_composite",
       "question_type_matrix": {
         "Identification": {
@@ -27511,7 +27511,7 @@
       "immutable_source_hash": "bba4a00f3fe9cd3e4cf2b6ce883a0f9317706a4b0be977a5433861efa3fafa2c",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "loss of a normal cardiomediastinal or diaphragmatic border from adjacent air-space disease",
+      "key_visual_findings": "silhouetting (loss of the sharp border) of the heart, since RML/lingula disease abuts and effaces the cardiac silhouette",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -32174,7 +32174,7 @@
       "immutable_source_hash": "f834c0e808907cac9b3881f7fbd33a2b3b53d46ae274fe720165706d701c53f6",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a visceral pleural line with absent peripheral lung markings and increased lucency",
+      "key_visual_findings": "a large pneumothorax with mediastinal shift and depression of the ipsilateral diaphragm",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -32264,7 +32264,7 @@
       "immutable_source_hash": "8d160fbfef6257cb422a380c166206f40e4d002f7841ebb7c4c03d0ecc5dcc3f",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a visceral pleural line with absent peripheral lung markings and increased lucency",
+      "key_visual_findings": "a large pneumothorax with mediastinal shift and depression of the ipsilateral diaphragm",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -32354,7 +32354,7 @@
       "immutable_source_hash": "5e33f87d267d2a9285e15800bd11d3474b6ad2a8a45dd6837d0567d7ea6d83a8",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "a visceral pleural line with absent peripheral lung markings and increased lucency",
+      "key_visual_findings": "a large pneumothorax with mediastinal shift and depression of the ipsilateral diaphragm",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -34041,7 +34041,7 @@
       "immutable_source_hash": "13b3b5a6e354f66dc8284c9ef00d4dbc2b487678dafb6aa096319d3ed36b5278",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli",
+      "key_visual_findings": "exudative-phase diffuse alveolar damage arising 3-7 days after an acute insult (infection, sepsis, shock, or trauma), with eosinophilic hyaline membranes lining damaged alveoli in ARDS",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -34129,7 +34129,7 @@
       "immutable_source_hash": "919c9a36b9c44a88eb6a6b447789f63118efeb924f8f93a6dc04147243424779",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "lower-lung fibrotic change or sharply marginated pleural-based calcified plaques",
+      "key_visual_findings": "sharply marginated, often bilateral calcified pleural-based plaques that serve as a marker of asbestos exposure without necessarily indicating interstitial disease",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -34833,7 +34833,7 @@
       "immutable_source_hash": "fb7092b5d302823b8dfa1ea7734d28c3eb11c8014e77f7e62097e2610dcaa16f",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli",
+      "key_visual_findings": "exudative-phase diffuse alveolar damage arising 3-7 days after an acute insult (infection, sepsis, shock, or trauma), with eosinophilic hyaline membranes lining damaged alveoli in ARDS",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -35007,7 +35007,7 @@
       "immutable_source_hash": "f06583ccb1db2640069207ebc36d614e320f2b72b762ca04bcefa9a1ce9a3dc9",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "lower-lung fibrotic change or sharply marginated pleural-based calcified plaques",
+      "key_visual_findings": "sharply marginated, often bilateral calcified pleural-based plaques that serve as a marker of asbestos exposure without necessarily indicating interstitial disease",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -35105,7 +35105,7 @@
       "immutable_source_hash": "311d24482970aeb31630753d1491616db231210fff594552cd062efa33aa9115",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "lower-lung fibrotic change or sharply marginated pleural-based calcified plaques",
+      "key_visual_findings": "subpleural and lower-lung-zone predominant interstitial fibrosis with asbestos (ferruginous) bodies on histology, reflecting parenchymal rather than purely pleural involvement",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -39829,7 +39829,7 @@
       "immutable_source_hash": "696e22a112fa7124ed4d2dcc69ce99fab65fab9ac08cc93697f9f0e0922bf22f",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli",
+      "key_visual_findings": "exudative-phase diffuse alveolar damage arising 3-7 days after an acute insult (infection, sepsis, shock, or trauma), with eosinophilic hyaline membranes lining damaged alveoli in ARDS",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -41418,7 +41418,7 @@
       "immutable_source_hash": "a7137284d889fa9189776635d52621e552563d517b0a30c3a902aea4aa2a928d",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli",
+      "key_visual_findings": "hyaline membrane changes presenting as a distinct neonatal clinical entity rather than the adult-onset, insult-triggered pattern seen in ARDS",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -41506,7 +41506,7 @@
       "immutable_source_hash": "c7c2a7ad13e1b016050be5a48965d2546d61dba9480b4732e3446ca054a70b41",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli",
+      "key_visual_findings": "hyaline membrane changes presenting as a distinct neonatal clinical entity rather than the adult-onset, insult-triggered pattern seen in ARDS",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -41859,7 +41859,7 @@
       "immutable_source_hash": "6c39fdc46bc27065d8379553ab9e4d7f4943debce750610a55d5f351c372dcb6",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "confluent air-space filling across a lobe, with the firm red-to-gray hepatization pattern when gross",
+      "key_visual_findings": "the red hepatization phase: dense, liver-like consolidation from neutrophils and red blood cells filling the alveoli along with protein exudate",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -43185,7 +43185,7 @@
       "immutable_source_hash": "3eab48127f697daaaf8ba978ddfd2a055d084cdd6ce77ae51737339c9affca2f",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "diffuse neonatal ground-glass opacity or eosinophilic hyaline membranes lining collapsed alveoli",
+      "key_visual_findings": "exudative-phase diffuse alveolar damage arising 3-7 days after an acute insult (infection, sepsis, shock, or trauma), with eosinophilic hyaline membranes lining damaged alveoli in ARDS",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -43275,7 +43275,7 @@
       "immutable_source_hash": "60a557bb94fd88ebe20fcb962d93f64f3b631e54e2a6bce9bc84184dd8a8f32a",
       "status": "DUPLICATE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "concentric and plexiform remodeling of small pulmonary arteries",
+      "key_visual_findings": "a discrete glomeruloid tuft of proliferating endothelial channels within a dilated, often thrombosed pulmonary arteriole -- the advanced Heath-Edwards histologic marker of pulmonary arterial hypertension",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -45755,7 +45755,7 @@
       "immutable_source_hash": "c15825cc27167eaef49ba9432982083004db67abe1a0eb3afde6ec4394c81305",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "lower-lung fibrotic change or sharply marginated pleural-based calcified plaques",
+      "key_visual_findings": "subpleural and lower-lung-zone predominant interstitial fibrosis with asbestos (ferruginous) bodies on histology, reflecting parenchymal rather than purely pleural involvement",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
@@ -47792,7 +47792,7 @@
       "immutable_source_hash": "ff1e14a008d1daa75426c9318a0fd2511701525381b6341454edb4c8758ecad5",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "an intraluminal pulmonary-artery filling defect or its characteristic secondary radiographic sign",
+      "key_visual_findings": "a peripheral pleural-based wedge-shaped opacity representing pulmonary infarction",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {
