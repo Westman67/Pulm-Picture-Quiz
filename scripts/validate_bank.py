@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import hashlib
+import importlib.util
 import json
 import re
 from pathlib import Path
@@ -36,6 +37,86 @@ def sha256_file(path: Path) -> str:
 def require(condition: bool, message: str, errors: list[str]) -> None:
     if not condition:
         errors.append(message)
+
+
+def check_explanation_quality(questions: list[dict], errors: list[str]) -> None:
+    """Guard against duplicate/uncoordinated auto-generated answer explanations.
+
+    This exists because two different failure modes were found and fixed by
+    hand in a lecture-grounding pass: (1) two options in the *same* question
+    resolving to byte-identical "why this is/isn't the answer" clue text
+    (usually from a too-broad regex, or from two genuinely different
+    diagnoses never having been distinguished), and (2) two concepts that
+    share identical clue text and are NOT blocked from ever being offered as
+    distractors together by CONCEPT_SYNONYM_GROUPS -- a "latent" version of
+    the same bug that hasn't shown up yet only because of how the current
+    question pool happens to be bucketed, and would surface the moment a new
+    image or a distractor-selection change lets those two concepts land in
+    the same question. Both are re-checked here on every validation run so a
+    future edit to FEATURE_RULES or CONCEPT_SYNONYM_GROUPS in
+    scripts/generate_rename_bank.py can't silently reintroduce either bug.
+    """
+    spec = importlib.util.spec_from_file_location(
+        "generate_rename_bank", PROJECT / "scripts" / "generate_rename_bank.py"
+    )
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)  # type: ignore[union-attr]
+
+    def norm(concept: str) -> str:
+        return re.sub(r"[^a-z0-9]+", " ", concept.casefold()).strip()
+
+    def synonym_keys(concept: str) -> set[str]:
+        n = norm(concept)
+        keys = {n}
+        for group in module.CONCEPT_SYNONYM_GROUPS:
+            if n in group:
+                keys.add(next(iter(sorted(group))))
+        return keys
+
+    concept_modality: dict[str, str] = {}
+
+    for question in questions:
+        qid = question.get("question_id", "<missing>")
+        modality = question.get("modality") or question.get("family") or ""
+        options = question.get("options") or []
+        if len(options) != 4:
+            continue
+        clue_to_options: dict[str, list[str]] = {}
+        for option in options:
+            option = str(option)
+            concept_modality.setdefault(option, modality)
+            clue = module.feature_for(option, modality)
+            clue_to_options.setdefault(clue, []).append(option)
+        for clue, names in clue_to_options.items():
+            require(
+                len(names) == 1,
+                f"{qid}: options {names} resolve to identical explanation clue text "
+                f"({clue[:60]}...) -- add a distinguishing FEATURE_RULES entry or "
+                f"check rule ordering (a broad rule listed earlier can shadow a more "
+                f"specific one listed later)",
+                errors,
+            )
+
+    clue_to_concepts: dict[str, set[str]] = {}
+    for concept, modality in concept_modality.items():
+        clue = module.feature_for(concept, modality)
+        clue_to_concepts.setdefault(clue, set()).add(concept)
+
+    for clue, concepts in clue_to_concepts.items():
+        if len(concepts) < 2:
+            continue
+        ordered = sorted(concepts)
+        keys = [synonym_keys(c) for c in ordered]
+        for i in range(len(ordered)):
+            for j in range(i + 1, len(ordered)):
+                require(
+                    bool(keys[i] & keys[j]),
+                    f"latent duplicate clue: {ordered[i]!r} and {ordered[j]!r} share "
+                    f"identical explanation text ({clue[:60]}...) but are not linked "
+                    f"in CONCEPT_SYNONYM_GROUPS -- if they are the same finding, merge "
+                    f"them there; if not, give one of them distinguishing text",
+                    errors,
+                )
 
 
 def main() -> None:
@@ -141,6 +222,8 @@ def main() -> None:
     app_source = (PROJECT / "src" / "app.js").read_text(encoding="utf-8")
     require('alt="quiz source image"' in app_source, "learner image alt text is not neutral", errors)
     require('data-action="previous"' in app_source and 'data-action="next"' in app_source, "persistent Back/Next controls missing", errors)
+
+    check_explanation_quality(questions, errors)
 
     if errors:
         preview = "\n".join(f"- {error}" for error in errors[:100])
