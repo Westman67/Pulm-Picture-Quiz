@@ -1189,12 +1189,43 @@ def has_technique_descriptor(concept: str) -> bool:
     return bool(_TECHNIQUE_DESCRIPTOR_RE.search(concept.casefold()))
 
 
+# Some concepts describe a histologic PROCESS occurring within a dilated
+# airway (e.g. fibrosis/inflammation, squamous metaplasia) rather than a
+# specific underlying cause or syndrome. A process description is not
+# mutually exclusive with any cause- or syndrome-based bronchiectasis
+# diagnosis -- a lung with cystic-fibrosis-driven bronchiectasis can still
+# show fibrosis, inflammation, or squamous metaplasia in its airway walls --
+# so pairing the two as competing answer options produces a distractor that
+# isn't actually a rival diagnosis. These concepts are kept from competing
+# against each other even though they are not literal synonyms.
+BRONCHIECTASIS_PROCESS_DESCRIPTOR_NORMS = {
+    "bronchiectasis fibrosis and inflammation",
+    "bronchiectasis squamous metaplasia",
+}
+BRONCHIECTASIS_CAUSE_BASED_NORMS = {
+    "bronchiectasis due cystic fibrosis",
+    "bronchiectasis and cystic fibrosis",
+    "cystic fibrosis with bronchiectasis",
+    "cystic fibrosis associated bronchiectasis",
+    "bronchiectasis due to chronic bronchitis",
+    "kartagener syndrome",
+    "bronchiectasis and situs invertis",
+    "situs invertis",
+}
+
+
 def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
     correct = current["concept"]
     correct_norm = re.sub(r"[^a-z0-9]+", " ", correct.casefold()).strip()
     correct_keys = _synonym_keys(correct_norm)
     correct_clusters = confusable_cluster_ids(correct_norm)
     correct_has_technique = has_technique_descriptor(correct)
+    if correct_norm in BRONCHIECTASIS_CAUSE_BASED_NORMS:
+        nonparallel_norms = set(BRONCHIECTASIS_PROCESS_DESCRIPTOR_NORMS)
+    elif correct_norm in BRONCHIECTASIS_PROCESS_DESCRIPTOR_NORMS:
+        nonparallel_norms = set(BRONCHIECTASIS_CAUSE_BASED_NORMS)
+    else:
+        nonparallel_norms = set()
 
     def shares_cluster(entry: dict) -> bool:
         if not correct_clusters:
@@ -1241,6 +1272,8 @@ def candidate_pool(current: dict, entries: list[dict]) -> list[str]:
                 if correct_norm in option_norm or option_norm in correct_norm:
                     continue
                 if require_specificity_match and has_technique_descriptor(option) != correct_has_technique:
+                    continue
+                if option_norm in nonparallel_norms:
                     continue
                 option_keys = _synonym_keys(option_norm)
                 if option_keys & seen_keys:

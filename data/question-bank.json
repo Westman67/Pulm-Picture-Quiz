@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "bank_id": "bank_1f1f6759b9d9",
-  "generated_at": "2026-09-17T12:17:12.444602-04:00",
+  "generated_at": "2026-09-17T13:14:33.259277-04:00",
   "mode": "pulmonary_visual_identification",
   "question_count": 544,
   "quality_review": {
@@ -2940,10 +2940,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Bronchiectasis Fibrosis and Inflammation",
-        "Bronchiectasis and Cystic fibrosis",
         "Bronchiectasis due to Chronic Bronchitis",
-        "Bronchiectasis Right Lung Saggital"
+        "Bronchiectasis and Cystic fibrosis",
+        "Bronchiectasis Right Lung Saggital",
+        "Bronchiectasis and Situs Invertis"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -2952,10 +2952,10 @@
         "diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause"
       ],
       "choice_rationales": [
-        "Bronchiectasis Fibrosis and Inflammation would instead show peribronchial fibrosis, chronic inflammatory infiltrate, and loss of cartilage support within the dilated airway wall; the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause.",
-        "Correct: The displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause, supporting Bronchiectasis and Cystic fibrosis.",
         "Bronchiectasis due to Chronic Bronchitis would instead show bronchiectasis in the setting of chronic airway inflammation from chronic bronchitis rather than a congenital or infectious cause; the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause.",
-        "Bronchiectasis Right Lung Saggital would instead show permanently dilated, tortuous, easily collapsible bronchi extending toward the visceral pleura with copious secretions and lack of normal tapering (a signet-ring appearance on cross-section); the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause."
+        "Correct: The displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause, supporting Bronchiectasis and Cystic fibrosis.",
+        "Bronchiectasis Right Lung Saggital would instead show permanently dilated, tortuous, easily collapsible bronchi extending toward the visceral pleura with copious secretions and lack of normal tapering (a signet-ring appearance on cross-section); the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause.",
+        "Bronchiectasis and Situs Invertis would instead show bronchiectasis occurring together with mirror-image thoracoabdominal organ orientation (situs inversus), the combination that defines Kartagener/primary ciliary dyskinesia syndrome; the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -3258,10 +3258,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Bronchiectasis Fibrosis and Inflammation",
         "Kartagener syndrome",
+        "Bronchiectasis Right Lung Saggital",
         "Bronchiectasis due Cystic fibrosis",
-        "Bronchiectasis Squamous Metaplasia"
+        "Bronchiectasis due to Chronic Bronchitis"
       ],
       "correct_index": 2,
       "accepted_terminology": [],
@@ -3270,10 +3270,10 @@
         "diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause"
       ],
       "choice_rationales": [
-        "Bronchiectasis Fibrosis and Inflammation would instead show peribronchial fibrosis, chronic inflammatory infiltrate, and loss of cartilage support within the dilated airway wall; the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause.",
         "Kartagener syndrome would instead show the combination of bronchiectasis and mirror-image thoracoabdominal orientation from situs inversus; the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause.",
+        "Bronchiectasis Right Lung Saggital would instead show permanently dilated, tortuous, easily collapsible bronchi extending toward the visceral pleura with copious secretions and lack of normal tapering (a signet-ring appearance on cross-section); the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause.",
         "Correct: The displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause, supporting Bronchiectasis due Cystic fibrosis.",
-        "Bronchiectasis Squamous Metaplasia would instead show squamous metaplasia replacing the normal ciliated respiratory epithelium lining the dilated, chronically inflamed airway; the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause."
+        "Bronchiectasis due to Chronic Bronchitis would instead show bronchiectasis in the setting of chronic airway inflammation from chronic bronchitis rather than a congenital or infectious cause; the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -3312,8 +3312,8 @@
       "joint_images": false,
       "options": [
         "Bronchiectasis Lung Specimens",
-        "Bronchiectasis Squamous Metaplasia",
         "Bronchiectasis and Situs Invertis",
+        "Bronchiectasis due to Chronic Bronchitis",
         "Bronchiectasis due Cystic fibrosis"
       ],
       "correct_index": 3,
@@ -3324,8 +3324,8 @@
       ],
       "choice_rationales": [
         "Bronchiectasis Lung Specimens would instead show permanently dilated, tortuous, easily collapsible bronchi extending toward the visceral pleura with copious secretions and lack of normal tapering (a signet-ring appearance on cross-section); the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause.",
-        "Bronchiectasis Squamous Metaplasia would instead show squamous metaplasia replacing the normal ciliated respiratory epithelium lining the dilated, chronically inflamed airway; the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause.",
         "Bronchiectasis and Situs Invertis would instead show bronchiectasis occurring together with mirror-image thoracoabdominal organ orientation (situs inversus), the combination that defines Kartagener/primary ciliary dyskinesia syndrome; the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause.",
+        "Bronchiectasis due to Chronic Bronchitis would instead show bronchiectasis in the setting of chronic airway inflammation from chronic bronchitis rather than a congenital or infectious cause; the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause.",
         "Correct: The displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause, supporting Bronchiectasis due Cystic fibrosis."
       ],
       "ground_truth_confidence": "high",
@@ -3417,10 +3417,10 @@
       "panel_handling": "single_complete_image",
       "joint_images": false,
       "options": [
-        "Kartagener syndrome",
+        "Bronchiectasis Squamous Metaplasia",
         "Bronchiectasis Fibrosis and Inflammation",
-        "Cystic fibrosis-associated bronchiectasis",
-        "Bronchiectasis Squamous Metaplasia"
+        "Bronchiectasis Right Lung Saggital",
+        "Lymphangitic granulomas of sarcoidosis"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -3429,10 +3429,10 @@
         "peribronchial fibrosis, chronic inflammatory infiltrate, and loss of cartilage support within the dilated airway wall"
       ],
       "choice_rationales": [
-        "Kartagener syndrome would instead show the combination of bronchiectasis and mirror-image thoracoabdominal orientation from situs inversus; the displayed image shows peribronchial fibrosis, chronic inflammatory infiltrate, and loss of cartilage support within the dilated airway wall.",
+        "Bronchiectasis Squamous Metaplasia would instead show squamous metaplasia replacing the normal ciliated respiratory epithelium lining the dilated, chronically inflamed airway; the displayed image shows peribronchial fibrosis, chronic inflammatory infiltrate, and loss of cartilage support within the dilated airway wall.",
         "Correct: The displayed image shows peribronchial fibrosis, chronic inflammatory infiltrate, and loss of cartilage support within the dilated airway wall, supporting Bronchiectasis Fibrosis and Inflammation.",
-        "Cystic fibrosis-associated bronchiectasis would instead show diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause; the displayed image shows peribronchial fibrosis, chronic inflammatory infiltrate, and loss of cartilage support within the dilated airway wall.",
-        "Bronchiectasis Squamous Metaplasia would instead show squamous metaplasia replacing the normal ciliated respiratory epithelium lining the dilated, chronically inflamed airway; the displayed image shows peribronchial fibrosis, chronic inflammatory infiltrate, and loss of cartilage support within the dilated airway wall."
+        "Bronchiectasis Right Lung Saggital would instead show permanently dilated, tortuous, easily collapsible bronchi extending toward the visceral pleura with copious secretions and lack of normal tapering (a signet-ring appearance on cross-section); the displayed image shows peribronchial fibrosis, chronic inflammatory infiltrate, and loss of cartilage support within the dilated airway wall.",
+        "Lymphangitic granulomas of sarcoidosis would instead show granulomas distributed along the lymphatic routes -- bronchovascular bundles, interlobular septa, and subpleural regions -- rather than randomly through the parenchyma; the displayed image shows peribronchial fibrosis, chronic inflammatory infiltrate, and loss of cartilage support within the dilated airway wall."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -3578,8 +3578,8 @@
       "options": [
         "Bronchiectasis Lung Specimens",
         "Bronchiectasis Squamous Metaplasia",
-        "Bronchiectasis due Cystic fibrosis",
-        "Bronchiectasis Fibrosis and Inflammation"
+        "Bronchiectasis Fibrosis and Inflammation",
+        "Respiratory Bronchiolitis"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -3590,8 +3590,8 @@
       "choice_rationales": [
         "Bronchiectasis Lung Specimens would instead show permanently dilated, tortuous, easily collapsible bronchi extending toward the visceral pleura with copious secretions and lack of normal tapering (a signet-ring appearance on cross-section); the displayed image shows squamous metaplasia replacing the normal ciliated respiratory epithelium lining the dilated, chronically inflamed airway.",
         "Correct: The displayed image shows squamous metaplasia replacing the normal ciliated respiratory epithelium lining the dilated, chronically inflamed airway, supporting Bronchiectasis Squamous Metaplasia.",
-        "Bronchiectasis due Cystic fibrosis would instead show diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause; the displayed image shows squamous metaplasia replacing the normal ciliated respiratory epithelium lining the dilated, chronically inflamed airway.",
-        "Bronchiectasis Fibrosis and Inflammation would instead show peribronchial fibrosis, chronic inflammatory infiltrate, and loss of cartilage support within the dilated airway wall; the displayed image shows squamous metaplasia replacing the normal ciliated respiratory epithelium lining the dilated, chronically inflamed airway."
+        "Bronchiectasis Fibrosis and Inflammation would instead show peribronchial fibrosis, chronic inflammatory infiltrate, and loss of cartilage support within the dilated airway wall; the displayed image shows squamous metaplasia replacing the normal ciliated respiratory epithelium lining the dilated, chronically inflamed airway.",
+        "Respiratory Bronchiolitis would instead show pigmented macrophages clustered in respiratory bronchioles and adjacent alveoli; the displayed image shows squamous metaplasia replacing the normal ciliated respiratory epithelium lining the dilated, chronically inflamed airway."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -4585,7 +4585,7 @@
       "options": [
         "Kartagener syndrome",
         "Bronchiectasis due to Chronic Bronchitis",
-        "Bronchiectasis Squamous Metaplasia",
+        "Bronchiectasis Lung Specimens",
         "Cystic fibrosis with Bronchiectasis"
       ],
       "correct_index": 3,
@@ -4597,7 +4597,7 @@
       "choice_rationales": [
         "Kartagener syndrome would instead show the combination of bronchiectasis and mirror-image thoracoabdominal orientation from situs inversus; the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause.",
         "Bronchiectasis due to Chronic Bronchitis would instead show bronchiectasis in the setting of chronic airway inflammation from chronic bronchitis rather than a congenital or infectious cause; the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause.",
-        "Bronchiectasis Squamous Metaplasia would instead show squamous metaplasia replacing the normal ciliated respiratory epithelium lining the dilated, chronically inflamed airway; the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause.",
+        "Bronchiectasis Lung Specimens would instead show permanently dilated, tortuous, easily collapsible bronchi extending toward the visceral pleura with copious secretions and lack of normal tapering (a signet-ring appearance on cross-section); the displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause.",
         "Correct: The displayed image shows diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause, supporting Cystic fibrosis with Bronchiectasis."
       ],
       "ground_truth_confidence": "high",
@@ -26368,8 +26368,8 @@
       "options": [
         "Bronchiectasis and Cystic fibrosis",
         "Kartagener syndrome",
-        "Bronchiectasis Squamous Metaplasia",
-        "Bronchiectasis Fibrosis and Inflammation"
+        "Bronchiectasis",
+        "Bronchiectasis due to Chronic Bronchitis"
       ],
       "correct_index": 1,
       "accepted_terminology": [],
@@ -26380,8 +26380,8 @@
       "choice_rationales": [
         "Bronchiectasis and Cystic fibrosis would instead show diffuse, bilateral, upper-lobe-predominant bronchiectasis with mucus plugging -- the prototypical pattern the lecture identifies for cystic fibrosis, the most common underlying cause; the displayed image shows the combination of bronchiectasis and mirror-image thoracoabdominal orientation from situs inversus.",
         "Correct: The displayed image shows the combination of bronchiectasis and mirror-image thoracoabdominal orientation from situs inversus, supporting Kartagener syndrome.",
-        "Bronchiectasis Squamous Metaplasia would instead show squamous metaplasia replacing the normal ciliated respiratory epithelium lining the dilated, chronically inflamed airway; the displayed image shows the combination of bronchiectasis and mirror-image thoracoabdominal orientation from situs inversus.",
-        "Bronchiectasis Fibrosis and Inflammation would instead show peribronchial fibrosis, chronic inflammatory infiltrate, and loss of cartilage support within the dilated airway wall; the displayed image shows the combination of bronchiectasis and mirror-image thoracoabdominal orientation from situs inversus."
+        "Bronchiectasis would instead show permanently dilated, tortuous, easily collapsible bronchi extending toward the visceral pleura with copious secretions and lack of normal tapering (a signet-ring appearance on cross-section); the displayed image shows the combination of bronchiectasis and mirror-image thoracoabdominal orientation from situs inversus.",
+        "Bronchiectasis due to Chronic Bronchitis would instead show bronchiectasis in the setting of chronic airway inflammation from chronic bronchitis rather than a congenital or infectious cause; the displayed image shows the combination of bronchiectasis and mirror-image thoracoabdominal orientation from situs inversus."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
@@ -27322,8 +27322,8 @@
       "options": [
         "Cystic fibrosis-associated bronchiectasis",
         "Bronchiectasis due to Chronic Bronchitis",
-        "Bronchiectasis Fibrosis and Inflammation",
-        "Kartagener syndrome"
+        "Kartagener syndrome",
+        "Bronchiectasis Lung Specimens"
       ],
       "correct_index": 0,
       "accepted_terminology": [],
@@ -27334,8 +27334,8 @@
       "choice_rationales": [
         "Correct: The displayed image shows increased bronchovascular markings with peribronchial wall thickening and bronchiectatic change, in a patient with a positive sweat chloride test, supporting Cystic fibrosis-associated bronchiectasis.",
         "Bronchiectasis due to Chronic Bronchitis would instead show bronchiectasis in the setting of chronic airway inflammation from chronic bronchitis rather than a congenital or infectious cause; the displayed image shows increased bronchovascular markings with peribronchial wall thickening and bronchiectatic change, in a patient with a positive sweat chloride test.",
-        "Bronchiectasis Fibrosis and Inflammation would instead show peribronchial fibrosis, chronic inflammatory infiltrate, and loss of cartilage support within the dilated airway wall; the displayed image shows increased bronchovascular markings with peribronchial wall thickening and bronchiectatic change, in a patient with a positive sweat chloride test.",
-        "Kartagener syndrome would instead show the combination of bronchiectasis and mirror-image thoracoabdominal orientation from situs inversus; the displayed image shows increased bronchovascular markings with peribronchial wall thickening and bronchiectatic change, in a patient with a positive sweat chloride test."
+        "Kartagener syndrome would instead show the combination of bronchiectasis and mirror-image thoracoabdominal orientation from situs inversus; the displayed image shows increased bronchovascular markings with peribronchial wall thickening and bronchiectatic change, in a patient with a positive sweat chloride test.",
+        "Bronchiectasis Lung Specimens would instead show permanently dilated, tortuous, easily collapsible bronchi extending toward the visceral pleura with copious secretions and lack of normal tapering (a signet-ring appearance on cross-section); the displayed image shows increased bronchovascular markings with peribronchial wall thickening and bronchiectatic change, in a patient with a positive sweat chloride test."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
