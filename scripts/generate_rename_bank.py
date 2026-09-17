@@ -61,6 +61,7 @@ CASE_CONTEXT: dict[str, str] = {
     "Asthma CXR.png": "A patient with a long-standing history of episodic wheeze, nocturnal cough, and spirometry-confirmed reversible airflow obstruction undergoes this chest radiograph as part of a routine outpatient work-up.",
     "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "A patient with progressive exertional dyspnea and a loud pulmonic component of the second heart sound undergoes transthoracic echocardiography; the report estimates the right ventricular systolic pressure at 58 mmHg with septal flattening in systole.",
     "P529 CF Lung Disease.png": "A young adult with a history of recurrent childhood pneumonias, chronic productive cough, and a positive sweat chloride test undergoes this chest radiograph.",
+    "Blue Bloater.png": "A 58-year-old with a 40-pack-year smoking history presents with a chronic productive cough, peripheral edema, and mild resting cyanosis; pulmonary function testing shows a chronic bronchitis-predominant obstructive pattern.",
 }
 
 # Stem override for the CASE_CONTEXT questions above: the default stem_for() phrasing asks for
@@ -71,6 +72,7 @@ CASE_STEM: dict[str, str] = {
     "Asthma CXR.png": "Given this clinical presentation, which diagnosis is most consistent with the history and this chest radiograph?",
     "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "Given this echocardiographic report and the labeled apical four-chamber view, which diagnosis is best supported?",
     "P529 CF Lung Disease.png": "Given this history, which diagnosis is best supported by the pattern on this chest radiograph?",
+    "Blue Bloater.png": "Given this clinical presentation, which COPD phenotype does this patient's photograph best match?",
 }
 
 # Clue override for the same sources: describes only what is defensibly visible plus the case
@@ -80,6 +82,7 @@ CASE_CLUE: dict[str, str] = {
     "Asthma CXR.png": "a chest radiograph that remains normal or near-normal despite the patient's documented reversible airflow obstruction, consistent with asthma, in which imaging is typically unremarkable outside of a severe exacerbation",
     "Echocardiogram in Pulmonary Artery Hypertension (3:3).jpg": "an echocardiographic four-chamber view with the right ventricle (RV) and left ventricle (LV) labeled, interpreted alongside a report noting an estimated RVSP of 58 mmHg and systolic septal flattening \u2014 findings that indicate right ventricular pressure overload from pulmonary arterial hypertension",
     "P529 CF Lung Disease.png": "increased bronchovascular markings with peribronchial wall thickening and bronchiectatic change, in a patient with a positive sweat chloride test",
+    "Blue Bloater.png": "a stocky, overweight body habitus consistent with the chronic-bronchitis-predominant ('blue bloater') COPD phenotype — the vignette supplies the cyanosis and cor pulmonale that the photograph alone can't definitively show",
 }
 
 REVIEW_ONLY_ADD: dict[str, str] = {

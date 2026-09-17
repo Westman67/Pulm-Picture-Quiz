@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-16T21:03:38.292976-04:00",
+  "generated_at": "2026-09-16T21:09:03.535155-04:00",
   "builder": "build-medical-picture-quiz / multi-collection flat-image builder",
   "source_directories": [
     {
@@ -4632,7 +4632,7 @@
       "immutable_source_hash": "e0f0b347c59d465f297958176802fb2dfbffb324067b1ca202497fe6c8f2a519",
       "status": "USABLE",
       "visual_target": "the complete displayed image",
-      "key_visual_findings": "the chronic-bronchitis-predominant COPD phenotype with cyanosis and a stocky body habitus",
+      "key_visual_findings": "a stocky, overweight body habitus consistent with the chronic-bronchitis-predominant ('blue bloater') COPD phenotype — the vignette supplies the cyanosis and cor pulmonale that the photograph alone can't definitively show",
       "panel_handling": "single_complete_image",
       "question_type_matrix": {
         "Identification": {

@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "bank_id": "bank_3c0109c75c96",
-  "generated_at": "2026-09-16T21:03:38.292976-04:00",
+  "generated_at": "2026-09-16T21:09:03.535155-04:00",
   "mode": "pulmonary_visual_identification",
   "question_count": 544,
   "quality_review": {
@@ -2669,8 +2669,8 @@
       "variant_id": "var_60469fa4c5c9",
       "question_type": "Identification",
       "tested_concept": "Blue Bloater",
-      "stem": "Which pulmonary diagnosis, phenotype, or structure best matches the visible finding in the complete displayed image?",
-      "case_context": "",
+      "stem": "Given this clinical presentation, which COPD phenotype does this patient's photograph best match?",
+      "case_context": "A 58-year-old with a 40-pack-year smoking history presents with a chronic productive cough, peripheral edema, and mild resting cyanosis; pulmonary function testing shows a chronic bronchitis-predominant obstructive pattern.",
       "visual_target": "the complete displayed image",
       "panel_handling": "single_complete_image",
       "joint_images": false,
@@ -2682,15 +2682,15 @@
       ],
       "correct_index": 0,
       "accepted_terminology": [],
-      "explanation": "The decisive visible finding is the chronic-bronchitis-predominant COPD phenotype with cyanosis and a stocky body habitus. This pattern supports Blue Bloater.",
+      "explanation": "The decisive visible finding is a stocky, overweight body habitus consistent with the chronic-bronchitis-predominant ('blue bloater') COPD phenotype — the vignette supplies the cyanosis and cor pulmonale that the photograph alone can't definitively show. This pattern supports Blue Bloater.",
       "visual_clues": [
-        "the chronic-bronchitis-predominant COPD phenotype with cyanosis and a stocky body habitus"
+        "a stocky, overweight body habitus consistent with the chronic-bronchitis-predominant ('blue bloater') COPD phenotype — the vignette supplies the cyanosis and cor pulmonale that the photograph alone can't definitively show"
       ],
       "choice_rationales": [
-        "Correct: The displayed image shows the chronic-bronchitis-predominant COPD phenotype with cyanosis and a stocky body habitus, supporting Blue Bloater.",
-        "Pink Puffer would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows the chronic-bronchitis-predominant COPD phenotype with cyanosis and a stocky body habitus.",
-        "Nasal Polyps from EGPA (Churg-Strauss) would instead show smooth polypoid soft tissue filling the nasal cavity or paranasal sinuses; the displayed image shows the chronic-bronchitis-predominant COPD phenotype with cyanosis and a stocky body habitus.",
-        "Bronchiectasis due to Chronic Bronchitis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows the chronic-bronchitis-predominant COPD phenotype with cyanosis and a stocky body habitus."
+        "Correct: The displayed image shows a stocky, overweight body habitus consistent with the chronic-bronchitis-predominant ('blue bloater') COPD phenotype — the vignette supplies the cyanosis and cor pulmonale that the photograph alone can't definitively show, supporting Blue Bloater.",
+        "Pink Puffer would instead show hyperinflation, attenuated vascular markings, flattened diaphragms, or large bullous air spaces; the displayed image shows a stocky, overweight body habitus consistent with the chronic-bronchitis-predominant ('blue bloater') COPD phenotype — the vignette supplies the cyanosis and cor pulmonale that the photograph alone can't definitively show.",
+        "Nasal Polyps from EGPA (Churg-Strauss) would instead show smooth polypoid soft tissue filling the nasal cavity or paranasal sinuses; the displayed image shows a stocky, overweight body habitus consistent with the chronic-bronchitis-predominant ('blue bloater') COPD phenotype — the vignette supplies the cyanosis and cor pulmonale that the photograph alone can't definitively show.",
+        "Bronchiectasis due to Chronic Bronchitis would instead show permanently dilated thick-walled bronchi with lack of normal tapering and a signet-ring appearance; the displayed image shows a stocky, overweight body habitus consistent with the chronic-bronchitis-predominant ('blue bloater') COPD phenotype — the vignette supplies the cyanosis and cor pulmonale that the photograph alone can't definitively show."
       ],
       "ground_truth_confidence": "high",
       "ground_truth_evidence": "User-curated descriptive filename confirmed against the displayed morphology during full-set visual review.",
