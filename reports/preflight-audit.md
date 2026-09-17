@@ -1,9 +1,9 @@
 # Pulmonary multi-collection preflight audit
 
-Generated: 2026-09-17T10:49:33.719581-04:00
+Generated: 2026-09-17T11:00:29.667711-04:00
 
-- Source: `/Users/chriselwell/Desktop/Rename` (read-only)
-- Source: `/Users/chriselwell/Desktop/Add` (read-only)
+- Source: `/Desktop/Rename` (read-only)
+- Source: `/Desktop/Add` (read-only)
 - Physical image files: 558
 - Decodable files: 558
 - Scored questions: 544
